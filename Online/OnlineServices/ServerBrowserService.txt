@@ -1,0 +1,70 @@
+PresenceServerBrowserServiceData a2246c83-086a-fce3-8660-7dcab9e9cc69
+	$::PresenceServiceData
+		$::Asset
+			$::DataContainer
+			Name Online/OnlineServices/ServerBrowserService
+	FilterCriterias::MatchmakingCriteria
+		SizeRule::MatchmakingSizeRule
+			Setting mode
+			Configurations *nullArray*
+		PingSiteRule::MatchmakingPingSiteRule
+			MinFitThreshold *nullString*
+		RankedRule::MatchmakingRankedRule
+			MinFitThreshold requireExactMatch
+		GenericRules::array
+			member(0)::MatchmakingGenericRule
+				Rule levelRule
+				MinFitThresHold requireExactMatch
+				Setting level
+				DesiredValues *nullArray*
+				IgnoreIfDefault True
+				MergeValues False
+				SortValues False
+			member(1)::MatchmakingGenericRule
+				Rule gameModeRule
+				MinFitThresHold requireExactMatch
+				Setting mode
+				DesiredValues *nullArray*
+				IgnoreIfDefault True
+				MergeValues False
+				SortValues False
+			member(2)::MatchmakingGenericRule
+				Rule presetRule
+				MinFitThresHold requireExactMatch
+				Setting preset
+				DesiredValues *nullArray*
+				IgnoreIfDefault True
+				MergeValues False
+				SortValues False
+			member(3)::MatchmakingGenericRule
+				Rule rspPingSiteRule
+				MinFitThresHold requireExactMatch
+				Setting pingsite
+				DesiredValues *nullArray*
+				IgnoreIfDefault True
+				MergeValues False
+				SortValues False
+			member(4)::MatchmakingGenericRule
+				Rule serverTypeRule
+				MinFitThresHold requireExactMatch
+				Setting serverType
+				DesiredValues *nullArray*
+				IgnoreIfDefault False
+				MergeValues False
+				SortValues False
+		VirtualizedRule::MatchmakingVirtualizedRule
+			MinFitThreshold requireExactMatch
+			VirtualizationMode MatchmakingVirtualizationMode_Any
+		UEDRules *nullArray*
+		ModRule::MatchmakingModRule
+			Mods *nullArray*
+			MinFitThresholdListName *nullString*
+		SlotUtilizationRule::MatchmakingSlotUtilizationRule
+			PreferredPercentage 75
+			MinPercentage 0
+			MaxPercentage 100
+			RangeOffsetListName matchAny
+		FreePlayerSlotsRule::MatchmakingFreePlayerSlotsRule
+			MaxFreePlayerSlots 0
+			MinFreePlayerSlots 0
+	ListCapacity 1000

@@ -1,0 +1,46 @@
+NucleusPresenceBackendData 8cee490c-fe40-a0ef-2475-041afc3c8e46
+	$::PresenceBackendData
+		$::Asset
+			$::DataContainer
+			Name Online/OnlineBackends/NucleusPresenceBackend
+	Environments::array
+		member(0)::NucleusEnvironmentConfiguration
+			Env NucleusEnv_1Box
+			BaseUrl http://10.14.133.90:8040
+			NucleusClientId 33f3a6af-0a39-4c98-9870-bee66f2cbc57
+		member(1)::NucleusEnvironmentConfiguration
+			Env NucleusEnv_Integration
+			BaseUrl https://accounts.int.ea.com
+			NucleusClientId 33f3a6af-0a39-4c98-9870-bee66f2cbc57
+		member(2)::NucleusEnvironmentConfiguration
+			Env NucleusEnv_Production
+			BaseUrl https://accounts.int.ea.com
+			NucleusClientId 33f3a6af-0a39-4c98-9870-bee66f2cbc57
+	Platforms::array
+		member(0)::NucleusPlatformConfiguration
+			Platform GamePlatform_Win32
+			ClientId BF4_CLIENT_PC
+			ClientSecret BF4_CLIENT_PC_SECRET
+			LoginScope signin
+			ClientRedirectUrl http://127.0.0.1/success
+			DisplayType *nullString*
+			BlazeServerClientId GOS-BlazeServer-BF4-PC
+			BlazeServerRedirectUrl http://127.0.0.1/success
+		member(1)::NucleusPlatformConfiguration
+			Platform GamePlatform_Gen4a
+			ClientId BF4-CLIENT-XONE
+			ClientSecret BF4_CLIENT_XONE_SECRET
+			LoginScope signin
+			ClientRedirectUrl http://127.0.0.1/success
+			DisplayType console2/welcome
+			BlazeServerClientId GOS-BlazeServer-BF4-XONE
+			BlazeServerRedirectUrl http://127.0.0.1/success
+		member(2)::NucleusPlatformConfiguration
+			Platform GamePlatform_Gen4b
+			ClientId BF4-CLIENT-PS4
+			ClientSecret BF4_CLIENT_PS4_SECRET
+			LoginScope signin
+			ClientRedirectUrl http://127.0.0.1/success
+			DisplayType console2/welcome
+			BlazeServerClientId GOS-BlazeServer-BF4-PS4
+			BlazeServerRedirectUrl http://127.0.0.1/success
