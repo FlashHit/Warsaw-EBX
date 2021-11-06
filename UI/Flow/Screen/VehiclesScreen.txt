@@ -1,0 +1,421 @@
+UIScreenAsset 8c27817f-ed3c-de36-08d4-583da98ff9e2
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/VehiclesScreen
+			Nodes::array
+				member(0) e2f35970-bbbe-4dfe-bd6d-9d71641ada97
+				member(1) bc71d6f0-0739-4f60-b936-ad53df2df61c
+			GlobalNode *nullGuid*
+			Connections *nullArray*
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/VehiclesScreen/724147e5-4e71-2c04-4592-86567fb5a91f
+	SwfPath UI/Assets/VehiclesScreen
+	Purpose UIScreenPurpose_Standard
+WidgetNode e2f35970-bbbe-4dfe-bd6d-9d71641ada97
+	$::UINodeData
+		$::DataContainer
+		Name PageHeader
+		ParentGraph 8c27817f-ed3c-de36-08d4-583da98ff9e2
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/PageHeader/d0410fa1-44b5-2fc1-c898-e24d660912c4
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance35
+	InstanceName PageHeader_01
+	WidgetProperties *nullArray*
+	Outputs *nullArray*
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode bc71d6f0-0739-4f60-b936-ad53df2df61c
+	$::UINodeData
+		$::DataContainer
+		Name List
+		ParentGraph 8c27817f-ed3c-de36-08d4-583da98ff9e2
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/List/3a5cc810-84fa-1818-6cca-6a6dcb443af5
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName List_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance28
+		member(1) Instance14
+		member(2) Instance2
+		member(3) Instance7
+		member(4) Instance22
+		member(5) Instance11
+		member(6) Instance32
+		member(7) Instance6
+		member(8) Instance20
+		member(9) Instance24
+		member(10) Instance23
+		member(11) Instance31
+		member(12) Instance1
+		member(13) Instance16
+		member(14) Instance13
+		member(15) Instance29
+		member(16) Instance3
+	Inputs::array
+		member(0) Instance15
+		member(1) Instance21
+		member(2) Instance5
+		member(3) Instance18
+		member(4) Instance12
+		member(5) Instance26
+		member(6) Instance10
+		member(7) Instance8
+		member(8) Instance4
+		member(9) Instance9
+		member(10) Instance33
+		member(11) Instance27
+		member(12) Instance30
+	AlwaysInFocus False
+	IsDisabled False
+UIListDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	ListIndex 0
+	ListQuery::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	StaticItems::array
+		member(0)::StaticListItem
+			ItemName DETAILS
+			ItemIndex *nullString*
+			DynamicDisable::UISimpleDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+			DynamicNewContent::UISimpleDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+			AppendPlatformToSID False
+			ExcludeInRetail False
+		member(1)::StaticListItem
+			ItemName CUSTOMIZATIONS
+			ItemIndex *nullString*
+			DynamicDisable::UISimpleDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+			DynamicNewContent::UISimpleDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+			AppendPlatformToSID False
+			ExcludeInRetail False
+	DefaultHighlightedRow::DefaultSelectionItem
+		DefaultSelectionQuery::UIDataSourceInfo
+			DataName *nullString*
+			DataCategory *nullGuid*
+			DataKey 0
+			UseDirectAccess False
+			UpdateOnInitialize True
+		DefaultSelectionIndex 0
+	RowType MixedRows
+	NavigationType loop
+	NavigationTypeSource::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	UnFocusMode DeSelect
+	EmptyRowType emptyRowNone
+	RowSpacing 0
+	DisabledRows *nullString*
+	SendIndexWithEvent False
+	ClearListAtNavigationEvent False
+	UseScrollBar False
+	ScreenRotationEnabled False
+	Use3DSelection False
+	FireHighlightOnMouseOut False
+	DataIncludesButtonLayout False
+	Visible True
+	SpinnerEnabled False
+	HighLightOnUpdate True
+	EnableScaleToText True
+	DisableItemCaching False
+	DisplayDisabledItems False
+UINodePort Instance1
+	$::DataContainer
+	Name SelectorChangedKeyValue
+	InstanceName List_01
+	Query UIWidgetEventID_RThumb
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance2
+	$::DataContainer
+	Name NavigateLeft
+	InstanceName List_01
+	Query UIWidgetEventID_OnNavigateLeft
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance3
+	$::DataContainer
+	Name InvalidSelection
+	InstanceName List_01
+	Query UIWidgetEventID_OnMapChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name ClearList
+	InstanceName List_01
+	Query UIWidgetEventID_Clear
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name EnterAny
+	InstanceName List_01
+	Query UIWidgetEventID_EnterAny
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name Release
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name NavigateRight
+	InstanceName List_01
+	Query UIWidgetEventID_OnNavigateRight
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name Hide
+	InstanceName List_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name IgnoreKeyNavigation
+	InstanceName List_01
+	Query UIWidgetEventID_OnSmall
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name Show
+	InstanceName List_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name MouseOver
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemOver
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name EnterSelected
+	InstanceName List_01
+	Query UIWidgetEventID_OnDescriptionChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name ShowList
+	InstanceName List_01
+	Query UIWidgetEventID_OnShow
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name ReachedBottom
+	InstanceName List_01
+	Query UIWidgetEventID_OnReachedBottom
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name EnterTop
+	InstanceName List_01
+	Query UIWidgetEventID_EnterTop
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name SelectorStepped
+	InstanceName List_01
+	Query UIWidgetEventID_TextEntered
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name OptionReleased
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name MoveToIndex
+	InstanceName List_01
+	Query UIWidgetEventID_SetIndex
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance19
+	$::DataContainer
+	Name OptionSelected
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemSelected
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance20
+	$::DataContainer
+	Name SelectorChanged
+	InstanceName List_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance21
+	$::DataContainer
+	Name EnterBottom
+	InstanceName List_01
+	Query UIWidgetEventID_EnterBottom
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance22
+	$::DataContainer
+	Name RowHighlighted
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemHighlighted
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance23
+	$::DataContainer
+	Name ChangeMenuHint
+	InstanceName List_01
+	Query UIWidgetEventID_Update
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance24
+	$::DataContainer
+	Name ChangeButtonBar
+	InstanceName List_01
+	Query UIWidgetEventID_OnButtonBarChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance25
+	$::DataContainer
+	Name moveToPercentage
+	InstanceName List_01
+	Query UIWidgetEventID_SetPercentage
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance26
+	$::DataContainer
+	Name MoveToPercentage
+	InstanceName List_01
+	Query UIWidgetEventID_SetPercentage
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance27
+	$::DataContainer
+	Name HideHighlight
+	InstanceName List_01
+	Query UIWidgetEventID_OnComPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance28
+	$::DataContainer
+	Name ReachedTop
+	InstanceName List_01
+	Query UIWidgetEventID_OnReachedTop
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance29
+	$::DataContainer
+	Name HideList
+	InstanceName List_01
+	Query UIWidgetEventID_OnHide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance30
+	$::DataContainer
+	Name ShowHighlight
+	InstanceName List_01
+	Query UIWidgetEventID_OnComReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance31
+	$::DataContainer
+	Name ReleaseIndex
+	InstanceName List_01
+	Query UIWidgetEventID_OnToggle
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance32
+	$::DataContainer
+	Name Press
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance33
+	$::DataContainer
+	Name AllowKeyNavigation
+	InstanceName List_01
+	Query UIWidgetEventID_OnLarge
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance34
+	$::DataContainer
+	Name OptionHighlighted
+	InstanceName List_01
+	Query UIWidgetEventID_OnItemHighlighted
+	AllowManualRemove False
+	IsReferencePort False
+UIPageHeaderBinding Instance35
+	$::UIDataBinding
+		$::DataContainer
+	Header::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	SubHeader::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Icon::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	StaticHeader ID_M_MAIN_MYSOLDIER_PATH
+	StaticSubHeader ID_M_VEHICLES
+	StaticIcon *nullString*
+	LevelSpecificHeaders *nullArray*

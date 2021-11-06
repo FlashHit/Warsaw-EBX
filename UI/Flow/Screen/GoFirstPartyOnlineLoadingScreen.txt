@@ -1,0 +1,274 @@
+UIScreenAsset c0a396df-a404-e8c9-d19c-f142717fb6ce
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/GoFirstPartyOnlineLoadingScreen
+			Nodes::array
+				member(0) 669ea8c2-e31d-4947-aa4b-1425c76f4d7f
+				member(1) f817592a-e146-4ab3-8c4c-ecba51a3366c
+				member(2) 0ffeecec-7ee2-4669-b0e3-5705e15b012e
+				member(3) be2fa9c6-05dc-4a64-8432-e29c42fa7301
+				member(4) bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+				member(5) 62ef483c-15da-4e48-a50c-b486994f9332
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+				member(1) Instance4
+				member(2) Instance5
+				member(3) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/GoFirstPartyOnlineLoadingScreen/aed5e078-1683-9d22-3170-83816fe6fb79
+	SwfPath UI/Assets/GoFirstPartyOnlineLoadingScreen
+	Purpose UIScreenPurpose_Standard
+InstanceOutputNode f817592a-e146-4ab3-8c4c-ecba51a3366c
+	$::UINodeData
+		$::DataContainer
+		Name Online
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	In Instance8
+	Id -1432716790
+	DestroyGraph True
+InstanceOutputNode 62ef483c-15da-4e48-a50c-b486994f9332
+	$::UINodeData
+		$::DataContainer
+		Name TooYoung
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	In Instance10
+	Id -1929042405
+	DestroyGraph True
+ComparisonLogicNode bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+	$::UINodeData
+		$::DataContainer
+		Name FirstPartyConnection
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	In Instance11
+	Outputs::array
+		member(0) Instance17
+		member(1) Instance13
+		member(2) Instance9
+	DataSourceInfo::UISimpleDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+	SkipFractionals False
+WidgetNode 669ea8c2-e31d-4947-aa4b-1425c76f4d7f
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName ChangeListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance15
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode be2fa9c6-05dc-4a64-8432-e29c42fa7301
+	$::UINodeData
+		$::DataContainer
+		Name Dimmer
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/Dimmer/28d9bb5c-24b6-7760-e726-8be53524ba15
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName Dimmer_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name DimFromStart
+			Value false
+		member(1)::UIWidgetProperty
+			Name InstantDim
+			Value false
+	Outputs *nullArray*
+	Inputs::array
+		member(0) Instance14
+		member(1) Instance7
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode 0ffeecec-7ee2-4669-b0e3-5705e15b012e
+	$::UINodeData
+		$::DataContainer
+		Name Offline
+		ParentGraph c0a396df-a404-e8c9-d19c-f142717fb6ce
+		IsRootNode False
+		ParentIsScreen True
+	In Instance16
+	Id 266532068
+	DestroyGraph True
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIConnectionComp/546f0b73-fb9e-4aa2-2804-fc429c4abcd1
+			DataKey 1700909113
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Visible
+			DataCategory *nullGuid*
+			DataKey 0
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 669ea8c2-e31d-4947-aa4b-1425c76f4d7f
+	TargetNode bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+	SourcePort Instance15
+	TargetPort Instance11
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+	TargetNode 62ef483c-15da-4e48-a50c-b486994f9332
+	SourcePort Instance9
+	TargetPort Instance10
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+	TargetNode f817592a-e146-4ab3-8c4c-ecba51a3366c
+	SourcePort Instance17
+	TargetPort Instance8
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode bfa8beaa-4f56-432b-a3a6-417aeff8a8f7
+	TargetNode 0ffeecec-7ee2-4669-b0e3-5705e15b012e
+	SourcePort Instance13
+	TargetPort Instance16
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance6
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name FadeOut
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name TooYoung
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name FadeIn
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

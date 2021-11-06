@@ -1,0 +1,506 @@
+UIScreenAsset 3be91db6-43d8-4847-135e-e4ffe9c5d881
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Frontend/StartScreen
+			Nodes::array
+				member(0) e9d13372-5f46-4f9d-8c94-f234ecceb9d4
+				member(1) 4862ef6e-3fd7-42ce-af3f-eaa313c9ac0b
+				member(2) f02c1bc1-7e42-4030-9000-4c66eb1b0f21
+				member(3) 91c84de7-9569-4f9c-8242-2c455c4acce9
+				member(4) 8e24edf7-6834-4c45-89ec-e7677b592c92
+				member(5) fa552301-131a-4d46-89bb-ec6177265be3
+				member(6) 41688da2-4858-4ba8-b691-2d0998a9fa43
+				member(7) a72b6c9e-a35b-437a-a232-1e449b585097
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance5
+				member(1) Instance0
+				member(2) Instance4
+				member(3) Instance6
+				member(4) Instance1
+				member(5) Instance2
+				member(6) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/StartScreen/bca09a4a-310b-fbf8-7b7d-a32533af0bb3
+	SwfPath UI/Assets/StartScreen
+	Purpose UIScreenPurpose_Standard
+InstanceOutputNode fa552301-131a-4d46-89bb-ec6177265be3
+	$::UINodeData
+		$::DataContainer
+		Name OnNotIdle
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	In Instance18
+	Id -1915851787
+	DestroyGraph False
+InstanceOutputNode 4862ef6e-3fd7-42ce-af3f-eaa313c9ac0b
+	$::UINodeData
+		$::DataContainer
+		Name StartPressed
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	In Instance27
+	Id -1893430205
+	DestroyGraph True
+WidgetNode e9d13372-5f46-4f9d-8c94-f234ecceb9d4
+	$::UINodeData
+		$::DataContainer
+		Name StartScreenTimer
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/StartScreenTimer/88cfbd18-a588-74d3-d3d7-3eb284882815
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance39
+	InstanceName StartScreenTimer_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance17
+	Inputs::array
+		member(0) Instance14
+	AlwaysInFocus True
+	IsDisabled False
+InstanceInputNode a72b6c9e-a35b-437a-a232-1e449b585097
+	$::UINodeData
+		$::DataContainer
+		Name AutoLogin
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance30
+ComparisonLogicNode 41688da2-4858-4ba8-b691-2d0998a9fa43
+	$::UINodeData
+		$::DataContainer
+		Name IsMoviePlaying
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	In Instance9
+	Outputs::array
+		member(0) Instance23
+		member(1) Instance38
+	DataSourceInfo::UISimpleDataSource
+		DataCategory UI/UIComponents/FrontEndComp/4846b3a5-f117-f535-1392-e75875bbf734
+		DataKey 629137856
+	SkipFractionals False
+WidgetNode f02c1bc1-7e42-4030-9000-4c66eb1b0f21
+	$::UINodeData
+		$::DataContainer
+		Name InputListener
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/InputListener/e061ee14-f95a-6aaa-dec3-ebfab940df98
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance42
+	InstanceName InputListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance33
+		member(1) Instance21
+		member(2) Instance20
+		member(3) Instance13
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode 91c84de7-9569-4f9c-8242-2c455c4acce9
+	$::UINodeData
+		$::DataContainer
+		Name IdleTimer
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/IdleTimer/839f6ea4-166e-ce2c-e2a5-fee756fe20cd
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding *nullGuid*
+	InstanceName IdleTimer_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name m_time
+			Value 30
+	Outputs::array
+		member(0) Instance25
+		member(1) Instance36
+	Inputs::array
+		member(0) Instance19
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode 8e24edf7-6834-4c45-89ec-e7677b592c92
+	$::UINodeData
+		$::DataContainer
+		Name OnIdleTimeout
+		ParentGraph 3be91db6-43d8-4847-135e-e4ffe9c5d881
+		IsRootNode False
+		ParentIsScreen True
+	In Instance11
+	Id -1099265221
+	DestroyGraph False
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode 91c84de7-9569-4f9c-8242-2c455c4acce9
+	TargetNode fa552301-131a-4d46-89bb-ec6177265be3
+	SourcePort Instance36
+	TargetPort Instance18
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode 41688da2-4858-4ba8-b691-2d0998a9fa43
+	TargetNode e9d13372-5f46-4f9d-8c94-f234ecceb9d4
+	SourcePort Instance38
+	TargetPort Instance14
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 91c84de7-9569-4f9c-8242-2c455c4acce9
+	TargetNode 8e24edf7-6834-4c45-89ec-e7677b592c92
+	SourcePort Instance25
+	TargetPort Instance11
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode a72b6c9e-a35b-437a-a232-1e449b585097
+	TargetNode 4862ef6e-3fd7-42ce-af3f-eaa313c9ac0b
+	SourcePort Instance30
+	TargetPort Instance27
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode e9d13372-5f46-4f9d-8c94-f234ecceb9d4
+	TargetNode 41688da2-4858-4ba8-b691-2d0998a9fa43
+	SourcePort Instance17
+	TargetPort Instance9
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode f02c1bc1-7e42-4030-9000-4c66eb1b0f21
+	TargetNode 4862ef6e-3fd7-42ce-af3f-eaa313c9ac0b
+	SourcePort Instance33
+	TargetPort Instance27
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance6
+	$::DataContainer
+	SourceNode 41688da2-4858-4ba8-b691-2d0998a9fa43
+	TargetNode 4862ef6e-3fd7-42ce-af3f-eaa313c9ac0b
+	SourcePort Instance23
+	TargetPort Instance27
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance7
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name TabTapped
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnItemOver
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name Reset
+	InstanceName StartScreenTimer_01
+	Query UIWidgetEventID_Update
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name CommoRosePressed
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnComPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name Pressed
+	InstanceName StartScreenTimer_01
+	Query UIWidgetEventID_OnItemPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance19
+	$::DataContainer
+	Name RestartTimer
+	InstanceName IdleTimer_01
+	Query UIWidgetEventID_Update
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance20
+	$::DataContainer
+	Name TabRelease
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance21
+	$::DataContainer
+	Name TabPressed
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnItemPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance22
+	$::DataContainer
+	Name CommoRoseRelease
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnComReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance23
+	$::DataContainer
+	Name 0
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance24
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance25
+	$::DataContainer
+	Name OnIdleTimeout
+	InstanceName IdleTimer_01
+	Query UIWidgetEventID_OnComplete
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance26
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance27
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance28
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance29
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance30
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance31
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance32
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance33
+	$::DataContainer
+	Name GraphEvent
+	InstanceName InputListener_01
+	Query UIWidgetEventID_OnToggle
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance34
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance35
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance36
+	$::DataContainer
+	Name OnNotIdle
+	InstanceName IdleTimer_01
+	Query UIWidgetEventID_Clear
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance37
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance38
+	$::DataContainer
+	Name 1
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UITextDataBinding Instance39
+	$::UIDataBinding
+		$::DataContainer
+	StaticText *nullString*
+	TextData::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize False
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Refresh False
+	OverrideDirectAccess True
+UITextDataBinding Instance40
+	$::UIDataBinding
+		$::DataContainer
+	StaticText PRESS START TO BEGIN
+	TextData::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Refresh False
+	OverrideDirectAccess True
+UIWidgetPathBinding Instance41
+	$::UIDataBinding
+		$::DataContainer
+	WidgetPathQuery::UISimpleDataSource
+		DataCategory UI/UIComponents/UserComp/fc3e3131-3a51-e098-516e-9b8f722f6db8
+		DataKey -1736487976
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+UIWidgetPathBinding Instance42
+	$::UIDataBinding
+		$::DataContainer
+	WidgetPathQuery::UISimpleDataSource
+		DataCategory UI/UIComponents/UserComp/fc3e3131-3a51-e098-516e-9b8f722f6db8
+		DataKey -1736487976
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True

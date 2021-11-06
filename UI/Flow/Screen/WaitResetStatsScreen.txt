@@ -1,0 +1,156 @@
+UIScreenAsset 4b5f526a-effe-3489-dad9-fab451142bfd
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/WaitResetStatsScreen
+			Nodes::array
+				member(0) 28f1a55f-1c10-46d4-bd94-dca9fc6e97fd
+				member(1) c4ab19c7-a4b8-4190-9e2b-117d532b2b41
+				member(2) f55d3fe6-f0d7-4d74-822f-2b8a13d4937a
+				member(3) 2ec9ee91-0bbe-419e-890c-eafb290438f4
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+				member(1) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/WaitResetStatsScreen/471a8d4e-5ecf-6fbd-7124-54c580550647
+	SwfPath UI/Assets/WaitResetStatsScreen
+	Purpose UIScreenPurpose_Standard
+WidgetNode 28f1a55f-1c10-46d4-bd94-dca9fc6e97fd
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph 4b5f526a-effe-3489-dad9-fab451142bfd
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName ChangeListener_00
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance5
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode 2ec9ee91-0bbe-419e-890c-eafb290438f4
+	$::UINodeData
+		$::DataContainer
+		Name ResetFailed
+		ParentGraph 4b5f526a-effe-3489-dad9-fab451142bfd
+		IsRootNode False
+		ParentIsScreen True
+	In Instance4
+	Id -1848678189
+	DestroyGraph True
+InstanceOutputNode c4ab19c7-a4b8-4190-9e2b-117d532b2b41
+	$::UINodeData
+		$::DataContainer
+		Name ResetDone
+		ParentGraph 4b5f526a-effe-3489-dad9-fab451142bfd
+		IsRootNode False
+		ParentIsScreen True
+	In Instance6
+	Id 1918799184
+	DestroyGraph True
+WidgetNode f55d3fe6-f0d7-4d74-822f-2b8a13d4937a
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph 4b5f526a-effe-3489-dad9-fab451142bfd
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName ChangeListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance7
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIConnectionComp/546f0b73-fb9e-4aa2-2804-fc429c4abcd1
+			DataKey -112122154
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIConnectionComp/546f0b73-fb9e-4aa2-2804-fc429c4abcd1
+			DataKey -2078803371
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 28f1a55f-1c10-46d4-bd94-dca9fc6e97fd
+	TargetNode c4ab19c7-a4b8-4190-9e2b-117d532b2b41
+	SourcePort Instance5
+	TargetPort Instance6
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode f55d3fe6-f0d7-4d74-822f-2b8a13d4937a
+	TargetNode 2ec9ee91-0bbe-419e-890c-eafb290438f4
+	SourcePort Instance7
+	TargetPort Instance4
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_00
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False

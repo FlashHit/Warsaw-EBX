@@ -1,0 +1,148 @@
+UIScreenAsset 6d36edef-a212-b609-e0d4-55acdec433f0
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/WaitLeavePlaygroupScreen
+			Nodes::array
+				member(0) f3196961-6951-4374-9d3a-175420aa20ef
+				member(1) dce4d1d2-8c1c-48e5-b36d-24e086d53c82
+				member(2) 02c32dfe-cfa5-4c7e-9c27-b702510cd2d5
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+				member(1) Instance1
+			AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/WaitLeavePlaygroupScreen/5836609c-4aab-ec0e-0bd5-d7bb632626bc
+	SwfPath UI/Assets/WaitLeavePlaygroupScreen
+	Purpose UIScreenPurpose_Standard
+WidgetNode f3196961-6951-4374-9d3a-175420aa20ef
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph 6d36edef-a212-b609-e0d4-55acdec433f0
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName ChangeListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance8
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+BinaryLogicNode dce4d1d2-8c1c-48e5-b36d-24e086d53c82
+	$::UINodeData
+		$::DataContainer
+		Name Hasplaygroup
+		ParentGraph 6d36edef-a212-b609-e0d4-55acdec433f0
+		IsRootNode False
+		ParentIsScreen True
+	In Instance9
+	True Instance4
+	False Instance3
+	DataSourceInfo::UISimpleDataSource
+		DataCategory UI/UIComponents/UIPlaygroupComp/abea3ab1-508e-15a9-23b2-7ab6feaf49a7
+		DataKey -1251284594
+InstanceOutputNode 02c32dfe-cfa5-4c7e-9c27-b702510cd2d5
+	$::UINodeData
+		$::DataContainer
+		Name No Playgroup
+		ParentGraph 6d36edef-a212-b609-e0d4-55acdec433f0
+		IsRootNode False
+		ParentIsScreen True
+	In Instance7
+	Id 1370206367
+	DestroyGraph True
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIPlaygroupComp/abea3ab1-508e-15a9-23b2-7ab6feaf49a7
+			DataKey -1251284594
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode f3196961-6951-4374-9d3a-175420aa20ef
+	TargetNode dce4d1d2-8c1c-48e5-b36d-24e086d53c82
+	SourcePort Instance8
+	TargetPort Instance9
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode dce4d1d2-8c1c-48e5-b36d-24e086d53c82
+	TargetNode 02c32dfe-cfa5-4c7e-9c27-b702510cd2d5
+	SourcePort Instance3
+	TargetPort Instance7
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance3
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

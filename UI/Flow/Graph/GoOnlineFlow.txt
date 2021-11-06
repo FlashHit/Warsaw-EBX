@@ -1,0 +1,265 @@
+UIGraphAsset 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+	$::Asset
+		$::DataContainer
+		Name UI/Flow/Graph/GoOnlineFlow
+	Nodes::array
+		member(0) 9f89161d-294d-4ad0-bb43-6eae6393cf6f
+		member(1) 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+		member(2) fad424cc-39ea-41ae-8d93-0de6e19eae4d
+		member(3) 48770ad1-2123-49a4-b664-2faff1859068
+		member(4) fcd7fd4b-94ba-40c6-86cc-45065c824649
+		member(5) b7b280be-ab5f-4548-9518-e0df8a0f6825
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) Instance0
+		member(1) Instance4
+		member(2) Instance5
+		member(3) Instance1
+		member(4) Instance3
+		member(5) Instance2
+	AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+	BundleAssetName *nullString*
+	EventList *nullArray*
+	ProtectScreens False
+	Modal False
+	IsWin32UIGraphAsset True
+	IsXenonUIGraphAsset True
+	IsPs3UIGraphAsset True
+	IsGen4aUIGraphAsset True
+	IsGen4bUIGraphAsset True
+InstanceInputNode 9f89161d-294d-4ad0-bb43-6eae6393cf6f
+	$::UINodeData
+		$::DataContainer
+		Name Start
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode True
+		ParentIsScreen False
+	Out Instance16
+ActionNode fcd7fd4b-94ba-40c6-86cc-45065c824649
+	$::UINodeData
+		$::DataContainer
+		Name GoOnline
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode False
+		ParentIsScreen False
+	ActionKey 131475977
+	Params::array
+		member(0) Online
+	ActionAsset *nullGuid*
+	In Instance10
+	DataInputs *nullArray*
+	Out Instance6
+	AppendIncomingParams False
+StateNode 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+	$::UINodeData
+		$::DataContainer
+		Name StateNode
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode False
+		ParentIsScreen False
+	Screen UI/Flow/Screen/Frontend/GoOnlineLoadingScreen/e49479f2-03e0-ba3b-e0dc-522d569a9e27
+	In Instance18
+	Show Instance13
+	Hide Instance8
+	Inputs::array
+		member(0) Instance11
+	Outputs::array
+		member(0) Instance20
+		member(1) Instance7
+		member(2) Instance19
+	RenderToRootView 0
+	RenderToTexture False
+ComparisonLogicNode b7b280be-ab5f-4548-9518-e0df8a0f6825
+	$::UINodeData
+		$::DataContainer
+		Name Abort if stacked
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode False
+		ParentIsScreen False
+	In Instance12
+	Outputs::array
+		member(0) Instance14
+		member(1) Instance9
+	DataSourceInfo::UISimpleDataSource
+		DataCategory UI/UIComponents/UIConnectionComp/546f0b73-fb9e-4aa2-2804-fc429c4abcd1
+		DataKey -1368226861
+	SkipFractionals False
+InstanceOutputNode fad424cc-39ea-41ae-8d93-0de6e19eae4d
+	$::UINodeData
+		$::DataContainer
+		Name LoginCancelled
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode False
+		ParentIsScreen False
+	In Instance15
+	Id -547032691
+	DestroyGraph True
+InstanceOutputNode 48770ad1-2123-49a4-b664-2faff1859068
+	$::UINodeData
+		$::DataContainer
+		Name IsOnline
+		ParentGraph 0d07e758-a12a-4ca5-2e3b-00a4acebdf4e
+		IsRootNode False
+		ParentIsScreen False
+	In Instance17
+	Id 634957072
+	DestroyGraph True
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode 9f89161d-294d-4ad0-bb43-6eae6393cf6f
+	TargetNode 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+	SourcePort Instance16
+	TargetPort Instance11
+	SourcePortName *nullString*
+	TargetPortName EnterScreen
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+	TargetNode b7b280be-ab5f-4548-9518-e0df8a0f6825
+	SourcePort Instance19
+	TargetPort Instance12
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode b7b280be-ab5f-4548-9518-e0df8a0f6825
+	TargetNode fad424cc-39ea-41ae-8d93-0de6e19eae4d
+	SourcePort Instance14
+	TargetPort Instance15
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 1
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode b7b280be-ab5f-4548-9518-e0df8a0f6825
+	TargetNode fcd7fd4b-94ba-40c6-86cc-45065c824649
+	SourcePort Instance9
+	TargetPort Instance10
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+	TargetNode 48770ad1-2123-49a4-b664-2faff1859068
+	SourcePort Instance20
+	TargetPort Instance17
+	SourcePortName IsOnline
+	TargetPortName *nullString*
+	NumScreensToPop 1
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode 9435e065-2239-41d6-bddd-7b4fc9c0c2cf
+	TargetNode fad424cc-39ea-41ae-8d93-0de6e19eae4d
+	SourcePort Instance7
+	TargetPort Instance15
+	SourcePortName LoginCancelled
+	TargetPortName *nullString*
+	NumScreensToPop 1
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name LoginCancelled
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort True
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name default
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name EnterScreen
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort True
+UINodePort Instance12
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name Active
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance19
+	$::DataContainer
+	Name Initialized [Screen]
+	InstanceName Initialized
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance20
+	$::DataContainer
+	Name IsOnline
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort True

@@ -1,0 +1,271 @@
+UIScreenAsset bf727509-a985-10a0-f61c-43aa46649fa5
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Popups/PopupDynamic
+			Nodes::array
+				member(0) c0272dd4-c644-4eff-8ea7-d387e8aa712b
+				member(1) 1f98ad84-d4ed-46f5-9d7b-b852321264b9
+				member(2) 2299dd50-fbad-445a-8349-afd14abc942f
+				member(3) 1e73ef1c-a958-42cb-99d6-296cfa42f422
+				member(4) 1000dcf7-a2d5-465f-b4aa-6d45e6e85983
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance4
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal True
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/PopupDynamic/d50f6e47-01e0-fc90-62ba-e7c9f8bc1463
+	SwfPath UI/Assets/PopupDynamic
+	Purpose UIScreenPurpose_Standard
+WidgetNode 1e73ef1c-a958-42cb-99d6-296cfa42f422
+	$::UINodeData
+		$::DataContainer
+		Name TextField
+		ParentGraph bf727509-a985-10a0-f61c-43aa46649fa5
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/TextField/992ede9c-36f6-f31e-2140-5c1ec7fcf345
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance11
+	InstanceName TextField_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name p_styleName
+			Value popupHeader
+	Outputs *nullArray*
+	Inputs::array
+		member(0) Instance7
+		member(1) Instance6
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode 2299dd50-fbad-445a-8349-afd14abc942f
+	$::UINodeData
+		$::DataContainer
+		Name PopupButtonReleased
+		ParentGraph bf727509-a985-10a0-f61c-43aa46649fa5
+		IsRootNode False
+		ParentIsScreen True
+	In Instance5
+	Id 1352178388
+	DestroyGraph True
+WidgetNode 1f98ad84-d4ed-46f5-9d7b-b852321264b9
+	$::UINodeData
+		$::DataContainer
+		Name PopupButtonsManager
+		ParentGraph bf727509-a985-10a0-f61c-43aa46649fa5
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/PopupButtonsManager/7ea7eb85-04e6-e2d6-93eb-6f89c0e20bb9
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName PopupButtonsManager_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance10
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode c0272dd4-c644-4eff-8ea7-d387e8aa712b
+	$::UINodeData
+		$::DataContainer
+		Name TextBox
+		ParentGraph bf727509-a985-10a0-f61c-43aa46649fa5
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/TextBox/29f3d2b7-2226-fb0d-6ca5-1f8c90ae689d
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance2
+	InstanceName TextBox_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name UseEulaFont
+			Value true
+		member(1)::UIWidgetProperty
+			Name UseStoreFont
+			Value false
+	Outputs *nullArray*
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode 1000dcf7-a2d5-465f-b4aa-6d45e6e85983
+	$::UINodeData
+		$::DataContainer
+		Name Dimmer
+		ParentGraph bf727509-a985-10a0-f61c-43aa46649fa5
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/Dimmer/28d9bb5c-24b6-7760-e726-8be53524ba15
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName Dimmer_01
+	WidgetProperties::array
+		member(0)::UIWidgetProperty
+			Name DimFromStart
+			Value true
+		member(1)::UIWidgetProperty
+			Name InstantDim
+			Value true
+	Outputs *nullArray*
+	Inputs::array
+		member(0) Instance9
+		member(1) Instance8
+	AlwaysInFocus False
+	IsDisabled False
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Buttons
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey -1192680079
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Visible
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey 1310175943
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance2
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Text
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey 201161033
+			UseDirectAccess False
+			UpdateOnInitialize True
+		member(1)::UIDataSourceInfo
+			DataName Visible
+			DataCategory *nullGuid*
+			DataKey 0
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance3
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Text
+			DataCategory *nullGuid*
+			DataKey 0
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode 1f98ad84-d4ed-46f5-9d7b-b852321264b9
+	TargetNode 2299dd50-fbad-445a-8349-afd14abc942f
+	SourcePort Instance10
+	TargetPort Instance5
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name Hide
+	InstanceName TextField_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name Show
+	InstanceName TextField_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name FadeOut
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name FadeIn
+	InstanceName Dimmer_01
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name ButtonReleased
+	InstanceName PopupButtonsManager_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
+	IsReferencePort False
+UITextDataBinding Instance11
+	$::UIDataBinding
+		$::DataContainer
+	StaticText *nullString*
+	TextData::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+		DataKey -1951480908
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Refresh True
+	OverrideDirectAccess False
+UITextDataBinding Instance12
+	$::UIDataBinding
+		$::DataContainer
+	StaticText *nullString*
+	TextData::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+		DataKey -1951480908
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True
+	Refresh True
+	OverrideDirectAccess True

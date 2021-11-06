@@ -1,0 +1,152 @@
+UIFlowCppScreenData 9574e1c0-3261-44d1-8077-76ac512037f1
+	$::UIViewAsset
+		$::UIViewBaseAsset
+			$::UIGraphAsset
+				$::Asset
+					$::DataContainer
+					Name UI/CppScreens/FlowTwoTeams64ScoreboardsScreen
+				Nodes::array
+					member(0) ad90cd42-0e38-450a-a20b-96116d110885
+					member(1) 2326a020-ba5c-4a0f-953c-d2e0ff2bd131
+					member(2) 1902a0c7-9ea6-4eeb-8f41-56ae0de7bbc4
+					member(3) a78bc260-2308-47de-b83a-cba038400f9e
+				GlobalNode *nullGuid*
+				Connections::array
+					member(0) Instance0
+					member(1) Instance1
+				AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultMaping/85731393-00a9-b3e1-1001-2ead21f6cf0e
+				BundleAssetName *nullString*
+				EventList *nullArray*
+				ProtectScreens False
+				Modal False
+				IsWin32UIGraphAsset True
+				IsXenonUIGraphAsset True
+				IsPs3UIGraphAsset True
+				IsGen4aUIGraphAsset True
+				IsGen4bUIGraphAsset True
+	RenderPass UIScreenRenderingPass_BelowFlash
+	ScreenData UI/CppScreens/Generic/Scaling/ec11ed1d-0cd2-4010-ae8c-350ef00dcefd
+	RootWidget UI/CppScreens/TwoTeams64ScoreboardsScreenRoot/fb1f60bc-61fb-47d9-a3a8-dd83e0671a90
+	RenderTarget False
+InstanceInputNode 2326a020-ba5c-4a0f-953c-d2e0ff2bd131
+	$::UINodeData
+		$::DataContainer
+		Name EnterFocused
+		ParentGraph 9574e1c0-3261-44d1-8077-76ac512037f1
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance5
+InstanceInputNode ad90cd42-0e38-450a-a20b-96116d110885
+	$::UINodeData
+		$::DataContainer
+		Name EnterUnfocused
+		ParentGraph 9574e1c0-3261-44d1-8077-76ac512037f1
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance8
+DataSetNode a78bc260-2308-47de-b83a-cba038400f9e
+	$::UINodeData
+		$::DataContainer
+		Name SetUnfocused
+		ParentGraph 9574e1c0-3261-44d1-8077-76ac512037f1
+		IsRootNode False
+		ParentIsScreen True
+	In Instance6
+	Out Instance7
+	Param False
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+DataSetNode 1902a0c7-9ea6-4eeb-8f41-56ae0de7bbc4
+	$::UINodeData
+		$::DataContainer
+		Name SetFocused
+		ParentGraph 9574e1c0-3261-44d1-8077-76ac512037f1
+		IsRootNode False
+		ParentIsScreen True
+	In Instance4
+	Out Instance3
+	Param True
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode ad90cd42-0e38-450a-a20b-96116d110885
+	TargetNode a78bc260-2308-47de-b83a-cba038400f9e
+	SourcePort Instance8
+	TargetPort Instance6
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode 2326a020-ba5c-4a0f-953c-d2e0ff2bd131
+	TargetNode 1902a0c7-9ea6-4eeb-8f41-56ae0de7bbc4
+	SourcePort Instance5
+	TargetPort Instance4
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance2
+	$::DataContainer
+	Name EnterFocused
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort True
+UINodePort Instance3
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name EnterUnfocused
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort True

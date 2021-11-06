@@ -1,0 +1,266 @@
+UIGraphAsset ff011f13-515e-f1cd-8386-0b48780a6790
+	$::Asset
+		$::DataContainer
+		Name UI/Flow/Graph/Ingame/FailedGraph
+	Nodes::array
+		member(0) 07d95938-d2a4-420a-94bd-a2a974ed9739
+		member(1) 6977d572-860e-4ad6-805d-0af6df5cc4c6
+		member(2) b1e15a4d-89bc-41bd-bfeb-19e060ff1ec9
+		member(3) 3f924a2f-6a0d-424d-b169-ba89461b3a5a
+		member(4) 2f4d9c97-71a8-457a-ab94-28b1aa21723c
+		member(5) 8bdd2859-8017-4752-bcd1-a9707cf36d88
+		member(6) 594a8afa-ec53-4aeb-b2ca-328755733c2e
+		member(7) 1e3332a7-bac1-4049-a761-79e2db01a8e0
+	GlobalNode *nullGuid*
+	Connections::array
+		member(0) Instance1
+		member(1) Instance4
+		member(2) Instance2
+		member(3) Instance0
+		member(4) Instance3
+	AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+	BundleAssetName *nullString*
+	EventList *nullArray*
+	ProtectScreens False
+	Modal False
+	IsWin32UIGraphAsset True
+	IsXenonUIGraphAsset True
+	IsPs3UIGraphAsset True
+	IsGen4aUIGraphAsset True
+	IsGen4bUIGraphAsset True
+ActionNode 3f924a2f-6a0d-424d-b169-ba89461b3a5a
+	$::UINodeData
+		$::DataContainer
+		Name Disable_GameInput
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	ActionKey -368863171
+	Params::array
+		member(0) False
+	ActionAsset *nullGuid*
+	In Instance16
+	DataInputs *nullArray*
+	Out Instance10
+	AppendIncomingParams False
+InstanceInputNode 07d95938-d2a4-420a-94bd-a2a974ed9739
+	$::UINodeData
+		$::DataContainer
+		Name Died
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	Out Instance8
+ActionNode b1e15a4d-89bc-41bd-bfeb-19e060ff1ec9
+	$::UINodeData
+		$::DataContainer
+		Name RestartCheckpoint
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	ActionKey -2117492232
+	Params *nullArray*
+	ActionAsset *nullGuid*
+	In Instance13
+	DataInputs *nullArray*
+	Out Instance15
+	AppendIncomingParams False
+InstanceInputNode 8bdd2859-8017-4752-bcd1-a9707cf36d88
+	$::UINodeData
+		$::DataContainer
+		Name Failed
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	Out Instance6
+InstanceInputNode 6977d572-860e-4ad6-805d-0af6df5cc4c6
+	$::UINodeData
+		$::DataContainer
+		Name HideAndRestart
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	Out Instance7
+ActionNode 2f4d9c97-71a8-457a-ab94-28b1aa21723c
+	$::UINodeData
+		$::DataContainer
+		Name Enable_GameInput
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	ActionKey -368863171
+	Params::array
+		member(0) True
+	ActionAsset *nullGuid*
+	In Instance5
+	DataInputs *nullArray*
+	Out Instance17
+	AppendIncomingParams False
+InstanceOutputNode 1e3332a7-bac1-4049-a761-79e2db01a8e0
+	$::UINodeData
+		$::DataContainer
+		Name Exit
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	In Instance11
+	Id 2088518501
+	DestroyGraph True
+ActionNode 594a8afa-ec53-4aeb-b2ca-328755733c2e
+	$::UINodeData
+		$::DataContainer
+		Name Disable_Gameinput
+		ParentGraph ff011f13-515e-f1cd-8386-0b48780a6790
+		IsRootNode False
+		ParentIsScreen False
+	ActionKey -368863171
+	Params::array
+		member(0) False
+	ActionAsset *nullGuid*
+	In Instance14
+	DataInputs *nullArray*
+	Out Instance18
+	AppendIncomingParams False
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode 8bdd2859-8017-4752-bcd1-a9707cf36d88
+	TargetNode 594a8afa-ec53-4aeb-b2ca-328755733c2e
+	SourcePort Instance6
+	TargetPort Instance14
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode 07d95938-d2a4-420a-94bd-a2a974ed9739
+	TargetNode 3f924a2f-6a0d-424d-b169-ba89461b3a5a
+	SourcePort Instance8
+	TargetPort Instance16
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 2f4d9c97-71a8-457a-ab94-28b1aa21723c
+	TargetNode b1e15a4d-89bc-41bd-bfeb-19e060ff1ec9
+	SourcePort Instance17
+	TargetPort Instance13
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode b1e15a4d-89bc-41bd-bfeb-19e060ff1ec9
+	TargetNode 1e3332a7-bac1-4049-a761-79e2db01a8e0
+	SourcePort Instance15
+	TargetPort Instance11
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode 6977d572-860e-4ad6-805d-0af6df5cc4c6
+	TargetNode 2f4d9c97-71a8-457a-ab94-28b1aa21723c
+	SourcePort Instance7
+	TargetPort Instance5
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name InstanceInputNode
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name InstanceInputNode
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

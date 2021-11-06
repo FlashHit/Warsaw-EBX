@@ -1,0 +1,134 @@
+UIScreenAsset d6b95f45-b107-4185-a824-b7fa68164c80
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/LoadDiscScreen
+			Nodes::array
+				member(0) 3de2b94b-82b0-4449-8813-1d0ae2c3c5ce
+				member(1) d801c906-80e3-40f5-8ad3-fc9edecbfe30
+				member(2) e2ef0c59-10e6-46a9-b822-dc6ab5d0d362
+				member(3) 56c0b299-3596-4875-8a76-c927bd10fc7b
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance0
+				member(1) Instance1
+			AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal True
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/LoadDiscScreen/48d3ae4f-7537-8acd-473a-f0d5b3ec7591
+	SwfPath UI/Assets/LoadDiscScreen
+	Purpose UIScreenPurpose_Standard
+InstanceInputNode d801c906-80e3-40f5-8ad3-fc9edecbfe30
+	$::UINodeData
+		$::DataContainer
+		Name SP Disc
+		ParentGraph d6b95f45-b107-4185-a824-b7fa68164c80
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance4
+ActionNode 3de2b94b-82b0-4449-8813-1d0ae2c3c5ce
+	$::UINodeData
+		$::DataContainer
+		Name Insert Disc 2
+		ParentGraph d6b95f45-b107-4185-a824-b7fa68164c80
+		IsRootNode False
+		ParentIsScreen True
+	ActionKey 424653229
+	Params::array
+		member(0) 2
+	ActionAsset *nullGuid*
+	In Instance6
+	DataInputs *nullArray*
+	Out Instance2
+	AppendIncomingParams False
+InstanceInputNode e2ef0c59-10e6-46a9-b822-dc6ab5d0d362
+	$::UINodeData
+		$::DataContainer
+		Name MP Disc
+		ParentGraph d6b95f45-b107-4185-a824-b7fa68164c80
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance7
+ActionNode 56c0b299-3596-4875-8a76-c927bd10fc7b
+	$::UINodeData
+		$::DataContainer
+		Name Insert Disc 1
+		ParentGraph d6b95f45-b107-4185-a824-b7fa68164c80
+		IsRootNode False
+		ParentIsScreen True
+	ActionKey 424653229
+	Params::array
+		member(0) 1
+	ActionAsset *nullGuid*
+	In Instance3
+	DataInputs *nullArray*
+	Out Instance5
+	AppendIncomingParams False
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode d801c906-80e3-40f5-8ad3-fc9edecbfe30
+	TargetNode 3de2b94b-82b0-4449-8813-1d0ae2c3c5ce
+	SourcePort Instance4
+	TargetPort Instance6
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode e2ef0c59-10e6-46a9-b822-dc6ab5d0d362
+	TargetNode 56c0b299-3596-4875-8a76-c927bd10fc7b
+	SourcePort Instance7
+	TargetPort Instance3
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance2
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance3
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

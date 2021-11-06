@@ -1,0 +1,250 @@
+UIScreenAsset 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Frontend/PromoScreenLayer
+			Nodes::array
+				member(0) df10c803-eee4-43bf-93af-b81f5f39af44
+				member(1) 74824fa3-b7bb-4145-bb00-f121ce8d2469
+				member(2) f8e0c100-ba8b-4f7a-b1cb-e21f8a186af0
+				member(3) ab909388-987d-4b4c-ac89-abaea1fbee0b
+				member(4) 1187fd1b-9d2a-4fda-a1fc-831f96cb471d
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+				member(1) Instance4
+				member(2) Instance5
+				member(3) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/PromoScreenLayer/e8a3f54f-9e36-9c0b-61cc-1df31816ffaa
+	SwfPath UI/Assets/PromoScreenLayer
+	Purpose UIScreenPurpose_Standard
+InstanceInputNode f8e0c100-ba8b-4f7a-b1cb-e21f8a186af0
+	$::UINodeData
+		$::DataContainer
+		Name HidePromo
+		ParentGraph 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance14
+InstanceOutputNode df10c803-eee4-43bf-93af-b81f5f39af44
+	$::UINodeData
+		$::DataContainer
+		Name Pressed
+		ParentGraph 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+		IsRootNode False
+		ParentIsScreen True
+	In Instance9
+	Id -831521501
+	DestroyGraph True
+ActionNode 1187fd1b-9d2a-4fda-a1fc-831f96cb471d
+	$::UINodeData
+		$::DataContainer
+		Name Promo shown
+		ParentGraph 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+		IsRootNode False
+		ParentIsScreen True
+	ActionKey -1428940696
+	Params::array
+		member(0) true
+	ActionAsset *nullGuid*
+	In Instance11
+	DataInputs *nullArray*
+	Out Instance6
+	AppendIncomingParams False
+ActionNode ab909388-987d-4b4c-ac89-abaea1fbee0b
+	$::UINodeData
+		$::DataContainer
+		Name Promo hidden
+		ParentGraph 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+		IsRootNode False
+		ParentIsScreen True
+	ActionKey -1428940696
+	Params::array
+		member(0) false
+	ActionAsset *nullGuid*
+	In Instance8
+	DataInputs *nullArray*
+	Out Instance10
+	AppendIncomingParams False
+WidgetNode 74824fa3-b7bb-4145-bb00-f121ce8d2469
+	$::UINodeData
+		$::DataContainer
+		Name Promo
+		ParentGraph 62f9f0b5-5528-40e9-30e6-f4d2ae8ea96a
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/Promo/835c18b4-eee9-3dc3-445c-e9af3ec2bc87
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName Promo_00
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance16
+		member(1) Instance17
+	Inputs::array
+		member(0) Instance15
+		member(1) Instance13
+	AlwaysInFocus False
+	IsDisabled False
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Loaded
+			DataCategory UI/UIComponents/FrontEndComp/4846b3a5-f117-f535-1392-e75875bbf734
+			DataKey 1560888713
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Loaded
+			DataCategory UI/UIComponents/FrontEndComp/4846b3a5-f117-f535-1392-e75875bbf734
+			DataKey 1560888713
+			UseDirectAccess False
+			UpdateOnInitialize True
+		member(1)::UIDataSourceInfo
+			DataName Timeout
+			DataCategory UI/UIComponents/FrontEndComp/4846b3a5-f117-f535-1392-e75875bbf734
+			DataKey 524978354
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 74824fa3-b7bb-4145-bb00-f121ce8d2469
+	TargetNode df10c803-eee4-43bf-93af-b81f5f39af44
+	SourcePort Instance16
+	TargetPort Instance9
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode 74824fa3-b7bb-4145-bb00-f121ce8d2469
+	TargetNode 1187fd1b-9d2a-4fda-a1fc-831f96cb471d
+	SourcePort Instance17
+	TargetPort Instance11
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode f8e0c100-ba8b-4f7a-b1cb-e21f8a186af0
+	TargetNode ab909388-987d-4b4c-ac89-abaea1fbee0b
+	SourcePort Instance14
+	TargetPort Instance8
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode ab909388-987d-4b4c-ac89-abaea1fbee0b
+	TargetNode 74824fa3-b7bb-4145-bb00-f121ce8d2469
+	SourcePort Instance10
+	TargetPort Instance13
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name Pressed
+	InstanceName Promo_00
+	Query UIWidgetEventID_OnItemPressed
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name Hide
+	InstanceName Promo_00
+	Query UIWidgetEventID_Hide
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name Show
+	InstanceName Promo_00
+	Query UIWidgetEventID_Show
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name Pressed
+	InstanceName Promo_00
+	Query UIWidgetEventID_OnItemSelected
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name OnShow
+	InstanceName Promo_00
+	Query UIWidgetEventID_OnShow
+	AllowManualRemove False
+	IsReferencePort False

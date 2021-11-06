@@ -1,0 +1,268 @@
+UIScreenAsset ddfd53a0-e898-ffd9-a230-6d109cd38a87
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Frontend/PremiumWaitForDataScreen
+			Nodes::array
+				member(0) 2bccf111-0b3b-4e47-b7b1-f2fb0d43a4c7
+				member(1) 0045c3cf-2741-459f-9037-ff832a4a9c6a
+				member(2) 1f7ad7c0-d3fa-4b32-ad3a-e250b7a2a292
+				member(3) 55fb6a57-2532-4313-87c6-9c07fd7fa269
+				member(4) 74bb36c4-68dc-45fd-86e3-38a784f2d79d
+				member(5) 1956d19b-5c33-4cc6-aad6-99c31f6d18bf
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+				member(1) Instance4
+				member(2) Instance5
+				member(3) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/PremiumWaitForDataScreen/c40aa47f-8dc2-9466-b909-83584aa76889
+	SwfPath UI/Assets/PremiumWaitForDataScreen
+	Purpose UIScreenPurpose_Standard
+WidgetNode 2bccf111-0b3b-4e47-b7b1-f2fb0d43a4c7
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName ChangeListener_00
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance17
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode 55fb6a57-2532-4313-87c6-9c07fd7fa269
+	$::UINodeData
+		$::DataContainer
+		Name ChangeListener
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName ChangeListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance6
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode 1956d19b-5c33-4cc6-aad6-99c31f6d18bf
+	$::UINodeData
+		$::DataContainer
+		Name TooYoung
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	In Instance9
+	Id -1929042405
+	DestroyGraph True
+BinaryLogicNode 1f7ad7c0-d3fa-4b32-ad3a-e250b7a2a292
+	$::UINodeData
+		$::DataContainer
+		Name BinaryLogicNode
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	In Instance12
+	True Instance7
+	False Instance13
+	DataSourceInfo::UISimpleDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+ComparisonLogicNode 74bb36c4-68dc-45fd-86e3-38a784f2d79d
+	$::UINodeData
+		$::DataContainer
+		Name TooYoung?
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	In Instance8
+	Outputs::array
+		member(0) Instance18
+	DataSourceInfo::UISimpleDataSource
+		DataCategory UI/UIComponents/UIPremiumComp/79e77db1-39e2-af96-4bb3-ed6f23be5439
+		DataKey 1121080044
+	SkipFractionals False
+InstanceOutputNode 0045c3cf-2741-459f-9037-ff832a4a9c6a
+	$::UINodeData
+		$::DataContainer
+		Name DataRetrieved
+		ParentGraph ddfd53a0-e898-ffd9-a230-6d109cd38a87
+		IsRootNode False
+		ParentIsScreen True
+	In Instance16
+	Id -844882241
+	DestroyGraph True
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIPremiumComp/79e77db1-39e2-af96-4bb3-ed6f23be5439
+			DataKey 1121080044
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIPremiumComp/79e77db1-39e2-af96-4bb3-ed6f23be5439
+			DataKey -343466331
+			UseDirectAccess False
+			UpdateOnInitialize False
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 2bccf111-0b3b-4e47-b7b1-f2fb0d43a4c7
+	TargetNode 1f7ad7c0-d3fa-4b32-ad3a-e250b7a2a292
+	SourcePort Instance17
+	TargetPort Instance12
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode 1f7ad7c0-d3fa-4b32-ad3a-e250b7a2a292
+	TargetNode 0045c3cf-2741-459f-9037-ff832a4a9c6a
+	SourcePort Instance7
+	TargetPort Instance16
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode 55fb6a57-2532-4313-87c6-9c07fd7fa269
+	TargetNode 74bb36c4-68dc-45fd-86e3-38a784f2d79d
+	SourcePort Instance6
+	TargetPort Instance8
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode 74bb36c4-68dc-45fd-86e3-38a784f2d79d
+	TargetNode 1956d19b-5c33-4cc6-aad6-99c31f6d18bf
+	SourcePort Instance18
+	TargetPort Instance9
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance6
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_00
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name TooYoung
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False

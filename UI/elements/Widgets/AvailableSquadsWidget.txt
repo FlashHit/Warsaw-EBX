@@ -1,0 +1,1718 @@
+UIWidgetBlueprint 0e9e343c-d39f-38ab-5dae-22a6357958fe
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name UI/elements/Widgets/AvailableSquadsWidget
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 0
+				EventConnections *nullArray*
+		Object b99a9c24-f34f-442a-bb57-7957493f8c3e
+UIAvailableSquadsWidgetData b99a9c24-f34f-442a-bb57-7957493f8c3e
+	$::BFUIWidgetEntityData
+		$::UIWidgetEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 194681892
+			Size::UIElementSize
+				X 1280.0
+				Y 500.0
+			Layers::array
+				member(0) Instance31
+				member(1) Instance32
+				member(2) Instance29
+				member(3) Instance30
+				member(4) Instance33
+			TextureMappings::array
+				member(0) UI/CppScreens/textures/KitIconTextures/65b8abe5-a517-5b54-5905-3f37f7c25291
+				member(1) UI/CppScreens/textures/ScoreboardIcons/ab659d85-8b03-30a5-6dff-fc76a82d1662
+			Components *nullArray*
+			VisibilityDataSource::UICompareDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+				SchematicsProperty *nullString*
+				CompareValue *nullString*
+			InputEvents::array
+				member(0) createSquad
+				member(1) joinSquad
+				member(2) leaveSquad
+				member(3) switchTeam
+				member(4) toggleVoip
+				member(5) toggleSquadPrivacy
+				member(6) inviteToSquad
+				member(7) showGamerCard
+				member(8) kickPlayer
+				member(9) abortFriendJoin
+			Visible True
+	RowHeight 30
+	Font UI/elements/FontStyles/TeamListLetter/a1fcd5a4-cece-4f1c-8723-5b41844739b5
+	SelectedSquadDisabledColor::UIElementColor
+		Rgb::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		Alpha 0.30000001192092896
+		PropertyName *nullString*
+	FontLocalSquad UI/elements/FontStyles/ColorizationPuristaEAMedium_16px/6c7df1aa-35d5-42cf-aecf-7f39d2e18646
+	SelectedRowFontLocalSquad UI/elements/FontStyles/TeamListLetterSelected/dfeb5e52-c803-4eeb-8020-8c3768810228
+	SelectedRowFontNoFocusLocalSquad UI/elements/FontStyles/TeamListLetterSelectedNoFocus/e939decf-7084-44c3-94f4-9cf1089e249e
+	TableStyle UI/elements/ElementSettings/TableStyleSquads/95caae0e-0f85-498e-a861-f50f8743705a
+	CellSpacing 1
+	KillsCellWidth 32
+	DeathsCellWidth 32
+	ScoreCellWidth 64
+	SelectedRowFill UI/elements/ElementSettings/SelectedPlayerRowFillData/f3f0962f-4b66-4138-bfe5-a37ce7da5d24
+	SelectedRowFont UI/elements/FontStyles/TeamListLetterSelected/dfeb5e52-c803-4eeb-8020-8c3768810228
+	SelectedRowFillNoFocus UI/elements/ElementSettings/SelectedPlayerRowNoFocusFillData/4a1f5753-93c6-4b9a-ae32-000c815cee2c
+	SelectedRowFontNoFocus UI/elements/FontStyles/TeamListLetterSelectedNoFocus/e939decf-7084-44c3-94f4-9cf1089e249e
+	ScrollbarWidth 10
+	ScrollbarMargin 5
+	ListBackgroundFill UI/elements/ElementSettings/TeamSetup/ListBackgroundFill/d7daa3cd-8959-0217-d130-035126aa64fc
+	SquadPlayersIconWidth 26.0
+UIElementTextFieldEntityData Instance0
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SquadsHeader
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 3390631579
+		Size::UIElementSize
+			X 260.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 285.0
+			Y 94.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/TeamSetup/HeaderBackgroundStyle/2bcc475f-8a59-bcb7-a729-932fb9cb0f5a
+	Text::UIElementText
+		Sid ID_M_TEAMSETUP_SQUADSHEADER
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Left
+		Multiline False
+		Wordwrap False
+	FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+	TextOffset 5.0
+	AutoAdjustLeftPadding 5.0
+	AutoAdjustRightPadding 5.0
+	AutoScrollSettings *nullGuid*
+	AutoAdjustWidth False
+	UseAutoScroll False
+BFUIElementColorizedTextFieldEntityData Instance1
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName SelectedSquadName
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 1704093049
+			Size::UIElementSize
+				X 450.0
+				Y 30.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.5034286975860596
+				Y 0.19955357909202576
+			Position::UIElementOffset
+				X 578.0
+				Y 98.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style UI/elements/ElementSettings/TeamSetup/HeaderBackgroundStyle/2bcc475f-8a59-bcb7-a729-932fb9cb0f5a
+		Text::UIElementText
+			Sid *nullString*
+			Entries *nullArray*
+			VerticalAlignment UIElementAlignment_Left
+			HorizonalAlignment UIElementAlignment_Left
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 10.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Squad
+		SpectatorIconState UIIconState_Default
+BFUIElementColorizedTextFieldEntityData Instance2
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName TeamHeader
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 4106129639
+			Size::UIElementSize
+				X 100.0
+				Y 30.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.545361340045929
+				Y 0.027084050700068474
+			Position::UIElementOffset
+				X 92.0
+				Y 93.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible False
+		Style UI/elements/ElementSettings/TeamSetup/HeaderBackgroundStyle/2bcc475f-8a59-bcb7-a729-932fb9cb0f5a
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_DataKey
+					Text *nullString*
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory UI/UIComponents/UITeamComp/a7ac31dc-5be9-b203-ea48-fde1a3ee94fc
+						DataKey 93402129
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Left
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 5.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Friendly
+		SpectatorIconState UIIconState_Default
+BFUIElementColorizedTextFieldEntityData Instance3
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName Kills
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 185945908
+			Size::UIElementSize
+				X 32.0
+				Y 30.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.8442471027374268
+				Y 0.20013509690761566
+			Position::UIElementOffset
+				X 889.0
+				Y 94.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style *nullGuid*
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_Passthrough
+					Text ID_H_SCOREBOARD_KILLS
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory *nullGuid*
+						DataKey 0
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Center
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Default
+		SpectatorIconState UIIconState_Default
+BFUIElementColorizedTextFieldEntityData Instance4
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName Deaths
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 1121163626
+			Size::UIElementSize
+				X 32.0
+				Y 30.0
+			LayoutMode UILayoutMode_AnchorOffset
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.743475615978241
+				Y 0.20013508200645447
+			Position::UIElementOffset
+				X 0.0
+				Y 0.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style *nullGuid*
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_Passthrough
+					Text ID_H_SCOREBOARD_DEATH
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory *nullGuid*
+						DataKey 0
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Center
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Default
+		SpectatorIconState UIIconState_Default
+BFUIElementColorizedTextFieldEntityData Instance5
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName AutoBalance
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 1169333164
+			Size::UIElementSize
+				X 450.0
+				Y 30.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.929675281047821
+				Y 0.11425488442182541
+			Position::UIElementOffset
+				X 573.0
+				Y 64.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style *nullGuid*
+		Text::UIElementText
+			Sid *nullString*
+			Entries *nullArray*
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Left
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_ElementColor
+		IconState UIIconState_Default
+		SpectatorIconState UIIconState_Default
+BFUIElementColorizedTextFieldEntityData Instance6
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName Score
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 195786797
+			Size::UIElementSize
+				X 64.0
+				Y 30.0
+			LayoutMode UILayoutMode_AnchorOffset
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.788501501083374
+				Y 0.20013508200645447
+			Position::UIElementOffset
+				X 0.0
+				Y 0.0
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style *nullGuid*
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_Passthrough
+					Text ID_H_SCOREBOARD_SCORE
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory *nullGuid*
+						DataKey 0
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Center
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ColorizationPuristaEASBOLD_16px/618f20bd-94eb-4952-890c-039851e3b16b
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Default
+		SpectatorIconState UIIconState_Default
+UIElementButtonEntityData Instance7
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SwitchTeam
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 882861578
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 96.0
+			Y 178.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_SWITCH_TEAM
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance28
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance8
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName PrivacyOn
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 1358420226
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 899.0
+			Y 289.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_SET_PRIVATE
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance26
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance9
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName AbortFriendJoin
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 1680096671
+		Size::UIElementSize
+			X 185.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 96.0
+			Y 469.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_NPX_ACTION_STOPAUTOBALANCE
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance27
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll True
+	Enabled True
+UIElementButtonEntityData Instance10
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName CreateSquadPc
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 849688896
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 420.0
+			Y 391.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_CREATE_SQUAD
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance24
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance11
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SwitchSquad
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 3364134821
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 96.0
+			Y 178.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_SWITCH_SQUAD
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance25
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance12
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName JoinSquad
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2358485173
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 285.0
+			Y 391.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_JOIN_SQUAD
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance22
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance13
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName KickPlayer
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 1830715164
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 573.0
+			Y 289.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_KICK_PLAYER
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance21
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance14
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName LeaveSquad
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 3269688396
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 285.0
+			Y 391.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_LEAVE_SQUAD
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance20
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementButtonEntityData Instance15
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName PrivacyOff
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 1878194732
+		Size::UIElementSize
+			X 125.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 899.0
+			Y 289.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/DeployPCButtonStyle/08c23b88-e1bb-4bad-ae34-fe385b468fa1
+	Text::UIElementText
+		Sid ID_ACTION_SET_PUBLIC
+		Entries *nullArray*
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	Action Instance23
+	ActionGotFocus *nullGuid*
+	ActionLostFocus *nullGuid*
+	KeyboardShortcut UIInputAction_None
+	EnabledProperty *nullString*
+	UseAutoScroll False
+	Enabled True
+UIElementDummyEntityData Instance16
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SquadList
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 0.699999988079071
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 3387715893
+		Size::UIElementSize
+			X 260.0
+			Y 256.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 285.0
+			Y 125.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround True
+UIElementDummyEntityData Instance17
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SelectedSquadList
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 0.699999988079071
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 1704033276
+		Size::UIElementSize
+			X 450.0
+			Y 154.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 573.0
+			Y 125.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround True
+UIElementFillEntityData Instance18
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName SquadPlate
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 102171163
+		Size::UIElementSize
+			X 450.0
+			Y 30.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.5034286975860596
+			Y 0.19955357909202576
+		Position::UIElementOffset
+			X 573.0
+			Y 94.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/TeamSetup/HeaderBackgroundFill/612c19aa-9898-4336-1321-84d25ef400c7
+	DrawBackground True
+	DrawOutline False
+UIElementWidgetReferenceEntityData Instance19
+	$::LogicReferenceObjectData
+		$::ReferenceObjectData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+			Blueprint UI/elements/Widgets/PlayerInfoWidgetTeam/7256deaa-5f8c-4a90-87eb-a9266096ac2e
+			BlueprintTransform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			ObjectVariation *nullGuid*
+			StreamRealm StreamRealm_None
+			RadiosityTypeOverride RadiosityTypeOverride_None
+			CastSunShadowEnable False
+			CastReflectionEnable False
+			Excluded False
+		SubRealm SubRealm_All
+	UIElementTransform::UIElementTransform
+		Rotation::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationPivot::Vec3
+			x 0.5
+			y 0.5
+			z 0.0
+		Z 0.0
+		PropertyName *nullString*
+	Color::UIElementColor
+		Rgb::Vec3
+			x 1.0
+			y 1.0
+			z 1.0
+		Alpha 1.0
+		PropertyName DeployHudAlpha
+	PositionOffset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	RotationOffset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InstanceName PlayerInfo
+	InstanceNameHash 3980537592
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	Size::UIElementSize
+		X 256.0
+		Y 256.0
+	LayoutMode UILayoutMode_PositionExpansion
+	Offset::UIElementOffset
+		X 0.0
+		Y 0.0
+	Anchor::UIElementAnchor
+		X 0.0751953125
+		Y 0.41810348629951477
+	Position::UIElementOffset
+		X 90.0
+		Y 91.0
+	Expansion::UIElementRectExpansion
+		X 0.0751953125
+		Y 0.41810348629951477
+		Width 0.0
+		Height 0.0
+	CodeAccessIdentifier *nullString*
+	UseElementSize False
+UIElementEvent Instance20
+	$::UIElementTrigger
+		$::DataContainer
+	Event leaveSquad
+UIElementEvent Instance21
+	$::UIElementTrigger
+		$::DataContainer
+	Event kickPlayer
+UIElementEvent Instance22
+	$::UIElementTrigger
+		$::DataContainer
+	Event joinSquad
+UIElementEvent Instance23
+	$::UIElementTrigger
+		$::DataContainer
+	Event toggleSquadPrivacy
+UIElementEvent Instance24
+	$::UIElementTrigger
+		$::DataContainer
+	Event createSquad
+UIElementEvent Instance25
+	$::UIElementTrigger
+		$::DataContainer
+	Event switchTeam
+UIElementEvent Instance26
+	$::UIElementTrigger
+		$::DataContainer
+	Event toggleSquadPrivacy
+UIElementEvent Instance27
+	$::UIElementTrigger
+		$::DataContainer
+	Event abortFriendJoin
+UIElementEvent Instance28
+	$::UIElementTrigger
+		$::DataContainer
+	Event switchTeam
+UIElementLayerEntityData Instance29
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName PC Layout
+	Elements::array
+		member(0) Instance10
+		member(1) Instance14
+		member(2) Instance12
+		member(3) Instance8
+		member(4) Instance15
+		member(5) Instance13
+		member(6) Instance9
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer False
+		IsPs3Layer False
+		IsGen4aLayer False
+		IsGen4bLayer False
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance30
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName PC SDM
+	Elements::array
+		member(0) Instance11
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer False
+		IsPs3Layer False
+		IsGen4aLayer False
+		IsGen4bLayer False
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance31
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName Common Layout
+	Elements::array
+		member(0) Instance16
+		member(1) Instance17
+		member(2) Instance0
+		member(3) Instance2
+		member(4) Instance18
+		member(5) Instance1
+		member(6) Instance6
+		member(7) Instance4
+		member(8) Instance3
+		member(9) Instance5
+		member(10) Instance19
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance32
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName Console Layout
+	Elements *nullArray*
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer False
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance33
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName PC Default
+	Elements::array
+		member(0) Instance7
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer False
+		IsPs3Layer False
+		IsGen4aLayer False
+		IsGen4bLayer False
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True

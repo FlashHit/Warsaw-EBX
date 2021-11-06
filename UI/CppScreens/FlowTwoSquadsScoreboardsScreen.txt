@@ -1,0 +1,138 @@
+UIFlowCppScreenData b566af35-9d6e-4226-9e63-45701363de5d
+	$::UIViewAsset
+		$::UIViewBaseAsset
+			$::UIGraphAsset
+				$::Asset
+					$::DataContainer
+					Name UI/CppScreens/FlowTwoSquadsScoreboardsScreen
+				Nodes::array
+					member(0) dadeafc0-3ff8-4add-bcc0-21be74c01975
+					member(1) 0de9f1d8-c2f0-4403-a5ef-df9d80141b60
+					member(2) 03d39936-a915-4f9d-84bc-816a79086b9c
+					member(3) a2ae3237-d548-4202-a9c9-62715d065fd5
+				GlobalNode *nullGuid*
+				Connections::array
+					member(0) Instance0
+					member(1) Instance1
+				AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+				BundleAssetName *nullString*
+				EventList *nullArray*
+				ProtectScreens False
+				Modal False
+				IsWin32UIGraphAsset True
+				IsXenonUIGraphAsset True
+				IsPs3UIGraphAsset True
+				IsGen4aUIGraphAsset True
+				IsGen4bUIGraphAsset True
+	RenderPass UIScreenRenderingPass_AboveFlash
+	ScreenData UI/CppScreens/Generic/FlashCompatibleScreen/fe569980-057c-ad02-d421-d7ac7b140288
+	RootWidget UI/CppScreens/TwoSquadsScoreboardsScreenRoot/f2ffb50e-cbf5-4b55-82e3-4da0497fb50f
+	RenderTarget False
+DataSetNode 03d39936-a915-4f9d-84bc-816a79086b9c
+	$::UINodeData
+		$::DataContainer
+		Name SetFocused
+		ParentGraph b566af35-9d6e-4226-9e63-45701363de5d
+		IsRootNode False
+		ParentIsScreen True
+	In Instance2
+	Out Instance7
+	Param True
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+DataSetNode a2ae3237-d548-4202-a9c9-62715d065fd5
+	$::UINodeData
+		$::DataContainer
+		Name SetUnfocused
+		ParentGraph b566af35-9d6e-4226-9e63-45701363de5d
+		IsRootNode False
+		ParentIsScreen True
+	In Instance5
+	Out Instance4
+	Param False
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+InstanceInputNode dadeafc0-3ff8-4add-bcc0-21be74c01975
+	$::UINodeData
+		$::DataContainer
+		Name EnterFocused
+		ParentGraph b566af35-9d6e-4226-9e63-45701363de5d
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance3
+InstanceInputNode 0de9f1d8-c2f0-4403-a5ef-df9d80141b60
+	$::UINodeData
+		$::DataContainer
+		Name EnterUnfocused
+		ParentGraph b566af35-9d6e-4226-9e63-45701363de5d
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance6
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode 0de9f1d8-c2f0-4403-a5ef-df9d80141b60
+	TargetNode a2ae3237-d548-4202-a9c9-62715d065fd5
+	SourcePort Instance6
+	TargetPort Instance5
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode dadeafc0-3ff8-4add-bcc0-21be74c01975
+	TargetNode 03d39936-a915-4f9d-84bc-816a79086b9c
+	SourcePort Instance3
+	TargetPort Instance2
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance2
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance3
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

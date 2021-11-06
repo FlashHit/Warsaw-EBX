@@ -1,0 +1,126 @@
+UIScreenAsset 95069e48-0093-e3b6-a9a5-07d83aeec466
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Popups/PopupDisc2Install
+			Nodes::array
+				member(0) 89f52ebd-bc1b-4036-8e01-6e8d459f0e1a
+				member(1) b901c4c8-4028-4f0a-8073-df202f85ca95
+				member(2) fde89760-6617-4627-bc47-6251834d87fd
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance2
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/PopupDisc2Install/c97d38ba-ddf5-2717-f8b4-b2f941344e94
+	SwfPath UI/Assets/PopupDisc2Install
+	Purpose UIScreenPurpose_Standard
+InstanceOutputNode fde89760-6617-4627-bc47-6251834d87fd
+	$::UINodeData
+		$::DataContainer
+		Name PopupButtonReleased
+		ParentGraph 95069e48-0093-e3b6-a9a5-07d83aeec466
+		IsRootNode False
+		ParentIsScreen True
+	In Instance4
+	Id 1352178388
+	DestroyGraph True
+WidgetNode 89f52ebd-bc1b-4036-8e01-6e8d459f0e1a
+	$::UINodeData
+		$::DataContainer
+		Name PopupGenericWidget
+		ParentGraph 95069e48-0093-e3b6-a9a5-07d83aeec466
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/PopupGenericWidget/9184822e-7681-4e63-ac89-a7406d549b32
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName PopupGenericWidget_01
+	WidgetProperties *nullArray*
+	Outputs *nullArray*
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+WidgetNode b901c4c8-4028-4f0a-8073-df202f85ca95
+	$::UINodeData
+		$::DataContainer
+		Name PopupButtonsManager
+		ParentGraph 95069e48-0093-e3b6-a9a5-07d83aeec466
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/PopupButtonsManager/7ea7eb85-04e6-e2d6-93eb-6f89c0e20bb9
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName PopupButtonsManager_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance3
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Title
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey -1951480908
+			UseDirectAccess False
+			UpdateOnInitialize True
+		member(1)::UIDataSourceInfo
+			DataName Text
+			DataCategory UI/UIComponents/UIInstallHDContentComp/2c161716-af2d-6bb4-e726-02b879e497f0
+			DataKey -1947303584
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Buttons
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey -1192680079
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode b901c4c8-4028-4f0a-8073-df202f85ca95
+	TargetNode fde89760-6617-4627-bc47-6251834d87fd
+	SourcePort Instance3
+	TargetPort Instance4
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance3
+	$::DataContainer
+	Name ButtonReleased
+	InstanceName PopupButtonsManager_01
+	Query UIWidgetEventID_OnItemReleased
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

@@ -1,0 +1,317 @@
+UIScreenAsset 3d603bb8-ac26-0c24-9444-f7bc673e044a
+	$::UIViewBaseAsset
+		$::UIGraphAsset
+			$::Asset
+				$::DataContainer
+				Name UI/Flow/Screen/Popups/PopupDisc2Installing
+			Nodes::array
+				member(0) ac566b19-80c2-4381-b837-a8a8af4f4786
+				member(1) 6de843bc-88b5-4e61-bc99-3b842fe3b44f
+				member(2) d47c8070-2141-4006-a06b-96f254d23519
+				member(3) dadb8194-c49d-45c8-8cbf-7658992bf2a1
+				member(4) 5d8b379c-ae35-4757-8f72-ad5e590c4b03
+				member(5) 9a542114-71b9-4c29-8867-5dcc5a6246b2
+				member(6) 1d8ebe4e-e0f6-47c1-b328-6116ae95e32c
+			GlobalNode *nullGuid*
+			Connections::array
+				member(0) Instance5
+				member(1) Instance2
+				member(2) Instance4
+				member(3) Instance3
+			AudioEventMappings UI/Flow/Graph/AudioMapping/FlashScreenAudioMapping/486ca1e9-2ebc-4bc8-8209-57b2691a28d2
+			BundleAssetName *nullString*
+			EventList *nullArray*
+			ProtectScreens False
+			Modal False
+			IsWin32UIGraphAsset True
+			IsXenonUIGraphAsset True
+			IsPs3UIGraphAsset True
+			IsGen4aUIGraphAsset True
+			IsGen4bUIGraphAsset True
+	UIAsset UI/Assets/PopupDisc2Installing/3552aebc-09a7-d215-afe7-07040bf2d8f3
+	SwfPath UI/Assets/PopupDisc2Installing
+	Purpose UIScreenPurpose_Standard
+WidgetNode 9a542114-71b9-4c29-8867-5dcc5a6246b2
+	$::UINodeData
+		$::DataContainer
+		Name IsInstallationComplete
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/ChangeListener/7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance1
+	InstanceName ChangeListener_01
+	WidgetProperties *nullArray*
+	Outputs::array
+		member(0) Instance20
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+InstanceOutputNode ac566b19-80c2-4381-b837-a8a8af4f4786
+	$::UINodeData
+		$::DataContainer
+		Name Success
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	In Instance17
+	Id 2134798598
+	DestroyGraph True
+ComparisonLogicNode 1d8ebe4e-e0f6-47c1-b328-6116ae95e32c
+	$::UINodeData
+		$::DataContainer
+		Name ComparisonLogicNode
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	In Instance21
+	Outputs::array
+		member(0) Instance14
+		member(1) Instance10
+	DataSourceInfo::UISimpleDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+	SkipFractionals False
+WidgetNode d47c8070-2141-4006-a06b-96f254d23519
+	$::UINodeData
+		$::DataContainer
+		Name PopupGenericWidget
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	WidgetAsset UI/Assets/PopupGenericWidget/9184822e-7681-4e63-ac89-a7406d549b32
+	FocusIndex 0
+	VerticalAlign WVA_Center
+	HorisontalAlign WHA_Center
+	ZDepthLevel 0
+	DataBinding Instance0
+	InstanceName PopupGenericWidget_01
+	WidgetProperties *nullArray*
+	Outputs *nullArray*
+	Inputs *nullArray*
+	AlwaysInFocus False
+	IsDisabled False
+InstanceInputNode dadb8194-c49d-45c8-8cbf-7658992bf2a1
+	$::UINodeData
+		$::DataContainer
+		Name BeginInstallation
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode True
+		ParentIsScreen True
+	Out Instance18
+ActionNode 5d8b379c-ae35-4757-8f72-ad5e590c4b03
+	$::UINodeData
+		$::DataContainer
+		Name StartHDInstallation
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	ActionKey 1446648469
+	Params *nullArray*
+	ActionAsset *nullGuid*
+	In Instance16
+	DataInputs *nullArray*
+	Out Instance13
+	AppendIncomingParams False
+InstanceOutputNode 6de843bc-88b5-4e61-bc99-3b842fe3b44f
+	$::UINodeData
+		$::DataContainer
+		Name Fail
+		ParentGraph 3d603bb8-ac26-0c24-9444-f7bc673e044a
+		IsRootNode False
+		ParentIsScreen True
+	In Instance7
+	Id 2088662791
+	DestroyGraph True
+UIDynamicDataBinding Instance0
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Title
+			DataCategory UI/UIComponents/UIPopupComp/379c636d-a987-7477-11d0-458076f632d4
+			DataKey -1951480908
+			UseDirectAccess False
+			UpdateOnInitialize True
+		member(1)::UIDataSourceInfo
+			DataName Text
+			DataCategory UI/UIComponents/UIInstallHDContentComp/2c161716-af2d-6bb4-e726-02b879e497f0
+			DataKey -1710169312
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UIDynamicDataBinding Instance1
+	$::UIDataBinding
+		$::DataContainer
+	Bindings::array
+		member(0)::UIDataSourceInfo
+			DataName Key
+			DataCategory UI/UIComponents/UIInstallHDContentComp/2c161716-af2d-6bb4-e726-02b879e497f0
+			DataKey 795579506
+			UseDirectAccess False
+			UpdateOnInitialize True
+	Refresh True
+UINodeConnection Instance2
+	$::DataContainer
+	SourceNode 9a542114-71b9-4c29-8867-5dcc5a6246b2
+	TargetNode 1d8ebe4e-e0f6-47c1-b328-6116ae95e32c
+	SourcePort Instance20
+	TargetPort Instance21
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance3
+	$::DataContainer
+	SourceNode 1d8ebe4e-e0f6-47c1-b328-6116ae95e32c
+	TargetNode 6de843bc-88b5-4e61-bc99-3b842fe3b44f
+	SourcePort Instance10
+	TargetPort Instance7
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance4
+	$::DataContainer
+	SourceNode 1d8ebe4e-e0f6-47c1-b328-6116ae95e32c
+	TargetNode ac566b19-80c2-4381-b837-a8a8af4f4786
+	SourcePort Instance14
+	TargetPort Instance17
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance5
+	$::DataContainer
+	SourceNode dadb8194-c49d-45c8-8cbf-7658992bf2a1
+	TargetNode 5d8b379c-ae35-4757-8f72-ad5e590c4b03
+	SourcePort Instance18
+	TargetPort Instance16
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance8
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance9
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance10
+	$::DataContainer
+	Name FAILED
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance11
+	$::DataContainer
+	Name False
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance12
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance13
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance14
+	$::DataContainer
+	Name SUCCESS
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove True
+	IsReferencePort False
+UINodePort Instance15
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance16
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance17
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance18
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance19
+	$::DataContainer
+	Name True
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance20
+	$::DataContainer
+	Name KeyChanged
+	InstanceName ChangeListener_01
+	Query UIWidgetEventID_OnChanged
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance21
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UIWidgetPathBinding Instance22
+	$::UIDataBinding
+		$::DataContainer
+	WidgetPathQuery::UISimpleDataSource
+		DataCategory UI/UIComponents/UIInstallHDContentComp/2c161716-af2d-6bb4-e726-02b879e497f0
+		DataKey -1527823155
+	Visibility::UIDataSourceInfo
+		DataName *nullString*
+		DataCategory *nullGuid*
+		DataKey 0
+		UseDirectAccess False
+		UpdateOnInitialize True

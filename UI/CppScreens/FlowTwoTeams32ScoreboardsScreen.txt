@@ -1,0 +1,138 @@
+UIFlowCppScreenData f03eb837-cdad-8a58-b38f-0144402ff376
+	$::UIViewAsset
+		$::UIViewBaseAsset
+			$::UIGraphAsset
+				$::Asset
+					$::DataContainer
+					Name UI/CppScreens/FlowTwoTeams32ScoreboardsScreen
+				Nodes::array
+					member(0) ebb25919-3a84-4de9-8856-9c87bb5b47e0
+					member(1) 3f31f7bd-fb4e-4c08-9970-51d9bf1011d3
+					member(2) b787799c-b86f-4008-979d-efc5152cb491
+					member(3) 572d95ed-3959-4a92-83f5-4a765ee59614
+				GlobalNode *nullGuid*
+				Connections::array
+					member(0) Instance1
+					member(1) Instance0
+				AudioEventMappings UI/Flow/Graph/AudioMapping/DefaultUIGraphAudioMapping/41b4640b-1973-8469-a254-b1b23e4e6a04
+				BundleAssetName *nullString*
+				EventList *nullArray*
+				ProtectScreens False
+				Modal False
+				IsWin32UIGraphAsset True
+				IsXenonUIGraphAsset True
+				IsPs3UIGraphAsset True
+				IsGen4aUIGraphAsset True
+				IsGen4bUIGraphAsset True
+	RenderPass UIScreenRenderingPass_AboveFlash
+	ScreenData UI/CppScreens/Generic/FlashCompatibleScreen/fe569980-057c-ad02-d421-d7ac7b140288
+	RootWidget UI/CppScreens/TwoTeams32ScoreboardsScreenRoot/74f740e0-acf8-4961-b230-f3d6606f88e5
+	RenderTarget False
+InstanceInputNode ebb25919-3a84-4de9-8856-9c87bb5b47e0
+	$::UINodeData
+		$::DataContainer
+		Name EnterFocused
+		ParentGraph f03eb837-cdad-8a58-b38f-0144402ff376
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance3
+DataSetNode b787799c-b86f-4008-979d-efc5152cb491
+	$::UINodeData
+		$::DataContainer
+		Name SetFocused
+		ParentGraph f03eb837-cdad-8a58-b38f-0144402ff376
+		IsRootNode False
+		ParentIsScreen True
+	In Instance6
+	Out Instance4
+	Param True
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+InstanceInputNode 3f31f7bd-fb4e-4c08-9970-51d9bf1011d3
+	$::UINodeData
+		$::DataContainer
+		Name EnterUnfocused
+		ParentGraph f03eb837-cdad-8a58-b38f-0144402ff376
+		IsRootNode False
+		ParentIsScreen True
+	Out Instance5
+DataSetNode 572d95ed-3959-4a92-83f5-4a765ee59614
+	$::UINodeData
+		$::DataContainer
+		Name SetUnfocused
+		ParentGraph f03eb837-cdad-8a58-b38f-0144402ff376
+		IsRootNode False
+		ParentIsScreen True
+	In Instance2
+	Out Instance7
+	Param False
+	ParamType DSPT_Default
+	DataSource::UISimpleDataSource
+		DataCategory UI/UIComponents/UIScoreboardComp/9a2cc1b0-fa7d-2dab-45b3-84484b65c406
+		DataKey 1346905968
+	SetToEmptyString False
+	ForceUpdate False
+UINodeConnection Instance0
+	$::DataContainer
+	SourceNode 3f31f7bd-fb4e-4c08-9970-51d9bf1011d3
+	TargetNode 572d95ed-3959-4a92-83f5-4a765ee59614
+	SourcePort Instance5
+	TargetPort Instance2
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodeConnection Instance1
+	$::DataContainer
+	SourceNode ebb25919-3a84-4de9-8856-9c87bb5b47e0
+	TargetNode b787799c-b86f-4008-979d-efc5152cb491
+	SourcePort Instance3
+	TargetPort Instance6
+	SourcePortName *nullString*
+	TargetPortName *nullString*
+	NumScreensToPop 0
+UINodePort Instance2
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance3
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance4
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance5
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance6
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False
+UINodePort Instance7
+	$::DataContainer
+	Name *nullString*
+	InstanceName *nullString*
+	Query UIWidgetEventID_None
+	AllowManualRemove False
+	IsReferencePort False

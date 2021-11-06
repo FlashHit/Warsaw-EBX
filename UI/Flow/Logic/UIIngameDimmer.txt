@@ -1,0 +1,243 @@
+LogicPrefabBlueprint 8971cdd1-80cc-056a-d516-97345a3626c1
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name UI/Flow/Logic/UIIngameDimmer
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance7
+							Target Instance1
+							SourceFieldId 1422740397
+							TargetFieldId 193450867
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance8
+							Target Instance1
+							SourceFieldId -1778993948
+							TargetFieldId 193450866
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance1
+							Target Instance6
+							SourceFieldId 193453899
+							TargetFieldId 1708270083
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance4
+							Target Instance1
+							SourceFieldId 225375086
+							TargetFieldId 858290427
+							ShouldNetworkValue False
+						member(4)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 193453899
+							TargetFieldId 177636
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance5
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance5
+						Target Instance8
+						SourceEvent::EventSpec
+							Id -1778993948
+						TargetEvent::EventSpec
+							Id -1772326426
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance5
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1778993948
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance5
+						Target Instance8
+						SourceEvent::EventSpec
+							Id -1778993948
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source Instance5
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 1422740397
+						TargetEvent::EventSpec
+							Id -1772326426
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source Instance5
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1422740397
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source Instance5
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1422740397
+						TargetEvent::EventSpec
+							Id 1736970756
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source Instance5
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 1422740397
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(7)::EventConnection
+						Source Instance0
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 193445336
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source Instance0
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 2088725063
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Client
+		Objects::array
+			member(0) Instance8
+			member(1) Instance7
+			member(2) Instance6
+			member(3) Instance1
+			member(4) Instance4
+			member(5) Instance0
+CompareFloatEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 164334141
+	Realm Realm_Client
+	A 0.0
+	B 0.009999999776482582
+	TriggerOnPropertyChange True
+	TriggerOnStart False
+FloatHubEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 155418168
+	Realm Realm_Client
+	InputCount 2
+	InputSelect 0
+FloatPropertyTrackData Instance2
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id 1422740397
+			Times::array
+				member(0) 0
+				member(1) 250
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 1.0
+		member(1) 0.0
+FloatPropertyTrackData Instance3
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id -1778993948
+			Times::array
+				member(0) 0
+				member(1) 250
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 0.0
+		member(1) 1.0
+IntEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 49676094
+	Realm Realm_Client
+	DefaultValue 0
+	IncDecValue 1
+InterfaceDescriptorData Instance5
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1778993948
+		member(1)::DynamicEvent
+			Id 1422740397
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicVisualEnvironmentEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 192925304
+	VisualEnvironment UI/Art/VisualEnvironments/VE_InGameMenu/f10c5a1c-8eda-c5d9-b602-74321edb5a5c
+	Visibility 1.0
+SequenceEntityData Instance7
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 45621299
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 250
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) Instance2
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False
+SequenceEntityData Instance8
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 60016603
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 250
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) Instance3
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False
