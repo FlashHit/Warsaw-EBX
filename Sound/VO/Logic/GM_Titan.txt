@@ -1,0 +1,331 @@
+VoiceOverLogicAsset 94d4ac00-e903-9236-78c3-eca8791b36b7
+	$::Asset
+		$::DataContainer
+		Name Sound/VO/Logic/GM_Titan
+	Events *nullArray*
+	Groups::array
+		member(0) Instance9
+		member(1) Instance10
+	Flows::array
+		member(0) 1bd55c78-8da6-4c7d-ae30-b6c22c20bbc8
+	FlowConfigs *nullArray*
+	System Sound/VO/VO_System/a761fe91-6d3d-9299-f2dd-7ef8d078002a
+VoiceOverCompareNode 223afd09-3308-4049-846b-02e0bd0ce547
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode e92c3b1c-f63d-4790-9789-17030c9c4b8a
+		TargetValue Instance14
+	B::VoiceOverValueConnection
+		TargetNode 946d87a4-9f34-4d06-a44c-450613129752
+		TargetValue Instance20
+	False Instance27
+	True Instance22
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverGlobalNode d0b29f18-37f0-41f0-ac7f-5c26ce1b1297
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance19
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverVariableNode e92c3b1c-f63d-4790-9789-17030c9c4b8a
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance14
+	Source *nullGuid*
+VoiceOverCompareNode 405f232d-cfb5-4a1f-93ca-890a7d7ab36d
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode d0b29f18-37f0-41f0-ac7f-5c26ce1b1297
+		TargetValue Instance19
+	B::VoiceOverValueConnection
+		TargetNode ce65fc51-ea27-4792-8744-eebee155d26b
+		TargetValue Instance13
+	False Instance23
+	True Instance24
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConversationNode 02a3af3b-55b0-41b7-b4ea-f097904b9d47
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 223afd09-3308-4049-846b-02e0bd0ce547
+			TargetValue Instance22
+		member(1)::VoiceOverValueConnection
+			TargetNode f3030e76-6a20-4614-a92a-ddbb97e0b320
+			TargetValue Instance26
+		member(2)::VoiceOverValueConnection
+			TargetNode 04d35552-32be-42dd-bbb4-2364ec89996e
+			TargetValue Instance16
+		member(3)::VoiceOverValueConnection
+			TargetNode 405f232d-cfb5-4a1f-93ca-890a7d7ab36d
+			TargetValue Instance24
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 04d35552-32be-42dd-bbb4-2364ec89996e
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance6
+		Tracks::array
+			member(0) Instance8
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 1
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverInfoNode 227fa141-80ca-4ef0-99fa-3164e7c46dcb
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Object::VoiceOverValueConnection
+		TargetNode 547b12e0-aef0-4dbd-b436-5693452d8db8
+		TargetValue Instance17
+	Value Instance18
+	Field Sound/VO/VO_System/a35eff8a-42de-4aaa-a38a-c96a5d78c7c7
+	ExpectedType Sound/VO/VO_System/47c05837-0751-4488-9d40-a949481b5b79
+VoiceOverConstantNode ce65fc51-ea27-4792-8744-eebee155d26b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance13
+	Source Instance0
+VoiceOverIntervalNode 04d35552-32be-42dd-bbb4-2364ec89996e
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode d1532277-8d19-4876-a5a2-5ecbeaac41f8
+		TargetValue Instance12
+	Time Instance25
+	False Instance15
+	True Instance16
+	Interval Sound/VO/VO_System/25289acc-7752-4692-95ff-93ef028bbb9f
+VoiceOverConstantNode 6800bb5d-9f79-40e7-822b-e4a7f2c44aa8
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance21
+	Source Instance1
+VoiceOverCompareNode f3030e76-6a20-4614-a92a-ddbb97e0b320
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 227fa141-80ca-4ef0-99fa-3164e7c46dcb
+		TargetValue Instance18
+	B::VoiceOverValueConnection
+		TargetNode 6800bb5d-9f79-40e7-822b-e4a7f2c44aa8
+		TargetValue Instance21
+	False Instance11
+	True Instance26
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode d1532277-8d19-4876-a5a2-5ecbeaac41f8
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance12
+	Source Instance2
+VoiceOverLogicFlow 1bd55c78-8da6-4c7d-ae30-b6c22c20bbc8
+	$::DataContainer
+	Name Titan
+	Owner 94d4ac00-e903-9236-78c3-eca8791b36b7
+	Group Instance10
+	Locals *nullArray*
+	Roots::array
+		member(0) fb7169ce-2b80-41f6-87df-4f60b73d903d
+VoiceOverConversationNode 6f996e96-9eb3-4b0b-a23f-193efb64e7f7
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 223afd09-3308-4049-846b-02e0bd0ce547
+			TargetValue Instance27
+		member(1)::VoiceOverValueConnection
+			TargetNode f3030e76-6a20-4614-a92a-ddbb97e0b320
+			TargetValue Instance26
+		member(2)::VoiceOverValueConnection
+			TargetNode 04d35552-32be-42dd-bbb4-2364ec89996e
+			TargetValue Instance16
+		member(3)::VoiceOverValueConnection
+			TargetNode 405f232d-cfb5-4a1f-93ca-890a7d7ab36d
+			TargetValue Instance24
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 04d35552-32be-42dd-bbb4-2364ec89996e
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance5
+		Tracks::array
+			member(0) Instance7
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 1
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverInfoNode 946d87a4-9f34-4d06-a44c-450613129752
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Object::VoiceOverValueConnection
+		TargetNode 547b12e0-aef0-4dbd-b436-5693452d8db8
+		TargetValue Instance17
+	Value Instance20
+	Field Sound/VO/VO_System/6223b3ce-ec56-4fd6-a81f-0fa16406fa1e
+	ExpectedType Sound/VO/VO_System/47c05837-0751-4488-9d40-a949481b5b79
+VoiceOverEventNode fb7169ce-2b80-41f6-87df-4f60b73d903d
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 02a3af3b-55b0-41b7-b4ea-f097904b9d47
+		member(1) 6f996e96-9eb3-4b0b-a23f-193efb64e7f7
+	Redirects *nullArray*
+	Event Sound/VO/Logic/Warsaw_VO_Events/dbcf35a3-b93c-41b1-a2c8-e7f9b8839970
+VoiceOverGlobalNode 547b12e0-aef0-4dbd-b436-5693452d8db8
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance17
+	Field Sound/VO/VO_System/844fe325-433c-405c-996b-859acb934175
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConstantBooleanValue Instance0
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value False
+VoiceOverConstantGlobalValue Instance1
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/927cfb76-acea-4860-9ed0-6bd1b9170691
+VoiceOverConstantGlobalValue Instance2
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/1cc0b04c-2907-4874-b907-e5ed323c4879
+VoiceOverDialogClip Instance3
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance4
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogGroup Instance5
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_MP/aae346bf-4899-49f7-a098-54b7be88f72b
+	TrackCount 1
+VoiceOverDialogGroup Instance6
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_MP/aae346bf-4899-49f7-a098-54b7be88f72b
+	TrackCount 1
+VoiceOverDialogTrack Instance7
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode 547b12e0-aef0-4dbd-b436-5693452d8db8
+		TargetValue Instance17
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_MP/9fbc0396-6ad5-4e98-b722-0f328542396a
+	QueueGroup Sound/VO/VO_System/2fe394aa-67c3-43f1-a206-8ffc9f596d38
+	Clips::array
+		member(0) Instance4
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance8
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode 547b12e0-aef0-4dbd-b436-5693452d8db8
+		TargetValue Instance17
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_MP/9fbc0396-6ad5-4e98-b722-0f328542396a
+	QueueGroup Sound/VO/VO_System/2fe394aa-67c3-43f1-a206-8ffc9f596d38
+	Clips::array
+		member(0) Instance3
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverGroup Instance9
+	$::DataContainer
+	Name Default
+	Priority 0
+VoiceOverGroup Instance10
+	$::DataContainer
+	Name Titan
+	Priority 0
+VoiceOverValue Instance11
+	$::DataContainer
+VoiceOverValue Instance12
+	$::DataContainer
+VoiceOverValue Instance13
+	$::DataContainer
+VoiceOverValue Instance14
+	$::DataContainer
+VoiceOverValue Instance15
+	$::DataContainer
+VoiceOverValue Instance16
+	$::DataContainer
+VoiceOverValue Instance17
+	$::DataContainer
+VoiceOverValue Instance18
+	$::DataContainer
+VoiceOverValue Instance19
+	$::DataContainer
+VoiceOverValue Instance20
+	$::DataContainer
+VoiceOverValue Instance21
+	$::DataContainer
+VoiceOverValue Instance22
+	$::DataContainer
+VoiceOverValue Instance23
+	$::DataContainer
+VoiceOverValue Instance24
+	$::DataContainer
+VoiceOverValue Instance25
+	$::DataContainer
+VoiceOverValue Instance26
+	$::DataContainer
+VoiceOverValue Instance27
+	$::DataContainer

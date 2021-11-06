@@ -1,0 +1,2426 @@
+SoundPatchAsset ba122f0f-3e07-4d61-b34a-0912b11e07fc
+	$::SoundGraphAsset
+		$::SoundAsset
+			$::Asset
+				$::DataContainer
+				Name Sound/VO/VO_InWorld_SP
+			Scope *nullGuid*
+			ReferencedData::array
+				member(0)::SoundDataReference
+					DataOwner f81afe54-e86e-45f0-9cc2-26da75479e2c
+					SoundData Sound/VO_Radio_Effects_Waves/VO_Radio_Effects_Static_Wave/8ca05a4b-1233-4cda-b7db-5acf99cc11d7
+		Graph 6779994d-7003-410d-93d8-bddcc9be1b86
+		Mixer *nullGuid*
+	OutputNodes::array
+		member(0) 05f1349d-df4f-4e1b-a05c-3474007dc3ac
+		member(1) 39d079e6-9f50-43f6-b310-e6df8db13e01
+	Loudness 110.0
+	AILoudness -1.0
+	Radius 0.5
+	RadiusFalloffScalar 2.5
+	MinObstructionValue 0.25
+	MaxObstructionValue 0.5
+	DopplerFactor 0.0
+	MasterPitch 1.0
+	DefaultStartEvent *nullGuid*
+	DefaultStopEvent *nullGuid*
+	DefaultEnterScopeEvent *nullGuid*
+	DefaultForceInitEvent *nullGuid*
+	MaxAllowableDucking -1000.0
+	IsLooping True
+	IsPersistent True
+	UpdateHdr True
+	IncludeMeasuredGain True
+DeMuxOutput 10109504-fac8-45da-b97e-0b8834f04efc
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Trigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 10
+		IsConnected True
+SimpleTransformNodeData bd2d020a-be26-48a7-ad64-ce4c064c80c2
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 38
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 37
+		IsConnected True
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 40
+		IsConnected True
+	Operation SimpleTransformOperation_Add
+	AngleUnit AngleUnit_Radians
+DistortionClipNodeData 67e07b0a-005c-4b0b-88e5-9c9335ff4469
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	ClipLevel::AudioGraphNodePort
+		UnconnectedValue 0.05000000074505806
+		ValueIndex 51
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 8
+		PluginIndex 1
+ScaleClampNodeData c4240e0f-71c7-43bb-bee3-1de67d7c3577
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 16
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 31
+		IsConnected True
+	InMax::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 32
+		IsConnected True
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 37
+		IsConnected True
+EventSwitcherEntry 6abaab11-4273-4f50-9ab5-2d683c46869f
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	CaseTrigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 10
+		IsConnected True
+	Value 0.014999999664723873
+VuMeterNodeData d2e92f18-6780-497f-9e97-8b338fbdb595
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	FrontLeft::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Center::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 19
+		IsConnected True
+	FrontRight::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	RearLeft::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	RearRight::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Lfe::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Mode VuMeterMode_Peak
+	Efficiency 5
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 5
+		PluginIndex 1
+ScaleClampNodeData 7fd8311b-8886-4728-808f-d14dcd2119fc
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 35
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 4.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 35.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 24000.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 1600.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 14
+		IsConnected True
+AudioGraphEvent ae234c1d-01db-4b06-ae0f-0ac40794e389
+	$::AudioGraphParameter
+		$::DataContainer
+		DefaultValue 0.0
+		NameHash 333815684
+		ValueIndex 5
+SendNodeData edaef021-baf0-4e93-85c8-e79aeb2f4ffc
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 3a587040-af30-4844-b984-2d797a97ad8b
+		member(1) c6f835d2-de52-48a7-8746-dea8c3bf83a1
+AudioGraphEvent 30dd6522-020d-43d3-ab7b-543727132aae
+	$::AudioGraphParameter
+		$::DataContainer
+		DefaultValue 0.0
+		NameHash 2089401213
+		ValueIndex 4
+ScaleClampNodeData c78ca72a-16af-454b-aa4e-25fd180fc551
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 40
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 39
+		IsConnected True
+MixerSendNodeData 53dcd22e-24b9-4b02-a877-15aeeeeab4d3
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 55bfe7cc-6046-4955-a6ac-a20fb6bfd1fc
+EventSwitcherEntry 39e38930-8160-4aad-93cf-b87e8e057e89
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	CaseTrigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 10
+		IsConnected True
+	Value 1.0
+DistortionClipNodeData 9f692534-53cd-4887-98fc-bf249404b60b
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	ClipLevel::AudioGraphNodePort
+		UnconnectedValue 0.5
+		ValueIndex 54
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 9
+		PluginIndex 1
+ReceiveNodeData 3fff9938-2f63-4bfd-b4e1-6cffc1e4eb80
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 6a26c467-e76b-4087-a168-8c5a329f66bd
+ScaleClampNodeData 4ceb0b3e-e867-496b-b8fd-eb7d3f83c5d5
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 16
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 5.0
+		ValueIndex 31
+		IsConnected True
+	InMax::AudioGraphNodePort
+		UnconnectedValue 15.0
+		ValueIndex 36
+		IsConnected True
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 2.5
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 33
+		IsConnected True
+HighPassIir2NodeData 5c9e463f-daa8-4370-b10a-f03f83f45672
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 1700.0
+		ValueIndex 53
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 8
+		PluginIndex 3
+SendEntry 3a587040-af30-4844-b984-2d797a97ad8b
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 9
+		IsConnected True
+	Target ae234c1d-01db-4b06-ae0f-0ac40794e389
+LowPassIir2NodeData ed625345-6813-489f-bd28-c4c5801f1e1e
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 4000.0
+		ValueIndex 58
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 12
+		PluginIndex 1
+ScaleClampNodeData 91ddcc47-a916-4631-925f-745211d6677b
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 35
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 4.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 20.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 350.0
+		ValueIndex 23
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 22
+		IsConnected True
+AudioGraphParameter 4e57ca4a-a31e-4d74-84c9-cf272f687321
+	$::DataContainer
+	DefaultValue 0.0
+	NameHash 2999701950
+	ValueIndex 1
+SoundGraphData 6779994d-7003-410d-93d8-bddcc9be1b86
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) 3fff9938-2f63-4bfd-b4e1-6cffc1e4eb80
+			member(1) 33be9180-b18f-47df-8d52-133c6e54518c
+			member(2) e25020a7-2c64-4376-921d-74e181e32895
+			member(3) 140a588f-dc5c-4c66-b254-e62f3fbc5117
+			member(4) 4829a4a2-c1a9-474d-983a-14a5b58252f1
+			member(5) 2cfff65e-6c89-44a0-bdce-1fe5616b8338
+			member(6) c4240e0f-71c7-43bb-bee3-1de67d7c3577
+			member(7) bd2d020a-be26-48a7-ad64-ce4c064c80c2
+			member(8) c78ca72a-16af-454b-aa4e-25fd180fc551
+			member(9) 977d334f-aefd-4624-9831-8b524fcaf37c
+			member(10) 02c1e2da-669b-4c67-b276-defba1446fa4
+			member(11) 5692a7f1-6aff-48ed-9879-d8bcc6e970a3
+			member(12) 03574f68-a267-4b9b-a47f-f4d25fde8cbd
+			member(13) 9bd633cf-afab-485f-92fd-524783316735
+			member(14) 7fd8311b-8886-4728-808f-d14dcd2119fc
+			member(15) 91ddcc47-a916-4631-925f-745211d6677b
+			member(16) 16b24fb8-ddc2-4c0d-bf41-c557659b88ff
+			member(17) cfec9cb6-8922-4620-9c9e-01a1a377cc01
+			member(18) f81afe54-e86e-45f0-9cc2-26da75479e2c
+			member(19) e2277759-4a31-4fba-85bb-5e5f02126166
+			member(20) ed625345-6813-489f-bd28-c4c5801f1e1e
+			member(21) b266bae5-28d6-485a-9ed7-2521e25d83b2
+			member(22) 9dd494d8-94a2-46c9-afa7-a1185d02d58a
+			member(23) 0d42b765-2de9-4993-9041-93846c28252a
+			member(24) 84cf86c7-94a5-4f71-a3eb-3d989fbf431d
+			member(25) 4405dd4e-c76d-4525-b618-f9d064e898ad
+			member(26) 9f692534-53cd-4887-98fc-bf249404b60b
+			member(27) 5fb81f67-74e7-4fd0-94af-6ff0eb23b564
+			member(28) cf879fb4-5dc3-4d92-9058-042b0d46d6cc
+			member(29) 67e07b0a-005c-4b0b-88e5-9c9335ff4469
+			member(30) a2e70fab-c6c4-4a16-bbd9-71bcf4bda7cc
+			member(31) 5c9e463f-daa8-4370-b10a-f03f83f45672
+			member(32) 54593fc7-10d3-44d8-8d5d-5506dbe3e0cd
+			member(33) 3eb53863-9695-4723-8c4f-02335c9949e4
+			member(34) f9318d68-879f-4dd2-9314-fad6ed4d2ad5
+			member(35) d2e92f18-6780-497f-9e97-8b338fbdb595
+			member(36) 53dcd22e-24b9-4b02-a877-15aeeeeab4d3
+			member(37) 1ecdb28d-ec23-4110-bdc6-57e33847f191
+			member(38) be59816a-000b-43cf-9caf-b5269c0b7b93
+			member(39) cc79f6dc-eb11-4403-9939-a7b8fb2e94c5
+			member(40) f1c53488-4c9f-433d-8148-54cab5363d85
+			member(41) 5f9024a6-1605-4d94-91ae-b63450f89ecb
+			member(42) b78f8764-9a4e-40b2-beff-8246728d2290
+			member(43) 0dd7f7ed-b53d-4633-9ee4-74ce091cf9d6
+			member(44) 4ceb0b3e-e867-496b-b8fd-eb7d3f83c5d5
+			member(45) f7edeca3-cfdd-4ec1-9aad-95f43e6faf41
+			member(46) 36e133c1-767e-459e-887c-81abd90dfc17
+			member(47) 057f4ae7-928b-4a71-8855-6aa286ea5937
+			member(48) 28229bae-5228-42ac-acac-7f8abe110f94
+			member(49) 05f1349d-df4f-4e1b-a05c-3474007dc3ac
+			member(50) 6c4387bb-2297-48fd-8f84-69d13d8474e5
+			member(51) 39d079e6-9f50-43f6-b310-e6df8db13e01
+			member(52) edaef021-baf0-4e93-85c8-e79aeb2f4ffc
+		PublicParameters::array
+			member(0) 4e57ca4a-a31e-4d74-84c9-cf272f687321
+			member(1) 749c7797-655a-47ec-8b6f-0d49d4f6ee8c
+			member(2) *nullGuid*
+		PublicEvents::array
+			member(0) ae234c1d-01db-4b06-ae0f-0ac40794e389
+			member(1) *nullGuid*
+			member(2) *nullGuid*
+			member(3) 30dd6522-020d-43d3-ab7b-543727132aae
+			member(4) c2cec480-fd2b-4182-a34c-ba742cec78ab
+		PublicAssetParameters::array
+			member(0) f1e449ee-7384-4c9b-b8af-57e6b8a64566
+			member(1) *nullGuid*
+		PublicValueCount 7
+		ValueCount 41
+	Info::SoundGraphInfo
+		Voices::array
+			member(0)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1280328240
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1450528048
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1349399089
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 4
+						ConstructParamsIndex 0
+						ConstructParamCount 3
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 1
+						OutputChannelCount 4
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(5)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 2
+						OutputChannelCount 4
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(1)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1213411888
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 3
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(2)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1145269296
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1280328240
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1450528048
+						EnableAttributeReadMask 128
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(5)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 4
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(3)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1147497520
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 3
+						ConstructParamCount 1
+					member(2)::SoundGraphPluginInfo
+						Id 1279865392
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 5
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(4)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1147497520
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 4
+						ConstructParamCount 1
+					member(2)::SoundGraphPluginInfo
+						Id 1212756528
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 6
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 7
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(5)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1450528048
+						EnableAttributeReadMask 4032
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(6)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1281962288
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 8
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(7)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1279865392
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 9
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(8)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1145269296
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1212756528
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 10
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(9)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1145269296
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 11
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(10)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 12
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(11)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1179865904
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 13
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(12)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1400201776
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1279865392
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1212756528
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 14
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 15
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(5)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 16
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(13)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1399738417
+						EnableAttributeReadMask 7
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1383297072
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1348564272
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 17
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(14)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1399738417
+						EnableAttributeReadMask 7
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1383297072
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1348564272
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1197566256
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 18
+						OutputChannelCount 1
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+			member(15)::SoundGraphVoiceInfo
+				Plugins::array
+					member(0)::SoundGraphPluginInfo
+						Id 1399738417
+						EnableAttributeReadMask 7
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(1)::SoundGraphPluginInfo
+						Id 1383297072
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(2)::SoundGraphPluginInfo
+						Id 1348564272
+						EnableAttributeReadMask 0
+						ConnectionIndex 0
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(3)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 19
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(4)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 20
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(5)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 21
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+					member(6)::SoundGraphPluginInfo
+						Id 1399156272
+						EnableAttributeReadMask 0
+						ConnectionIndex 22
+						OutputChannelCount 0
+						ConstructParamsIndex 0
+						ConstructParamCount 0
+		LinkedPluginAttributes::array
+			member(0)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 2000.0
+				ValueIndex 14
+				NodeIndexAndFlags 16432
+				VoiceIndex 1
+				PluginIndex 1
+				AttributeIndex 0
+			member(1)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.15000000596046448
+				ValueIndex 42
+				NodeIndexAndFlags 32816
+				VoiceIndex 1
+				PluginIndex 1
+				AttributeIndex 1
+			member(2)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 12.0
+				ValueIndex 18
+				NodeIndexAndFlags 49199
+				VoiceIndex 2
+				PluginIndex 1
+				AttributeIndex 0
+			member(3)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.9900000095367432
+				ValueIndex 43
+				NodeIndexAndFlags 32818
+				VoiceIndex 2
+				PluginIndex 2
+				AttributeIndex 0
+			member(4)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.0
+				ValueIndex 44
+				NodeIndexAndFlags 40
+				VoiceIndex 3
+				PluginIndex 1
+				AttributeIndex 1
+			member(5)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 1400.0
+				ValueIndex 45
+				NodeIndexAndFlags 41
+				VoiceIndex 3
+				PluginIndex 2
+				AttributeIndex 0
+			member(6)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.10000000149011612
+				ValueIndex 28
+				NodeIndexAndFlags 49197
+				VoiceIndex 3
+				PluginIndex 3
+				AttributeIndex 0
+			member(7)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.0
+				ValueIndex 46
+				NodeIndexAndFlags 37
+				VoiceIndex 4
+				PluginIndex 1
+				AttributeIndex 1
+			member(8)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.0
+				ValueIndex 24
+				NodeIndexAndFlags 16422
+				VoiceIndex 4
+				PluginIndex 2
+				AttributeIndex 0
+			member(9)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue -14.0
+				ValueIndex 47
+				NodeIndexAndFlags 34
+				VoiceIndex 6
+				PluginIndex 1
+				AttributeIndex 0
+			member(10)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.10000000149011612
+				ValueIndex 48
+				NodeIndexAndFlags 34
+				VoiceIndex 6
+				PluginIndex 1
+				AttributeIndex 1
+			member(11)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.0
+				ValueIndex 49
+				NodeIndexAndFlags 34
+				VoiceIndex 6
+				PluginIndex 1
+				AttributeIndex 3
+			member(12)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 3300.0
+				ValueIndex 50
+				NodeIndexAndFlags 33
+				VoiceIndex 7
+				PluginIndex 1
+				AttributeIndex 0
+			member(13)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.05000000074505806
+				ValueIndex 51
+				NodeIndexAndFlags 32797
+				VoiceIndex 8
+				PluginIndex 1
+				AttributeIndex 0
+			member(14)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 5.0
+				ValueIndex 52
+				NodeIndexAndFlags 32798
+				VoiceIndex 8
+				PluginIndex 2
+				AttributeIndex 0
+			member(15)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 1700.0
+				ValueIndex 53
+				NodeIndexAndFlags 31
+				VoiceIndex 8
+				PluginIndex 3
+				AttributeIndex 0
+			member(16)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.5
+				ValueIndex 54
+				NodeIndexAndFlags 32794
+				VoiceIndex 9
+				PluginIndex 1
+				AttributeIndex 0
+			member(17)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 2.0
+				ValueIndex 55
+				NodeIndexAndFlags 32795
+				VoiceIndex 9
+				PluginIndex 2
+				AttributeIndex 0
+			member(18)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 0.0010000000474974513
+				ValueIndex 56
+				NodeIndexAndFlags 32791
+				VoiceIndex 10
+				PluginIndex 1
+				AttributeIndex 0
+			member(19)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue -300.0
+				ValueIndex 57
+				NodeIndexAndFlags 22
+				VoiceIndex 11
+				PluginIndex 1
+				AttributeIndex 0
+			member(20)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 2.0
+				ValueIndex 17
+				NodeIndexAndFlags 49177
+				VoiceIndex 11
+				PluginIndex 2
+				AttributeIndex 0
+			member(21)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 4000.0
+				ValueIndex 58
+				NodeIndexAndFlags 20
+				VoiceIndex 12
+				PluginIndex 1
+				AttributeIndex 0
+			member(22)::SoundGraphLinkedPluginAttribute
+				UnconnectedValue 550.0
+				ValueIndex 59
+				NodeIndexAndFlags 21
+				VoiceIndex 12
+				PluginIndex 2
+				AttributeIndex 0
+		Connections::array
+			member(0)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Bus
+				Bus Sound/Master/07b276bc-c047-4f28-881d-23221d662e54
+				Parameters *nullArray*
+				VoiceIndex 0
+				PluginIndex 0
+				SignalIndex 0
+			member(1)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Bus
+				Bus Sound/Master/68907928-2885-457b-9d1a-e58e5f510d2a
+				Parameters *nullArray*
+				VoiceIndex 0
+				PluginIndex 0
+				SignalIndex 0
+			member(2)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 0
+				PluginIndex 0
+				SignalIndex 0
+			member(3)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Bus
+				Bus Sound/Master/a82d4271-cdf1-46b9-8b4b-ab3743b10297
+				Parameters *nullArray*
+				VoiceIndex 0
+				PluginIndex 0
+				SignalIndex 0
+			member(4)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 0
+				PluginIndex 0
+				SignalIndex 0
+			member(5)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 3
+				PluginIndex 0
+				SignalIndex 0
+			member(6)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 1
+				PluginIndex 0
+				SignalIndex 0
+			member(7)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 2
+				PluginIndex 0
+				SignalIndex 0
+			member(8)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 6
+				PluginIndex 0
+				SignalIndex 0
+			member(9)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 7
+				PluginIndex 0
+				SignalIndex 0
+			member(10)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 7
+				PluginIndex 0
+				SignalIndex 0
+			member(11)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 2
+				PluginIndex 0
+				SignalIndex 0
+			member(12)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 8
+				PluginIndex 0
+				SignalIndex 0
+			member(13)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 8
+				PluginIndex 0
+				SignalIndex 0
+			member(14)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 11
+				PluginIndex 0
+				SignalIndex 0
+			member(15)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 9
+				PluginIndex 0
+				SignalIndex 0
+			member(16)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 6
+				PluginIndex 0
+				SignalIndex 0
+			member(17)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 6
+				PluginIndex 0
+				SignalIndex 0
+			member(18)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 10
+				PluginIndex 0
+				SignalIndex 0
+			member(19)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 12
+				PluginIndex 0
+				SignalIndex 0
+			member(20)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 5
+				PluginIndex 0
+				SignalIndex 0
+			member(21)::SoundGraphPluginConnection
+				ConnectionType SoundGraphPluginConnectionType_Signal
+				Bus *nullGuid*
+				Parameters *nullArray*
+				VoiceIndex 4
+				PluginIndex 0
+				SignalIndex 0
+		ConstructParams::array
+			member(0)::SoundGraphPluginConstructParam
+				Value 45.0
+				Index 0
+			member(1)::SoundGraphPluginConstructParam
+				Value 135.0
+				Index 1
+			member(2)::SoundGraphPluginConstructParam
+				Value 2.0
+				Index 2
+			member(3)::SoundGraphPluginConstructParam
+				Value 0.0
+				Index 0
+			member(4)::SoundGraphPluginConstructParam
+				Value 0.014999999664723873
+				Index 0
+		PluginsParamCount 181
+		PluginCount 72
+	InputParameters *nullArray*
+	OutputParameters *nullArray*
+	InputEvents::array
+		member(0) ae234c1d-01db-4b06-ae0f-0ac40794e389
+	OutputEvents::array
+		member(0) ae234c1d-01db-4b06-ae0f-0ac40794e389
+GainNodeData 4405dd4e-c76d-4525-b618-f9d064e898ad
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 2.0
+		ValueIndex 17
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 11
+		PluginIndex 2
+DeMuxNodeData 977d334f-aefd-4624-9831-8b524fcaf37c
+	$::AudioGraphNodeData
+		$::DataContainer
+	Outputs::array
+		member(0) db8ce0fc-0857-47b8-ac50-227a7662fef5
+		member(1) 10109504-fac8-45da-b97e-0b8834f04efc
+	Trigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 12
+		IsConnected True
+	Value::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 39
+		IsConnected True
+	WrapValue False
+SamplerNodeData f81afe54-e86e-45f0-9cc2-26da75479e2c
+	$::AudioGraphNodeData
+		$::DataContainer
+	ExternalWave::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Variation::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Offset::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Delay::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Pitch::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 1.5
+		ValueIndex 0
+		IsConnected False
+	EnableStep::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	ShuffleSegments::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Buffer::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Trigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 10
+		IsConnected True
+	Release::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 11
+		IsConnected True
+	Step::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Output::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Finished::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Buffered::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Position::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected True
+	Wave Sound/VO_Radio_Effects_Waves/VO_Radio_Effects_Static_Wave/8ca05a4b-1233-4cda-b7db-5acf99cc11d7
+	Loop LtInstantRelease
+	Plugins::array
+		member(0)::SamplerPlugins
+			SndPlayer::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 13
+				PluginIndex 0
+			Resample::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 13
+				PluginIndex 1
+			Pause::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 13
+				PluginIndex 2
+			Gain::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 13
+				PluginIndex 3
+		member(1)::SamplerPlugins
+			SndPlayer::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 14
+				PluginIndex 0
+			Resample::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 14
+				PluginIndex 1
+			Pause::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 14
+				PluginIndex 2
+			Gain::SoundGraphPluginRef
+				IsValid True
+				VoiceIndex 14
+				PluginIndex 3
+	PitchSource *nullGuid*
+	Version SamplerNodeVersion_2010_2
+EventSwitcherNodeData e2277759-4a31-4fba-85bb-5e5f02126166
+	$::AudioGraphNodeData
+		$::DataContainer
+	Inputs::array
+		member(0) 4bc80961-1c93-43b5-9076-c3e9674c4a99
+		member(1) 6abaab11-4273-4f50-9ab5-2d683c46869f
+	Value::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 34
+		IsConnected True
+	DefaultValue 0.0
+SimpleTransformNodeData 2cfff65e-6c89-44a0-bdce-1fe5616b8338
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 31
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 0.009999999776482582
+		ValueIndex 0
+		IsConnected False
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 32
+		IsConnected True
+	Operation SimpleTransformOperation_Add
+	AngleUnit AngleUnit_Radians
+EventSwitcherEntry 4bc80961-1c93-43b5-9076-c3e9674c4a99
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	CaseTrigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 9
+		IsConnected True
+	Value 0.0
+ValueSelectorEntry e3781461-1f4c-4b9b-bd2b-60272193d89b
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Input::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 29
+		IsConnected True
+	CaseValue 1.0
+LowPassIir2NodeData 3eb53863-9695-4723-8c4f-02335c9949e4
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 3300.0
+		ValueIndex 50
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 7
+		PluginIndex 1
+SimpleTransformNodeData b78f8764-9a4e-40b2-beff-8246728d2290
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 26
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 27
+		IsConnected True
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 28
+		IsConnected True
+	Operation SimpleTransformOperation_Multiply
+	AngleUnit AngleUnit_Radians
+GainNodeData 0d42b765-2de9-4993-9041-93846c28252a
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 0.0010000000474974513
+		ValueIndex 56
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 10
+		PluginIndex 1
+GainNodeData 5fb81f67-74e7-4fd0-94af-6ff0eb23b564
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 2.0
+		ValueIndex 55
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 9
+		PluginIndex 2
+ReceiveEntry 6a26c467-e76b-4087-a168-8c5a329f66bd
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 13
+		IsConnected True
+	Source ae234c1d-01db-4b06-ae0f-0ac40794e389
+	Parameter 0.0
+	SavedValue 0.0
+SimpleValueSelectorNodeData 03574f68-a267-4b9b-a47f-f4d25fde8cbd
+	$::AudioGraphNodeData
+		$::DataContainer
+	OutValues::array
+		member(0) 350.0
+		member(1) 350.0
+		member(2) 150.0
+		member(3) 350.0
+		member(4) 350.0
+		member(5) 350.0
+		member(6) 150.0
+	Index::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 15
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 23
+		IsConnected True
+LimiterNodeData f9318d68-879f-4dd2-9314-fad6ed4d2ad5
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Sidechain::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Threshold::AudioGraphNodePort
+		UnconnectedValue -14.0
+		ValueIndex 47
+		IsConnected False
+	ReleaseTime::AudioGraphNodePort
+		UnconnectedValue 0.10000000149011612
+		ValueIndex 48
+		IsConnected False
+	UseSidechain::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 49
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	ChannelMode LimiterChannelMode_Grouped
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 6
+		PluginIndex 1
+HighPassIir2NodeData be59816a-000b-43cf-9caf-b5269c0b7b93
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 24
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 4
+		PluginIndex 2
+MixerReceiveEntry 2f34906a-c010-477a-bcbf-8234597fc399
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 15
+		IsConnected True
+	Source Sound/Mixers/AreaType_Mixer/5ecfb18d-dc6f-4439-8280-0eb8c8daad47
+	Mixer Sound/Mixers/AreaType_Mixer/d5256e7c-e83f-4afb-b3fb-fd491321e540
+PhysicsNodeData 33be9180-b18f-47df-8d52-133c6e54518c
+	$::AudioGraphNodeData
+		$::DataContainer
+	Distance::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 16
+		IsConnected True
+	Velocity::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	RelativeVelocity::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Azimuth::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	ElevationAngle::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Entries *nullArray*
+AudioGraphEvent c2cec480-fd2b-4182-a34c-ba742cec78ab
+	$::AudioGraphParameter
+		$::DataContainer
+		DefaultValue 0.0
+		NameHash 230748069
+		ValueIndex 3
+DelayNodeData f1c53488-4c9f-433d-8148-54cab5363d85
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	DelayTime::AudioGraphNodePort
+		UnconnectedValue 0.16500000655651093
+		ValueIndex 25
+		IsConnected True
+	Feedback::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 44
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	MaxDelayTime 0.0
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 3
+		PluginIndex 1
+ConditionGroup 63c84e8a-a08d-4872-bddf-9a42ec030688
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 7
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 0.6000000238418579
+		ValueIndex 0
+		IsConnected False
+	True::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 20
+		IsConnected True
+	Condition ConditionType_GreaterOrEqual
+DelayNodeData 1ecdb28d-ec23-4110-bdc6-57e33847f191
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	DelayTime::AudioGraphNodePort
+		UnconnectedValue 0.014999999664723873
+		ValueIndex 34
+		IsConnected True
+	Feedback::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 46
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	MaxDelayTime 0.014999999664723873
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 4
+		PluginIndex 1
+MixerReceiveNodeData 140a588f-dc5c-4c66-b254-e62f3fbc5117
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 2f34906a-c010-477a-bcbf-8234597fc399
+		member(1) 38ad5fb7-8a0a-4214-a389-eadcfdbee310
+		member(2) da885fd7-05e6-4fc1-8605-c31c1bfd3453
+		member(3) 862b7ab3-3aed-4e95-8d61-13a5c893454b
+AudioGraphParameter 749c7797-655a-47ec-8b6f-0d49d4f6ee8c
+	$::DataContainer
+	DefaultValue 1.0
+	NameHash 916532307
+	ValueIndex 2
+ConeOutputNodeData 05f1349d-df4f-4e1b-a05c-3474007dc3ac
+	$::OutputNodeData
+		$::AudioGraphNodeData
+			$::DataContainer
+		In::AudioGraphNodePort
+			UnconnectedValue 0.0
+			ValueIndex 0
+			IsConnected True
+		BypassHeadroom::AudioGraphNodePort
+			UnconnectedValue 1.0
+			ValueIndex 0
+			IsConnected False
+		MinDistance 20.0
+		AttenuationCurve::AudioCurve
+			Points::array
+				member(0)::AudioCurvePoint
+					X 0.0
+					Y 0.0
+					K -0.41198498010635376
+				member(1)::AudioCurvePoint
+					X 10.000000953674316
+					Y -3.839998483657837
+					K -0.3280295431613922
+				member(2)::AudioCurvePoint
+					X 100.80000305175781
+					Y -33.91999816894531
+					K -1.1000875234603882
+				member(3)::AudioCurvePoint
+					X 128.21104431152344
+					Y -72.53910827636719
+					K -1.5632894039154053
+			CurveType AudioCurveType_Spline
+		HFDampingDistance 0.0
+		HFDampingObstruction 0.5
+		HFDampingOcclusion 0.5
+		HFObstructionAmplitudeReduction 0.0
+		Gain 2.0
+		MainSend Sound/Master/68907928-2885-457b-9d1a-e58e5f510d2a
+		TransformSource OutputTransformSource_Sound
+		OutputName Cone
+		OutputNameHash 2088844290
+		MixGroup Sound/MixerSystem/73e17732-d1e4-4c75-a2af-272d3e38841d
+		Solo False
+		EnableHdr False
+		LowPassPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 0
+			PluginIndex 1
+		VuPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 0
+			PluginIndex 2
+		MainSendPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 0
+			PluginIndex 5
+	PositionX::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	Direction::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	PositionY::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	PositionZ::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	InnerAngle::AudioGraphNodePort
+		UnconnectedValue 170.0
+		ValueIndex 0
+		IsConnected False
+	OuterAngle::AudioGraphNodePort
+		UnconnectedValue 360.0
+		ValueIndex 0
+		IsConnected False
+	OutsideGain -3.0
+	PanSize 0.5
+	BleedMinDistance -10.0
+	BleedMaxDistance 30.0
+	CenterLevel::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	LfeLevel::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	HFDampingAngle 0.800000011920929
+	ReverbAttenuationCurve::AudioCurve
+		Points::array
+			member(0)::AudioCurvePoint
+				X 0.17576125264167786
+				Y -0.17775586247444153
+				K -0.06681939959526062
+			member(1)::AudioCurvePoint
+				X 7.600000381469727
+				Y 0.32000160217285156
+				K 0.33477354049682617
+			member(2)::AudioCurvePoint
+				X 18.618600845336914
+				Y 6.070721626281738
+				K 0.3001639246940613
+			member(3)::AudioCurvePoint
+				X 28.400001525878906
+				Y 5.7600016593933105
+				K -0.13580657541751862
+			member(4)::AudioCurvePoint
+				X 38.400001525878906
+				Y 4.800001621246338
+				K -0.14300473034381866
+			member(5)::AudioCurvePoint
+				X 65.20000457763672
+				Y -5.439998626708984
+				K -0.5016318559646606
+		CurveType AudioCurveType_Spline
+	ReverbGain -12.0
+	ReverbMode OutputReverbMode_PostGain
+	ReverbSend Sound/Master/07b276bc-c047-4f28-881d-23221d662e54
+	PanPlugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 0
+		PluginIndex 3
+	ReverbSendPlugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 0
+		PluginIndex 4
+ValueSelectorNodeData 4829a4a2-c1a9-474d-983a-14a5b58252f1
+	$::AudioGraphNodeData
+		$::DataContainer
+	Inputs::array
+		member(0) e576d5cd-eb5b-4f19-9770-7e3ae1d48523
+		member(1) e3781461-1f4c-4b9b-bd2b-60272193d89b
+	Value::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 30
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 31
+		IsConnected True
+	DefaultCaseValue 0.0
+GainNodeData f7edeca3-cfdd-4ec1-9aad-95f43e6faf41
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 0.10000000149011612
+		ValueIndex 28
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 3
+		PluginIndex 3
+LowPassIir2NodeData 5f9024a6-1605-4d94-91ae-b63450f89ecb
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 1400.0
+		ValueIndex 45
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 3
+		PluginIndex 2
+DialogSamplerNodeData e25020a7-2c64-4376-921d-74e181e32895
+	$::AudioGraphNodeData
+		$::DataContainer
+	Pitch::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Continue::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 13
+		IsConnected True
+	Output::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Triggered::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 12
+		IsConnected True
+	Finished::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 11
+		IsConnected True
+	TailLength 0.0
+	PitchSource *nullGuid*
+	SndPlayerPlugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 15
+		PluginIndex 0
+	ResamplePlugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 15
+		PluginIndex 1
+	PausePlugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 15
+		PluginIndex 2
+	GainPlugin::SoundGraphPluginRef
+		IsValid False
+		VoiceIndex 0
+		PluginIndex 0
+GainNodeData a2e70fab-c6c4-4a16-bbd9-71bcf4bda7cc
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 5.0
+		ValueIndex 52
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 8
+		PluginIndex 2
+HighShelfIir2NodeData 28229bae-5228-42ac-acac-7f8abe110f94
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 2000.0
+		ValueIndex 14
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 0.15000000596046448
+		ValueIndex 42
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 1
+		PluginIndex 1
+MixerReceiveEntry 862b7ab3-3aed-4e95-8d61-13a5c893454b
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 38
+		IsConnected True
+	Source Sound/Mixers/SP_VO_Radio_Switch/f78d11f2-78e3-4e4a-bdf0-802325c27d0e
+	Mixer Sound/Mixers/SP_VO_Radio_Switch/f68c925a-b7b9-ba1a-3a60-2813a40e500e
+EventSwitcherNodeData cf879fb4-5dc3-4d92-9058-042b0d46d6cc
+	$::AudioGraphNodeData
+		$::DataContainer
+	Inputs::array
+		member(0) 4490ece1-0f00-4af5-8177-6d790024a361
+		member(1) 39e38930-8160-4aad-93cf-b87e8e057e89
+	Value::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 8
+		IsConnected True
+	DefaultValue 0.0
+SimpleTransformNodeData cfec9cb6-8922-4620-9c9e-01a1a377cc01
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 21
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 22
+		IsConnected True
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 24
+		IsConnected True
+	Operation SimpleTransformOperation_Add
+	AngleUnit AngleUnit_Radians
+MixerReceiveEntry 38ad5fb7-8a0a-4214-a389-eadcfdbee310
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 30
+		IsConnected True
+	Source Sound/Mixers/VO_InWorld_SP_RadioDistanceMixer/9398e9fa-3b9a-4d5b-8257-2631ab9b8f18
+	Mixer Sound/Mixers/VO_InWorld_SP_RadioDistanceMixer/88518804-8e1e-8b49-9bb2-3413d1236c8d
+SimpleValueSelectorNodeData 16b24fb8-ddc2-4c0d-bf41-c557659b88ff
+	$::AudioGraphNodeData
+		$::DataContainer
+	OutValues::array
+		member(0) 0.20000000298023224
+		member(1) 0.20000000298023224
+		member(2) 0.10000000149011612
+		member(3) 0.20000000298023224
+		member(4) 0.05000000074505806
+		member(5) 0.20000000298023224
+		member(6) 0.10000000149011612
+	Index::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 15
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 27
+		IsConnected True
+DistortionClipNodeData 6c4387bb-2297-48fd-8f84-69d13d8474e5
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	ClipLevel::AudioGraphNodePort
+		UnconnectedValue 0.9900000095367432
+		ValueIndex 43
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 2
+		PluginIndex 2
+SimpleTransformNodeData 36e133c1-767e-459e-887c-81abd90dfc17
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 8
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 2.5
+		ValueIndex 33
+		IsConnected True
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 18
+		IsConnected True
+	Operation SimpleTransformOperation_Multiply
+	AngleUnit AngleUnit_Radians
+SimpleTransformNodeData 54593fc7-10d3-44d8-8d5d-5506dbe3e0cd
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 31
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 10.0
+		ValueIndex 0
+		IsConnected False
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 36
+		IsConnected True
+	Operation SimpleTransformOperation_Add
+	AngleUnit AngleUnit_Radians
+LfoNodeData 84cf86c7-94a5-4f71-a3eb-3d989fbf431d
+	$::AudioGraphNodeData
+		$::DataContainer
+	Hz::AudioGraphNodePort
+		UnconnectedValue 2.5
+		ValueIndex 0
+		IsConnected False
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 17
+		IsConnected True
+	Min 1.0
+	Max 4.0
+	StartAtRandomValue True
+MixerSendEntry 55bfe7cc-6046-4955-a6ac-a20fb6bfd1fc
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 19
+		IsConnected True
+	Target Sound/Mixers/Narr_VO_Mixer_01/51c7b612-1942-4a48-bdd0-67dd794402d5
+	Mixer Sound/Mixers/Narr_VO_Mixer_01/1671eebf-ee65-44dc-be5e-55f62c869798
+ValueSelectorEntry e576d5cd-eb5b-4f19-9770-7e3ae1d48523
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Input::AudioGraphNodePort
+		UnconnectedValue 25.0
+		ValueIndex 0
+		IsConnected False
+	CaseValue 0.0
+ScaleClampNodeData 9bd633cf-afab-485f-92fd-524783316735
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 35
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 30.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 26
+		IsConnected True
+SendEntry c6f835d2-de52-48a7-8746-dea8c3bf83a1
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 20
+		IsConnected True
+	Target ae234c1d-01db-4b06-ae0f-0ac40794e389
+MixerReceiveEntry da885fd7-05e6-4fc1-8605-c31c1bfd3453
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 29
+		IsConnected True
+	Source Sound/Mixers/VO_InWorld_SP_RadioDistanceMixer/0932f879-4bd4-46d3-8675-0a9d97b0d995
+	Mixer Sound/Mixers/VO_InWorld_SP_RadioDistanceMixer/88518804-8e1e-8b49-9bb2-3413d1236c8d
+FrequencyShiftSsbNodeData 9dd494d8-94a2-46c9-afa7-a1185d02d58a
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue -300.0
+		ValueIndex 57
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Filter FrequencyShiftSsbFilter_None
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 11
+		PluginIndex 1
+SimpleTransformNodeData 02c1e2da-669b-4c67-b276-defba1446fa4
+	$::AudioGraphNodeData
+		$::DataContainer
+	X::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 16
+		IsConnected True
+	Y::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	Z::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 35
+		IsConnected True
+	Operation SimpleTransformOperation_Multiply
+	AngleUnit AngleUnit_Radians
+SimpleValueSelectorNodeData cc79f6dc-eb11-4403-9939-a7b8fb2e94c5
+	$::AudioGraphNodeData
+		$::DataContainer
+	OutValues::array
+		member(0) 0.21199999749660492
+		member(1) 0.16500000655651093
+		member(2) 0.10000000149011612
+		member(3) 0.16500000655651093
+		member(4) 0.21199999749660492
+		member(5) 0.21199999749660492
+		member(6) 0.07000000029802322
+	Index::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 15
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 25
+		IsConnected True
+EventSwitcherEntry 4490ece1-0f00-4af5-8177-6d790024a361
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	CaseTrigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 9
+		IsConnected True
+	Value 0.0
+HighPassIir2NodeData b266bae5-28d6-485a-9ed7-2521e25d83b2
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Frequency::AudioGraphNodePort
+		UnconnectedValue 550.0
+		ValueIndex 59
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 12
+		PluginIndex 2
+DirectOutputNodeData 39d079e6-9f50-43f6-b310-e6df8db13e01
+	$::OutputNodeData
+		$::AudioGraphNodeData
+			$::DataContainer
+		In::AudioGraphNodePort
+			UnconnectedValue 0.0
+			ValueIndex 0
+			IsConnected True
+		BypassHeadroom::AudioGraphNodePort
+			UnconnectedValue 1.0
+			ValueIndex 0
+			IsConnected False
+		MinDistance 1.0
+		AttenuationCurve::AudioCurve
+			Points *nullArray*
+			CurveType AudioCurveType_Spline
+		HFDampingDistance 0.0
+		HFDampingObstruction 0.0
+		HFDampingOcclusion 0.0
+		HFObstructionAmplitudeReduction 0.0
+		Gain -3.0
+		MainSend Sound/Master/a82d4271-cdf1-46b9-8b4b-ab3743b10297
+		TransformSource OutputTransformSource_Listener
+		OutputName Direct
+		OutputNameHash 2599500168
+		MixGroup Sound/MixerSystem/73e17732-d1e4-4c75-a2af-272d3e38841d
+		Solo False
+		EnableHdr False
+		LowPassPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 2
+			PluginIndex 3
+		VuPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 2
+			PluginIndex 4
+		MainSendPlugin::SoundGraphPluginRef
+			IsValid True
+			VoiceIndex 2
+			PluginIndex 5
+GainNodeData 057f4ae7-928b-4a71-8855-6aa286ea5937
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Amplitude::AudioGraphNodePort
+		UnconnectedValue 12.0
+		ValueIndex 18
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected True
+	Plugin::SoundGraphPluginRef
+		IsValid True
+		VoiceIndex 2
+		PluginIndex 1
+ConditionNodeData 0dd7f7ed-b53d-4633-9ee4-74ce091cf9d6
+	$::AudioGraphNodeData
+		$::DataContainer
+	Conditions::array
+		member(0) 63c84e8a-a08d-4872-bddf-9a42ec030688
+AudioGraphAssetParameter f1e449ee-7384-4c9b-b8af-57e6b8a64566
+	$::AudioGraphParameter
+		$::DataContainer
+		DefaultValue 0.0
+		NameHash 2089277184
+		ValueIndex 6
+ScaleClampNodeData 5692a7f1-6aff-48ed-9879-d8bcc6e970a3
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 35
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 4.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue 200.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 21
+		IsConnected True
+DeMuxOutput db8ce0fc-0857-47b8-ac50-227a7662fef5
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Trigger::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 9
+		IsConnected True

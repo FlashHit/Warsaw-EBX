@@ -1,0 +1,129 @@
+MixerAsset 9b088f1b-5fe5-e48c-1cc0-f56a897eec57
+	$::Asset
+		$::DataContainer
+		Name Sound/Mixers/LoudArea_Mixer
+	Graph cd8e73ea-3fd8-63f6-29a7-df92559c13fd
+	Presets::array
+		member(0) 72e61302-20cf-62fa-2068-28adccb6f278
+	DefaultPreset 72e61302-20cf-62fa-2068-28adccb6f278
+	Bypass False
+MixerPreset 72e61302-20cf-62fa-2068-28adccb6f278
+	$::DataContainer
+	NameHash 0
+	Groups::array
+		member(0)::MixerPresetGroupData
+			Group Sound/MixerSystem/34050503-985a-4f57-a473-9e53f7bf89e4
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			Priority 0
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+			IsDominant False
+			IsAdditive False
+	Nodes *nullArray*
+AudioGraphParameter e3151831-0f28-43cd-ad84-6daef02735da
+	$::DataContainer
+	DefaultValue -20.0
+	NameHash 932671134
+	ValueIndex 5
+MixerInputEntry d130597d-d0be-45a0-a6ff-0f7ef23221a5
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 3
+		IsConnected True
+	Source e3151831-0f28-43cd-ad84-6daef02735da
+	AccumulateMode MixerValueAccumulateMode_None
+	KeepValue False
+MixerSetPropertyEntry 6947a581-150d-4edc-acdd-efe598dbb05a
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+	Target 0
+	Group Sound/MixerSystem/34050503-985a-4f57-a473-9e53f7bf89e4
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.20000000298023224
+MixerSetPropertyNodeData c132c48a-0ec1-4557-9e06-da451df2f375
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 6947a581-150d-4edc-acdd-efe598dbb05a
+MixerInputNodeData 9bb9438d-5e05-4da6-a127-533613ea5485
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 9d6a94e9-7739-4566-86eb-9a928efb180d
+		member(1) d130597d-d0be-45a0-a6ff-0f7ef23221a5
+ScaleClampNodeData 22973ca1-7629-4610-8460-6a05c75d321d
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue -20.0
+		ValueIndex 3
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+AudioGraphParameter 0e01c9a3-cfaf-4e99-b01c-aab250f84f00
+	$::DataContainer
+	DefaultValue 0.0
+	NameHash 2287145703
+	ValueIndex 4
+MixerInputEntry 9d6a94e9-7739-4566-86eb-9a928efb180d
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	Source 0e01c9a3-cfaf-4e99-b01c-aab250f84f00
+	AccumulateMode MixerValueAccumulateMode_None
+	KeepValue False
+MixerGraphData cd8e73ea-3fd8-63f6-29a7-df92559c13fd
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) 9bb9438d-5e05-4da6-a127-533613ea5485
+			member(1) 22973ca1-7629-4610-8460-6a05c75d321d
+			member(2) c132c48a-0ec1-4557-9e06-da451df2f375
+		PublicParameters *nullArray*
+		PublicEvents *nullArray*
+		PublicAssetParameters *nullArray*
+		PublicValueCount 1
+		ValueCount 6
+	Inputs::array
+		member(0) 0e01c9a3-cfaf-4e99-b01c-aab250f84f00
+		member(1) e3151831-0f28-43cd-ad84-6daef02735da
+	MixerInputInfos::array
+		member(0)::MixerInputInfo
+			Mode MixerValueAccumulateMode_None
+			KeepValue False
+		member(1)::MixerInputInfo
+			Mode MixerValueAccumulateMode_None
+			KeepValue False
+	Outputs *nullArray*

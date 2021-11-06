@@ -1,0 +1,178 @@
+LogicPrefabBlueprint bbc4c741-261f-43c5-92f4-62bf993e9127
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Sound/States/OutOfBounds_SoundState_Logic
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target Instance4
+							SourceFieldId -227090673
+							TargetFieldId -58466068
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance2
+							Target Instance0
+							SourceFieldId -141474860
+							TargetFieldId -787784762
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance2
+							Target Instance0
+							SourceFieldId -141474859
+							TargetFieldId 874846746
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance2
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance2
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id -559281700
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source Instance2
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 1928776733
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Client
+		Objects::array
+			member(0) Instance4
+			member(1) Instance0
+			member(2) Instance3
+			member(3) Instance1
+LogicReferenceObjectData Instance0
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 445657296
+		Blueprint Sound/SoundState_Switch/6181b258-b181-8b58-10e0-1471dc56abe6
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable False
+		CastReflectionEnable False
+		Excluded False
+	SubRealm SubRealm_All
+DelayEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 52588075
+	Delay 13.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData Instance2
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value Float32 400
+				ValueRef *nullGuid*
+				Id -141474860
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value Float32 24000
+				ValueRef *nullGuid*
+				Id -141474859
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+		member(1)::DynamicEvent
+			Id 2089401213
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+MixerEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 43230766
+	Mixer Sound/Mixers/Leaving_Area_Soundstate_Mixer/a6f66746-70bf-4f6d-818f-1ce95b3628ad
+	ActivateOnCreation False
+	AccumulatedInputs False
+MixerEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 428650079
+	Mixer Sound/Mixers/LowPassFilter_Mixer/4ce76d60-0fb6-4b04-8d0b-960ad88b08dd
+	ActivateOnCreation True
+	AccumulatedInputs False

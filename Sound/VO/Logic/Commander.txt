@@ -1,0 +1,1686 @@
+VoiceOverLogicAsset 40f383e1-e936-5f54-23b2-68543e66b582
+	$::Asset
+		$::DataContainer
+		Name Sound/VO/Logic/Commander
+	Events::array
+		member(0) 36d4dd5a-066e-4c15-8cf3-295345166f06
+		member(1) c41086d0-d4b1-468d-9fda-eef2828f2921
+		member(2) f1df511e-da06-4674-af2d-2f9630035494
+	Groups::array
+		member(0) Instance44
+	Flows::array
+		member(0) 42d9aa11-5912-43c3-a7e8-a48298c30111
+		member(1) ff702dc0-1b40-4fdf-addd-34b7f13905b8
+		member(2) 1a247b90-c48f-4c02-b66a-50b47a14558c
+		member(3) f05e63ad-d4a7-4999-b658-5556c6253921
+		member(4) 044d4867-e887-4127-80c9-37cc30d0200c
+	FlowConfigs *nullArray*
+	System Sound/VO/VO_System/a761fe91-6d3d-9299-f2dd-7ef8d078002a
+VoiceOverVariableNode 3811c605-eca7-492f-b115-a053ffc5e0e2
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance121
+	Source Instance147
+VoiceOverConstantNode 1f219c06-549e-4562-98da-00d8cce787e6
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance106
+	Source Instance4
+VoiceOverGlobalNode 6f007e09-326b-4cba-8e2a-caeb52948380
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance57
+	Field Sound/VO/VO_System/fdcefc7d-4a65-421c-82fc-468097809999
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConstantNode 735eb909-1e52-44f1-8af4-aaaf7758dd00
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance112
+	Source Instance15
+VoiceOverIntervalNode 840c5a0a-0f16-40d9-9039-541eb4db50c4
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 77541f8f-016d-47dc-b609-040c7820ad84
+		TargetValue Instance135
+	Time Instance81
+	False Instance69
+	True Instance103
+	Interval Sound/VO/VO_System/8096de50-248d-4875-975f-6bba9421bebd
+VoiceOverConstantNode 660e680c-a1f4-4cd0-a088-e12168bef56d
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance61
+	Source Instance6
+VoiceOverContainerNode d4afc30c-2d35-42f7-a2d6-ba1b05bc7a4c
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode dc9978c5-8226-4df4-bc39-1dd593ed3657
+			TargetValue Instance80
+		member(1)::VoiceOverValueConnection
+			TargetNode b00bbe52-c979-4af6-aadf-8afe83ce247f
+			TargetValue Instance134
+	Interval *nullGuid*
+	TrueRelationship::array
+		member(0) 69973a0e-9fdf-41cf-aaf3-0d74c0da3ee7
+		member(1) cd063a18-861a-4897-bad0-f7332870f517
+	FalseRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	AlwaysResetInterval False
+VoiceOverConversationNode 69973a0e-9fdf-41cf-aaf3-0d74c0da3ee7
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode cd7bd7e9-4361-4290-8a3f-61f7041903d6
+			TargetValue Instance56
+		member(1)::VoiceOverValueConnection
+			TargetNode 3ec8ffad-b68a-454c-93c3-c9a2c7249f2f
+			TargetValue Instance140
+		member(2)::VoiceOverValueConnection
+			TargetNode d0910d2d-a3da-486d-bcf4-746ad191c409
+			TargetValue Instance82
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval d0910d2d-a3da-486d-bcf4-746ad191c409
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance29
+		Tracks::array
+			member(0) Instance38
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverConstantNode d6092110-be2e-4814-b74f-0f67035396f7
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance87
+	Source Instance8
+VoiceOverConstantNode 28ac8211-c31b-45a5-9159-8ea5423a18a4
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance63
+	Source Instance2
+VoiceOverLogicFlow 42d9aa11-5912-43c3-a7e8-a48298c30111
+	$::DataContainer
+	Name CommanderBaseflow
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+	Group Instance44
+	Locals::array
+		member(0) Instance148
+	Roots::array
+		member(0) 60cb6c47-6573-4967-8731-f9bc0736b46d
+VoiceOverConstantNode 10e9b014-3900-4c40-aea7-08531bd7fdb3
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance95
+	Source Instance12
+VoiceOverConversationNode cd063a18-861a-4897-bad0-f7332870f517
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode cd7bd7e9-4361-4290-8a3f-61f7041903d6
+			TargetValue Instance104
+		member(1)::VoiceOverValueConnection
+			TargetNode 03077bce-fa4d-4025-9bd1-584acf34e48d
+			TargetValue Instance55
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 03077bce-fa4d-4025-9bd1-584acf34e48d
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance31
+		Tracks::array
+			member(0) Instance39
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 5.0
+		LastSequenceIndex 0
+VoiceOverEvent f1df511e-da06-4674-af2d-2f9630035494
+	$::DataContainer
+	Name CommanderSquadBase
+	NameHash 952113202
+	Parameters::array
+		member(0) 28e94c8d-bbcd-4414-a11a-7ae4e4cbb42c
+		member(1) 5df7f8c0-ba28-4393-8689-d4e2065aa191
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+VoiceOverVariableNode 17c4f426-b027-45bb-994d-a524c55e872a
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance110
+	Source Instance144
+VoiceOverEventNode fc531828-bd55-4125-86be-044198520e1d
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 91971150-aa95-473b-9716-b6ba2a22d52a
+	Redirects::array
+		member(0) Instance149
+	Event 36d4dd5a-066e-4c15-8cf3-295345166f06
+VoiceOverConstantNode ff518428-5d7a-48fb-84b7-f9c2a42ec51f
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance59
+	Source Instance0
+VoiceOverEventNode 3dd2262c-882e-47f5-8be8-e7f517ecdd46
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 32e5d6ad-8e61-4c36-aebc-6a8e2ac08f31
+	Redirects::array
+		member(0) Instance155
+	Event Sound/VO/Logic/Warsaw_VO_Events/1d5004b0-050e-40a1-9018-1674715cc4c7
+VoiceOverIntervalNode d0910d2d-a3da-486d-bcf4-746ad191c409
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode ec4edf85-4dc8-4340-bc59-a44f6f9cd17b
+		TargetValue Instance102
+	Time Instance123
+	False Instance67
+	True Instance82
+	Interval Sound/VO/VO_System/8096de50-248d-4875-975f-6bba9421bebd
+VoiceOverCompareNode d3bc8331-f5ac-4fca-92d2-0b270c40c849
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 6df4e2bf-50ba-4763-b326-5379e7f40b73
+		TargetValue Instance70
+	B::VoiceOverValueConnection
+		TargetNode 1f219c06-549e-4562-98da-00d8cce787e6
+		TargetValue Instance106
+	False Instance130
+	True Instance93
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverGlobalNode 1fc86832-11d6-4cae-9886-8dafc8f4684e
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance125
+	Field Sound/VO/VO_System/fdcefc7d-4a65-421c-82fc-468097809999
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverContainerNode ae870c35-e5a6-4616-b393-5a70a782511b
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 35aa4876-b43c-4774-ac10-b35d23c3f327
+			TargetValue Instance85
+		member(1)::VoiceOverValueConnection
+			TargetNode 2358ccdc-03eb-4a01-81fb-44e77a6a4e56
+			TargetValue Instance71
+	Interval *nullGuid*
+	TrueRelationship::array
+		member(0) 18d46296-578a-4375-bb96-14fa9d7a33ae
+		member(1) 014078d1-9488-4388-bb12-ca9d6494f453
+	FalseRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	AlwaysResetInterval False
+VoiceOverConstantNode 5ad6bd39-8ed4-4ae2-9b3f-67b6d32ff401
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance60
+	Source Instance9
+VoiceOverIntervalNode 683e603b-3797-4f48-8b97-6d0437b6ef4b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 4a8faaf7-258d-4997-aeef-125352d77c88
+		TargetValue Instance107
+	Time Instance100
+	False Instance53
+	True Instance45
+	Interval Sound/VO/VO_System/8096de50-248d-4875-975f-6bba9421bebd
+VoiceOverEventNode 60cb6c47-6573-4967-8731-f9bc0736b46d
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 4efbb9c8-9140-4e71-9dad-b6df14462f71
+	Redirects::array
+		member(0) Instance153
+	Event 36d4dd5a-066e-4c15-8cf3-295345166f06
+VoiceOverGlobalNode 7b66614a-6ece-446c-90df-897e6ca87d7c
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance119
+	Field Sound/VO/VO_System/844fe325-433c-405c-996b-859acb934175
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverInfoNode 4e08f64c-68af-4bf2-b5ad-4753e2f0b617
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Object::VoiceOverValueConnection
+		TargetNode 7b66614a-6ece-446c-90df-897e6ca87d7c
+		TargetValue Instance119
+	Value Instance86
+	Field Sound/VO/VO_System/e73a4e6f-0b95-4958-a92a-27208f449dce
+	ExpectedType Sound/VO/VO_System/47c05837-0751-4488-9d40-a949481b5b79
+VoiceOverGlobalNode b43e704d-06ea-4d5e-b352-eb74cbb50672
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance88
+	Field Sound/VO/VO_System/fdcefc7d-4a65-421c-82fc-468097809999
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverGlobalNode e8500d4e-8813-4171-9afd-95d73de34b7b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance132
+	Field Sound/VO/VO_System/844fe325-433c-405c-996b-859acb934175
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverContainerNode 91971150-aa95-473b-9716-b6ba2a22d52a
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 541ddea0-9433-409f-a4aa-6042a5af333b
+			TargetValue Instance118
+		member(1)::VoiceOverValueConnection
+			TargetNode 9108a98e-b0c3-425c-a790-4def87b631b7
+			TargetValue Instance78
+	Interval *nullGuid*
+	TrueRelationship::array
+		member(0) d7a6e969-dbc0-4903-b151-4e664dd38b9f
+	FalseRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	AlwaysResetInterval False
+VoiceOverCompareNode b00bbe52-c979-4af6-aadf-8afe83ce247f
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode b43e704d-06ea-4d5e-b352-eb74cbb50672
+		TargetValue Instance88
+	B::VoiceOverValueConnection
+		TargetNode d6092110-be2e-4814-b74f-0f67035396f7
+		TargetValue Instance87
+	False Instance73
+	True Instance134
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode cadfb153-5db4-4fd3-927b-cc010d845d6b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance99
+	Source Instance3
+VoiceOverEvent 36d4dd5a-066e-4c15-8cf3-295345166f06
+	$::DataContainer
+	Name CommanderBase
+	NameHash 1540781120
+	Parameters::array
+		member(0) 9079a673-f42c-48cd-bbe7-9151cf4e72f9
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+VoiceOverGlobalNode 58de3a65-1645-4bdc-b110-c8b162298db4
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance97
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverLogicFlow 044d4867-e887-4127-80c9-37cc30d0200c
+	$::DataContainer
+	Name CommanderSquadLeaderOnly
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+	Group Instance44
+	Locals::array
+		member(0) Instance145
+		member(1) Instance144
+	Roots::array
+		member(0) e52200c3-9011-4a30-836c-cd418d4094d4
+VoiceOverGlobalNode 0f2dc268-e85f-499a-99ae-218fa48abdc3
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance64
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConversationNode d7a6e969-dbc0-4903-b151-4e664dd38b9f
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 4a34f3f9-4fdb-4827-ae60-ef264e6b6dbd
+			TargetValue Instance120
+		member(1)::VoiceOverValueConnection
+			TargetNode 490178f6-a110-4f50-a0a2-5515ab8ede5a
+			TargetValue Instance116
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 4a34f3f9-4fdb-4827-ae60-ef264e6b6dbd
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance33
+		Tracks::array
+			member(0) Instance42
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 5.0
+		LastSequenceIndex 0
+VoiceOverCompareNode d8686871-9e23-4f47-b690-f4e946bd64b9
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 5355c7bf-0df0-4346-bd3b-de73d8afb00e
+		TargetValue Instance76
+	B::VoiceOverValueConnection
+		TargetNode 5ad6bd39-8ed4-4ae2-9b3f-67b6d32ff401
+		TargetValue Instance60
+	False Instance128
+	True Instance74
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverNamedValue 9079a673-f42c-48cd-bbe7-9151cf4e72f9
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverCompareNode 35aa4876-b43c-4774-ac10-b35d23c3f327
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 17c4f426-b027-45bb-994d-a524c55e872a
+		TargetValue Instance110
+	B::VoiceOverValueConnection
+		TargetNode 660e680c-a1f4-4cd0-a088-e12168bef56d
+		TargetValue Instance61
+	False Instance65
+	True Instance85
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverIntervalNode 0f1d697a-5765-4a22-af09-64034f5c7bed
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 8976ceb3-75fd-4593-8c6d-2542b24b763a
+		TargetValue Instance52
+	Time Instance68
+	False Instance51
+	True Instance83
+	Interval Sound/VO/VO_System/d88ac8f2-8bd5-469a-99cd-acc7dc96d49e
+VoiceOverCompareNode 4e82977a-36e7-4d8b-acc2-4669d0fa8f59
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode cadfb153-5db4-4fd3-927b-cc010d845d6b
+		TargetValue Instance99
+	B::VoiceOverValueConnection
+		TargetNode 0f2dc268-e85f-499a-99ae-218fa48abdc3
+		TargetValue Instance64
+	False Instance54
+	True Instance109
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode fe0c757e-fe88-4c02-bdb2-1da35a26a499
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance72
+	Source Instance7
+VoiceOverConstantNode ec4edf85-4dc8-4340-bc59-a44f6f9cd17b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance102
+	Source Instance14
+VoiceOverIntervalNode 1666e088-b7ce-4b6c-a900-aee7acf73a0c
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 735eb909-1e52-44f1-8af4-aaaf7758dd00
+		TargetValue Instance112
+	Time Instance47
+	False Instance131
+	True Instance58
+	Interval Sound/VO/VO_System/d88ac8f2-8bd5-469a-99cd-acc7dc96d49e
+VoiceOverGlobalNode d2361c8d-b27c-4100-b131-c1b5d95e0dce
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance79
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverNamedValue 28e94c8d-bbcd-4414-a11a-7ae4e4cbb42c
+	$::VoiceOverValue
+		$::DataContainer
+	Name SquadLeader
+	NameHash 2923007180
+	ValueType VoiceOverValueType_Object
+VoiceOverCompareNode 9108a98e-b0c3-425c-a790-4def87b631b7
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode ee28d2f3-125d-44bc-8f83-5af37efefb00
+		TargetValue Instance113
+	B::VoiceOverValueConnection
+		TargetNode a0d9869a-c9cb-4ead-bacb-f51f1d478d21
+		TargetValue Instance75
+	False Instance137
+	True Instance78
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode 77541f8f-016d-47dc-b609-040c7820ad84
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance135
+	Source Instance18
+VoiceOverLogicFlow 1a247b90-c48f-4c02-b66a-50b47a14558c
+	$::DataContainer
+	Name CommanderMotherOnly
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+	Group Instance44
+	Locals::array
+		member(0) Instance147
+	Roots::array
+		member(0) fc531828-bd55-4125-86be-044198520e1d
+VoiceOverConversationNode b958e494-3595-4067-8b34-66fb2625eedb
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 4e82977a-36e7-4d8b-acc2-4669d0fa8f59
+			TargetValue Instance54
+		member(1)::VoiceOverValueConnection
+			TargetNode 0f1d697a-5765-4a22-af09-64034f5c7bed
+			TargetValue Instance83
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 0f1d697a-5765-4a22-af09-64034f5c7bed
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance30
+		Tracks::array
+			member(0) Instance40
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 5.0
+		LastSequenceIndex 0
+VoiceOverGlobalNode 8a083096-0153-4758-9b97-75c19cb26499
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance136
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConversationNode 18d46296-578a-4375-bb96-14fa9d7a33ae
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 1e9972a2-fbc7-4a3b-b68d-c31744d89f15
+			TargetValue Instance139
+		member(1)::VoiceOverValueConnection
+			TargetNode b37541ea-018b-41e1-84d2-2feba66b3e29
+			TargetValue Instance122
+		member(2)::VoiceOverValueConnection
+			TargetNode 465eb398-9de0-4181-baf8-e9d669e73bb7
+			TargetValue Instance48
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 465eb398-9de0-4181-baf8-e9d669e73bb7
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance28
+		Tracks::array
+			member(0) Instance37
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverIntervalNode 465eb398-9de0-4181-baf8-e9d669e73bb7
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 3cebedae-3a10-485b-b47b-13b36d7b41a1
+		TargetValue Instance90
+	Time Instance127
+	False Instance96
+	True Instance48
+	Interval Sound/VO/VO_System/8096de50-248d-4875-975f-6bba9421bebd
+VoiceOverConstantNode a0d9869a-c9cb-4ead-bacb-f51f1d478d21
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance75
+	Source Instance5
+VoiceOverVariableNode bf75a99a-eedb-4279-bba7-2c27cde68dc2
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance77
+	Source Instance145
+VoiceOverCompareNode 541ddea0-9433-409f-a4aa-6042a5af333b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 3811c605-eca7-492f-b115-a053ffc5e0e2
+		TargetValue Instance121
+	B::VoiceOverValueConnection
+		TargetNode a0d9869a-c9cb-4ead-bacb-f51f1d478d21
+		TargetValue Instance75
+	False Instance89
+	True Instance118
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverCompareNode dbba14a1-bfe3-470b-9b64-5363b032a2f9
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 128313d9-2f70-4568-a261-36e318d63d7d
+		TargetValue Instance91
+	B::VoiceOverValueConnection
+		TargetNode 8a083096-0153-4758-9b97-75c19cb26499
+		TargetValue Instance136
+	False Instance124
+	True Instance126
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverCompareNode 1c85aba1-1ae6-472c-bd88-80638f9a4343
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 6f007e09-326b-4cba-8e2a-caeb52948380
+		TargetValue Instance57
+	B::VoiceOverValueConnection
+		TargetNode 5ad6bd39-8ed4-4ae2-9b3f-67b6d32ff401
+		TargetValue Instance60
+	False Instance94
+	True Instance133
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverVariableNode 9c9762a2-f0ce-4b92-be95-8a34befb689e
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance129
+	Source Instance142
+VoiceOverCompareNode 1e9972a2-fbc7-4a3b-b68d-c31744d89f15
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode ff518428-5d7a-48fb-84b7-f9c2a42ec51f
+		TargetValue Instance59
+	B::VoiceOverValueConnection
+		TargetNode 58de3a65-1645-4bdc-b110-c8b162298db4
+		TargetValue Instance97
+	False Instance108
+	True Instance139
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode f5f1eaa3-6fad-453f-8ac7-3bfc92bbbb4c
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance98
+	Source Instance17
+VoiceOverLogicFlow f05e63ad-d4a7-4999-b658-5556c6253921
+	$::DataContainer
+	Name CommanderOnlyFlow
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+	Group Instance44
+	Locals::array
+		member(0) Instance143
+	Roots::array
+		member(0) 3dd2262c-882e-47f5-8be8-e7f517ecdd46
+VoiceOverContainerNode 32e5d6ad-8e61-4c36-aebc-6a8e2ac08f31
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode d8686871-9e23-4f47-b690-f4e946bd64b9
+			TargetValue Instance74
+		member(1)::VoiceOverValueConnection
+			TargetNode 1c85aba1-1ae6-472c-bd88-80638f9a4343
+			TargetValue Instance133
+	Interval *nullGuid*
+	TrueRelationship::array
+		member(0) 367bc1d8-4756-4182-8a08-4c1e1fa8ca0c
+	FalseRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	AlwaysResetInterval False
+VoiceOverCompareNode 3ec8ffad-b68a-454c-93c3-c9a2c7249f2f
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 6643c5c9-934c-43e7-aca9-542866355958
+		TargetValue Instance49
+	B::VoiceOverValueConnection
+		TargetNode 4e08f64c-68af-4bf2-b5ad-4753e2f0b617
+		TargetValue Instance86
+	False Instance92
+	True Instance140
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConstantNode 3cebedae-3a10-485b-b47b-13b36d7b41a1
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance90
+	Source Instance13
+VoiceOverConversationNode 020d20b2-be48-4683-8c8f-f7bd5b9c350d
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 4e82977a-36e7-4d8b-acc2-4669d0fa8f59
+			TargetValue Instance109
+		member(1)::VoiceOverValueConnection
+			TargetNode 840c5a0a-0f16-40d9-9039-541eb4db50c4
+			TargetValue Instance103
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 840c5a0a-0f16-40d9-9039-541eb4db50c4
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance32
+		Tracks::array
+			member(0) Instance36
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverConstantNode 2faf31b3-3809-4a28-b043-411150ce4786
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance84
+	Source Instance10
+VoiceOverConstantNode 8976ceb3-75fd-4593-8c6d-2542b24b763a
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance52
+	Source Instance16
+VoiceOverVariableNode 5355c7bf-0df0-4346-bd3b-de73d8afb00e
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance76
+	Source Instance143
+VoiceOverGlobalNode 6df4e2bf-50ba-4763-b326-5379e7f40b73
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance70
+	Field Sound/VO/VO_System/fdcefc7d-4a65-421c-82fc-468097809999
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverLogicFlow ff702dc0-1b40-4fdf-addd-34b7f13905b8
+	$::DataContainer
+	Name CommanderSquadFlow
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+	Group Instance44
+	Locals::array
+		member(0) Instance146
+		member(1) Instance142
+	Roots::array
+		member(0) 83d36de4-0496-44ae-ac14-94ab3ce6b42a
+VoiceOverNamedValue 5df7f8c0-ba28-4393-8689-d4e2065aa191
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverEventNode e52200c3-9011-4a30-836c-cd418d4094d4
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) ae870c35-e5a6-4616-b393-5a70a782511b
+	Redirects::array
+		member(0) Instance152
+		member(1) Instance150
+	Event f1df511e-da06-4674-af2d-2f9630035494
+VoiceOverCompareNode dc9978c5-8226-4df4-bc39-1dd593ed3657
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 9c9762a2-f0ce-4b92-be95-8a34befb689e
+		TargetValue Instance129
+	B::VoiceOverValueConnection
+		TargetNode d6092110-be2e-4814-b74f-0f67035396f7
+		TargetValue Instance87
+	False Instance114
+	True Instance80
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverContainerNode 4efbb9c8-9140-4e71-9dad-b6df14462f71
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode a65db8d8-a49b-4b5c-a372-559a3f38bb4b
+			TargetValue Instance66
+		member(1)::VoiceOverValueConnection
+			TargetNode d3bc8331-f5ac-4fca-92d2-0b270c40c849
+			TargetValue Instance93
+	Interval *nullGuid*
+	TrueRelationship::array
+		member(0) 020d20b2-be48-4683-8c8f-f7bd5b9c350d
+		member(1) b958e494-3595-4067-8b34-66fb2625eedb
+	FalseRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	AlwaysResetInterval False
+VoiceOverInfoNode 6643c5c9-934c-43e7-aca9-542866355958
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Object::VoiceOverValueConnection
+		TargetNode 346c35cf-6a7c-48a5-bbff-b0d3e3f56a04
+		TargetValue Instance62
+	Value Instance49
+	Field Sound/VO/VO_System/e73a4e6f-0b95-4958-a92a-27208f449dce
+	ExpectedType Sound/VO/VO_System/47c05837-0751-4488-9d40-a949481b5b79
+VoiceOverIntervalNode 03077bce-fa4d-4025-9bd1-584acf34e48d
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode 10e9b014-3900-4c40-aea7-08531bd7fdb3
+		TargetValue Instance95
+	Time Instance101
+	False Instance138
+	True Instance55
+	Interval Sound/VO/VO_System/d88ac8f2-8bd5-469a-99cd-acc7dc96d49e
+VoiceOverVariableNode 346c35cf-6a7c-48a5-bbff-b0d3e3f56a04
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance62
+	Source Instance146
+VoiceOverEvent c41086d0-d4b1-468d-9fda-eef2828f2921
+	$::DataContainer
+	Name CommanderOnline
+	NameHash 3063819418
+	Parameters::array
+		member(0) 3e67edee-8912-48cc-8dcf-b5f8495b0d8d
+	Owner 40f383e1-e936-5f54-23b2-68543e66b582
+VoiceOverConversationNode 014078d1-9488-4388-bb12-ca9d6494f453
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 1e9972a2-fbc7-4a3b-b68d-c31744d89f15
+			TargetValue Instance108
+		member(1)::VoiceOverValueConnection
+			TargetNode 1666e088-b7ce-4b6c-a900-aee7acf73a0c
+			TargetValue Instance58
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 1666e088-b7ce-4b6c-a900-aee7acf73a0c
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance35
+		Tracks::array
+			member(0) Instance41
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 5.0
+		LastSequenceIndex 0
+VoiceOverCompareNode a65db8d8-a49b-4b5c-a372-559a3f38bb4b
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode f12a65ef-758a-4960-b272-9abfcad73dbd
+		TargetValue Instance50
+	B::VoiceOverValueConnection
+		TargetNode 1f219c06-549e-4562-98da-00d8cce787e6
+		TargetValue Instance106
+	False Instance141
+	True Instance66
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverConversationNode 367bc1d8-4756-4182-8a08-4c1e1fa8ca0c
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode dbba14a1-bfe3-470b-9b64-5363b032a2f9
+			TargetValue Instance126
+		member(1)::VoiceOverValueConnection
+			TargetNode 683e603b-3797-4f48-8b97-6d0437b6ef4b
+			TargetValue Instance45
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval 683e603b-3797-4f48-8b97-6d0437b6ef4b
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance34
+		Tracks::array
+			member(0) Instance43
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Disallow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 10.0
+		LastSequenceIndex 0
+VoiceOverConstantNode 128313d9-2f70-4568-a261-36e318d63d7d
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance91
+	Source Instance1
+VoiceOverCompareNode 2358ccdc-03eb-4a01-81fb-44e77a6a4e56
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 1fc86832-11d6-4cae-9886-8dafc8f4684e
+		TargetValue Instance125
+	B::VoiceOverValueConnection
+		TargetNode 660e680c-a1f4-4cd0-a088-e12168bef56d
+		TargetValue Instance61
+	False Instance105
+	True Instance71
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverEventNode 83d36de4-0496-44ae-ac14-94ab3ce6b42a
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) d4afc30c-2d35-42f7-a2d6-ba1b05bc7a4c
+	Redirects::array
+		member(0) Instance154
+		member(1) Instance151
+	Event f1df511e-da06-4674-af2d-2f9630035494
+VoiceOverCompareNode cd7bd7e9-4361-4290-8a3f-61f7041903d6
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode 28ac8211-c31b-45a5-9159-8ea5423a18a4
+		TargetValue Instance63
+	B::VoiceOverValueConnection
+		TargetNode d2361c8d-b27c-4100-b131-c1b5d95e0dce
+		TargetValue Instance79
+	False Instance104
+	True Instance56
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverCompareNode b37541ea-018b-41e1-84d2-2feba66b3e29
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	A::VoiceOverValueConnection
+		TargetNode bf75a99a-eedb-4279-bba7-2c27cde68dc2
+		TargetValue Instance77
+	B::VoiceOverValueConnection
+		TargetNode e8500d4e-8813-4171-9afd-95d73de34b7b
+		TargetValue Instance132
+	False Instance115
+	True Instance122
+	Operation VoiceOverCompareExpressionType_Equals
+VoiceOverNamedValue 3e67edee-8912-48cc-8dcf-b5f8495b0d8d
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverVariableNode f12a65ef-758a-4960-b272-9abfcad73dbd
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance50
+	Source Instance148
+VoiceOverGlobalNode ee28d2f3-125d-44bc-8f83-5af37efefb00
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance113
+	Field Sound/VO/VO_System/fdcefc7d-4a65-421c-82fc-468097809999
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConstantNode 581c20f5-cf17-4f98-a433-515f3eee21c2
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance46
+	Source Instance11
+VoiceOverGlobalNode 490178f6-a110-4f50-a0a2-5515ab8ede5a
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance116
+	Field Sound/VO/VO_System/e14c0a6d-37e5-46e8-b578-c0af347f90b3
+	Object Sound/VO/VO_System/1c347d7c-fba0-4e5e-9f18-6338f5ab03ba
+VoiceOverConstantNode 4a8faaf7-258d-4997-aeef-125352d77c88
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance107
+	Source Instance19
+VoiceOverIntervalNode 4a34f3f9-4fdb-4827-ae60-ef264e6b6dbd
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Threshold::VoiceOverValueConnection
+		TargetNode f5f1eaa3-6fad-453f-8ac7-3bfc92bbbb4c
+		TargetValue Instance98
+	Time Instance111
+	False Instance117
+	True Instance120
+	Interval Sound/VO/VO_System/d88ac8f2-8bd5-469a-99cd-acc7dc96d49e
+VoiceOverConstantBooleanValue Instance0
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value False
+VoiceOverConstantBooleanValue Instance1
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value False
+VoiceOverConstantBooleanValue Instance2
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value False
+VoiceOverConstantBooleanValue Instance3
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value False
+VoiceOverConstantGlobalValue Instance4
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance5
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance6
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance7
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance8
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance9
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance10
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantGlobalValue Instance11
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Source Sound/VO/VO_System/4cd6d292-b9ac-446a-b62c-5b7686ea4d0a
+VoiceOverConstantIntegerValue Instance12
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 7
+VoiceOverConstantIntegerValue Instance13
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 30
+VoiceOverConstantIntegerValue Instance14
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 30
+VoiceOverConstantIntegerValue Instance15
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 7
+VoiceOverConstantIntegerValue Instance16
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 7
+VoiceOverConstantIntegerValue Instance17
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 7
+VoiceOverConstantIntegerValue Instance18
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 30
+VoiceOverConstantIntegerValue Instance19
+	$::VoiceOverConstantValue
+		$::DataContainer
+	Value 30
+VoiceOverDialogClip Instance20
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance21
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance22
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance23
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance24
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance25
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance26
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance27
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/nosound_3sec_MP/0e950772-5722-43c5-aecd-0427e221794a
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogGroup Instance28
+	$::DataContainer
+	Sound Sound/VO/VO_Commander/ce8c1dda-f936-46a1-8cdb-90cc7e61097a
+	TrackCount 1
+VoiceOverDialogGroup Instance29
+	$::DataContainer
+	Sound Sound/VO/VO_Commander/ce8c1dda-f936-46a1-8cdb-90cc7e61097a
+	TrackCount 1
+VoiceOverDialogGroup Instance30
+	$::DataContainer
+	Sound Sound/VO/VO_Mother/25f7cb9f-ce31-4c48-9d0d-a6c89bbe057c
+	TrackCount 1
+VoiceOverDialogGroup Instance31
+	$::DataContainer
+	Sound Sound/VO/VO_Mother/25f7cb9f-ce31-4c48-9d0d-a6c89bbe057c
+	TrackCount 1
+VoiceOverDialogGroup Instance32
+	$::DataContainer
+	Sound Sound/VO/VO_Commander/ce8c1dda-f936-46a1-8cdb-90cc7e61097a
+	TrackCount 1
+VoiceOverDialogGroup Instance33
+	$::DataContainer
+	Sound Sound/VO/VO_Mother/25f7cb9f-ce31-4c48-9d0d-a6c89bbe057c
+	TrackCount 1
+VoiceOverDialogGroup Instance34
+	$::DataContainer
+	Sound Sound/VO/VO_Commander/ce8c1dda-f936-46a1-8cdb-90cc7e61097a
+	TrackCount 1
+VoiceOverDialogGroup Instance35
+	$::DataContainer
+	Sound Sound/VO/VO_Mother/25f7cb9f-ce31-4c48-9d0d-a6c89bbe057c
+	TrackCount 1
+VoiceOverDialogTrack Instance36
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Commander/f341e7d8-cba5-4a20-80fb-275002f52c6a
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance22
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance37
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Commander/f341e7d8-cba5-4a20-80fb-275002f52c6a
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance25
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance38
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Commander/f341e7d8-cba5-4a20-80fb-275002f52c6a
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance20
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance39
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Mother/415f0068-d681-40bc-8c3a-f05e0a6dd8a0
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance26
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance40
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Mother/415f0068-d681-40bc-8c3a-f05e0a6dd8a0
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance23
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance41
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Mother/415f0068-d681-40bc-8c3a-f05e0a6dd8a0
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance21
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance42
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Mother/415f0068-d681-40bc-8c3a-f05e0a6dd8a0
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance24
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance43
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Commander/f341e7d8-cba5-4a20-80fb-275002f52c6a
+	QueueGroup *nullGuid*
+	Clips::array
+		member(0) Instance27
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverGroup Instance44
+	$::DataContainer
+	Name Commander
+	Priority 0
+VoiceOverValue Instance45
+	$::DataContainer
+VoiceOverValue Instance46
+	$::DataContainer
+VoiceOverValue Instance47
+	$::DataContainer
+VoiceOverValue Instance48
+	$::DataContainer
+VoiceOverValue Instance49
+	$::DataContainer
+VoiceOverValue Instance50
+	$::DataContainer
+VoiceOverValue Instance51
+	$::DataContainer
+VoiceOverValue Instance52
+	$::DataContainer
+VoiceOverValue Instance53
+	$::DataContainer
+VoiceOverValue Instance54
+	$::DataContainer
+VoiceOverValue Instance55
+	$::DataContainer
+VoiceOverValue Instance56
+	$::DataContainer
+VoiceOverValue Instance57
+	$::DataContainer
+VoiceOverValue Instance58
+	$::DataContainer
+VoiceOverValue Instance59
+	$::DataContainer
+VoiceOverValue Instance60
+	$::DataContainer
+VoiceOverValue Instance61
+	$::DataContainer
+VoiceOverValue Instance62
+	$::DataContainer
+VoiceOverValue Instance63
+	$::DataContainer
+VoiceOverValue Instance64
+	$::DataContainer
+VoiceOverValue Instance65
+	$::DataContainer
+VoiceOverValue Instance66
+	$::DataContainer
+VoiceOverValue Instance67
+	$::DataContainer
+VoiceOverValue Instance68
+	$::DataContainer
+VoiceOverValue Instance69
+	$::DataContainer
+VoiceOverValue Instance70
+	$::DataContainer
+VoiceOverValue Instance71
+	$::DataContainer
+VoiceOverValue Instance72
+	$::DataContainer
+VoiceOverValue Instance73
+	$::DataContainer
+VoiceOverValue Instance74
+	$::DataContainer
+VoiceOverValue Instance75
+	$::DataContainer
+VoiceOverValue Instance76
+	$::DataContainer
+VoiceOverValue Instance77
+	$::DataContainer
+VoiceOverValue Instance78
+	$::DataContainer
+VoiceOverValue Instance79
+	$::DataContainer
+VoiceOverValue Instance80
+	$::DataContainer
+VoiceOverValue Instance81
+	$::DataContainer
+VoiceOverValue Instance82
+	$::DataContainer
+VoiceOverValue Instance83
+	$::DataContainer
+VoiceOverValue Instance84
+	$::DataContainer
+VoiceOverValue Instance85
+	$::DataContainer
+VoiceOverValue Instance86
+	$::DataContainer
+VoiceOverValue Instance87
+	$::DataContainer
+VoiceOverValue Instance88
+	$::DataContainer
+VoiceOverValue Instance89
+	$::DataContainer
+VoiceOverValue Instance90
+	$::DataContainer
+VoiceOverValue Instance91
+	$::DataContainer
+VoiceOverValue Instance92
+	$::DataContainer
+VoiceOverValue Instance93
+	$::DataContainer
+VoiceOverValue Instance94
+	$::DataContainer
+VoiceOverValue Instance95
+	$::DataContainer
+VoiceOverValue Instance96
+	$::DataContainer
+VoiceOverValue Instance97
+	$::DataContainer
+VoiceOverValue Instance98
+	$::DataContainer
+VoiceOverValue Instance99
+	$::DataContainer
+VoiceOverValue Instance100
+	$::DataContainer
+VoiceOverValue Instance101
+	$::DataContainer
+VoiceOverValue Instance102
+	$::DataContainer
+VoiceOverValue Instance103
+	$::DataContainer
+VoiceOverValue Instance104
+	$::DataContainer
+VoiceOverValue Instance105
+	$::DataContainer
+VoiceOverValue Instance106
+	$::DataContainer
+VoiceOverValue Instance107
+	$::DataContainer
+VoiceOverValue Instance108
+	$::DataContainer
+VoiceOverValue Instance109
+	$::DataContainer
+VoiceOverValue Instance110
+	$::DataContainer
+VoiceOverValue Instance111
+	$::DataContainer
+VoiceOverValue Instance112
+	$::DataContainer
+VoiceOverValue Instance113
+	$::DataContainer
+VoiceOverValue Instance114
+	$::DataContainer
+VoiceOverValue Instance115
+	$::DataContainer
+VoiceOverValue Instance116
+	$::DataContainer
+VoiceOverValue Instance117
+	$::DataContainer
+VoiceOverValue Instance118
+	$::DataContainer
+VoiceOverValue Instance119
+	$::DataContainer
+VoiceOverValue Instance120
+	$::DataContainer
+VoiceOverValue Instance121
+	$::DataContainer
+VoiceOverValue Instance122
+	$::DataContainer
+VoiceOverValue Instance123
+	$::DataContainer
+VoiceOverValue Instance124
+	$::DataContainer
+VoiceOverValue Instance125
+	$::DataContainer
+VoiceOverValue Instance126
+	$::DataContainer
+VoiceOverValue Instance127
+	$::DataContainer
+VoiceOverValue Instance128
+	$::DataContainer
+VoiceOverValue Instance129
+	$::DataContainer
+VoiceOverValue Instance130
+	$::DataContainer
+VoiceOverValue Instance131
+	$::DataContainer
+VoiceOverValue Instance132
+	$::DataContainer
+VoiceOverValue Instance133
+	$::DataContainer
+VoiceOverValue Instance134
+	$::DataContainer
+VoiceOverValue Instance135
+	$::DataContainer
+VoiceOverValue Instance136
+	$::DataContainer
+VoiceOverValue Instance137
+	$::DataContainer
+VoiceOverValue Instance138
+	$::DataContainer
+VoiceOverValue Instance139
+	$::DataContainer
+VoiceOverValue Instance140
+	$::DataContainer
+VoiceOverValue Instance141
+	$::DataContainer
+VoiceOverNamedValue Instance142
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverNamedValue Instance143
+	$::VoiceOverValue
+		$::DataContainer
+	Name DummyVar
+	NameHash 2635553192
+	ValueType VoiceOverValueType_Object
+VoiceOverNamedValue Instance144
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverNamedValue Instance145
+	$::VoiceOverValue
+		$::DataContainer
+	Name SquadLeader
+	NameHash 2923007180
+	ValueType VoiceOverValueType_Object
+VoiceOverNamedValue Instance146
+	$::VoiceOverValue
+		$::DataContainer
+	Name SquadLeader
+	NameHash 2923007180
+	ValueType VoiceOverValueType_Object
+VoiceOverNamedValue Instance147
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverNamedValue Instance148
+	$::VoiceOverValue
+		$::DataContainer
+	Name CommanderFactionID
+	NameHash 1150013760
+	ValueType VoiceOverValueType_Integer
+VoiceOverValueRedirect Instance149
+	$::DataContainer
+	Source 9079a673-f42c-48cd-bbe7-9151cf4e72f9
+	Target Instance147
+VoiceOverValueRedirect Instance150
+	$::DataContainer
+	Source 5df7f8c0-ba28-4393-8689-d4e2065aa191
+	Target Instance144
+VoiceOverValueRedirect Instance151
+	$::DataContainer
+	Source 5df7f8c0-ba28-4393-8689-d4e2065aa191
+	Target Instance142
+VoiceOverValueRedirect Instance152
+	$::DataContainer
+	Source 28e94c8d-bbcd-4414-a11a-7ae4e4cbb42c
+	Target Instance145
+VoiceOverValueRedirect Instance153
+	$::DataContainer
+	Source 9079a673-f42c-48cd-bbe7-9151cf4e72f9
+	Target Instance148
+VoiceOverValueRedirect Instance154
+	$::DataContainer
+	Source 28e94c8d-bbcd-4414-a11a-7ae4e4cbb42c
+	Target Instance146
+VoiceOverValueRedirect Instance155
+	$::DataContainer
+	Source Sound/VO/Logic/Warsaw_VO_Events/11e2eaf9-d798-414c-aa20-31cc97d8f9e4
+	Target Instance143

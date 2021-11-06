@@ -1,0 +1,871 @@
+VoiceOverLogicAsset f257b74e-01d7-5d8f-5731-0d665ebb203e
+	$::Asset
+		$::DataContainer
+		Name Sound/VO/Logic/SP_Airfield_TankAndVehicle_Chatter_VO_Logic
+	Events::array
+		member(0) c5df6af5-f412-4bb3-9b37-c8e0e4da68e3
+		member(1) 592d1eb6-ccc5-4504-ab5b-c5e089b3cdab
+		member(2) c3a639f4-ed00-4499-b480-6cda3b9dee40
+		member(3) 7353b334-9272-4961-9d98-266f54ce7144
+		member(4) 5b5bfa30-66d0-4a91-86d8-de16938db0f8
+		member(5) 1a46ac9f-4310-457d-af54-d391031e1632
+		member(6) 203130be-99b6-4934-acb7-0b0248e7869f
+		member(7) 063eaa16-8ee8-473f-b5d0-ce2d39a5ea25
+	Groups::array
+		member(0) Instance34
+	Flows::array
+		member(0) 14b8f224-7f9d-42bf-aace-f86f00fd3043
+		member(1) e88945a2-13f7-4f73-9575-9644ee157b92
+		member(2) 567965ae-783e-4210-918c-8d5d6caf063f
+		member(3) e9cd8c8b-cf03-4731-b03d-6f57bad8cf00
+		member(4) 2e8075e9-314e-4fe2-951d-5d1b6f2d417b
+		member(5) 96898c9f-dd34-4efb-8769-5861b74b345e
+		member(6) 1c3152d0-023e-45d8-8fb6-6627d38cfde7
+	FlowConfigs *nullArray*
+	System Sound/VO/VO_System/a761fe91-6d3d-9299-f2dd-7ef8d078002a
+VoiceOverEvent 063eaa16-8ee8-473f-b5d0-ce2d39a5ea25
+	$::DataContainer
+	Name CH_Hostile_Conversation18
+	NameHash 3814451082
+	Parameters::array
+		member(0) 2ddb055c-69eb-4d91-8f99-db0b1fd4642d
+		member(1) 994dbf8c-6028-4e84-875f-73f70063fedf
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverLogicFlow 14b8f224-7f9d-42bf-aace-f86f00fd3043
+	$::DataContainer
+	Name US1_Vehicle_Fire
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals *nullArray*
+	Roots::array
+		member(0) 923d2d54-cf12-470c-99be-6336a30d9c94
+VoiceOverEvent 5b5bfa30-66d0-4a91-86d8-de16938db0f8
+	$::DataContainer
+	Name US1_AntiVehicleTurret
+	NameHash 2076863895
+	Parameters *nullArray*
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverEvent 7353b334-9272-4961-9d98-266f54ce7144
+	$::DataContainer
+	Name US1_Alert_Tank
+	NameHash 4111241996
+	Parameters *nullArray*
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverEventNode 923d2d54-cf12-470c-99be-6336a30d9c94
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 1fdab15a-bf91-4ce4-948f-93751a31d1df
+	Redirects *nullArray*
+	Event c5df6af5-f412-4bb3-9b37-c8e0e4da68e3
+VoiceOverVariableNode f258e157-c086-4176-8ba5-74bc2512ef39
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance39
+	Source Instance41
+VoiceOverConversationNode 95273258-872c-429e-bdbb-c93b84f88f8d
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance22
+		Tracks::array
+			member(0) Instance30
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverConversationNode 1fdab15a-bf91-4ce4-948f-93751a31d1df
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance21
+		Tracks::array
+			member(0) Instance33
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverNamedValue 2ddb055c-69eb-4d91-8f99-db0b1fd4642d
+	$::VoiceOverValue
+		$::DataContainer
+	Name Soldier1
+	NameHash 3678776702
+	ValueType VoiceOverValueType_Object
+VoiceOverEventNode 958c215f-7063-4a33-9132-fcc27781f088
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Interval *nullGuid*
+	Relationship::array
+		member(0) e4b21d8f-d1d1-4962-a099-72228a86d07f
+	Redirects::array
+		member(0) Instance45
+		member(1) Instance44
+	Event 063eaa16-8ee8-473f-b5d0-ce2d39a5ea25
+VoiceOverLabelNode 1bff4b66-c2b7-4a6f-ab72-1685ec7f4289
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Sources::array
+		member(0) Instance35
+	False Instance37
+	True Instance38
+	WantedLabels::array
+		member(0) Sound/VO/VO_System/213076fa-3d21-40f9-8385-27cf3f4761b8
+	UnwantedLabels *nullArray*
+	SourceMode VoiceOverLabelSourceMode_Combined
+	WantedCompareMode VoiceOverLabelCompareMode_Any
+	UnwantedCompareMode VoiceOverLabelCompareMode_Any
+VoiceOverLogicFlow e9cd8c8b-cf03-4731-b03d-6f57bad8cf00
+	$::DataContainer
+	Name US1_Alert_Tank
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals *nullArray*
+	Roots::array
+		member(0) c34ac3fd-8b95-4517-a23a-b1292f54f3b2
+VoiceOverNamedValue 994dbf8c-6028-4e84-875f-73f70063fedf
+	$::VoiceOverValue
+		$::DataContainer
+	Name Soldier2
+	NameHash 3678776701
+	ValueType VoiceOverValueType_Object
+VoiceOverConversationNode e4b21d8f-d1d1-4962-a099-72228a86d07f
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Condition::array
+		member(0)::VoiceOverValueConnection
+			TargetNode 1bff4b66-c2b7-4a6f-ab72-1685ec7f4289
+			TargetValue Instance38
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance25
+			member(1) Instance24
+		Tracks::array
+			member(0) Instance26
+			member(1) Instance32
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 1
+		QueueMode VoiceOverConversationQueueMode_Always
+		Relevancy 2.0
+		LastSequenceIndex 11
+VoiceOverNamedValue 566bcf8f-69fe-4d96-be91-2a2617284ca7
+	$::VoiceOverValue
+		$::DataContainer
+	Name Pac
+	NameHash 193467159
+	ValueType VoiceOverValueType_Object
+VoiceOverEventNode c9b15993-f646-4b99-ba66-bbf2c657166c
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 95273258-872c-429e-bdbb-c93b84f88f8d
+	Redirects *nullArray*
+	Event 5b5bfa30-66d0-4a91-86d8-de16938db0f8
+VoiceOverNamedValue 4bc47f93-441f-49de-b9dd-63ed43ecd742
+	$::VoiceOverValue
+		$::DataContainer
+	Name Soldier
+	NameHash 2844639087
+	ValueType VoiceOverValueType_Object
+VoiceOverConversationNode cae7ad96-a62c-48ed-8798-0bb400f2b293
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance20
+		Tracks::array
+			member(0) Instance27
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverLogicFlow 96898c9f-dd34-4efb-8769-5861b74b345e
+	$::DataContainer
+	Name Pac_Incoming_VO
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals::array
+		member(0) Instance41
+	Roots::array
+		member(0) 99e71ebc-eb9b-4768-ad90-a9a0e11799a3
+VoiceOverEvent 1a46ac9f-4310-457d-af54-d391031e1632
+	$::DataContainer
+	Name US1_SoldierInPain
+	NameHash 2255186262
+	Parameters::array
+		member(0) 4bc47f93-441f-49de-b9dd-63ed43ecd742
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverLogicFlow e88945a2-13f7-4f73-9575-9644ee157b92
+	$::DataContainer
+	Name US2_Alert_RPG
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals *nullArray*
+	Roots::array
+		member(0) 3b67e6fa-afe9-4d00-92dc-d6099164c943
+VoiceOverLogicFlow 567965ae-783e-4210-918c-8d5d6caf063f
+	$::DataContainer
+	Name US1_APC_Reinforcements
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals *nullArray*
+	Roots::array
+		member(0) db4e27d3-e096-484c-a74f-0ed33fcb1046
+VoiceOverVariableNode f72779b3-392e-48f4-be8e-d52cc13012f7
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance36
+	Source Instance42
+VoiceOverConversationNode bd670bb6-69bd-41b9-9a7e-c2798e1db295
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance19
+		Tracks::array
+			member(0) Instance28
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverEvent 592d1eb6-ccc5-4504-ab5b-c5e089b3cdab
+	$::DataContainer
+	Name US2_Alert_RPG
+	NameHash 1711258874
+	Parameters *nullArray*
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverVariableNode a05230b7-745f-4c01-be42-89f535af4ccb
+	$::VoiceOverExpressionNode
+		$::VoiceOverNode
+			$::DataContainer
+	Value Instance40
+	Source Instance43
+VoiceOverEventNode 99e71ebc-eb9b-4768-ad90-a9a0e11799a3
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) cb759ebf-e57e-4c96-b339-67c3cc1b32ee
+	Redirects::array
+		member(0) Instance46
+	Event 203130be-99b6-4934-acb7-0b0248e7869f
+VoiceOverEvent 203130be-99b6-4934-acb7-0b0248e7869f
+	$::DataContainer
+	Name Pac_Incoming_VO
+	NameHash 574004008
+	Parameters::array
+		member(0) 566bcf8f-69fe-4d96-be91-2a2617284ca7
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverConversationNode cb759ebf-e57e-4c96-b339-67c3cc1b32ee
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance23
+		Tracks::array
+			member(0) Instance31
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverLogicFlow 1c3152d0-023e-45d8-8fb6-6627d38cfde7
+	$::DataContainer
+	Name CH_Hostile_Conversation18
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals::array
+		member(0) Instance42
+		member(1) Instance43
+	Roots::array
+		member(0) 958c215f-7063-4a33-9132-fcc27781f088
+VoiceOverEventNode db4e27d3-e096-484c-a74f-0ed33fcb1046
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) cae7ad96-a62c-48ed-8798-0bb400f2b293
+	Redirects *nullArray*
+	Event c3a639f4-ed00-4499-b480-6cda3b9dee40
+VoiceOverLogicFlow 2e8075e9-314e-4fe2-951d-5d1b6f2d417b
+	$::DataContainer
+	Name US1_AntiVehicleTurret
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+	Group Instance34
+	Locals *nullArray*
+	Roots::array
+		member(0) c9b15993-f646-4b99-ba66-bbf2c657166c
+VoiceOverConversationNode 3e555ff0-f07a-40b1-a52c-2f7290066ae1
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_One
+	Condition *nullArray*
+	PronunciationIndex::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	Interval *nullGuid*
+	FinishedRelationship *nullArray*
+	BlockedRelationship *nullArray*
+	ConditionMode VoiceOverContainerConditionMode_All
+	Probability 100.0
+	Conversation::VoiceOverConversationInfo
+		Groups::array
+			member(0) Instance18
+		Tracks::array
+			member(0) Instance29
+		Pronunciations *nullArray*
+		InterruptMode VoiceOverConversationInterruptMode_Allow
+		Priority 0
+		QueueMode VoiceOverConversationQueueMode_Never
+		Relevancy 3.0
+		LastSequenceIndex 0
+VoiceOverEvent c3a639f4-ed00-4499-b480-6cda3b9dee40
+	$::DataContainer
+	Name US1_APC_Reinforcements
+	NameHash 4188007212
+	Parameters *nullArray*
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverEvent c5df6af5-f412-4bb3-9b37-c8e0e4da68e3
+	$::DataContainer
+	Name US1_Vehicle_Fire
+	NameHash 2334797522
+	Parameters *nullArray*
+	Owner f257b74e-01d7-5d8f-5731-0d665ebb203e
+VoiceOverEventNode 3b67e6fa-afe9-4d00-92dc-d6099164c943
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) 3e555ff0-f07a-40b1-a52c-2f7290066ae1
+	Redirects *nullArray*
+	Event 592d1eb6-ccc5-4504-ab5b-c5e089b3cdab
+VoiceOverEventNode c34ac3fd-8b95-4517-a23a-b1292f54f3b2
+	$::VoiceOverStructureNode
+		$::VoiceOverNode
+			$::DataContainer
+		FlowMode VoiceOverLogicFlowMode_All
+	Interval *nullGuid*
+	Relationship::array
+		member(0) bd670bb6-69bd-41b9-9a7e-c2798e1db295
+	Redirects *nullArray*
+	Event 7353b334-9272-4961-9d98-266f54ce7144
+VoiceOverDialogClip Instance0
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l009/06788a6e-a786-5608-b0fe-680c6555486a
+	OffsetReferences::array
+		member(0) Instance1
+	Events *nullGuid*
+	SequenceIndex 8
+VoiceOverDialogClip Instance1
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l008/7b676a4a-7b76-f63a-d19c-26904e435b17
+	OffsetReferences::array
+		member(0) Instance12
+	Events *nullGuid*
+	SequenceIndex 7
+VoiceOverDialogClip Instance2
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l006/8fd17801-1a35-169a-aee8-aea8880a65d6
+	OffsetReferences::array
+		member(0) Instance13
+	Events *nullGuid*
+	SequenceIndex 5
+VoiceOverDialogClip Instance3
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/US1/Encounter/vo_en_sp_ai_us1_encounter_tank_normal/67931bd5-c22f-0376-9ab2-5d232833a088
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance4
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l003/189611ce-4b49-630d-06ff-163230ee36cd
+	OffsetReferences::array
+		member(0) Instance14
+	Events *nullGuid*
+	SequenceIndex 2
+VoiceOverDialogClip Instance5
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/US1/Encounter/vo_en_sp_ai_us1_encounter_flanker_vehicle_normal/4f4df8e0-0b1d-704b-a110-efdfcdcee9a7
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance6
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/US1/vo_en_sp_ai_us1_flanker_vehicle_fire_ifv_normal/5dcb240a-cdff-70b4-8816-378240c0dd14
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance7
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l011/07bff7d9-30fc-cd33-6f87-1af1fddbc0bc
+	OffsetReferences::array
+		member(0) Instance9
+	Events *nullGuid*
+	SequenceIndex 10
+VoiceOverDialogClip Instance8
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l004/f1aab96e-5c5f-971b-b2a4-a5305beae05a
+	OffsetReferences::array
+		member(0) Instance4
+	Events *nullGuid*
+	SequenceIndex 3
+VoiceOverDialogClip Instance9
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l010/7f3f09d1-effb-32d3-e2c2-a3fe3c63c81d
+	OffsetReferences::array
+		member(0) Instance0
+	Events *nullGuid*
+	SequenceIndex 9
+VoiceOverDialogClip Instance10
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/US1/Encounter/vo_en_sp_ai_us1_encounter_avt_normal/d897d923-0f4f-67d0-1c57-7cda9c069926
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance11
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l001/0e283f28-cedb-7786-596b-b498f43f49ab
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance12
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l007/c681f07c-e719-769d-911d-b0e2d4beddb3
+	OffsetReferences::array
+		member(0) Instance2
+	Events *nullGuid*
+	SequenceIndex 6
+VoiceOverDialogClip Instance13
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l005/d2a81c91-509a-c811-3d12-03fa3226657f
+	OffsetReferences::array
+		member(0) Instance8
+	Events *nullGuid*
+	SequenceIndex 4
+VoiceOverDialogClip Instance14
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l002/a0018c90-2373-d90d-631a-a60efa441b76
+	OffsetReferences::array
+		member(0) Instance11
+	Events *nullGuid*
+	SequenceIndex 1
+VoiceOverDialogClip Instance15
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/Squad/Pac/Alert/vo_en_sp_ai_pac_alert_mortar_incoming_combat/80810a32-5478-2743-29eb-6d75c9596a37
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance16
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.0
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/US1/Alert/vo_en_sp_ai_us1_alert_rpg_normal/4cfa2255-9520-1c1e-243e-bc57feb11546
+	OffsetReferences *nullArray*
+	Events *nullGuid*
+	SequenceIndex 0
+VoiceOverDialogClip Instance17
+	$::DataContainer
+	MinOffset 0.0
+	MaxOffset 0.5
+	Takes::array
+		member(0)::VoiceOverDialogTake
+			Wave Sound/VO/SP/AI/CH/vo_en_sp_ch_idle_guarding_dialog_s18_l012/d1f93b85-8bac-b57e-182b-c17e074ee5e8
+	OffsetReferences::array
+		member(0) Instance7
+	Events *nullGuid*
+	SequenceIndex 11
+VoiceOverDialogGroup Instance18
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/0cc92ffd-17f2-45c8-ae9d-1908df3f4b84
+	TrackCount 1
+VoiceOverDialogGroup Instance19
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/0cc92ffd-17f2-45c8-ae9d-1908df3f4b84
+	TrackCount 1
+VoiceOverDialogGroup Instance20
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/0cc92ffd-17f2-45c8-ae9d-1908df3f4b84
+	TrackCount 1
+VoiceOverDialogGroup Instance21
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/0cc92ffd-17f2-45c8-ae9d-1908df3f4b84
+	TrackCount 1
+VoiceOverDialogGroup Instance22
+	$::DataContainer
+	Sound Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/0cc92ffd-17f2-45c8-ae9d-1908df3f4b84
+	TrackCount 1
+VoiceOverDialogGroup Instance23
+	$::DataContainer
+	Sound Sound/VO/VO_InWorld_SP/ba122f0f-3e07-4d61-b34a-0912b11e07fc
+	TrackCount 1
+VoiceOverDialogGroup Instance24
+	$::DataContainer
+	Sound Sound/VO/VO_InWorld_AI_Talk/0856a61f-cc62-4f6a-8750-1cab04f276d3
+	TrackCount 1
+VoiceOverDialogGroup Instance25
+	$::DataContainer
+	Sound Sound/VO/VO_InWorld_AI_Talk/0856a61f-cc62-4f6a-8750-1cab04f276d3
+	TrackCount 1
+VoiceOverDialogTrack Instance26
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode f72779b3-392e-48f4-be8e-d52cc13012f7
+		TargetValue Instance36
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_InWorld_AI_Talk/dba005dd-0c4d-4443-850f-dacb51110dc1
+	QueueGroup Sound/VO/VO_System/00d052dc-e6e4-42f8-9514-073e58bfa266
+	Clips::array
+		member(0) Instance11
+		member(1) Instance4
+		member(2) Instance13
+		member(3) Instance12
+		member(4) Instance0
+		member(5) Instance7
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance27
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/a3556301-222a-4c1f-8576-85917f6e7d28
+	QueueGroup Sound/VO/VO_System/f129747f-7ef0-4652-b08e-7800b292cc9d
+	Clips::array
+		member(0) Instance5
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance28
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/a3556301-222a-4c1f-8576-85917f6e7d28
+	QueueGroup Sound/VO/VO_System/f129747f-7ef0-4652-b08e-7800b292cc9d
+	Clips::array
+		member(0) Instance3
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance29
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/a3556301-222a-4c1f-8576-85917f6e7d28
+	QueueGroup Sound/VO/VO_System/f129747f-7ef0-4652-b08e-7800b292cc9d
+	Clips::array
+		member(0) Instance16
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance30
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/a3556301-222a-4c1f-8576-85917f6e7d28
+	QueueGroup Sound/VO/VO_System/f129747f-7ef0-4652-b08e-7800b292cc9d
+	Clips::array
+		member(0) Instance10
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance31
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode f258e157-c086-4176-8ba5-74bc2512ef39
+		TargetValue Instance39
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_InWorld_SP/e25020a7-2c64-4376-921d-74e181e32895
+	QueueGroup Sound/VO/VO_System/82e13b77-1935-4b72-81ec-15da4a4aac89
+	Clips::array
+		member(0) Instance15
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverDialogTrack Instance32
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode a05230b7-745f-4c01-be42-89f535af4ccb
+		TargetValue Instance40
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_InWorld_AI_Talk/dba005dd-0c4d-4443-850f-dacb51110dc1
+	QueueGroup Sound/VO/VO_System/00d052dc-e6e4-42f8-9514-073e58bfa266
+	Clips::array
+		member(0) Instance14
+		member(1) Instance8
+		member(2) Instance2
+		member(3) Instance1
+		member(4) Instance9
+		member(5) Instance17
+	TakeSwitchingOnResume False
+	ParentTrackIndex 1
+	GroupIndex 1
+VoiceOverDialogTrack Instance33
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeControl::VoiceOverValueConnection
+		TargetNode *nullGuid*
+		TargetValue *nullGuid*
+	TakeIndexMapping *nullArray*
+	TakeSwitching VoiceOverDialogTakeBehavior_Start
+	Output *nullGuid*
+	SamplerNode Sound/VO/VO_Radio_Tankdriver_BrokenRadio_01/a3556301-222a-4c1f-8576-85917f6e7d28
+	QueueGroup Sound/VO/VO_System/f129747f-7ef0-4652-b08e-7800b292cc9d
+	Clips::array
+		member(0) Instance6
+	TakeSwitchingOnResume False
+	ParentTrackIndex 0
+	GroupIndex 0
+VoiceOverGroup Instance34
+	$::DataContainer
+	Name Default
+	Priority 0
+VoiceOverLabelSource Instance35
+	$::DataContainer
+	Source::VoiceOverValueConnection
+		TargetNode f72779b3-392e-48f4-be8e-d52cc13012f7
+		TargetValue Instance36
+VoiceOverValue Instance36
+	$::DataContainer
+VoiceOverValue Instance37
+	$::DataContainer
+VoiceOverValue Instance38
+	$::DataContainer
+VoiceOverValue Instance39
+	$::DataContainer
+VoiceOverValue Instance40
+	$::DataContainer
+VoiceOverNamedValue Instance41
+	$::VoiceOverValue
+		$::DataContainer
+	Name Pac
+	NameHash 193467159
+	ValueType VoiceOverValueType_Object
+VoiceOverNamedValue Instance42
+	$::VoiceOverValue
+		$::DataContainer
+	Name Soldier1
+	NameHash 3678776702
+	ValueType VoiceOverValueType_Object
+VoiceOverNamedValue Instance43
+	$::VoiceOverValue
+		$::DataContainer
+	Name Soldier2
+	NameHash 3678776701
+	ValueType VoiceOverValueType_Object
+VoiceOverValueRedirect Instance44
+	$::DataContainer
+	Source 994dbf8c-6028-4e84-875f-73f70063fedf
+	Target Instance43
+VoiceOverValueRedirect Instance45
+	$::DataContainer
+	Source 2ddb055c-69eb-4d91-8f99-db0b1fd4642d
+	Target Instance42
+VoiceOverValueRedirect Instance46
+	$::DataContainer
+	Source 566bcf8f-69fe-4d96-be91-2a2617284ca7
+	Target Instance41

@@ -1,0 +1,208 @@
+MixerAsset eaec9021-1460-48b8-8c57-6559d31a74df
+	$::Asset
+		$::DataContainer
+		Name Sound/Levels/SP_Naval/Mixers/SP_Naval_Ambience_FlightDeck_Storm_Mixer
+	Graph 8d0ab80d-560e-4624-832b-6be7b82c0cc9
+	Presets::array
+		member(0) 1e8448fe-864e-48f2-9efe-14a83da93103
+	DefaultPreset 1e8448fe-864e-48f2-9efe-14a83da93103
+	Bypass False
+MixerGraphData 8d0ab80d-560e-4624-832b-6be7b82c0cc9
+	$::AudioGraphData
+		$::DataContainer
+		Nodes::array
+			member(0) 6bc50b9d-1100-48c1-8b55-e5ead25b0063
+			member(1) 98096c4e-6440-4923-a8ea-3e74898e4945
+			member(2) af76b830-ddb9-45dd-b17c-fed6d8bc3ad7
+			member(3) 59113bbc-f995-4373-b324-85af8c4625c7
+			member(4) e1147c36-0b47-45d8-87d8-fed7d6c59752
+			member(5) 8dedb4b2-c57c-47dd-b6bb-dee12a387c1e
+		PublicParameters *nullArray*
+		PublicEvents *nullArray*
+		PublicAssetParameters *nullArray*
+		PublicValueCount 1
+		ValueCount 7
+	Inputs::array
+		member(0) 272b0711-f24d-459f-a818-5af0732e3f3b
+	MixerInputInfos::array
+		member(0)::MixerInputInfo
+			Mode MixerValueAccumulateMode_None
+			KeepValue False
+	Outputs *nullArray*
+AudioGraphParameter 272b0711-f24d-459f-a818-5af0732e3f3b
+	$::DataContainer
+	DefaultValue 0.0
+	NameHash 138977140
+	ValueIndex 6
+ParameterFilterLinearNodeData af76b830-ddb9-45dd-b17c-fed6d8bc3ad7
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 2
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 3
+		IsConnected True
+	AttackSpeed::AudioGraphNodePort
+		UnconnectedValue 40.0
+		ValueIndex 0
+		IsConnected False
+	ReleaseSpeed::AudioGraphNodePort
+		UnconnectedValue 40.0
+		ValueIndex 0
+		IsConnected False
+	Version ParameterFilterLinearNodeVersion_2012_5
+	DefaultOutputValue 0.0
+	KeepActive False
+ParameterFilterLinearNodeData e1147c36-0b47-45d8-87d8-fed7d6c59752
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 4
+		IsConnected True
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected True
+	AttackSpeed::AudioGraphNodePort
+		UnconnectedValue 20.0
+		ValueIndex 0
+		IsConnected False
+	ReleaseSpeed::AudioGraphNodePort
+		UnconnectedValue 1000.0
+		ValueIndex 0
+		IsConnected False
+	Version ParameterFilterLinearNodeVersion_2012_5
+	DefaultOutputValue 0.0
+	KeepActive False
+ScaleClampNodeData 98096c4e-6440-4923-a8ea-3e74898e4945
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.5
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue -10.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 2
+		IsConnected True
+MixerInputEntry 4d5eed61-851d-44eb-9763-39b421dee5d7
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	Source 272b0711-f24d-459f-a818-5af0732e3f3b
+	AccumulateMode MixerValueAccumulateMode_None
+	KeepValue False
+MixerSetPropertyEntry 92708274-02e7-4076-b52d-e3bac373d978
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 5
+		IsConnected True
+	Target 0
+	Group Sound/MixerSystem/07e02c7a-b09a-445f-92b4-a46e2e77620d
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.20000000298023224
+MixerSetPropertyEntry 24a44591-b10d-4556-96df-6f686d845cbb
+	$::AudioGraphNodePortGroup
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 3
+		IsConnected True
+	Target 0
+	Group Sound/MixerSystem/192de6a1-a06f-4ad2-811b-a3b7e64a39f0
+	AttackTime 0.10000000149011612
+	ReleaseTime 0.20000000298023224
+MixerInputNodeData 6bc50b9d-1100-48c1-8b55-e5ead25b0063
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 4d5eed61-851d-44eb-9763-39b421dee5d7
+MixerSetPropertyNodeData 8dedb4b2-c57c-47dd-b6bb-dee12a387c1e
+	$::AudioGraphNodeData
+		$::DataContainer
+	Entries::array
+		member(0) 24a44591-b10d-4556-96df-6f686d845cbb
+		member(1) 92708274-02e7-4076-b52d-e3bac373d978
+ScaleClampNodeData 59113bbc-f995-4373-b324-85af8c4625c7
+	$::AudioGraphNodeData
+		$::DataContainer
+	In::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 1
+		IsConnected True
+	InMin::AudioGraphNodePort
+		UnconnectedValue 0.3499999940395355
+		ValueIndex 0
+		IsConnected False
+	InMax::AudioGraphNodePort
+		UnconnectedValue 1.0
+		ValueIndex 0
+		IsConnected False
+	OutMin::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 0
+		IsConnected False
+	OutMax::AudioGraphNodePort
+		UnconnectedValue -20.0
+		ValueIndex 0
+		IsConnected False
+	Out::AudioGraphNodePort
+		UnconnectedValue 0.0
+		ValueIndex 4
+		IsConnected True
+MixerPreset 1e8448fe-864e-48f2-9efe-14a83da93103
+	$::DataContainer
+	NameHash 0
+	Groups::array
+		member(0)::MixerPresetGroupData
+			Group Sound/MixerSystem/07e02c7a-b09a-445f-92b4-a46e2e77620d
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			Priority 0
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+			IsDominant False
+			IsAdditive False
+		member(1)::MixerPresetGroupData
+			Group Sound/MixerSystem/192de6a1-a06f-4ad2-811b-a3b7e64a39f0
+			State MixGroupState_Normal
+			AttackTime 0.10000000149011612
+			ReleaseTime 0.20000000298023224
+			Priority 0
+			Properties::array
+				member(0)::MixGroupPropertyValue
+					Property 0
+					Value 0.0
+					Controlled True
+			IsDominant False
+			IsAdditive False
+	Nodes *nullArray*
