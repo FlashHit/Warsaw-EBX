@@ -1,0 +1,203 @@
+ScalableEmitterDocument 36a101ab-522d-4ccc-b377-979296f7b2bc
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance1
+	TemplateDataMedium Instance1
+	TemplateDataHigh Instance1
+	TemplateDataUltra Instance1
+DefaultEvaluatorData Instance0
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Values::Vec4
+		x 1.0
+		y 1.0
+		z 1.0
+		w 1.0
+EmitterTemplateData Instance1
+	$::DataContainer
+	RootProcessor Instance8
+	MaxCount 50
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 1.5
+	TimeScale 1.0
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Ribbon
+	EmittableAlignment EmittableAlignment_Screen
+	MotionStretchMultiplier 1.0
+	MotionStretchLengthClamp 100.0
+	Mesh *nullGuid*
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 1.0
+	SoftParticlesFadeDistanceMultiplier 0.0
+	LightWrapAroundFactor 0.5
+	BentNormalFactor 1.0
+	LightMultiplier 1.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 1.0
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 0.0
+	MinScreenArea 9.999999747378752e-05
+	MeshCullingDistance 0.0
+	DistanceScaleLength 200.0
+	DistanceScaleNearValue 0.0
+	DistanceScaleFarValue 8.0
+	SpeedNormalizationValue 50.0
+	WindSpeedNormalizationValue 50.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 0.8999999761581421
+	CullFadeNearRange 30.0
+	CullFadeFarDistance 850.0
+	CullFadeFarRange 1.0
+	RepeatParticleSpawning True
+	FollowSpawnSource False
+	KillParticlesWithEmitter True
+	ExclusionVolumeCullEnable False
+	Emissive True
+	Opaque False
+	ForceNiceSorting False
+	LocalSpace False
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes True
+	FogFade False
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 False
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable False
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialColorInterpData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Color0::Vec3
+		x 15.0
+		y 15.0
+		z 15.0
+	Color1::Vec3
+		x 0.019999999552965164
+		y 0.019999999552965164
+		z 0.019999999552965164
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -4.148937702178955
+		w 1.347659707069397
+PolynomialData Instance3
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z 15.384605407714844
+		w -0.30769211053848267
+	MinClamp 0.0
+	MaxClamp 1.0
+SpawnColorRandomData Instance4
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor *nullGuid*
+		EvaluatorInput EfOne
+	Color0::Vec3
+		x 1.0
+		y 0.10599999874830246
+		z 0.008999999612569809
+	Color1::Vec3
+		x 0.8999999761581421
+		y 0.0949999988079071
+		z 0.00800000037997961
+UpdateColorData Instance5
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance9
+		EvaluatorInput EfNormTime
+	Color::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+SpawnRibbonRateData Instance6
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance11
+		EvaluatorInput EfOne
+	SpawnRate 1.5
+	AngleDeviation 0.0
+	DistributeOverDistance True
+SpawnSizeData Instance7
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance5
+		EvaluatorInput EfEmitterNormTime
+	Size 0.10000000149011612
+UpdateAgeData Instance8
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance6
+		EvaluatorInput EfOne
+	Lifetime 0.05000000074505806
+	RandomLifetimeScale 0.0
+	MaxFactor 1.0
+UpdateRibbonFadeData Instance9
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance10
+		EvaluatorInput EfNormTime
+	FadeInParticleCount 0
+	FadeOutParticleCount 3
+UpdateRibbonTextureData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfNormTime
+	TextureParticleCount 1
+	MirrorTexture True
+UpdateSizeData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance0
+		NextProcessor Instance7
+		EvaluatorInput EfNormTime
+	Pivot::Vec2
+		x 0.0
+		y 0.0
+UpdateTextureCoordsData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance13
+		EvaluatorInput EfNormTime
+	BaseTexture FX/Textures/Trails/SmokeTrail_01/7eb07741-3852-449e-9d11-0f9de4d665a1
+	NormalTexture Systems/Emitter/DefaultNormalTexture/ffdd9e47-30b0-4c9e-9539-2f6240c340cc
+UpdateTransparencyData Instance13
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance3
+		NextProcessor Instance4
+		EvaluatorInput EfEmitterNormTime
+	CullThreshold 0.20000000298023224

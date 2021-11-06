@@ -1,0 +1,211 @@
+ScalableEmitterDocument 3f2ad276-38c3-497d-91f1-7a1d7c42cffd
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance0
+	TemplateDataMedium Instance0
+	TemplateDataHigh Instance0
+	TemplateDataUltra Instance0
+EmitterTemplateData Instance0
+	$::DataContainer
+	RootProcessor Instance13
+	MaxCount 7
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 0.30000001192092896
+	TimeScale 1.0
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Point
+	EmittableAlignment EmittableAlignment_MotionStretch
+	MotionStretchMultiplier 2.0
+	MotionStretchLengthClamp 100.0
+	Mesh *nullGuid*
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 1.0
+	SoftParticlesFadeDistanceMultiplier 0.0
+	LightWrapAroundFactor 0.0
+	BentNormalFactor 1.0
+	LightMultiplier 0.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 0.800000011920929
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 50.0
+	MinScreenArea 1.0
+	MeshCullingDistance 0.0
+	DistanceScaleLength 50.0
+	DistanceScaleNearValue 1.0
+	DistanceScaleFarValue 2.0
+	SpeedNormalizationValue 50.0
+	WindSpeedNormalizationValue 50.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 0.0
+	CullFadeNearRange 0.0
+	CullFadeFarDistance 0.0
+	CullFadeFarRange 0.0
+	RepeatParticleSpawning False
+	FollowSpawnSource False
+	KillParticlesWithEmitter False
+	ExclusionVolumeCullEnable False
+	Emissive True
+	Opaque False
+	ForceNiceSorting False
+	LocalSpace False
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes True
+	FogFade True
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 False
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable False
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialData Instance1
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -6.466660499572754
+		w 1.9226654767990112
+	MinClamp 0.25
+	MaxClamp 1.0
+PolynomialData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -7.5
+		w 1.0
+	MinClamp 0.10000000149011612
+	MaxClamp 1.0
+SuperSphereEvaluatorData Instance3
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	InnerRadius 0.8999999761581421
+	Scale::Vec3
+		x 0.10000000149011612
+		y 0.05000000074505806
+		z 0.10000000149011612
+	Pivot::Vec3
+		x 0.0
+		y 0.019999999552965164
+		z 0.0
+	OuterRadius 1.0
+	StartZenithAngle 55.10200119018555
+	EndZenithAngle 119.38800048828125
+	InnerRadiusBound 0.7289999127388
+	StartZenithAngleBound 0.7860586047172546
+	EndZenithAngleBound 0.2546393573284149
+	StartAzimuthAngle 180.0
+	EndAzimuthAngle -180.0
+AirResistanceData Instance4
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance6
+		EvaluatorInput EfNormTime
+	DragFactor 15.0
+EmitterData Instance5
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance14
+		EvaluatorInput EfNormTime
+	EmitterAssets::array
+		member(0) fx/destruction/propdest/emitters_generic/gasexplosion/em_propdest_carexplo_child_sparks/36f82222-ac01-4a4f-a57a-6d7884801b30
+GravityData Instance6
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfNormTime
+	Gravity 9.0
+	PerParticleRandomness 0.0
+RandomEvaluatorData Instance7
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.5
+SpawnDirectionData Instance8
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance9
+		EvaluatorInput EfOne
+	DirectionFromEmitterOrigin 0.6119999885559082
+	InheritSpeedAmount 1.0
+	InheritSpeedSmoothingFactor 0.0
+	InheritSpeedRandomness 0.0
+	InheritSpeedAndDirectionFromEmitter False
+SpawnPositionData Instance9
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance3
+		NextProcessor Instance11
+		EvaluatorInput EfOne
+SpawnRateData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance8
+		EvaluatorInput EfOne
+	SpawnRate 200000.0
+	DistributeOverTime True
+	DistributeOverDistance False
+SpawnSpeedData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance7
+		NextProcessor Instance4
+		EvaluatorInput EfOne
+	Speed 30.0
+TurbulanceData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance1
+		NextProcessor Instance5
+		EvaluatorInput EfNormTime
+	Intensity 2.0
+	NoiseType TurbulenceNoiseType_Random
+	PeriodSpace 1.0
+	TurbulenceForceAsInstantVelocity 0.0
+	Octaves 1
+	OctavePersistence 0.5
+	PerParticleRandomness 0.5
+UpdateAgeData Instance13
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance10
+		EvaluatorInput EfOne
+	Lifetime 1.0
+	RandomLifetimeScale 0.20000000298023224
+	MaxFactor 1.0
+UpdateLinearVelocityData Instance14
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor *nullGuid*
+		EvaluatorInput EfNormTime

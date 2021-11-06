@@ -1,0 +1,205 @@
+ScalableEmitterDocument 309f9c9d-afcc-4b96-ac58-105fe6c40af6
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance0
+	TemplateDataMedium Instance0
+	TemplateDataHigh Instance0
+	TemplateDataUltra Instance0
+EmitterTemplateData Instance0
+	$::DataContainer
+	RootProcessor Instance11
+	MaxCount 1
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 5.0
+	TimeScale 1.0
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Mesh
+	EmittableAlignment EmittableAlignment_Emittable
+	MotionStretchMultiplier 1.0
+	MotionStretchLengthClamp 100.0
+	Mesh fx/mesh/weapons/meshp_tomahawkmissile_Mesh/6c0395f1-cefb-1690-6972-2b4e07a0eeb6
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 1.0
+	SoftParticlesFadeDistanceMultiplier 0.0
+	LightWrapAroundFactor 0.5
+	BentNormalFactor 1.0
+	LightMultiplier 1.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 0.800000011920929
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 0.0
+	MinScreenArea 1.0
+	MeshCullingDistance 5000.0
+	DistanceScaleLength 0.0
+	DistanceScaleNearValue 1.0
+	DistanceScaleFarValue 1.0
+	SpeedNormalizationValue 50.0
+	WindSpeedNormalizationValue 50.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 0.0
+	CullFadeNearRange 0.0
+	CullFadeFarDistance 0.0
+	CullFadeFarRange 0.0
+	RepeatParticleSpawning False
+	FollowSpawnSource False
+	KillParticlesWithEmitter False
+	ExclusionVolumeCullEnable False
+	Emissive False
+	Opaque True
+	ForceNiceSorting False
+	LocalSpace True
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes False
+	FogFade True
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 False
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable False
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialData Instance1
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -10.0
+		w 10.0
+	MinClamp 0.0
+	MaxClamp 1.0
+SuperSphereEvaluatorData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	InnerRadius 100.0
+	Scale::Vec3
+		x 0.10000000149011612
+		y 0.0
+		z 0.10000000149011612
+	Pivot::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	OuterRadius 225.0
+	StartZenithAngle 0.0
+	EndZenithAngle 12.20300006866455
+	InnerRadiusBound 0.08779149502515793
+	StartZenithAngleBound 1.0
+	EndZenithAngleBound 0.9887024164199829
+	StartAzimuthAngle 180.0
+	EndAzimuthAngle -180.0
+EmitterData Instance3
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance13
+		EvaluatorInput EfNormTime
+	EmitterAssets::array
+		member(0) fx/ambient/warfare/projectiles/missiles/emitters/em_ambwar_shipweapon_tomahawkmissile_sprite_smoke/9d880994-81f2-4038-899a-3af9eafa91c7
+		member(1) fx/ambient/warfare/projectiles/missiles/emitters/em_ambwar_shipweapon_tomahawkmissile_sprite_engine/813f63ea-426c-46a4-b3a6-6fbd24e80979
+		member(2) fx/ambient/warfare/projectiles/missiles/emitters/em_ambwar_shipweapon_tomahawkmissile_ribbon/381e55c9-73b2-4f3d-887e-6e33cdda4566
+RandomEvaluatorData Instance4
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.8999999761581421
+RandomXYZEvaluatorData Instance5
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	MaxX 0.25
+	MinX -0.25
+	MaxY 1.0
+	MinY 1.0
+	MaxZ 0.25
+	MinZ -0.25
+SpawnDirectionData Instance6
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance5
+		NextProcessor Instance7
+		EvaluatorInput EfOne
+	DirectionFromEmitterOrigin 0.10000000149011612
+	InheritSpeedAmount 1.0
+	InheritSpeedSmoothingFactor 0.0
+	InheritSpeedRandomness 0.0
+	InheritSpeedAndDirectionFromEmitter False
+SpawnPositionData Instance7
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance10
+		EvaluatorInput EfOne
+SpawnRateData Instance8
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance6
+		EvaluatorInput EfOne
+	SpawnRate 1.0
+	DistributeOverTime True
+	DistributeOverDistance False
+SpawnSizeData Instance9
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance14
+		EvaluatorInput EfOne
+	Size 0.6499999761581421
+SpawnSpeedData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance4
+		NextProcessor Instance9
+		EvaluatorInput EfOne
+	Speed 0.0
+UpdateAgeData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance8
+		EvaluatorInput EfOne
+	Lifetime 7.0
+	RandomLifetimeScale 0.0
+	MaxFactor 1.0
+UpdateLinearVelocityData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor *nullGuid*
+		EvaluatorInput EfNormTime
+UpdateOrientationData Instance13
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfNormTime
+UpdateSizeData Instance14
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance1
+		NextProcessor Instance3
+		EvaluatorInput EfNormTime
+	Pivot::Vec2
+		x 0.0
+		y 0.0

@@ -1,0 +1,111 @@
+SpatialPrefabBlueprint 12ed3667-5ab5-5dc0-da7a-520c4783b5ff
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/Levels/MP_Dam/FX_OilFire_S
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(3)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_ClientAndServer
+		Objects::array
+			member(0) Instance1
+			member(1) Instance2
+			member(2) Instance0
+EffectReferenceObjectData Instance0
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 65279085
+		Blueprint FX/Levels/MP_Dam/FX_SmokePillar/626d4cf1-a687-5948-3973-c3e316b864ff
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable True
+		CastReflectionEnable True
+		Excluded False
+	AutoStart False
+EventSplitterEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 108376457
+	Realm Realm_ClientAndServer
+	RunOnce False
+EventSplitterEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 112624294
+	Realm Realm_ClientAndServer
+	RunOnce False
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+		member(1)::DynamicEvent
+			Id 2089401213
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

@@ -1,0 +1,183 @@
+SpatialPrefabBlueprint 35003b12-12d3-0b52-770b-bacdc1a6d394
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/Destruction/PropDest/FX_PropDest_Sprinkler_GroundPrefab
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance3
+							Target Instance0
+							SourceFieldId 225375086
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance4
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance4
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -142514216
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(1)::EventConnection
+						Source Instance4
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 1454266112
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(2)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -142514216
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(3)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1454266112
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(4)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -142514216
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(5)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 1454266112
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_NetworkedClient
+		Objects::array
+			member(0) Instance1
+			member(1) Instance0
+			member(2) Instance3
+			member(3) Instance2
+ReferenceObjectData Instance0
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 422421520
+	Blueprint Objects/Props/DecalPlane_01/DecalPlane_01/44365ce4-256e-ac20-84e0-d4c9ade3c288
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 5.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 5.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 5.0
+		trans::Vec3
+			x 0.0
+			y 0.009999999776482582
+			z 0.0
+	ObjectVariation Objects/Props/DecalPlane_01/DecalPlane_01_WaterSplash/681c3c14-4eee-d648-e2d1-82bc3046d0b5
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable True
+	Excluded False
+EffectReferenceObjectData Instance1
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 59501077
+		Blueprint FX/Destruction/PropDest/FX_PropDest_Sprinkler_GroundSplatt/5c7f7a78-f693-4406-96f8-71651dec9350
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable True
+		CastReflectionEnable True
+		Excluded False
+	AutoStart False
+SoundEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 39824251
+	Sound Sound/Levels/Shared/Water/Shared_Ambients_Spot_WaterDripping_M/61a98f6f-c9ca-4144-90c9-a97c144b5545
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform False
+BoolEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 120051102
+	Realm Realm_ClientAndServer
+	DefaultValue False
+InterfaceDescriptorData Instance4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -142514216
+		member(1)::DynamicEvent
+			Id 1454266112
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

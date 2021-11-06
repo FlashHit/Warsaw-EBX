@@ -1,0 +1,145 @@
+LogicPrefabBlueprint 28c3d775-000e-a14f-8148-09fe4490f254
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/VE/Gameplay/Prefab_WaterLine
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 225375086
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance4
+							Target Instance2
+							SourceFieldId 49680608
+							TargetFieldId 1591366968
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance2
+							Target Instance3
+							SourceFieldId 731416433
+							TargetFieldId 1591366968
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance3
+							Target Instance0
+							SourceFieldId 731416433
+							TargetFieldId 631114095
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance4
+					Flags 0
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -577169869
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 369452315
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Client
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+			member(2) Instance2
+			member(3) Instance3
+LogicVisualEnvironmentReferenceObjectData Instance0
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 160323241
+		Blueprint FX/VE/Gameplay/VE_Waterline/12c3bfeb-697d-4d05-9bda-6a8d15798b77
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable False
+		CastReflectionEnable False
+		Excluded False
+BoolEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 33625412
+	Realm Realm_Client
+	DefaultValue False
+FloatRangeConverterEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 413585463
+	Realm Realm_Client
+	InStart 1.0
+	InEnd -1.0
+	OutStart 1.0
+	OutEnd -1.0
+	InputValue 0.0
+	FireEventsOnInit False
+	IgnoreAboveRangeCheck False
+	Invert False
+	Clamp True
+FloatRangeConverterEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 159169991
+	Realm Realm_Client
+	InStart 1.0
+	InEnd -1.0
+	OutStart 1.0
+	OutEnd -1.0
+	InputValue 0.0
+	FireEventsOnInit False
+	IgnoreAboveRangeCheck False
+	Invert False
+	Clamp True
+InterfaceDescriptorData Instance4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 49680608
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

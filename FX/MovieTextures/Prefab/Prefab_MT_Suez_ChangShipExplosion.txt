@@ -1,0 +1,180 @@
+SpatialPrefabBlueprint 271061c2-7707-4625-8060-cebb765391c9
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/MovieTextures/Prefab/Prefab_MT_Suez_ChangShipExplosion
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface Instance5
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance5
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 1818819204
+						TargetEvent::EventSpec
+							Id -1608153915
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 1585225629
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(4)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(5)::EventConnection
+						Source Instance5
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 1977994562
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(6)::EventConnection
+						Source Instance5
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1977994562
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+			member(2) Instance3
+			member(3) Instance2
+			member(4) Instance4
+EffectReferenceObjectData Instance0
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 66799892
+		Blueprint FX/Levels/Sp_Suez/FX_ChangShip_Explosion_HighEnd/7a34e054-af05-430f-a86d-b45fa50b87a3
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 2.384185791015625e-07
+				y 0.9999998807907104
+				z -2.9802322387695312e-08
+			up::Vec3
+				x -1.1920928244535389e-07
+				y 1.1920928244535389e-07
+				z 0.9999998211860657
+			forward::Vec3
+				x 0.9999998211860657
+				y -1.1920928244535389e-07
+				z 2.3841856489070778e-07
+			trans::Vec3
+				x 0.0
+				y 45.96192932128906
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable True
+		CastReflectionEnable False
+		Excluded False
+	AutoStart False
+SoundEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 61740962
+	Sound Sound/Levels/SP_Suez/Animation/vo_en_sp_mocap_suez_s30_SFX_Explosions/c1e79779-eb3b-4d9a-a367-92b40b22b2f8
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform False
+DelayEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 44703961
+	Delay 4.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+DelayEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 62394094
+	Delay 1.0
+	Realm Realm_Client
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+EventSplitterEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 96915898
+	Realm Realm_Server
+	RunOnce False
+InterfaceDescriptorData Instance5
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1977994562
+		member(1)::DynamicEvent
+			Id 1818819204
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

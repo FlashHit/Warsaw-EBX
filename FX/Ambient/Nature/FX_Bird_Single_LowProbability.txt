@@ -1,0 +1,168 @@
+SpatialPrefabBlueprint 96313d97-fcc4-5e66-19e2-06c34ca322b4
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name FX/Ambient/Nature/FX_Bird_Single_LowProbability
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source Instance1
+							Target Instance2
+							SourceFieldId 838548383
+							TargetFieldId 0
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(1)::EventConnection
+						Source Instance1
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance1
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance1
+			member(1) Instance0
+			member(2) Instance3
+EffectReferenceObjectData Instance0
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 46566307
+		Blueprint FX/Ambient/Nature/FX_AnimBird_Raven_Single_TakeOff_LowProbability_02/60478cbb-30dc-4386-ab3e-b0dcadfbaa48
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable True
+		CastReflectionEnable False
+		Excluded False
+	AutoStart False
+GeometryTriggerEntityData Instance1
+	$::AreaTriggerEntityData
+		$::TriggerEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::DataBusPeer
+							$::GameDataContainer
+								$::DataContainer
+							Flags 1701493450
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Delay 0.0
+			RunOnce False
+			Enabled True
+		GeometryTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Include ATPlayers
+		Radius 0.0
+		InsideAreaEventRepeatTime 0.0
+		TeamOfAllies Team1
+		UseCharacterEntity False
+		UseRadiusWithGeometryTransform False
+		OneInsideAreaEventPerSoldier False
+		TriggerOnlyOnLeave False
+		ResetOnEnable False
+		TriggerOnLeaveOnDeath True
+		TriggerOnLeaveOnDisable False
+SphereData Instance2
+	$::BaseShapeData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 67108864
+	Radius 10.480402946472168
+	Position::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+DelayEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 82209056
+	Delay 60.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
