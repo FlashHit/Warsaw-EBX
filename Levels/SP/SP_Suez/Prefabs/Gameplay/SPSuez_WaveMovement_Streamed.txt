@@ -1,0 +1,151 @@
+SpatialPrefabBlueprint 3f3efb12-7426-4cd7-8a13-04d8c47c9b27
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/SP/SP_Suez/Prefabs/Gameplay/SPSuez_WaveMovement_Streamed
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 632145aa-7619-4789-b98d-b3625beae1a6
+							Target Instance0
+							SourceFieldId 698564572
+							TargetFieldId 698564572
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source 632145aa-7619-4789-b98d-b3625beae1a6
+							Target Instance0
+							SourceFieldId -996560163
+							TargetFieldId -996560163
+							ShouldNetworkValue False
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source *nullGuid*
+							Target 632145aa-7619-4789-b98d-b3625beae1a6
+							SourceFieldId 0
+							TargetFieldId 0
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance3
+						Target 632145aa-7619-4789-b98d-b3625beae1a6
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 632145aa-7619-4789-b98d-b3625beae1a6
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id 650265526
+						TargetType EventConnectionTargetType_ClientAndServer
+		Objects::array
+			member(0) 632145aa-7619-4789-b98d-b3625beae1a6
+			member(1) Instance0
+SyncedSequenceEntityData 632145aa-7619-4789-b98d-b3625beae1a6
+	$::SequenceEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 119621034
+		Events *nullArray*
+		SequenceStartTime 0
+		SequenceLength 8700
+		Realm Realm_ClientAndServer
+		PropertyTracks::array
+			member(0) Instance2
+			member(1) Instance1
+		CustomSequenceTracks *nullArray*
+		ClientUpdatePass UpdatePass_PostSim
+		ServerUpdatePass UpdatePass_PostSim
+		ExternalTime 0.0
+		PlaybackSpeed 1.0
+		Looping False
+		AutoStart False
+		AutoPlayFirstFrame False
+		PlayInReverse False
+	InterpolateTime True
+WaterInteractWaveEntityData Instance0
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 408402393
+		Transform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	Radius 15.0
+	Amplitude 0.0
+FloatPropertyTrackData Instance1
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id 698564572
+			Times::array
+				member(0) 1699
+				member(1) 1864
+				member(2) 3338
+				member(3) 4794
+				member(4) 6112
+				member(5) 8665
+		InterpolationType InterpolationType_CatmullRom
+	Values::array
+		member(0) 0.0
+		member(1) 5.0
+		member(2) -2.0
+		member(3) 1.0
+		member(4) -1.25
+		member(5) 0.0
+FloatPropertyTrackData Instance2
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id -996560163
+			Times::array
+				member(0) 1630
+				member(1) 1699
+				member(2) 2951
+				member(3) 4745
+				member(4) 7674
+		InterpolationType InterpolationType_CatmullRom
+	Values::array
+		member(0) 0.0
+		member(1) 30.0
+		member(2) 50.0
+		member(3) 15.0
+		member(4) 50.0
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 650265526
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

@@ -1,0 +1,144 @@
+SpatialPrefabBlueprint 761980d6-c7ff-a4f5-d108-7dc886f4ccac
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/SP/SP_Naval/Prefabs/Logic/Interaction_DV15
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target cde036a6-35a1-4856-ad6c-768778fa3b55
+							SourceFieldId 225375086
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance1
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source cde036a6-35a1-4856-ad6c-768778fa3b55
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -1447021378
+						TargetEvent::EventSpec
+							Id -1447021378
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1541066415
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source Instance1
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -365426178
+						TargetEvent::EventSpec
+							Id -1447021378
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source cde036a6-35a1-4856-ad6c-768778fa3b55
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1447021378
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+					member(4)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -365426178
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+		Objects::array
+			member(0) cde036a6-35a1-4856-ad6c-768778fa3b55
+			member(1) Instance0
+GameInteractionEntityData cde036a6-35a1-4856-ad6c-768778fa3b55
+	$::InteractionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 434124454
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -1.400979995727539
+					y 1.8249825239181519
+					z -6.182511329650879
+		UseWithinRadius 10.0
+		UseWithinAngle 180.0
+		MaxUses 0
+		DisplayWithinRadius 10.0
+		PreInteractionSoundEffect *nullGuid*
+		TestIfOccluded False
+		AllowInteractionViaRemoteEntry True
+		UseDisplayWithinRadius True
+		Enabled True
+	DelayBetweenUses 0.0
+	TeamId TeamNeutral
+	SpectatorTeamId TeamNeutral
+	InputAction 1573615674
+	HoldToInteractTime 0.0
+	InteractionEntityType IET_None
+	InteractionSid ID_M_SP_NAVAL_ENTER_BOAT
+	Blink BTHold
+	InteractingSid *nullString*
+	NameSid *nullString*
+	InteractionVerticalOffset 0.0
+	FriendlyTextSid *nullString*
+	EnemyTextSid *nullString*
+	CapturepointVerticalOffset 0.0
+	LicensesNeeded *nullArray*
+	ConsumablesDisabling *nullArray*
+	IconName interaction.default
+	IconBehavior *nullGuid*
+	TacticalRadius 0.0
+	ShrinkSnap False
+	ShowAsCapturePoint False
+	FriendlyInteractionEnabled True
+	EnemyInteractionEnabled True
+	ForceSnap False
+BoolEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 104173680
+	Realm Realm_ClientAndServer
+	DefaultValue False
+InterfaceDescriptorData Instance1
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1541066415
+		member(1)::DynamicEvent
+			Id -365426178
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1447021378
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

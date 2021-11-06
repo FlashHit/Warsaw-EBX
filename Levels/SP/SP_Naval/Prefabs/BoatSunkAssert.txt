@@ -1,0 +1,203 @@
+LogicPrefabBlueprint 1fa846c4-7d68-445a-6f17-bfbcc27be6d1
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/SP/SP_Naval/Prefabs/BoatSunkAssert
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance7
+							Target Instance1
+							SourceFieldId 2085022312
+							TargetFieldId -2024647575
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance1
+							Target Instance2
+							SourceFieldId 227190399
+							TargetFieldId 2089241862
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance2
+							Target Instance5
+							SourceFieldId 177660
+							TargetFieldId 177636
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance4
+							Target Instance3
+							SourceFieldId 225375086
+							TargetFieldId 2089448340
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance7
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance5
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 193445336
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance5
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 2088725063
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance6
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance6
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 231942004
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance6
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 2088662791
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance3
+			member(1) Instance1
+			member(2) Instance2
+			member(3) Instance5
+			member(4) Instance4
+			member(5) Instance0
+			member(6) Instance6
+PrintDebugTextEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 69409680
+	Realm Realm_Server
+	TextColor::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Text A boat has unexpectedly sunk. Please report this in JIRA WAR-38290
+	ScreenPosition::Vec2
+		x -1.0
+		y -1.0
+	TimeToShow -1.0
+	TextScale 1.0
+	Enabled True
+TransformSplitterEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 426461513
+	Realm Realm_Server
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+VecSplitterEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 293209423
+	Realm Realm_Server
+	Vec3::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	Vec4::Vec4
+		x 0.0
+		y 0.0
+		z 0.0
+		w 0.0
+AssertEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 271256482
+	Realm Realm_Server
+	Text One of the sea battle enemy boats has sunk through the surface of the water. This will cause a tech hang.
+	Pass True
+	TriggerOnce False
+	TriggerOnPassChanged True
+BoolEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 69839490
+	Realm Realm_Server
+	DefaultValue True
+CompareFloatEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 278728235
+	Realm Realm_Server
+	A 0.0
+	B 200.0
+	TriggerOnPropertyChange True
+	TriggerOnStart False
+EventGateEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 77998109
+	Realm Realm_Server
+	Default False
+InterfaceDescriptorData Instance7
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 2085022312
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 2088662791
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

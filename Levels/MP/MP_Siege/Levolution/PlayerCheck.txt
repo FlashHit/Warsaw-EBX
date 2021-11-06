@@ -1,0 +1,177 @@
+LogicPrefabBlueprint 3770f31a-2b94-4835-aaa5-3f1fd8e9ef34
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/MP/MP_Siege/Levolution/PlayerCheck
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 225375086
+							TargetFieldId 177636
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance2
+							Target Instance0
+							SourceFieldId 225375086
+							TargetFieldId 177639
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+							Target Instance3
+							SourceFieldId 193453899
+							TargetFieldId -556382800
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance0
+						Target bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+						SourceEvent::EventSpec
+							Id 193445179
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 1736970756
+						TargetEvent::EventSpec
+							Id 1736970756
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -395651742
+						TargetEvent::EventSpec
+							Id -395651742
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(3)::EventConnection
+						Source Instance0
+						Target bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+						SourceEvent::EventSpec
+							Id 193445146
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -639132411
+						TargetEvent::EventSpec
+							Id -183994300
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance2
+			member(1) Instance0
+			member(2) Instance1
+			member(3) bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+			member(4) Instance4
+SyncedBoolEntityData bc02b4f3-35c4-4a04-abee-6ee65d2ddcb0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 67286259
+	In False
+CompareIntEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 402847107
+	Realm Realm_ClientAndServer
+	A 0
+	B 0
+	TriggerOnPropertyChange True
+	TriggerOnStart False
+IntEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 29204004
+	Realm Realm_ClientAndServer
+	DefaultValue 0
+	IncDecValue 1
+IntEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 121259995
+	Realm Realm_ClientAndServer
+	DefaultValue 0
+	IncDecValue 1
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -556382800
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1736970756
+		member(1)::DynamicEvent
+			Id -395651742
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -183994300
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SequenceEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 87986530
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id -639132411
+			Time 5000
+	SequenceStartTime 0
+	SequenceLength 5000
+	Realm Realm_Server
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping True
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False

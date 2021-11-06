@@ -1,0 +1,358 @@
+SpatialPrefabBlueprint 8735cca2-7ee6-4414-ad3f-4604fa7e3e13
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Levels/MP/MP_Resort/Prafabs/PF_FiresSpreading_Cosmetic
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance8
+							Target Instance2
+							SourceFieldId -791987171
+							TargetFieldId -409930682
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance8
+							Target Instance1
+							SourceFieldId -713799192
+							TargetFieldId -2024647575
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance5
+							Target Instance9
+							SourceFieldId 193453899
+							TargetFieldId 1708270083
+							ShouldNetworkValue False
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source Instance4
+							Target Instance3
+							SourceFieldId 838548383
+							TargetFieldId 0
+						member(1)::LinkConnection
+							Source Instance5
+							Target Instance3
+							SourceFieldId 838548383
+							TargetFieldId 0
+						member(2)::LinkConnection
+							Source Instance0
+							Target Instance3
+							SourceFieldId 838548383
+							TargetFieldId 0
+					Interface Instance8
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance8
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 195030917
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance6
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(2)::EventConnection
+						Source Instance6
+						Target Instance8
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id 250009202
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance4
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance7
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -713836199
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source Instance6
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(6)::EventConnection
+						Source Instance6
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance6
+						Target Instance9
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(8)::EventConnection
+						Source Instance6
+						Target Instance7
+						SourceEvent::EventSpec
+							Id -137490305
+						TargetEvent::EventSpec
+							Id -1573253508
+						TargetType EventConnectionTargetType_NetworkedClient
+		Objects::array
+			member(0) Instance6
+			member(1) Instance1
+			member(2) Instance2
+			member(3) Instance4
+			member(4) Instance0
+			member(5) Instance7
+			member(6) Instance5
+			member(7) Instance9
+DamageAreaTriggerEntityData Instance0
+	$::TriggerEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 1679609600
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Delay 0.0
+		RunOnce False
+		Enabled True
+	DamagePerSecond 10.0
+	DamageTime -1.0
+	TeamOfImmortalCharacters Team1
+	DamageCharacters True
+	DamageVehicles True
+	DamageBangers True
+	DamageProjectiles False
+	ExcludeImmortalCharactersInTeam False
+	ExcludeShieldedSoldiers False
+	IsNeverTriggeredByPlayer False
+DecalEntityData Instance1
+	$::SpatialEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 410145036
+		Transform::LinearTransform
+			right::Vec3
+				x 2.381732702255249
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 2.381732702255249
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 2.381732702255249
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+	AtlasTile::DecalAtlasTile
+		TileIndexX 0.0
+		TileIndexY 0.0
+		TileCountX 1.0
+		TileCountY 1.0
+		FlipX False
+		FlipY False
+	Shader FX/Mesh/Shaders/Fire_OilSpill_Liquid_Decal/2c4d24fd-eff4-4934-a58c-158133c2df2a
+	Projected True
+	SortingPriority 10
+	Enabled True
+EffectReferenceObjectData Instance2
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 441186826
+		Blueprint FX/Ambient/FireSmoke/FX_Fire_Large/461978c3-70b7-4db8-8704-a63b5afc18c7
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable True
+		CastReflectionEnable True
+		Excluded False
+	AutoStart False
+OBBData Instance3
+	$::BaseShapeData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 100663296
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.28746652603149414
+			z 0.0
+	HalfExtents::Vec3
+		x 1.7454380989074707
+		y 1.2167271375656128
+		z 1.7825164794921875
+UnderFireTriggerEntityData Instance4
+	$::TriggerEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 1612078861
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Delay 0.0
+		RunOnce True
+		Enabled True
+	Radius 5.0
+	CoolDownTime 1.0
+	TriggerOnMaterialOnly::MaterialDecl
+		Packed 0
+	TriggeredBy ATAll
+	DisableIfTrackEntityIsLost True
+	RandomYaw True
+	IndicateHit False
+	SendPlayerEvent False
+AreaProximityEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 1673355902
+	Realm Realm_Client
+	UpdatePass UpdatePass_PostFrame
+	ProximityDistance 4.0
+	AutoStart False
+EventSplitterEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 71277137
+	Realm Realm_Server
+	RunOnce False
+EventSyncEntityData Instance7
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 42691752
+InterfaceDescriptorData Instance8
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -791987171
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -713799192
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 195030917
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 250009202
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicVisualEnvironmentEntityData Instance9
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 174943330
+	VisualEnvironment Venice/FX/VisualEnviroments/Fire/VE_Fire_ScreenIntensity/7ba70e4e-9f35-4fd2-8d1b-fb254362bf74
+	Visibility 0.0
