@@ -1,0 +1,958 @@
+UIWidgetBlueprint 08a86d87-37a1-8ef3-f724-4d245a87261b
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name XP2/UI/elements/Widgets/TitanScoringInfoWidget
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 0
+				EventConnections *nullArray*
+		Object 1cb1bd87-b8c9-4dcd-9554-6aedd6564a57
+UITitanScoringInfoWidgetData 1cb1bd87-b8c9-4dcd-9554-6aedd6564a57
+	$::BFUIWidgetEntityData
+		$::UIWidgetEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 179420551
+			Size::UIElementSize
+				X 175.0
+				Y 52.0
+			Layers::array
+				member(0) Instance12
+				member(1) Instance14
+				member(2) Instance13
+			TextureMappings::array
+				member(0) XP2/UI/CppScreens/textures/TitanTextures/d8ba3632-09a5-4ee2-8b6f-e6df176a739a
+				member(1) UI/CppScreens/textures/VehicleSeatTextures/ae13d279-8961-a70a-a968-c3e5d5734c96
+			Components *nullArray*
+			VisibilityDataSource::UICompareDataSource
+				DataCategory *nullGuid*
+				DataKey 0
+				SchematicsProperty *nullString*
+				CompareValue *nullString*
+			InputEvents *nullArray*
+			Visible True
+	States::array
+		member(0)::TitanScoringInfoState
+			ShipBarOutlineTexture boatempty
+			ShipBarFillTexture boatfill
+			PulseInterval 0.0
+		member(1)::TitanScoringInfoState
+			ShipBarOutlineTexture boatempty
+			ShipBarFillTexture boatfill
+			PulseInterval 0.25
+		member(2)::TitanScoringInfoState
+			ShipBarOutlineTexture boat.broken
+			ShipBarFillTexture boatfill.broken
+			PulseInterval 0.25
+	Team1CarrierHealthPercentProperty Team1CarrierHealthPercent
+	Team1CarrierStateProperty Team1CarrierState
+	Team2CarrierHealthPercentProperty Team2CarrierHealthPercent
+	Team2CarrierStateProperty Team2CarrierState
+UIElementTextFieldEntityData Instance0
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName Timer
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 183238530
+		Size::UIElementSize
+			X 75.0
+			Y 20.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 50.0
+			Y -54.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	Style UI/elements/ElementSettings/GenericStyleDefault/5c9c9e97-17e6-4229-ead0-38239a2d80a5
+	Text::UIElementText
+		Sid *nullString*
+		Entries::array
+			member(0)::UIElementTextEntry
+				TextType UITextEntryType_DataKey
+				Text *nullString*
+				FloatFormat *nullString*
+				DataSource::UIDataSource
+					DataCategory UI/UIComponents/UIMatchComp/29b5c436-867a-9eb7-b2b2-9baaebd9888f
+					DataKey 485888073
+					SchematicsProperty *nullString*
+				UseLocalization False
+		VerticalAlignment UIElementAlignment_Center
+		HorizonalAlignment UIElementAlignment_Center
+		Multiline False
+		Wordwrap False
+	FontStyle UI/elements/FontStyles/ScoringInfoTimer/ca1c6691-b769-4526-b7fd-39a3fdef0264
+	TextOffset 0.0
+	AutoAdjustLeftPadding 5.0
+	AutoAdjustRightPadding 5.0
+	AutoScrollSettings *nullGuid*
+	AutoAdjustWidth False
+	UseAutoScroll False
+BFUIElementColorizedTextFieldEntityData Instance1
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName FriendlyTeamTicketsLabel
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 1140354990
+			Size::UIElementSize
+				X 42.0
+				Y 16.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.0
+				Y 0.0
+			Position::UIElementOffset
+				X -11.0
+				Y 32.5
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style UI/elements/ElementSettings/GenericStyleDefault/5c9c9e97-17e6-4229-ead0-38239a2d80a5
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_DataKey
+					Text *nullString*
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory UI/UIComponents/UITeamComp/a7ac31dc-5be9-b203-ea48-fde1a3ee94fc
+						DataKey 93402129
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Right
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ScoringInfoTeams/a6723314-112f-43a8-a1b2-95c5faf62c04
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Friendly
+		SpectatorIconState UIIconState_Team1
+BFUIElementColorizedTextFieldEntityData Instance2
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName EnemyHealth
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 552941571
+			Size::UIElementSize
+				X 50.0
+				Y 26.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.0
+				Y 0.0
+			Position::UIElementOffset
+				X 121.0
+				Y 12.5
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style UI/elements/ElementSettings/GenericStyleDefault/5c9c9e97-17e6-4229-ead0-38239a2d80a5
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_DataKey
+					Text *nullString*
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory UI/UIComponents/UIIMComp/82cfaccc-77f1-e5f5-2447-853ee6ce1040
+						DataKey 608417258
+						SchematicsProperty *nullString*
+					UseLocalization False
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Right
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ScoringInfoTeamsSmall/921015b7-014f-4ef1-a893-147cba09606c
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Enemy
+		SpectatorIconState UIIconState_Team2
+BFUIElementColorizedTextFieldEntityData Instance3
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName EnemyTeamTicketsLabel
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 63558707
+			Size::UIElementSize
+				X 42.0
+				Y 16.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.0
+				Y 0.0
+			Position::UIElementOffset
+				X 144.0
+				Y 32.5
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style UI/elements/ElementSettings/GenericStyleDefault/5c9c9e97-17e6-4229-ead0-38239a2d80a5
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_DataKey
+					Text *nullString*
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory UI/UIComponents/UITeamComp/a7ac31dc-5be9-b203-ea48-fde1a3ee94fc
+						DataKey -748921216
+						SchematicsProperty *nullString*
+					UseLocalization True
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Left
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ScoringInfoTeams/a6723314-112f-43a8-a1b2-95c5faf62c04
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Enemy
+		SpectatorIconState UIIconState_Team2
+BFUIElementColorizedTextFieldEntityData Instance4
+	$::UIElementTextFieldEntityData
+		$::UIElementEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			InstanceName FriendlyHealth
+			UIElementTransform::UIElementTransform
+				Rotation::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+				RotationPivot::Vec3
+					x 0.5
+					y 0.5
+					z 0.0
+				Z 0.0
+				PropertyName *nullString*
+			Color::UIElementColor
+				Rgb::Vec3
+					x 1.0
+					y 1.0
+					z 1.0
+				Alpha 1.0
+				PropertyName *nullString*
+			PositionOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			InstanceNameHash 3471732958
+			Size::UIElementSize
+				X 50.0
+				Y 26.0
+			LayoutMode UILayoutMode_PositionExpansion
+			Offset::UIElementOffset
+				X 0.0
+				Y 0.0
+			Anchor::UIElementAnchor
+				X 0.0
+				Y 0.0
+			Position::UIElementOffset
+				X 4.0
+				Y 12.5
+			Expansion::UIElementRectExpansion
+				X 0.0
+				Y 0.0
+				Width 0.0
+				Height 0.0
+			Visible True
+		Style UI/elements/ElementSettings/GenericStyleDefault/5c9c9e97-17e6-4229-ead0-38239a2d80a5
+		Text::UIElementText
+			Sid *nullString*
+			Entries::array
+				member(0)::UIElementTextEntry
+					TextType UITextEntryType_DataKey
+					Text *nullString*
+					FloatFormat *nullString*
+					DataSource::UIDataSource
+						DataCategory UI/UIComponents/UIIMComp/82cfaccc-77f1-e5f5-2447-853ee6ce1040
+						DataKey 321149719
+						SchematicsProperty *nullString*
+					UseLocalization False
+			VerticalAlignment UIElementAlignment_Center
+			HorizonalAlignment UIElementAlignment_Left
+			Multiline False
+			Wordwrap False
+		FontStyle UI/elements/FontStyles/ScoringInfoTeamsSmall/921015b7-014f-4ef1-a893-147cba09606c
+		TextOffset 0.0
+		AutoAdjustLeftPadding 5.0
+		AutoAdjustRightPadding 5.0
+		AutoScrollSettings *nullGuid*
+		AutoAdjustWidth False
+		UseAutoScroll False
+	ColorizationData::BFUIColorizationData
+		ColorizationMode BFUIColorizationMode_IconState
+		IconState UIIconState_Friendly
+		SpectatorIconState UIIconState_Team1
+UIElementDummyEntityData Instance5
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName FriendlyIcon1
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2446510200
+		Size::UIElementSize
+			X 25.0
+			Y 25.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 1.0
+		Position::UIElementOffset
+			X 34.0
+			Y 19.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementDummyEntityData Instance6
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName EnemyIcon1
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2881331077
+		Size::UIElementSize
+			X 25.0
+			Y 25.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.9013642072677612
+			Y 1.0
+		Position::UIElementOffset
+			X 92.0
+			Y 19.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementDummyEntityData Instance7
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName FriendlyIcon2
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2446510203
+		Size::UIElementSize
+			X 25.0
+			Y 25.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.10829459130764008
+			Y 1.0
+		Position::UIElementOffset
+			X 57.0
+			Y 19.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementDummyEntityData Instance8
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName FriendlyBar
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2660466931
+		Size::UIElementSize
+			X 83.0
+			Y 24.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.3098958432674408
+			Y 1.0
+		Position::UIElementOffset
+			X 2.5
+			Y -7.5
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementDummyEntityData Instance9
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName Dummy
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 164703757
+		Size::UIElementSize
+			X 175.0
+			Y 111.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.0
+			Y 0.0
+		Position::UIElementOffset
+			X 0.0
+			Y -57.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround True
+UIElementDummyEntityData Instance10
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName EnemyIcon2
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 2881331078
+		Size::UIElementSize
+			X 25.0
+			Y 25.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 1.0
+			Y 1.0
+		Position::UIElementOffset
+			X 117.0
+			Y 19.0
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementDummyEntityData Instance11
+	$::UIElementEntityData
+		$::EntityData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 0
+		InstanceName EnemyBar
+		UIElementTransform::UIElementTransform
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			RotationPivot::Vec3
+				x 0.5
+				y 0.5
+				z 0.0
+			Z 0.0
+			PropertyName *nullString*
+		Color::UIElementColor
+			Rgb::Vec3
+				x 1.0
+				y 1.0
+				z 1.0
+			Alpha 1.0
+			PropertyName *nullString*
+		PositionOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		RotationOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InstanceNameHash 251124750
+		Size::UIElementSize
+			X 83.0
+			Y 24.0
+		LayoutMode UILayoutMode_PositionExpansion
+		Offset::UIElementOffset
+			X 0.0
+			Y 0.0
+		Anchor::UIElementAnchor
+			X 0.7135405540466309
+			Y 1.0
+		Position::UIElementOffset
+			X 89.5
+			Y -7.5
+		Expansion::UIElementRectExpansion
+			X 0.0
+			Y 0.0
+			Width 0.0
+			Height 0.0
+		Visible True
+	DrawBackGround False
+UIElementLayerEntityData Instance12
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName BoatHUD
+	Elements::array
+		member(0) Instance9
+		member(1) Instance8
+		member(2) Instance11
+		member(3) Instance5
+		member(4) Instance7
+		member(5) Instance6
+		member(6) Instance10
+		member(7) Instance2
+		member(8) Instance4
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance13
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName TeamNames
+	Elements::array
+		member(0) Instance1
+		member(1) Instance3
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
+UIElementLayerEntityData Instance14
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	LayerName Timer
+	Elements::array
+		member(0) Instance0
+	InclusionSettings::UIElementInclusionSettings
+		CustomInclusionCritera *nullArray*
+		IsSingleplayerLayer True
+		IsMultiplayerLayer True
+		IsWin32Layer True
+		IsXenonLayer True
+		IsPs3Layer True
+		IsGen4aLayer True
+		IsGen4bLayer True
+		IsSDLayer True
+		IsHDLayer True
+		IsAdvanced False
+	VisibilityDataSource::UICompareDataSource
+		DataCategory *nullGuid*
+		DataKey 0
+		SchematicsProperty *nullString*
+		CompareValue *nullString*
+	Visible True
