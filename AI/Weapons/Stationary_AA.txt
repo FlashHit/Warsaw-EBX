@@ -1,0 +1,66 @@
+BFAIWeaponData 08667319-aaf6-4572-9dcf-45afc1bd68d0
+	$::GameAIWeaponData
+		$::Asset
+			$::DataContainer
+			Name AI/Weapons/Stationary_AA
+	FiringWeaponClass WeaponClass_MachineGun
+	VoPrimaryFireType VoPrimaryFireType_MachineGun
+	WeaponRange 300.0
+	MinimumUsageDistance -1.0
+	MaximumUsageDistance -1.0
+	PreferredRange *nullGuid*
+	IndoorPreferredRange *nullGuid*
+	OutdoorPreferredRange *nullGuid*
+	FiringIntervalPattern *nullGuid*
+	BurstIntervalPattern *nullGuid*
+	SprayPattern *nullGuid*
+	VehicleAimerSettings ae1439cb-dd2b-4a23-aa1e-66cccafb43d8
+	VisionModifier *nullGuid*
+	HearingModifier *nullGuid*
+	TargetModifier 4e34a6d2-cd3c-47aa-86be-3bda7f778e8f
+	VehicleInaccuracySettings *nullGuid*
+	SuppressedBehavior *nullGuid*
+	DamageModifier 5a64604f-d3ea-4bce-9853-ddd41bad8c81
+	FriendlyWeaponRestrictions *nullGuid*
+	SpecialBehavior 0010fed5-5a69-4311-a152-1a9af4b94e8d
+	HumanTargetHitProbability 3feac5ad-0975-4d77-b476-8005e7c5503c
+	ValidAgainst ValidAgainst_AllVehicles
+DamageModifier 5a64604f-d3ea-4bce-9853-ddd41bad8c81
+	$::DataContainer
+	Damage::TinyPiecewiseLinearCurve
+		X0 25.0
+		Y0 5.0
+		X1 50.099998474121094
+		Y1 30.0
+WeaponHitProbability 3feac5ad-0975-4d77-b476-8005e7c5503c
+	$::DataContainer
+	DistanceToTarget::array
+		member(0) 50.0
+		member(1) 100.0
+	DistanceProbability::array
+		member(0) 1.0
+		member(1) 0.20000000298023224
+	TargetVisibility::array
+		member(0) 0.15000000596046448
+		member(1) 0.33000001311302185
+		member(2) 0.6700000166893005
+		member(3) 1.0
+	VisibleProbability::array
+		member(0) 0.0
+		member(1) 0.20000000298023224
+		member(2) 0.5
+		member(3) 1.0
+VehicleAimerSettings ae1439cb-dd2b-4a23-aa1e-66cccafb43d8
+	$::DataContainer
+	MinPrecisionToFire 2.0
+	IsParabolic False
+	AimHigh False
+	TrackTowardsTarget False
+	TrackBeyondTarget False
+TargetModifier 4e34a6d2-cd3c-47aa-86be-3bda7f778e8f
+	$::DataContainer
+	SquadSuppression False
+	AlwaysTargetHuman False
+SpecialBehavior 0010fed5-5a69-4311-a152-1a9af4b94e8d
+	$::DataContainer
+	AllowFireWhileTargetIsHidden False

@@ -1,0 +1,87 @@
+SoldierTactics cc2536e3-3337-ce17-a2bd-f76e2d7e2660
+	$::Asset
+		$::DataContainer
+		Name AI/Templates/SquadTactics
+	Vehicle *nullGuid*
+	Charge *nullGuid*
+	Attack *nullGuid*
+	Hide *nullGuid*
+	Flee *nullGuid*
+	CloseCombat 95fe5e1b-5fbb-4426-974d-cecd6349d18a
+	SquadMovement e805a2f0-a0eb-4116-8a4d-cabf4376c625
+	SquadEngageSettings 155b3352-98a8-43eb-bdc4-2c54c9c0e8b0
+	EngageSettings::EngageSettings
+		DistanceToTarget 40.0
+		SuppressionValue 0.15000000596046448
+	WeaponSuppressionSettings::WeaponSuppressionSettings
+		SuppressionValue 0.75
+		ContinuousSuppressionTime 10.0
+		SuppressionAreaSize 5.0
+	VehicleSuppressionSettings::VehicleSuppressionSettings
+		SuppressionDistance 15.0
+		ReevaluateCoverDistance 15.0
+CloseCombatSettings 95fe5e1b-5fbb-4426-974d-cecd6349d18a
+	$::DataContainer
+	Distance 10.0
+	HeightDistance 3.0
+	DistanceLimit 12.0
+	LostVisibilityTimeout 1.5
+	PoseSettings 776246d9-a927-4d5b-997d-27e958d7b036
+SquadEngageSettings 155b3352-98a8-43eb-bdc4-2c54c9c0e8b0
+	$::DataContainer
+	CoverQuery AI/CoverQueries/SquadEngage/7186a7e5-afa3-416f-b83b-ba6ff9f1080a
+	MoveSettings e1c2e2ab-197f-440c-b7ee-1f20be60101c
+SprintSettings d80fac64-600a-4b19-8c10-4a7ab82bde4b
+	$::DataContainer
+	StartSprintingThreshold 20.0
+	StopSprintingThreshold 15.0
+MoveSettings b0adbe79-b93f-4782-9364-08f42ddbe242
+	$::DataContainer
+	MoveStyle *nullGuid*
+	MoveSpeed MoveSpeed_Run
+	FireTargetDistance 300.0
+	Walk *nullGuid*
+	Sprint d80fac64-600a-4b19-8c10-4a7ab82bde4b
+	StartStop *nullGuid*
+	StartEvasiveThreshold 0.0
+	StopEvasiveThreshold 0.0
+	Fire True
+	IsEvasive False
+MoveSettings e1c2e2ab-197f-440c-b7ee-1f20be60101c
+	$::DataContainer
+	MoveStyle *nullGuid*
+	MoveSpeed MoveSpeed_Sprint
+	FireTargetDistance 300.0
+	Walk *nullGuid*
+	Sprint *nullGuid*
+	StartStop *nullGuid*
+	StartEvasiveThreshold 0.0
+	StopEvasiveThreshold 0.0
+	Fire True
+	IsEvasive False
+CoverControlSettings aae2c6b9-4ace-4cab-9ebb-90bc5d6aba93
+	$::DataContainer
+	FiringTimes::array
+		member(0) 2.200000047683716
+		member(1) 3.0
+		member(2) 16.0
+	IdleTimes::array
+		member(0) 4.0
+		member(1) 3.5
+		member(2) 1.5
+	SuppressionThreshold 0.10000000149011612
+	AllowSuppression False
+PoseSettings 776246d9-a927-4d5b-997d-27e958d7b036
+	$::DataContainer
+	Pose Pose_Crouch
+SquadMovementSettings e805a2f0-a0eb-4116-8a4d-cabf4376c625
+	$::DataContainer
+	IdleCoverQuery AI/CoverQueries/SquadIdle/ed8a9f79-32a0-44c1-a7c1-62fae3d6d29f
+	AlertedCoverQuery AI/CoverQueries/SquadAttack/4cfc416d-5756-44a0-9d34-4f05dfd2b44c
+	FriendlyAreaCoverQuery AI/CoverQueries/SquadFriendlyArea/d7acf12d-fc2e-4a1e-816e-72cdc827e34e
+	MoveSettings b0adbe79-b93f-4782-9364-08f42ddbe242
+	CoverSettings aae2c6b9-4ace-4cab-9ebb-90bc5d6aba93
+	MaxAcceptableDistanceToHuman 28.0
+	MaxAcceptableHeightDifferenceToHuman 2.0
+	CoverCompromisedTimer 2.0
+	InvalidateOpenCoverIfAlerted True

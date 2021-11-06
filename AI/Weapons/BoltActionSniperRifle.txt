@@ -1,0 +1,89 @@
+BFAIWeaponData 03b95378-58a7-423e-8f02-d49170c15eb5
+	$::GameAIWeaponData
+		$::Asset
+			$::DataContainer
+			Name AI/Weapons/BoltActionSniperRifle
+	FiringWeaponClass WeaponClass_SniperRifle
+	VoPrimaryFireType VoPrimaryFireType_SniperRifle
+	WeaponRange 250.0
+	MinimumUsageDistance -1.0
+	MaximumUsageDistance -1.0
+	PreferredRange 1648b83d-ebda-4dd2-92fa-eb4f118018be
+	IndoorPreferredRange c8094314-7df4-402a-b581-cb224e218b2b
+	OutdoorPreferredRange 26429997-097a-47f2-a2c9-0d999d27989b
+	FiringIntervalPattern 0d45d975-6160-43dd-951f-79fd99fadd2a
+	BurstIntervalPattern *nullGuid*
+	SprayPattern *nullGuid*
+	VehicleAimerSettings *nullGuid*
+	VisionModifier dc4abdcc-9059-4473-9821-41a6da07e235
+	HearingModifier *nullGuid*
+	TargetModifier *nullGuid*
+	VehicleInaccuracySettings *nullGuid*
+	SuppressedBehavior *nullGuid*
+	DamageModifier 74666537-6dc8-4661-8a7c-9cb842a5c2f6
+	FriendlyWeaponRestrictions *nullGuid*
+	SpecialBehavior *nullGuid*
+	HumanTargetHitProbability 8215f16d-f28f-4b60-87fe-13eb1217cafd
+	ValidAgainst ValidAgainst_SoldiersAndUnshieldedVehicles
+PreferredRange c8094314-7df4-402a-b581-cb224e218b2b
+	$::DataContainer
+	Start 10.0
+	Ideal 0.5
+	End 30.0
+DamageModifier 74666537-6dc8-4661-8a7c-9cb842a5c2f6
+	$::DataContainer
+	Damage::TinyPiecewiseLinearCurve
+		X0 100.0
+		Y0 50.0
+		X1 100.0999984741211
+		Y1 25.0
+PreferredRange 1648b83d-ebda-4dd2-92fa-eb4f118018be
+	$::DataContainer
+	Start 20.0
+	Ideal 0.5
+	End 80.0
+WeaponHitProbability 8215f16d-f28f-4b60-87fe-13eb1217cafd
+	$::DataContainer
+	DistanceToTarget::array
+		member(0) 62.5
+		member(1) 125.0
+	DistanceProbability::array
+		member(0) 1.0
+		member(1) 0.20000000298023224
+	TargetVisibility::array
+		member(0) 0.15000000596046448
+		member(1) 0.33000001311302185
+		member(2) 0.6700000166893005
+		member(3) 1.0
+	VisibleProbability::array
+		member(0) 0.0
+		member(1) 0.4000000059604645
+		member(2) 1.0
+		member(3) 1.0
+FiringIntervalPattern 0d45d975-6160-43dd-951f-79fd99fadd2a
+	$::DataContainer
+	Interval::array
+		member(0)::Interval
+			MinimumTime 8.0
+			MaximumTime 10.0
+		member(1)::Interval
+			MinimumTime 4.0
+			MaximumTime 6.0
+		member(2)::Interval
+			MinimumTime 1.0
+			MaximumTime 5.0
+PreferredRange 26429997-097a-47f2-a2c9-0d999d27989b
+	$::DataContainer
+	Start 30.0
+	Ideal 0.5
+	End 150.0
+VisionModifier dc4abdcc-9059-4473-9821-41a6da07e235
+	$::DataContainer
+	SensingConeRange 150.0
+	SensingConeRangeWhenAlerted 250.0
+	SensingConeAngle 60.0
+	SensingConeAngleWhenAlerted 90.0
+	SensingConeAngleAbove 15.0
+	SensingConeAngleBelow 55.0
+	FlashlightModifier *nullGuid*
+	AlwaysSeeHuman False

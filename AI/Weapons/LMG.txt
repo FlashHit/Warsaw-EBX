@@ -1,0 +1,70 @@
+BFAIWeaponData 63371bc7-d88e-4d09-b405-02ddce57cc4a
+	$::GameAIWeaponData
+		$::Asset
+			$::DataContainer
+			Name AI/Weapons/LMG
+	FiringWeaponClass WeaponClass_MachineGun
+	VoPrimaryFireType VoPrimaryFireType_MachineGun
+	WeaponRange 200.0
+	MinimumUsageDistance -1.0
+	MaximumUsageDistance -1.0
+	PreferredRange 0711e796-9123-4028-bb0b-ba1e783ec239
+	IndoorPreferredRange 4d48707c-9c8d-4d7e-b7c6-dd74ba6321f2
+	OutdoorPreferredRange 77f81890-e3c3-4915-9165-5d5ef5d23736
+	FiringIntervalPattern *nullGuid*
+	BurstIntervalPattern *nullGuid*
+	SprayPattern *nullGuid*
+	VehicleAimerSettings *nullGuid*
+	VisionModifier *nullGuid*
+	HearingModifier *nullGuid*
+	TargetModifier *nullGuid*
+	VehicleInaccuracySettings *nullGuid*
+	SuppressedBehavior *nullGuid*
+	DamageModifier 6df17199-33d3-4a8b-890c-5aa2782b8bb1
+	FriendlyWeaponRestrictions *nullGuid*
+	SpecialBehavior 22f721fc-3a6c-47eb-9a95-bac9fdbe3b15
+	HumanTargetHitProbability f0e45ec2-d6f4-4e52-99f3-aef6ebe7557e
+	ValidAgainst ValidAgainst_All
+PreferredRange 4d48707c-9c8d-4d7e-b7c6-dd74ba6321f2
+	$::DataContainer
+	Start 0.0
+	Ideal 0.5
+	End 30.0
+PreferredRange 77f81890-e3c3-4915-9165-5d5ef5d23736
+	$::DataContainer
+	Start 0.0
+	Ideal 0.5
+	End 80.0
+PreferredRange 0711e796-9123-4028-bb0b-ba1e783ec239
+	$::DataContainer
+	Start 0.0
+	Ideal 0.5
+	End 60.0
+DamageModifier 6df17199-33d3-4a8b-890c-5aa2782b8bb1
+	$::DataContainer
+	Damage::TinyPiecewiseLinearCurve
+		X0 50.0
+		Y0 35.0
+		X1 50.099998474121094
+		Y1 20.0
+WeaponHitProbability f0e45ec2-d6f4-4e52-99f3-aef6ebe7557e
+	$::DataContainer
+	DistanceToTarget::array
+		member(0) 50.0
+		member(1) 100.0
+	DistanceProbability::array
+		member(0) 1.0
+		member(1) 0.20000000298023224
+	TargetVisibility::array
+		member(0) 0.15000000596046448
+		member(1) 0.33000001311302185
+		member(2) 0.6700000166893005
+		member(3) 1.0
+	VisibleProbability::array
+		member(0) 0.0
+		member(1) 0.20000000298023224
+		member(2) 0.5
+		member(3) 1.0
+SpecialBehavior 22f721fc-3a6c-47eb-9a95-bac9fdbe3b15
+	$::DataContainer
+	AllowFireWhileTargetIsHidden True

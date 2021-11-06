@@ -1,0 +1,102 @@
+BFAIWeaponData f1bd9c7a-b5ea-a6a6-fe5e-f2c6b4daede7
+	$::GameAIWeaponData
+		$::Asset
+			$::DataContainer
+			Name AI/Weapons/spec/HMG_Remote
+	FiringWeaponClass WeaponClass_MachineGun
+	VoPrimaryFireType VoPrimaryFireType_MachineGun
+	WeaponRange 120.0
+	MinimumUsageDistance -1.0
+	MaximumUsageDistance -1.0
+	PreferredRange *nullGuid*
+	IndoorPreferredRange *nullGuid*
+	OutdoorPreferredRange *nullGuid*
+	FiringIntervalPattern *nullGuid*
+	BurstIntervalPattern 7fabff05-d27c-20eb-dc22-e5518a78c2ee
+	SprayPattern *nullGuid*
+	VehicleAimerSettings 399d6200-e949-3963-f2e1-d4c8ec5510bb
+	VisionModifier 295423e7-8389-60f8-8175-6b8917f07071
+	HearingModifier 9efc8908-e5cb-1dda-0b50-f09bbcbfe191
+	TargetModifier df5efae8-8d49-df46-0618-0d0997a7cd21
+	VehicleInaccuracySettings *nullGuid*
+	SuppressedBehavior *nullGuid*
+	DamageModifier d5e76cd7-1eca-3f7b-193f-d5286076c5ad
+	FriendlyWeaponRestrictions *nullGuid*
+	SpecialBehavior *nullGuid*
+	HumanTargetHitProbability c1f9425a-d7e6-19db-b949-0521b126e3e2
+	ValidAgainst ValidAgainst_SoldiersAndUnshieldedVehicles
+VehicleAimerSettings 399d6200-e949-3963-f2e1-d4c8ec5510bb
+	$::DataContainer
+	MinPrecisionToFire 10.0
+	IsParabolic False
+	AimHigh False
+	TrackTowardsTarget False
+	TrackBeyondTarget False
+BurstIntervalPattern 7fabff05-d27c-20eb-dc22-e5518a78c2ee
+	$::DataContainer
+	BurstInterval::array
+		member(0)::BurstInterval
+			BurstLength 1.0
+			BurstLengthVariation 0.5
+			TimeBetweenBursts 0.5
+			TimeBetweenBurstsVariation 2.0
+		member(1)::BurstInterval
+			BurstLength 1.0
+			BurstLengthVariation 0.5
+			TimeBetweenBursts 0.5
+			TimeBetweenBurstsVariation 2.0
+		member(2)::BurstInterval
+			BurstLength 1.0
+			BurstLengthVariation 0.5
+			TimeBetweenBursts 0.5
+			TimeBetweenBurstsVariation 2.0
+		member(3)::BurstInterval
+			BurstLength 1.0
+			BurstLengthVariation 0.5
+			TimeBetweenBursts 0.5
+			TimeBetweenBurstsVariation 2.0
+HearingModifier 9efc8908-e5cb-1dda-0b50-f09bbcbfe191
+	$::DataContainer
+	SensingShotFiredDistance 90.0
+	SensingHumanDrivenVehicleDistance 20.0
+	SensingExplosionDistance 30.0
+	SensingGrenadeDistance 12.0
+WeaponHitProbability c1f9425a-d7e6-19db-b949-0521b126e3e2
+	$::DataContainer
+	DistanceToTarget::array
+		member(0) 50.0
+		member(1) 100.0
+	DistanceProbability::array
+		member(0) 1.0
+		member(1) 0.20000000298023224
+	TargetVisibility::array
+		member(0) 0.15000000596046448
+		member(1) 0.33000001311302185
+		member(2) 0.6700000166893005
+		member(3) 1.0
+	VisibleProbability::array
+		member(0) 0.0
+		member(1) 0.20000000298023224
+		member(2) 0.5
+		member(3) 1.0
+DamageModifier d5e76cd7-1eca-3f7b-193f-d5286076c5ad
+	$::DataContainer
+	Damage::TinyPiecewiseLinearCurve
+		X0 25.0
+		Y0 20.0
+		X1 25.200000762939453
+		Y1 10.0
+VisionModifier 295423e7-8389-60f8-8175-6b8917f07071
+	$::DataContainer
+	SensingConeRange 100.0
+	SensingConeRangeWhenAlerted 220.0
+	SensingConeAngle 10.0
+	SensingConeAngleWhenAlerted 20.0
+	SensingConeAngleAbove 5.0
+	SensingConeAngleBelow 20.0
+	FlashlightModifier *nullGuid*
+	AlwaysSeeHuman False
+TargetModifier df5efae8-8d49-df46-0618-0d0997a7cd21
+	$::DataContainer
+	SquadSuppression False
+	AlwaysTargetHuman False

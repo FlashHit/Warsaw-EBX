@@ -1,0 +1,169 @@
+SoldierTactics 940f46bf-273c-4bed-9d4e-9ffbd57a3145
+	$::Asset
+		$::DataContainer
+		Name AI/Templates/GruntRPGArchetype
+	Vehicle *nullGuid*
+	Charge *nullGuid*
+	Attack 682a2827-fed3-443f-b677-02d076bb7c06
+	Hide 5b20b58e-7fa6-4fcf-adfb-0ad297531c2c
+	Flee 65d5d07a-5ac8-40cd-a1f3-e4f65ce60da4
+	CloseCombat ca73db11-cb49-423b-98fb-67408feba708
+	SquadMovement *nullGuid*
+	SquadEngageSettings *nullGuid*
+	EngageSettings::EngageSettings
+		DistanceToTarget 50.0
+		SuppressionValue 0.009999999776482582
+	WeaponSuppressionSettings::WeaponSuppressionSettings
+		SuppressionValue 0.75
+		ContinuousSuppressionTime 1.0
+		SuppressionAreaSize 5.0
+	VehicleSuppressionSettings::VehicleSuppressionSettings
+		SuppressionDistance 30.0
+		ReevaluateCoverDistance 15.0
+CloseCombatSettings ca73db11-cb49-423b-98fb-67408feba708
+	$::DataContainer
+	Distance 8.0
+	HeightDistance 2.0
+	DistanceLimit 14.0
+	LostVisibilityTimeout 2.0
+	PoseSettings 1be0bff5-88f2-4a25-9b91-ecc52ffc770e
+CoverControlSettings fb77b91b-4f3a-41b5-8579-619a8e95a8f4
+	$::DataContainer
+	FiringTimes::array
+		member(0) 3.0
+		member(1) 3.0
+		member(2) 3.0
+	IdleTimes::array
+		member(0) 2.0
+		member(1) 2.0
+		member(2) 2.0
+	SuppressionThreshold 0.25
+	AllowSuppression True
+AttackSettings 682a2827-fed3-443f-b677-02d076bb7c06
+	$::DataContainer
+	GoalCoverQuery AI/CoverQueries/EngineerSMAWAttack/21518875-3548-414b-ac95-27fd2df15b77
+	ProtectionCoverQuery AI/CoverQueries/ReactiveCover/6d3446ab-473c-44fc-a7f4-7099c0d7e30b
+	HideCoverQuery AI/CoverQueries/HideCover/b791db38-0649-41ca-b65c-0aa6c953ed34
+	ValidCoverQuery AI/CoverQueries/ValidCover/0f31a791-ee47-4e75-a9a2-97da29d27ac1
+	MoveSettings 01de732a-f614-49d9-b330-c4e923f557fa
+	CoverSettings fb77b91b-4f3a-41b5-8579-619a8e95a8f4
+	CoverRequestSettings::AttackCoverRequestSettings
+		MinimumTimeInCoverToRequest 8.0
+		MaximumTimeInCoverToRequest 10.0
+		MinimumTimeIntervalToRequestProtectiveCover 8.0
+		MaximumTimeIntervalToRequestProtectiveCover 10.0
+		MinimumTimeInCoverAfterTargetLost 9.0
+		MaximumTimeInCoverAfterTargetLost 11.0
+		DistanceToTargetCompromisedThreshold 6.0
+		MinimumDistanceToTarget 5.0
+		MinimumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.0
+			X1 20.100000381469727
+			Y1 0.25
+		MaximumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.75
+			X1 20.100000381469727
+			Y1 1.25
+	IndoorCoverRequestSettings::AttackCoverRequestSettings
+		MinimumTimeInCoverToRequest 5.0
+		MaximumTimeInCoverToRequest 7.0
+		MinimumTimeIntervalToRequestProtectiveCover 5.0
+		MaximumTimeIntervalToRequestProtectiveCover 7.0
+		MinimumTimeInCoverAfterTargetLost 6.0
+		MaximumTimeInCoverAfterTargetLost 8.0
+		DistanceToTargetCompromisedThreshold 6.0
+		MinimumDistanceToTarget 5.0
+		MinimumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.0
+			X1 20.100000381469727
+			Y1 0.25
+		MaximumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.75
+			X1 20.100000381469727
+			Y1 1.25
+	OutdoorCoverRequestSettings::AttackCoverRequestSettings
+		MinimumTimeInCoverToRequest 11.0
+		MaximumTimeInCoverToRequest 13.0
+		MinimumTimeIntervalToRequestProtectiveCover 11.0
+		MaximumTimeIntervalToRequestProtectiveCover 13.0
+		MinimumTimeInCoverAfterTargetLost 12.0
+		MaximumTimeInCoverAfterTargetLost 14.0
+		DistanceToTargetCompromisedThreshold 6.0
+		MinimumDistanceToTarget 5.0
+		MinimumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.0
+			X1 20.100000381469727
+			Y1 0.25
+		MaximumInitialDelay::TinyPiecewiseLinearCurve
+			X0 20.0
+			Y0 0.75
+			X1 20.100000381469727
+			Y1 1.25
+	ProjectileSettings 71d6ef80-daf8-45d5-82d2-7326de6f8877
+	CombatIntensity AICombatIntensity_None
+MoveSettings 01de732a-f614-49d9-b330-c4e923f557fa
+	$::DataContainer
+	MoveStyle *nullGuid*
+	MoveSpeed MoveSpeed_Run
+	FireTargetDistance 50.0
+	Walk *nullGuid*
+	Sprint *nullGuid*
+	StartStop *nullGuid*
+	StartEvasiveThreshold 0.25
+	StopEvasiveThreshold 0.125
+	Fire True
+	IsEvasive True
+FleeSettings 65d5d07a-5ac8-40cd-a1f3-e4f65ce60da4
+	$::DataContainer
+	CoverQuery AI/CoverQueries/Flee/bd2cac00-5499-4c2a-84fe-47dc5268d7bd
+	MoveSettings e7e4a4a0-370c-4022-9f41-e0fc106f7f83
+	CoverSettings *nullGuid*
+ProjectileSettings 71d6ef80-daf8-45d5-82d2-7326de6f8877
+	$::DataContainer
+	MinimumInterval 3.0
+	MaximumInterval 8.0
+	Lower 10.0
+	Upper 150.0
+	ValidAgainst ValidAgainst_All
+	IsContinuous True
+	Charge False
+HideSettings 5b20b58e-7fa6-4fcf-adfb-0ad297531c2c
+	$::DataContainer
+	CoverQuery AI/CoverQueries/HideCover/b791db38-0649-41ca-b65c-0aa6c953ed34
+	MoveSettings c758d3ba-9f68-46f6-abf3-4df3291c0c5a
+	CoverSettings *nullGuid*
+	InvalidateCoverAngle 180.0
+	MinimumTimeActive 5.0
+	MaximumTimeActive 10.0
+MoveSettings e7e4a4a0-370c-4022-9f41-e0fc106f7f83
+	$::DataContainer
+	MoveStyle *nullGuid*
+	MoveSpeed MoveSpeed_Sprint
+	FireTargetDistance 20.0
+	Walk *nullGuid*
+	Sprint *nullGuid*
+	StartStop *nullGuid*
+	StartEvasiveThreshold 0.0
+	StopEvasiveThreshold 0.0
+	Fire False
+	IsEvasive True
+MoveSettings c758d3ba-9f68-46f6-abf3-4df3291c0c5a
+	$::DataContainer
+	MoveStyle *nullGuid*
+	MoveSpeed MoveSpeed_Sprint
+	FireTargetDistance 20.0
+	Walk *nullGuid*
+	Sprint *nullGuid*
+	StartStop *nullGuid*
+	StartEvasiveThreshold 0.0
+	StopEvasiveThreshold 0.0
+	Fire False
+	IsEvasive True
+PoseSettings 1be0bff5-88f2-4a25-9b91-ecc52ffc770e
+	$::DataContainer
+	Pose Pose_Crouch

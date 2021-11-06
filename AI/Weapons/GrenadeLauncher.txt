@@ -1,0 +1,64 @@
+BFAIWeaponData 986443f1-eb5a-40c5-8f45-7c54f827eaf3
+	$::GameAIWeaponData
+		$::Asset
+			$::DataContainer
+			Name AI/Weapons/GrenadeLauncher
+	FiringWeaponClass WeaponClass_SniperRifle
+	VoPrimaryFireType VoPrimaryFireType_AssaultRifle
+	WeaponRange 100.0
+	MinimumUsageDistance -1.0
+	MaximumUsageDistance -1.0
+	PreferredRange c5d9c798-f7a0-4693-91d4-d6b73a1da1e1
+	IndoorPreferredRange badaed3b-6a81-417b-95eb-29a34775db6f
+	OutdoorPreferredRange 678aa732-9d18-402b-8382-3090f2c88ac7
+	FiringIntervalPattern df67c240-d467-4576-ade6-2a7b711202a4
+	BurstIntervalPattern *nullGuid*
+	SprayPattern *nullGuid*
+	VehicleAimerSettings *nullGuid*
+	VisionModifier *nullGuid*
+	HearingModifier *nullGuid*
+	TargetModifier *nullGuid*
+	VehicleInaccuracySettings *nullGuid*
+	SuppressedBehavior *nullGuid*
+	DamageModifier 3b256b56-00e7-4e65-9870-0fd5f7178419
+	FriendlyWeaponRestrictions *nullGuid*
+	SpecialBehavior 6c26e7aa-3ec4-490d-8c33-53402ece5a85
+	HumanTargetHitProbability *nullGuid*
+	ValidAgainst ValidAgainst_All
+PreferredRange 678aa732-9d18-402b-8382-3090f2c88ac7
+	$::DataContainer
+	Start 20.0
+	Ideal 0.5
+	End 100.0
+PreferredRange badaed3b-6a81-417b-95eb-29a34775db6f
+	$::DataContainer
+	Start 20.0
+	Ideal 0.5
+	End 30.0
+FiringIntervalPattern df67c240-d467-4576-ade6-2a7b711202a4
+	$::DataContainer
+	Interval::array
+		member(0)::Interval
+			MinimumTime 1.5
+			MaximumTime 5.0
+		member(1)::Interval
+			MinimumTime 1.5
+			MaximumTime 5.0
+		member(2)::Interval
+			MinimumTime 1.5
+			MaximumTime 5.0
+DamageModifier 3b256b56-00e7-4e65-9870-0fd5f7178419
+	$::DataContainer
+	Damage::TinyPiecewiseLinearCurve
+		X0 0.0
+		Y0 0.0
+		X1 1.0
+		Y1 0.0
+PreferredRange c5d9c798-f7a0-4693-91d4-d6b73a1da1e1
+	$::DataContainer
+	Start 20.0
+	Ideal 0.5
+	End 70.0
+SpecialBehavior 6c26e7aa-3ec4-490d-8c33-53402ece5a85
+	$::DataContainer
+	AllowFireWhileTargetIsHidden True

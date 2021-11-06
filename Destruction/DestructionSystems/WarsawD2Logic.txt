@@ -1,0 +1,285 @@
+LogicPrefabBlueprint 0c8dd5e7-191f-1227-846e-cb2486107a58
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Destruction/DestructionSystems/WarsawD2Logic
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance4
+							Target Instance2
+							SourceFieldId 1578117282
+							TargetFieldId 1578117282
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance4
+							Target Instance2
+							SourceFieldId -120838922
+							TargetFieldId -120838922
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance4
+							Target Instance2
+							SourceFieldId 77824521
+							TargetFieldId 77824521
+							ShouldNetworkValue False
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source Instance0
+							Target Instance4
+							SourceFieldId 838548383
+							TargetFieldId -1267132247
+						member(1)::LinkConnection
+							Source Instance1
+							Target Instance4
+							SourceFieldId 838548383
+							TargetFieldId -1267132247
+						member(2)::LinkConnection
+							Source Instance0
+							Target Instance4
+							SourceFieldId 505279717
+							TargetFieldId -646377324
+					Interface Instance4
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -1911867759
+						TargetEvent::EventSpec
+							Id -1911867759
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 397076539
+						TargetEvent::EventSpec
+							Id 397727246
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance4
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -994242040
+						TargetEvent::EventSpec
+							Id -713836199
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance4
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 687335154
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 351212879
+						TargetEvent::EventSpec
+							Id 1314121688
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 352724452
+						TargetEvent::EventSpec
+							Id 352724452
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 352724452
+						TargetEvent::EventSpec
+							Id -1926405403
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -994242040
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source Instance3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -888352469
+						TargetType EventConnectionTargetType_NetworkedClientAndServer
+		Objects::array
+			member(0) Instance2
+			member(1) Instance0
+			member(2) Instance1
+			member(3) Instance3
+ClearAreaTriggerEntityData Instance0
+	$::TriggerEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 1722646437
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Delay 0.0
+		RunOnce True
+		Enabled True
+	TeamOfImmortalSoldiers Team1
+	RemoveSoldiers False
+	RemoveVehicles True
+	RemoveBangers True
+	RemoveEffects False
+	RemoveMeshProxies True
+	RemoveStaticModels True
+	RemoveDebrisClusters True
+	ExcludeImmortalSoldiersInTeam True
+DamageAreaTriggerEntityData Instance1
+	$::TriggerEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 1683726954
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		Delay 0.0
+		RunOnce True
+		Enabled True
+	DamagePerSecond 10000.0
+	DamageTime 10.0
+	TeamOfImmortalCharacters Team1
+	DamageCharacters True
+	DamageVehicles True
+	DamageBangers False
+	DamageProjectiles False
+	ExcludeImmortalCharactersInTeam False
+	ExcludeShieldedSoldiers False
+	IsNeverTriggeredByPlayer False
+LogicReferenceObjectData Instance2
+	$::ReferenceObjectData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 481089967
+		Blueprint Destruction/DestructionSystems/WarsawCollapseLogic/89328c96-dea7-4484-32f1-14fe0cae44e7
+		BlueprintTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		ObjectVariation *nullGuid*
+		StreamRealm StreamRealm_None
+		RadiosityTypeOverride RadiosityTypeOverride_None
+		CastSunShadowEnable False
+		CastReflectionEnable False
+		Excluded False
+	SubRealm SubRealm_All
+DelayEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 83627226
+	Delay 1.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+InterfaceDescriptorData Instance4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 1578117282
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -120838922
+				AccessType FieldAccessType_Target
+			member(2)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 77824521
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1911867759
+		member(1)::DynamicEvent
+			Id 397076539
+		member(2)::DynamicEvent
+			Id -994242040
+		member(3)::DynamicEvent
+			Id 687335154
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1314121688
+		member(1)::DynamicEvent
+			Id 352724452
+		member(2)::DynamicEvent
+			Id -1926405403
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id -1267132247
+		member(1)::DynamicLink
+			Id -646377324
