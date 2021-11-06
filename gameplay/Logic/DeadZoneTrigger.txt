@@ -1,0 +1,236 @@
+LogicPrefabBlueprint f722cfdd-1841-4948-adf3-b2abf8dfd273
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/DeadZoneTrigger
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance4
+							Target Instance0
+							SourceFieldId 2662400
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance4
+							Target Instance1
+							SourceFieldId 2662400
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance2
+							Target Instance3
+							SourceFieldId 225375086
+							TargetFieldId 2088812747
+							ShouldNetworkValue False
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source Instance0
+							Target Instance4
+							SourceFieldId 838548383
+							TargetFieldId 231534181
+						member(1)::LinkConnection
+							Source Instance1
+							Target Instance4
+							SourceFieldId 838548383
+							TargetFieldId 909988034
+					Interface Instance4
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance0
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance1
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -70038721
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance3
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id -80368276
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance3
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id -70038721
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+			member(2) Instance2
+			member(3) Instance3
+GeometryTriggerEntityData Instance0
+	$::AreaTriggerEntityData
+		$::TriggerEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::DataBusPeer
+							$::GameDataContainer
+								$::DataContainer
+							Flags 2024725701
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Delay 0.0
+			RunOnce False
+			Enabled True
+		GeometryTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Include ATPlayers
+		Radius 0.0
+		InsideAreaEventRepeatTime 0.0
+		TeamOfAllies Team1
+		UseCharacterEntity False
+		UseRadiusWithGeometryTransform False
+		OneInsideAreaEventPerSoldier False
+		TriggerOnlyOnLeave False
+		ResetOnEnable False
+		TriggerOnLeaveOnDeath True
+		TriggerOnLeaveOnDisable False
+GeometryTriggerEntityData Instance1
+	$::AreaTriggerEntityData
+		$::TriggerEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::DataBusPeer
+							$::GameDataContainer
+								$::DataContainer
+							Flags 2029118679
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Delay 0.0
+			RunOnce False
+			Enabled True
+		GeometryTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Include ATPlayers
+		Radius 0.0
+		InsideAreaEventRepeatTime 0.0
+		TeamOfAllies Team1
+		UseCharacterEntity False
+		UseRadiusWithGeometryTransform False
+		OneInsideAreaEventPerSoldier False
+		TriggerOnlyOnLeave False
+		ResetOnEnable False
+		TriggerOnLeaveOnDeath False
+		TriggerOnLeaveOnDisable False
+BoolEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 95991325
+	Realm Realm_Server
+	DefaultValue False
+CompareBoolEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 292624704
+	Realm Realm_Server
+	Bool False
+	TriggerOnPropertyChange True
+	TriggerOnStart False
+	AlwaysSend False
+InterfaceDescriptorData Instance4
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value Boolean True
+				ValueRef *nullGuid*
+				Id 2662400
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -80368276
+		member(1)::DynamicEvent
+			Id -70038721
+	InputLinks *nullArray*
+	OutputLinks::array
+		member(0)::DynamicLink
+			Id 231534181
+		member(1)::DynamicLink
+			Id 909988034

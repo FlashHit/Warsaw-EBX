@@ -1,0 +1,126 @@
+SpatialPrefabBlueprint 4a949f47-e95b-4467-b015-31d4d48dd0bc
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Pickups/SP_Pickups/SP_Pickup_ATMine
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target 73b54db0-4a6c-44a3-b548-51f30ac513a4
+							SourceFieldId 225375086
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance1
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -326382662
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_ClientAndServer
+		Objects::array
+			member(0) 73b54db0-4a6c-44a3-b548-51f30ac513a4
+			member(1) Instance0
+WeaponUnlockPickupEntityData 73b54db0-4a6c-44a3-b548-51f30ac513a4
+	$::PickupEntityData
+		$::GamePhysicsEntityData
+			$::GameComponentEntityData
+				$::ComponentEntityData
+					$::SpatialEntityData
+						$::EntityData
+							$::GameObjectData
+								$::DataBusPeer
+									$::GameDataContainer
+										$::DataContainer
+									Flags 431312304
+						Transform::LinearTransform
+							right::Vec3
+								x 1.0
+								y 0.0
+								z 0.0
+							up::Vec3
+								x 0.0
+								y 1.0
+								z 0.0
+							forward::Vec3
+								x 0.0
+								y 0.0
+								z 1.0
+							trans::Vec3
+								x 0.0
+								y 0.0
+								z 0.0
+					Components *nullArray*
+					ClientRuntimeComponentCount 0
+					ServerRuntimeComponentCount 0
+					ClientRuntimeTransformationCount 0
+					ServerRuntimeTransformationCount 0
+				Enabled True
+			PhysicsData *nullGuid*
+		PhysicsBlueprint *nullGuid*
+		Mesh *nullGuid*
+		TimeToShowWeaponMesh 0.0
+		PreferredWeaponSlot 0
+		TimeToLive 0.0
+		IconName pickups.gadget
+		MinRandomSpareAmmoPercent 100
+		MaxRandomSpareAmmoPercent 100
+		MinRandomClipAmmoPercent 100
+		MaxRandomClipAmmoPercent 100
+		RandomizeAmmoOnDropForPlayer PickupPlayerEnum_HumanOnly
+		InteractionRadius 2.5
+		DisplayWithinRadius 5.0
+		TacticalRadius 100.0
+		UseWeaponMesh True
+		UnspawnOnPickup False
+		UnspawnOnAmmoPickup False
+		ContentIsStatic False
+		PositionIsStatic True
+		AllowPickup True
+		IgnoreNullWeaponSlots False
+		ForceWeaponSlotSelection False
+		DisplayInMiniMap True
+		HasAutomaticAmmoPickup True
+		ReplaceAllContent False
+		RemoveWeaponOnDrop False
+		UseDisplayWithinRadius True
+		KeepAmmoState True
+	Weapons::array
+		member(0)::WeaponUnlockPickupData
+			UnlockWeaponAndSlot::UnlockWeaponAndSlot
+				Weapon Gameplay/Gadgets/M15/U_SP_M15/2fed16a8-c2c5-4634-a1c9-fe13632a423a
+				Slot WeaponSlot_2
+				CustomizationUnlockAssets *nullArray*
+				UnlockAssets *nullArray*
+			AltWeaponSlot 5
+			LinkedToWeaponSlot -1
+			MinAmmo 0
+			MaxAmmo 0
+			UnlimitedAmmoPickup False
+	UseForPersistence True
+BoolEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 113826594
+	Realm Realm_ClientAndServer
+	DefaultValue True
+InterfaceDescriptorData Instance1
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -326382662
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

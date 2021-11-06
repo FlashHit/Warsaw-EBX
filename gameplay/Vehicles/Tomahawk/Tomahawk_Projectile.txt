@@ -1,0 +1,629 @@
+ProjectileBlueprint b7aae2cc-bd2f-4d46-985e-66493756b457
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Vehicles/Tomahawk/Tomahawk_Projectile
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+							Target Instance7
+							SourceFieldId -434200814
+							TargetFieldId -434200814
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+		Object 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+MissileEntityData 1ee4a6cf-50a5-4cc2-bc6a-2cd1132a0663
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 518301391
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0
+							Components::array
+								member(0) Instance2
+								member(1) Instance8
+								member(2) Instance0
+								member(3) Instance1
+								member(4) Instance6
+								member(5) Instance7
+							ClientRuntimeComponentCount 4
+							ServerRuntimeComponentCount 4
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled False
+					PhysicsData Instance3
+				InitialSpeed 350.0
+				TimeToLive 60.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 30.0
+				VisualConvergenceDelay 0.10000000149011612
+				VisualConvergenceDuration 0.10000000149011612
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration -1.0
+				Explosion Instance9
+				SuppressionData *nullGuid*
+				AmmunitionType *nullString*
+				MaterialPair::MaterialDecl
+					Packed 1427734528
+				HitReactionWeaponType AntHitReactionWeaponType_Explosion
+				DetonateOnTimeout False
+				ServerProjectileDisabled False
+				HideOnDetonation False
+				VehicleLightingEnable True
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/vehicles/tomahawk/tomahawk_projectile_Mesh/ac56884b-5fd3-49db-8cac-36af2b9276d0
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_Missile_Tomahawk/38567a2f-1038-491a-95ce-3cd2d94756c3
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 0.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay -1.0
+		ProxyConvergenceDuration -1.0
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence False
+	EngineEffect FX/Weapons/TrailEngine/FX_TrailEngine_TomaHawk/fefccc5d-980c-4d16-b8be-968bddf89a25
+	DudExplosion *nullGuid*
+	FlyBySound *nullGuid*
+	EngineStrength 20.0
+	MaxSpeed 80.0
+	EngineTimeToIgnition 0.0
+	EngineTimeToLive 60.0
+	TimeToActivateGuidingSystem 3.799999952316284
+	TimeToArm 0.5
+	MaxTurnAngle 60.0
+	MinTurnAngle 10.0
+	TurnAngleMultiplier 2.200000047683716
+	Drag 0.0
+	Gravity 1.0
+	FlyBySoundRadius 5.0
+	FlyBySoundSpeed 10.0
+	ImpactImpulse 7000.0
+	Damage 0.0
+	DefaultTeam Team1
+	WarnTarget wtWarnVehicle
+	LockingController Instance11
+	LockableInfo::MissileLockableInfoData
+		HeatSignature 10.0
+		RadarSignature 0.0
+	UnguidedData::MissileUnguidedData
+		StaticPosition::Vec2
+			x 0.0
+			y 280.0
+		TargetPositionOffset::Vec2
+			x -80.0
+			y 280.0
+		UseStaticPosition True
+		UseTargetPosition True
+	NearTargetDetonation::NearTargetDetonationData
+		DetonationRadius 35.0
+		MaxDetonationDelay 1.5
+		MinDetonationDelay 1.5
+		DetonateNearTarget True
+	MaxBankAngle 90.0
+	BankingSpeed 2.0
+	Icon commander.tomahawk
+	TargetIcon commander.tomahawktarget
+	TargetIconEnemy *nullString*
+	MinGhostFrequency 1.0
+	ApplyGravityWhenGuided True
+	WarnOnPointingMissile False
+	EnableBanking True
+MissileHealthComponentData Instance0
+	$::GameHealthComponentData
+		$::HealthComponentData
+			$::ComponentData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 8196473
+				Components *nullArray*
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+				Excluded False
+	Health 50.0
+MissilePhysicsComponentData Instance1
+	$::GamePhysicsComponentData
+		$::PhysicsComponentData
+			$::ComponentData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 15670011
+				Components *nullArray*
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+				Excluded False
+		Realm Realm_ClientAndServer
+		EffectParameters *nullArray*
+PartComponentData Instance2
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 24812267
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Excluded False
+	HealthStates::array
+		member(0) Instance10
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PhysicsEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	Asset Gameplay/Vehicles/Tomahawk/Tomahawk_Projectile_Physics_Win32/2f898179-d40b-24be-510c-264c1d49cc98
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	RigidBodies::array
+		member(0) Instance4
+		member(1) Instance5
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts False
+	IsComposite False
+RigidBodyData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeCollision
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 1.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Dynamic
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+	FloatPhysics *nullGuid*
+	IsRootController True
+RigidBodyData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeRaycast
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+	FloatPhysics *nullGuid*
+	IsRootController True
+SoundEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 46887975
+	Sound Sound/Weapons/Projectiles/Rocket_Engine_Missile_SPC/006db86c-6d69-4bc5-bea8-0d1ded2a47c7
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+SoundEntityData Instance7
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 446995378
+	Sound Sound/Weapons/Projectiles/Rocket_Projectile_Tomahawk_SPC/9eb9fd27-c42a-4e75-bc03-c191a2b75c08
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+SpottingTargetComponentData Instance8
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 6055197
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Excluded False
+	ActiveSpottedTime 5.0
+	PassiveSpottedTime 3.0
+	ActiveSpottedTimeMultiplier 1.0
+	PassiveSpottedTimeMultiplier 1.0
+	SpotOnFireMultiplier 0.5
+	RadarSpottedSpeedThresholdOverride -1.0
+	TargetBoundingBoxCenter True
+	CalculateAngleOutsideBoundingSphere True
+VeniceExplosionEntityData Instance9
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/TomaHawk/FX_Explosion_TomaHawk/1cc96a39-1212-49c0-b778-63ff8bb67ac3
+		DetonationEffectForFriendlies *nullGuid*
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 1354334208
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_ExplosionCenter
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 14.0
+		BlastDamage 1600.0
+		BlastRadius 15.0
+		BlastImpulse 15000.0
+		ShockwaveDamage 10000.0
+		ShockwaveRadius 16.0
+		ShockwaveImpulse 5000.0
+		ShockwaveTime 1.2000000476837158
+		CameraShockwaveRadius 0.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect False
+		DisableOcclusion True
+		DisableStaticEntityOcclusion True
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 1.0
+	IsCausingSuppression True
+	UnspotsOnExplode False
+	SpotsOnExplode False
+HealthStateData Instance10
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+LockingControllerData Instance11
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockAlways
+	LockTime 0.009999999776482582
+	UnLockTime -1.0
+	ReleaseTime 5.0
+	ReleaseOnNewTargetTime 1.0
+	SampleRate 0.10000000149011612
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 10000.0
+	AcceptanceAngle 360.0
+	AngleConstant 50.0
+	DistanceConstant 50.0
+	Sensitivity 0.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnNone
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+	LockOnVisibleTargetsOnly False
+	RequireAmmoToLock False
+	PositionOnly True
+	LockOnWorldSpacePos True
+	LockOnEmptyVehicles True
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False

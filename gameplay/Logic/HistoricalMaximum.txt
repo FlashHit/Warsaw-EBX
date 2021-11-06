@@ -1,0 +1,86 @@
+LogicPrefabBlueprint 14392a3a-76b0-3044-0305-c041f976499e
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/HistoricalMaximum
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target a680ccc1-33e7-48cf-8c9c-5e7ad912ab06
+							SourceFieldId 5862146
+							TargetFieldId 5862146
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source a680ccc1-33e7-48cf-8c9c-5e7ad912ab06
+							Target Instance0
+							SourceFieldId 193453899
+							TargetFieldId 193453899
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance0
+					Flags 0
+				EventConnections *nullArray*
+		Objects::array
+			member(0) a680ccc1-33e7-48cf-8c9c-5e7ad912ab06
+LuaRunnerScriptEntityData a680ccc1-33e7-48cf-8c9c-5e7ad912ab06
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 411094209
+	Script --function <guid>( self, event, vars, sharedvars, globalvars, deltaTime )
+do
+	InitVars(vars, "value", self.In)
+
+	if self.In > vars.value then
+		vars.value = self.In
+	end
+	self.Out = vars.value
+end
+
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputFloatProperties::array
+		member(0) In
+	OutputFloatProperties::array
+		member(0) Out
+	InputIntProperties *nullArray*
+	OutputIntProperties *nullArray*
+	InputBoolProperties *nullArray*
+	OutputBoolProperties *nullArray*
+	InputStringProperties *nullArray*
+	OutputStringProperties *nullArray*
+	InputTransformProperties *nullArray*
+	OutputTransformProperties *nullArray*
+	InputVec3Properties *nullArray*
+	OutputVec3Properties *nullArray*
+	ExecuteOnPropertyChange ExecuteOnPropertyChangeType_Immediate
+	PriorityForExecutingPerFrame 0
+	Realm Realm_Server
+	CompiledLua Gameplay/Logic/HistoricalMaximum/LuaRunnerCompiledLua_A680CCC1_33E7_48CF_8C9C_5E7AD912AB06_Win32/93af6cd0-5403-1300-74f9-c019dc885434
+	AutoStartExecutingPerFrame False
+	AutoStartForInitialization False
+	RunOnPropertyChange False
+	AddToDebugDisplay False
+InterfaceDescriptorData Instance0
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862146
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 193453899
+				AccessType FieldAccessType_Source
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

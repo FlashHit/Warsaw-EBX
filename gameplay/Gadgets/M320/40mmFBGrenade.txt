@@ -1,0 +1,286 @@
+ProjectileBlueprint b7ad86d1-91e8-4f13-8420-b4ca54aa0821
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Gadgets/M320/40mmFBGrenade
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 193450864
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance4
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 1303794898
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source 917821ba-0aa7-4215-8be7-9ac581a4cb02
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -1036968738
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source 917821ba-0aa7-4215-8be7-9ac581a4cb02
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1304372294
+						TargetEvent::EventSpec
+							Id 193450867
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance3
+						Target 917821ba-0aa7-4215-8be7-9ac581a4cb02
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -474729183
+						TargetType EventConnectionTargetType_Server
+		Object 917821ba-0aa7-4215-8be7-9ac581a4cb02
+GrenadeEntityData 917821ba-0aa7-4215-8be7-9ac581a4cb02
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 527966650
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0
+							Components::array
+								member(0) Instance0
+								member(1) Instance3
+								member(2) Instance2
+								member(3) Instance4
+							ClientRuntimeComponentCount 1
+							ServerRuntimeComponentCount 1
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled True
+					PhysicsData *nullGuid*
+				InitialSpeed 350.0
+				TimeToLive 10.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 2.0
+				VisualConvergenceDelay 0.0
+				VisualConvergenceDuration 0.75
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration -1.0
+				Explosion Instance1
+				SuppressionData Instance6
+				AmmunitionType Flashbang
+				MaterialPair::MaterialDecl
+					Packed 3126362112
+				HitReactionWeaponType AntHitReactionWeaponType_Flashbang
+				DetonateOnTimeout True
+				ServerProjectileDisabled False
+				HideOnDetonation False
+				VehicleLightingEnable False
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/gadgets/m320/40mmfbgrenade_Mesh/1bf46397-5445-4137-8d32-6cceebf19028
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_FlumpGrenade/ac84db5e-f560-4a86-9d60-f380a5dc1a33
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 0.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay -1.0
+		ProxyConvergenceDuration -1.0
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence True
+	Gravity -6.0
+	CollisionSpeedMultiplier 0.4000000059604645
+	MinBounceSpeed 0.5
+	CollisionDamage 100.0
+	GrenadeType GrenadeType_Flash
+	HudIndicatorIcon grenade
+	UseGrenadeCollisionMessage True
+	ShowHudIndicator True
+PartComponentData Instance0
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 10067764
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -2.7755574995243454e-19
+					y 1.6653344997146072e-18
+					z -1.9984015237346206e-17
+			Excluded False
+	HealthStates::array
+		member(0) Instance5
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+VeniceExplosionEntityData Instance1
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/Grenades/FX_FlashBang/3e6b8bd7-bdbc-4cf7-9e87-c19bbdf0f793
+		DetonationEffectForFriendlies FX/Weapons/Grenades/FX_FlashBang_Friendly/eb4157b8-c3e8-41aa-ac13-1c30f22cd016
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 3120594944
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_ExplosionCenter
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 3.0
+		BlastDamage 5.0
+		BlastRadius 7.0
+		BlastImpulse 120.0
+		ShockwaveDamage 1.0
+		ShockwaveRadius 14.0
+		ShockwaveImpulse 60.0
+		ShockwaveTime 0.25
+		CameraShockwaveRadius 6.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect True
+		DisableOcclusion False
+		DisableStaticEntityOcclusion True
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 1.0
+	IsCausingSuppression True
+	UnspotsOnExplode False
+	SpotsOnExplode False
+DelayEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 78685985
+	Delay 0.75
+	Realm Realm_Server
+	AutoStart False
+	RunOnce True
+	RemoveDuplicateEvents True
+DelayEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 98169242
+	Delay 0.3400000035762787
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+EventAndGateEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 70940676
+	Realm Realm_Server
+	EventCount 2
+HealthStateData Instance5
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+WeaponSuppressionData Instance6
+	$::DataContainer
+	MaxMultiplier 50.0
+	MinMultiplier 50.0
+	MinDistance 12.0
+	MaxDistance 50.0

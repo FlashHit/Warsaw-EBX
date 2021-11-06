@@ -1,0 +1,217 @@
+LogicPrefabBlueprint 6c985a62-f9eb-4f70-495c-c9621ba99dde
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/Obliteration/LevelSetups/LevelSetupComponents/ScoringLogic
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface Instance2
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance2
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -1547408861
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -673973921
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 258397749
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 258397749
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -673973921
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source Instance2
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -1547408861
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -1547408861
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1547408861
+						TargetEvent::EventSpec
+							Id 229946160
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source Instance0
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source Instance0
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(10)::EventConnection
+						Source Instance1
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Server
+					member(11)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(12)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1731775704
+						TargetEvent::EventSpec
+							Id -1688613187
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+			member(2) Instance6
+			member(3) Instance7
+			member(4) Instance5
+			member(5) Instance3
+			member(6) Instance4
+DelayEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 79781504
+	Delay 30.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+EventGateEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 73077227
+	Realm Realm_Server
+	Default True
+InterfaceDescriptorData Instance2
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 258397749
+		member(1)::DynamicEvent
+			Id -673973921
+		member(2)::DynamicEvent
+			Id -1547408861
+		member(3)::DynamicEvent
+			Id 1731775704
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+StatEventTriggerEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 68676891
+	StatEvent StatEvent_BombDeliveredAssist
+	MiscParamX *nullString*
+	MiscParamY *nullString*
+	SendTo SendToTeamExcludeSingle
+StatEventTriggerEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 97772620
+	StatEvent StatEvent_BombCarrierKilled
+	MiscParamX *nullString*
+	MiscParamY *nullString*
+	SendTo SendToSingle
+StatEventTriggerEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 86992253
+	StatEvent StatEvent_BombDelivered
+	MiscParamX *nullString*
+	MiscParamY *nullString*
+	SendTo SendToSingle
+StatEventTriggerEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 73051778
+	StatEvent StatEvent_BombPossession
+	MiscParamX *nullString*
+	MiscParamY *nullString*
+	SendTo SendToTeam
+StatEventTriggerEntityData Instance7
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 85292420
+	StatEvent StatEvent_BombPickedUp
+	MiscParamX *nullString*
+	MiscParamY *nullString*
+	SendTo SendToSingle

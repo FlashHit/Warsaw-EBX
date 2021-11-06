@@ -1,0 +1,211 @@
+LogicPrefabBlueprint 394570db-e157-c1cf-0bf8-59221642a4cf
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/GunMaster/Components/Gunmaster_Music
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance3
+							Target Instance1
+							SourceFieldId -1245422369
+							TargetFieldId 177636
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance3
+							Target Instance2
+							SourceFieldId -1245422369
+							TargetFieldId 177636
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance0
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -2029628438
+						TargetEvent::EventSpec
+							Id -559281700
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance3
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -147585623
+						TargetEvent::EventSpec
+							Id 1928776733
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance5
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id -1070327267
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(3)::EventConnection
+						Source Instance6
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id 371164207
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(4)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193445179
+						TargetEvent::EventSpec
+							Id -767721866
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source Instance3
+						Target Instance6
+						SourceEvent::EventSpec
+							Id -1780673553
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance3
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -1780673553
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193445179
+						TargetEvent::EventSpec
+							Id -767721867
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 193445179
+						TargetEvent::EventSpec
+							Id 1309676680
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source Instance2
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 2088727237
+						TargetEvent::EventSpec
+							Id -639986109
+						TargetType EventConnectionTargetType_Client
+		Objects::array
+			member(0) Instance1
+			member(1) Instance2
+			member(2) Instance0
+			member(3) Instance4
+			member(4) Instance5
+			member(5) Instance6
+SoundEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 60789345
+	Sound Sound/Music/MP_Music/MP_Music_Ending_Patch/92a45540-0a2e-460f-beab-3e12f38d1279
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform False
+CompareIntEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 419838507
+	Realm Realm_Client
+	A 0
+	B 1
+	TriggerOnPropertyChange True
+	TriggerOnStart True
+CompareIntEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 402771813
+	Realm Realm_Client
+	A 0
+	B 2
+	TriggerOnPropertyChange True
+	TriggerOnStart True
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -1245422369
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -147585623
+		member(1)::DynamicEvent
+			Id -1780673553
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+MixerEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 35367488
+	Mixer Sound/Mixers/EndOfRound_Mixer_01/07c6aae4-e436-4d19-8518-90713d71ffc1
+	ActivateOnCreation False
+	AccumulatedInputs False
+PlayerFilterEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 71444906
+	Realm Realm_Server
+	InvertFilter False
+	ForwardToSpectators False
+PlayerFilterEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 72911289
+	Realm Realm_Server
+	InvertFilter True
+	ForwardToSpectators False

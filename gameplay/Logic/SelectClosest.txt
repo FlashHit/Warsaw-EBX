@@ -1,0 +1,230 @@
+LogicPrefabBlueprint 5b803648-4c25-b65c-77c8-eff95cb05e9b
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/SelectClosest
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862498
+							TargetFieldId 5862498
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862497
+							TargetFieldId 5862497
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862496
+							TargetFieldId 5862496
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862503
+							TargetFieldId 5862503
+							ShouldNetworkValue False
+						member(4)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862502
+							TargetFieldId 5862502
+							ShouldNetworkValue False
+						member(5)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId -1220748498
+							TargetFieldId -1220748498
+							ShouldNetworkValue False
+						member(6)::PropertyConnection
+							Source Instance0
+							Target e470714c-9c8c-47b7-bba6-13ce29995813
+							SourceFieldId 5862501
+							TargetFieldId 5862501
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance0
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance0
+						Target e470714c-9c8c-47b7-bba6-13ce29995813
+						SourceEvent::EventSpec
+							Id 5862146
+						TargetEvent::EventSpec
+							Id 550586970
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 90297810
+						TargetEvent::EventSpec
+							Id 90297810
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 316388081
+						TargetEvent::EventSpec
+							Id 316388081
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -425103856
+						TargetEvent::EventSpec
+							Id -425103856
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -590099657
+						TargetEvent::EventSpec
+							Id -590099657
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1538226602
+						TargetEvent::EventSpec
+							Id -1538226602
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source e470714c-9c8c-47b7-bba6-13ce29995813
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -1312136331
+						TargetEvent::EventSpec
+							Id -1312136331
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) e470714c-9c8c-47b7-bba6-13ce29995813
+LuaRunnerScriptEntityData e470714c-9c8c-47b7-bba6-13ce29995813
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 477131084
+	Script --function <guid>( self, event, vars, sharedvars, globalvars, deltaTime )
+do
+	local v1distance = Vec3.Distance(self.Reference, self.V1.trans)
+	local v2distance = Vec3.Distance(self.Reference, self.V2.trans)
+	local v3distance = Vec3.Distance(self.Reference, self.V3.trans)
+	local v4distance = Vec3.Distance(self.Reference, self.V4.trans)
+	local v5distance = Vec3.Distance(self.Reference, self.V5.trans)
+	local v6distance = Vec3.Distance(self.Reference, self.V6.trans)
+
+	local minDistance = math.min(v1distance, v2distance, v3distance, v4distance, v5distance, v6distance)
+	if v1distance == minDistance then self.FireEvent("OnV1Closest") end
+	if v2distance == minDistance then self.FireEvent("OnV2Closest") end
+	if v3distance == minDistance then self.FireEvent("OnV3Closest") end
+	if v4distance == minDistance then self.FireEvent("OnV4Closest") end
+	if v5distance == minDistance then self.FireEvent("OnV5Closest") end
+	if v6distance == minDistance then self.FireEvent("OnV6Closest") end
+end
+
+	InputEvents *nullArray*
+	OutputEvents::array
+		member(0) OnV1Closest
+		member(1) OnV2Closest
+		member(2) OnV3Closest
+		member(3) OnV4Closest
+		member(4) OnV5Closest
+		member(5) OnV6Closest
+	InputFloatProperties *nullArray*
+	OutputFloatProperties *nullArray*
+	InputIntProperties *nullArray*
+	OutputIntProperties *nullArray*
+	InputBoolProperties *nullArray*
+	OutputBoolProperties *nullArray*
+	InputStringProperties *nullArray*
+	OutputStringProperties *nullArray*
+	InputTransformProperties::array
+		member(0) V1
+		member(1) V2
+		member(2) V3
+		member(3) V4
+		member(4) V5
+		member(5) V6
+	OutputTransformProperties *nullArray*
+	InputVec3Properties::array
+		member(0) Reference
+	OutputVec3Properties *nullArray*
+	ExecuteOnPropertyChange ExecuteOnPropertyChangeType_DontExecute
+	PriorityForExecutingPerFrame 0
+	Realm Realm_Server
+	CompiledLua Gameplay/Logic/SelectClosest/LuaRunnerCompiledLua_E470714C_9C8C_47B7_BBA6_13CE29995813_Win32/c62617cd-abe2-5edc-c8bc-c970bee36e83
+	AutoStartExecutingPerFrame False
+	AutoStartForInitialization False
+	RunOnPropertyChange False
+	AddToDebugDisplay False
+InterfaceDescriptorData Instance0
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862498
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862497
+				AccessType FieldAccessType_Target
+			member(2)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862496
+				AccessType FieldAccessType_Target
+			member(3)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862503
+				AccessType FieldAccessType_Target
+			member(4)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862502
+				AccessType FieldAccessType_Target
+			member(5)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -1220748498
+				AccessType FieldAccessType_Target
+			member(6)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 5862501
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 5862146
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 90297810
+		member(1)::DynamicEvent
+			Id 316388081
+		member(2)::DynamicEvent
+			Id -425103856
+		member(3)::DynamicEvent
+			Id -590099657
+		member(4)::DynamicEvent
+			Id -1538226602
+		member(5)::DynamicEvent
+			Id -1312136331
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

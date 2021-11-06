@@ -1,0 +1,57 @@
+DataContainerAsset 5838d018-02d4-ef32-8c81-8ea4c1b63f7e
+	$::Asset
+		$::DataContainer
+		Name Gameplay/Vehicles/common/WeaponData/spec/LaserPainter_SOFLAM
+	Data a2bfa296-2be2-6b98-7be1-99a4a21e8288
+LockingControllerData 31848374-e7ae-200a-5a66-e7491fafe548
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnRadar
+	LockTime 1.5
+	UnLockTime -1.0
+	ReleaseTime 1.0
+	ReleaseOnNewTargetTime 0.5
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 500.0
+	AcceptanceAngle 7.5
+	AngleConstant 50.0
+	DistanceConstant 0.0
+	Sensitivity 0.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnNone
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+	LockOnVisibleTargetsOnly True
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles True
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False
+LaserPainterData a2bfa296-2be2-6b98-7be1-99a4a21e8288
+	$::LockingWeaponData
+		$::WeaponData
+			$::ToolData
+				$::DataContainer
+				IsAlwaysActive True
+			ShowLaserPaintedVehicles False
+		LockingController 31848374-e7ae-200a-5a66-e7491fafe548
+		SecondaryLockingController *nullGuid*
+		WarnLock wtWarnVehicle
+		OverrideLockingControllerSettings True
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+		GuideOnlyWhenLockedOn False
+	TimeObjectIsPainted 0.5

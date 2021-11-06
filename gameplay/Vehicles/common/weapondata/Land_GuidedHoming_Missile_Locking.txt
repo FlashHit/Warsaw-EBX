@@ -1,0 +1,55 @@
+DataContainerAsset 89ab147f-a3ca-4deb-a350-60659545a8b9
+	$::Asset
+		$::DataContainer
+		Name Gameplay/Vehicles/common/WeaponData/Land_GuidedHoming_Missile_Locking
+	Data 84839ae4-e29a-4a5a-8101-cacb6a469426
+LockingControllerData ee353a43-a7a8-4bcb-b4b7-8d0701be8b9c
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnHeat
+	LockTime 1.100000023841858
+	UnLockTime -1.0
+	ReleaseTime 0.3400000035762787
+	ReleaseOnNewTargetTime 0.0
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 650.0
+	AcceptanceAngle 6.0
+	AngleConstant 5.0
+	DistanceConstant 0.0
+	Sensitivity 10.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnNone
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+	LockOnVisibleTargetsOnly True
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles True
+	LockOnCharacters False
+	IgnoreHeigthLockDistance True
+	LockInCombatAreaOnly False
+LockingWeaponData 84839ae4-e29a-4a5a-8101-cacb6a469426
+	$::WeaponData
+		$::ToolData
+			$::DataContainer
+			IsAlwaysActive False
+		ShowLaserPaintedVehicles False
+	LockingController ee353a43-a7a8-4bcb-b4b7-8d0701be8b9c
+	SecondaryLockingController *nullGuid*
+	WarnLock wtWarnVehicle
+	OverrideLockingControllerSettings True
+	IsHoming False
+	IsGuided True
+	IsGuidedWhenZoomed False
+	IsGuidedHoming True
+	FireOnlyWhenLockedOn False
+	GuideOnlyWhenLockedOn True

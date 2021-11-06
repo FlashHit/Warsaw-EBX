@@ -1,0 +1,204 @@
+ProjectileBlueprint 2cd14e38-0006-4c9b-ad34-06a1d7d47dda
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Gadgets/M67/M67_Projectile_AI
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections *nullArray*
+		Object fe1d3a0a-dd3c-4e34-b146-b01f035aea20
+GrenadeEntityData fe1d3a0a-dd3c-4e34-b146-b01f035aea20
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 505231882
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0
+							Components::array
+								member(0) Instance0
+							ClientRuntimeComponentCount 1
+							ServerRuntimeComponentCount 1
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled True
+					PhysicsData *nullGuid*
+				InitialSpeed 350.0
+				TimeToLive 5.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 3.0
+				VisualConvergenceDelay 0.0
+				VisualConvergenceDuration 0.15000000596046448
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration 1.2000000476837158
+				Explosion Instance1
+				SuppressionData *nullGuid*
+				AmmunitionType Frag
+				MaterialPair::MaterialDecl
+					Packed 1800962048
+				HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+				DetonateOnTimeout True
+				ServerProjectileDisabled False
+				HideOnDetonation False
+				VehicleLightingEnable False
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/gadgets/m67/m67_projectile_ai_Mesh/c9b0a321-2522-4d14-a89a-a02c1f8cef8a
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_Grenade/0abaf9ea-33e4-4fd3-a0cb-6f3574a23413
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 0.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay 0.0
+		ProxyConvergenceDuration 3.5999999046325684
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence True
+	Gravity -9.800000190734863
+	CollisionSpeedMultiplier 0.30000001192092896
+	MinBounceSpeed 0.5
+	CollisionDamage 2.0
+	GrenadeType GrenadeType_Frag
+	HudIndicatorIcon grenade1
+	UseGrenadeCollisionMessage True
+	ShowHudIndicator True
+PartComponentData Instance0
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 1311594
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -0.028135105967521667
+					y 0.00830028485506773
+					z -0.03477293252944946
+			Excluded False
+	HealthStates::array
+		member(0) Instance2
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+VeniceExplosionEntityData Instance1
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/Grenades/FX_Grenade_Frag_01/7e508641-b530-43b0-89f2-f9d61b7767df
+		DetonationEffectForFriendlies *nullGuid*
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 1329037312
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_GiverPlayer
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 1.5
+		BlastDamage 75.0
+		BlastRadius 7.0
+		BlastImpulse 2000.0
+		ShockwaveDamage 1.0
+		ShockwaveRadius 8.0
+		ShockwaveImpulse 500.0
+		ShockwaveTime 0.25
+		CameraShockwaveRadius 0.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect False
+		DisableOcclusion False
+		DisableStaticEntityOcclusion True
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 1.0
+	IsCausingSuppression True
+	UnspotsOnExplode False
+	SpotsOnExplode False
+HealthStateData Instance2
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False

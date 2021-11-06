@@ -1,0 +1,218 @@
+LogicPrefabBlueprint 9623ae6b-3cdd-552d-e9f1-14057e32c34c
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/CommonComponents/Multiplayer_Level_Progress
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance3
+							Target 34055d18-fe93-46e8-850e-f367ba65319a
+							SourceFieldId 2089241922
+							TargetFieldId 2089241922
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance3
+							Target 34055d18-fe93-46e8-850e-f367ba65319a
+							SourceFieldId -610841040
+							TargetFieldId -610841040
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance3
+							Target 34055d18-fe93-46e8-850e-f367ba65319a
+							SourceFieldId 2119031649
+							TargetFieldId 2119031649
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance3
+							Target 34055d18-fe93-46e8-850e-f367ba65319a
+							SourceFieldId 2010831616
+							TargetFieldId 2010831616
+							ShouldNetworkValue False
+						member(4)::PropertyConnection
+							Source Instance3
+							Target 34055d18-fe93-46e8-850e-f367ba65319a
+							SourceFieldId 2040629799
+							TargetFieldId 2040629799
+							ShouldNetworkValue False
+						member(5)::PropertyConnection
+							Source Instance1
+							Target Instance2
+							SourceFieldId 225375086
+							TargetFieldId 858290427
+							ShouldNetworkValue False
+						member(6)::PropertyConnection
+							Source Instance2
+							Target Instance3
+							SourceFieldId 193453899
+							TargetFieldId -1292456776
+							ShouldNetworkValue False
+						member(7)::PropertyConnection
+							Source 34055d18-fe93-46e8-850e-f367ba65319a
+							Target Instance2
+							SourceFieldId -1292456776
+							TargetFieldId 193450867
+							ShouldNetworkValue False
+						member(8)::PropertyConnection
+							Source Instance0
+							Target Instance2
+							SourceFieldId 225375086
+							TargetFieldId 193450866
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -1541508057
+						TargetEvent::EventSpec
+							Id 1736970756
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) 34055d18-fe93-46e8-850e-f367ba65319a
+			member(1) Instance2
+			member(2) Instance1
+			member(3) Instance0
+LuaRunnerScriptEntityData 34055d18-fe93-46e8-850e-f367ba65319a
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 403004696
+	Script --function <guid>( self, event, vars, sharedvars, globalvars )
+do
+	--InitVars(vars, "numTimes", 0)
+	--vars.numTimes = vars.numTimes + 1
+	--self.test = vars.numTimes
+	local highestProgress = 0
+	local teamValue = nil
+	
+	if self.InitialValue ~= 0 then
+		for t = 1, 4 do
+			if t == 1 then
+				teamValue = self.Team1Value
+			elseif t == 2 then
+				teamValue = self.Team2Value
+			elseif t == 3 then
+				teamValue = self.Team3Value
+			elseif t == 4 then
+				teamValue = self.Team4Value
+			end
+		
+			if teamValue ~= nil then
+				currentProgress = 100 - (teamValue * 100) / self.InitialValue
+
+				if highestProgress < currentProgress then
+					highestProgress = currentProgress
+				end
+			end
+		end
+	end
+	
+	self.Progress = highestProgress
+end
+
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputFloatProperties *nullArray*
+	OutputFloatProperties *nullArray*
+	InputIntProperties::array
+		member(0) InitialValue
+		member(1) Team1Value
+		member(2) Team2Value
+		member(3) Team3Value
+		member(4) Team4Value
+	OutputIntProperties::array
+		member(0) Progress
+	InputBoolProperties *nullArray*
+	OutputBoolProperties *nullArray*
+	InputStringProperties *nullArray*
+	OutputStringProperties *nullArray*
+	InputTransformProperties *nullArray*
+	OutputTransformProperties *nullArray*
+	InputVec3Properties *nullArray*
+	OutputVec3Properties *nullArray*
+	ExecuteOnPropertyChange ExecuteOnPropertyChangeType_Immediate
+	PriorityForExecutingPerFrame 0
+	Realm Realm_Server
+	CompiledLua Gameplay/GameModes/CommonComponents/Multiplayer_Level_Progress/LuaRunnerCompiledLua_34055D18_FE93_46E8_850E_F367BA65319A_Win32/fabf8def-f83f-e9b8-77ab-343e53f90b53
+	AutoStartExecutingPerFrame False
+	AutoStartForInitialization True
+	RunOnPropertyChange False
+	AddToDebugDisplay True
+IntEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 14644523
+	Realm Realm_Server
+	DefaultValue 0
+	IncDecValue 0
+IntEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 83876263
+	Realm Realm_Server
+	DefaultValue 0
+	IncDecValue 1
+IntHubEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 282364140
+	Realm Realm_Server
+	InputCount 2
+	InputSelect 0
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 2089241922
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 2119031649
+				AccessType FieldAccessType_Target
+			member(2)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -610841040
+				AccessType FieldAccessType_Target
+			member(3)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -1292456776
+				AccessType FieldAccessType_Source
+			member(4)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 2010831616
+				AccessType FieldAccessType_Target
+			member(5)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 2040629799
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -1541508057
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

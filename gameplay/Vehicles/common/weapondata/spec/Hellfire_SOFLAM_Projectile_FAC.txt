@@ -1,0 +1,472 @@
+ProjectileBlueprint 3712a37c-69ae-07f2-31f1-67830ee01e2a
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Vehicles/common/WeaponData/spec/Hellfire_SOFLAM_Projectile_FAC
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+							Target Instance3
+							SourceFieldId -434200814
+							TargetFieldId -434200814
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+		Object a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+MissileEntityData a712fcc9-de6e-a4ad-64bd-ac335c42a1da
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 521338057
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0015589147806167603
+							Components::array
+								member(0) Instance0
+								member(1) Instance4
+								member(2) Instance3
+							ClientRuntimeComponentCount 1
+							ServerRuntimeComponentCount 1
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled False
+					PhysicsData Instance1
+				InitialSpeed 350.0
+				TimeToLive 15.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 150.0
+				VisualConvergenceDelay 0.10000000149011612
+				VisualConvergenceDuration 0.10000000149011612
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration -1.0
+				Explosion Instance5
+				SuppressionData *nullGuid*
+				AmmunitionType *nullString*
+				MaterialPair::MaterialDecl
+					Packed 3944316928
+				HitReactionWeaponType AntHitReactionWeaponType_Explosion
+				DetonateOnTimeout False
+				ServerProjectileDisabled False
+				HideOnDetonation False
+				VehicleLightingEnable False
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/vehicles/common/weapondata/spec/hellfire_soflam_projectile_fac_Mesh/24ede801-39b3-60b9-b42d-bfe6b7e5b103
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_Missile_Guided/fa170d7d-37bd-48ef-a40c-efcb64f83d41
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 0.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay 0.0
+		ProxyConvergenceDuration 1.5
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence False
+	EngineEffect FX/Weapons/TrailEngine/FX_TrailEngine_Generic/3c6245da-bf37-4512-9283-c0c46914f5fb
+	DudExplosion *nullGuid*
+	FlyBySound *nullGuid*
+	EngineStrength 50.0
+	MaxSpeed 250.0
+	EngineTimeToIgnition 0.009999999776482582
+	EngineTimeToLive 40.0
+	TimeToActivateGuidingSystem 1.0
+	TimeToArm 0.5
+	MaxTurnAngle 720.0
+	MinTurnAngle 90.0
+	TurnAngleMultiplier 10.0
+	Drag 0.0
+	Gravity 20.0
+	FlyBySoundRadius 5.0
+	FlyBySoundSpeed 10.0
+	ImpactImpulse 5000.0
+	Damage 450.0
+	DefaultTeam TeamNeutral
+	WarnTarget wtWarnVehicle
+	LockingController Instance7
+	LockableInfo::MissileLockableInfoData
+		HeatSignature 0.0
+		RadarSignature 0.0
+	UnguidedData::MissileUnguidedData
+		StaticPosition::Vec2
+			x 50.0
+			y 50.0
+		TargetPositionOffset::Vec2
+			x 35.0
+			y 50.0
+		UseStaticPosition True
+		UseTargetPosition True
+	NearTargetDetonation::NearTargetDetonationData
+		DetonationRadius 25.0
+		MaxDetonationDelay 0.75
+		MinDetonationDelay 0.5
+		DetonateNearTarget True
+	MaxBankAngle 90.0
+	BankingSpeed 1.0
+	Icon *nullString*
+	TargetIcon *nullString*
+	TargetIconEnemy *nullString*
+	MinGhostFrequency 0.0
+	ApplyGravityWhenGuided True
+	WarnOnPointingMissile False
+	EnableBanking False
+PartComponentData Instance0
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 30005101
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -3.373268597783863e-08
+					y 0.0
+					z -0.41979333758354187
+			Excluded False
+	HealthStates::array
+		member(0) Instance6
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PhysicsEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	Asset Gameplay/Vehicles/common/WeaponData/spec/Hellfire_SOFLAM_Projectile_FAC_Physics_Win32/9410b252-9127-ee45-5b53-dee70afa607c
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	RigidBodies::array
+		member(0) Instance2
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts False
+	IsComposite False
+RigidBodyData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeCollision
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 1.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Dynamic
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+	FloatPhysics *nullGuid*
+	IsRootController True
+SoundEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 455418383
+	Sound Sound/Weapons/Projectiles/Rocket_Projectile_Medium_SPC/9645ae18-7357-49d5-a240-5685a489f4f8
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+SoundEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 55881665
+	Sound Sound/Weapons/Projectiles/Rocket_Engine_Missile_SPC/006db86c-6d69-4bc5-bea8-0d1ded2a47c7
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+VeniceExplosionEntityData Instance5
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/Gadgets/FX_C4_01/8399de39-0e0f-4bd9-97fb-51bd125b29fa
+		DetonationEffectForFriendlies *nullGuid*
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 3929702400
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_GiverPlayer
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 2.990000009536743
+		BlastDamage 225.0
+		BlastRadius 3.0
+		BlastImpulse 5000.0
+		ShockwaveDamage 1.0
+		ShockwaveRadius 10.0
+		ShockwaveImpulse 1500.0
+		ShockwaveTime 0.25
+		CameraShockwaveRadius 0.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect False
+		DisableOcclusion False
+		DisableStaticEntityOcclusion True
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 1.0
+	IsCausingSuppression True
+	UnspotsOnExplode False
+	SpotsOnExplode False
+HealthStateData Instance6
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+LockingControllerData Instance7
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnRadar
+	LockTime 0.10000000149011612
+	UnLockTime -1.0
+	ReleaseTime 0.10000000149011612
+	ReleaseOnNewTargetTime 0.10000000149011612
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 1000.0
+	AcceptanceAngle 6.5
+	AngleConstant 1.0
+	DistanceConstant 3.0
+	Sensitivity 100.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnNone
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+	LockOnVisibleTargetsOnly True
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles False
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False

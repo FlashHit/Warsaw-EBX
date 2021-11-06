@@ -1,0 +1,145 @@
+SpatialPrefabBlueprint eae54535-97b5-4349-7ca2-e4b451773430
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Pickups/SP_Pickups/Metagame/CollectibleHint
+					PropertyConnections *nullArray*
+					LinkConnections::array
+						member(0)::LinkConnection
+							Source Instance0
+							Target Instance2
+							SourceFieldId 838548383
+							TargetFieldId 0
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance0
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -80368276
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(1)::EventConnection
+						Source Instance3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -117303631
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+GeometryTriggerEntityData Instance0
+	$::AreaTriggerEntityData
+		$::TriggerEntityData
+			$::SpatialEntityData
+				$::EntityData
+					$::GameObjectData
+						$::DataBusPeer
+							$::GameDataContainer
+								$::DataContainer
+							Flags 1707291107
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+			Delay 0.0
+			RunOnce True
+			Enabled True
+		GeometryTransform::LinearTransform
+			right::Vec3
+				x 1.0
+				y 0.0
+				z 0.0
+			up::Vec3
+				x 0.0
+				y 1.0
+				z 0.0
+			forward::Vec3
+				x 0.0
+				y 0.0
+				z 1.0
+			trans::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+		Include ATPlayers
+		Radius 0.0
+		InsideAreaEventRepeatTime 0.0
+		TeamOfAllies Team1
+		UseCharacterEntity False
+		UseRadiusWithGeometryTransform False
+		OneInsideAreaEventPerSoldier False
+		TriggerOnlyOnLeave False
+		ResetOnEnable False
+		TriggerOnLeaveOnDeath True
+		TriggerOnLeaveOnDisable False
+SoundEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 42384160
+	Sound Sound/UI/UX_Unlocks/UX_InGame_SP_Collectible_Hint/5f4a1bb0-9f3a-4d92-9629-b87bffa88e91
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform False
+SphereData Instance2
+	$::BaseShapeData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 67108864
+	Radius 10.0
+	Position::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -117303631
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

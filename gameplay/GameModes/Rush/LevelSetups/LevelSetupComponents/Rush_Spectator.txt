@@ -1,0 +1,184 @@
+LogicPrefabBlueprint 43ac3719-c1d2-0100-b422-470f3450e349
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/Rush/LevelSetups/LevelSetupComponents/Rush_Spectator
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance0
+							Target Instance3
+							SourceFieldId 225375086
+							TargetFieldId -2071239147
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -2022452343
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(1)::EventConnection
+						Source Instance2
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 1039935461
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 823093038
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -1581376671
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -1581376671
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_Server
+					member(5)::EventConnection
+						Source Instance3
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -1581376671
+						TargetEvent::EventSpec
+							Id 248914596
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance1
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 248914596
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 656803109
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source Instance3
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 823093038
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source Instance3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 823093038
+						TargetEvent::EventSpec
+							Id -1541066415
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(10)::EventConnection
+						Source Instance3
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1626374428
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(11)::EventConnection
+						Source Instance4
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -1864525248
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance2
+			member(2) Instance1
+			member(3) Instance4
+BoolEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 65298909
+	Realm Realm_Client
+	DefaultValue False
+EventGateEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 73282062
+	Realm Realm_Server
+	Default True
+EventGateEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 68531837
+	Realm Realm_Server
+	Default True
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -2071239147
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 823093038
+		member(1)::DynamicEvent
+			Id -2022452343
+		member(2)::DynamicEvent
+			Id -1626374428
+		member(3)::DynamicEvent
+			Id -1581376671
+		member(4)::DynamicEvent
+			Id 656803109
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1039935461
+		member(1)::DynamicEvent
+			Id 248914596
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+PlayerFilterEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 93125463
+	Realm Realm_Server
+	InvertFilter False
+	ForwardToSpectators False

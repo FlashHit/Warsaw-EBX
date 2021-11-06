@@ -1,0 +1,222 @@
+LogicPrefabBlueprint 3f18481d-5878-7001-ba54-0f1ecb3aacb7
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Vehicles/common/LogicalPrefabs/ArmorSwitcher
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance5
+							Target Instance1
+							SourceFieldId 255538679
+							TargetFieldId 225375086
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance5
+							Target Instance2
+							SourceFieldId 255538679
+							TargetFieldId 2088812747
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance5
+							Target Instance0
+							SourceFieldId -944561543
+							TargetFieldId 225375086
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance5
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance1
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id -1822812653
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(1)::EventConnection
+						Source Instance1
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id -1400034350
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(2)::EventConnection
+						Source Instance2
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id -1822812653
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(3)::EventConnection
+						Source Instance0
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id -1822812653
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(4)::EventConnection
+						Source Instance1
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(5)::EventConnection
+						Source Instance1
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(6)::EventConnection
+						Source Instance1
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(7)::EventConnection
+						Source Instance4
+						Target Instance5
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1950139696
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(8)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -81881639
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(9)::EventConnection
+						Source Instance2
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id 2089008817
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(10)::EventConnection
+						Source Instance5
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 775358998
+						TargetEvent::EventSpec
+							Id 212633683
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(11)::EventConnection
+						Source Instance5
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -182176866
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_ClientAndServer
+					member(12)::EventConnection
+						Source Instance3
+						Target Instance2
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_ClientAndServer
+		Objects::array
+			member(0) Instance1
+			member(1) Instance4
+			member(2) Instance2
+			member(3) Instance0
+			member(4) Instance3
+BoolToEventEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 412494974
+	Realm Realm_ClientAndServer
+	Value False
+	InitalEvent False
+BoolToEventEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 403751644
+	Realm Realm_ClientAndServer
+	Value False
+	InitalEvent False
+CompareBoolEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 511889364
+	Realm Realm_ClientAndServer
+	Bool False
+	TriggerOnPropertyChange False
+	TriggerOnStart False
+	AlwaysSend False
+DelayEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 119010493
+	Delay 0.05999999865889549
+	Realm Realm_ClientAndServer
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+EventGateEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 117191601
+	Realm Realm_ClientAndServer
+	Default False
+InterfaceDescriptorData Instance5
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 255538679
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -944561543
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 775358998
+		member(1)::DynamicEvent
+			Id -182176866
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1950139696
+		member(1)::DynamicEvent
+			Id -1400034350
+		member(2)::DynamicEvent
+			Id -1822812653
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

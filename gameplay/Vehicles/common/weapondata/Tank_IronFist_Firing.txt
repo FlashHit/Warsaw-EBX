@@ -1,0 +1,271 @@
+WeaponFiringDataAsset 063718a1-79dc-4614-bf3b-7ec03dee52fa
+	$::GameDataContainerAsset
+		$::Asset
+			$::DataContainer
+			Name Gameplay/Vehicles/common/WeaponData/Tank_IronFist_Firing
+		Data be9965f4-8baf-496d-bbc6-3dbf464f0f42
+FiringFunctionData 268e4e61-1f5a-4329-9cb7-f7a53cac1109
+	$::GameDataContainer
+		$::DataContainer
+	Dispersion *nullArray*
+	WeaponDispersion::WeaponDispersion
+		StandDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		CrouchDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		ProneDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		JumpDispersionAngle 0.0
+		ProneTransitionDispersionAngle 0.0
+		MoveDispersionAngle 0.0
+		MoveZoomedDispersionAngle 0.0
+		DecreasePerSecond 5.0
+	Shot::ShotConfigData
+		InitialPosition::Vec3
+			x 0.0
+			y 0.0
+			z 0.8799999952316284
+		InitialDirection::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		InitialSpeed::Vec3
+			x 0.0
+			y 2.0
+			z 0.0
+		InitialDirectionScaleByPitch *nullArray*
+		InitialSpeedScaleByPitch *nullArray*
+		InheritWeaponSpeedAmount 0.0
+		MuzzleExplosion *nullGuid*
+		ProjectileData afe42385-dec2-42a8-915b-eb79e079ebf0
+		SecondaryProjectileData *nullGuid*
+		Projectile *nullGuid*
+		SecondaryProjectile *nullGuid*
+		SpawnDelay 0.0
+		SpawnDelayZoomed -1.0
+		NumberOfBulletsPerShell 1
+		NumberOfBulletsPerShot 1
+		NumberOfBulletsPerBurst 3
+		RelativeTargetAiming False
+		ForceSpawnToCamera False
+		SpawnVisualAtWeaponBone False
+		ActiveForceSpawnToCamera True
+	OverHeat::OverHeatData
+		OverHeatEffect::FireEffectData
+			Offset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomRotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Effect *nullGuid*
+			UseZoomOffset False
+			UseZoomRotation False
+			DisableDuringZoom False
+			UpdateTransform False
+			StopLoopingEffects False
+		HeatPerBullet 0.0
+		HeatDropPerSecond 0.20000000298023224
+		OverHeatPenaltyTime 3.0
+		OverHeatThreshold 0.800000011920929
+	FireEffects1p *nullArray*
+	FireEffects3p *nullArray*
+	Sound Sound/Weapons/Stationary/Iron_Fist/Iron_Fist/32ed98b9-a412-4317-9eba-fb1a5472b6e7
+	FireLogic::FireLogicData
+		HoldAndRelease::HoldAndReleaseData
+			MaxHoldTime 10.0
+			MinPowerModifier 1.0
+			MaxPowerModifier 2.0
+			PowerIncreasePerSecond 0.10000000149011612
+			Delay 0.0
+			KilledHoldingPowerModifier 0.0
+			ForceFireWhenKilledHolding True
+		BoltAction::BoltActionData
+			BoltActionDelay 0.5
+			BoltActionTime 1.0
+			HoldBoltActionUntilFireRelease True
+			HoldBoltActionUntilZoomRelease True
+			ForceBoltActionOnFireTrigger False
+			UnZoomOnBoltAction True
+			ReturnToZoomAfterBoltAction True
+		Recoil::RecoilData
+			MaxRecoilAngleX 0.0
+			MinRecoilAngleX 0.0
+			MaxRecoilAngleY 0.0
+			MinRecoilAngleY 0.0
+			MaxRecoilAngleZ 0.0
+			MinRecoilAngleZ 0.0
+			MaxRecoilFov 0.0
+			MinRecoilFov 0.0
+			RecoilFollowsDispersion True
+		FireInputAction 1346941084
+		ReloadInputAction 1131457753
+		CycleFireModeInputAction -1145593149
+		TriggerPullWeight 0.10000000149011612
+		RateOfFire 1800.0
+		RateOfFireForBurst 550.0
+		DelayBetweenBursts -1.0
+		ClientFireRateMultiplier 0.6700000166893005
+		ReloadDelay 0.0
+		ReloadTime 0.20000000298023224
+		ReloadTimerArray *nullArray*
+		ReloadTimeBulletsLeft -1.0
+		ReloadThreshold 0.0
+		PreFireDelay 0.0
+		PreFireDelayZoomed -1.0
+		PreFireRequireHold 1.0
+		AutomaticDelay 0.0
+		ReloadLogic rlReloadUnaffectedByWeaponSwitch
+		ReloadType rtMagazine
+		FireLogicType fltSingleFire
+		FireLogicTypeArray *nullArray*
+		HoldOffReloadUntilFireRelease False
+		HoldOffReloadUntilZoomRelease False
+		ForceReloadActionOnFireTrigger False
+		AlwaysAutoReload True
+		ZoomTransitionDisableFire False
+	Ammo::AmmoConfigData
+		MagazineCapacity 1
+		NumberOfMagazines 1
+		TraceFrequency 1
+		AmmoPickupMinAmount 0
+		AmmoPickupMaxAmount 0
+		AutoReplenishDelay 22.299999237060547
+		AmmoBagPickupDelayMultiplier 1.0
+		AmmoBagPickupAmount -1
+		AutoReplenishMagazine True
+		StartUnloaded False
+	SelfHealTimeWhenDeployed 0.0
+	UsePrimaryAmmo True
+	UnlimitedAmmoForAI False
+BulletEntityData afe42385-dec2-42a8-915b-eb79e079ebf0
+	$::MeshProjectileEntityData
+		$::ProjectileEntityData
+			$::GamePhysicsEntityData
+				$::GameComponentEntityData
+					$::ComponentEntityData
+						$::SpatialEntityData
+							$::EntityData
+								$::GameObjectData
+									$::DataBusPeer
+										$::GameDataContainer
+											$::DataContainer
+										Flags 0
+							Transform::LinearTransform
+								right::Vec3
+									x 1.0
+									y 0.0
+									z 0.0
+								up::Vec3
+									x 0.0
+									y 1.0
+									z 0.0
+								forward::Vec3
+									x 0.0
+									y 0.0
+									z 1.0
+								trans::Vec3
+									x 0.0
+									y 0.0
+									z 0.0
+						Components *nullArray*
+						ClientRuntimeComponentCount 0
+						ServerRuntimeComponentCount 0
+						ClientRuntimeTransformationCount 0
+						ServerRuntimeTransformationCount 0
+					Enabled True
+				PhysicsData *nullGuid*
+			InitialSpeed 350.0
+			TimeToLive 0.25
+			MaxCount 0
+			InitMeshHideTime 0.0
+			VisualConvergeDistance 30.0
+			VisualConvergenceDelay 0.10000000149011612
+			VisualConvergenceDuration 0.10000000149011612
+			ProxyVisualConvergenceDelay -1.0
+			ProxyVisualConvergenceDuration -1.0
+			Explosion *nullGuid*
+			SuppressionData *nullGuid*
+			AmmunitionType *nullString*
+			MaterialPair::MaterialDecl
+				Packed 0
+			HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+			DetonateOnTimeout False
+			ServerProjectileDisabled False
+			HideOnDetonation False
+			VehicleLightingEnable False
+		InitialAngularVelocity::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		Mesh *nullGuid*
+		TrailEffect FX/Weapons/Trail/FX_SmokeTrail_RPG/1124d171-14ce-439e-bd24-9e041bfb126e
+		InstantAttachableTestDistance 3.0
+		InstantAttachableVisualConvergenceDelay -1.0
+		InstantAttachableVisualConvergenceDuration -1.0
+		MaxAttachableInclination 45.0
+		UnspawnAfterDetonationDelay 0.0
+		IsAttachable False
+		InstantAttachableTestUnderReticule True
+		ExtraDamping False
+	FlyBySound *nullGuid*
+	DudExplosion *nullGuid*
+	Gravity -7.0
+	ImpactImpulse 0.0
+	DetonationTimeVariation 0.0
+	VehicleDetonationRadius 0.0
+	VehicleDetonationActivationDelay 0.0
+	FlyBySoundRadius 5.0
+	FlyBySoundSpeed 20.0
+	Stamina 0.0
+	DistributeDamageOverTime 0.0
+	StartDamage 0.0
+	EndDamage 0.0
+	DamageFalloffStartDistance 100.0
+	DamageFalloffEndDistance 200.0
+	TimeToArmExplosion 0.0
+	FirstFrameTravelDistance 0.0
+	HasVehicleDetonation False
+	InstantHit False
+	StopTrailEffectOnUnspawn True
+WeaponFiringData be9965f4-8baf-496d-bbc6-3dbf464f0f42
+	$::GameDataContainer
+		$::DataContainer
+	PrimaryFire 268e4e61-1f5a-4329-9cb7-f7a53cac1109
+	DeployTime 0.0
+	ReactivateCooldownTime 0.0
+	DisableZoomOnDeployTime 0.25
+	AltDeployTime 2.0
+	AltDeployId -1
+	WeaponSway *nullGuid*
+	Rumble::RumbleFiringData
+		LowRumble 1.0
+		HighRumble 1.0
+		RumbleDuration 0.30000001192092896
+	SupportDelayStand 0.30000001192092896
+	SupportDelayProne 0.30000001192092896
+	UseAutoAiming False
+	InflictSelfDamage False
+	ShowEnemyNametagOnAim True
+	ReloadWholeMags False
+	DisableReloadWhileSprinting False
+	AbortReloadOnSprint False

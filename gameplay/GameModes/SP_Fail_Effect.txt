@@ -1,0 +1,348 @@
+LogicPrefabBlueprint 5c132065-b402-4ccb-a603-05a3c1d30e5d
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/GameModes/SP_Fail_Effect
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance8
+							Target Instance5
+							SourceFieldId 2134370333
+							TargetFieldId 193450866
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance5
+							Target Instance4
+							SourceFieldId 193453899
+							TargetFieldId 1708270083
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance7
+							Target Instance5
+							SourceFieldId 1714744051
+							TargetFieldId 193450867
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance3
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance8
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1193365339
+						TargetEvent::EventSpec
+							Id -1952177180
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source Instance7
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 650265526
+						TargetEvent::EventSpec
+							Id -117303631
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source Instance3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(3)::EventConnection
+						Source Instance3
+						Target Instance8
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(4)::EventConnection
+						Source Instance3
+						Target Instance7
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(5)::EventConnection
+						Source Instance9
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -1258331102
+						TargetEvent::EventSpec
+							Id -1258331102
+						TargetType EventConnectionTargetType_Server
+					member(6)::EventConnection
+						Source Instance9
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1424746764
+						TargetEvent::EventSpec
+							Id 1424746764
+						TargetType EventConnectionTargetType_Server
+					member(7)::EventConnection
+						Source Instance3
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id -1258331102
+						TargetType EventConnectionTargetType_Server
+					member(8)::EventConnection
+						Source Instance3
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 230748069
+						TargetEvent::EventSpec
+							Id 1723395486
+						TargetType EventConnectionTargetType_Server
+					member(9)::EventConnection
+						Source Instance6
+						Target Instance9
+						SourceEvent::EventSpec
+							Id -1978208716
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Server
+					member(10)::EventConnection
+						Source Instance3
+						Target Instance9
+						SourceEvent::EventSpec
+							Id 2089401213
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance9
+			member(2) Instance8
+			member(3) Instance7
+			member(4) Instance4
+			member(5) Instance5
+			member(6) Instance6
+SoundEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 34729656
+	Sound Sound/UI/Mission_Failed_One_Shot_01/ce577d49-de7a-4888-a68e-3c5c196a38da
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform False
+FloatPropertyTrackData Instance1
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id 2134370333
+			Times::array
+				member(0) 0
+				member(1) 500
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 0.0
+		member(1) 1.0
+FloatPropertyTrackData Instance2
+	$::SimplePropertyTrackData
+		$::PropertyTrackData
+			$::DataContainer
+			Id 1714744051
+			Times::array
+				member(0) 0
+				member(1) 500
+		InterpolationType InterpolationType_Linear
+	Values::array
+		member(0) 1.0
+		member(1) 0.0
+InterfaceDescriptorData Instance3
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields *nullArray*
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 230748069
+		member(1)::DynamicEvent
+			Id 2089401213
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1258331102
+		member(1)::DynamicEvent
+			Id 1424746764
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+LogicVisualEnvironmentEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 192435944
+	VisualEnvironment FX/VE/Gameplay/OutofCombat/f0576bd3-fe59-100f-4542-66fbfd0edc54
+	Visibility 0.0
+MathOpEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 167661077
+	Realm Realm_Client
+	Operators::array
+		member(0) *nullEnum*
+PlatformSplitterEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 92055522
+	Realm Realm_Server
+	RunOnce False
+SequenceEntityData Instance7
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 43230013
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 500
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) Instance2
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False
+SequenceEntityData Instance8
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 58453462
+	Events *nullArray*
+	SequenceStartTime 0
+	SequenceLength 500
+	Realm Realm_Client
+	PropertyTracks::array
+		member(0) Instance1
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping False
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False
+SequenceEntityData Instance9
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 78597080
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 0
+		member(1)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 76
+		member(2)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 110
+		member(3)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 142
+		member(4)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 156
+		member(5)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 169
+		member(6)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 195
+		member(7)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 212
+		member(8)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 230
+		member(9)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 246
+		member(10)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 273
+		member(11)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 299
+		member(12)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 312
+		member(13)::SequenceEventData
+			Event::EventSpec
+				Id 1424746764
+			Time 327
+		member(14)::SequenceEventData
+			Event::EventSpec
+				Id -1258331102
+			Time 345
+	SequenceStartTime 0
+	SequenceLength 500
+	Realm Realm_Server
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping True
+	AutoStart False
+	AutoPlayFirstFrame False
+	PlayInReverse False

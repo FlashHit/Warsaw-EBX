@@ -1,0 +1,472 @@
+ProjectileBlueprint 0cd871cf-a72b-4adc-9e41-1b666aa79518
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Vehicles/common/WeaponData/AA-10_Archer_Projectile
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source 5562f158-c323-432e-8728-6a8c311df600
+							Target Instance3
+							SourceFieldId -434200814
+							TargetFieldId -434200814
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(1)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(2)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1680285763
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(3)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 1687468811
+						TargetEvent::EventSpec
+							Id 230748069
+						TargetType EventConnectionTargetType_Client
+					member(4)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source 5562f158-c323-432e-8728-6a8c311df600
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id 2089401213
+						TargetType EventConnectionTargetType_Client
+		Object 5562f158-c323-432e-8728-6a8c311df600
+MissileEntityData 5562f158-c323-432e-8728-6a8c311df600
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 526578008
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0
+							Components::array
+								member(0) Instance0
+								member(1) Instance3
+								member(2) Instance4
+							ClientRuntimeComponentCount 1
+							ServerRuntimeComponentCount 1
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled True
+					PhysicsData Instance1
+				InitialSpeed 350.0
+				TimeToLive 7.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 150.0
+				VisualConvergenceDelay 0.10000000149011612
+				VisualConvergenceDuration 0.10000000149011612
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration -1.0
+				Explosion Instance5
+				SuppressionData *nullGuid*
+				AmmunitionType *nullString*
+				MaterialPair::MaterialDecl
+					Packed 1360625664
+				HitReactionWeaponType AntHitReactionWeaponType_Explosion
+				DetonateOnTimeout True
+				ServerProjectileDisabled False
+				HideOnDetonation False
+				VehicleLightingEnable False
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/vehicles/common/weapondata/aa-10_archer_projectile_Mesh/18a83e87-f0c6-4f4f-8d37-5dd93d8571a1
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_Missile/4f5a1b99-9e56-4149-894f-dafdb334552c
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 0.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay 0.0
+		ProxyConvergenceDuration 1.5
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence False
+	EngineEffect FX/Weapons/TrailEngine/FX_TrailEngine_Generic/3c6245da-bf37-4512-9283-c0c46914f5fb
+	DudExplosion *nullGuid*
+	FlyBySound *nullGuid*
+	EngineStrength 50.0
+	MaxSpeed 250.0
+	EngineTimeToIgnition 0.10000000149011612
+	EngineTimeToLive 10.0
+	TimeToActivateGuidingSystem 0.20000000298023224
+	TimeToArm 0.0
+	MaxTurnAngle 720.0
+	MinTurnAngle 45.0
+	TurnAngleMultiplier 30.0
+	Drag 0.0
+	Gravity 15.0
+	FlyBySoundRadius 5.0
+	FlyBySoundSpeed 10.0
+	ImpactImpulse 2000.0
+	Damage 195.0
+	DefaultTeam TeamNeutral
+	WarnTarget wtWarnVehicle
+	LockingController Instance7
+	LockableInfo::MissileLockableInfoData
+		HeatSignature 0.0
+		RadarSignature 0.0
+	UnguidedData::MissileUnguidedData
+		StaticPosition::Vec2
+			x 0.0
+			y 0.0
+		TargetPositionOffset::Vec2
+			x 0.0
+			y 0.0
+		UseStaticPosition False
+		UseTargetPosition False
+	NearTargetDetonation::NearTargetDetonationData
+		DetonationRadius 12.5
+		MaxDetonationDelay 1.0
+		MinDetonationDelay 0.800000011920929
+		DetonateNearTarget True
+	MaxBankAngle 90.0
+	BankingSpeed 1.0
+	Icon *nullString*
+	TargetIcon *nullString*
+	TargetIconEnemy *nullString*
+	MinGhostFrequency 0.0
+	ApplyGravityWhenGuided True
+	WarnOnPointingMissile False
+	EnableBanking False
+PartComponentData Instance0
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 17629650
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -2.4923700880918886e-09
+					y -5.7573334544258614e-08
+					z 0.0
+			Excluded False
+	HealthStates::array
+		member(0) Instance6
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PhysicsEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	Asset Gameplay/Vehicles/common/WeaponData/AA-10_Archer_Projectile_Physics_Win32/2e06f3b1-3342-5234-ab33-e792d18982ba
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	RigidBodies::array
+		member(0) Instance2
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts False
+	IsComposite False
+RigidBodyData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeCollision
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 1.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Dynamic
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+	FloatPhysics *nullGuid*
+	IsRootController True
+SoundEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 437940846
+	Sound Sound/Weapons/Projectiles/Rocket_Projectile_AA_SPC/35321e6c-13a1-4414-9442-582a2bfeed3d
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+SoundEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 53190329
+	Sound Sound/Weapons/Projectiles/Rocket_Engine_Stinger_SPC/dd18d2aa-65fc-4f7f-a4f8-2525688f86ff
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	PlayOnCreation False
+	EnableOnCreation True
+	UseParentTransform True
+VeniceExplosionEntityData Instance5
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/Gadgets/FX_Claymore_01/199ce4a7-1ab8-4cc5-804d-516a7e075ea9
+		DetonationEffectForFriendlies *nullGuid*
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 1362264064
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_GiverPlayer
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 4.489999771118164
+		BlastDamage 0.0
+		BlastRadius 4.5
+		BlastImpulse 150.0
+		ShockwaveDamage 1.0
+		ShockwaveRadius 6.0
+		ShockwaveImpulse 1500.0
+		ShockwaveTime 0.10000000149011612
+		CameraShockwaveRadius 0.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect False
+		DisableOcclusion False
+		DisableStaticEntityOcclusion True
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 1.0
+	IsCausingSuppression True
+	UnspotsOnExplode False
+	SpotsOnExplode False
+HealthStateData Instance6
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+LockingControllerData Instance7
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnRadar
+	LockTime 0.10000000149011612
+	UnLockTime -1.0
+	ReleaseTime 0.10000000149011612
+	ReleaseOnNewTargetTime 0.0
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 1000.0
+	AcceptanceAngle 6.5
+	AngleConstant 1.0
+	DistanceConstant 3.0
+	Sensitivity 100.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnVehicle
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn False
+	LockOnVisibleTargetsOnly True
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles False
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False

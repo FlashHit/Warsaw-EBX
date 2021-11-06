@@ -1,0 +1,266 @@
+ProjectileBlueprint ba8f143b-8181-405c-97e5-bb142b7c6a98
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Vehicles/common/WeaponData/WP_Projectile
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 1
+				EventConnections::array
+					member(0)::EventConnection
+						Source 84694a74-a8b1-4480-8854-5d4f5cb639c3
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 95128145
+						TargetEvent::EventSpec
+							Id -559281700
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source 84694a74-a8b1-4480-8854-5d4f5cb639c3
+						Target 84694a74-a8b1-4480-8854-5d4f5cb639c3
+						SourceEvent::EventSpec
+							Id -1304372294
+						TargetEvent::EventSpec
+							Id -474729183
+						TargetType EventConnectionTargetType_Server
+		Object 84694a74-a8b1-4480-8854-5d4f5cb639c3
+GrenadeEntityData 84694a74-a8b1-4480-8854-5d4f5cb639c3
+	$::GhostedProjectileEntityData
+		$::MeshProjectileEntityData
+			$::ProjectileEntityData
+				$::GamePhysicsEntityData
+					$::GameComponentEntityData
+						$::ComponentEntityData
+							$::SpatialEntityData
+								$::EntityData
+									$::GameObjectData
+										$::DataBusPeer
+											$::GameDataContainer
+												$::DataContainer
+											Flags 510216820
+								Transform::LinearTransform
+									right::Vec3
+										x 1.0
+										y 0.0
+										z 0.0
+									up::Vec3
+										x 0.0
+										y 1.0
+										z 0.0
+									forward::Vec3
+										x 0.0
+										y 0.0
+										z 1.0
+									trans::Vec3
+										x 0.0
+										y 0.0
+										z 0.0
+							Components::array
+								member(0) Instance0
+								member(1) Instance1
+							ClientRuntimeComponentCount 1
+							ServerRuntimeComponentCount 2
+							ClientRuntimeTransformationCount 1
+							ServerRuntimeTransformationCount 1
+						Enabled True
+					PhysicsData *nullGuid*
+				InitialSpeed 0.0
+				TimeToLive 3.0
+				MaxCount 0
+				InitMeshHideTime 0.0
+				VisualConvergeDistance 15.0
+				VisualConvergenceDelay 0.10000000149011612
+				VisualConvergenceDuration 0.3499999940395355
+				ProxyVisualConvergenceDelay -1.0
+				ProxyVisualConvergenceDuration -1.0
+				Explosion Instance2
+				SuppressionData *nullGuid*
+				AmmunitionType M34
+				MaterialPair::MaterialDecl
+					Packed 32768
+				HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+				DetonateOnTimeout True
+				ServerProjectileDisabled False
+				HideOnDetonation True
+				VehicleLightingEnable False
+			InitialAngularVelocity::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Mesh gameplay/vehicles/common/weapondata/wp_projectile_Mesh/954f6974-e5b5-4f03-8737-fe67682d914d
+			TrailEffect FX/Weapons/Trail/FX_SmokeTrail_Grenade/0abaf9ea-33e4-4fd3-a0cb-6f3574a23413
+			InstantAttachableTestDistance 3.0
+			InstantAttachableVisualConvergenceDelay -1.0
+			InstantAttachableVisualConvergenceDuration -1.0
+			MaxAttachableInclination 45.0
+			UnspawnAfterDetonationDelay 16.0
+			IsAttachable False
+			InstantAttachableTestUnderReticule True
+			ExtraDamping False
+		ProxyConvergenceDelay -1.0
+		ProxyConvergenceDuration -1.0
+		ProxyConvergenceInstantOnAttach True
+		ForceProxyConvergence True
+	Gravity -9.800000190734863
+	CollisionSpeedMultiplier 0.0
+	MinBounceSpeed -1.0
+	CollisionDamage 0.0
+	GrenadeType GrenadeType_Smoke
+	HudIndicatorIcon grenade
+	UseGrenadeCollisionMessage True
+	ShowHudIndicator False
+DOTGiverComponentData Instance0
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 72381995
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Excluded False
+	AoEOcclusionRaycastStartOffset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	AoERadius 5.0
+	AoEDuration 8.0
+	AoEMaxOcclusionRaycastRadius 0.5
+	DoTDuration 3.0
+	DoTTickDuration 1.0
+	DoTTickDamage 20
+	DoTSuppressionValue 0.0
+	AoEInfiniteDuration False
+	AoEIgnoreObstructed True
+	DoTDontDamageShielded True
+	DamageAll False
+	DamageVehicles False
+	DamageCharacters True
+	DamageBangers False
+PartComponentData Instance1
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 13133181
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -0.0019031838746741414
+					y 0.013209029100835323
+					z -0.00267195887863636
+			Excluded False
+	HealthStates::array
+		member(0) Instance3
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+VeniceExplosionEntityData Instance2
+	$::ExplosionEntityData
+		$::SpatialEntityData
+			$::EntityData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 0
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+		DetonationEffect FX/Weapons/Grenades/FX_WP_IncendiaryGrenade_Tank/f3c59128-9e03-4c9b-9b13-797c5f0b2f75
+		DetonationEffectForFriendlies *nullGuid*
+		MaskVolume *nullGuid*
+		DestructionMaskVolume *nullGuid*
+		MaterialPair::MaterialDecl
+			Packed 1329037312
+		SecondaryMaterialPair::MaterialDecl
+			Packed 0
+		DamageIndicationType DamageIndicationType_ExplosionCenter
+		EmpTime 0.0
+		MaxOcclusionRaycastRadius 0.5
+		InnerBlastRadius 1.5
+		BlastDamage 60.0
+		BlastRadius 5.0
+		BlastImpulse 500.0
+		ShockwaveDamage 1.0
+		ShockwaveRadius 12.0
+		ShockwaveImpulse 500.0
+		ShockwaveTime 0.25
+		CameraShockwaveRadius 0.0
+		SpawnDelay 0.0
+		NoFriendliesEffectOnEnabledFriendlyFire True
+		UseEntityTransformForDetonationEffect False
+		SecondaryMaterialsActive False
+		HasStunEffect False
+		DisableOcclusion False
+		DisableStaticEntityOcclusion False
+		TriggerImpairedHearing True
+		Enabled True
+	UnspottableTime 4.0
+	IsCausingSuppression False
+	UnspotsOnExplode True
+	SpotsOnExplode False
+HealthStateData Instance3
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False

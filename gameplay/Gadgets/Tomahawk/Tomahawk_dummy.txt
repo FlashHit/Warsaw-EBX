@@ -1,0 +1,567 @@
+SoldierWeaponBlueprint de64f453-f48f-186e-7791-ba2b87f02851
+	$::ObjectBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Gadgets/Tomahawk/Tomahawk_dummy
+					PropertyConnections *nullArray*
+					LinkConnections *nullArray*
+					Interface *nullGuid*
+					Flags 0
+				EventConnections *nullArray*
+		Object Instance3
+FiringFunctionData Instance0
+	$::GameDataContainer
+		$::DataContainer
+	Dispersion *nullArray*
+	WeaponDispersion::WeaponDispersion
+		StandDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		CrouchDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		ProneDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		JumpDispersionAngle 0.0
+		ProneTransitionDispersionAngle 0.0
+		MoveDispersionAngle 0.0
+		MoveZoomedDispersionAngle 0.0
+		DecreasePerSecond 5.0
+	Shot::ShotConfigData
+		InitialPosition::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InitialDirection::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		InitialSpeed::Vec3
+			x 0.0
+			y 0.0
+			z 350.0
+		InitialDirectionScaleByPitch *nullArray*
+		InitialSpeedScaleByPitch *nullArray*
+		InheritWeaponSpeedAmount 0.0
+		MuzzleExplosion *nullGuid*
+		ProjectileData *nullGuid*
+		SecondaryProjectileData *nullGuid*
+		Projectile *nullGuid*
+		SecondaryProjectile *nullGuid*
+		SpawnDelay 0.0
+		SpawnDelayZoomed -1.0
+		NumberOfBulletsPerShell 1
+		NumberOfBulletsPerShot 1
+		NumberOfBulletsPerBurst 3
+		RelativeTargetAiming False
+		ForceSpawnToCamera False
+		SpawnVisualAtWeaponBone False
+		ActiveForceSpawnToCamera True
+	OverHeat::OverHeatData
+		OverHeatEffect::FireEffectData
+			Offset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomRotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Effect *nullGuid*
+			UseZoomOffset False
+			UseZoomRotation False
+			DisableDuringZoom False
+			UpdateTransform False
+			StopLoopingEffects False
+		HeatPerBullet 0.0
+		HeatDropPerSecond 0.20000000298023224
+		OverHeatPenaltyTime 3.0
+		OverHeatThreshold 0.800000011920929
+	FireEffects1p *nullArray*
+	FireEffects3p *nullArray*
+	Sound *nullGuid*
+	FireLogic::FireLogicData
+		HoldAndRelease::HoldAndReleaseData
+			MaxHoldTime 10.0
+			MinPowerModifier 1.0
+			MaxPowerModifier 2.0
+			PowerIncreasePerSecond 0.10000000149011612
+			Delay 0.0
+			KilledHoldingPowerModifier 0.0
+			ForceFireWhenKilledHolding True
+		BoltAction::BoltActionData
+			BoltActionDelay 0.5
+			BoltActionTime 1.0
+			HoldBoltActionUntilFireRelease True
+			HoldBoltActionUntilZoomRelease True
+			ForceBoltActionOnFireTrigger False
+			UnZoomOnBoltAction True
+			ReturnToZoomAfterBoltAction True
+		Recoil::RecoilData
+			MaxRecoilAngleX 0.0
+			MinRecoilAngleX 0.0
+			MaxRecoilAngleY 0.0
+			MinRecoilAngleY 0.0
+			MaxRecoilAngleZ 0.0
+			MinRecoilAngleZ 0.0
+			MaxRecoilFov 0.0
+			MinRecoilFov 0.0
+			RecoilFollowsDispersion True
+		FireInputAction 1018135856
+		ReloadInputAction 1131457753
+		CycleFireModeInputAction -1145593149
+		TriggerPullWeight 0.10000000149011612
+		RateOfFire 550.0
+		RateOfFireForBurst 550.0
+		DelayBetweenBursts -1.0
+		ClientFireRateMultiplier 0.6700000166893005
+		ReloadDelay 0.0
+		ReloadTime 3.5999999046325684
+		ReloadTimerArray *nullArray*
+		ReloadTimeBulletsLeft -1.0
+		ReloadThreshold 0.75
+		PreFireDelay 0.0
+		PreFireDelayZoomed -1.0
+		PreFireRequireHold 1.0
+		AutomaticDelay 0.0
+		ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+		ReloadType rtMagazine
+		FireLogicType fltAutomaticFire
+		FireLogicTypeArray *nullArray*
+		HoldOffReloadUntilFireRelease False
+		HoldOffReloadUntilZoomRelease False
+		ForceReloadActionOnFireTrigger False
+		AlwaysAutoReload True
+		ZoomTransitionDisableFire False
+	Ammo::AmmoConfigData
+		MagazineCapacity 30
+		NumberOfMagazines 6
+		TraceFrequency 1
+		AmmoPickupMinAmount 0
+		AmmoPickupMaxAmount 0
+		AutoReplenishDelay 5.0
+		AmmoBagPickupDelayMultiplier 1.0
+		AmmoBagPickupAmount -1
+		AutoReplenishMagazine False
+		StartUnloaded False
+	SelfHealTimeWhenDeployed 0.0
+	UsePrimaryAmmo True
+	UnlimitedAmmoForAI False
+FirstPersonCameraData Instance1
+	$::DataContainer
+	WeaponSpringEffect *nullGuid*
+	CameraSpringEffect *nullGuid*
+	Offset::Vec3
+		x 0.10000000149011612
+		y -1.5
+		z 0.20000000298023224
+	WeaponBaseOffset::Vec3
+		x -0.09000000357627869
+		y 0.0
+		z 0.0
+	WeaponLagRotationOffset::Vec3
+		x -0.09000000357627869
+		y 0.0
+		z 0.20000000298023224
+	Rotation::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	MoveStrafeModifier 0.0
+	MoveForwardModifier 0.0
+	RotateYawModifier 0.0
+	RotatePitchModifier 0.0
+	RotateRollModifier 0.0
+	ZoomMoveStrafeModifier 0.0
+	ZoomMoveForwardModifier 0.0
+	ZoomRotateYawModifier 0.0
+	ZoomRotatePitchModifier 0.0
+	ZoomRotateRollModifier 0.0
+	ReleaseModifier 0.0
+	ReleaseModifierPitch -1.0
+	ReleaseModifierYaw -1.0
+	ReleaseModifierRoll -1.0
+	OffsetReleaseModifier -1.0
+	ZoomReleaseModifierPitch -1.0
+	ZoomReleaseModifierYaw -1.0
+	ZoomReleaseModifierRoll -1.0
+	ZoomOffsetReleaseModifier -1.0
+	RotationAdditionToOffset 1.0
+SoldierAimAssistData Instance2
+	$::GameDataContainer
+		$::DataContainer
+	InputPolynomial::array
+		member(0) 1.0
+		member(1) 0.0
+		member(2) 0.0
+		member(3) 0.0
+		member(4) 0.0
+		member(5) 0.0
+		member(6) 0.0
+		member(7) 0.0
+	ZoomedInputPolynomial::array
+		member(0) 1.0
+		member(1) 0.0
+		member(2) 0.0
+		member(3) 0.0
+		member(4) 0.0
+		member(5) 0.0
+		member(6) 0.0
+		member(7) 0.0
+	StickyBoxScale::Vec3
+		x 1.899999976158142
+		y 1.0
+		z 1.899999976158142
+	StickyDistanceScale::Vec3
+		x 0.5
+		y 0.0
+		z 0.5
+	SnapBoxScale::Vec3
+		x 1.899999976158142
+		y 1.0
+		z 1.899999976158142
+	SnapDistanceScale::Vec3
+		x 0.5
+		y 0.0
+		z 0.5
+	EyePosOffset::Vec3
+		x 0.6000000238418579
+		y 0.4000000059604645
+		z 0.0
+	AccelerationInputThreshold 0.0
+	AccelerationMultiplier 0.0
+	AccelerationDamping 0.0
+	AccelerationTimeThreshold 0.0
+	SquaredAcceleration 0.0
+	MaxAcceleration::Vec2
+		x 100.0
+		y 100.0
+	YawSpeedStrength 20.0
+	PitchSpeedStrength 20.0
+	AttractDistanceFallOffs::Vec2
+		x 1.0
+		y 1.2000000476837158
+	AttractSoftZone 0.0
+	AttractUserInputMultiplier 1.0
+	AttractUserInputMultiplier_NoZoom -1.0
+	AttractOwnSpeedInfluence 0.0
+	AttractTargetSpeedInfluence 0.0
+	AttractOwnRequiredMovementForMaximumAttract 0.0
+	AttractStartInputThreshold 0.0
+	AttractMoveInputCap 0.8999999761581421
+	AttractYawStrength 0.0
+	AttractPitchStrength 0.0
+	MaxToTargetAngle 90.0
+	MaxToTargetXZAngle 90.0
+	ViewObstructedKeepTime 0.0
+	SnapZoomLateralSpeedLimit 1000.0
+	SnapZoomTime 0.20000000298023224
+	SnapZoomPostTimeNoInput 0.0
+	SnapZoomPostTime 0.0
+	SnapZoomReticlePointPriority 999
+	SnapZoomAutoEngageTime 0.0
+	SnapZoomBreakTimeAtMaxInput -1.0
+	SnapZoomBreakMaxInput 0.20000000298023224
+	SnapZoomBreakMinAngle 90.0
+	SnapZoomSpamGuardTime 0.5
+	SoldierBackupSkeletonCollisionData *nullGuid*
+	CheckBoneCenterOnlyDistance 40.0
+	DisableForcedTargetRecalcDistance 7.0
+	OverrideAimingRange 0.0
+	OverrideAimingRangeCrouch 0.0
+	OverrideAimingRangeProne 0.0
+	UseYawAcceleration False
+	UsePitchAcceleration False
+	SnapZoomUserShorterWeaponTime True
+	SnapZoomPostTimeDynamicPoint True
+	ForceSoldierBackupSkeletonCollisionUse False
+SoldierWeaponData Instance3
+	$::WeaponEntityData
+		$::GameComponentEntityData
+			$::ComponentEntityData
+				$::SpatialEntityData
+					$::EntityData
+						$::GameObjectData
+							$::DataBusPeer
+								$::GameDataContainer
+									$::DataContainer
+								Flags 507593940
+					Transform::LinearTransform
+						right::Vec3
+							x 1.0
+							y 0.0
+							z 0.0
+						up::Vec3
+							x 0.0
+							y 1.0
+							z 0.0
+						forward::Vec3
+							x 0.0
+							y 0.0
+							z 1.0
+						trans::Vec3
+							x 0.0
+							y 0.0
+							z 0.0
+				Components *nullArray*
+				ClientRuntimeComponentCount 0
+				ServerRuntimeComponentCount 0
+				ClientRuntimeTransformationCount 0
+				ServerRuntimeTransformationCount 0
+			Enabled True
+		WeaponClass wc12gauge
+		WeaponStates::array
+			member(0)::WeaponStateData
+				ReferencedAssetHashes *nullArray*
+				BoneFakePhysics *nullArray*
+				WeaponMesh3p *nullGuid*
+				Mesh3p *nullGuid*
+				Weapon::AntRef
+					AssetGuid 00000000-0000-0000-0000-000000000000
+					ProjectId 0
+				Weapon3p::AntRef
+					AssetGuid 00000000-0000-0000-0000-000000000000
+					ProjectId 0
+				ZoomMeshTransitionFactor 1.0
+				ZoomScaleFactor 1.0
+				ZoomInOutMeshTransitionFactors *nullArray*
+				KeepAimingTime 3.0
+				AnimatedFireType AnimatedFireAutomatic
+				AnimatedAimingType AnimatedAimingTwoHanded
+				HideProjectileAfterFireTime 0.0
+				ProjectileBoneName *nullString*
+				UnDeploySpeed 1.0
+				DeploySpeed 1.0
+				Mesh3pTransforms *nullArray*
+				AlwaysAimHead True
+				IsOneHanded False
+				PlayDeployAfterFire False
+				SkipDeployAnimation False
+				SkipReloadAnimation False
+				SkipFireAnimation False
+				SendFireWhenPrefiring False
+		WeaponFiring Instance5
+		CustomWeaponType *nullGuid*
+		AIData *nullGuid*
+	PickupSettings::PickupSettingsData
+		MeshRenderOffset::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		MeshRenderRotation::Vec3
+			x 0.0
+			y 0.0
+			z 90.0
+	InteractionOffset::Vec3
+		x 0.0
+		y 0.0
+		z 0.44999998807907104
+	CustomizationAccessoryPivots::CustomizationAccessoryPivots
+		BasePivotPos::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		OpticPivotPos::Vec3
+			x 0.0
+			y 0.07500000298023224
+			z 0.4000000059604645
+		BarrelPivotPos::Vec3
+			x 0.0
+			y 0.0
+			z 0.699999988079071
+		AccessoryPivotPos::Vec3
+			x 0.0
+			y 0.0
+			z 0.6000000238418579
+		UnderBarrelPivotPos::Vec3
+			x 0.0
+			y -0.05000000074505806
+			z 0.5
+	DamageGiverName Tomahawk_dummy
+	ZoomLevels::array
+		member(0) Instance6
+	WeaponModifierData *nullArray*
+	AimingController Instance4
+	FirstPersonCamera Instance1
+	Hud::HudData
+		CrosshairScaleMin 0.0
+		CrosshairScaleMax 5.0
+		CrosshairOpacityMin 1.0
+		CrosshairOpacityMax 0.10000000149011612
+		CrosshairOpacityModifier 1.0
+		CrosshairTypeId *nullString*
+		CrosshairType *nullGuid*
+		LockingType *nullGuid*
+		WeaponClass *nullString*
+		LowAmmoWarning 0.30000001192092896
+		ReloadPrompt 0.30000001192092896
+		RenderTargetIndex 0
+		HudPropertyList *nullGuid*
+		SeaLevelAltFreq 0.0
+		CameraShakeModifier 1.0
+		HudIcon *nullString*
+		ShowMinimap True
+		HideAmmo False
+		InfiniteAmmo False
+		HideCrosshairWhenAimOnFriend True
+		UseRenderTarget False
+		UseRangeMeter False
+		UseAimWarning False
+		UsePredictedSight False
+		UseWeaponOrientations False
+		UseVelocityVectorMarker False
+		UseLockingController False
+		UseThrust False
+		UseGForce False
+		UseSkidSlip False
+		UseClimbRate False
+	AnimBaseSet wabsRif
+	QuickThrowType QttHand
+	SoldierWeaponBlueprint de64f453-f48f-186e-7791-ba2b87f02851
+	PersistenceId *nullString*
+	SecondaryActionInputAction -1341426433
+	VoiceOverInfo *nullGuid*
+	WeaponFloatParam 1.0
+	MaxRangeMeterDistance 200.0
+	SocketsInWeapon *nullArray*
+	HideWhenOutOfAmmo False
+	AllowSwitchingToWeaponOutOfAmmo True
+	AllowSwitchingToWeaponReloading True
+	SwitchToPrimaryWhenOutOfAmmo True
+	WaitForFireBeforeSwitchToPrimaryWhenOutOfAmmo True
+	SwitchToSecondaryWhenPrimaryOutOfAmmo False
+	FireAndSwitchBackToPrevSupported False
+	AllowSwitchingToWeaponInVehicles True
+	AllowSwitchingToWeaponInWater False
+	LowerOnOwnTeam True
+	RedeployWhenSwitchingWeaponStates True
+	UseQuickThrowOnAutomaticSwitchback False
+	EnableBreathControl False
+	CanBeInSupportedShooting False
+	UseDetailedRangeMeterQuery False
+	IsSilenced False
+	SkipFirstZoomLevel False
+SoldierAimingSimulationData Instance4
+	$::GameDataContainer
+		$::DataContainer
+	ZoomLevels::array
+		member(0) Instance7
+	AimAssist Instance2
+	StandPose::AimingPoseData
+		MinimumPitch -85.0
+		MaximumPitch 85.0
+		TargetingFov -1.0
+		AimSteadiness 0.0
+		SpeedMultiplier 1.0
+		RecoilMultiplier 1.0
+	CrouchPose::AimingPoseData
+		MinimumPitch -85.0
+		MaximumPitch 85.0
+		TargetingFov -1.0
+		AimSteadiness 0.0
+		SpeedMultiplier 1.0
+		RecoilMultiplier 1.0
+	PronePose::AimingPoseData
+		MinimumPitch -85.0
+		MaximumPitch 85.0
+		TargetingFov -1.0
+		AimSteadiness 0.0
+		SpeedMultiplier 1.0
+		RecoilMultiplier 1.0
+	ZoomTransitionTime 0.20000000298023224
+	ZoomTransitionTimeArray *nullArray*
+	FovDelayTime 0.0
+	FovTransitionTime 0.15000000596046448
+	AimingRange 100.0
+	LockAimToTargetSpeed 180.0
+	Modifiers *nullArray*
+	ReturnToZoomAfterReload True
+WeaponFiringData Instance5
+	$::GameDataContainer
+		$::DataContainer
+	PrimaryFire Instance0
+	DeployTime 2.0
+	ReactivateCooldownTime 0.0
+	DisableZoomOnDeployTime 0.25
+	AltDeployTime 2.0
+	AltDeployId -1
+	WeaponSway *nullGuid*
+	Rumble::RumbleFiringData
+		LowRumble 0.0
+		HighRumble 0.0
+		RumbleDuration 0.20000000298023224
+	SupportDelayStand 0.30000001192092896
+	SupportDelayProne 0.30000001192092896
+	UseAutoAiming True
+	InflictSelfDamage False
+	ShowEnemyNametagOnAim True
+	ReloadWholeMags False
+	DisableReloadWhileSprinting False
+	AbortReloadOnSprint False
+WeaponZoomLevelData Instance6
+	$::DataContainer
+	RenderFov 55.0
+	RenderFovTransition *nullGuid*
+	ZoomInOutMeshTransitionFactors *nullArray*
+	ZoomDisabledTransitionTimer 0.0
+	SightType SightType_None
+	AnimationSettings::WeaponAnimationSettingsData
+		KickbackFactor 1.0
+		KickbackSpeedFactor 1.0
+		WeaponOffsetX 0.0
+		WeaponOffsetY 0.0
+		WeaponOffsetZ 0.0
+		ZoomOutSpeed 1.0
+		ZoomInSpeed 1.0
+ZoomLevelData Instance7
+	$::DataContainer
+	FieldOfView 55.0
+	FieldOfViewSP -1.0
+	FieldOfViewTransition *nullGuid*
+	LookSpeedMultiplier 1.0
+	SprintLookSpeedMultiplier 0.5
+	MoveSpeedMultiplier 1.0
+	SwayPitchMagnitude 0.0
+	SwayYawMagnitude 0.0
+	SupportedSwayPitchMagnitude 0.0
+	SupportedSwayYawMagnitude 0.0
+	SuppressedSwayPitchMagnitude 0.0
+	SuppressedSwayYawMagnitude 0.0
+	SuppressedSwayMinFactor 0.5
+	TimePitchMultiplier 0.10000000149011612
+	TimeYawMultiplier 0.029999999329447746
+	DispersionMultiplier 1.0
+	DispersionRotation 0.0
+	RecoilMultiplier 1.0
+	RecoilFovMultiplier 1.0
+	CameraImpulseMultiplier 1.0
+	StartFadeToBlackAtTime 0.10000000149011612
+	FadeToBlackDuration 0.20000000298023224
+	StartFadeFromBlackAtTime 0.30000001192092896
+	FadeFromBlackDuration 0.10000000149011612
+	ScreenExposureAreaScale 1.0
+	OnActivateEventType ZoomLevelActivateEventType_Disable
+	AttractYawStrength 1.0
+	AttractPitchStrength 1.0
+	AllowFieldOfViewScaling False
+	FadeToBlackInZoomTransition False
+	UseFovSpecialisation False
+	UseWeaponMeshZoom1p True

@@ -1,0 +1,271 @@
+WeaponFiringDataAsset 6c8a7c9f-e258-4aa9-84be-a8731ed2e83d
+	$::GameDataContainerAsset
+		$::Asset
+			$::DataContainer
+			Name Gameplay/Vehicles/common/WeaponData/SOFLAM_Portable_Firing
+		Data 2e465399-57f1-4cbf-bd58-ad3598cc5373
+FiringFunctionData 6f752e58-671d-4a35-9639-2b3290e61ce1
+	$::GameDataContainer
+		$::DataContainer
+	Dispersion *nullArray*
+	WeaponDispersion::WeaponDispersion
+		StandDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		CrouchDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		ProneDispersion::FiringDispersionData
+			MinAngle 0.0
+			MaxAngle 0.0
+			IncreasePerShot 0.0
+			DecreasePerSecond 5.0
+		JumpDispersionAngle 0.0
+		ProneTransitionDispersionAngle 0.0
+		MoveDispersionAngle 0.0
+		MoveZoomedDispersionAngle 0.0
+		DecreasePerSecond 5.0
+	Shot::ShotConfigData
+		InitialPosition::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		InitialDirection::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		InitialSpeed::Vec3
+			x 0.0
+			y 0.0
+			z 350.0
+		InitialDirectionScaleByPitch *nullArray*
+		InitialSpeedScaleByPitch *nullArray*
+		InheritWeaponSpeedAmount 0.0
+		MuzzleExplosion *nullGuid*
+		ProjectileData 4818a4e7-4092-48ae-accf-facb4f97c382
+		SecondaryProjectileData *nullGuid*
+		Projectile *nullGuid*
+		SecondaryProjectile *nullGuid*
+		SpawnDelay 0.0
+		SpawnDelayZoomed -1.0
+		NumberOfBulletsPerShell 1
+		NumberOfBulletsPerShot 1
+		NumberOfBulletsPerBurst 30
+		RelativeTargetAiming False
+		ForceSpawnToCamera False
+		SpawnVisualAtWeaponBone False
+		ActiveForceSpawnToCamera True
+	OverHeat::OverHeatData
+		OverHeatEffect::FireEffectData
+			Offset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Rotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomOffset::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			ZoomRotation::Vec3
+				x 0.0
+				y 0.0
+				z 0.0
+			Effect *nullGuid*
+			UseZoomOffset False
+			UseZoomRotation False
+			DisableDuringZoom False
+			UpdateTransform False
+			StopLoopingEffects False
+		HeatPerBullet 0.0
+		HeatDropPerSecond 0.20000000298023224
+		OverHeatPenaltyTime 3.0
+		OverHeatThreshold 0.800000011920929
+	FireEffects1p *nullArray*
+	FireEffects3p *nullArray*
+	Sound Sound/Weapons/Handheld/SOFLAM/Gadget_SOFLAM_Targeting/434d4a74-9e2f-45ff-850b-8a9d36eae7e5
+	FireLogic::FireLogicData
+		HoldAndRelease::HoldAndReleaseData
+			MaxHoldTime 10.0
+			MinPowerModifier 1.0
+			MaxPowerModifier 2.0
+			PowerIncreasePerSecond 0.10000000149011612
+			Delay 0.0
+			KilledHoldingPowerModifier 0.0
+			ForceFireWhenKilledHolding True
+		BoltAction::BoltActionData
+			BoltActionDelay 0.5
+			BoltActionTime 1.0
+			HoldBoltActionUntilFireRelease True
+			HoldBoltActionUntilZoomRelease True
+			ForceBoltActionOnFireTrigger False
+			UnZoomOnBoltAction True
+			ReturnToZoomAfterBoltAction True
+		Recoil::RecoilData
+			MaxRecoilAngleX 0.0
+			MinRecoilAngleX 0.0
+			MaxRecoilAngleY 0.0
+			MinRecoilAngleY 0.0
+			MaxRecoilAngleZ 0.0
+			MinRecoilAngleZ 0.0
+			MaxRecoilFov 0.0
+			MinRecoilFov 0.0
+			RecoilFollowsDispersion True
+		FireInputAction 899534898
+		ReloadInputAction 1131457753
+		CycleFireModeInputAction -1145593149
+		TriggerPullWeight 0.10000000149011612
+		RateOfFire 30.0
+		RateOfFireForBurst 550.0
+		DelayBetweenBursts -1.0
+		ClientFireRateMultiplier 0.6700000166893005
+		ReloadDelay 0.0
+		ReloadTime 3.5999999046325684
+		ReloadTimerArray *nullArray*
+		ReloadTimeBulletsLeft -1.0
+		ReloadThreshold 0.75
+		PreFireDelay 0.0
+		PreFireDelayZoomed -1.0
+		PreFireRequireHold 1.0
+		AutomaticDelay 0.0
+		ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
+		ReloadType rtMagazine
+		FireLogicType fltSingleFire
+		FireLogicTypeArray *nullArray*
+		HoldOffReloadUntilFireRelease False
+		HoldOffReloadUntilZoomRelease False
+		ForceReloadActionOnFireTrigger False
+		AlwaysAutoReload True
+		ZoomTransitionDisableFire False
+	Ammo::AmmoConfigData
+		MagazineCapacity -1
+		NumberOfMagazines 1
+		TraceFrequency 1
+		AmmoPickupMinAmount 0
+		AmmoPickupMaxAmount 0
+		AutoReplenishDelay 5.0
+		AmmoBagPickupDelayMultiplier 1.0
+		AmmoBagPickupAmount -1
+		AutoReplenishMagazine False
+		StartUnloaded False
+	SelfHealTimeWhenDeployed 0.0
+	UsePrimaryAmmo True
+	UnlimitedAmmoForAI False
+WeaponFiringData 2e465399-57f1-4cbf-bd58-ad3598cc5373
+	$::GameDataContainer
+		$::DataContainer
+	PrimaryFire 6f752e58-671d-4a35-9639-2b3290e61ce1
+	DeployTime 2.0
+	ReactivateCooldownTime 0.0
+	DisableZoomOnDeployTime 0.25
+	AltDeployTime 2.0
+	AltDeployId -1
+	WeaponSway *nullGuid*
+	Rumble::RumbleFiringData
+		LowRumble 0.0
+		HighRumble 0.0
+		RumbleDuration 0.20000000298023224
+	SupportDelayStand 0.30000001192092896
+	SupportDelayProne 0.30000001192092896
+	UseAutoAiming True
+	InflictSelfDamage False
+	ShowEnemyNametagOnAim True
+	ReloadWholeMags False
+	DisableReloadWhileSprinting False
+	AbortReloadOnSprint False
+BulletEntityData 4818a4e7-4092-48ae-accf-facb4f97c382
+	$::MeshProjectileEntityData
+		$::ProjectileEntityData
+			$::GamePhysicsEntityData
+				$::GameComponentEntityData
+					$::ComponentEntityData
+						$::SpatialEntityData
+							$::EntityData
+								$::GameObjectData
+									$::DataBusPeer
+										$::GameDataContainer
+											$::DataContainer
+										Flags 0
+							Transform::LinearTransform
+								right::Vec3
+									x 1.0
+									y 0.0
+									z 0.0
+								up::Vec3
+									x 0.0
+									y 1.0
+									z 0.0
+								forward::Vec3
+									x 0.0
+									y 0.0
+									z 1.0
+								trans::Vec3
+									x 0.0
+									y 0.0
+									z 0.0
+						Components *nullArray*
+						ClientRuntimeComponentCount 0
+						ServerRuntimeComponentCount 0
+						ClientRuntimeTransformationCount 0
+						ServerRuntimeTransformationCount 0
+					Enabled True
+				PhysicsData *nullGuid*
+			InitialSpeed 350.0
+			TimeToLive 0.0
+			MaxCount 0
+			InitMeshHideTime 0.0
+			VisualConvergeDistance 30.0
+			VisualConvergenceDelay 0.10000000149011612
+			VisualConvergenceDuration 0.10000000149011612
+			ProxyVisualConvergenceDelay -1.0
+			ProxyVisualConvergenceDuration -1.0
+			Explosion *nullGuid*
+			SuppressionData *nullGuid*
+			AmmunitionType *nullString*
+			MaterialPair::MaterialDecl
+				Packed 0
+			HitReactionWeaponType AntHitReactionWeaponType_AssaultRifle
+			DetonateOnTimeout False
+			ServerProjectileDisabled False
+			HideOnDetonation False
+			VehicleLightingEnable False
+		InitialAngularVelocity::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+		Mesh *nullGuid*
+		TrailEffect *nullGuid*
+		InstantAttachableTestDistance 3.0
+		InstantAttachableVisualConvergenceDelay -1.0
+		InstantAttachableVisualConvergenceDuration -1.0
+		MaxAttachableInclination 45.0
+		UnspawnAfterDetonationDelay 0.0
+		IsAttachable False
+		InstantAttachableTestUnderReticule True
+		ExtraDamping False
+	FlyBySound *nullGuid*
+	DudExplosion *nullGuid*
+	Gravity 0.0
+	ImpactImpulse 0.0
+	DetonationTimeVariation 0.0
+	VehicleDetonationRadius 0.0
+	VehicleDetonationActivationDelay 0.0
+	FlyBySoundRadius 5.0
+	FlyBySoundSpeed 20.0
+	Stamina 0.0
+	DistributeDamageOverTime 0.0
+	StartDamage 20.0
+	EndDamage 10.0
+	DamageFalloffStartDistance 100.0
+	DamageFalloffEndDistance 200.0
+	TimeToArmExplosion 0.0
+	FirstFrameTravelDistance 0.0
+	HasVehicleDetonation False
+	InstantHit True
+	StopTrailEffectOnUnspawn True

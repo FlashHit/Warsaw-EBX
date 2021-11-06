@@ -1,0 +1,184 @@
+LogicPrefabBlueprint bd5e1fe0-553b-ddb8-c181-cd89ec1be395
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/AlignToCamera
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 2089021886
+							TargetFieldId 2089021886
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 5862272
+							TargetFieldId 5862272
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 1986470206
+							TargetFieldId 1986470206
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance1
+							Target Instance0
+							SourceFieldId 227190399
+							TargetFieldId 227190399
+							ShouldNetworkValue False
+						member(4)::PropertyConnection
+							Source 43a0933f-7554-443f-8b8e-ce070baab4bc
+							Target Instance1
+							SourceFieldId -1576422971
+							TargetFieldId -2024647575
+							ShouldNetworkValue False
+						member(5)::PropertyConnection
+							Source Instance2
+							Target 43a0933f-7554-443f-8b8e-ce070baab4bc
+							SourceFieldId -910201930
+							TargetFieldId -910201930
+							ShouldNetworkValue False
+						member(6)::PropertyConnection
+							Source Instance0
+							Target Instance2
+							SourceFieldId -2024647575
+							TargetFieldId -2024647575
+							ShouldNetworkValue False
+						member(7)::PropertyConnection
+							Source Instance2
+							Target 43a0933f-7554-443f-8b8e-ce070baab4bc
+							SourceFieldId -892384772
+							TargetFieldId -960244503
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance2
+					Flags 0
+				EventConnections *nullArray*
+		Objects::array
+			member(0) Instance0
+			member(1) Instance1
+			member(2) 43a0933f-7554-443f-8b8e-ce070baab4bc
+LuaRunnerScriptEntityData 43a0933f-7554-443f-8b8e-ce070baab4bc
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 429953855
+	Script --function <guid>( self, event, vars, sharedvars, globalvars, deltaTime )
+do
+	if self.Player ~= nil and self.Screen ~= nil then
+		local player = self.Player.trans
+		player.y = self.Screen.trans.y
+		local transform = LinearTransform.LookAtTransform(player, self.Screen.trans)
+		self.ScreenTransform = LinearTransform.FromRotTrans(transform, self.Screen.trans)
+	elseif self.Screen ~= nil then
+		self.ScreenTransform = LinearTransform.Identity(self.Screen.trans)
+	else
+		self.ScreenTransform = LinearTransform.Identity(Vec3.FromXYZ(10,10,10))
+	end
+end
+
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputFloatProperties *nullArray*
+	OutputFloatProperties *nullArray*
+	InputIntProperties *nullArray*
+	OutputIntProperties *nullArray*
+	InputBoolProperties *nullArray*
+	OutputBoolProperties *nullArray*
+	InputStringProperties *nullArray*
+	OutputStringProperties *nullArray*
+	InputTransformProperties::array
+		member(0) Player
+		member(1) Screen
+	OutputTransformProperties::array
+		member(0) ScreenTransform
+	InputVec3Properties *nullArray*
+	OutputVec3Properties *nullArray*
+	ExecuteOnPropertyChange ExecuteOnPropertyChangeType_Immediate
+	PriorityForExecutingPerFrame 0
+	Realm Realm_ClientAndServer
+	CompiledLua Gameplay/Logic/AlignToCamera/LuaRunnerCompiledLua_43A0933F_7554_443F_8B8E_CE070BAAB4BC_Win32/b180657d-4d5d-abc4-7442-c8074981b3d9
+	AutoStartExecutingPerFrame False
+	AutoStartForInitialization True
+	RunOnPropertyChange False
+	AddToDebugDisplay False
+TransformBuilderEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 421483213
+	Realm Realm_ClientAndServer
+	Left::Vec3
+		x 1.0
+		y 0.0
+		z 0.0
+	Up::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Forward::Vec3
+		x 0.0
+		y 0.0
+		z 1.0
+	Trans::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	IsWorldSpace True
+TransformSplitterEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 403201517
+	Realm Realm_ClientAndServer
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+InterfaceDescriptorData Instance2
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -910201930
+				AccessType FieldAccessType_Target
+			member(1)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -2024647575
+				AccessType FieldAccessType_Source
+			member(2)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id -892384772
+				AccessType FieldAccessType_Target
+	InputEvents *nullArray*
+	OutputEvents *nullArray*
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

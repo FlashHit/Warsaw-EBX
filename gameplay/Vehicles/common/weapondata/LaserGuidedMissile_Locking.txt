@@ -1,0 +1,89 @@
+DataContainerAsset 173fe887-6676-42c2-850e-47bfe1f24a81
+	$::Asset
+		$::DataContainer
+		Name Gameplay/Vehicles/common/WeaponData/LaserGuidedMissile_Locking
+	Data d48e7380-f83c-493b-82d9-8929563370d0
+LockingControllerData dd28405d-5afe-4049-95e3-1ea99f258891
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnRadar
+	LockTime 1.5
+	UnLockTime -1.0
+	ReleaseTime 0.5
+	ReleaseOnNewTargetTime 1.0
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 550.0
+	AcceptanceAngle 5.0
+	AngleConstant 5.0
+	DistanceConstant 0.0
+	Sensitivity 8.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnVehicle
+		IsHoming False
+		IsGuided True
+		IsGuidedWhenZoomed False
+		IsGuidedHoming True
+		FireOnlyWhenLockedOn True
+	LockOnVisibleTargetsOnly True
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles True
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False
+LockingWeaponData d48e7380-f83c-493b-82d9-8929563370d0
+	$::WeaponData
+		$::ToolData
+			$::DataContainer
+			IsAlwaysActive False
+		ShowLaserPaintedVehicles True
+	LockingController 3e301293-150d-45d0-8f41-02c6237dcd76
+	SecondaryLockingController dd28405d-5afe-4049-95e3-1ea99f258891
+	WarnLock wtWarnNone
+	OverrideLockingControllerSettings False
+	IsHoming True
+	IsGuided False
+	IsGuidedWhenZoomed False
+	IsGuidedHoming False
+	FireOnlyWhenLockedOn False
+	GuideOnlyWhenLockedOn True
+LockingControllerData 3e301293-150d-45d0-8f41-02c6237dcd76
+	$::DataContainer
+	ZoomLevelLock::array
+		member(0)::ZoomLevelLockData
+			OutlineTaggedDistance 0.0
+			LockType LockOnLaserPainted
+	LockTime 1.2000000476837158
+	UnLockTime -1.0
+	ReleaseTime 1.0
+	ReleaseOnNewTargetTime 1.0
+	SampleRate 0.05999999865889549
+	HoldStillThreshold 10.0
+	CheckVisibilityLength 1000.0
+	RayLength 650.0
+	AcceptanceAngle 5.0
+	AngleConstant 5.0
+	DistanceConstant 0.0
+	Sensitivity 0.0
+	MinimumLockTime 0.0
+	LockingWeaponData::LockingAndHomingData
+		WarnLock wtWarnVehicle
+		IsHoming True
+		IsGuided False
+		IsGuidedWhenZoomed False
+		IsGuidedHoming False
+		FireOnlyWhenLockedOn True
+	LockOnVisibleTargetsOnly False
+	RequireAmmoToLock False
+	PositionOnly False
+	LockOnWorldSpacePos False
+	LockOnEmptyVehicles True
+	LockOnCharacters False
+	IgnoreHeigthLockDistance False
+	LockInCombatAreaOnly False

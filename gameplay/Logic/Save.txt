@@ -1,0 +1,215 @@
+LogicPrefabBlueprint 37d8b7c4-8e3a-9d39-4a89-eb0408f93616
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/Save
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance5
+							Target Instance1
+							SourceFieldId 1453248161
+							TargetFieldId 2088812747
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance5
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance5
+						Target Instance6
+						SourceEvent::EventSpec
+							Id 2089420676
+						TargetEvent::EventSpec
+							Id 2089420676
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance6
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -213362971
+						TargetEvent::EventSpec
+							Id -1434059356
+						TargetType EventConnectionTargetType_Server
+					member(2)::EventConnection
+						Source Instance5
+						Target Instance0
+						SourceEvent::EventSpec
+							Id 2089420676
+						TargetEvent::EventSpec
+							Id 231942004
+						TargetType EventConnectionTargetType_Server
+					member(3)::EventConnection
+						Source Instance6
+						Target Instance2
+						SourceEvent::EventSpec
+							Id -26482462
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_Server
+					member(4)::EventConnection
+						Source Instance1
+						Target Instance4
+						SourceEvent::EventSpec
+							Id -1433512622
+						TargetEvent::EventSpec
+							Id -1778993948
+						TargetType EventConnectionTargetType_Client
+					member(5)::EventConnection
+						Source Instance2
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 5862146
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(6)::EventConnection
+						Source Instance2
+						Target Instance3
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id 193450867
+						TargetType EventConnectionTargetType_NetworkedClient
+					member(7)::EventConnection
+						Source Instance3
+						Target Instance4
+						SourceEvent::EventSpec
+							Id 193453899
+						TargetEvent::EventSpec
+							Id -1778993948
+						TargetType EventConnectionTargetType_Client
+					member(8)::EventConnection
+						Source Instance5
+						Target Instance3
+						SourceEvent::EventSpec
+							Id -1778993948
+						TargetEvent::EventSpec
+							Id 193450864
+						TargetType EventConnectionTargetType_Client
+					member(9)::EventConnection
+						Source Instance6
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -26482462
+						TargetEvent::EventSpec
+							Id -1434059356
+						TargetType EventConnectionTargetType_Server
+					member(10)::EventConnection
+						Source Instance6
+						Target Instance5
+						SourceEvent::EventSpec
+							Id -26482462
+						TargetEvent::EventSpec
+							Id -1433788926
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance6
+			member(1) Instance4
+			member(2) Instance0
+			member(3) Instance2
+			member(4) Instance1
+			member(5) Instance3
+PrintDebugTextEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 73787072
+	Realm Realm_Server
+	TextColor::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Text Game saved
+	ScreenPosition::Vec2
+		x -1.0
+		y -1.0
+	TimeToShow -1.0
+	TextScale 1.0
+	Enabled True
+CompareBoolEntityData Instance1
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 437980873
+	Realm Realm_Client
+	Bool False
+	TriggerOnPropertyChange False
+	TriggerOnStart False
+	AlwaysSend False
+DelayEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 69719366
+	Delay 1.0
+	Realm Realm_Server
+	AutoStart False
+	RunOnce False
+	RemoveDuplicateEvents True
+EventAndGateEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 36868060
+	Realm Realm_Client
+	EventCount 2
+FadeEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 42222325
+	FadeTime 1.0
+	MaxWaitFadedWhileStreamingTime 0.0
+	FadeScreen True
+	FadeUI True
+	FadeAudio True
+	FadeMovie True
+	FadeRumble True
+	StartFaded False
+InterfaceDescriptorData Instance5
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value Boolean True
+				ValueRef *nullGuid*
+				Id 1453248161
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 2089420676
+		member(1)::DynamicEvent
+			Id -1778993948
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1434059356
+		member(1)::DynamicEvent
+			Id -1433788926
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+SaveEntityData Instance6
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 90180874
+	SaveScreenTexture *nullGuid*
+	LevelName *nullString*
+	SaveFileName *nullString*
+	SaveNameSID *nullString*
+	CheckForHumanPlayer True
+	ForceNotifyAllEntitiesOnLoad False

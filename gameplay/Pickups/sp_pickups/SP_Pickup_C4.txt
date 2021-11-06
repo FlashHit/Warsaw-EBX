@@ -1,0 +1,147 @@
+SpatialPrefabBlueprint 8f75454d-e13c-4916-bfbb-ae859963d79d
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Pickups/SP_Pickups/SP_Pickup_C4
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance1
+							Target 6fdb44ae-92cb-477a-9a5a-bdb8f39d27c5
+							SourceFieldId 2662400
+							TargetFieldId -1355906264
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance0
+							Target 6fdb44ae-92cb-477a-9a5a-bdb8f39d27c5
+							SourceFieldId 225375086
+							TargetFieldId 2662400
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance1
+					Flags 3
+				EventConnections::array
+					member(0)::EventConnection
+						Source 6fdb44ae-92cb-477a-9a5a-bdb8f39d27c5
+						Target Instance1
+						SourceEvent::EventSpec
+							Id -1836726032
+						TargetEvent::EventSpec
+							Id -1836726032
+						TargetType EventConnectionTargetType_Server
+					member(1)::EventConnection
+						Source Instance1
+						Target Instance0
+						SourceEvent::EventSpec
+							Id -326382662
+						TargetEvent::EventSpec
+							Id 668205626
+						TargetType EventConnectionTargetType_ClientAndServer
+		Objects::array
+			member(0) 6fdb44ae-92cb-477a-9a5a-bdb8f39d27c5
+			member(1) Instance0
+WeaponUnlockPickupEntityData 6fdb44ae-92cb-477a-9a5a-bdb8f39d27c5
+	$::PickupEntityData
+		$::GamePhysicsEntityData
+			$::GameComponentEntityData
+				$::ComponentEntityData
+					$::SpatialEntityData
+						$::EntityData
+							$::GameObjectData
+								$::DataBusPeer
+									$::GameDataContainer
+										$::DataContainer
+									Flags 433800366
+						Transform::LinearTransform
+							right::Vec3
+								x 4.172324281626061e-07
+								y 2.9802317058624794e-08
+								z 0.9999997019767761
+							up::Vec3
+								x -0.9999996423721313
+								y 2.9802316703353426e-07
+								z 3.2782546099952015e-07
+							forward::Vec3
+								x -2.0861621408130304e-07
+								y -0.9999997019767761
+								z 1.1920926823449918e-07
+							trans::Vec3
+								x 0.0
+								y 0.027988377958536148
+								z 0.0
+					Components *nullArray*
+					ClientRuntimeComponentCount 0
+					ServerRuntimeComponentCount 0
+					ClientRuntimeTransformationCount 0
+					ServerRuntimeTransformationCount 0
+				Enabled True
+			PhysicsData *nullGuid*
+		PhysicsBlueprint *nullGuid*
+		Mesh *nullGuid*
+		TimeToShowWeaponMesh 0.0
+		PreferredWeaponSlot 0
+		TimeToLive 0.0
+		IconName pickups.gadget
+		MinRandomSpareAmmoPercent 100
+		MaxRandomSpareAmmoPercent 100
+		MinRandomClipAmmoPercent 100
+		MaxRandomClipAmmoPercent 100
+		RandomizeAmmoOnDropForPlayer PickupPlayerEnum_HumanOnly
+		InteractionRadius 2.5
+		DisplayWithinRadius 5.0
+		TacticalRadius 100.0
+		UseWeaponMesh True
+		UnspawnOnPickup False
+		UnspawnOnAmmoPickup False
+		ContentIsStatic False
+		PositionIsStatic True
+		AllowPickup True
+		IgnoreNullWeaponSlots False
+		ForceWeaponSlotSelection False
+		DisplayInMiniMap True
+		HasAutomaticAmmoPickup True
+		ReplaceAllContent False
+		RemoveWeaponOnDrop False
+		UseDisplayWithinRadius True
+		KeepAmmoState True
+	Weapons::array
+		member(0)::WeaponUnlockPickupData
+			UnlockWeaponAndSlot::UnlockWeaponAndSlot
+				Weapon Gameplay/Gadgets/C4/U_SP_C4/a4747aca-a34e-4650-9230-747b174c498b
+				Slot WeaponSlot_2
+				CustomizationUnlockAssets *nullArray*
+				UnlockAssets *nullArray*
+			AltWeaponSlot 5
+			LinkedToWeaponSlot -1
+			MinAmmo 0
+			MaxAmmo 0
+			UnlimitedAmmoPickup False
+	UseForPersistence True
+BoolEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 118872624
+	Realm Realm_ClientAndServer
+	DefaultValue True
+InterfaceDescriptorData Instance1
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value Boolean True
+				ValueRef *nullGuid*
+				Id 2662400
+				AccessType FieldAccessType_Target
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id -326382662
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id -1836726032
+	InputLinks *nullArray*
+	OutputLinks *nullArray*

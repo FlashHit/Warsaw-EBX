@@ -1,0 +1,153 @@
+LogicPrefabBlueprint c63cc9f4-bd7c-4d09-a235-6e6a8aa298cd
+	$::PrefabBlueprint
+		$::Blueprint
+			$::EntityBusData
+				$::DataBusData
+					$::Asset
+						$::DataContainer
+						Name Gameplay/Logic/pos
+					PropertyConnections::array
+						member(0)::PropertyConnection
+							Source Instance3
+							Target Instance2
+							SourceFieldId -1001694132
+							TargetFieldId 193450867
+							ShouldNetworkValue False
+						member(1)::PropertyConnection
+							Source Instance4
+							Target Instance2
+							SourceFieldId -1001694132
+							TargetFieldId 193450864
+							ShouldNetworkValue False
+						member(2)::PropertyConnection
+							Source Instance2
+							Target Instance0
+							SourceFieldId 193453899
+							TargetFieldId 2088812747
+							ShouldNetworkValue False
+						member(3)::PropertyConnection
+							Source Instance2
+							Target Instance1
+							SourceFieldId 193453899
+							TargetFieldId 1070603269
+							ShouldNetworkValue False
+						member(4)::PropertyConnection
+							Source Instance5
+							Target Instance2
+							SourceFieldId -1001694132
+							TargetFieldId 193450865
+							ShouldNetworkValue False
+					LinkConnections *nullArray*
+					Interface Instance1
+					Flags 2
+				EventConnections::array
+					member(0)::EventConnection
+						Source Instance1
+						Target Instance1
+						SourceEvent::EventSpec
+							Id 1930560477
+						TargetEvent::EventSpec
+							Id 1100563380
+						TargetType EventConnectionTargetType_Server
+		Objects::array
+			member(0) Instance0
+			member(1) Instance3
+			member(2) Instance4
+			member(3) Instance2
+			member(4) Instance5
+CompareBoolEntityData Instance0
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 278617923
+	Realm Realm_Server
+	Bool False
+	TriggerOnPropertyChange False
+	TriggerOnStart False
+	AlwaysSend False
+InterfaceDescriptorData Instance1
+	$::DynamicDataContainer
+		$::DataContainer
+		Fields::array
+			member(0)::DataField
+				Value *nullString*
+				ValueRef *nullGuid*
+				Id 1070603269
+				AccessType FieldAccessType_Source
+	InputEvents::array
+		member(0)::DynamicEvent
+			Id 1930560477
+	OutputEvents::array
+		member(0)::DynamicEvent
+			Id 1100563380
+	InputLinks *nullArray*
+	OutputLinks *nullArray*
+OrEntityData Instance2
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 276398326
+	Realm Realm_Server
+	InputCount 3
+UnlockEntityData Instance3
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 22025425
+	Realm Realm_Server
+	UnlockGuids::array
+		member(0) 62f55648-e809-40cd-b6bd-9046d36b6c0a
+		member(1) 766bf9fc-47d5-45f4-b388-8dbe6fa70084
+		member(2) 4a05abe7-39ea-492c-be45-e3a61579d316
+	Logic UnlockEntityLogic_OR
+	ContextPlayerQueryType UnlockEntityPlayerQueryType_EquippedDogtagUnlocks
+	ServerUsePrevIfNoCurrChar False
+	InvertTest False
+	ContextPlayer True
+UnlockEntityData Instance4
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 22483693
+	Realm Realm_Server
+	UnlockGuids::array
+		member(0) d25ab5d0-9282-44ac-9175-566ad1e47a3e
+	Logic UnlockEntityLogic_OR
+	ContextPlayerQueryType UnlockEntityPlayerQueryType_AllWeaponUnlocks
+	ServerUsePrevIfNoCurrChar True
+	InvertTest False
+	ContextPlayer True
+UnlockEntityData Instance5
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 13698043
+	Realm Realm_Server
+	UnlockGuids::array
+		member(0) 1277eadc-60d0-4473-a2e7-21402de68f91
+		member(1) c76d302e-58d3-4e8b-9033-23289924c111
+		member(2) 6f03c2e0-53de-46c8-8bd8-5cc158ca8487
+		member(3) b792ac62-eb72-4b4d-8c53-5991da76e578
+		member(4) a3b816ee-f1f4-431c-82cc-2adcb3ac95d5
+		member(5) 93462184-f66a-46f4-88b1-fa7e76099dc7
+		member(6) 7922db7c-50c2-40ee-ba13-5e69385bcef6
+		member(7) ef087523-db7e-4aaa-b108-bf52e2611186
+		member(8) f1ee32b4-37e6-48ce-9642-63d0447ca08d
+		member(9) a85f5206-4f85-4daa-88d1-ba012292d354
+		member(10) b31a5a95-b825-43db-b397-c846d0e71d76
+		member(11) e73329a2-02b5-4429-861c-4cb2ee42050b
+	Logic UnlockEntityLogic_OR
+	ContextPlayerQueryType UnlockEntityPlayerQueryType_VisualUnlocks
+	ServerUsePrevIfNoCurrChar False
+	InvertTest False
+	ContextPlayer True

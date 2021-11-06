@@ -1,0 +1,850 @@
+ObjectBlueprint 628bd65f-17bd-11de-bf0a-aaf2cfafe1d6
+	$::Blueprint
+		$::EntityBusData
+			$::DataBusData
+				$::Asset
+					$::DataContainer
+					Name Gameplay/Vehicles/AH6/AH6_Wreck_Body
+				PropertyConnections *nullArray*
+				LinkConnections *nullArray*
+				Interface *nullGuid*
+				Flags 1
+			EventConnections::array
+				member(0)::EventConnection
+					Source Instance7
+					Target Instance28
+					SourceEvent::EventSpec
+						Id -2120949217
+					TargetEvent::EventSpec
+						Id 230748069
+					TargetType EventConnectionTargetType_ClientAndServer
+				member(1)::EventConnection
+					Source Instance28
+					Target Instance6
+					SourceEvent::EventSpec
+						Id 2089305429
+					TargetEvent::EventSpec
+						Id -3142077
+					TargetType EventConnectionTargetType_ClientAndServer
+				member(2)::EventConnection
+					Source Instance28
+					Target Instance6
+					SourceEvent::EventSpec
+						Id 1200369610
+					TargetEvent::EventSpec
+						Id -1980967410
+					TargetType EventConnectionTargetType_ClientAndServer
+	Object 628bd660-17bd-11de-bf0a-aaf2cfafe1d6
+BangerEntityData 628bd660-17bd-11de-bf0a-aaf2cfafe1d6
+	$::DynamicGamePhysicsEntityData
+		$::GamePhysicsEntityData
+			$::GameComponentEntityData
+				$::ComponentEntityData
+					$::SpatialEntityData
+						$::EntityData
+							$::GameObjectData
+								$::DataBusPeer
+									$::GameDataContainer
+										$::DataContainer
+									Flags 512480864
+						Transform::LinearTransform
+							right::Vec3
+								x 1.0
+								y 0.0
+								z 0.0
+							up::Vec3
+								x 0.0
+								y 1.0
+								z 0.0
+							forward::Vec3
+								x 0.0
+								y 0.0
+								z 1.0
+							trans::Vec3
+								x 0.0
+								y 0.0
+								z 0.0
+					Components::array
+						member(0) Instance1
+						member(1) Instance7
+						member(2) Instance28
+						member(3) Instance2
+						member(4) Instance0
+					ClientRuntimeComponentCount 6
+					ServerRuntimeComponentCount 7
+					ClientRuntimeTransformationCount 4
+					ServerRuntimeTransformationCount 4
+				Enabled True
+			PhysicsData Instance9
+	Mesh gameplay/vehicles/ah6/ah6_wreck_body_Mesh/628bd661-17bd-11de-bf0a-aaf2cfafe1d6
+	Explosion *nullGuid*
+	TimeToLive 60.0
+	DestructiblePartCount 2
+	UseVariableNetworkFrequency False
+BangerHealthComponentData Instance0
+	$::GameHealthComponentData
+		$::HealthComponentData
+			$::ComponentData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 15617733
+				Components *nullArray*
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+				Excluded False
+BangerHealthModuleData Instance1
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 33520697
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0
+					y 0.0
+					z 0.0
+			Excluded False
+	Health 250.0
+	MaterialPair::MaterialDecl
+		Packed 1191215104
+BangerPhysicsComponentData Instance2
+	$::GamePhysicsComponentData
+		$::PhysicsComponentData
+			$::ComponentData
+				$::GameObjectData
+					$::DataBusPeer
+						$::GameDataContainer
+							$::DataContainer
+						Flags 1608662
+				Components *nullArray*
+				Transform::LinearTransform
+					right::Vec3
+						x 1.0
+						y 0.0
+						z 0.0
+					up::Vec3
+						x 0.0
+						y 1.0
+						z 0.0
+					forward::Vec3
+						x 0.0
+						y 0.0
+						z 1.0
+					trans::Vec3
+						x 0.0
+						y 0.0
+						z 0.0
+				Excluded False
+		Realm Realm_ClientAndServer
+		EffectParameters *nullArray*
+	ImpulseInput::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+FakeHingeData Instance3
+	$::FakePhysicsData
+		$::DataContainer
+		ChildFakePhysics *nullGuid*
+		StartSpeed 0.0
+		GravityModifier 10.0
+		StartDampening 0.20000000298023224
+		EndDampening 0.20000000298023224
+		MinSpeed 0.0
+		MaxSpeed 10.0
+		Mass 1.0
+	MinAngle -46.10200119018555
+	MaxAngle 40.444000244140625
+	Pivot::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	RotationAxis::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	ExtensionAxis::Vec3
+		x 0.0
+		y 0.0
+		z -1.0
+	AngularDampening 0.05000000074505806
+	PullbackAcceleration 0.0
+	ProgressiveExponent 0.0
+	InertiaModifier 1.0
+FakeHingeData Instance4
+	$::FakePhysicsData
+		$::DataContainer
+		ChildFakePhysics *nullGuid*
+		StartSpeed 50.0
+		GravityModifier 2.0
+		StartDampening 0.0
+		EndDampening 0.0
+		MinSpeed 0.0
+		MaxSpeed 50.0
+		Mass 1.0
+	MinAngle -359.0
+	MaxAngle 360.0
+	Pivot::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	RotationAxis::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	ExtensionAxis::Vec3
+		x 0.0
+		y 0.0
+		z 1.0
+	AngularDampening 0.05000000074505806
+	PullbackAcceleration 0.0
+	ProgressiveExponent 0.0
+	InertiaModifier 1.0
+PartComponentData Instance5
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 13861149
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -2.7755575615628914e-17
+					y 1.208794116973877
+					z 0.0
+			Excluded False
+	HealthStates::array
+		member(0) Instance19
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics True
+PartComponentData Instance6
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 126730618
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 0.9781797528266907
+					y -0.207760289311409
+					z 0.0
+				up::Vec3
+					x 0.207760289311409
+					y 0.9781797528266907
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x 0.0004365770728327334
+					y 0.5901693105697632
+					z -1.548704743385315
+			Excluded False
+	HealthStates::array
+		member(0) Instance21
+		member(1) Instance23
+		member(2) Instance22
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PartComponentData Instance7
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 9151203
+			Components::array
+				member(0) Instance8
+				member(1) Instance6
+				member(2) Instance5
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -4.163336342344337e-17
+					y -2.498001805406602e-16
+					z 0.0
+			Excluded False
+	HealthStates::array
+		member(0) Instance20
+		member(1) Instance25
+	PartLinks *nullArray*
+	IsSupported True
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PartComponentData Instance8
+	$::GameComponentData
+		$::ComponentData
+			$::GameObjectData
+				$::DataBusPeer
+					$::GameDataContainer
+						$::DataContainer
+					Flags 5339112
+			Components *nullArray*
+			Transform::LinearTransform
+				right::Vec3
+					x 1.0
+					y 0.0
+					z 0.0
+				up::Vec3
+					x 0.0
+					y 1.0
+					z 0.0
+				forward::Vec3
+					x 0.0
+					y 0.0
+					z 1.0
+				trans::Vec3
+					x -4.163336342344337e-17
+					y -2.498001805406602e-16
+					z 0.0
+			Excluded False
+	HealthStates::array
+		member(0) Instance24
+	PartLinks *nullArray*
+	IsSupported False
+	IsFragile False
+	IsNetworkable True
+	IsWindow False
+	AnimatePhysics False
+PhysicsEntityData Instance9
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	Asset Gameplay/Vehicles/AH6/AH6_Wreck_Body_Physics_Win32/5ba52996-3869-88b3-8831-3e9958b8d12c
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	RigidBodies::array
+		member(0) Instance17
+		member(1) Instance16
+	FloatPhysics *nullGuid*
+	Mass 1000010.0
+	Friction 1000010.0
+	Restitution 1000010.0
+	AngularVelocityDamping 1000010.0
+	LinearVelocityDamping 1000010.0
+	Proximity *nullGuid*
+	Constraints *nullArray*
+	MovableParts True
+	IsComposite False
+ReferenceObjectData Instance10
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint Gameplay/Vehicles/AH6/AH6_WreckTailDebris/8be56fb3-f1a1-a700-e26e-7a8f18771db5
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.000001311302185
+			y 1.043081283569336e-07
+			z 0.0
+		up::Vec3
+			x -1.043081283569336e-07
+			y 1.000001311302185
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0000001192092896
+		trans::Vec3
+			x -0.0026546854060143232
+			y -0.5915252566337585
+			z 1.6412969827651978
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable True
+	Excluded False
+ReferenceObjectData Instance11
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint FX/Vehicles/Wreck/FX_Heli_Destruction_Wreck_SmokeTrail/15545df2-fbb6-49ba-9abc-22f3b5cb42cf
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x -0.036903440952301025
+			y 0.3525991439819336
+			z 0.01708841323852539
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable False
+	Excluded False
+ReferenceObjectData Instance12
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint Gameplay/Vehicles/AH6/AH6_WreckRotorDebris/63929b48-1419-6047-0995-83987ea1504c
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y -1.2123050689697266
+			z 0.0
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable True
+	Excluded False
+ReferenceObjectData Instance13
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint FX/Vehicles/Wreck/FX_Heli_Destruction_Wreck/337952df-5b29-4f32-b4a0-591846356610
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x -0.036903440952301025
+			y 0.4832320213317871
+			z 0.01708841323852539
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable False
+	Excluded False
+ReferenceObjectData Instance14
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint FX/Vehicles/Destruction/FX_Heli_Destruction/2c25606e-69c8-477b-ba08-3c9119d8e360
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y -1.4869513511657715
+			z 0.0
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable True
+	Excluded False
+ReferenceObjectData Instance15
+	$::GameObjectData
+		$::DataBusPeer
+			$::GameDataContainer
+				$::DataContainer
+			Flags 0
+	Blueprint FX/Vehicles/Wreck/FX_Heli_Destruction_Wreck_Destruction/5ae3cd74-2296-46ed-a89c-a2ee375ac3f2
+	BlueprintTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x -0.036903440952301025
+			y 0.029798686504364014
+			z 0.01708841323852539
+	ObjectVariation *nullGuid*
+	StreamRealm StreamRealm_None
+	RadiosityTypeOverride RadiosityTypeOverride_None
+	CastSunShadowEnable True
+	CastReflectionEnable True
+	Excluded False
+RigidBodyData Instance16
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeRaycast
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 0.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Fixed
+	QualityType RigidBodyQualityType_Invalid
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+		member(1) 1
+		member(2) 2
+		member(3) 3
+	FloatPhysics *nullGuid*
+	IsRootController True
+RigidBodyData Instance17
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 0
+	RigidBodyType RBTypeCollision
+	InertiaModifier::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Transform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	KeyframeTransform::LinearTransform
+		right::Vec3
+			x 1.0
+			y 0.0
+			z 0.0
+		up::Vec3
+			x 0.0
+			y 1.0
+			z 0.0
+		forward::Vec3
+			x 0.0
+			y 0.0
+			z 1.0
+		trans::Vec3
+			x 0.0
+			y 0.0
+			z 0.0
+	Mass 1500.0
+	Friction 0.5
+	Restitution 0.4000000059604645
+	AngularVelocityDamping -1.0
+	LinearVelocityDamping -1.0
+	InteractionToolkitCollisionVolumeId 0
+	MotionType RigidBodyMotionType_Dynamic
+	QualityType RigidBodyQualityType_Moving
+	CollisionLayer RigidBodyCollisionLayer_Invalid
+	PartIndices::array
+		member(0) 0
+		member(1) 1
+		member(2) 2
+		member(3) 3
+	FloatPhysics *nullGuid*
+	IsRootController True
+BangerSpawnImpulseParams Instance18
+	$::DataContainer
+	MinHorizontalAngle -90.0
+	MaxHorizontalAngle 90.0
+	MinVerticalAngle 45.0
+	MaxVerticalAngle 85.0
+	MinStrength 15000.0
+	MaxStrength 15000.0
+	WaterStrengthModifier 0.007000000216066837
+	LinearDamping 0.0
+	AngularDamping 0.05000000074505806
+HealthStateData Instance19
+	$::DataContainer
+	Objects::array
+		member(0) Instance12
+		member(1) Instance14
+	LoosePartPhysics::array
+		member(0) Instance27
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 100.0
+	PartIndex 2
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts True
+HealthStateData Instance20
+	$::DataContainer
+	Objects::array
+		member(0) Instance11
+		member(1) Instance13
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 250.0
+	PartIndex 1
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts True
+HealthStateData Instance21
+	$::DataContainer
+	Objects::array
+		member(0) Instance10
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 100.0
+	PartIndex 3
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts True
+HealthStateData Instance22
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint Gameplay/Vehicles/AH6/AH6_WreckTail/04f3e2e6-5807-f75f-6124-50da7560fb73
+	SpawnedBangerImpulseParams Instance18
+	Health 0.0
+	PartIndex 4294967295
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+HealthStateData Instance23
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics::array
+		member(0) Instance26
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 90.0
+	PartIndex 3
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+HealthStateData Instance24
+	$::DataContainer
+	Objects *nullArray*
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 100.0
+	PartIndex 0
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts True
+HealthStateData Instance25
+	$::DataContainer
+	Objects::array
+		member(0) Instance15
+	LoosePartPhysics *nullArray*
+	SpawnedBangerBlueprint *nullGuid*
+	SpawnedBangerImpulseParams *nullGuid*
+	Health 0.0
+	PartIndex 4294967295
+	CopyDamageToBanger True
+	PhysicsEnabled True
+	Indestructable False
+	CanSupportOtherParts False
+NetworkableLoosePartPhysicsData Instance26
+	$::LoosePartPhysicsData
+		$::DataContainer
+		FakePhysics Instance3
+	Networked False
+NetworkableLoosePartPhysicsData Instance27
+	$::LoosePartPhysicsData
+		$::DataContainer
+		FakePhysics Instance4
+	Networked False
+SequenceEntityData Instance28
+	$::EntityData
+		$::GameObjectData
+			$::DataBusPeer
+				$::GameDataContainer
+					$::DataContainer
+				Flags 109748292
+	Events::array
+		member(0)::SequenceEventData
+			Event::EventSpec
+				Id 2089305429
+			Time 2000
+		member(1)::SequenceEventData
+			Event::EventSpec
+				Id 1200369610
+			Time 5000
+	SequenceStartTime 0
+	SequenceLength 5000
+	Realm Realm_ClientAndServer
+	PropertyTracks *nullArray*
+	CustomSequenceTracks *nullArray*
+	ClientUpdatePass UpdatePass_PostFrame
+	ServerUpdatePass UpdatePass_PreSim
+	ExternalTime 0.0
+	PlaybackSpeed 1.0
+	Looping False
+	AutoStart True
+	AutoPlayFirstFrame False
+	PlayInReverse False
