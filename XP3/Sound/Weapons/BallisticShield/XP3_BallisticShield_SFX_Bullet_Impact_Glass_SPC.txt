@@ -1,0 +1,101 @@
+SoundPatchConfigurationAsset 78df7624-c817-474a-84c8-135eaceb01d6
+	$::SoundAsset
+		$::Asset
+			$::DataContainer
+			Name XP3/Sound/Weapons/BallisticShield/XP3_BallisticShield_SFX_Bullet_Impact_Glass_SPC
+		Scope Sound/AudioSystem/b52f34d2-550e-4c78-a31a-e0a0c62c0020
+		ReferencedData::array
+			member(0)::SoundDataReference
+				DataOwner XP3/Sound/SourcePatches/XP3_BallisticShield_SFX_Impacts/2bd21247-c5a8-4743-b10b-7956831813a8
+				SoundData Sound/maoism/Bullet_Impacts/Bullet_Impact_Vehicle_Glass_Wave/bf886c42-e77f-48a8-a5dc-42cf103021d5
+			member(1)::SoundDataReference
+				DataOwner XP3/Sound/SourcePatches/XP3_BallisticShield_SFX_Impacts/3a8507eb-a290-4d7a-b073-50b63fde38b0
+				SoundData Sound/maoism/bullet_flybys/Bullet_FlyBy_00_Silent_Wave/949b3ba9-ba4f-4299-839c-8b30c9e52f15
+	Sound XP3/Sound/SourcePatches/XP3_BallisticShield_SFX_Impacts/465b5941-5c30-4a38-a4d7-2576ffba786d
+	Loudness 100.0
+	Radius 0.5
+	RadiusFalloffScalar 1.0
+	MinObstructionValue 0.0
+	MaxObstructionValue 1.0
+	Mixer *nullGuid*
+	NodeConfigs::array
+		member(0) d82a0893-151c-4b69-9c89-18580cd1de91
+	ParameterConfigs::array
+		member(0) 36536942-909b-4668-bdd7-6edcd83e4d8d
+		member(1) 44647761-fa99-4c9d-9f03-f484a9c9361b
+		member(2) 275e8e21-e196-47eb-99a6-334dd2a06ed2
+		member(3) b3d775fa-0e4f-4bdb-8507-429d96ef57c3
+	EnableObstructionOverrides False
+AudioGraphAssetParameterConfigData 275e8e21-e196-47eb-99a6-334dd2a06ed2
+	$::AudioGraphParameterConfigData
+		$::DataContainer
+		NameHash 2596855760
+	Asset Sound/maoism/bullet_flybys/Bullet_FlyBy_00_Silent_Wave/949b3ba9-ba4f-4299-839c-8b30c9e52f15
+AudioGraphAssetParameterConfigData 36536942-909b-4668-bdd7-6edcd83e4d8d
+	$::AudioGraphParameterConfigData
+		$::DataContainer
+		NameHash 1091708456
+	Asset Sound/maoism/Bullet_Impacts/Bullet_Impact_Vehicle_Glass_Wave/bf886c42-e77f-48a8-a5dc-42cf103021d5
+AudioGraphValueParameterConfigData 44647761-fa99-4c9d-9f03-f484a9c9361b
+	$::AudioGraphParameterConfigData
+		$::DataContainer
+		NameHash 2046899121
+	Value 3.0
+ConeOutputNodeConfigData d82a0893-151c-4b69-9c89-18580cd1de91
+	$::OutputNodeConfigData
+		$::AudioGraphNodeConfigData
+			$::DataContainer
+			Node XP3/Sound/SourcePatches/XP3_BallisticShield_SFX_Impacts/b8abaecf-6ae5-4a66-b923-a453a1f4cc14
+		MinDistance 2.0
+		AttenuationCurve::AudioCurve
+			Points::array
+				member(0)::AudioCurvePoint
+					X 0.0
+					Y -0.30133333802223206
+					K -0.6713969707489014
+				member(1)::AudioCurvePoint
+					X 13.725214958190918
+					Y -10.478639602661133
+					K -0.8817189335823059
+				member(2)::AudioCurvePoint
+					X 44.020606994628906
+					Y -53.372901916503906
+					K -2.019925832748413
+				member(3)::AudioCurvePoint
+					X 59.052032470703125
+					Y -87.08624267578125
+					K -2.354322910308838
+			CurveType AudioCurveType_Spline
+		HFDampingDistance 0.800000011920929
+		HFDampingObstruction 1.0
+		HFDampingOcclusion 1.0
+		HFObstructionAmplitudeReduction 0.0
+		Gain 0.0
+		MixGroup Sound/MixerSystem/73fd6043-e6b6-44fe-b716-86f7d9ac2cc6
+		EnableHdr True
+	OutsideGain -12.0
+	PanSize 2.0
+	BleedMinDistance 2.5
+	Direction::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	BleedMaxDistance 3.5
+	HFDampingAngle 1.0
+	ReverbAttenuationCurve::AudioCurve
+		Points::array
+			member(0)::AudioCurvePoint
+				X 0.0
+				Y 0.0
+				K -0.009999999776482582
+			member(1)::AudioCurvePoint
+				X 50.0
+				Y -0.5
+				K -0.009999999776482582
+		CurveType AudioCurveType_Spline
+	ReverbGain -12.0
+AudioGraphValueParameterConfigData b3d775fa-0e4f-4bdb-8507-429d96ef57c3
+	$::AudioGraphParameterConfigData
+		$::DataContainer
+		NameHash 608797065
+	Value 1.0
