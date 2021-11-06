@@ -1,0 +1,249 @@
+ScalableEmitterDocument 4ecef981-1dc9-46a4-8f53-bcfe3fa39bf7
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance0
+	TemplateDataMedium Instance0
+	TemplateDataHigh Instance0
+	TemplateDataUltra Instance0
+EmitterTemplateData Instance0
+	$::DataContainer
+	RootProcessor Instance15
+	MaxCount 1
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 0.10000000149011612
+	TimeScale 0.699999988079071
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Quad
+	EmittableAlignment EmittableAlignment_Screen
+	MotionStretchMultiplier 1.0
+	MotionStretchLengthClamp 100.0
+	Mesh *nullGuid*
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 1.0
+	SoftParticlesFadeDistanceMultiplier 1.2599999904632568
+	LightWrapAroundFactor 0.0
+	BentNormalFactor 1.0
+	LightMultiplier 0.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 0.800000011920929
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 0.0
+	MinScreenArea 1.0
+	MeshCullingDistance 0.0
+	DistanceScaleLength 0.0
+	DistanceScaleNearValue 1.0
+	DistanceScaleFarValue 1.0
+	SpeedNormalizationValue 50.0
+	WindSpeedNormalizationValue 50.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 0.0
+	CullFadeNearRange 0.0
+	CullFadeFarDistance 0.0
+	CullFadeFarRange 0.0
+	RepeatParticleSpawning False
+	FollowSpawnSource True
+	KillParticlesWithEmitter False
+	ExclusionVolumeCullEnable False
+	Emissive False
+	Opaque False
+	ForceNiceSorting False
+	LocalSpace False
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes False
+	FogFade True
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 True
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable False
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialColorInterpData Instance1
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Color0::Vec3
+		x 1.0
+		y 0.47600001096725464
+		z 0.20100000500679016
+	Color1::Vec3
+		x 0.37400001287460327
+		y 0.5580000281333923
+		z 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 1.0853391885757446
+		z -2.101295232772827
+		w 1.0212756395339966
+PolynomialData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 4.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z 0.9292928576469421
+		w 0.06964651495218277
+	MinClamp 0.0
+	MaxClamp 1.0
+PolynomialData Instance3
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z 2.090909719467163
+		w -1.106818675994873
+	MinClamp 0.10000000149011612
+	MaxClamp 1.0
+PolynomialData Instance4
+	$::EvaluatorData
+		$::DataContainer
+		Parameter FX/GlobalEffectParameterList/72d34f99-01c1-4739-9398-5af641d1897f
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -2.297588586807251
+		w 2.3140766620635986
+	MinClamp 0.0
+	MaxClamp 1.0
+SpawnColorRandomData Instance5
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance18
+		EvaluatorInput EfOne
+	Color0::Vec3
+		x 10.0
+		y 10.0
+		z 10.0
+	Color1::Vec3
+		x 50.0
+		y 50.0
+		z 50.0
+UpdateColorData Instance6
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance1
+		NextProcessor Instance11
+		EvaluatorInput EfNormTime
+	Color::Vec3
+		x 1.0
+		y 0.47600001096725464
+		z 0.20100000500679016
+RandomEvaluatorData Instance7
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 11.0
+	Min 0.0
+RandomEvaluatorData Instance8
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min -1.0
+RandomEvaluatorData Instance9
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.75
+SpawnAnimationData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance5
+		EvaluatorInput EfOne
+	AnimationSpeed 0.0
+	BasedOnLifetime False
+SpawnAnimationFrameData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance7
+		NextProcessor Instance10
+		EvaluatorInput EfOne
+	AnimationFrame 1
+SpawnRateData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance16
+		EvaluatorInput EfOne
+	SpawnRate 50000.0
+	DistributeOverTime True
+	DistributeOverDistance False
+SpawnRotationData Instance13
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance8
+		NextProcessor Instance17
+		EvaluatorInput EfOne
+	Rotation 1.0
+SpawnSizeData Instance14
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance9
+		NextProcessor *nullGuid*
+		EvaluatorInput EfOne
+	Size 7.0
+UpdateAgeData Instance15
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfOne
+	Lifetime 0.20000000298023224
+	RandomLifetimeScale 0.0
+	MaxFactor 1.0
+UpdateAlphaLevelScaleData Instance16
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance3
+		NextProcessor Instance6
+		EvaluatorInput EfNormTime
+	Exponent 10.0
+UpdateSizeData Instance17
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance14
+		EvaluatorInput EfNormTime
+	Pivot::Vec2
+		x 0.0
+		y 0.0
+UpdateTextureCoordsData Instance18
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance19
+		EvaluatorInput EfNormTime
+	BaseTexture FX/Textures/Gradient/Shockwave_01/30d70f73-36b0-4515-afa7-ce42a9342dd9
+	NormalTexture Systems/Emitter/DefaultNormalTexture/ffdd9e47-30b0-4c9e-9539-2f6240c340cc
+UpdateTransparencyData Instance19
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance4
+		NextProcessor Instance13
+		EvaluatorInput EfNormTime
+	CullThreshold 0.20000000298023224

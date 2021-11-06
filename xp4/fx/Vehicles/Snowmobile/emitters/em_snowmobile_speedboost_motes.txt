@@ -1,0 +1,259 @@
+ScalableEmitterDocument b3c4a845-99c2-420f-a97f-b6f5e565bd12
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance1
+	TemplateDataMedium Instance1
+	TemplateDataHigh Instance1
+	TemplateDataUltra Instance1
+CameraProximityEvaluatorData Instance0
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ForwardOffset 0.0
+	Size::Vec3
+		x 3.0
+		y 1.0
+		z 3.0
+	Offset::Vec3
+		x 0.0
+		y 0.0
+		z 0.0
+	InnerRadiusDirection::Vec3
+		x 0.0
+		y 0.0
+		z 5.0
+	InnerRadius 3.0
+EmitterTemplateData Instance1
+	$::DataContainer
+	RootProcessor Instance16
+	MaxCount 20
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 0.0
+	TimeScale 1.0
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Quad
+	EmittableAlignment EmittableAlignment_MotionStretch
+	MotionStretchMultiplier 5.0
+	MotionStretchLengthClamp 100.0
+	Mesh *nullGuid*
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 1.0
+	SoftParticlesFadeDistanceMultiplier 0.0
+	LightWrapAroundFactor 0.5
+	BentNormalFactor 1.0
+	LightMultiplier 1.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 0.800000011920929
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 0.0
+	MinScreenArea 1.0
+	MeshCullingDistance 0.0
+	DistanceScaleLength 0.0
+	DistanceScaleNearValue 1.0
+	DistanceScaleFarValue 1.0
+	SpeedNormalizationValue 10.0
+	WindSpeedNormalizationValue 10.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 1.0
+	CullFadeNearRange 1.0
+	CullFadeFarDistance 0.0
+	CullFadeFarRange 0.0
+	RepeatParticleSpawning False
+	FollowSpawnSource False
+	KillParticlesWithEmitter False
+	ExclusionVolumeCullEnable True
+	Emissive True
+	Opaque False
+	ForceNiceSorting False
+	LocalSpace False
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes False
+	FogFade True
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 True
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable True
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter FX/GlobalEffectParameterList/72d34f99-01c1-4739-9398-5af641d1897f
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -3.4745757579803467
+		w 3.454575777053833
+	MinClamp 0.0
+	MaxClamp 1.0
+SpawnColorRandomData Instance3
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance10
+		EvaluatorInput EfOne
+	Color0::Vec3
+		x 2.0
+		y 2.0
+		z 2.0
+	Color1::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+UpdateCameraProximityData Instance4
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance3
+		EvaluatorInput EfNormTime
+	ForwardOffset 2.5
+	Size::Vec3
+		x 1.5
+		y 1.0
+		z 1.5
+UpdateColorData Instance5
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance4
+		EvaluatorInput EfNormTime
+	Color::Vec3
+		x 0.5
+		y 0.5
+		z 0.5
+RandomEvaluatorData Instance6
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.5
+RandomEvaluatorData Instance7
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 4.0
+	Min 0.0
+RandomEvaluatorData Instance8
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.699999988079071
+SpawnAnimationData Instance9
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance21
+		EvaluatorInput EfOne
+	AnimationSpeed 0.0
+	BasedOnLifetime False
+SpawnAnimationFrameData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance7
+		NextProcessor Instance9
+		EvaluatorInput EfOne
+	AnimationFrame 1
+SpawnDirectionData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfOne
+	DirectionFromEmitterOrigin 1.0
+	InheritSpeedAmount 1.0
+	InheritSpeedSmoothingFactor 0.0
+	InheritSpeedRandomness 0.0
+	InheritSpeedAndDirectionFromEmitter False
+SpawnPositionData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance0
+		NextProcessor Instance14
+		EvaluatorInput EfOne
+SpawnRateData Instance13
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance15
+		EvaluatorInput EfNormWindSpeed
+	SpawnRate 75.0
+	DistributeOverTime True
+	DistributeOverDistance False
+SpawnSizeData Instance14
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance6
+		NextProcessor Instance20
+		EvaluatorInput EfOne
+	Size 0.01600000075995922
+SpawnSpeedData Instance15
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance8
+		NextProcessor Instance11
+		EvaluatorInput EfOne
+	Speed 0.5
+UpdateAgeData Instance16
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance13
+		EvaluatorInput EfOne
+	Lifetime 1.0
+	RandomLifetimeScale 0.25
+	MaxFactor 1.0
+UpdateLinearVelocityData Instance17
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor *nullGuid*
+		EvaluatorInput EfNormTime
+UpdateOrientationData Instance18
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance17
+		EvaluatorInput EfNormTime
+UpdateSizeData Instance19
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance18
+		EvaluatorInput EfNormTime
+	Pivot::Vec2
+		x 0.0
+		y 0.0
+UpdateTextureCoordsData Instance20
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance5
+		EvaluatorInput EfNormTime
+	BaseTexture FX/Textures/Ambient/snow_flakes/c21a0c78-09ec-aa36-ef75-364217d175af
+	NormalTexture Systems/Emitter/DefaultNormalTexture/ffdd9e47-30b0-4c9e-9539-2f6240c340cc
+UpdateTransparencyData Instance21
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance19
+		EvaluatorInput EfNormTime
+	CullThreshold 0.20000000298023224

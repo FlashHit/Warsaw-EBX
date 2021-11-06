@@ -1,0 +1,178 @@
+ScalableEmitterDocument e94323a4-4bf4-47f2-a58d-18054f0a8113
+	$::EmitterDocument
+		$::EmitterAsset
+			$::Asset
+				$::DataContainer
+				Name *nullString*
+	TemplateDataLow Instance0
+	TemplateDataMedium Instance0
+	TemplateDataHigh Instance0
+	TemplateDataUltra Instance0
+EmitterTemplateData Instance0
+	$::DataContainer
+	RootProcessor Instance11
+	MaxCount 4
+	WorldAlignmentDirection::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+	Lifetime 0.75
+	TimeScale 3.0
+	LifetimeFrameCount 0
+	EmittableType EmittableType_Point
+	EmittableAlignment EmittableAlignment_Screen
+	MotionStretchMultiplier 1.0
+	MotionStretchLengthClamp 100.0
+	Mesh *nullGuid*
+	VertexPixelLightingBlendFactor 0.0
+	GlobalLocalNormalBlendFactor 0.0
+	SoftParticlesFadeDistanceMultiplier 0.0
+	LightWrapAroundFactor 0.5
+	BentNormalFactor 1.0
+	LightMultiplier 1.0
+	BendingFactor 0.0
+	CameraBias 0.0
+	Shader::SurfaceShaderInstanceDataStruct
+		Shader *nullGuid*
+		BoolParameters *nullArray*
+		VectorParameters *nullArray*
+		VectorArrayParameters *nullArray*
+		TextureParameters *nullArray*
+	EmitterDrawOrder EmitterDrawOrder_Default
+	ParticleCullingFactor 0.800000011920929
+	MinSpawnDistance 0.0
+	MaxSpawnDistance 0.0
+	MinScreenArea 1.0
+	MeshCullingDistance 0.0
+	DistanceScaleLength 500.0
+	DistanceScaleNearValue 1.0
+	DistanceScaleFarValue 3.0
+	SpeedNormalizationValue 50.0
+	WindSpeedNormalizationValue 50.0
+	PerParticleEffectParameters *nullArray*
+	CullFadeNearDistance 0.0
+	CullFadeNearRange 0.0
+	CullFadeFarDistance 0.0
+	CullFadeFarRange 0.0
+	RepeatParticleSpawning False
+	FollowSpawnSource False
+	KillParticlesWithEmitter False
+	ExclusionVolumeCullEnable False
+	Emissive False
+	Opaque True
+	ForceNiceSorting False
+	LocalSpace False
+	CameraSpace False
+	TransparencySunShadowEnable False
+	CastPlanarReflectionEnable False
+	ForceFullRes False
+	FogFade True
+	AcceptGlobalParameter1 False
+	AcceptGlobalParameter2 False
+	AcceptGlobalParameter3 False
+	UseOfCustomParamRandomSpawnValuesEnabled False
+	EmitterWindEvaluationEnable False
+	EmittableWindEvaluationEnable False
+	GroupEmittersWithSameBaseTextureOnly False
+PolynomialData Instance1
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	ScaleValue 1.0
+	Coefficients::Vec4
+		x 0.0
+		y 0.0
+		z -3.2689080238342285
+		w 0.9509664177894592
+	MinClamp 0.0
+	MaxClamp 1.0
+SphereEvaluatorData Instance2
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Radius 0.10000000149011612
+	Scale::Vec3
+		x 1.0
+		y 1.0
+		z 1.0
+	Pivot::Vec3
+		x 0.0
+		y 1.0
+		z 0.0
+AirResistanceData Instance3
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance1
+		NextProcessor Instance5
+		EvaluatorInput EfNormTime
+	DragFactor 6.0
+EmitterData Instance4
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance12
+		EvaluatorInput EfNormTime
+	EmitterAssets::array
+		member(0) xp4/fx/vehicles/metalstorm/fx_metalstorm_destruction/em_metalstorm_destruction_thinsmoke_child/23299c5e-8777-48d1-9273-0717fbc149c7
+GravityData Instance5
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance4
+		EvaluatorInput EfNormTime
+	Gravity 3.0
+	PerParticleRandomness 0.0
+RandomEvaluatorData Instance6
+	$::EvaluatorData
+		$::DataContainer
+		Parameter *nullGuid*
+	Max 1.0
+	Min 0.4000000059604645
+SpawnDirectionData Instance7
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance8
+		EvaluatorInput EfOne
+	DirectionFromEmitterOrigin 1.0
+	InheritSpeedAmount 1.0
+	InheritSpeedSmoothingFactor 0.0
+	InheritSpeedRandomness 0.0
+	InheritSpeedAndDirectionFromEmitter False
+SpawnPositionData Instance8
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance2
+		NextProcessor Instance10
+		EvaluatorInput EfOne
+SpawnRateData Instance9
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance7
+		EvaluatorInput EfOne
+	SpawnRate 50000.0
+	DistributeOverTime True
+	DistributeOverDistance False
+SpawnSpeedData Instance10
+	$::ProcessorData
+		$::DataContainer
+		Pre Instance6
+		NextProcessor Instance3
+		EvaluatorInput EfOne
+	Speed 20.0
+UpdateAgeData Instance11
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor Instance9
+		EvaluatorInput EfOne
+	Lifetime 1.0
+	RandomLifetimeScale 0.0
+	MaxFactor 1.0
+UpdateLinearVelocityData Instance12
+	$::ProcessorData
+		$::DataContainer
+		Pre *nullGuid*
+		NextProcessor *nullGuid*
+		EvaluatorInput EfNormTime
