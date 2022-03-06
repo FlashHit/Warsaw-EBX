@@ -17,14 +17,14 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						member(1)::PropertyConnection
 							Source 124982FF-6E02-42DA-AB7B-C763F9511A60
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source 124982FF-6E02-42DA-AB7B-C763F9511A60
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 901540267
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance5
@@ -34,63 +34,63 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance8
 						Target 124982FF-6E02-42DA-AB7B-C763F9511A60
 						SourceEvent::EventSpec
-							Id -1157191321
+							Id -1157191321 (OnSuccess)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance8
 						Target 124982FF-6E02-42DA-AB7B-C763F9511A60
 						SourceEvent::EventSpec
-							Id -1434137146
+							Id -1434137146 (OnFail)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance5
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -568030115
+							Id -568030115 (StartFire)
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -639132411
+							Id -639132411 (StopFire)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance7
 						Target Instance9
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance5
 						Target Instance9
 						SourceEvent::EventSpec
-							Id -639132411
+							Id -639132411 (StopFire)
 						TargetEvent::EventSpec
-							Id -1514204100
+							Id -1514204100 (Select1)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance5
 						Target Instance9
 						SourceEvent::EventSpec
-							Id -568030115
+							Id -568030115 (StartFire)
 						TargetEvent::EventSpec
 							Id -1514204099
 						TargetType EventConnectionTargetType_Server
@@ -98,7 +98,7 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance9
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 177557
+							Id 177557 (0)
 						TargetEvent::EventSpec
 							Id 73992420
 						TargetType EventConnectionTargetType_Server
@@ -106,15 +106,15 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance3
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 1920007028
+							Id 1920007028 (FireStopped)
 						TargetType EventConnectionTargetType_Server
 					member(10)::EventConnection
 						Source Instance10
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -568030115
+							Id -568030115 (StartFire)
 						TargetEvent::EventSpec
 							Id -1536760158
 						TargetType EventConnectionTargetType_Client
@@ -122,7 +122,7 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance5
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -639132411
+							Id -639132411 (StopFire)
 						TargetEvent::EventSpec
 							Id 355256826
 						TargetType EventConnectionTargetType_NetworkedClient
@@ -130,7 +130,7 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance5
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -639132411
+							Id -639132411 (StopFire)
 						TargetEvent::EventSpec
 							Id -522755758
 						TargetType EventConnectionTargetType_Server
@@ -138,15 +138,15 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance9
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 177556
+							Id 177556 (1)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Server
 					member(14)::EventConnection
 						Source Instance1
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
 							Id 1931519676
 						TargetType EventConnectionTargetType_Server
@@ -154,31 +154,31 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance1
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(16)::EventConnection
 						Source Instance1
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(17)::EventConnection
 						Source Instance1
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(18)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
 							Id -601942937
 						TargetType EventConnectionTargetType_Server
@@ -186,7 +186,7 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 177557
+							Id 177557 (0)
 						TargetEvent::EventSpec
 							Id -522755758
 						TargetType EventConnectionTargetType_Server
@@ -194,7 +194,7 @@ SpatialPrefabBlueprint 3B00E399-5544-464F-8A8C-29881B053ED6 #primary instance
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 177556
+							Id 177556 (1)
 						TargetEvent::EventSpec
 							Id -522755758
 						TargetType EventConnectionTargetType_Server
@@ -340,14 +340,14 @@ InterfaceDescriptorData Instance5
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -568030115
+			Id -568030115 (StartFire)
 		member(1)::DynamicEvent
-			Id -639132411
+			Id -639132411 (StopFire)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id 1931519676
 		member(1)::DynamicEvent
-			Id 1920007028
+			Id 1920007028 (FireStopped)
 		member(2)::DynamicEvent
 			Id 73992420
 	InputLinks *nullArray*
@@ -411,11 +411,11 @@ SequenceEntityData Instance10
 	Events::array
 		member(0)::SequenceEventData
 			Event::EventSpec
-				Id -568030115
+				Id -568030115 (StartFire)
 			Time 132
 		member(1)::SequenceEventData
 			Event::EventSpec
-				Id 232316407
+				Id 232316407 (Pause)
 			Time 4984
 	SequenceStartTime 0
 	SequenceLength 10000

@@ -12,25 +12,25 @@ VehicleBlueprint BDABC122-90C2-F5E5-CADA-98092F9F1B33 #primary instance
 							Source Instance26
 							Target Instance21
 							SourceFieldId -60095461
-							TargetFieldId -789110296
+							TargetFieldId -789110296 (ControllableSweepRadius)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance26
 							Target Instance21
 							SourceFieldId -60095461
-							TargetFieldId -1437285242
+							TargetFieldId -1437285242 (MineSweepRadius)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance18
 							Target Instance24
-							SourceFieldId -1756643285
-							TargetFieldId -2024647575
+							SourceFieldId -1756643285 (WorldTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source 18178664-DDBD-55C8-8D69-3E05030CA399
 							Target Instance0
-							SourceFieldId 2089309528
-							TargetFieldId 2089309528
+							SourceFieldId 2089309528 (Team)
+							TargetFieldId 2089309528 (Team)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface *nullGuid*
@@ -40,31 +40,31 @@ VehicleBlueprint BDABC122-90C2-F5E5-CADA-98092F9F1B33 #primary instance
 						Source Instance21
 						Target Instance21
 						SourceEvent::EventSpec
-							Id 978476936
+							Id 978476936 (OnTriggerSweep)
 						TargetEvent::EventSpec
-							Id 288419722
+							Id 288419722 (NotifyClientOnSweep)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(1)::EventConnection
 						Source 18178664-DDBD-55C8-8D69-3E05030CA399
 						Target Instance24
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(2)::EventConnection
 						Source Instance21
 						Target Instance24
 						SourceEvent::EventSpec
-							Id 978476936
+							Id 978476936 (OnTriggerSweep)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(3)::EventConnection
 						Source Instance21
 						Target Instance24
 						SourceEvent::EventSpec
-							Id -998253070
+							Id -998253070 (OnHasSpottedControllable)
 						TargetEvent::EventSpec
 							Id -1700286782
 						TargetType EventConnectionTargetType_NetworkedClient

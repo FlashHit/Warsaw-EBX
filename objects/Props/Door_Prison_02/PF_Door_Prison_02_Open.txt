@@ -12,25 +12,25 @@ SpatialPrefabBlueprint B6F09686-25AF-4A9B-82D6-E782A13BD2C9 #primary instance
 							Source Instance14
 							Target Instance0
 							SourceFieldId -1567251396
-							TargetFieldId 443997333
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 35EBFBA7-26EB-4B52-BF99-B898F1137D7C
 							Target Instance0
-							SourceFieldId 632505285
-							TargetFieldId -409930682
+							SourceFieldId 632505285 (CloseDoor)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source 7AF9079D-7838-4605-A6C0-3A2FFDA4948D
 							Target Instance0
-							SourceFieldId -2137689625
-							TargetFieldId -409930682
+							SourceFieldId -2137689625 (OpenDoor)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance14
 							Target Instance0
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -50,33 +50,33 @@ SpatialPrefabBlueprint B6F09686-25AF-4A9B-82D6-E782A13BD2C9 #primary instance
 						Source Instance14
 						Target 7AF9079D-7838-4605-A6C0-3A2FFDA4948D
 						SourceEvent::EventSpec
-							Id -2137689625
+							Id -2137689625 (OpenDoor)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance14
 						Target 35EBFBA7-26EB-4B52-BF99-B898F1137D7C
 						SourceEvent::EventSpec
-							Id 632505285
+							Id 632505285 (CloseDoor)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance14
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance1
@@ -204,7 +204,7 @@ ReferenceObjectData Instance1
 TransformPartPropertyTrackData Instance2
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_TranslationY
@@ -219,7 +219,7 @@ TransformPartPropertyTrackData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_RotationX
@@ -234,7 +234,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_RotationY
@@ -249,7 +249,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_RotationX
@@ -264,7 +264,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_TranslationX
@@ -279,7 +279,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_TranslationX
@@ -294,7 +294,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_TranslationZ
@@ -309,7 +309,7 @@ TransformPartPropertyTrackData Instance8
 TransformPartPropertyTrackData Instance9
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_TranslationY
@@ -324,7 +324,7 @@ TransformPartPropertyTrackData Instance9
 TransformPartPropertyTrackData Instance10
 	$::PropertyTrackData
 		$::DataContainer
-		Id 632505285
+		Id 632505285 (CloseDoor)
 		Times *nullArray*
 	Resource 4159744059260404839 #objects/props/door_prison_02/animtrackdata/35ebfba7-26eb-4b52-bf99-b898f1137d7c_closedoor
 	TransformPart TransformPart_RotationZ
@@ -339,7 +339,7 @@ TransformPartPropertyTrackData Instance10
 TransformPartPropertyTrackData Instance11
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_TranslationZ
@@ -354,7 +354,7 @@ TransformPartPropertyTrackData Instance11
 TransformPartPropertyTrackData Instance12
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_RotationZ
@@ -369,7 +369,7 @@ TransformPartPropertyTrackData Instance12
 TransformPartPropertyTrackData Instance13
 	$::PropertyTrackData
 		$::DataContainer
-		Id -2137689625
+		Id -2137689625 (OpenDoor)
 		Times *nullArray*
 	Resource 3174688907481041181 #objects/props/door_prison_02/animtrackdata/7af9079d-7838-4605-a6c0-3a2ffda4948d_opendoor
 	TransformPart TransformPart_RotationY
@@ -393,15 +393,15 @@ InterfaceDescriptorData Instance14
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 632505285
+			Id 632505285 (CloseDoor)
 		member(1)::DynamicEvent
-			Id -2137689625
+			Id -2137689625 (OpenDoor)
 		member(2)::DynamicEvent
-			Id -1980967410
+			Id -1980967410 (MoveToLastHealthState)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

@@ -11,14 +11,14 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						member(0)::PropertyConnection
 							Source Instance5
 							Target Instance2
-							SourceFieldId 936870923
+							SourceFieldId 936870923 (CastToFloat)
 							TargetFieldId 1394151663
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance0
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 176040160
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 176040160 (BoolValue)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
@@ -376,49 +376,49 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						Source Instance3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance3
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance4
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance4
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance1
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -436862436
+							Id -436862436 (OnCommanderEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance1
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -924319660
+							Id -924319660 (OnCommanderExit)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance1
@@ -426,7 +426,7 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1231147878
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance1
@@ -434,7 +434,7 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1207123720
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance1
@@ -442,7 +442,7 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1723585402
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_Client
 					member(9)::EventConnection
 						Source Instance1
@@ -450,15 +450,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -486991903
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(10)::EventConnection
 						Source Instance37
 						Target Instance81
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(11)::EventConnection
 						Source Instance1
@@ -466,15 +466,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 553183508
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(12)::EventConnection
 						Source Instance52
 						Target Instance111
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(13)::EventConnection
 						Source Instance1
@@ -482,15 +482,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1296274194
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(14)::EventConnection
 						Source Instance61
 						Target Instance120
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(15)::EventConnection
 						Source Instance1
@@ -498,15 +498,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 2065368065
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(16)::EventConnection
 						Source Instance11
 						Target Instance109
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(17)::EventConnection
 						Source Instance1
@@ -514,15 +514,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -219207608
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(18)::EventConnection
 						Source Instance34
 						Target Instance82
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(19)::EventConnection
 						Source Instance1
@@ -530,15 +530,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1777028138
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(20)::EventConnection
 						Source Instance14
 						Target Instance90
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(21)::EventConnection
 						Source Instance1
@@ -546,15 +546,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1560024719
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(22)::EventConnection
 						Source Instance43
 						Target Instance114
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(23)::EventConnection
 						Source Instance1
@@ -562,15 +562,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1821768965
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(24)::EventConnection
 						Source Instance12
 						Target Instance88
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(25)::EventConnection
 						Source Instance1
@@ -578,15 +578,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1990559371
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(26)::EventConnection
 						Source Instance60
 						Target Instance113
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(27)::EventConnection
 						Source Instance1
@@ -594,15 +594,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -98552866
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(28)::EventConnection
 						Source Instance7
 						Target Instance103
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(29)::EventConnection
 						Source Instance1
@@ -610,15 +610,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -668266953
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(30)::EventConnection
 						Source Instance9
 						Target Instance72
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(31)::EventConnection
 						Source Instance1
@@ -626,15 +626,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 784324139
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(32)::EventConnection
 						Source Instance26
 						Target Instance118
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(33)::EventConnection
 						Source Instance1
@@ -642,15 +642,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 2015178964
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(34)::EventConnection
 						Source Instance27
 						Target Instance69
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(35)::EventConnection
 						Source Instance1
@@ -658,15 +658,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 171572166
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(36)::EventConnection
 						Source Instance47
 						Target Instance119
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(37)::EventConnection
 						Source Instance1
@@ -674,15 +674,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 2003096466
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(38)::EventConnection
 						Source Instance21
 						Target Instance86
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(39)::EventConnection
 						Source Instance1
@@ -690,15 +690,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 581470038
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(40)::EventConnection
 						Source Instance23
 						Target Instance78
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(41)::EventConnection
 						Source Instance1
@@ -706,15 +706,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1926993717
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(42)::EventConnection
 						Source Instance54
 						Target Instance97
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(43)::EventConnection
 						Source Instance1
@@ -722,15 +722,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1475442731
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(44)::EventConnection
 						Source Instance30
 						Target Instance106
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(45)::EventConnection
 						Source Instance1
@@ -738,15 +738,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -2061495986
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(46)::EventConnection
 						Source Instance29
 						Target Instance100
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(47)::EventConnection
 						Source Instance1
@@ -754,15 +754,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1043230718
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(48)::EventConnection
 						Source Instance13
 						Target Instance110
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(49)::EventConnection
 						Source Instance1
@@ -770,15 +770,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -605150019
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(50)::EventConnection
 						Source Instance28
 						Target Instance95
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(51)::EventConnection
 						Source Instance1
@@ -786,15 +786,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -260593209
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(52)::EventConnection
 						Source Instance46
 						Target Instance94
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(53)::EventConnection
 						Source Instance1
@@ -802,15 +802,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 170688633
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(54)::EventConnection
 						Source Instance41
 						Target Instance77
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(55)::EventConnection
 						Source Instance1
@@ -818,15 +818,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -954694325
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(56)::EventConnection
 						Source Instance51
 						Target Instance76
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(57)::EventConnection
 						Source Instance1
@@ -834,15 +834,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 400113344
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(58)::EventConnection
 						Source Instance42
 						Target Instance91
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(59)::EventConnection
 						Source Instance1
@@ -850,15 +850,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 323342752
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(60)::EventConnection
 						Source Instance45
 						Target Instance98
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(61)::EventConnection
 						Source Instance1
@@ -866,15 +866,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1774212314
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(62)::EventConnection
 						Source Instance25
 						Target Instance107
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(63)::EventConnection
 						Source Instance1
@@ -882,15 +882,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 335625962
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(64)::EventConnection
 						Source Instance50
 						Target Instance115
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(65)::EventConnection
 						Source Instance1
@@ -898,15 +898,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -763890096
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(66)::EventConnection
 						Source Instance62
 						Target Instance66
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(67)::EventConnection
 						Source Instance1
@@ -914,15 +914,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1603795100
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(68)::EventConnection
 						Source Instance31
 						Target Instance63
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(69)::EventConnection
 						Source Instance1
@@ -930,15 +930,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1285762951
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(70)::EventConnection
 						Source Instance44
 						Target Instance85
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(71)::EventConnection
 						Source Instance1
@@ -946,15 +946,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -2007771373
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(72)::EventConnection
 						Source Instance22
 						Target Instance87
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(73)::EventConnection
 						Source Instance1
@@ -962,15 +962,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1060783276
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(74)::EventConnection
 						Source Instance6
 						Target Instance96
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(75)::EventConnection
 						Source Instance1
@@ -978,15 +978,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -2080596017
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(76)::EventConnection
 						Source Instance49
 						Target Instance93
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(77)::EventConnection
 						Source Instance1
@@ -994,15 +994,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 436234929
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(78)::EventConnection
 						Source Instance36
 						Target Instance73
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(79)::EventConnection
 						Source Instance1
@@ -1010,15 +1010,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1684293078
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(80)::EventConnection
 						Source Instance10
 						Target Instance105
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(81)::EventConnection
 						Source Instance1
@@ -1026,15 +1026,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1550570583
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(82)::EventConnection
 						Source Instance15
 						Target Instance92
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(83)::EventConnection
 						Source Instance1
@@ -1042,15 +1042,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1854440729
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(84)::EventConnection
 						Source Instance55
 						Target Instance84
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(85)::EventConnection
 						Source Instance1
@@ -1058,15 +1058,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1218776904
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(86)::EventConnection
 						Source Instance32
 						Target Instance79
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(87)::EventConnection
 						Source Instance1
@@ -1074,15 +1074,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1576595986
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(88)::EventConnection
 						Source Instance40
 						Target Instance89
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(89)::EventConnection
 						Source Instance1
@@ -1090,15 +1090,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1018693118
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(90)::EventConnection
 						Source Instance39
 						Target Instance70
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(91)::EventConnection
 						Source Instance1
@@ -1106,15 +1106,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 427834732
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(92)::EventConnection
 						Source Instance38
 						Target Instance116
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(93)::EventConnection
 						Source Instance1
@@ -1122,15 +1122,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 368713698
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(94)::EventConnection
 						Source Instance8
 						Target Instance65
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(95)::EventConnection
 						Source Instance1
@@ -1138,15 +1138,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 459577233
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(96)::EventConnection
 						Source Instance48
 						Target Instance71
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(97)::EventConnection
 						Source Instance1
@@ -1154,15 +1154,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1790963999
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(98)::EventConnection
 						Source Instance33
 						Target Instance102
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(99)::EventConnection
 						Source Instance1
@@ -1170,15 +1170,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 736054107
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(100)::EventConnection
 						Source Instance19
 						Target Instance80
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(101)::EventConnection
 						Source Instance1
@@ -1186,15 +1186,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1888016942
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(102)::EventConnection
 						Source Instance17
 						Target Instance104
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(103)::EventConnection
 						Source Instance1
@@ -1202,15 +1202,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1476902739
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(104)::EventConnection
 						Source Instance59
 						Target Instance67
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(105)::EventConnection
 						Source Instance1
@@ -1218,15 +1218,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -818588495
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(106)::EventConnection
 						Source Instance20
 						Target Instance112
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(107)::EventConnection
 						Source Instance1
@@ -1234,15 +1234,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1647324302
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(108)::EventConnection
 						Source Instance24
 						Target Instance99
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(109)::EventConnection
 						Source Instance1
@@ -1250,15 +1250,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -727691384
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(110)::EventConnection
 						Source Instance53
 						Target Instance64
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(111)::EventConnection
 						Source Instance1
@@ -1266,15 +1266,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -936922965
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(112)::EventConnection
 						Source Instance58
 						Target Instance74
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(113)::EventConnection
 						Source Instance1
@@ -1282,15 +1282,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 26868054
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(114)::EventConnection
 						Source Instance57
 						Target Instance101
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(115)::EventConnection
 						Source Instance1
@@ -1298,15 +1298,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1683621283
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(116)::EventConnection
 						Source Instance35
 						Target Instance75
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(117)::EventConnection
 						Source Instance1
@@ -1314,15 +1314,15 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -1708417542
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(118)::EventConnection
 						Source Instance18
 						Target Instance117
 						SourceEvent::EventSpec
-							Id -332763188
+							Id -332763188 (OnTriggerOnlyForSpecifiedTeam)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(119)::EventConnection
 						Source Instance1
@@ -1330,7 +1330,7 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id -244021588
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(120)::EventConnection
 						Source Instance1
@@ -1338,7 +1338,7 @@ LogicPrefabBlueprint BD366DD1-B5C8-49B6-9E33-5FEEA0DA77B6 #primary instance
 						SourceEvent::EventSpec
 							Id 1097933754
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance3
@@ -1481,9 +1481,9 @@ InterfaceDescriptorData Instance1
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -436862436
+			Id -436862436 (OnCommanderEnter)
 		member(1)::DynamicEvent
-			Id -924319660
+			Id -924319660 (OnCommanderExit)
 		member(2)::DynamicEvent
 			Id -486991903
 		member(3)::DynamicEvent

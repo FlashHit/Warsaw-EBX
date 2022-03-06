@@ -11,38 +11,38 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						member(0)::PropertyConnection
 							Source Instance30
 							Target Instance4
-							SourceFieldId 230113385
-							TargetFieldId 193450867
+							SourceFieldId 230113385 (Raise)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance29
 							Target Instance4
-							SourceFieldId 218180838
-							TargetFieldId 193450864
+							SourceFieldId 218180838 (Lower)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance28
 							Target Instance4
-							SourceFieldId 193458192
-							TargetFieldId 193450870
+							SourceFieldId 193458192 (Hit)
+							TargetFieldId 193450870 (In4)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance24
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId -370677942
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -370677942 (AimAssistEnabled)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -409930682
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance5
 							Target Instance0
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance27
 					Flags 3
@@ -51,95 +51,95 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						Source Instance25
 						Target Instance28
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance28
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance30
 						Target Instance26
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance26
 						Target Instance29
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source Instance30
 						Target Instance25
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(5)::EventConnection
 						Source Instance29
 						Target Instance25
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(6)::EventConnection
 						Source Instance27
 						Target Instance30
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(7)::EventConnection
 						Source Instance25
 						Target Instance26
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(8)::EventConnection
 						Source Instance27
 						Target Instance26
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(9)::EventConnection
 						Source Instance26
 						Target Instance26
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(10)::EventConnection
 						Source Instance25
 						Target Instance25
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(11)::EventConnection
 						Source Instance25
 						Target Instance27
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id -651525297
 						TargetType EventConnectionTargetType_ClientAndServer
@@ -147,7 +147,7 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						Source Instance30
 						Target Instance27
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
 							Id 71323384
 						TargetType EventConnectionTargetType_ClientAndServer
@@ -155,9 +155,9 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						Source Instance30
 						Target Instance24
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(14)::EventConnection
 						Source Instance1
@@ -165,7 +165,7 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						SourceEvent::EventSpec
 							Id -1275054106
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(15)::EventConnection
 						Source Instance1
@@ -173,7 +173,7 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						SourceEvent::EventSpec
 							Id -1275054106
 						TargetEvent::EventSpec
-							Id 1223765815
+							Id 1223765815 (Finished)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(16)::EventConnection
 						Source Instance1
@@ -181,23 +181,23 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						SourceEvent::EventSpec
 							Id -1275054106
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(17)::EventConnection
 						Source Instance27
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Server
 					member(18)::EventConnection
 						Source Instance27
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id -1001523010
+							Id -1001523010 (Revive)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(19)::EventConnection
 						Source Instance1
@@ -205,15 +205,15 @@ SpatialPrefabBlueprint B15638F6-EC45-4686-A417-5411A5E51913 #primary instance
 						SourceEvent::EventSpec
 							Id -1275054106
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Server
 					member(20)::EventConnection
 						Source Instance27
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance28
@@ -528,7 +528,7 @@ UnderFireTriggerEntityData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_TranslationX
@@ -543,7 +543,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_TranslationY
@@ -558,7 +558,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_TranslationX
@@ -573,7 +573,7 @@ TransformPartPropertyTrackData Instance8
 TransformPartPropertyTrackData Instance9
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_RotationX
@@ -588,7 +588,7 @@ TransformPartPropertyTrackData Instance9
 TransformPartPropertyTrackData Instance10
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_RotationZ
@@ -603,7 +603,7 @@ TransformPartPropertyTrackData Instance10
 TransformPartPropertyTrackData Instance11
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_TranslationZ
@@ -618,7 +618,7 @@ TransformPartPropertyTrackData Instance11
 TransformPartPropertyTrackData Instance12
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_RotationZ
@@ -633,7 +633,7 @@ TransformPartPropertyTrackData Instance12
 TransformPartPropertyTrackData Instance13
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_RotationY
@@ -648,7 +648,7 @@ TransformPartPropertyTrackData Instance13
 TransformPartPropertyTrackData Instance14
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_RotationY
@@ -663,7 +663,7 @@ TransformPartPropertyTrackData Instance14
 TransformPartPropertyTrackData Instance15
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_TranslationY
@@ -678,7 +678,7 @@ TransformPartPropertyTrackData Instance15
 TransformPartPropertyTrackData Instance16
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_TranslationZ
@@ -693,7 +693,7 @@ TransformPartPropertyTrackData Instance16
 TransformPartPropertyTrackData Instance17
 	$::PropertyTrackData
 		$::DataContainer
-		Id 230113385
+		Id 230113385 (Raise)
 		Times *nullArray*
 	Resource 17791217773762859485 #levels/mp/mp_playground/levelprefabs/animtrackdata/d660f6fd-e471-4926-9ffb-1d424971675f_raise
 	TransformPart TransformPart_RotationX
@@ -708,7 +708,7 @@ TransformPartPropertyTrackData Instance17
 TransformPartPropertyTrackData Instance18
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_TranslationY
@@ -723,7 +723,7 @@ TransformPartPropertyTrackData Instance18
 TransformPartPropertyTrackData Instance19
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_RotationZ
@@ -738,7 +738,7 @@ TransformPartPropertyTrackData Instance19
 TransformPartPropertyTrackData Instance20
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_TranslationX
@@ -753,7 +753,7 @@ TransformPartPropertyTrackData Instance20
 TransformPartPropertyTrackData Instance21
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_TranslationZ
@@ -768,7 +768,7 @@ TransformPartPropertyTrackData Instance21
 TransformPartPropertyTrackData Instance22
 	$::PropertyTrackData
 		$::DataContainer
-		Id 218180838
+		Id 218180838 (Lower)
 		Times *nullArray*
 	Resource 8877873247690080225 #levels/mp/mp_playground/levelprefabs/animtrackdata/079b38da-d13f-480b-aa0e-2c0afd3d2d49_lower
 	TransformPart TransformPart_RotationX
@@ -783,7 +783,7 @@ TransformPartPropertyTrackData Instance22
 TransformPartPropertyTrackData Instance23
 	$::PropertyTrackData
 		$::DataContainer
-		Id 193458192
+		Id 193458192 (Hit)
 		Times *nullArray*
 	Resource 8984461634243814289 #levels/mp/mp_playground/levelprefabs/animtrackdata/01e148c6-87d9-416f-894b-354d6b508bba_hit
 	TransformPart TransformPart_RotationY
@@ -828,12 +828,12 @@ InterfaceDescriptorData Instance27
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -559281700
+			Id -559281700 (Activate)
 		member(1)::DynamicEvent
-			Id 1928776733
+			Id 1928776733 (Deactivate)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 1223765815
+			Id 1223765815 (Finished)
 		member(1)::DynamicEvent
 			Id -651525297
 		member(2)::DynamicEvent
@@ -850,7 +850,7 @@ SequenceEntityData Instance28
 	Events::array
 		member(0)::SequenceEventData
 			Event::EventSpec
-				Id -162375621
+				Id -162375621 (EventDown)
 			Time 200
 	SequenceStartTime 0
 	SequenceLength 200

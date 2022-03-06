@@ -11,32 +11,32 @@ SpatialPrefabBlueprint 0041E3A7-5AA0-4FE3-98EE-A520AB6AA6B7 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target 08CA6B9A-C096-43C3-9A1E-03582D417C94
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target C22360B1-1A78-4D56-98E4-B0A4DE34B977
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance3
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance5
 							Target Instance3
-							SourceFieldId 2662400
-							TargetFieldId 193450864
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance5
@@ -46,41 +46,41 @@ SpatialPrefabBlueprint 0041E3A7-5AA0-4FE3-98EE-A520AB6AA6B7 #primary instance
 						Source 08CA6B9A-C096-43C3-9A1E-03582D417C94
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(1)::EventConnection
 						Source 08CA6B9A-C096-43C3-9A1E-03582D417C94
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 1037321618
+							Id 1037321618 (SendMessage)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(2)::EventConnection
 						Source 08CA6B9A-C096-43C3-9A1E-03582D417C94
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -640415607
+							Id -640415607 (Consume)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance0
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 586633100
+							Id 586633100 (OnConsumed)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(4)::EventConnection
 						Source Instance0
 						Target FD3B3D5C-1C15-4DF0-AABF-4BAB692B6C66
 						SourceEvent::EventSpec
-							Id 586633100
+							Id 586633100 (OnConsumed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2
@@ -357,7 +357,7 @@ InterfaceDescriptorData Instance5
 			member(0)::DataField
 				Value Boolean True
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents *nullArray*
 	OutputEvents *nullArray*

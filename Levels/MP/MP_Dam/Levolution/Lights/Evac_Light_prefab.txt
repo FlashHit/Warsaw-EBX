@@ -11,13 +11,13 @@ SpatialPrefabBlueprint 43CF56B7-2998-54D5-8500-E1E977097C00 #primary instance
 						member(0)::PropertyConnection
 							Source Instance8
 							Target Instance2
-							SourceFieldId 993287091
-							TargetFieldId -996560163
+							SourceFieldId 993287091 (PropertyTrack_01)
+							TargetFieldId -996560163 (Radius)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance7
-							SourceFieldId 1925266716
+							SourceFieldId 1925266716 (DynamicTransform)
 							TargetFieldId -519008767
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
@@ -28,73 +28,73 @@ SpatialPrefabBlueprint 43CF56B7-2998-54D5-8500-E1E977097C00 #primary instance
 						Source Instance7
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance7
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance4
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance5
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance8
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance8
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance7
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance7
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance7
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance3
@@ -264,7 +264,7 @@ FloatPropertyTrackData Instance6
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 993287091
+			Id 993287091 (PropertyTrack_01)
 			Times::array
 				member(0) 230
 				member(1) 502
@@ -283,11 +283,11 @@ InterfaceDescriptorData Instance7
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id 2089401213
+			Id 2089401213 (Stop)
 		member(2)::DynamicEvent
-			Id -117303631
+			Id -117303631 (Disable)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

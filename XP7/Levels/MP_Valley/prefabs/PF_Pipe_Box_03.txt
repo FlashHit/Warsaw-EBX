@@ -11,68 +11,68 @@ SpatialPrefabBlueprint 30D45E17-B737-4D2F-AE0E-3A3929A60ABD #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance4
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target Instance5
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance7
 							Target D74723DC-3BE5-4613-A13D-A3FF202688CA
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance10
 							Target Instance7
 							SourceFieldId 597527954
-							TargetFieldId 193450867
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance0
 							Target Instance9
-							SourceFieldId 831303279
-							TargetFieldId 177636
+							SourceFieldId 831303279 (NumPlayersInside)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source F12D4FCE-2BEE-4B70-906E-0693083B1AD0
 							Target Instance8
-							SourceFieldId 193453899
-							TargetFieldId 193450864
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance8
 							Target Instance2
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId 193461001
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance8
 							Target Instance7
-							SourceFieldId 193453899
-							TargetFieldId 193450864
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source Instance10
 							Target Instance8
 							SourceFieldId 193461001
-							TargetFieldId 193450867
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance6
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance10
 					Flags 3
@@ -81,7 +81,7 @@ SpatialPrefabBlueprint 30D45E17-B737-4D2F-AE0E-3A3929A60ABD #primary instance
 						Source D74723DC-3BE5-4613-A13D-A3FF202688CA
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
 							Id 446714363
 						TargetType EventConnectionTargetType_Server
@@ -89,41 +89,41 @@ SpatialPrefabBlueprint 30D45E17-B737-4D2F-AE0E-3A3929A60ABD #primary instance
 						Source Instance10
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 2134798598
+							Id 2134798598 (Success)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance10
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 2088662791
+							Id 2088662791 (Fail)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source D74723DC-3BE5-4613-A13D-A3FF202688CA
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(4)::EventConnection
 						Source Instance9
 						Target F12D4FCE-2BEE-4B70-906E-0693083B1AD0
 						SourceEvent::EventSpec
-							Id 2088725063
+							Id 2088725063 (A<=B)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance9
 						Target F12D4FCE-2BEE-4B70-906E-0693083B1AD0
 						SourceEvent::EventSpec
-							Id 193445336
+							Id 193445336 (A>B)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) D74723DC-3BE5-4613-A13D-A3FF202688CA
@@ -460,9 +460,9 @@ InterfaceDescriptorData Instance10
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2134798598
+			Id 2134798598 (Success)
 		member(1)::DynamicEvent
-			Id 2088662791
+			Id 2088662791 (Fail)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id 446714363

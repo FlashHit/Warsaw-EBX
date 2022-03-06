@@ -18,31 +18,31 @@ SpatialPrefabBlueprint E6E24FBF-3077-A4F3-FF33-545513B9FE0C #primary instance
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance1
 							SourceFieldId -794319700
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance11
 							Target 4B69BF1A-CC7D-4B58-84E2-F7C14BBA1D12
 							SourceFieldId -1340351285
-							TargetFieldId 1578117282
+							TargetFieldId 1578117282 (PartCountDestroyedForCollapse)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance0
-							SourceFieldId -1294191458
-							TargetFieldId -2132289043
+							SourceFieldId -1294191458 (Timeline)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance3
 							SourceFieldId 1694030815
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance0
 							SourceFieldId -1936080215
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance11
@@ -53,20 +53,20 @@ SpatialPrefabBlueprint E6E24FBF-3077-A4F3-FF33-545513B9FE0C #primary instance
 						member(7)::PropertyConnection
 							Source Instance11
 							Target 4B69BF1A-CC7D-4B58-84E2-F7C14BBA1D12
-							SourceFieldId 77824521
-							TargetFieldId 77824521
+							SourceFieldId 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
+							TargetFieldId 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance3
 							SourceFieldId 794865716
-							TargetFieldId 901540267
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 							Target Instance0
 							SourceFieldId 1624493570
-							TargetFieldId 901540267
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -93,7 +93,7 @@ SpatialPrefabBlueprint E6E24FBF-3077-A4F3-FF33-545513B9FE0C #primary instance
 						SourceEvent::EventSpec
 							Id -2000007856
 						TargetEvent::EventSpec
-							Id -1911867759
+							Id -1911867759 (PartDestroyed)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 4B69BF1A-CC7D-4B58-84E2-F7C14BBA1D12
@@ -101,7 +101,7 @@ SpatialPrefabBlueprint E6E24FBF-3077-A4F3-FF33-545513B9FE0C #primary instance
 						SourceEvent::EventSpec
 							Id 1314121688
 						TargetEvent::EventSpec
-							Id 397727246
+							Id 397727246 (Collapse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source CF62C954-6C51-4406-AFE6-A6FD2243D4E7
@@ -213,15 +213,15 @@ SpatialPrefabBlueprint E6E24FBF-3077-A4F3-FF33-545513B9FE0C #primary instance
 						SourceEvent::EventSpec
 							Id -394869583
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(16)::EventConnection
 						Source Instance1
 						Target CF62C954-6C51-4406-AFE6-A6FD2243D4E7
 						SourceEvent::EventSpec
-							Id 351212879
+							Id 351212879 (OnCollapse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(17)::EventConnection
 						Source Instance1
@@ -536,7 +536,7 @@ FloatPropertyTrackData Instance10
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id -1294191458
+			Id -1294191458 (Timeline)
 			Times::array
 				member(0) 0
 				member(1) 10000
@@ -568,7 +568,7 @@ InterfaceDescriptorData Instance11
 			member(3)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 77824521
+				Id 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent

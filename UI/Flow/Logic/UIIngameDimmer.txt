@@ -11,32 +11,32 @@ LogicPrefabBlueprint 8971CDD1-80CC-056A-D516-97345A3626C1 #primary instance
 						member(0)::PropertyConnection
 							Source Instance7
 							Target Instance1
-							SourceFieldId 1422740397
-							TargetFieldId 193450867
+							SourceFieldId 1422740397 (FadeOut)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance8
 							Target Instance1
-							SourceFieldId -1778993948
-							TargetFieldId 193450866
+							SourceFieldId -1778993948 (FadeIn)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target Instance6
-							SourceFieldId 193453899
-							TargetFieldId 1708270083
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 1708270083 (Visibility)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 858290427
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 858290427 (InputSelect)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId 177636
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance5
@@ -46,73 +46,73 @@ LogicPrefabBlueprint 8971CDD1-80CC-056A-D516-97345A3626C1 #primary instance
 						Source Instance5
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1778993948
+							Id -1778993948 (FadeIn)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1778993948
+							Id -1778993948 (FadeIn)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance5
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1778993948
+							Id -1778993948 (FadeIn)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance5
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 1422740397
+							Id 1422740397 (FadeOut)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 1422740397
+							Id 1422740397 (FadeOut)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 1422740397
+							Id 1422740397 (FadeOut)
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance5
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 1422740397
+							Id 1422740397 (FadeOut)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance0
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193445336
+							Id 193445336 (A>B)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance0
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 2088725063
+							Id 2088725063 (A<=B)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance8
@@ -147,7 +147,7 @@ FloatPropertyTrackData Instance2
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 1422740397
+			Id 1422740397 (FadeOut)
 			Times::array
 				member(0) 0
 				member(1) 250
@@ -159,7 +159,7 @@ FloatPropertyTrackData Instance3
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id -1778993948
+			Id -1778993948 (FadeIn)
 			Times::array
 				member(0) 0
 				member(1) 250
@@ -183,9 +183,9 @@ InterfaceDescriptorData Instance5
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -1778993948
+			Id -1778993948 (FadeIn)
 		member(1)::DynamicEvent
-			Id 1422740397
+			Id 1422740397 (FadeOut)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

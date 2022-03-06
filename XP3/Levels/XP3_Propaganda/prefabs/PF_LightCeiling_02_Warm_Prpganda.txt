@@ -11,20 +11,20 @@ SpatialPrefabBlueprint 58483AD2-64AB-43CF-95A2-2BD1AAB2C843 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source DE66848A-E334-48A0-AFB3-FD207FFB98B9
 							Target Instance3
-							SourceFieldId -458572566
-							TargetFieldId 193450866
+							SourceFieldId -458572566 (Intensity)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -34,33 +34,33 @@ SpatialPrefabBlueprint 58483AD2-64AB-43CF-95A2-2BD1AAB2C843 #primary instance
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target DE66848A-E334-48A0-AFB3-FD207FFB98B9
 						SourceEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source DE66848A-E334-48A0-AFB3-FD207FFB98B9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance2
 						Target DE66848A-E334-48A0-AFB3-FD207FFB98B9
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -164,11 +164,11 @@ InterfaceDescriptorData Instance2
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -117303631
+			Id -117303631 (Disable)
 		member(1)::DynamicEvent
-			Id 2145977593
+			Id 2145977593 (Flicker)
 		member(2)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -180,5 +180,5 @@ MathOpEntityData Instance3
 					$::DataContainer
 				Flags 426135582
 	Realm Realm_Client
-	Operators::array
-		member(0) 5 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 5

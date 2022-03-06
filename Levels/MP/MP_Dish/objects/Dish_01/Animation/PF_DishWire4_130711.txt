@@ -11,38 +11,38 @@ SpatialPrefabBlueprint 14A91A42-616C-C32D-3CFC-D515B53A88E2 #primary instance
 						member(0)::PropertyConnection
 							Source Instance4
 							Target Instance0
-							SourceFieldId -2132289043
-							TargetFieldId -2132289043
+							SourceFieldId -2132289043 (ExternalTime)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target Instance5
-							SourceFieldId 2662400
-							TargetFieldId 5862146
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance2
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance5
 							Target Instance3
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source AC0D9194-49D8-4939-B97B-0A706D42A8C9
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 453968090
+							SourceFieldId 453968090 (SkinnedModel)
 							TargetFieldId 0
 					Interface Instance4
 					Flags 3
@@ -51,25 +51,25 @@ SpatialPrefabBlueprint 14A91A42-616C-C32D-3CFC-D515B53A88E2 #primary instance
 						Source Instance4
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 2084504595
+							Id 2084504595 (StartAnimation)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id 687631179
+							Id 687631179 (StopAnimation)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance3
 						Target AC0D9194-49D8-4939-B97B-0A706D42A8C9
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2
@@ -208,19 +208,19 @@ InterfaceDescriptorData Instance4
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2132289043
+				Id -2132289043 (ExternalTime)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2084504595
+			Id 2084504595 (StartAnimation)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 687631179
+			Id 687631179 (StopAnimation)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 NotEntityData Instance5

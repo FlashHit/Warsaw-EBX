@@ -11,61 +11,61 @@ SpatialPrefabBlueprint 8919BDF4-105C-4E1E-AF22-06E3D494ABA2 #primary instance
 						member(0)::PropertyConnection
 							Source Instance9
 							Target Instance6
-							SourceFieldId 258157264
-							TargetFieldId -1136955571
+							SourceFieldId 258157264 (Proximity)
+							TargetFieldId -1136955571 (Volume)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance9
 							Target Instance8
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId 1579081631
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance9
 							Target Instance7
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId -2120426542
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance1
 							Target Instance9
 							SourceFieldId -502889349
-							TargetFieldId 1947336347
+							TargetFieldId 1947336347 (ProximityMultiplier)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance5
 							Target Instance2
 							SourceFieldId -1828080107
-							TargetFieldId -1794082195
+							TargetFieldId -1794082195 (Attack)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance5
 							Target Instance2
 							SourceFieldId -959919244
-							TargetFieldId 1335266828
+							TargetFieldId 1335266828 (Release)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance1
 							Target Instance3
 							SourceFieldId -502889349
-							TargetFieldId 225375086
+							TargetFieldId 225375086 (Value)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance5
 							Target Instance10
-							SourceFieldId 124880329
+							SourceFieldId 124880329 (SoundShape)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance9
 							Target Instance10
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance5
 					Flags 15
@@ -76,31 +76,31 @@ SpatialPrefabBlueprint 8919BDF4-105C-4E1E-AF22-06E3D494ABA2 #primary instance
 						SourceEvent::EventSpec
 							Id 1755838749
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance4
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 2089022476
+							Id 2089022476 (Less)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 2089022476
+							Id 2089022476 (Less)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) Instance9
@@ -238,7 +238,7 @@ InterfaceDescriptorData Instance5
 	OutputEvents *nullArray*
 	InputLinks::array
 		member(0)::DynamicLink
-			Id 124880329
+			Id 124880329 (SoundShape)
 	OutputLinks *nullArray*
 IrReverbEntityData Instance6
 	$::EntityData

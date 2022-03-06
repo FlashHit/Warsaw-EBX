@@ -11,19 +11,19 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						member(0)::PropertyConnection
 							Source Instance7
 							Target Instance5
-							SourceFieldId -1527071975
-							TargetFieldId -1527071975
+							SourceFieldId -1527071975 (CurrentTime)
+							TargetFieldId -1527071975 (CurrentTime)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance7
 							Target Instance2
-							SourceFieldId 211512871
-							TargetFieldId -458572566
+							SourceFieldId 211512871 (Blink)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 1564494525
+							SourceFieldId 1564494525 (CurrentVariation)
 							TargetFieldId 1000
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
@@ -36,7 +36,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance5
@@ -44,7 +44,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance5
@@ -52,7 +52,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance7
@@ -60,7 +60,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id 934987117
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance7
@@ -68,7 +68,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id 2037431325
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance5
@@ -76,31 +76,31 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance3
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance3
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 					member(9)::EventConnection
 						Source Instance5
@@ -116,7 +116,7 @@ SpatialPrefabBlueprint 623FF9AB-E1B1-62C4-CB37-781EA2078FE8 #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance7
@@ -417,7 +417,7 @@ FloatPropertyTrackData Instance4
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 211512871
+			Id 211512871 (Blink)
 			Times::array
 				member(0) 0
 				member(1) 749
@@ -436,7 +436,7 @@ InterfaceDescriptorData Instance5
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1527071975
+				Id -1527071975 (CurrentTime)
 				AccessType FieldAccessType_Source
 			member(1)::DataField
 				Value *nullString*

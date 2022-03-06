@@ -11,14 +11,14 @@ SpatialPrefabBlueprint A7F0F231-107D-4747-AACF-79BF49872080 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId 2662400
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 225375086
-							TargetFieldId 2088812747
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -33,97 +33,97 @@ SpatialPrefabBlueprint A7F0F231-107D-4747-AACF-79BF49872080 #primary instance
 						Source Instance4
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -2015345591
+							Id -2015345591 (OnMemoryEvent)
 						TargetEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance6
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -956938643
+							Id -956938643 (Select)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance6
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -956938643
+							Id -956938643 (Select)
 						TargetEvent::EventSpec
-							Id 714915618
+							Id 714915618 (LoadMemory)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance6
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 856284376
+							Id 856284376 (SpawnIfSelected)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance2
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 2089420676
+							Id 2089420676 (Save)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance7
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -213362971
+							Id -213362971 (OnSaveDone)
 						TargetEvent::EventSpec
-							Id -155654884
+							Id -155654884 (FireMemory)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance7
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -26482462
+							Id -26482462 (OnLoadDone)
 						TargetEvent::EventSpec
-							Id -155654884
+							Id -155654884 (FireMemory)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance5
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -2015345591
+							Id -2015345591 (OnMemoryEvent)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -2015345591
+							Id -2015345591 (OnMemoryEvent)
 						TargetEvent::EventSpec
-							Id 714915618
+							Id 714915618 (LoadMemory)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(9)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -2015345591
+							Id -2015345591 (OnMemoryEvent)
 						TargetEvent::EventSpec
-							Id 193450867
+							Id 193450867 (In1)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(10)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -155654884
+							Id -155654884 (FireMemory)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(11)::EventConnection
 						Source Instance6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 193450864
+							Id 193450864 (In2)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(12)::EventConnection
 						Source Instance6
@@ -131,7 +131,7 @@ SpatialPrefabBlueprint A7F0F231-107D-4747-AACF-79BF49872080 #primary instance
 						SourceEvent::EventSpec
 							Id -1510753219
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(13)::EventConnection
 						Source Instance6
@@ -139,7 +139,7 @@ SpatialPrefabBlueprint A7F0F231-107D-4747-AACF-79BF49872080 #primary instance
 						SourceEvent::EventSpec
 							Id -1510753219
 						TargetEvent::EventSpec
-							Id 714915618
+							Id 714915618 (LoadMemory)
 						TargetType EventConnectionTargetType_Server
 					member(14)::EventConnection
 						Source Instance6
@@ -147,7 +147,7 @@ SpatialPrefabBlueprint A7F0F231-107D-4747-AACF-79BF49872080 #primary instance
 						SourceEvent::EventSpec
 							Id -1510753219
 						TargetEvent::EventSpec
-							Id 2089420676
+							Id 2089420676 (Save)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance5
@@ -236,18 +236,18 @@ InterfaceDescriptorData Instance6
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -956938643
+			Id -956938643 (Select)
 		member(1)::DynamicEvent
-			Id 856284376
+			Id 856284376 (SpawnIfSelected)
 		member(2)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(3)::DynamicEvent
 			Id -1510753219
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(1)::DynamicEvent
-			Id 230891742
+			Id 230891742 (Spawn)
 	InputLinks::array
 		member(0)::DynamicLink
 			Id -137903154

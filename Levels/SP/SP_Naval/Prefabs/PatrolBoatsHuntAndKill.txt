@@ -11,49 +11,49 @@ LogicPrefabBlueprint 3D74AEA5-09E7-456C-9421-8C64747AE77B #primary instance
 						member(0)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 2088812747
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId 1635609973
+							SourceFieldId 1635609973 (Waypoints)
 							TargetFieldId 738565781
 						member(1)::LinkConnection
 							Source Instance3
 							Target Instance7
-							SourceFieldId 1635609973
+							SourceFieldId 1635609973 (Waypoints)
 							TargetFieldId 738565782
 						member(2)::LinkConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId -160166365
-							TargetFieldId -990522702
+							SourceFieldId -160166365 (Follower)
+							TargetFieldId -990522702 (Follower1)
 						member(3)::LinkConnection
 							Source Instance3
 							Target Instance7
-							SourceFieldId -160166365
-							TargetFieldId -990522703
+							SourceFieldId -160166365 (Follower)
+							TargetFieldId -990522703 (Follower2)
 						member(4)::LinkConnection
 							Source Instance5
 							Target Instance7
-							SourceFieldId -160166365
-							TargetFieldId -990522702
+							SourceFieldId -160166365 (Follower)
+							TargetFieldId -990522702 (Follower1)
 						member(5)::LinkConnection
 							Source Instance4
 							Target Instance7
-							SourceFieldId -160166365
-							TargetFieldId -990522703
+							SourceFieldId -160166365 (Follower)
+							TargetFieldId -990522703 (Follower2)
 						member(6)::LinkConnection
 							Source Instance5
 							Target Instance7
-							SourceFieldId 1635609973
+							SourceFieldId 1635609973 (Waypoints)
 							TargetFieldId -1680607560
 						member(7)::LinkConnection
 							Source Instance4
 							Target Instance7
-							SourceFieldId 1635609973
+							SourceFieldId 1635609973 (Waypoints)
 							TargetFieldId -1680607557
 					Interface Instance7
 					Flags 2
@@ -62,65 +62,65 @@ LogicPrefabBlueprint 3D74AEA5-09E7-456C-9421-8C64747AE77B #primary instance
 						Source Instance1
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -496109072
+							Id -496109072 (TeleportToEnd)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance7
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance7
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance7
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance1
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -496109072
+							Id -496109072 (TeleportToEnd)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance1
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance2
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance2
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance6
@@ -209,11 +209,11 @@ InterfaceDescriptorData Instance7
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -559281700
+			Id -559281700 (Activate)
 		member(1)::DynamicEvent
-			Id 1928776733
+			Id 1928776733 (Deactivate)
 		member(2)::DynamicEvent
-			Id -1688613187
+			Id -1688613187 (Trigger)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks::array
@@ -222,9 +222,9 @@ InterfaceDescriptorData Instance7
 		member(1)::DynamicLink
 			Id 738565782
 		member(2)::DynamicLink
-			Id -990522702
+			Id -990522702 (Follower1)
 		member(3)::DynamicLink
-			Id -990522703
+			Id -990522703 (Follower2)
 		member(4)::DynamicLink
 			Id -1680607560
 		member(5)::DynamicLink

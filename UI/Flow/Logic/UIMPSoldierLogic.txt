@@ -11,26 +11,26 @@ LogicPrefabBlueprint 15707820-5243-EFDF-F29D-1DB50C8A5F14 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance5
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 193450864
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance6
 							Target Instance0
-							SourceFieldId -865619136
-							TargetFieldId -865619136
+							SourceFieldId -865619136 (IsInVehicle)
+							TargetFieldId -865619136 (IsInVehicle)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance6
@@ -40,9 +40,9 @@ LogicPrefabBlueprint 15707820-5243-EFDF-F29D-1DB50C8A5F14 #primary instance
 						Source Instance6
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 2014598401
+							Id 2014598401 (WeaponChange)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance6
@@ -50,85 +50,85 @@ LogicPrefabBlueprint 15707820-5243-EFDF-F29D-1DB50C8A5F14 #primary instance
 						SourceEvent::EventSpec
 							Id -1996739957
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance2
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -78369614
+							Id -78369614 (OnClose)
 						TargetEvent::EventSpec
-							Id -1684556875
+							Id -1684556875 (ExitUIGraph)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance2
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1433873616
+							Id -1433873616 (OnOpen)
 						TargetEvent::EventSpec
-							Id 2014598401
+							Id 2014598401 (WeaponChange)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance2
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -1433873616
+							Id -1433873616 (OnOpen)
 						TargetEvent::EventSpec
-							Id 2121396772
+							Id 2121396772 (OnWeaponChanged)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -2118973718
+							Id -2118973718 (ShowCrosshair)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 856533193
+							Id 856533193 (HideCrosshair)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance5
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -2118973718
+							Id -2118973718 (ShowCrosshair)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance5
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 856533193
+							Id 856533193 (HideCrosshair)
 						TargetType EventConnectionTargetType_Client
 					member(9)::EventConnection
 						Source Instance2
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1433873616
+							Id -1433873616 (OnOpen)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(10)::EventConnection
 						Source Instance2
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -78369614
+							Id -78369614 (OnClose)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(11)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -78369614
+							Id -78369614 (OnClose)
 						TargetEvent::EventSpec
 							Id -1996739957
 						TargetType EventConnectionTargetType_Client
@@ -136,17 +136,17 @@ LogicPrefabBlueprint 15707820-5243-EFDF-F29D-1DB50C8A5F14 #primary instance
 						Source Instance2
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1433873616
+							Id -1433873616 (OnOpen)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(13)::EventConnection
 						Source Instance7
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 2014598401
+							Id 2014598401 (WeaponChange)
 						TargetType EventConnectionTargetType_Client
 					member(14)::EventConnection
 						Source Instance6
@@ -160,17 +160,17 @@ LogicPrefabBlueprint 15707820-5243-EFDF-F29D-1DB50C8A5F14 #primary instance
 						Source Instance6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 634813808
+							Id 634813808 (OnWeaponZoomEnable)
 						TargetEvent::EventSpec
-							Id 634813808
+							Id 634813808 (OnWeaponZoomEnable)
 						TargetType EventConnectionTargetType_Client
 					member(16)::EventConnection
 						Source Instance6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -370821979
+							Id -370821979 (OnWeaponZoomDisable)
 						TargetEvent::EventSpec
-							Id -370821979
+							Id -370821979 (OnWeaponZoomDisable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance8
@@ -267,36 +267,36 @@ InterfaceDescriptorData Instance6
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -865619136
+				Id -865619136 (IsInVehicle)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2014598401
+			Id 2014598401 (WeaponChange)
 		member(1)::DynamicEvent
 			Id -1996739957
 		member(2)::DynamicEvent
-			Id 1376693759
+			Id 1376693759 (LowAmmo)
 		member(3)::DynamicEvent
-			Id 2118323320
+			Id 2118323320 (AmmoReplenished)
 		member(4)::DynamicEvent
-			Id -2118973718
+			Id -2118973718 (ShowCrosshair)
 		member(5)::DynamicEvent
-			Id 856533193
+			Id 856533193 (HideCrosshair)
 		member(6)::DynamicEvent
-			Id 47770043
+			Id 47770043 (OnPlayerDied)
 		member(7)::DynamicEvent
-			Id 796716201
+			Id 796716201 (ZoomLevelActivateDisable)
 		member(8)::DynamicEvent
-			Id -491673348
+			Id -491673348 (ZoomLevelActivateEnable)
 		member(9)::DynamicEvent
 			Id -1493464514
 		member(10)::DynamicEvent
-			Id 634813808
+			Id 634813808 (OnWeaponZoomEnable)
 		member(11)::DynamicEvent
-			Id -370821979
+			Id -370821979 (OnWeaponZoomDisable)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 2121396772
+			Id 2121396772 (OnWeaponChanged)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 PlayerFilterEntityData Instance7

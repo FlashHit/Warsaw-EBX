@@ -11,25 +11,25 @@ SpatialPrefabBlueprint F2CE2CD1-5A41-40ED-8610-58169EC8D573 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance11
 							Target Instance1
 							SourceFieldId 1486850846
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target A5EF7FD0-710E-456C-974F-425D6ED35C35
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId 219909467
 						member(1)::LinkConnection
 							Source A5EF7FD0-710E-456C-974F-425D6ED35C35
 							Target Instance0
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId 0
 					Interface Instance10
 					Flags 3
@@ -38,65 +38,65 @@ SpatialPrefabBlueprint F2CE2CD1-5A41-40ED-8610-58169EC8D573 #primary instance
 						Source Instance10
 						Target A5EF7FD0-710E-456C-974F-425D6ED35C35
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source A5EF7FD0-710E-456C-974F-425D6ED35C35
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source A5EF7FD0-710E-456C-974F-425D6ED35C35
 						Target Instance11
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance10
 						Target A5EF7FD0-710E-456C-974F-425D6ED35C35
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id -834116283
+							Id -834116283 (Unspawn)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance10
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(5)::EventConnection
 						Source Instance10
 						Target Instance11
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(6)::EventConnection
 						Source A5EF7FD0-710E-456C-974F-425D6ED35C35
 						Target Instance11
 						SourceEvent::EventSpec
-							Id -1298930102
+							Id -1298930102 (OnSpawnedBySaveGame)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(7)::EventConnection
 						Source A5EF7FD0-710E-456C-974F-425D6ED35C35
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1298930102
+							Id -1298930102 (OnSpawnedBySaveGame)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance11
@@ -468,9 +468,9 @@ InterfaceDescriptorData Instance10
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id 2089401213
+			Id 2089401213 (Stop)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 3F3EFB12-7426-4CD7-8A13-04D8C47C9B27 #primary instance
 						member(0)::PropertyConnection
 							Source 632145AA-7619-4789-B98D-B3625BEAE1A6
 							Target Instance0
-							SourceFieldId 698564572
-							TargetFieldId 698564572
+							SourceFieldId 698564572 (Amplitude)
+							TargetFieldId 698564572 (Amplitude)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 632145AA-7619-4789-B98D-B3625BEAE1A6
 							Target Instance0
-							SourceFieldId -996560163
-							TargetFieldId -996560163
+							SourceFieldId -996560163 (Radius)
+							TargetFieldId -996560163 (Radius)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -33,17 +33,17 @@ SpatialPrefabBlueprint 3F3EFB12-7426-4CD7-8A13-04D8C47C9B27 #primary instance
 						Source Instance3
 						Target 632145AA-7619-4789-B98D-B3625BEAE1A6
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 632145AA-7619-4789-B98D-B3625BEAE1A6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) 632145AA-7619-4789-B98D-B3625BEAE1A6
@@ -104,7 +104,7 @@ FloatPropertyTrackData Instance1
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 698564572
+			Id 698564572 (Amplitude)
 			Times::array
 				member(0) 1699
 				member(1) 1864
@@ -124,7 +124,7 @@ FloatPropertyTrackData Instance2
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id -996560163
+			Id -996560163 (Radius)
 			Times::array
 				member(0) 1630
 				member(1) 1699
@@ -144,9 +144,9 @@ InterfaceDescriptorData Instance3
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 650265526
+			Id 650265526 (OnFinished)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

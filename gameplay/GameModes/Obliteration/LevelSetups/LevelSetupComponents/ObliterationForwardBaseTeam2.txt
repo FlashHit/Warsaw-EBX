@@ -11,26 +11,26 @@ SpatialPrefabBlueprint E707B94A-3FE7-42EA-8A74-DB4514F5EF91 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target D677AC20-5908-4C6D-9AE2-BB20DADAB3D4
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source D677AC20-5908-4C6D-9AE2-BB20DADAB3D4
 							Target Instance0
 							SourceFieldId 1249973165
-							TargetFieldId -1466238577
+							TargetFieldId -1466238577 (NameId)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target Instance0
 							SourceFieldId 1436668765
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance1
 							Target BE60E7DE-0F55-4201-B36C-340EFE154D30
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
@@ -48,18 +48,18 @@ SpatialPrefabBlueprint E707B94A-3FE7-42EA-8A74-DB4514F5EF91 #primary instance
 						member(0)::LinkConnection
 							Source BE60E7DE-0F55-4201-B36C-340EFE154D30
 							Target D677AC20-5908-4C6D-9AE2-BB20DADAB3D4
-							SourceFieldId -320184006
-							TargetFieldId -1961960407
+							SourceFieldId -320184006 (Spawners)
+							TargetFieldId -1961960407 (Spawner)
 						member(1)::LinkConnection
 							Source BE60E7DE-0F55-4201-B36C-340EFE154D30
 							Target Instance1
-							SourceFieldId -320184006
-							TargetFieldId -275573010
+							SourceFieldId -320184006 (Spawners)
+							TargetFieldId -275573010 (Vehicles)
 						member(2)::LinkConnection
 							Source D677AC20-5908-4C6D-9AE2-BB20DADAB3D4
 							Target Instance1
-							SourceFieldId -2001390482
-							TargetFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
+							TargetFieldId -2001390482 (AlternativeSpawnPoints)
 					Interface Instance1
 					Flags 3
 				EventConnections::array
@@ -67,7 +67,7 @@ SpatialPrefabBlueprint E707B94A-3FE7-42EA-8A74-DB4514F5EF91 #primary instance
 						Source Instance0
 						Target D677AC20-5908-4C6D-9AE2-BB20DADAB3D4
 						SourceEvent::EventSpec
-							Id -2068939912
+							Id -2068939912 (OnTakeControl)
 						TargetEvent::EventSpec
 							Id 2088662691
 						TargetType EventConnectionTargetType_Client
@@ -223,7 +223,7 @@ InterfaceDescriptorData Instance1
 			member(10)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 			member(11)::DataField
 				Value CString "FORWARD BASE"
@@ -255,6 +255,6 @@ InterfaceDescriptorData Instance1
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id -275573010
+			Id -275573010 (Vehicles)
 		member(1)::DynamicLink
-			Id -2001390482
+			Id -2001390482 (AlternativeSpawnPoints)

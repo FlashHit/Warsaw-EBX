@@ -12,64 +12,64 @@ SoldierBlueprint 798B5AF6-02F7-4A68-97D9-79B642AC0715 #primary instance
 							member(0)::PropertyConnection
 								Source Instance1
 								Target Instance0
-								SourceFieldId 82142727
-								TargetFieldId 82142727
+								SourceFieldId 82142727 (WantedYaw)
+								TargetFieldId 82142727 (WantedYaw)
 								ShouldNetworkValue False
 							member(1)::PropertyConnection
 								Source Instance19
 								Target BB16D15A-A539-4AEF-8744-EB77B97C9008
-								SourceFieldId -1978571616
-								TargetFieldId 875726273
+								SourceFieldId -1978571616 (EnableFakeImmortal)
+								TargetFieldId 875726273 (FakeImmortal)
 								ShouldNetworkValue False
 							member(2)::PropertyConnection
 								Source Instance19
 								Target BB16D15A-A539-4AEF-8744-EB77B97C9008
-								SourceFieldId -920078807
-								TargetFieldId 922982664
+								SourceFieldId -920078807 (EnableImmortal)
+								TargetFieldId 922982664 (Immortal)
 								ShouldNetworkValue False
 							member(3)::PropertyConnection
 								Source Instance19
 								Target Instance14
-								SourceFieldId 1194494871
-								TargetFieldId 1194494871
+								SourceFieldId 1194494871 (ConnectTransform)
+								TargetFieldId 1194494871 (ConnectTransform)
 								ShouldNetworkValue False
 							member(4)::PropertyConnection
 								Source Instance19
 								Target Instance14
-								SourceFieldId -411788758
-								TargetFieldId -411788758
+								SourceFieldId -411788758 (ExternalConnectTransform)
+								TargetFieldId -411788758 (ExternalConnectTransform)
 								ShouldNetworkValue False
 							member(5)::PropertyConnection
 								Source Instance2
 								Target Instance19
-								SourceFieldId 2089157069
-								TargetFieldId 2089157069
+								SourceFieldId 2089157069 (Head)
+								TargetFieldId 2089157069 (Head)
 								ShouldNetworkValue False
 						LinkConnections::array
 							member(0)::LinkConnection
 								Source Instance19
 								Target Instance2
-								SourceFieldId -1086273423
+								SourceFieldId -1086273423 (Animatable)
 								TargetFieldId 0
 							member(1)::LinkConnection
 								Source Instance19
 								Target Instance5
-								SourceFieldId -1316984818
+								SourceFieldId -1316984818 (PathFollower)
 								TargetFieldId 0
 							member(2)::LinkConnection
 								Source Instance15
 								Target Instance14
-								SourceFieldId -798069529
+								SourceFieldId -798069529 (WarpAnimation)
 								TargetFieldId 0
 							member(3)::LinkConnection
 								Source Instance18
 								Target Instance14
-								SourceFieldId -798069529
+								SourceFieldId -798069529 (WarpAnimation)
 								TargetFieldId 0
 							member(4)::LinkConnection
 								Source Instance19
 								Target Instance18
-								SourceFieldId 231940265
+								SourceFieldId 231940265 (Proxy)
 								TargetFieldId 0
 						Interface Instance19
 						Flags 15
@@ -78,241 +78,241 @@ SoldierBlueprint 798B5AF6-02F7-4A68-97D9-79B642AC0715 #primary instance
 							Source Instance2
 							Target Instance1
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(1)::EventConnection
 							Source Instance2
 							Target Instance6
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 163350161
+								Id 163350161 (AnimatableCreated)
 							TargetType EventConnectionTargetType_Client
 						member(2)::EventConnection
 							Source Instance2
 							Target Instance4
 							SourceEvent::EventSpec
-								Id 1286229666
+								Id 1286229666 (OnPoseWriterAdded)
 							TargetEvent::EventSpec
-								Id 1286229666
+								Id 1286229666 (OnPoseWriterAdded)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(3)::EventConnection
 							Source Instance2
 							Target Instance8
 							SourceEvent::EventSpec
-								Id 1286229666
+								Id 1286229666 (OnPoseWriterAdded)
 							TargetEvent::EventSpec
-								Id 1286229666
+								Id 1286229666 (OnPoseWriterAdded)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(4)::EventConnection
 							Source Instance2
 							Target Instance4
 							SourceEvent::EventSpec
-								Id -647055200
+								Id -647055200 (OnPoseWriterRemoved)
 							TargetEvent::EventSpec
-								Id -647055200
+								Id -647055200 (OnPoseWriterRemoved)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(5)::EventConnection
 							Source Instance2
 							Target Instance8
 							SourceEvent::EventSpec
-								Id -647055200
+								Id -647055200 (OnPoseWriterRemoved)
 							TargetEvent::EventSpec
-								Id -647055200
+								Id -647055200 (OnPoseWriterRemoved)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(6)::EventConnection
 							Source Instance9
 							Target Instance13
 							SourceEvent::EventSpec
-								Id -78816071
+								Id -78816071 (OnDying)
 							TargetEvent::EventSpec
-								Id -1780615401
+								Id -1780615401 (DisableHandsIkOverride)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(7)::EventConnection
 							Source BB16D15A-A539-4AEF-8744-EB77B97C9008
 							Target Instance19
 							SourceEvent::EventSpec
-								Id 2008897511
+								Id 2008897511 (OnKilled)
 							TargetEvent::EventSpec
-								Id 2008897511
+								Id 2008897511 (OnKilled)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(8)::EventConnection
 							Source Instance19
 							Target BB16D15A-A539-4AEF-8744-EB77B97C9008
 							SourceEvent::EventSpec
-								Id 2089125447
+								Id 2089125447 (Kill)
 							TargetEvent::EventSpec
-								Id 2089125447
+								Id 2089125447 (Kill)
 							TargetType EventConnectionTargetType_Server
 						member(9)::EventConnection
 							Source BB16D15A-A539-4AEF-8744-EB77B97C9008
 							Target Instance19
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(10)::EventConnection
 							Source Instance2
 							Target Instance8
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(11)::EventConnection
 							Source Instance2
 							Target Instance13
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1561468660
+								Id 1561468660 (RegisterAnimatableComponent3p)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(12)::EventConnection
 							Source Instance2
 							Target BB16D15A-A539-4AEF-8744-EB77B97C9008
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1561468660
+								Id 1561468660 (RegisterAnimatableComponent3p)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(13)::EventConnection
 							Source Instance19
 							Target Instance15
 							SourceEvent::EventSpec
-								Id 1883421003
+								Id 1883421003 (StartScenario)
 							TargetEvent::EventSpec
-								Id -374418032
+								Id -374418032 (StartCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(14)::EventConnection
 							Source Instance0
 							Target Instance15
 							SourceEvent::EventSpec
-								Id 903502264
+								Id 903502264 (SetAnimationLocalSpace)
 							TargetEvent::EventSpec
-								Id -374418032
+								Id -374418032 (StartCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(15)::EventConnection
 							Source Instance0
 							Target Instance14
 							SourceEvent::EventSpec
-								Id 903502264
+								Id 903502264 (SetAnimationLocalSpace)
 							TargetEvent::EventSpec
-								Id 1969808398
+								Id 1969808398 (SetWantedConnectJointTransform)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(16)::EventConnection
 							Source Instance15
 							Target Instance0
 							SourceEvent::EventSpec
-								Id 1915685713
+								Id 1915685713 (OnStartCannedAnimation)
 							TargetEvent::EventSpec
-								Id 1915685713
+								Id 1915685713 (OnStartCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(17)::EventConnection
 							Source Instance2
 							Target Instance15
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(18)::EventConnection
 							Source Instance2
 							Target Instance14
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(19)::EventConnection
 							Source Instance15
 							Target Instance19
 							SourceEvent::EventSpec
-								Id -408190258
+								Id -408190258 (OnFullyBlended)
 							TargetEvent::EventSpec
-								Id -408190258
+								Id -408190258 (OnFullyBlended)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(20)::EventConnection
 							Source Instance0
 							Target Instance5
 							SourceEvent::EventSpec
-								Id 1921814437
+								Id 1921814437 (OnTeleport)
 							TargetEvent::EventSpec
-								Id 229946160
+								Id 229946160 (Reset)
 							TargetType EventConnectionTargetType_Server
 						member(21)::EventConnection
 							Source Instance2
 							Target Instance0
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(22)::EventConnection
 							Source Instance15
 							Target Instance0
 							SourceEvent::EventSpec
-								Id -456093911
+								Id -456093911 (OnStopCannedAnimation)
 							TargetEvent::EventSpec
-								Id -456093911
+								Id -456093911 (OnStopCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(23)::EventConnection
 							Source Instance2
 							Target Instance18
 							SourceEvent::EventSpec
-								Id -427752080
+								Id -427752080 (OnAnimatableCreated)
 							TargetEvent::EventSpec
-								Id 1799877463
+								Id 1799877463 (RegisterAnimatableComponent)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(24)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id 1740237356
+								Id 1740237356 (OnTriggerProxyController)
 							TargetEvent::EventSpec
-								Id 1915685713
+								Id 1915685713 (OnStartCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(25)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id 1740237356
+								Id 1740237356 (OnTriggerProxyController)
 							TargetEvent::EventSpec
-								Id -819592490
+								Id -819592490 (OnStartMeleeAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(26)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id -1567096521
+								Id -1567096521 (OnReachedEnd)
 							TargetEvent::EventSpec
-								Id -456093911
+								Id -456093911 (OnStopCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(27)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id -1567096521
+								Id -1567096521 (OnReachedEnd)
 							TargetEvent::EventSpec
-								Id 943404398
+								Id 943404398 (OnStopMeleeAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(28)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id 955135756
+								Id 955135756 (OnStopProxyController)
 							TargetEvent::EventSpec
-								Id -456093911
+								Id -456093911 (OnStopCannedAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(29)::EventConnection
 							Source Instance18
 							Target Instance0
 							SourceEvent::EventSpec
-								Id 955135756
+								Id 955135756 (OnStopProxyController)
 							TargetEvent::EventSpec
-								Id 943404398
+								Id 943404398 (OnStopMeleeAnimation)
 							TargetType EventConnectionTargetType_ClientAndServer
 			Object BB16D15A-A539-4AEF-8744-EB77B97C9008
 SoldierEntityData BB16D15A-A539-4AEF-8744-EB77B97C9008
@@ -465,7 +465,7 @@ AILocoComponentData Instance0
 			AssetGuid 9AA86739-1F38-48E2-9E68-0795FA6D2BD5
 			ProjectId 0
 		TargetWaypointRadius::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TargetSpeedLevel::AntRef
 			AssetGuid 73AFD52D-AB16-42BE-9BB6-8D09C6687261
@@ -484,16 +484,16 @@ AILocoComponentData Instance0
 			AssetGuid 9D24F245-D78C-4A3E-9851-22E87C21239F
 			ProjectId 0
 		HeightBeforeVault::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		LengthOfVaultableObject::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		HeightAfterVault::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		DistanceAfterVault::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		VaultType::AntRef
 			AssetGuid 541436BE-D609-4EBC-90DE-8ADC187B54D0
@@ -545,7 +545,7 @@ AILocoComponentData Instance0
 			AssetGuid 1D2888E4-B221-4821-BA66-7A28E70A8CC7
 			ProjectId 0
 		DistanceScale::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AbsoluteDistance::AntRef
 			AssetGuid ED7A3914-A03E-4DC7-91D6-59CAEFB59B62
@@ -554,16 +554,16 @@ AILocoComponentData Instance0
 			AssetGuid 5FF68A1F-A177-4446-A59E-A106CECDC65E
 			ProjectId 0
 		DirectionToCoverVsAITrajectory::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		CoverNormalVsAITrajectory::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		OutAngle::AntRef
 			AssetGuid 59D56E04-711E-4134-ABB7-00152066DB7F
 			ProjectId 0
 		ExitCoverDistance::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		ThreatAngle::AntRef
 			AssetGuid C861F638-FB36-4E80-B2CD-EB998067273A
@@ -610,25 +610,25 @@ AIProximityReactionsComponentData Instance1
 			Excluded False
 	Binding::AIProximityReactionsBinding
 		AIReaction::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AIExplosionReaction::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AIExplosionForce::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AIStunReaction::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AIStunReactionRandomFactor::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AIReactionDirection::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		IsPanicking::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		FireNearby::AntRef
 			AssetGuid D6E284C8-4581-401D-8EAE-4112DE68AF00
@@ -637,10 +637,10 @@ AIProximityReactionsComponentData Instance1
 			AssetGuid B989998E-7138-4321-A8B1-38BC48A35F74
 			ProjectId 0
 		FocusAimScale::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		FocusAiming::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		EnableProceduralHeadAim::AntRef
 			AssetGuid CC702635-D26C-451C-AF7A-C15CA311BB26
@@ -652,10 +652,10 @@ AIProximityReactionsComponentData Instance1
 			AssetGuid 16537D96-97B8-4078-AEEF-3C6FBB021EC3
 			ProjectId 0
 		PlayerInitiatedRagdoll::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AISuppressed::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		HumanAwareness::AntRef
 			AssetGuid 2CFF9AD6-B7E2-42C2-8068-3016AAD2D312
@@ -667,28 +667,28 @@ AIProximityReactionsComponentData Instance1
 			AssetGuid 9F09FE1F-1B50-47DA-8673-B480689297F1
 			ProjectId 0
 		LookAtHuman::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RetriggerIdle::AntRef
 			AssetGuid 608A5089-170B-4FD7-A136-F1808B6648BF
 			ProjectId 0
 		HasWantedPrecision::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TargetVisible::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TargetSpotted::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TargetDistance::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		CruiseSpeedLevel::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		DrasticAimYawChange::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 	MinExplosionImpulseForce 10.0
 	MaxExplosionLookDistance 100.0
@@ -732,7 +732,7 @@ AntAnimatableComponentData Instance2
 				AssetGuid D239B527-9C9A-4E78-8BE0-649E3C29A637
 				ProjectId 0
 			SceneOpMatrix::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			ProceduralAwareness *nullGuid*
 			RightHandEffectorDisableOverride::AntRef
@@ -747,27 +747,27 @@ AntAnimatableComponentData Instance2
 			ProjectId 0
 		LodBinding::LodBinding
 			DisableControllerUpdate::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			DisablePoseUpdate::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			DistanceFromCamera::AntRef
 				AssetGuid F1277CD5-DABA-45F8-9E20-D6C2536600CF
 				ProjectId 0
 			AnimatableInstanceId::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			ResetController::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 		JointOutputFieldHashes::array
-			member(0) -1031074154
-			member(1) 2089153255
-			member(2) -640860933
-			member(3) 2089157069
+			member(0) -1031074154 (AITrajectory)
+			member(1) 2089153255 (Hips)
+			member(2) -640860933 (Connect)
+			member(3) 2089157069 (Head)
 			member(4) -756621387
-			member(5) -2103466915
+			member(5) -2103466915 (Wep_Aim)
 			member(6) -695536002
 			member(7) -2103471021
 			member(8) 452017989
@@ -948,10 +948,10 @@ PhantomComponentData Instance6
 		AssetGuid 03E2E60D-511E-40E4-BED0-F68E6FDB6A5F
 		ProjectId 0
 	EnableTrajectoryOverride::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	TrajectoryOverride::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 PlayerEntryComponentData Instance7
 	$::EntryComponentData
@@ -1065,13 +1065,13 @@ RagdollComponentData Instance8
 			AssetGuid F2AF4953-AC0F-4367-A3CE-582E7F941198
 			ProjectId 0
 		RagdollBlendEarly::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RagdollForceBlendDisabled::AntRef
 			AssetGuid 91ED41C5-6FFD-443D-A555-1BB80EC59DAE
 			ProjectId 0
 		RagdollActiveTime::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RagdollFullyBlendedIn::AntRef
 			AssetGuid 0F7BED2B-DF4A-47BA-880B-096F4EDF5000
@@ -1330,7 +1330,7 @@ VehicleEntryListenerComponentData Instance13
 			AssetGuid 0E1BCF02-F00D-4922-8B58-7414CD4501C3
 			ProjectId 0
 		VehicleEntryRelativeYaw::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		VehicleEntryPitch::AntRef
 			AssetGuid FEF7A7A2-9F7A-42F6-A377-DDAEAC6EC2AC
@@ -1367,7 +1367,7 @@ VehicleEntryListenerComponentData Instance13
 			ProjectId 0
 	VehicleCameraControl::VehicleCameraControlBinding
 		EnableAnimatedVehicleCamera::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 	AnimationEntitySpacePriority 2
 	AnimationWheelTransformDelay 0.5
@@ -1389,10 +1389,10 @@ WarpAnimationEntityData Instance14
 			AssetGuid 11D29ABA-D0BD-409A-B8E3-F46D03FCE159
 			ProjectId 0
 		DisableCulling::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TranslationYWarpTolerance::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AttachToAnimatableInstanceId::AntRef
 			AssetGuid 86489D67-E193-4CFC-B964-C82705795523
@@ -1509,52 +1509,52 @@ InterfaceDescriptorData Instance19
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1978571616
+				Id -1978571616 (EnableFakeImmortal)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -920078807
+				Id -920078807 (EnableImmortal)
 				AccessType FieldAccessType_Target
 			member(2)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1194494871
+				Id 1194494871 (ConnectTransform)
 				AccessType FieldAccessType_Target
 			member(3)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -411788758
+				Id -411788758 (ExternalConnectTransform)
 				AccessType FieldAccessType_Target
 			member(4)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2089157069
+				Id 2089157069 (Head)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id 2089125447
+			Id 2089125447 (Kill)
 		member(2)::DynamicEvent
-			Id 1883421003
+			Id 1883421003 (StartScenario)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 2008897511
+			Id 2008897511 (OnKilled)
 		member(1)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(2)::DynamicEvent
-			Id -408190258
+			Id -408190258 (OnFullyBlended)
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1086273423
+			Id -1086273423 (Animatable)
 		member(1)::DynamicLink
-			Id -1316984818
+			Id -1316984818 (PathFollower)
 		member(2)::DynamicLink
-			Id 231940265
+			Id 231940265 (Proxy)
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id -2008262332
+			Id -2008262332 (WaypointList)
 SoldierAimingConstraintsData Instance20
 	$::DataContainer
 	SwimmingConstraints::AimingConstraintsData
@@ -1614,19 +1614,19 @@ VeniceSoldierHealthModuleData Instance23
 			AssetGuid 4A1A9185-6646-4DAB-8A50-A7FEBDA0EA73
 			ProjectId 0
 		LeftArmHit::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RightArmHit::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		LeftLegHit::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RightLegHit::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		OnGround::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		DeathAnimationTriggered::AntRef
 			AssetGuid CC26CF3B-872B-4A8C-985F-FD0E7BF28E24
@@ -1665,7 +1665,7 @@ VeniceSoldierHealthModuleData Instance23
 			AssetGuid 9B49C1EF-77AF-4FA3-A55B-C1C9974FFF63
 			ProjectId 0
 		Pose::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		RightSpeed::AntRef
 			AssetGuid 4EEFFF66-D525-4B2F-8C1E-7D03A0C0B0D6
@@ -1677,10 +1677,10 @@ VeniceSoldierHealthModuleData Instance23
 			AssetGuid 10636F8A-5543-4F9B-9F99-A09AF961506D
 			ProjectId 0
 		InteractiveManDown::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		Health::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 	InteractiveManDown False
 	TakeDamageInInteractiveMandown True

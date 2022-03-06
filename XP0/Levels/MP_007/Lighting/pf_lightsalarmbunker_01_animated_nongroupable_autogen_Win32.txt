@@ -11,19 +11,19 @@ SpatialPrefabBlueprint D3D5253C-1242-4FD0-810A-BAB2373F60BE #primary instance
 						member(0)::PropertyConnection
 							Source Instance9
 							Target Instance0
-							SourceFieldId 48673745
-							TargetFieldId -409930682
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance9
 							Target Instance7
-							SourceFieldId -1527071975
-							TargetFieldId -1527071975
+							SourceFieldId -1527071975 (CurrentTime)
+							TargetFieldId -1527071975 (CurrentTime)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance8
 							Target Instance7
-							SourceFieldId 1564494525
+							SourceFieldId 1564494525 (CurrentVariation)
 							TargetFieldId 1000
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
@@ -36,7 +36,7 @@ SpatialPrefabBlueprint D3D5253C-1242-4FD0-810A-BAB2373F60BE #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance7
@@ -44,23 +44,23 @@ SpatialPrefabBlueprint D3D5253C-1242-4FD0-810A-BAB2373F60BE #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance7
@@ -68,7 +68,7 @@ SpatialPrefabBlueprint D3D5253C-1242-4FD0-810A-BAB2373F60BE #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance7
@@ -76,7 +76,7 @@ SpatialPrefabBlueprint D3D5253C-1242-4FD0-810A-BAB2373F60BE #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id 1489724580
+							Id 1489724580 (SetVariation2)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance9
@@ -115,7 +115,7 @@ ReferenceObjectData Instance0
 TransformPartPropertyTrackData Instance1
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_RotationZ
@@ -130,7 +130,7 @@ TransformPartPropertyTrackData Instance1
 TransformPartPropertyTrackData Instance2
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_RotationX
@@ -145,7 +145,7 @@ TransformPartPropertyTrackData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_RotationY
@@ -160,7 +160,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_TranslationZ
@@ -175,7 +175,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_TranslationX
@@ -190,7 +190,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 12811004472695330361 #xp0/levels/mp_007/lighting/animtrackdata/7ca055db-affb-4489-baab-b2e98ea2010c_rotation
 	TransformPart TransformPart_TranslationY
@@ -209,7 +209,7 @@ InterfaceDescriptorData Instance7
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1527071975
+				Id -1527071975 (CurrentTime)
 				AccessType FieldAccessType_Source
 			member(1)::DataField
 				Value *nullString*

@@ -11,47 +11,47 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
 						member(0)::PropertyConnection
 							Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 							Target Instance2
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 							Target Instance3
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId -1585193683
+							SourceFieldId -1585193683 (Throttle)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance4
 							Target Instance0
-							SourceFieldId 2089387576
+							SourceFieldId 2089387576 (Roll)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance4
 							Target Instance3
-							SourceFieldId 211741658
+							SourceFieldId 211741658 (Brake)
 							TargetFieldId 0
 						member(3)::LinkConnection
 							Source Instance4
 							Target Instance2
-							SourceFieldId 193468618
+							SourceFieldId 193468618 (Yaw)
 							TargetFieldId 0
 					Interface Instance4
 					Flags 15
@@ -60,7 +60,7 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
 						Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
 							Id 2117264948
 						TargetType EventConnectionTargetType_ClientAndServer
@@ -68,7 +68,7 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
 						Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
 							Id 1150266842
 						TargetType EventConnectionTargetType_Client
@@ -76,17 +76,17 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
 						Source Instance4
 						Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance4
 						Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
 						SourceEvent::EventSpec
-							Id 707417003
+							Id 707417003 (OnFullHealth)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
@@ -148,9 +148,9 @@ InterfaceDescriptorData Instance4
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -62145612
+			Id -62145612 (OnDisabled)
 		member(1)::DynamicEvent
-			Id 707417003
+			Id 707417003 (OnFullHealth)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id 2117264948
@@ -158,11 +158,11 @@ InterfaceDescriptorData Instance4
 			Id 1150266842
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1585193683
+			Id -1585193683 (Throttle)
 		member(1)::DynamicLink
-			Id 2089387576
+			Id 2089387576 (Roll)
 		member(2)::DynamicLink
-			Id 193468618
+			Id 193468618 (Yaw)
 		member(3)::DynamicLink
-			Id 211741658
+			Id 211741658 (Brake)
 	OutputLinks *nullArray*

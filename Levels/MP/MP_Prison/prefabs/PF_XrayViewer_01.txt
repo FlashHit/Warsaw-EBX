@@ -17,20 +17,20 @@ SpatialPrefabBlueprint CDEC0369-9C48-482A-7B74-916D88D1EAAB #primary instance
 						member(1)::PropertyConnection
 							Source Instance6
 							Target Instance2
-							SourceFieldId 81877812
-							TargetFieldId -458572566
+							SourceFieldId 81877812 (LightIntensity)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance0
-							SourceFieldId 1564494525
-							TargetFieldId -670630719
+							SourceFieldId 1564494525 (CurrentVariation)
+							TargetFieldId -670630719 (ObjectVariation)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId -1028279722
+							SourceFieldId -1028279722 (ShaderParameters)
 							TargetFieldId 0
 					Interface Instance4
 					Flags 2
@@ -39,7 +39,7 @@ SpatialPrefabBlueprint CDEC0369-9C48-482A-7B74-916D88D1EAAB #primary instance
 						Source Instance4
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
 							Id 1489724582
 						TargetType EventConnectionTargetType_Client
@@ -47,49 +47,49 @@ SpatialPrefabBlueprint CDEC0369-9C48-482A-7B74-916D88D1EAAB #primary instance
 						Source Instance4
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance4
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance4
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance4
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance4
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance4
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance0
@@ -207,7 +207,7 @@ FloatPropertyTrackData Instance3
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 81877812
+			Id 81877812 (LightIntensity)
 			Times::array
 				member(0) 0
 				member(1) 91
@@ -225,9 +225,9 @@ InterfaceDescriptorData Instance4
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 193453226
+			Id 193453226 (Off)
 		member(1)::DynamicEvent
-			Id 5862212
+			Id 5862212 (On)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

@@ -11,38 +11,38 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						member(0)::PropertyConnection
 							Source Instance5
 							Target Instance4
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId -1774245558
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance5
 							Target Instance3
-							SourceFieldId 258157264
-							TargetFieldId -1136955571
+							SourceFieldId 258157264 (Proximity)
+							TargetFieldId -1136955571 (Volume)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 1947336347
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 1947336347 (ProximityMultiplier)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance0
 							Target 20D38ED2-4B01-4FCB-9417-B4EA89CD79D5
-							SourceFieldId 225375086
-							TargetFieldId 2662400
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance2
 							Target 20D38ED2-4B01-4FCB-9417-B4EA89CD79D5
 							SourceFieldId -1638278997
-							TargetFieldId -409930682
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance5
 							Target Instance6
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance2
 					Flags 3
@@ -53,7 +53,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
@@ -61,7 +61,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1001
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance2
@@ -69,7 +69,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1002
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance2
@@ -77,7 +77,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1105363035
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance2
@@ -85,7 +85,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1003
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance2
@@ -93,7 +93,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1004
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance2
@@ -101,7 +101,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1005
 						TargetEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance2
@@ -109,7 +109,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1006
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance2
@@ -117,7 +117,7 @@ SpatialPrefabBlueprint AA5A852A-CF4B-AE55-338B-FBA84B7B5DF8 #primary instance
 						SourceEvent::EventSpec
 							Id 1007
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance1
@@ -205,7 +205,7 @@ InterfaceDescriptorData Instance2
 			Id 1007
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 IrReverbEntityData Instance3

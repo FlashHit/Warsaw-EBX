@@ -11,8 +11,8 @@ SpatialPrefabBlueprint FF6A8F73-2DD9-1F83-6926-13D8261FB8B6 #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 1564494525
-							TargetFieldId -670630719
+							SourceFieldId 1564494525 (CurrentVariation)
+							TargetFieldId -670630719 (ObjectVariation)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -24,23 +24,23 @@ SpatialPrefabBlueprint FF6A8F73-2DD9-1F83-6926-13D8261FB8B6 #primary instance
 						SourceEvent::EventSpec
 							Id -441637063
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -847278421
+							Id -847278421 (OnDamaged)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(2)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance1
@@ -54,7 +54,7 @@ SpatialPrefabBlueprint FF6A8F73-2DD9-1F83-6926-13D8261FB8B6 #primary instance
 						Source Instance1
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
 							Id 1489724582
 						TargetType EventConnectionTargetType_Client
@@ -62,9 +62,9 @@ SpatialPrefabBlueprint FF6A8F73-2DD9-1F83-6926-13D8261FB8B6 #primary instance
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -157,7 +157,7 @@ InterfaceDescriptorData Instance2
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

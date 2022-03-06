@@ -11,50 +11,50 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						member(0)::PropertyConnection
 							Source Instance17
 							Target Instance1
-							SourceFieldId 48673745
-							TargetFieldId -409930682
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance17
 							Target Instance16
-							SourceFieldId -1527071975
-							TargetFieldId -1527071975
+							SourceFieldId -1527071975 (CurrentTime)
+							TargetFieldId -1527071975 (CurrentTime)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance18
 							Target Instance2
-							SourceFieldId 2089241857
+							SourceFieldId 2089241857 (Vec4)
 							TargetFieldId -524533638
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance13
-							SourceFieldId 177661
-							TargetFieldId 193450866
+							SourceFieldId 177661 (X)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance13
 							Target Instance18
-							SourceFieldId 193453899
-							TargetFieldId 177661
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177661 (X)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance15
 							Target Instance13
-							SourceFieldId 225375086
-							TargetFieldId 858290427
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 858290427 (InputSelect)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance3
 							Target Instance13
-							SourceFieldId 177661
-							TargetFieldId 193450867
+							SourceFieldId 177661 (X)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId -1028279722
+							SourceFieldId -1028279722 (ShaderParameters)
 							TargetFieldId 0
 					Interface Instance16
 					Flags 3
@@ -65,7 +65,7 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance16
@@ -73,7 +73,7 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance16
@@ -81,7 +81,7 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance16
@@ -89,15 +89,15 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance11
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance16
@@ -105,15 +105,15 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id -1557229994
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(6)::EventConnection
 						Source Instance12
 						Target Instance15
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(7)::EventConnection
 						Source Instance16
@@ -121,7 +121,7 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance16
@@ -129,7 +129,7 @@ SpatialPrefabBlueprint A10FB703-D928-49F4-B6FB-AAFC22D6859D #primary instance
 						SourceEvent::EventSpec
 							Id 382195342
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance17
@@ -254,7 +254,7 @@ VecSplitterEntityData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_TranslationX
@@ -269,7 +269,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_RotationX
@@ -284,7 +284,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_RotationY
@@ -299,7 +299,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_TranslationZ
@@ -314,7 +314,7 @@ TransformPartPropertyTrackData Instance8
 TransformPartPropertyTrackData Instance9
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_TranslationY
@@ -329,7 +329,7 @@ TransformPartPropertyTrackData Instance9
 TransformPartPropertyTrackData Instance10
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 13815729353836684675 #xp1/objects/props/radartrailer_01/animtrackdata/1685fde7-94bf-4957-8b09-aa3d10b20545_rotation
 	TransformPart TransformPart_RotationZ
@@ -399,7 +399,7 @@ InterfaceDescriptorData Instance16
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1527071975
+				Id -1527071975 (CurrentTime)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent

@@ -11,32 +11,32 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						member(0)::PropertyConnection
 							Source 83C07170-C94D-4309-AB08-A5537A95A2A6
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target DB3DB747-9C2C-449C-AFC2-9E6905368CDB
-							SourceFieldId 225375086
-							TargetFieldId 2662400
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target DB3DB747-9C2C-449C-AFC2-9E6905368CDB
 							SourceFieldId 1139232450
-							TargetFieldId -409930682
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance2
 							Target DB3DB747-9C2C-449C-AFC2-9E6905368CDB
-							SourceFieldId 225375086
+							SourceFieldId 225375086 (Value)
 							TargetFieldId -1029139728
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance3
 							Target DB3DB747-9C2C-449C-AFC2-9E6905368CDB
 							SourceFieldId -1952769885
-							TargetFieldId 755715367
+							TargetFieldId 755715367 (Excluded)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance3
@@ -48,13 +48,13 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
 							Id 1001
 						TargetType EventConnectionTargetType_ClientAndServer
@@ -62,9 +62,9 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						Source Instance0
 						Target 83C07170-C94D-4309-AB08-A5537A95A2A6
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance3
@@ -72,7 +72,7 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						SourceEvent::EventSpec
 							Id 1105363035
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance3
@@ -80,7 +80,7 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						SourceEvent::EventSpec
 							Id 1002
 						TargetEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance3
@@ -96,7 +96,7 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						SourceEvent::EventSpec
 							Id 1004
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance3
@@ -104,7 +104,7 @@ SpatialPrefabBlueprint 7D1E6892-3C26-A785-A4E2-D5B9B19C2623 #primary instance
 						SourceEvent::EventSpec
 							Id 1005
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance3
@@ -274,7 +274,7 @@ InterfaceDescriptorData Instance3
 			Id 1007
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 		member(1)::DynamicEvent
 			Id 1001
 		member(2)::DynamicEvent

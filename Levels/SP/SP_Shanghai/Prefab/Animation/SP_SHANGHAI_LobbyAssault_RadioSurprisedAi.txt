@@ -11,29 +11,29 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						member(0)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance1
 							Target Instance6
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId -820123935
 						member(1)::LinkConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 587711351
+							SourceFieldId 587711351 (PlayAnimation)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance6
 							Target Instance1
-							SourceFieldId -1251941306
+							SourceFieldId -1251941306 (Waypoint)
 							TargetFieldId 0
 						member(3)::LinkConnection
 							Source Instance2
 							Target Instance6
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId -820123935
 					Interface Instance6
 					Flags 15
@@ -44,7 +44,7 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id -2116974351
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance6
@@ -52,7 +52,7 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id 1414593252
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance6
@@ -60,15 +60,15 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id -1173311007
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance4
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(4)::EventConnection
 						Source Instance6
@@ -76,7 +76,7 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id 1414593252
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance6
@@ -84,7 +84,7 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id -2116974351
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance6
@@ -92,23 +92,23 @@ SpatialPrefabBlueprint 428A1FAF-9C19-746B-0151-6AD9D006C621 #primary instance
 						SourceEvent::EventSpec
 							Id -1173311007
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance1
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1567096521
+							Id -1567096521 (OnReachedEnd)
 						TargetEvent::EventSpec
-							Id -1573253508
+							Id -1573253508 (Client)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance5
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1567096521
+							Id -1567096521 (OnReachedEnd)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -405,10 +405,10 @@ InterfaceDescriptorData Instance6
 			Id -1173311007
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1567096521
+			Id -1567096521 (OnReachedEnd)
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1251941306
+			Id -1251941306 (Waypoint)
 	OutputLinks::array
 		member(0)::DynamicLink
 			Id -820123935

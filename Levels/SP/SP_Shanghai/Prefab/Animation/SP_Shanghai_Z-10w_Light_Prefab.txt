@@ -11,8 +11,8 @@ SpatialPrefabBlueprint 9B3724CC-5D30-4A31-95B1-B58761F74DAD #primary instance
 						member(0)::PropertyConnection
 							Source Instance9
 							Target Instance0
-							SourceFieldId 485757501
-							TargetFieldId -409930682
+							SourceFieldId 485757501 (LightMovment)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance8
@@ -22,9 +22,9 @@ SpatialPrefabBlueprint 9B3724CC-5D30-4A31-95B1-B58761F74DAD #primary instance
 						Source Instance8
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1760115193
+							Id -1760115193 (LightsOff)
 						TargetEvent::EventSpec
-							Id -1403068541
+							Id -1403068541 (Disable_Lights)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance10
@@ -32,7 +32,7 @@ SpatialPrefabBlueprint 9B3724CC-5D30-4A31-95B1-B58761F74DAD #primary instance
 						SourceEvent::EventSpec
 							Id -346116108
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance10
@@ -40,7 +40,7 @@ SpatialPrefabBlueprint 9B3724CC-5D30-4A31-95B1-B58761F74DAD #primary instance
 						SourceEvent::EventSpec
 							Id -149342725
 						TargetEvent::EventSpec
-							Id -1403068541
+							Id -1403068541 (Disable_Lights)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance8
@@ -48,23 +48,23 @@ SpatialPrefabBlueprint 9B3724CC-5D30-4A31-95B1-B58761F74DAD #primary instance
 						SourceEvent::EventSpec
 							Id 657562772
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source Instance8
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1760115193
+							Id -1760115193 (LightsOff)
 						TargetEvent::EventSpec
-							Id -1573253508
+							Id -1573253508 (Client)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance7
 						Target Instance10
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 		Objects::array
 			member(0) Instance0
@@ -104,7 +104,7 @@ ReferenceObjectData Instance0
 TransformPartPropertyTrackData Instance1
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_TranslationY
@@ -119,7 +119,7 @@ TransformPartPropertyTrackData Instance1
 TransformPartPropertyTrackData Instance2
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_TranslationX
@@ -134,7 +134,7 @@ TransformPartPropertyTrackData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_RotationX
@@ -149,7 +149,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_RotationZ
@@ -164,7 +164,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_TranslationZ
@@ -179,7 +179,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 485757501
+		Id 485757501 (LightMovment)
 		Times *nullArray*
 	Resource 8577537229801939605 #levels/sp/sp_shanghai/prefab/animation/animtrackdata/a56f5e39-44fe-49bd-bc02-a255e84ff217_lightmovment
 	TransformPart TransformPart_RotationY
@@ -204,7 +204,7 @@ InterfaceDescriptorData Instance8
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -1760115193
+			Id -1760115193 (LightsOff)
 		member(1)::DynamicEvent
 			Id 657562772
 	OutputEvents *nullArray*

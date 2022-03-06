@@ -12,13 +12,13 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance4
 							SourceFieldId -1936080215
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance1
 							SourceFieldId 1694030815
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
@@ -29,26 +29,26 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						member(3)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance4
-							SourceFieldId -1294191458
-							TargetFieldId -2132289043
+							SourceFieldId -1294191458 (Timeline)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance2
 							SourceFieldId -794319700
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance11
 							Target 74ADDABF-1590-428A-9120-7EBE1804E977
 							SourceFieldId -1340351285
-							TargetFieldId 1578117282
+							TargetFieldId 1578117282 (PartCountDestroyedForCollapse)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance11
 							Target Instance2
 							SourceFieldId -1333616825
-							TargetFieldId -670630719
+							TargetFieldId -670630719 (ObjectVariation)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance11
@@ -59,32 +59,32 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						member(8)::PropertyConnection
 							Source Instance11
 							Target 74ADDABF-1590-428A-9120-7EBE1804E977
-							SourceFieldId 77824521
-							TargetFieldId 77824521
+							SourceFieldId 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
+							TargetFieldId 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance3
 							SourceFieldId -794319700
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance0
 							SourceFieldId -794319700
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(11)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance1
 							SourceFieldId 794865716
-							TargetFieldId 901540267
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 						member(12)::PropertyConnection
 							Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
 							Target Instance4
 							SourceFieldId 1624493570
-							TargetFieldId 901540267
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -111,7 +111,7 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						SourceEvent::EventSpec
 							Id -2000007856
 						TargetEvent::EventSpec
-							Id -1911867759
+							Id -1911867759 (PartDestroyed)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 74ADDABF-1590-428A-9120-7EBE1804E977
@@ -119,7 +119,7 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						SourceEvent::EventSpec
 							Id 1314121688
 						TargetEvent::EventSpec
-							Id 397727246
+							Id 397727246 (Collapse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
@@ -157,9 +157,9 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						Source Instance2
 						Target D16FB19F-B7AC-48BA-A046-435DCAE4249A
 						SourceEvent::EventSpec
-							Id 351212879
+							Id 351212879 (OnCollapse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
@@ -205,9 +205,9 @@ SpatialPrefabBlueprint 9948C677-A449-70DF-5D73-D8F30A32A2EE #primary instance
 						Source 74ADDABF-1590-428A-9120-7EBE1804E977
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 352724452
+							Id 352724452 (OnSpawnPartObjectsOnCollapse)
 						TargetEvent::EventSpec
-							Id -1926405403
+							Id -1926405403 (SpawnPartObjectsOnCollapse)
 						TargetType EventConnectionTargetType_Server
 					member(13)::EventConnection
 						Source D16FB19F-B7AC-48BA-A046-435DCAE4249A
@@ -561,7 +561,7 @@ FloatPropertyTrackData Instance10
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id -1294191458
+			Id -1294191458 (Timeline)
 			Times::array
 				member(0) 0
 				member(1) 10000
@@ -598,7 +598,7 @@ InterfaceDescriptorData Instance11
 			member(4)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 77824521
+				Id 77824521 (PartCountDestroyedForSpawnPartObjectsOnCollapse)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent

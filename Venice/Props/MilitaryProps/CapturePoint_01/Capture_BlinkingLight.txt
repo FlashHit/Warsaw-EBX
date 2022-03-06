@@ -11,8 +11,8 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId -1043512249
-							TargetFieldId -1043512249
+							SourceFieldId -1043512249 (CaptureLightRadius)
+							TargetFieldId -1043512249 (CaptureLightRadius)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance1
@@ -22,7 +22,7 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
 							Id -1759102997
 						TargetType EventConnectionTargetType_Client
@@ -46,25 +46,25 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -721416017
+							Id -721416017 (DisableLight)
 						TargetEvent::EventSpec
-							Id -721416017
+							Id -721416017 (DisableLight)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source 9C2C980D-5FC2-46A7-9199-7938DD7A5C08
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance1
@@ -72,7 +72,7 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
 						SourceEvent::EventSpec
 							Id -953956057
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance1
@@ -80,15 +80,15 @@ SpatialPrefabBlueprint AFC0DA0F-E6BC-84E6-67DA-06106138C97B #primary instance
 						SourceEvent::EventSpec
 							Id -657632873
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 643343130
+							Id 643343130 (EnableLight)
 						TargetEvent::EventSpec
-							Id 643343130
+							Id 643343130 (EnableLight)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance2
@@ -139,17 +139,17 @@ InterfaceDescriptorData Instance1
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1043512249
+				Id -1043512249 (CaptureLightRadius)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -721416017
+			Id -721416017 (DisableLight)
 		member(1)::DynamicEvent
 			Id -953956057
 		member(2)::DynamicEvent
 			Id -657632873
 		member(3)::DynamicEvent
-			Id 643343130
+			Id 643343130 (EnableLight)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

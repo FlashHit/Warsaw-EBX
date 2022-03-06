@@ -11,80 +11,80 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						member(0)::PropertyConnection
 							Source 1D7B3213-D604-4800-A52C-2F7354B05EAA
 							Target Instance18
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source C72E7F98-5A42-4C9B-98FC-B313FC6B9923
 							Target Instance19
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source DEB893F6-E46F-40CA-9AA9-D716906F6072
 							Target Instance21
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId 408993345
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance22
 							Target Instance21
-							SourceFieldId 193453899
-							TargetFieldId 2089008817
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2089008817 (Open)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source 1D7B3213-D604-4800-A52C-2F7354B05EAA
 							Target Instance21
-							SourceFieldId 193453899
-							TargetFieldId 212633683
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 212633683 (Close)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source 1D7B3213-D604-4800-A52C-2F7354B05EAA
 							Target Instance22
-							SourceFieldId 193453899
-							TargetFieldId 5862146
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance0
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source A1ACDBC3-2053-4858-A4A5-3DF3FB1561AE
 							Target Instance4
-							SourceFieldId 193453899
-							TargetFieldId 299217285
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 299217285 (Selection)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source 2F41022A-154B-43F5-83A9-992D3D3942A3
 							Target Instance4
-							SourceFieldId 212633683
-							TargetFieldId 193450867
+							SourceFieldId 212633683 (Close)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source 56A7108E-8A2B-4397-8B8B-24815F50F681
 							Target Instance4
-							SourceFieldId 2089008817
-							TargetFieldId 193450864
+							SourceFieldId 2089008817 (Open)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(11)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -2024647575
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(12)::PropertyConnection
 							Source Instance17
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 443997333
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -104,9 +104,9 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						Source Instance20
 						Target Instance18
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance21
@@ -114,31 +114,31 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						SourceEvent::EventSpec
 							Id 252478031
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance19
 						Target Instance18
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance20
 						Target C72E7F98-5A42-4C9B-98FC-B313FC6B9923
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance18
 						Target DEB893F6-E46F-40CA-9AA9-D716906F6072
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance21
@@ -146,7 +146,7 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						SourceEvent::EventSpec
 							Id 1480514341
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance21
@@ -154,15 +154,15 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						SourceEvent::EventSpec
 							Id 30616135
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance18
 						Target 56A7108E-8A2B-4397-8B8B-24815F50F681
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance21
@@ -170,39 +170,39 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						SourceEvent::EventSpec
 							Id 30616135
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(9)::EventConnection
 						Source 56A7108E-8A2B-4397-8B8B-24815F50F681
 						Target 1D7B3213-D604-4800-A52C-2F7354B05EAA
 						SourceEvent::EventSpec
-							Id -1573023017
+							Id -1573023017 (Closed)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(10)::EventConnection
 						Source 56A7108E-8A2B-4397-8B8B-24815F50F681
 						Target C72E7F98-5A42-4C9B-98FC-B313FC6B9923
 						SourceEvent::EventSpec
-							Id -1573023017
+							Id -1573023017 (Closed)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(11)::EventConnection
 						Source 56A7108E-8A2B-4397-8B8B-24815F50F681
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1573023017
+							Id -1573023017 (Closed)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(12)::EventConnection
 						Source Instance18
 						Target 2F41022A-154B-43F5-83A9-992D3D3942A3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(13)::EventConnection
 						Source Instance21
@@ -210,47 +210,47 @@ SpatialPrefabBlueprint 26C2EF91-B5F3-8742-E297-B2B1D75821DA #primary instance
 						SourceEvent::EventSpec
 							Id 1480514341
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(14)::EventConnection
 						Source 2F41022A-154B-43F5-83A9-992D3D3942A3
 						Target 1D7B3213-D604-4800-A52C-2F7354B05EAA
 						SourceEvent::EventSpec
-							Id -1402066096
+							Id -1402066096 (Opened)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(15)::EventConnection
 						Source 2F41022A-154B-43F5-83A9-992D3D3942A3
 						Target DEB893F6-E46F-40CA-9AA9-D716906F6072
 						SourceEvent::EventSpec
-							Id -1402066096
+							Id -1402066096 (Opened)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(16)::EventConnection
 						Source 2F41022A-154B-43F5-83A9-992D3D3942A3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1402066096
+							Id -1402066096 (Opened)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(17)::EventConnection
 						Source 56A7108E-8A2B-4397-8B8B-24815F50F681
 						Target A1ACDBC3-2053-4858-A4A5-3DF3FB1561AE
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(18)::EventConnection
 						Source 2F41022A-154B-43F5-83A9-992D3D3942A3
 						Target A1ACDBC3-2053-4858-A4A5-3DF3FB1561AE
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) DEB893F6-E46F-40CA-9AA9-D716906F6072
@@ -288,7 +288,7 @@ SyncedSequenceEntityData 2F41022A-154B-43F5-83A9-992D3D3942A3
 		Events::array
 			member(0)::SequenceEventData
 				Event::EventSpec
-					Id -1402066096
+					Id -1402066096 (Opened)
 				Time 8900
 		SequenceStartTime 0
 		SequenceLength 9000
@@ -321,7 +321,7 @@ SyncedSequenceEntityData 56A7108E-8A2B-4397-8B8B-24815F50F681
 		Events::array
 			member(0)::SequenceEventData
 				Event::EventSpec
-					Id -1573023017
+					Id -1573023017 (Closed)
 				Time 8900
 		SequenceStartTime 0
 		SequenceLength 9000
@@ -525,7 +525,7 @@ TransformSelectorEntityData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_TranslationY
@@ -540,7 +540,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_RotationX
@@ -555,7 +555,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_RotationZ
@@ -570,7 +570,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_RotationY
@@ -585,7 +585,7 @@ TransformPartPropertyTrackData Instance8
 TransformPartPropertyTrackData Instance9
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_TranslationZ
@@ -600,7 +600,7 @@ TransformPartPropertyTrackData Instance9
 TransformPartPropertyTrackData Instance10
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_TranslationY
@@ -615,7 +615,7 @@ TransformPartPropertyTrackData Instance10
 TransformPartPropertyTrackData Instance11
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_TranslationX
@@ -630,7 +630,7 @@ TransformPartPropertyTrackData Instance11
 TransformPartPropertyTrackData Instance12
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_RotationZ
@@ -645,7 +645,7 @@ TransformPartPropertyTrackData Instance12
 TransformPartPropertyTrackData Instance13
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_RotationX
@@ -660,7 +660,7 @@ TransformPartPropertyTrackData Instance13
 TransformPartPropertyTrackData Instance14
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 13302501602211517827 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/56a7108e-8a2b-4397-8b8b-24815f50f681_open
 	TransformPart TransformPart_RotationY
@@ -675,7 +675,7 @@ TransformPartPropertyTrackData Instance14
 TransformPartPropertyTrackData Instance15
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_TranslationX
@@ -690,7 +690,7 @@ TransformPartPropertyTrackData Instance15
 TransformPartPropertyTrackData Instance16
 	$::PropertyTrackData
 		$::DataContainer
-		Id 212633683
+		Id 212633683 (Close)
 		Times *nullArray*
 	Resource 2308325607948331271 #xp3/levels/xp3_marketplace/prefabs/animtrackdata/2f41022a-154b-43f5-83a9-992d3d3942a3_close
 	TransformPart TransformPart_TranslationZ
@@ -759,12 +759,12 @@ InterfaceDescriptorData Instance21
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2089008817
+				Id 2089008817 (Open)
 				AccessType FieldAccessType_Source
 			member(2)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 212633683
+				Id 212633683 (Close)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent

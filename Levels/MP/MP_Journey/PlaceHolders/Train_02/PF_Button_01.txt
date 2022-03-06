@@ -12,37 +12,37 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 							Source Instance4
 							Target B8530FF6-187A-44E2-8703-66F19442845F
 							SourceFieldId 1568679802
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId 443997333
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
 							Target 40F7ED50-F963-4589-962E-E7ECF6010395
 							SourceFieldId 1568679802
-							TargetFieldId 5862146
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target B8530FF6-187A-44E2-8703-66F19442845F
-							SourceFieldId -369521983
-							TargetFieldId -369521983
+							SourceFieldId -369521983 (InteractionSid)
+							TargetFieldId -369521983 (InteractionSid)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance4
 							Target Instance2
 							SourceFieldId 1568679802
-							TargetFieldId 2088812747
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance5
 							Target Instance0
-							SourceFieldId 1564494525
-							TargetFieldId -670630719
+							SourceFieldId 1564494525 (CurrentVariation)
+							TargetFieldId -670630719 (ObjectVariation)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -52,9 +52,9 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 						Source B8530FF6-187A-44E2-8703-66F19442845F
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance4
@@ -62,31 +62,31 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 						SourceEvent::EventSpec
 							Id -982661740
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source 40F7ED50-F963-4589-962E-E7ECF6010395
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source 40F7ED50-F963-4589-962E-E7ECF6010395
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(5)::EventConnection
 						Source Instance4
@@ -94,7 +94,7 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 						SourceEvent::EventSpec
 							Id 193420426
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance4
@@ -108,7 +108,7 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 						Source Instance2
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
 							Id 1489724582
 						TargetType EventConnectionTargetType_NetworkedClient
@@ -116,17 +116,17 @@ SpatialPrefabBlueprint 33C33765-5463-9E28-8339-1B9527B774E5 #primary instance
 						Source Instance2
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(9)::EventConnection
 						Source B8530FF6-187A-44E2-8703-66F19442845F
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 1489724580
+							Id 1489724580 (SetVariation2)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) B8530FF6-187A-44E2-8703-66F19442845F
@@ -275,7 +275,7 @@ InterfaceDescriptorData Instance4
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -369521983
+				Id -369521983 (InteractionSid)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -286,7 +286,7 @@ InterfaceDescriptorData Instance4
 			Id -982661740
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1447021378
+			Id -1447021378 (OnInteraction)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 ObjectVariationMultiSwitchEntityData Instance5

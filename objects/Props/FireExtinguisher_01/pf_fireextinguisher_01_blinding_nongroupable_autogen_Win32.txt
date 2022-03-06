@@ -11,13 +11,13 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId -327092851
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -327092851 (ActivateTarget)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target Instance3
-							SourceFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
 							TargetFieldId 1000
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
@@ -30,13 +30,13 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id 1630515206
+							Id 1630515206 (Destroyed)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
 							Id 1001
 						TargetType EventConnectionTargetType_Server
@@ -44,7 +44,7 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -3142077
+							Id -3142077 (MoveToNextHealthState)
 						TargetEvent::EventSpec
 							Id 1002
 						TargetType EventConnectionTargetType_Server
@@ -54,7 +54,7 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						SourceEvent::EventSpec
 							Id 1003
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance3
@@ -62,21 +62,21 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						SourceEvent::EventSpec
 							Id 1004
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -3142077
+							Id -3142077 (MoveToNextHealthState)
 						TargetEvent::EventSpec
 							Id 1005
 						TargetType EventConnectionTargetType_Server
@@ -84,7 +84,7 @@ SpatialPrefabBlueprint BB3612B8-B977-584D-E00C-3E3EAE7B6386 #primary instance
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
 							Id 1006
 						TargetType EventConnectionTargetType_Server
@@ -152,7 +152,7 @@ InterfaceDescriptorData Instance3
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
@@ -161,9 +161,9 @@ InterfaceDescriptorData Instance3
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(1)::DynamicEvent
-			Id -3142077
+			Id -3142077 (MoveToNextHealthState)
 		member(2)::DynamicEvent
 			Id 1000
 		member(3)::DynamicEvent
@@ -172,7 +172,7 @@ InterfaceDescriptorData Instance3
 			Id 1004
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 1630515206
+			Id 1630515206 (Destroyed)
 		member(1)::DynamicEvent
 			Id 1001
 		member(2)::DynamicEvent

@@ -12,37 +12,37 @@ LogicPrefabBlueprint 6181B258-B181-8B58-10E0-1471DC56ABE6 #primary instance
 							Source Instance2
 							Target Instance1
 							SourceFieldId -787784762
-							TargetFieldId 193450867
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId -227090673
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance3
-							SourceFieldId 225375086
-							TargetFieldId 176040160
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 176040160 (BoolValue)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 245372264
-							TargetFieldId 858290427
+							SourceFieldId 245372264 (CastToInt)
+							TargetFieldId 858290427 (InputSelect)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance2
 							Target Instance1
 							SourceFieldId 874846746
-							TargetFieldId 193450866
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 225375086
-							TargetFieldId 1010522579
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 1010522579 (IsActive)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -52,17 +52,17 @@ LogicPrefabBlueprint 6181B258-B181-8B58-10E0-1471DC56ABE6 #primary instance
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -104,7 +104,7 @@ InterfaceDescriptorData Instance2
 			member(2)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1010522579
+				Id 1010522579 (IsActive)
 				AccessType FieldAccessType_Source
 			member(3)::DataField
 				Value Float32 24000
@@ -113,9 +113,9 @@ InterfaceDescriptorData Instance2
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id 2089401213
+			Id 2089401213 (Stop)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

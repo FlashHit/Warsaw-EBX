@@ -11,48 +11,48 @@ VehicleBlueprint 01AA4CED-3B45-48EB-9DF5-961CEAA1C05B #primary instance
 						member(0)::PropertyConnection
 							Source Instance4
 							Target Instance15
-							SourceFieldId -709588
-							TargetFieldId -1429643463
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1429643463 (UseFirstPersonSounds)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target Instance18
-							SourceFieldId -709588
-							TargetFieldId -1886708048
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1886708048 (CameraActive)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
 							Target Instance18
-							SourceFieldId -907946637
-							TargetFieldId -288794722
+							SourceFieldId -907946637 (AlternateViewEnabledOut)
+							TargetFieldId -288794722 (ZoomActive)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance17
-							SourceFieldId -907946637
-							TargetFieldId 2089658322
+							SourceFieldId -907946637 (AlternateViewEnabledOut)
+							TargetFieldId 2089658322 (Zoom)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance4
 							Target Instance17
-							SourceFieldId -709588
+							SourceFieldId -709588 (ActiveForLocalPlayer)
 							TargetFieldId -1033317261
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance36
-							SourceFieldId -2055729720
+							SourceFieldId -2055729720 (WeaponComponent)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance0
 							Target Instance14
-							SourceFieldId 593706629
+							SourceFieldId 593706629 (YawingComponent)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance0
 							Target Instance13
-							SourceFieldId 23826156
+							SourceFieldId 23826156 (PitchingComponent)
 							TargetFieldId 0
 					Interface Instance50
 					Flags 3
@@ -61,17 +61,17 @@ VehicleBlueprint 01AA4CED-3B45-48EB-9DF5-961CEAA1C05B #primary instance
 						Source Instance0
 						Target Instance50
 						SourceEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance50
 						SourceEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance2
@@ -79,7 +79,7 @@ VehicleBlueprint 01AA4CED-3B45-48EB-9DF5-961CEAA1C05B #primary instance
 						SourceEvent::EventSpec
 							Id -1658092881
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_Server
 		Object 0DB0BF27-9211-4CB8-967F-29748DECA334
 VehicleEntityData 0DB0BF27-9211-4CB8-967F-29748DECA334
@@ -1825,7 +1825,7 @@ UnlockComponentData Instance26
 					z 0.0
 			Excluded False
 	UnlockAsset *nullGuid*
-	UnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	UnlockAssetGuid *nullGuid*
 	UnlockIdentifier 0
 	UnlockDataKey 0
 	InvertUnlockTest True
@@ -2263,7 +2263,7 @@ WeaponComponentData Instance36
 	OverheatDropPerSecondMultiplier 1.0
 	LockTimeMultiplier 1.0
 	LockingAcceptanceAngleMultiplier 1.0
-	WeaponItemHash 1910102198
+	WeaponItemHash 1910102198 (C-Ram Cannon) #asset
 	SequentialFiring True
 CameraComponentSoundData Instance37
 	$::DataContainer
@@ -2470,9 +2470,9 @@ InterfaceDescriptorData Instance50
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 870768041
+			Id 870768041 (OnTargetAcquired)
 		member(1)::DynamicEvent
-			Id -2314607
+			Id -2314607 (OnTargetLost)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 StatEventTriggerEntityData Instance51

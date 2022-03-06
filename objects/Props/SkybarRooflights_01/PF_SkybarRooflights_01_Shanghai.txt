@@ -12,7 +12,7 @@ SpatialPrefabBlueprint 87C9EAE9-B43B-4C9C-B47E-1E27C85F9F17 #primary instance
 						member(0)::LinkConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId -124062625
+							SourceFieldId -124062625 (ChildBody)
 							TargetFieldId -1403317900
 					Interface Instance4
 					Flags 2
@@ -23,23 +23,23 @@ SpatialPrefabBlueprint 87C9EAE9-B43B-4C9C-B47E-1E27C85F9F17 #primary instance
 						SourceEvent::EventSpec
 							Id 310886383
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance2
@@ -286,6 +286,6 @@ InterfaceDescriptorData Instance4
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

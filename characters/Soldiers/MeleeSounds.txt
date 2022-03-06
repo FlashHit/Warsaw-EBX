@@ -11,38 +11,38 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						member(0)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 299217285
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 299217285 (Selection)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -2024647575
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance1
-							SourceFieldId 1025692456
-							TargetFieldId 193450867
+							SourceFieldId 1025692456 (1pTransform)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance5
 							Target Instance1
-							SourceFieldId -1534403542
-							TargetFieldId 193450864
+							SourceFieldId -1534403542 (3pTransform)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target Instance5
-							SourceFieldId -1530232091
-							TargetFieldId 345364432
+							SourceFieldId -1530232091 (AntAnimatableComponent)
+							TargetFieldId 345364432 (1pAnimatable)
 						member(1)::LinkConnection
 							Source Instance3
 							Target Instance5
-							SourceFieldId -1530232091
-							TargetFieldId -1371800174
+							SourceFieldId -1530232091 (AntAnimatableComponent)
+							TargetFieldId -1371800174 (3pAnimatable)
 					Interface Instance5
 					Flags 2
 				EventConnections::array
@@ -52,7 +52,7 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1454090506
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance5
@@ -60,7 +60,7 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1925843400
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance5
@@ -68,23 +68,23 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1454090506
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance5
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance5
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance2
@@ -148,7 +148,7 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1454090506
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_Client
 					member(13)::EventConnection
 						Source Instance5
@@ -156,15 +156,15 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1925843400
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_Client
 					member(14)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(15)::EventConnection
 						Source Instance3
@@ -226,9 +226,9 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						Source Instance0
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 1194874936
+							Id 1194874936 (OnDeactivated)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(23)::EventConnection
 						Source Instance2
@@ -292,7 +292,7 @@ LogicPrefabBlueprint 8E72EB95-A99B-4895-9117-D206486CC574 #primary instance
 						SourceEvent::EventSpec
 							Id 1925843400
 						TargetEvent::EventSpec
-							Id 231941894
+							Id 231941894 (Prime)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance0
@@ -495,12 +495,12 @@ InterfaceDescriptorData Instance5
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1025692456
+				Id 1025692456 (1pTransform)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1534403542
+				Id -1534403542 (3pTransform)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -508,14 +508,14 @@ InterfaceDescriptorData Instance5
 		member(1)::DynamicEvent
 			Id 1925843400
 		member(2)::DynamicEvent
-			Id 1928776733
+			Id 1928776733 (Deactivate)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id 345364432
+			Id 345364432 (1pAnimatable)
 		member(1)::DynamicLink
-			Id -1371800174
+			Id -1371800174 (3pAnimatable)
 MixerEntityData Instance6
 	$::EntityData
 		$::GameObjectData

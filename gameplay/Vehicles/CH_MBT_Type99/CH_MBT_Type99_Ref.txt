@@ -23,7 +23,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 						Source Instance1
 						Target Instance1
 						SourceFieldId -907221597
-						TargetFieldId 154856772
+						TargetFieldId 154856772 (HaveControllableSpawned)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance1
@@ -35,7 +35,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					SourceEvent::EventSpec
 						Id 553877817
 					TargetEvent::EventSpec
-						Id -1036968738
+						Id -1036968738 (OnSpawned)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(1)::EventConnection
 					Source Instance1
@@ -43,13 +43,13 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					SourceEvent::EventSpec
 						Id 1453669068
 					TargetEvent::EventSpec
-						Id -1301856725
+						Id -1301856725 (OnAlerted)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(2)::EventConnection
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id -274579609
+						Id -274579609 (Destroy)
 					TargetEvent::EventSpec
 						Id -929865367
 					TargetType EventConnectionTargetType_ClientAndServer
@@ -57,7 +57,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id 230891742
+						Id 230891742 (Spawn)
 					TargetEvent::EventSpec
 						Id 1214171600
 					TargetType EventConnectionTargetType_ClientAndServer
@@ -75,7 +75,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					SourceEvent::EventSpec
 						Id 511790848
 					TargetEvent::EventSpec
-						Id -1452333337
+						Id -1452333337 (OnDestroyed)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(6)::EventConnection
 					Source Instance1
@@ -83,7 +83,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					SourceEvent::EventSpec
 						Id -639189464
 					TargetEvent::EventSpec
-						Id 1666281711
+						Id 1666281711 (OnDamage)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(7)::EventConnection
 					Source Instance1
@@ -105,7 +105,7 @@ PrefabBlueprint 072C8F5D-1009-4221-A1CC-ADC8E14B54FB #primary instance
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id -834116283
+						Id -834116283 (Unspawn)
 					TargetEvent::EventSpec
 						Id -834187317
 					TargetType EventConnectionTargetType_Server
@@ -152,7 +152,7 @@ InterfaceDescriptorData Instance1
 			member(5)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 154856772
+				Id 154856772 (HaveControllableSpawned)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -160,9 +160,9 @@ InterfaceDescriptorData Instance1
 		member(1)::DynamicEvent
 			Id 1453669068
 		member(2)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(3)::DynamicEvent
-			Id 230891742
+			Id 230891742 (Spawn)
 		member(4)::DynamicEvent
 			Id 971763817
 		member(5)::DynamicEvent
@@ -174,12 +174,12 @@ InterfaceDescriptorData Instance1
 		member(8)::DynamicEvent
 			Id 386728335
 		member(9)::DynamicEvent
-			Id -834116283
+			Id -834116283 (Unspawn)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(1)::DynamicEvent
-			Id -1301856725
+			Id -1301856725 (OnAlerted)
 		member(2)::DynamicEvent
 			Id -929865367
 		member(3)::DynamicEvent
@@ -187,9 +187,9 @@ InterfaceDescriptorData Instance1
 		member(4)::DynamicEvent
 			Id 93109479
 		member(5)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 		member(6)::DynamicEvent
-			Id 1666281711
+			Id 1666281711 (OnDamage)
 		member(7)::DynamicEvent
 			Id 1242331898
 		member(8)::DynamicEvent

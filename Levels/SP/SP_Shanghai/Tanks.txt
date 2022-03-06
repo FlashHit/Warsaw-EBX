@@ -48,7 +48,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							member(6)::PropertyConnection
 								Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 								Target Instance2
-								SourceFieldId 154856772
+								SourceFieldId 154856772 (HaveControllableSpawned)
 								TargetFieldId -1740045507
 								ShouldNetworkValue False
 						LinkConnections::array
@@ -56,7 +56,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 								Source Instance2
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 								SourceFieldId 458407007
-								TargetFieldId -1316984818
+								TargetFieldId -1316984818 (PathFollower)
 							member(1)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
@@ -131,12 +131,12 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 								Source Instance2
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 								SourceFieldId -743947516
-								TargetFieldId -1316984818
+								TargetFieldId -1316984818 (PathFollower)
 							member(16)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 								SourceFieldId 243394254
-								TargetFieldId -1316984818
+								TargetFieldId -1316984818 (PathFollower)
 							member(17)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
@@ -145,17 +145,17 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							member(18)::LinkConnection
 								Source Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/4A2C8B4D-FE20-C523-0A9B-7E753B70C390
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 							member(19)::LinkConnection
 								Source Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/84FA9B37-55AD-E81C-2D64-EA6E26A1711F
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 							member(20)::LinkConnection
 								Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 								Target Levels/SP/SP_Shanghai/Tanks_Logic/27C5736D-D077-1C24-E430-4E03FE341946
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 						Interface Instance2
 						Flags 15
@@ -164,7 +164,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1301856725
+								Id -1301856725 (OnAlerted)
 							TargetEvent::EventSpec
 								Id -1429617287
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -172,7 +172,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1666281711
+								Id 1666281711 (OnDamage)
 							TargetEvent::EventSpec
 								Id 1105085962
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -180,7 +180,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1452333337
+								Id -1452333337 (OnDestroyed)
 							TargetEvent::EventSpec
 								Id -310358014
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -188,7 +188,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/EC86E119-C987-4D2F-A591-D496F25C0BEA
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
 								Id 441449640
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -198,7 +198,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id 1594891787
 							TargetEvent::EventSpec
-								Id -274579609
+								Id -274579609 (Destroy)
 							TargetType EventConnectionTargetType_Server
 						member(5)::EventConnection
 							Source Instance2
@@ -206,7 +206,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id -1367632934
 							TargetEvent::EventSpec
-								Id 230891742
+								Id 230891742 (Spawn)
 							TargetType EventConnectionTargetType_Server
 						member(6)::EventConnection
 							Source Instance2
@@ -220,7 +220,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1301856725
+								Id -1301856725 (OnAlerted)
 							TargetEvent::EventSpec
 								Id 1841378590
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -228,7 +228,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1666281711
+								Id 1666281711 (OnDamage)
 							TargetEvent::EventSpec
 								Id 697923181
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -236,7 +236,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1452333337
+								Id -1452333337 (OnDestroyed)
 							TargetEvent::EventSpec
 								Id -742360955
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -244,7 +244,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/21E9BEED-ABEC-44BE-B942-DAC8237E60F1
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
 								Id -1949562129
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -254,7 +254,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id -782085652
 							TargetEvent::EventSpec
-								Id -274579609
+								Id -274579609 (Destroy)
 							TargetType EventConnectionTargetType_Server
 						member(12)::EventConnection
 							Source Instance2
@@ -262,7 +262,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id 1065606205
 							TargetEvent::EventSpec
-								Id 230891742
+								Id 230891742 (Spawn)
 							TargetType EventConnectionTargetType_Server
 						member(13)::EventConnection
 							Source Instance2
@@ -276,7 +276,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1301856725
+								Id -1301856725 (OnAlerted)
 							TargetEvent::EventSpec
 								Id -1143855735
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -284,7 +284,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1666281711
+								Id 1666281711 (OnDamage)
 							TargetEvent::EventSpec
 								Id -2066054470
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -292,7 +292,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1452333337
+								Id -1452333337 (OnDestroyed)
 							TargetEvent::EventSpec
 								Id -2123353358
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -300,7 +300,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							Source Levels/SP/SP_Shanghai/Tanks_Logic/90D7FF83-0056-41DE-B2AD-EC562C3B2D2C
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
 								Id -1523343720
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -310,7 +310,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id 786303675
 							TargetEvent::EventSpec
-								Id -274579609
+								Id -274579609 (Destroy)
 							TargetType EventConnectionTargetType_Server
 						member(19)::EventConnection
 							Source Instance2
@@ -334,7 +334,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id -519166742
 							TargetEvent::EventSpec
-								Id 230891742
+								Id 230891742 (Spawn)
 							TargetType EventConnectionTargetType_Server
 						member(22)::EventConnection
 							Source Instance2
@@ -350,7 +350,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id -928485100
 							TargetEvent::EventSpec
-								Id -834116283
+								Id -834116283 (Unspawn)
 							TargetType EventConnectionTargetType_Server
 						member(24)::EventConnection
 							Source Instance2
@@ -358,7 +358,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id 1523692516
 							TargetEvent::EventSpec
-								Id -834116283
+								Id -834116283 (Unspawn)
 							TargetType EventConnectionTargetType_Server
 						member(25)::EventConnection
 							Source Instance2
@@ -366,7 +366,7 @@ SubWorldData 514F22F7-D766-4FCC-9470-41CFC1B36D6F #primary instance
 							SourceEvent::EventSpec
 								Id 1575355779
 							TargetEvent::EventSpec
-								Id -834116283
+								Id -834116283 (Unspawn)
 							TargetType EventConnectionTargetType_Server
 			Objects::array
 				member(0) Instance0

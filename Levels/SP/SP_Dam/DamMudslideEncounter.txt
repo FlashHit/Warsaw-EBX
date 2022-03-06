@@ -33,7 +33,7 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							member(4)::LinkConnection
 								Source Levels/SP/SP_Dam/DamMudslideEncounter_Logic/37C2E76A-1EF0-4415-8058-5E5DF0DD88D4
 								Target Levels/SP/SP_Dam/DamMudslideEncounter_Logic/08455E08-826A-13DF-F3FB-3F0A239929B8
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 						Interface Instance9
 						Flags 3
@@ -44,15 +44,15 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							SourceEvent::EventSpec
 								Id 1497995653
 							TargetEvent::EventSpec
-								Id 1422740397
+								Id 1422740397 (FadeOut)
 							TargetType EventConnectionTargetType_Client
 						member(1)::EventConnection
 							Source Levels/SP/SP_Dam/DamMudslideEncounter_Logic/8E3DDA02-ADFD-4A9B-A9FA-2724B3F0911B
 							Target Levels/SP/SP_Dam/DamMudslideEncounter_Flow/10EF606A-F7D1-4D4B-9243-4515B330E32F
 							SourceEvent::EventSpec
-								Id -1567096521
+								Id -1567096521 (OnReachedEnd)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Server
 						member(2)::EventConnection
 							Source Instance9
@@ -60,31 +60,31 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							SourceEvent::EventSpec
 								Id -1556905729
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Server
 						member(3)::EventConnection
 							Source Levels/SP/SP_Dam/DamMudslideEncounter_Flow/6017A05A-E7CF-4397-A5D6-E99DAE15A18F
 							Target Instance9
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 650265526
+								Id 650265526 (OnFinished)
 							TargetType EventConnectionTargetType_Server
 						member(4)::EventConnection
 							Source Levels/SP/SP_Dam/DamMudslideEncounter_Flow/10EF606A-F7D1-4D4B-9243-4515B330E32F
 							Target Levels/SP/SP_Dam/DamMudslideEncounter_Flow/43ED5D9F-614E-45D6-881E-0A563D5B6D41
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 2089420676
+								Id 2089420676 (Save)
 							TargetType EventConnectionTargetType_Server
 						member(5)::EventConnection
 							Source Levels/SP/SP_Dam/DamMudslideEncounter_Flow/43ED5D9F-614E-45D6-881E-0A563D5B6D41
 							Target Instance9
 							SourceEvent::EventSpec
-								Id -1434059356
+								Id -1434059356 (OnDone)
 							TargetEvent::EventSpec
-								Id 650265526
+								Id 650265526 (OnFinished)
 							TargetType EventConnectionTargetType_Server
 						member(6)::EventConnection
 							Source Levels/SP/SP_Dam/DamMudslideEncounter_Logic/8E3DDA02-ADFD-4A9B-A9FA-2724B3F0911B
@@ -92,15 +92,15 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							SourceEvent::EventSpec
 								Id 1829938950
 							TargetEvent::EventSpec
-								Id -1778993948
+								Id -1778993948 (FadeIn)
 							TargetType EventConnectionTargetType_Client
 						member(7)::EventConnection
 							Source Instance9
 							Target Levels/SP/SP_Dam/DamMudslideEncounter_Logic/8E3DDA02-ADFD-4A9B-A9FA-2724B3F0911B
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(8)::EventConnection
 							Source Instance9
@@ -114,7 +114,7 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							Source Instance9
 							Target Instance9
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
 								Id -1592210663
 							TargetType EventConnectionTargetType_Server
@@ -122,9 +122,9 @@ SubWorldData A0175A67-900C-478E-95E9-4A216AF82833 #primary instance
 							Source Instance9
 							Target Levels/SP/SP_Dam/DamMudslideEncounter_FX/C5FDC188-9E12-4AA4-90C3-9E03ABE5F32C
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_Client
 			Objects::array
 				member(0) Instance5
@@ -528,14 +528,14 @@ InterfaceDescriptorData Instance9
 		member(0)::DynamicEvent
 			Id -1556905729
 		member(1)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(2)::DynamicEvent
 			Id -831538460
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id -1592210663
 		member(1)::DynamicEvent
-			Id 650265526
+			Id 650265526 (OnFinished)
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink

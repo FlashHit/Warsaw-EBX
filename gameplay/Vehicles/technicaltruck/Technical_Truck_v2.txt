@@ -11,36 +11,36 @@ VehicleBlueprint 605CFD34-5028-4C30-80F7-F314393A3464 #primary instance
 						member(0)::PropertyConnection
 							Source Instance51
 							Target Instance2
-							SourceFieldId -383934866
-							TargetFieldId 674191935
+							SourceFieldId -383934866 (RelativeWheelTransform)
+							TargetFieldId 674191935 (InputTransform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance78
 							Target Instance13
 							SourceFieldId 585040691
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance78
 							Target Instance16
 							SourceFieldId 1791832941
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance49
-							SourceFieldId -2055729720
+							SourceFieldId -2055729720 (WeaponComponent)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance0
 							Target Instance24
-							SourceFieldId 23826156
+							SourceFieldId 23826156 (PitchingComponent)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance0
 							Target Instance23
-							SourceFieldId 593706629
+							SourceFieldId 593706629 (YawingComponent)
 							TargetFieldId 0
 						member(3)::LinkConnection
 							Source Instance78
@@ -59,33 +59,33 @@ VehicleBlueprint 605CFD34-5028-4C30-80F7-F314393A3464 #primary instance
 						Source Instance33
 						Target Instance28
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 201149837
+							Id 201149837 (Enter)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance33
 						Target Instance28
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 2088518501
+							Id 2088518501 (Exit)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance34
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance34
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetType EventConnectionTargetType_Client
 		Object 227B2364-49D5-4AEB-8875-06D4476C0546
 VehicleEntityData 227B2364-49D5-4AEB-8875-06D4476C0546
@@ -415,7 +415,7 @@ AnimatedDriverEntityData Instance2
 					$::DataContainer
 				Flags 444840213
 	VehicleSpeed::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	InputTransform::LinearTransform
 		right::Vec3
@@ -435,13 +435,13 @@ AnimatedDriverEntityData Instance2
 			y 0.0
 			z 0.0
 	VehicleMovementState::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	VehicleBoost::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	VehicleBrake::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	MovementStateStandThreshold 1.0
 	Yaw::NormalizeSettings
@@ -3243,9 +3243,9 @@ InterfaceDescriptorData Instance78
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -244513239
+			Id -244513239 (EnableLights)
 		member(1)::DynamicEvent
-			Id 1963075324
+			Id 1963075324 (DisableLights)
 	OutputEvents *nullArray*
 	InputLinks::array
 		member(0)::DynamicLink

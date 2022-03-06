@@ -12,25 +12,25 @@ SpatialPrefabBlueprint 0D586130-A001-4FC1-AA43-B6D683A0664F #primary instance
 							Source Instance8
 							Target Instance7
 							SourceFieldId -2050888629
-							TargetFieldId 1708270083
+							TargetFieldId 1708270083 (Visibility)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance8
 							Target Instance1
-							SourceFieldId -1527071975
-							TargetFieldId -1171175106
+							SourceFieldId -1527071975 (CurrentTime)
+							TargetFieldId -1171175106 (FloatValue)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance8
 							Target Instance0
 							SourceFieldId 87454904
-							TargetFieldId 1402926186
+							TargetFieldId 1402926186 (FocusDistance)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance8
 							Target Instance0
 							SourceFieldId 1954505361
-							TargetFieldId 1708270083
+							TargetFieldId 1708270083 (Visibility)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance8
@@ -41,8 +41,8 @@ SpatialPrefabBlueprint 0D586130-A001-4FC1-AA43-B6D683A0664F #primary instance
 						member(5)::PropertyConnection
 							Source Instance6
 							Target Instance8
-							SourceFieldId -2132289043
-							TargetFieldId -2132289043
+							SourceFieldId -2132289043 (ExternalTime)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance6
@@ -52,9 +52,9 @@ SpatialPrefabBlueprint 0D586130-A001-4FC1-AA43-B6D683A0664F #primary instance
 						Source Instance8
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance6
@@ -62,15 +62,15 @@ SpatialPrefabBlueprint 0D586130-A001-4FC1-AA43-B6D683A0664F #primary instance
 						SourceEvent::EventSpec
 							Id -787000672
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance8
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance7
@@ -266,7 +266,7 @@ InterfaceDescriptorData Instance6
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2132289043
+				Id -2132289043 (ExternalTime)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent

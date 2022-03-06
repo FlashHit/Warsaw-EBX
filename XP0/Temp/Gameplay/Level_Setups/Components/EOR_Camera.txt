@@ -12,19 +12,19 @@ SpatialPrefabBlueprint 6C973447-45B3-44EA-8601-BD4B404D2B47 #primary instance
 							Source Instance9
 							Target Instance1
 							SourceFieldId -770050066
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance9
 							Target Instance8
 							SourceFieldId 199657984
-							TargetFieldId 208768368
+							TargetFieldId 208768368 (Delay)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance10
 							Target Instance0
-							SourceFieldId 501392349
-							TargetFieldId -2024647575
+							SourceFieldId 501392349 (EOR_Sequence)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance9
@@ -34,17 +34,17 @@ SpatialPrefabBlueprint 6C973447-45B3-44EA-8601-BD4B404D2B47 #primary instance
 						Source Instance8
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 777187609
+							Id 777187609 (TakeControl)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source 3A286846-75B6-4139-B97D-E0884F3C5522
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance9
@@ -52,7 +52,7 @@ SpatialPrefabBlueprint 6C973447-45B3-44EA-8601-BD4B404D2B47 #primary instance
 						SourceEvent::EventSpec
 							Id -1886420412
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance9
@@ -60,13 +60,13 @@ SpatialPrefabBlueprint 6C973447-45B3-44EA-8601-BD4B404D2B47 #primary instance
 						SourceEvent::EventSpec
 							Id -2122331402
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance8
 						Target Instance9
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id -112769668
 						TargetType EventConnectionTargetType_Client
@@ -76,23 +76,23 @@ SpatialPrefabBlueprint 6C973447-45B3-44EA-8601-BD4B404D2B47 #primary instance
 						SourceEvent::EventSpec
 							Id -2122331401
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source 71E9DA71-B7AE-4331-B15C-91CC28D4797E
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source 71E9DA71-B7AE-4331-B15C-91CC28D4797E
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 777187609
+							Id 777187609 (TakeControl)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -182,7 +182,7 @@ CameraEntityData Instance1
 TransformPartPropertyTrackData Instance2
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_TranslationX
@@ -197,7 +197,7 @@ TransformPartPropertyTrackData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_RotationZ
@@ -212,7 +212,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_RotationY
@@ -227,7 +227,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_RotationX
@@ -242,7 +242,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_TranslationY
@@ -257,7 +257,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 501392349
+		Id 501392349 (EOR_Sequence)
 		Times *nullArray*
 	Resource 3765474169180775185 #xp0/temp/gameplay/level_setups/components/animtrackdata/d4ee8c76-cf8a-4681-aeb0-328816416633_eor_sequence
 	TransformPart TransformPart_TranslationZ

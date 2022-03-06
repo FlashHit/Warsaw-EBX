@@ -11,38 +11,38 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						member(0)::PropertyConnection
 							Source Instance62
 							Target Instance154
-							SourceFieldId -1756643285
+							SourceFieldId -1756643285 (WorldTransform)
 							TargetFieldId 12245015
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance112
 							Target Instance113
-							SourceFieldId 225375086
-							TargetFieldId 2088812747
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance154
 							Target Instance27
 							SourceFieldId 290578817
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source F8E41357-2ADC-4713-A384-C44EE11500BB
 							Target Instance43
 							SourceFieldId 517543369
-							TargetFieldId -840421845
+							TargetFieldId -840421845 (EmitterParameter1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance14
 							Target Instance72
-							SourceFieldId -709588
-							TargetFieldId 2088911267
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId 2088911267 (In32)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance15
 							Target Instance72
-							SourceFieldId -709588
-							TargetFieldId 2088911329
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId 2088911329 (In12)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -71,19 +71,19 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						member(10)::PropertyConnection
 							Source Instance93
 							Target F8E41357-2ADC-4713-A384-C44EE11500BB
-							SourceFieldId -2140343023
-							TargetFieldId -1651030824
+							SourceFieldId -2140343023 (CurrentHealthNormalized)
+							TargetFieldId -1651030824 (HealthNormalized)
 							ShouldNetworkValue False
 						member(11)::PropertyConnection
 							Source Instance93
 							Target F8E41357-2ADC-4713-A384-C44EE11500BB
-							SourceFieldId -625555172
+							SourceFieldId -625555172 (LastDirectHitDamage)
 							TargetFieldId 80037061
 							ShouldNetworkValue False
 						member(12)::PropertyConnection
 							Source Instance93
 							Target F8E41357-2ADC-4713-A384-C44EE11500BB
-							SourceFieldId -533532074
+							SourceFieldId -533532074 (LastDirectHitAngle)
 							TargetFieldId -385000657
 							ShouldNetworkValue False
 						member(13)::PropertyConnection
@@ -96,25 +96,25 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 							Source F8E41357-2ADC-4713-A384-C44EE11500BB
 							Target Instance73
 							SourceFieldId -791471250
-							TargetFieldId -621273850
+							TargetFieldId -621273850 (MobilityKill)
 							ShouldNetworkValue False
 						member(15)::PropertyConnection
 							Source Instance98
 							Target Instance1
-							SourceFieldId -383934866
-							TargetFieldId 674191935
+							SourceFieldId -383934866 (RelativeWheelTransform)
+							TargetFieldId 674191935 (InputTransform)
 							ShouldNetworkValue False
 						member(16)::PropertyConnection
 							Source Instance1
 							Target Instance21
-							SourceFieldId -545042324
-							TargetFieldId -2024647575
+							SourceFieldId -545042324 (AnimationWheelTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(17)::PropertyConnection
 							Source Instance14
 							Target Instance49
-							SourceFieldId -709588
-							TargetFieldId -1429643463
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1429643463 (UseFirstPersonSounds)
 							ShouldNetworkValue False
 						member(18)::PropertyConnection
 							Source Instance154
@@ -132,7 +132,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						member(0)::LinkConnection
 							Source Instance154
 							Target Instance74
-							SourceFieldId -1316984818
+							SourceFieldId -1316984818 (PathFollower)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -142,12 +142,12 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						member(2)::LinkConnection
 							Source Instance77
 							Target Instance73
-							SourceFieldId -773028713
+							SourceFieldId -773028713 (InputModifiers)
 							TargetFieldId 399480657
 						member(3)::LinkConnection
 							Source Instance77
 							Target F8E41357-2ADC-4713-A384-C44EE11500BB
-							SourceFieldId -773028713
+							SourceFieldId -773028713 (InputModifiers)
 							TargetFieldId 624300515
 					Interface Instance154
 					Flags 15
@@ -156,135 +156,135 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source Instance154
 						Target Instance112
 						SourceEvent::EventSpec
-							Id -244513239
+							Id -244513239 (EnableLights)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance154
 						Target Instance112
 						SourceEvent::EventSpec
-							Id 1963075324
+							Id 1963075324 (DisableLights)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance113
 						Target Instance51
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(3)::EventConnection
 						Source Instance113
 						Target Instance81
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(4)::EventConnection
 						Source Instance113
 						Target Instance80
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(5)::EventConnection
 						Source Instance113
 						Target Instance50
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(6)::EventConnection
 						Source Instance113
 						Target Instance84
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(7)::EventConnection
 						Source Instance113
 						Target Instance52
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(8)::EventConnection
 						Source Instance113
 						Target Instance53
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(9)::EventConnection
 						Source Instance113
 						Target Instance50
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(10)::EventConnection
 						Source Instance113
 						Target Instance81
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(11)::EventConnection
 						Source Instance113
 						Target Instance80
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(12)::EventConnection
 						Source Instance113
 						Target Instance51
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(13)::EventConnection
 						Source Instance113
 						Target Instance84
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(14)::EventConnection
 						Source Instance113
 						Target Instance52
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(15)::EventConnection
 						Source Instance113
 						Target Instance53
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(16)::EventConnection
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 226858794
+							Id 226858794 (OnLeftZoneDamage)
 						TargetEvent::EventSpec
 							Id -1072458751
 						TargetType EventConnectionTargetType_Server
@@ -292,7 +292,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 476240753
+							Id 476240753 (OnRightZoneDamage)
 						TargetEvent::EventSpec
 							Id 1384661594
 						TargetType EventConnectionTargetType_Server
@@ -300,7 +300,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 2015090517
+							Id 2015090517 (OnRearZoneDamage)
 						TargetEvent::EventSpec
 							Id 1910053534
 						TargetType EventConnectionTargetType_Server
@@ -308,7 +308,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id -1483509744
+							Id -1483509744 (OnFrontZoneDamage)
 						TargetEvent::EventSpec
 							Id -1398972837
 						TargetType EventConnectionTargetType_Server
@@ -316,7 +316,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 1666281711
+							Id 1666281711 (OnDamage)
 						TargetEvent::EventSpec
 							Id 372746459
 						TargetType EventConnectionTargetType_Server
@@ -324,7 +324,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 1594562913
+							Id 1594562913 (OnHealthy)
 						TargetEvent::EventSpec
 							Id 1622522839
 						TargetType EventConnectionTargetType_Server
@@ -332,7 +332,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 942943263
+							Id 942943263 (OnDisabledDamage)
 						TargetEvent::EventSpec
 							Id -938135678
 						TargetType EventConnectionTargetType_Server
@@ -340,7 +340,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id -2084303686
+							Id -2084303686 (OnTopZoneDamage)
 						TargetEvent::EventSpec
 							Id 1162682417
 						TargetType EventConnectionTargetType_Server
@@ -350,7 +350,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id -1549102345
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(25)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -358,7 +358,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id -1549102345
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(26)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -366,7 +366,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 1905315951
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(27)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -374,7 +374,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 1905315951
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(28)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -382,7 +382,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 543409974
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(29)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -390,7 +390,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 543409974
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(30)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -398,7 +398,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 797370702
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(31)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -406,7 +406,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 797370702
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(32)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -414,7 +414,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id 873123032
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(33)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -422,7 +422,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id -363993632
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(34)::EventConnection
 						Source F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -430,13 +430,13 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						SourceEvent::EventSpec
 							Id -1730191178
 						TargetEvent::EventSpec
-							Id 810979729
+							Id 810979729 (EmergencyRepair)
 						TargetType EventConnectionTargetType_Server
 					member(35)::EventConnection
 						Source Instance77
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
 							Id 299093043
 						TargetType EventConnectionTargetType_Client
@@ -444,7 +444,7 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source Instance77
 						Target F8E41357-2ADC-4713-A384-C44EE11500BB
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
 							Id -1032155237
 						TargetType EventConnectionTargetType_Client
@@ -452,25 +452,25 @@ VehicleBlueprint 0DF04EEA-E2E4-F790-3FC1-340A1BD3D166 #primary instance
 						Source Instance77
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetType EventConnectionTargetType_Client
 					member(38)::EventConnection
 						Source Instance49
 						Target Instance112
 						SourceEvent::EventSpec
-							Id -60255164
+							Id -60255164 (OnStart)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(39)::EventConnection
 						Source Instance49
 						Target Instance112
 						SourceEvent::EventSpec
-							Id -1433481220
+							Id -1433481220 (OnStop)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Object 0DF03AA0-5466-53EE-71B0-68052FAD44C6
 LogicReferenceObjectData F8E41357-2ADC-4713-A384-C44EE11500BB
@@ -794,7 +794,7 @@ AnimatedDriverEntityData Instance1
 					$::DataContainer
 				Flags 450253792
 	VehicleSpeed::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	InputTransform::LinearTransform
 		right::Vec3
@@ -814,13 +814,13 @@ AnimatedDriverEntityData Instance1
 			y 0.0
 			z 0.0
 	VehicleMovementState::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	VehicleBoost::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	VehicleBrake::AntRef
-		AssetGuid 00000000-0000-0000-0000-000000000000
+		AssetGuid *nullGuid*
 		ProjectId 0
 	MovementStateStandThreshold 1.0
 	Yaw::NormalizeSettings
@@ -6557,13 +6557,13 @@ InterfaceDescriptorData Instance154
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -244513239
+			Id -244513239 (EnableLights)
 		member(1)::DynamicEvent
-			Id 1963075324
+			Id 1963075324 (DisableLights)
 	OutputEvents *nullArray*
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1316984818
+			Id -1316984818 (PathFollower)
 	OutputLinks *nullArray*
 VehicleSoundData Instance155
 	$::DataContainer

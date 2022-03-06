@@ -11,26 +11,26 @@ SpatialPrefabBlueprint 369D7C53-077C-3E84-8B6D-7F042927589B #primary instance
 						member(0)::PropertyConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId 1925266716
-							TargetFieldId -892384772
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -892384772 (Position)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance15
 							Target Instance7
-							SourceFieldId -910201930
-							TargetFieldId -910201930
+							SourceFieldId -910201930 (Player)
+							TargetFieldId -910201930 (Player)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance16
 							Target Instance1
 							SourceFieldId 2089429658
-							TargetFieldId -409930682
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance16
 							Target Instance8
 							SourceFieldId 2089429658
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance15
@@ -40,9 +40,9 @@ SpatialPrefabBlueprint 369D7C53-077C-3E84-8B6D-7F042927589B #primary instance
 						Source Instance16
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance16
@@ -50,15 +50,15 @@ SpatialPrefabBlueprint 369D7C53-077C-3E84-8B6D-7F042927589B #primary instance
 						SourceEvent::EventSpec
 							Id -974743837
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance15
 						Target Instance17
 						SourceEvent::EventSpec
-							Id 2089125447
+							Id 2089125447 (Kill)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance17
@@ -96,17 +96,17 @@ SpatialPrefabBlueprint 369D7C53-077C-3E84-8B6D-7F042927589B #primary instance
 						Source Instance17
 						Target Instance16
 						SourceEvent::EventSpec
-							Id -2072796112
+							Id -2072796112 (Explosion)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(8)::EventConnection
 						Source Instance17
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -2072796112
+							Id -2072796112 (Explosion)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(9)::EventConnection
 						Source Instance17
@@ -114,23 +114,23 @@ SpatialPrefabBlueprint 369D7C53-077C-3E84-8B6D-7F042927589B #primary instance
 						SourceEvent::EventSpec
 							Id 2089090159
 						TargetEvent::EventSpec
-							Id -1608153915
+							Id -1608153915 (Buffer)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(10)::EventConnection
 						Source Instance17
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -2072796112
+							Id -2072796112 (Explosion)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(11)::EventConnection
 						Source Instance17
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -2072796112
+							Id -2072796112 (Explosion)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) Instance1
@@ -513,11 +513,11 @@ InterfaceDescriptorData Instance15
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -910201930
+				Id -910201930 (Player)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2089125447
+			Id 2089125447 (Kill)
 		member(1)::DynamicEvent
 			Id -55346117
 	OutputEvents *nullArray*
@@ -576,7 +576,7 @@ SequenceEntityData Instance17
 			Time 2993
 		member(3)::SequenceEventData
 			Event::EventSpec
-				Id -2072796112
+				Id -2072796112 (Explosion)
 			Time 3497
 		member(4)::SequenceEventData
 			Event::EventSpec

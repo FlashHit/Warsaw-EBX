@@ -11,44 +11,44 @@ SpatialPrefabBlueprint 314B5860-BA69-CDE9-F22C-0B094E7AF717 #primary instance
 						member(0)::PropertyConnection
 							Source Instance7
 							Target AF22FEDC-F03E-4BBB-B683-8604AC3227FE
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target 8A179855-9252-4C0F-952C-9C9F34697C0E
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance5
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance3
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance7
 							Target Instance3
-							SourceFieldId 2662400
-							TargetFieldId 193450864
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance7
 							Target Instance1
 							SourceFieldId -2086588736
-							TargetFieldId 901540267
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target 8A179855-9252-4C0F-952C-9C9F34697C0E
-							SourceFieldId 2090982314
+							SourceFieldId 2090982314 (PickupEntity)
 							TargetFieldId 0
 					Interface Instance7
 					Flags 3
@@ -57,9 +57,9 @@ SpatialPrefabBlueprint 314B5860-BA69-CDE9-F22C-0B094E7AF717 #primary instance
 						Source AF22FEDC-F03E-4BBB-B683-8604AC3227FE
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance7
@@ -67,29 +67,29 @@ SpatialPrefabBlueprint 314B5860-BA69-CDE9-F22C-0B094E7AF717 #primary instance
 						SourceEvent::EventSpec
 							Id 263408370
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(2)::EventConnection
 						Source AF22FEDC-F03E-4BBB-B683-8604AC3227FE
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source AF22FEDC-F03E-4BBB-B683-8604AC3227FE
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(4)::EventConnection
 						Source Instance5
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
 							Id -1749218973
 						TargetType EventConnectionTargetType_NetworkedClient
@@ -97,15 +97,15 @@ SpatialPrefabBlueprint 314B5860-BA69-CDE9-F22C-0B094E7AF717 #primary instance
 						Source Instance5
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance6
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id -1749218973
 						TargetType EventConnectionTargetType_NetworkedClient
@@ -2008,13 +2008,13 @@ InterfaceDescriptorData Instance7
 			member(1)::DataField
 				Value Boolean True
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
 			Id 263408370
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1447021378
+			Id -1447021378 (OnInteraction)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

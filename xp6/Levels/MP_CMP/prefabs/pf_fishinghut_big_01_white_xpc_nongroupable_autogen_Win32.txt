@@ -11,50 +11,50 @@ SpatialPrefabBlueprint 4E3CC071-3D18-C621-4B14-F9456FDC743D #primary instance
 						member(0)::PropertyConnection
 							Source Instance8
 							Target Instance4
-							SourceFieldId 258157264
-							TargetFieldId -1136955571
+							SourceFieldId 258157264 (Proximity)
+							TargetFieldId -1136955571 (Volume)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance8
 							Target Instance6
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId -1774245558
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance8
 							Target Instance7
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId -2120426542
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance0
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 193450866
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance2
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 193450864
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance5
 							Target Instance8
-							SourceFieldId 193453899
-							TargetFieldId 1947336347
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 1947336347 (ProximityMultiplier)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance8
 							Target Instance9
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance3
 					Flags 2
@@ -65,7 +65,7 @@ SpatialPrefabBlueprint 4E3CC071-3D18-C621-4B14-F9456FDC743D #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance3
@@ -73,7 +73,7 @@ SpatialPrefabBlueprint 4E3CC071-3D18-C621-4B14-F9456FDC743D #primary instance
 						SourceEvent::EventSpec
 							Id 1001
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance3
@@ -81,7 +81,7 @@ SpatialPrefabBlueprint 4E3CC071-3D18-C621-4B14-F9456FDC743D #primary instance
 						SourceEvent::EventSpec
 							Id 1002
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance8
@@ -187,9 +187,9 @@ MathOpEntityData Instance5
 					$::DataContainer
 				Flags 420348080
 	Realm Realm_Client
-	Operators::array
-		member(0) 2 *unknownEnum*
-		member(1) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2
+		member(1) 2
 MixerEntityData Instance6
 	$::EntityData
 		$::GameObjectData

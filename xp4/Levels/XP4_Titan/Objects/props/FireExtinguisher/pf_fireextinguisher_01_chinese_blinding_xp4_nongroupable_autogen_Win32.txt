@@ -11,8 +11,8 @@ SpatialPrefabBlueprint 0EDC3316-D856-CD75-FF3E-76355C1ED9F9 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId -327092851
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -327092851 (ActivateTarget)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance3
@@ -24,13 +24,13 @@ SpatialPrefabBlueprint 0EDC3316-D856-CD75-FF3E-76355C1ED9F9 #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id 1630515206
+							Id 1630515206 (Destroyed)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
 							Id 1001
 						TargetType EventConnectionTargetType_Server
@@ -38,7 +38,7 @@ SpatialPrefabBlueprint 0EDC3316-D856-CD75-FF3E-76355C1ED9F9 #primary instance
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -3142077
+							Id -3142077 (MoveToNextHealthState)
 						TargetEvent::EventSpec
 							Id 1002
 						TargetType EventConnectionTargetType_Server
@@ -48,7 +48,7 @@ SpatialPrefabBlueprint 0EDC3316-D856-CD75-FF3E-76355C1ED9F9 #primary instance
 						SourceEvent::EventSpec
 							Id 1003
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance3
@@ -56,21 +56,21 @@ SpatialPrefabBlueprint 0EDC3316-D856-CD75-FF3E-76355C1ED9F9 #primary instance
 						SourceEvent::EventSpec
 							Id 1004
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance3
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -3142077
+							Id -3142077 (MoveToNextHealthState)
 						TargetEvent::EventSpec
 							Id 1005
 						TargetType EventConnectionTargetType_Server
@@ -137,9 +137,9 @@ InterfaceDescriptorData Instance3
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(1)::DynamicEvent
-			Id -3142077
+			Id -3142077 (MoveToNextHealthState)
 		member(2)::DynamicEvent
 			Id 1000
 		member(3)::DynamicEvent
@@ -148,7 +148,7 @@ InterfaceDescriptorData Instance3
 			Id 1004
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 1630515206
+			Id 1630515206 (Destroyed)
 		member(1)::DynamicEvent
 			Id 1001
 		member(2)::DynamicEvent

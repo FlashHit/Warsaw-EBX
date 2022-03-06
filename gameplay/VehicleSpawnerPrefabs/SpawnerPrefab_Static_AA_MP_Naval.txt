@@ -11,43 +11,43 @@ SpatialPrefabBlueprint E01D78BC-E20F-4F6E-B6D4-EA65843DD4D8 #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId -821768885
-							TargetFieldId -821768885
+							SourceFieldId -821768885 (SpawnDelay)
+							TargetFieldId -821768885 (SpawnDelay)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId -2054686507
-							TargetFieldId -2054686507
+							SourceFieldId -2054686507 (InitialSpawnDelay)
+							TargetFieldId -2054686507 (InitialSpawnDelay)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance2
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId 225375086
-							TargetFieldId 922982664
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 922982664 (Immortal)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance3
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId 2089309528
-							TargetFieldId 2089309528
+							SourceFieldId 2089309528 (Team)
+							TargetFieldId 2089309528 (Team)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance3
 							Target 8456F900-54F2-4F1A-B544-3DB718FE8926
-							SourceFieldId 772552445
+							SourceFieldId 772552445 (Vehicle)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source 8456F900-54F2-4F1A-B544-3DB718FE8926
 							Target Instance0
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId 0
 					Interface Instance3
 					Flags 15
@@ -56,41 +56,41 @@ SpatialPrefabBlueprint E01D78BC-E20F-4F6E-B6D4-EA65843DD4D8 #primary instance
 						Source 8456F900-54F2-4F1A-B544-3DB718FE8926
 						Target 8456F900-54F2-4F1A-B544-3DB718FE8926
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 777187609
+							Id 777187609 (TakeControl)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 8456F900-54F2-4F1A-B544-3DB718FE8926
 						Target 8456F900-54F2-4F1A-B544-3DB718FE8926
 						SourceEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetEvent::EventSpec
-							Id 1559635997
+							Id 1559635997 (FireStart)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source 8456F900-54F2-4F1A-B544-3DB718FE8926
 						Target 8456F900-54F2-4F1A-B544-3DB718FE8926
 						SourceEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance3
 						Target 8456F900-54F2-4F1A-B544-3DB718FE8926
 						SourceEvent::EventSpec
-							Id -834116283
+							Id -834116283 (Unspawn)
 						TargetEvent::EventSpec
-							Id -834116283
+							Id -834116283 (Unspawn)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance3
 						Target 8456F900-54F2-4F1A-B544-3DB718FE8926
 						SourceEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance1
@@ -286,12 +286,12 @@ InterfaceDescriptorData Instance3
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value Float32 1
 				ValueRef *nullGuid*
-				Id -821768885
+				Id -821768885 (SpawnDelay)
 				AccessType FieldAccessType_Target
 			member(2)::DataField
 				Value *nullString*
@@ -301,15 +301,15 @@ InterfaceDescriptorData Instance3
 			member(3)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2089309528
+				Id 2089309528 (Team)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -834116283
+			Id -834116283 (Unspawn)
 		member(1)::DynamicEvent
-			Id 230891742
+			Id 230891742 (Spawn)
 	OutputEvents *nullArray*
 	InputLinks::array
 		member(0)::DynamicLink
-			Id 772552445
+			Id 772552445 (Vehicle)
 	OutputLinks *nullArray*

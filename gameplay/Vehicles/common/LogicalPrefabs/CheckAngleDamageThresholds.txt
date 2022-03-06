@@ -12,37 +12,37 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 							Source Instance3
 							Target Instance2
 							SourceFieldId 118544881
-							TargetFieldId 177636
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target Instance2
 							SourceFieldId -901129255
-							TargetFieldId 177639
+							TargetFieldId 177639 (B)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance1
 							SourceFieldId 754410067
-							TargetFieldId 177639
+							TargetFieldId 177639 (B)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 1819533979
-							TargetFieldId 177636
+							SourceFieldId 1819533979 (LastHitAngle)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source A2C302D4-C66B-4794-BE24-1EEA1D0DE62D
 							Target Instance3
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId -1955919111
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance3
 							Target Instance0
 							SourceFieldId 1690034893
-							TargetFieldId 2088812747
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance3
@@ -52,9 +52,9 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 2088727237
+							Id 2088727237 (A>=B)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance3
@@ -62,7 +62,7 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						SourceEvent::EventSpec
 							Id 1404840108
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance3
@@ -70,7 +70,7 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						SourceEvent::EventSpec
 							Id 1545606455
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance3
@@ -78,13 +78,13 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						SourceEvent::EventSpec
 							Id -1450660818
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source A2C302D4-C66B-4794-BE24-1EEA1D0DE62D
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
 							Id -2069128209
 						TargetType EventConnectionTargetType_Server
@@ -92,7 +92,7 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						Source A2C302D4-C66B-4794-BE24-1EEA1D0DE62D
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
 							Id 1020185375
 						TargetType EventConnectionTargetType_Server
@@ -100,17 +100,17 @@ LogicPrefabBlueprint CEAD244E-41DD-485F-B0E6-FB96696626C1 #primary instance
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 2088727237
+							Id 2088727237 (A>=B)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance0
 						Target A2C302D4-C66B-4794-BE24-1EEA1D0DE62D
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) A2C302D4-C66B-4794-BE24-1EEA1D0DE62D
@@ -173,7 +173,7 @@ InterfaceDescriptorData Instance3
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1819533979
+				Id 1819533979 (LastHitAngle)
 				AccessType FieldAccessType_Target
 			member(2)::DataField
 				Value *nullString*

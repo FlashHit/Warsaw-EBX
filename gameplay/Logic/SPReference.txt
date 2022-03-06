@@ -11,38 +11,38 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						member(0)::PropertyConnection
 							Source 71A2DD4D-9B1E-4F70-B37F-62EC4FE733DC
 							Target Instance5
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId 1783012698
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 2014001821
+							SourceFieldId 2014001821 (BoolSetting)
 							TargetFieldId 997327540
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance6
 							Target Instance3
-							SourceFieldId 2014001821
-							TargetFieldId 2088812747
+							SourceFieldId 2014001821 (BoolSetting)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance6
 							Target Instance1
-							SourceFieldId 2014001821
-							TargetFieldId 2088812747
+							SourceFieldId 2014001821 (BoolSetting)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance0
 							Target Instance5
-							SourceFieldId 225375086
+							SourceFieldId 225375086 (Value)
 							TargetFieldId -1958702577
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance6
 							Target Instance2
-							SourceFieldId 2014001821
-							TargetFieldId 2088812747
+							SourceFieldId 2014001821 (BoolSetting)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance5
@@ -52,7 +52,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 161211542
+							Id 161211542 (ConvertToPlayerEvent)
 						TargetEvent::EventSpec
 							Id -620149160
 						TargetType EventConnectionTargetType_Server
@@ -62,7 +62,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						SourceEvent::EventSpec
 							Id -1626010600
 						TargetEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance5
@@ -70,13 +70,13 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						SourceEvent::EventSpec
 							Id -1981452720
 						TargetEvent::EventSpec
-							Id -1990198249
+							Id -1990198249 (OnConvertToPlayerEvent)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1104461594
+							Id -1104461594 (BasicHud)
 						TargetEvent::EventSpec
 							Id 51650088
 						TargetType EventConnectionTargetType_Server
@@ -84,7 +84,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 28110977
+							Id 28110977 (Playing)
 						TargetEvent::EventSpec
 							Id 1931002255
 						TargetType EventConnectionTargetType_Server
@@ -92,7 +92,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1778890842
+							Id -1778890842 (Failed)
 						TargetEvent::EventSpec
 							Id 1220674280
 						TargetType EventConnectionTargetType_Client
@@ -100,7 +100,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 191008392
+							Id 191008392 (ShowAmmo)
 						TargetEvent::EventSpec
 							Id -1095426746
 						TargetType EventConnectionTargetType_Server
@@ -108,7 +108,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 893628235
+							Id 893628235 (HideAmmo)
 						TargetEvent::EventSpec
 							Id 1181290501
 						TargetType EventConnectionTargetType_Server
@@ -116,7 +116,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -722484490
+							Id -722484490 (ShowCompass)
 						TargetEvent::EventSpec
 							Id -1037487880
 						TargetType EventConnectionTargetType_Server
@@ -124,7 +124,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -80900395
+							Id -80900395 (HideCompass)
 						TargetEvent::EventSpec
 							Id 1813176411
 						TargetType EventConnectionTargetType_Server
@@ -134,23 +134,23 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						SourceEvent::EventSpec
 							Id 2096701985
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(11)::EventConnection
 						Source Instance3
 						Target 71A2DD4D-9B1E-4F70-B37F-62EC4FE733DC
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(12)::EventConnection
 						Source Instance4
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(13)::EventConnection
 						Source Instance5
@@ -158,39 +158,39 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						SourceEvent::EventSpec
 							Id -310658732
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(14)::EventConnection
 						Source Instance1
 						Target 71A2DD4D-9B1E-4F70-B37F-62EC4FE733DC
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(15)::EventConnection
 						Source Instance3
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(16)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(17)::EventConnection
 						Source Instance5
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1978571616
+							Id -1978571616 (EnableFakeImmortal)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(18)::EventConnection
 						Source Instance5
@@ -198,7 +198,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						SourceEvent::EventSpec
 							Id -1908417419
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(19)::EventConnection
 						Source Instance5
@@ -212,7 +212,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 856533193
+							Id 856533193 (HideCrosshair)
 						TargetEvent::EventSpec
 							Id -625815225
 						TargetType EventConnectionTargetType_Client
@@ -220,7 +220,7 @@ SpatialPrefabBlueprint 33F08EE5-7BE2-7266-7B5F-1430C02ABF31 #primary instance
 						Source Instance5
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -2118973718
+							Id -2118973718 (ShowCrosshair)
 						TargetEvent::EventSpec
 							Id 1624940516
 						TargetType EventConnectionTargetType_Client
@@ -382,39 +382,39 @@ InterfaceDescriptorData Instance5
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -80900395
+			Id -80900395 (HideCompass)
 		member(1)::DynamicEvent
-			Id -722484490
+			Id -722484490 (ShowCompass)
 		member(2)::DynamicEvent
-			Id 191008392
+			Id 191008392 (ShowAmmo)
 		member(3)::DynamicEvent
-			Id 893628235
+			Id 893628235 (HideAmmo)
 		member(4)::DynamicEvent
-			Id -1778890842
+			Id -1778890842 (Failed)
 		member(5)::DynamicEvent
-			Id 28110977
+			Id 28110977 (Playing)
 		member(6)::DynamicEvent
-			Id -1104461594
+			Id -1104461594 (BasicHud)
 		member(7)::DynamicEvent
 			Id -1981452720
 		member(8)::DynamicEvent
 			Id -1626010600
 		member(9)::DynamicEvent
-			Id 161211542
+			Id 161211542 (ConvertToPlayerEvent)
 		member(10)::DynamicEvent
 			Id -310658732
 		member(11)::DynamicEvent
 			Id 2096701985
 		member(12)::DynamicEvent
-			Id -1978571616
+			Id -1978571616 (EnableFakeImmortal)
 		member(13)::DynamicEvent
 			Id -1908417419
 		member(14)::DynamicEvent
 			Id 983136958
 		member(15)::DynamicEvent
-			Id -2118973718
+			Id -2118973718 (ShowCrosshair)
 		member(16)::DynamicEvent
-			Id 856533193
+			Id 856533193 (HideCrosshair)
 		member(17)::DynamicEvent
 			Id -630042577
 		member(18)::DynamicEvent
@@ -447,9 +447,9 @@ InterfaceDescriptorData Instance5
 		member(6)::DynamicEvent
 			Id 51650088
 		member(7)::DynamicEvent
-			Id -1990198249
+			Id -1990198249 (OnConvertToPlayerEvent)
 		member(8)::DynamicEvent
-			Id 1577401599
+			Id 1577401599 (OnPlayerEnter)
 		member(9)::DynamicEvent
 			Id -620149160
 		member(10)::DynamicEvent
