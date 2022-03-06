@@ -11,56 +11,56 @@ SpatialPrefabBlueprint 192AF953-723F-4AB4-BD67-A3A6445A412C #primary instance
 						member(0)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId -458572566
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance10
 							Target Instance3
-							SourceFieldId 2089241857
+							SourceFieldId 2089241857 (Vec4)
 							TargetFieldId -524533638
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance7
-							SourceFieldId 225375086
-							TargetFieldId 193450866
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance7
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance7
 							Target Instance10
-							SourceFieldId 193453899
-							TargetFieldId 177661
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177661 (X)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance7
 							Target Instance10
-							SourceFieldId 193453899
-							TargetFieldId 177660
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177660 (Y)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance7
 							Target Instance10
-							SourceFieldId 193453899
-							TargetFieldId 177663
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177663 (Z)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance7
 							Target Instance10
-							SourceFieldId 193453899
-							TargetFieldId 177650
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 177650 (W)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target Instance3
-							SourceFieldId -1028279722
+							SourceFieldId -1028279722 (ShaderParameters)
 							TargetFieldId 0
 					Interface Instance6
 					Flags 2
@@ -69,73 +69,73 @@ SpatialPrefabBlueprint 192AF953-723F-4AB4-BD67-A3A6445A412C #primary instance
 						Source Instance6
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1760114458
+							Id -1760114458 (LightsOut)
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1760114458
+							Id -1760114458 (LightsOut)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1875444151
+							Id -1875444151 (LightsOn)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance6
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1875444151
+							Id -1875444151 (LightsOn)
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance6
 						Target Instance9
 						SourceEvent::EventSpec
-							Id -1875444151
+							Id -1875444151 (LightsOn)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance6
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1760114458
+							Id -1760114458 (LightsOut)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1997317476
+							Id -1997317476 (Platform_Gen4a)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1997317473
+							Id -1997317473 (Platform_Gen4b)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance9
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1978208716
+							Id -1978208716 (Platform_Win32)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance0
@@ -747,9 +747,9 @@ InterfaceDescriptorData Instance6
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -1875444151
+			Id -1875444151 (LightsOn)
 		member(1)::DynamicEvent
-			Id -1760114458
+			Id -1760114458 (LightsOut)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -761,8 +761,8 @@ MathOpEntityData Instance7
 					$::DataContainer
 				Flags 159305886
 	Realm Realm_Client
-	Operators::array
-		member(0) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2
 PlatformSplitterEntityData Instance8
 	$::EntityData
 		$::GameObjectData

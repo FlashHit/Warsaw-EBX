@@ -30,8 +30,8 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							member(3)::PropertyConnection
 								Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 								Target Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
-								SourceFieldId 81877812
-								TargetFieldId -458572566
+								SourceFieldId 81877812 (LightIntensity)
+								TargetFieldId -458572566 (Intensity)
 								ShouldNetworkValue False
 							member(4)::PropertyConnection
 								Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
@@ -42,8 +42,8 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							member(5)::PropertyConnection
 								Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 								Target Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
-								SourceFieldId 959976761
-								TargetFieldId 959976761
+								SourceFieldId 959976761 (FogColorEnd)
+								TargetFieldId 959976761 (FogColorEnd)
 								ShouldNetworkValue False
 							member(6)::PropertyConnection
 								Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
@@ -55,7 +55,7 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							member(0)::LinkConnection
 								Source Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
 								Target Instance5
-								SourceFieldId -1530232091
+								SourceFieldId -1530232091 (AntAnimatableComponent)
 								TargetFieldId -1948383584
 							member(1)::LinkConnection
 								Source Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
@@ -80,7 +80,7 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							member(5)::LinkConnection
 								Source Levels/SP/SP_Prologue/EndScene_Scene/BE9D7128-CB92-4420-9FE6-A3DA2BE81952
 								Target Instance5
-								SourceFieldId 1085151375
+								SourceFieldId 1085151375 (Characters)
 								TargetFieldId 303744934
 						Interface Instance5
 						Flags 3
@@ -89,17 +89,17 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 							Target Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
 							SourceEvent::EventSpec
-								Id -1193365339
+								Id -1193365339 (OnStarted)
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_Server
 						member(1)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 							Target Levels/SP/SP_Prologue/EndScene_Scene/126629EE-5DFE-4CFF-AC48-2D265AE1CCDA
 							SourceEvent::EventSpec
-								Id -1193365339
+								Id -1193365339 (OnStarted)
 							TargetEvent::EventSpec
-								Id -1778993948
+								Id -1778993948 (FadeIn)
 							TargetType EventConnectionTargetType_Client
 						member(2)::EventConnection
 							Source Instance5
@@ -113,7 +113,7 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 							Target Instance5
 							SourceEvent::EventSpec
-								Id -1193365339
+								Id -1193365339 (OnStarted)
 							TargetEvent::EventSpec
 								Id 1852726250
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -121,7 +121,7 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							Source Instance5
 							Target Instance5
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
 								Id -1479362049
 							TargetType EventConnectionTargetType_Server
@@ -131,31 +131,31 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							SourceEvent::EventSpec
 								Id 768269752
 							TargetEvent::EventSpec
-								Id -1573253508
+								Id -1573253508 (Client)
 							TargetType EventConnectionTargetType_Client
 						member(6)::EventConnection
 							Source Instance5
 							Target Levels/SP/SP_Prologue/EndScene_Scene/586E541B-562E-477A-9EFA-4F4B2E4D51DA
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(7)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/586E541B-562E-477A-9EFA-4F4B2E4D51DA
 							Target Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_ClientAndServer
 						member(8)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/060E937E-F1BC-40F4-B6F8-36CEB83A0DE0
 							Target Levels/SP/SP_Prologue/EndScene_Scene/F8747973-3819-42C1-9B84-A8FCC1CEE611
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 1422740397
+								Id 1422740397 (FadeOut)
 							TargetType EventConnectionTargetType_Client
 						member(9)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
@@ -163,71 +163,71 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							SourceEvent::EventSpec
 								Id -916440003
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Client
 						member(10)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/E787A11A-F9AA-4E65-A6A1-D1760C007EF2
 							Target Levels/SP/SP_Prologue/EndScene_Scene/05E7A173-EDA7-4819-924F-7E9D5106A2C7
 							SourceEvent::EventSpec
-								Id -1193365339
+								Id -1193365339 (OnStarted)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Client
 						member(11)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/05E7A173-EDA7-4819-924F-7E9D5106A2C7
 							Target Levels/SP/SP_Prologue/EndScene_Scene/52697A0B-D02D-44D4-8C8C-5C12C6A544D4
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id -1573253508
+								Id -1573253508 (Client)
 							TargetType EventConnectionTargetType_Client
 						member(12)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/52697A0B-D02D-44D4-8C8C-5C12C6A544D4
 							Target Levels/SP/SP_Prologue/EndScene_Scene/2A1BAB57-F5EB-4DE0-865A-22763388953C
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id -640415607
+								Id -640415607 (Consume)
 							TargetType EventConnectionTargetType_Server
 						member(13)::EventConnection
 							Source Instance5
 							Target Levels/SP/SP_Prologue/EndScene_Scene/BE9D7128-CB92-4420-9FE6-A3DA2BE81952
 							SourceEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetEvent::EventSpec
-								Id 206074481
+								Id 206074481 (Apply)
 							TargetType EventConnectionTargetType_Server
 						member(14)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/7ADE7EC4-CAE2-468A-8AC2-F76760396AA3
 							Target Levels/SP/SP_Prologue/EndScene_Scene/FDD271C1-B2EB-4128-B631-38EEDB1400C3
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id -1573253508
+								Id -1573253508 (Client)
 							TargetType EventConnectionTargetType_NetworkedClient
 						member(15)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/FDD271C1-B2EB-4128-B631-38EEDB1400C3
 							Target Levels/SP/SP_Prologue/EndScene_Scene/80B43BBC-89C5-4B08-B245-9DECE74EA3BB
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id -1688613187
+								Id -1688613187 (Trigger)
 							TargetType EventConnectionTargetType_Server
 						member(16)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/52697A0B-D02D-44D4-8C8C-5C12C6A544D4
 							Target Levels/SP/SP_Prologue/EndScene_Scene/7ADE7EC4-CAE2-468A-8AC2-F76760396AA3
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Server
 						member(17)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/590A289E-B45A-41BB-B674-223053B3393A
 							Target Levels/SP/SP_Prologue/EndScene_Scene/EDD2A477-B780-402D-BF80-415004CABA34
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 193450864
+								Id 193450864 (In2)
 							TargetType EventConnectionTargetType_Server
 						member(18)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Logic/4E063F09-22BC-435F-8CC3-A8906B247D2D
@@ -235,23 +235,23 @@ SubWorldData 8087E0F7-F3A2-41AB-A8C5-416D1955472E #primary instance
 							SourceEvent::EventSpec
 								Id -572605540
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Server
 						member(19)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/2B3B3631-A492-462E-B77A-F91256638CFF
 							Target Levels/SP/SP_Prologue/EndScene_Scene/EDD2A477-B780-402D-BF80-415004CABA34
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 193450867
+								Id 193450867 (In1)
 							TargetType EventConnectionTargetType_Server
 						member(20)::EventConnection
 							Source Levels/SP/SP_Prologue/EndScene_Scene/EDD2A477-B780-402D-BF80-415004CABA34
 							Target Instance5
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 650265526
+								Id 650265526 (OnFinished)
 							TargetType EventConnectionTargetType_Server
 			Objects::array
 				member(0) Instance4
@@ -472,14 +472,14 @@ InterfaceDescriptorData Instance5
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
 			Id 2016504309
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id -1479362049
 		member(1)::DynamicEvent
-			Id 650265526
+			Id 650265526 (OnFinished)
 		member(2)::DynamicEvent
 			Id 1852726250
 	InputLinks *nullArray*

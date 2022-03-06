@@ -14,13 +14,13 @@ LevelData 17502E30-8F80-42C8-AA26-ABBDBDFF84F6 #primary instance
 									member(0)::PropertyConnection
 										Source XP0/Levels/MP_012_Firestorm/Crane_Collapse_Logic/3D334E0D-8B2E-493E-9088-C7979A3E5E31
 										Target 95458DE7-BC70-4C15-B9B2-BE63BBA38BF0
-										SourceFieldId 193453899
+										SourceFieldId 193453899 (Out)
 										TargetFieldId -1942180097
 										ShouldNetworkValue False
 									member(1)::PropertyConnection
 										Source XP0/Levels/MP_012_Firestorm/Crane_Collapse_Logic/3D334E0D-8B2E-493E-9088-C7979A3E5E31
 										Target A80A84C6-2162-4FA6-8552-8A07C8C4AE48
-										SourceFieldId 193453899
+										SourceFieldId 193453899 (Out)
 										TargetFieldId -1942180097
 										ShouldNetworkValue False
 								LinkConnections::array
@@ -54,13 +54,13 @@ LevelData 17502E30-8F80-42C8-AA26-ABBDBDFF84F6 #primary instance
 									SourceEvent::EventSpec
 										Id -610715906
 									TargetEvent::EventSpec
-										Id 193450867
+										Id 193450867 (In1)
 									TargetType EventConnectionTargetType_Server
 								member(3)::EventConnection
 									Source XP0/Levels/MP_012_Firestorm/Crane_Collapse_Logic/40C87D30-0F1C-43B7-9857-98001BCFAB32
 									Target F34C2FCE-62BB-42FE-A9A7-0F01D12B3C45
 									SourceEvent::EventSpec
-										Id 193453899
+										Id 193453899 (Out)
 									TargetEvent::EventSpec
 										Id -610715906
 									TargetType EventConnectionTargetType_Server
@@ -70,7 +70,7 @@ LevelData 17502E30-8F80-42C8-AA26-ABBDBDFF84F6 #primary instance
 									SourceEvent::EventSpec
 										Id -623743851
 									TargetEvent::EventSpec
-										Id 668205626
+										Id 668205626 (SetFalse)
 									TargetType EventConnectionTargetType_Server
 								member(5)::EventConnection
 									Source 95458DE7-BC70-4C15-B9B2-BE63BBA38BF0
@@ -84,7 +84,7 @@ LevelData 17502E30-8F80-42C8-AA26-ABBDBDFF84F6 #primary instance
 									Source XP0/Levels/MP_012_Firestorm/Crane_Collapse_Logic/40C87D30-0F1C-43B7-9857-98001BCFAB32
 									Target 19F460C8-0973-44B4-93F9-4B33F5639F54
 									SourceEvent::EventSpec
-										Id 193453899
+										Id 193453899 (Out)
 									TargetEvent::EventSpec
 										Id 307655044
 									TargetType EventConnectionTargetType_Server
@@ -3654,7 +3654,7 @@ LevelData 17502E30-8F80-42C8-AA26-ABBDBDFF84F6 #primary instance
 			member(3472) 3471395537
 			member(3473) 3472788103
 			member(3474) 3473642056
-			member(3475) 3478251566
+			member(3475) 3478251566 (Persistence/Unlocks/Soldiers/Visual/MP/RU/Headgear/MP_RU_Recon_Helmet01_Ranger) #unsigned
 			member(3476) 3478446746
 			member(3477) 3478885128
 			member(3478) 3480317059
@@ -5089,7 +5089,7 @@ TireTrailManagerEntityData Instance14
 	Realm Realm_Client
 UILevelLoadData Instance15
 	$::DataContainer
-	LoadingMovieGuid 00000000-0000-0000-0000-000000000000
+	LoadingMovieGuid *nullGuid*
 	ScreenDataPath UI/CppScreens/MPLoadingScreen
 	MaxLoadingImagesGen4 2
 	WidgetDataPath UI/elements/Widgets/MPLoadingWidget

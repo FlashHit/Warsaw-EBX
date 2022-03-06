@@ -12,23 +12,23 @@ VehicleBlueprint D35CA587-79AF-D351-6F65-967794C7F1B7 #primary instance
 							Source Instance49
 							Target Instance0
 							SourceFieldId -1227697150
-							TargetFieldId 230112826
+							TargetFieldId 230112826 (Range)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance35
-							SourceFieldId -2055729720
+							SourceFieldId -2055729720 (WeaponComponent)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance0
 							Target Instance11
-							SourceFieldId 593706629
+							SourceFieldId 593706629 (YawingComponent)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance0
 							Target Instance12
-							SourceFieldId 23826156
+							SourceFieldId 23826156 (PitchingComponent)
 							TargetFieldId 0
 					Interface Instance49
 					Flags 3
@@ -37,17 +37,17 @@ VehicleBlueprint D35CA587-79AF-D351-6F65-967794C7F1B7 #primary instance
 						Source Instance0
 						Target Instance49
 						SourceEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance49
 						SourceEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetType EventConnectionTargetType_Server
 		Object 13F41323-52E8-F59D-7968-DC762B6DBEEB
 VehicleEntityData 13F41323-52E8-F59D-7968-DC762B6DBEEB
@@ -1857,7 +1857,7 @@ UnlockComponentData Instance27
 					z 0.0
 			Excluded False
 	UnlockAsset *nullGuid*
-	UnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	UnlockAssetGuid *nullGuid*
 	UnlockIdentifier 0
 	UnlockDataKey 0
 	InvertUnlockTest True
@@ -2210,7 +2210,7 @@ WeaponComponentData Instance35
 	OverheatDropPerSecondMultiplier 1.0
 	LockTimeMultiplier 1.0
 	LockingAcceptanceAngleMultiplier 1.0
-	WeaponItemHash 1910102198
+	WeaponItemHash 1910102198 (C-Ram Cannon) #asset
 	SequentialFiring True
 WeaponComponentData Instance36
 	$::BoneComponentData
@@ -2461,9 +2461,9 @@ InterfaceDescriptorData Instance49
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 870768041
+			Id 870768041 (OnTargetAcquired)
 		member(1)::DynamicEvent
-			Id -2314607
+			Id -2314607 (OnTargetLost)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 UIPartPropertyList Instance50

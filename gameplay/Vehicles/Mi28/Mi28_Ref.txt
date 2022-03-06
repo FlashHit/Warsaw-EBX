@@ -10,26 +10,26 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					member(0)::PropertyConnection
 						Source Instance1
 						Target Instance1
-						SourceFieldId 2085022312
+						SourceFieldId 2085022312 (ControllableTransform)
 						TargetFieldId -1641274778
 						ShouldNetworkValue False
 					member(1)::PropertyConnection
 						Source Instance1
 						Target Instance1
-						SourceFieldId 922982664
+						SourceFieldId 922982664 (Immortal)
 						TargetFieldId 1940106310
 						ShouldNetworkValue False
 					member(2)::PropertyConnection
 						Source Instance1
 						Target Instance1
 						SourceFieldId 405673103
-						TargetFieldId 2085022312
+						TargetFieldId 2085022312 (ControllableTransform)
 						ShouldNetworkValue False
 					member(3)::PropertyConnection
 						Source Instance1
 						Target Instance1
 						SourceFieldId 1774321686
-						TargetFieldId 191418609
+						TargetFieldId 191418609 (ClientControllableTransform)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance1
@@ -39,7 +39,7 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id 230891742
+						Id 230891742 (Spawn)
 					TargetEvent::EventSpec
 						Id 1214171600
 					TargetType EventConnectionTargetType_ClientAndServer
@@ -47,7 +47,7 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id -834116283
+						Id -834116283 (Unspawn)
 					TargetEvent::EventSpec
 						Id -834187317
 					TargetType EventConnectionTargetType_ClientAndServer
@@ -57,7 +57,7 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					SourceEvent::EventSpec
 						Id 553877817
 					TargetEvent::EventSpec
-						Id -1036968738
+						Id -1036968738 (OnSpawned)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(3)::EventConnection
 					Source Instance1
@@ -65,7 +65,7 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					SourceEvent::EventSpec
 						Id 511790848
 					TargetEvent::EventSpec
-						Id -1452333337
+						Id -1452333337 (OnDestroyed)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(4)::EventConnection
 					Source Instance1
@@ -73,13 +73,13 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					SourceEvent::EventSpec
 						Id -254468029
 					TargetEvent::EventSpec
-						Id -1227227708
+						Id -1227227708 (OnAllUnSpawned)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(5)::EventConnection
 					Source Instance1
 					Target Instance1
 					SourceEvent::EventSpec
-						Id 777187609
+						Id 777187609 (TakeControl)
 					TargetEvent::EventSpec
 						Id 22023831
 					TargetType EventConnectionTargetType_ClientAndServer
@@ -89,7 +89,7 @@ PrefabBlueprint 648FCC22-7717-4B76-BE62-66367DFDD649 #primary instance
 					SourceEvent::EventSpec
 						Id 381584204
 					TargetEvent::EventSpec
-						Id -847278421
+						Id -847278421 (OnDamaged)
 					TargetType EventConnectionTargetType_Server
 	Objects::array
 		member(0) Instance0
@@ -109,7 +109,7 @@ InterfaceDescriptorData Instance1
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2085022312
+				Id 2085022312 (ControllableTransform)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
@@ -119,7 +119,7 @@ InterfaceDescriptorData Instance1
 			member(2)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 922982664
+				Id 922982664 (Immortal)
 				AccessType FieldAccessType_Target
 			member(3)::DataField
 				Value *nullString*
@@ -134,7 +134,7 @@ InterfaceDescriptorData Instance1
 			member(5)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2085022312
+				Id 2085022312 (ControllableTransform)
 				AccessType FieldAccessType_Source
 			member(6)::DataField
 				Value *nullString*
@@ -144,13 +144,13 @@ InterfaceDescriptorData Instance1
 			member(7)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 191418609
+				Id 191418609 (ClientControllableTransform)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230891742
+			Id 230891742 (Spawn)
 		member(1)::DynamicEvent
-			Id -834116283
+			Id -834116283 (Unspawn)
 		member(2)::DynamicEvent
 			Id 553877817
 		member(3)::DynamicEvent
@@ -158,7 +158,7 @@ InterfaceDescriptorData Instance1
 		member(4)::DynamicEvent
 			Id -254468029
 		member(5)::DynamicEvent
-			Id 777187609
+			Id 777187609 (TakeControl)
 		member(6)::DynamicEvent
 			Id 381584204
 	OutputEvents::array
@@ -167,14 +167,14 @@ InterfaceDescriptorData Instance1
 		member(1)::DynamicEvent
 			Id -834187317
 		member(2)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(3)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 		member(4)::DynamicEvent
-			Id -1227227708
+			Id -1227227708 (OnAllUnSpawned)
 		member(5)::DynamicEvent
 			Id 22023831
 		member(6)::DynamicEvent
-			Id -847278421
+			Id -847278421 (OnDamaged)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

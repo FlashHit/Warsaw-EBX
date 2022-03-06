@@ -10,20 +10,20 @@ ObjectBlueprint 50B563C2-4933-2DD2-E0A1-A1E0268BCE33 #primary instance
 					member(0)::PropertyConnection
 						Source 257A5E70-8543-4147-9A5D-8CB63263CBDA
 						Target Instance16
-						SourceFieldId 193453899
-						TargetFieldId 2088812747
+						SourceFieldId 193453899 (Out)
+						TargetFieldId 2088812747 (Bool)
 						ShouldNetworkValue False
 					member(1)::PropertyConnection
 						Source Instance25
 						Target 257A5E70-8543-4147-9A5D-8CB63263CBDA
 						SourceFieldId 216850987
-						TargetFieldId 5862146
+						TargetFieldId 5862146 (In)
 						ShouldNetworkValue False
 					member(2)::PropertyConnection
 						Source 257A5E70-8543-4147-9A5D-8CB63263CBDA
 						Target Instance17
-						SourceFieldId 193453899
-						TargetFieldId 2088812747
+						SourceFieldId 193453899 (Out)
+						TargetFieldId 2088812747 (Bool)
 						ShouldNetworkValue False
 					member(3)::PropertyConnection
 						Source Instance24
@@ -34,14 +34,14 @@ ObjectBlueprint 50B563C2-4933-2DD2-E0A1-A1E0268BCE33 #primary instance
 					member(4)::PropertyConnection
 						Source Instance28
 						Target Instance10
-						SourceFieldId 2089241857
+						SourceFieldId 2089241857 (Vec4)
 						TargetFieldId -524533638
 						ShouldNetworkValue False
 					member(5)::PropertyConnection
 						Source Instance24
 						Target Instance28
 						SourceFieldId 1551171922
-						TargetFieldId 177661
+						TargetFieldId 177661 (X)
 						ShouldNetworkValue False
 					member(6)::PropertyConnection
 						Source Instance24
@@ -59,23 +59,23 @@ ObjectBlueprint 50B563C2-4933-2DD2-E0A1-A1E0268BCE33 #primary instance
 						Source Instance23
 						Target Instance18
 						SourceFieldId -560887111
-						TargetFieldId 2088812747
+						TargetFieldId 2088812747 (Bool)
 						ShouldNetworkValue False
 				LinkConnections::array
 					member(0)::LinkConnection
 						Source Instance12
 						Target Instance9
-						SourceFieldId -1028279722
+						SourceFieldId -1028279722 (ShaderParameters)
 						TargetFieldId 0
 					member(1)::LinkConnection
 						Source Instance12
 						Target Instance8
-						SourceFieldId -1028279722
+						SourceFieldId -1028279722 (ShaderParameters)
 						TargetFieldId 0
 					member(2)::LinkConnection
 						Source Instance5
 						Target Instance10
-						SourceFieldId -1028279722
+						SourceFieldId -1028279722 (ShaderParameters)
 						TargetFieldId 0
 				Interface Instance23
 				Flags 3
@@ -84,105 +84,105 @@ ObjectBlueprint 50B563C2-4933-2DD2-E0A1-A1E0268BCE33 #primary instance
 					Source Instance16
 					Target Instance24
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_Client
 				member(1)::EventConnection
 					Source Instance16
 					Target Instance24
 					SourceEvent::EventSpec
-						Id -81881639
+						Id -81881639 (OnFalse)
 					TargetEvent::EventSpec
-						Id -1772326426
+						Id -1772326426 (PlayFirstFrame)
 					TargetType EventConnectionTargetType_Client
 				member(2)::EventConnection
 					Source Instance23
 					Target Instance12
 					SourceEvent::EventSpec
-						Id -639132411
+						Id -639132411 (StopFire)
 					TargetEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetType EventConnectionTargetType_Server
 				member(3)::EventConnection
 					Source Instance23
 					Target Instance12
 					SourceEvent::EventSpec
-						Id -568030115
+						Id -568030115 (StartFire)
 					TargetEvent::EventSpec
-						Id -274579609
+						Id -274579609 (Destroy)
 					TargetType EventConnectionTargetType_Server
 				member(4)::EventConnection
 					Source Instance25
 					Target Instance12
 					SourceEvent::EventSpec
-						Id 650265526
+						Id 650265526 (OnFinished)
 					TargetEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetType EventConnectionTargetType_Server
 				member(5)::EventConnection
 					Source Instance12
 					Target Instance25
 					SourceEvent::EventSpec
-						Id -1452333337
+						Id -1452333337 (OnDestroyed)
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_Server
 				member(6)::EventConnection
 					Source Instance17
 					Target Instance0
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id -559281700
+						Id -559281700 (Activate)
 					TargetType EventConnectionTargetType_Server
 				member(7)::EventConnection
 					Source Instance17
 					Target Instance0
 					SourceEvent::EventSpec
-						Id -81881639
+						Id -81881639 (OnFalse)
 					TargetEvent::EventSpec
-						Id -117303631
+						Id -117303631 (Disable)
 					TargetType EventConnectionTargetType_Server
 				member(8)::EventConnection
 					Source Instance16
 					Target Instance1
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_Client
 				member(9)::EventConnection
 					Source Instance16
 					Target Instance1
 					SourceEvent::EventSpec
-						Id -81881639
+						Id -81881639 (OnFalse)
 					TargetEvent::EventSpec
-						Id 2089401213
+						Id 2089401213 (Stop)
 					TargetType EventConnectionTargetType_Client
 				member(10)::EventConnection
 					Source Instance18
 					Target Instance19
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id 2089008817
+						Id 2089008817 (Open)
 					TargetType EventConnectionTargetType_Client
 				member(11)::EventConnection
 					Source Instance16
 					Target Instance19
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id 5862146
+						Id 5862146 (In)
 					TargetType EventConnectionTargetType_Client
 				member(12)::EventConnection
 					Source Instance16
 					Target Instance18
 					SourceEvent::EventSpec
-						Id -1433512622
+						Id -1433512622 (OnTrue)
 					TargetEvent::EventSpec
-						Id 5862146
+						Id 5862146 (In)
 					TargetType EventConnectionTargetType_Client
 	Object Instance12
 SyncedBoolEntityData 257A5E70-8543-4147-9A5D-8CB63263CBDA
@@ -826,9 +826,9 @@ InterfaceDescriptorData Instance23
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -568030115
+			Id -568030115 (StartFire)
 		member(1)::DynamicEvent
-			Id -639132411
+			Id -639132411 (StopFire)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -866,11 +866,11 @@ SequenceEntityData Instance25
 	Events::array
 		member(0)::SequenceEventData
 			Event::EventSpec
-				Id 1559635997
+				Id 1559635997 (FireStart)
 			Time 490
 		member(1)::SequenceEventData
 			Event::EventSpec
-				Id 1999519237
+				Id 1999519237 (FireStop)
 			Time 39963
 	SequenceStartTime 0
 	SequenceLength 50000

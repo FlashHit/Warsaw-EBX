@@ -11,20 +11,20 @@ SpatialPrefabBlueprint 07D45A9E-68DB-0C2B-CDDE-9FF70085FF4D #primary instance
 						member(0)::PropertyConnection
 							Source Instance2
 							Target Instance0
-							SourceFieldId -2132289043
-							TargetFieldId -2132289043
+							SourceFieldId -2132289043 (ExternalTime)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target Instance1
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance2
 							Target Instance1
-							SourceFieldId 901540267
-							TargetFieldId 901540267
+							SourceFieldId 901540267 (Visible)
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance0
@@ -48,7 +48,7 @@ SpatialPrefabBlueprint 07D45A9E-68DB-0C2B-CDDE-9FF70085FF4D #primary instance
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 453968090
+							SourceFieldId 453968090 (SkinnedModel)
 							TargetFieldId 0
 					Interface Instance2
 					Flags 2
@@ -57,17 +57,17 @@ SpatialPrefabBlueprint 07D45A9E-68DB-0C2B-CDDE-9FF70085FF4D #primary instance
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 2084504595
+							Id 2084504595 (StartAnimation)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id 687631179
+							Id 687631179 (StopAnimation)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -108,7 +108,7 @@ ModelAnimationEntityData Instance0
 	JointWorldTransformUpdateOrder ModelAnimationUpdateOrder_PostAnimation
 	JointOutputFieldHashes::array
 		member(0) 2053360452
-		member(1) -1031074154
+		member(1) -1031074154 (AITrajectory)
 		member(2) 1662850683
 		member(3) 1662850680
 		member(4) 1662850681
@@ -172,17 +172,17 @@ InterfaceDescriptorData Instance2
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2132289043
+				Id -2132289043 (ExternalTime)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 			member(2)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 901540267
+				Id 901540267 (Visible)
 				AccessType FieldAccessType_Target
 			member(3)::DataField
 				Value *nullString*
@@ -201,9 +201,9 @@ InterfaceDescriptorData Instance2
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2084504595
+			Id 2084504595 (StartAnimation)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 687631179
+			Id 687631179 (StopAnimation)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

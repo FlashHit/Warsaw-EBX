@@ -11,44 +11,44 @@ LogicPrefabBlueprint 4F0A4CB0-ECD5-4336-95E5-83C6403EB317 #primary instance
 						member(0)::PropertyConnection
 							Source Instance9
 							Target Instance3
-							SourceFieldId 176040160
-							TargetFieldId 2088812747
+							SourceFieldId 176040160 (BoolValue)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance7
 							Target Instance0
-							SourceFieldId 726878142
-							TargetFieldId 729770416
+							SourceFieldId 726878142 (StringOut)
+							TargetFieldId 729770416 (WeaponState)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance6
 							Target Instance0
-							SourceFieldId 993287091
+							SourceFieldId 993287091 (PropertyTrack_01)
 							TargetFieldId -1077602323
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance8
 							Target Instance5
-							SourceFieldId 176040160
-							TargetFieldId 5862146
+							SourceFieldId 176040160 (BoolValue)
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 193453899
-							TargetFieldId 2088812747
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance4
 							Target Instance1
 							SourceFieldId 875195845
-							TargetFieldId 193450867
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance5
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 193450864
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -58,65 +58,65 @@ LogicPrefabBlueprint 4F0A4CB0-ECD5-4336-95E5-83C6403EB317 #primary instance
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance3
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance3
 						Target Instance6
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance9
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 712791270
+							Id 712791270 (OnChanged)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance3
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 263676847
+							Id 263676847 (SelectStringIn0)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance3
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 263676846
+							Id 263676846 (SelectStringIn1)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance0
@@ -289,13 +289,13 @@ UIGetValueEntityData Instance9
 				Flags 8870631
 	DataSource::UISimpleDataSource
 		DataCategory UI/UIComponents/UIWeaponComp/B8283ECF-FD78-DD0C-C888-EC9843787D52
-		DataKey -1977496045
+		DataKey -1977496045 (Reloading)
 	AssertOnWrongOutput True
 Vec4PropertyTrackData Instance10
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 993287091
+			Id 993287091 (PropertyTrack_01)
 			Times::array
 				member(0) 0
 				member(1) 502

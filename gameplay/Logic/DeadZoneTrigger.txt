@@ -11,32 +11,32 @@ LogicPrefabBlueprint F722CFDD-1841-4948-ADF3-B2ABF8DFD273 #primary instance
 						member(0)::PropertyConnection
 							Source Instance4
 							Target Instance0
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance2
 							Target Instance3
-							SourceFieldId 225375086
-							TargetFieldId 2088812747
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance4
-							SourceFieldId 838548383
-							TargetFieldId 231534181
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 231534181 (InnerZone)
 						member(1)::LinkConnection
 							Source Instance1
 							Target Instance4
-							SourceFieldId 838548383
-							TargetFieldId 909988034
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 909988034 (OuterZone)
 					Interface Instance4
 					Flags 2
 				EventConnections::array
@@ -44,33 +44,33 @@ LogicPrefabBlueprint F722CFDD-1841-4948-ADF3-B2ABF8DFD273 #primary instance
 						Source Instance0
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -80368276
+							Id -80368276 (OnEnter)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance1
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -70038721
+							Id -70038721 (OnLeave)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -80368276
+							Id -80368276 (OnEnter)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -70038721
+							Id -70038721 (OnLeave)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -221,17 +221,17 @@ InterfaceDescriptorData Instance4
 			member(0)::DataField
 				Value Boolean True
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -80368276
+			Id -80368276 (OnEnter)
 		member(1)::DynamicEvent
-			Id -70038721
+			Id -70038721 (OnLeave)
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id 231534181
+			Id 231534181 (InnerZone)
 		member(1)::DynamicLink
-			Id 909988034
+			Id 909988034 (OuterZone)

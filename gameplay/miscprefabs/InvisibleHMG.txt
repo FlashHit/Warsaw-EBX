@@ -11,25 +11,25 @@ SpatialPrefabBlueprint B0A28151-B825-44A5-9493-489365C3B43A #primary instance
 						member(0)::PropertyConnection
 							Source Instance6
 							Target Instance2
-							SourceFieldId -2024647575
-							TargetFieldId -2024647575
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance6
 							Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
-							SourceFieldId -2024647575
-							TargetFieldId 2085022312
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId 2085022312 (ControllableTransform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance3
 							Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
-							SourceFieldId 403876000
+							SourceFieldId 403876000 (VehicleToCheck)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source 1EE79102-F906-4AC2-9802-42A0A7A736C7
 							Target Instance0
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId 0
 					Interface Instance6
 					Flags 3
@@ -38,73 +38,73 @@ SpatialPrefabBlueprint B0A28151-B825-44A5-9493-489365C3B43A #primary instance
 						Source Instance6
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance6
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance6
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance5
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance5
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 777187609
+							Id 777187609 (TakeControl)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance4
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 1559635997
+							Id 1559635997 (FireStart)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance6
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance6
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetEvent::EventSpec
-							Id -597186424
+							Id -597186424 (ReturnControl)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance6
 						Target 1EE79102-F906-4AC2-9802-42A0A7A736C7
 						SourceEvent::EventSpec
-							Id 713806943
+							Id 713806943 (RemoveGun)
 						TargetEvent::EventSpec
-							Id -834116283
+							Id -834116283 (Unspawn)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance3
@@ -383,15 +383,15 @@ InterfaceDescriptorData Instance6
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2024647575
+				Id -2024647575 (Transform)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 1999497757
+			Id 1999497757 (FireShot)
 		member(1)::DynamicEvent
-			Id 1999519237
+			Id 1999519237 (FireStop)
 		member(2)::DynamicEvent
-			Id 713806943
+			Id 713806943 (RemoveGun)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

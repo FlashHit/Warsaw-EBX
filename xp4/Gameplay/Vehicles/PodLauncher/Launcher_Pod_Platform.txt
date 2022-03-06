@@ -11,98 +11,98 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						member(0)::PropertyConnection
 							Source Instance127
 							Target Instance54
-							SourceFieldId 936870923
-							TargetFieldId 2045231802
+							SourceFieldId 936870923 (CastToFloat)
+							TargetFieldId 2045231802 (InteriorCam)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance127
 							Target Instance51
-							SourceFieldId 936870923
-							TargetFieldId -1171175106
+							SourceFieldId 936870923 (CastToFloat)
+							TargetFieldId -1171175106 (FloatValue)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance127
-							SourceFieldId -709588
-							TargetFieldId 176040160
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId 176040160 (BoolValue)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance42
 							Target Instance54
-							SourceFieldId -1756643285
-							TargetFieldId -2024647575
+							SourceFieldId -1756643285 (WorldTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance129
 							Target Instance5
 							SourceFieldId -1003860594
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance0
 							Target Instance96
-							SourceFieldId -709588
-							TargetFieldId 2088812747
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance90
 							Target Instance94
-							SourceFieldId 225375086
-							TargetFieldId 2088812747
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance126
 							Target Instance97
-							SourceFieldId 225375086
-							TargetFieldId 177636
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance42
 							Target Instance55
-							SourceFieldId -1756643285
-							TargetFieldId -2024647575
+							SourceFieldId -1756643285 (WorldTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source Instance110
 							Target Instance43
-							SourceFieldId 225375086
+							SourceFieldId 225375086 (Value)
 							TargetFieldId 567891580
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source Instance130
 							Target Instance11
-							SourceFieldId 48673745
-							TargetFieldId -2024647575
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(11)::PropertyConnection
 							Source Instance130
 							Target Instance9
-							SourceFieldId 48673745
-							TargetFieldId -2024647575
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(12)::PropertyConnection
 							Source Instance130
 							Target Instance15
-							SourceFieldId 48673745
-							TargetFieldId -2024647575
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(13)::PropertyConnection
 							Source Instance130
 							Target Instance17
-							SourceFieldId 48673745
-							TargetFieldId -2024647575
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(14)::PropertyConnection
 							Source Instance130
 							Target Instance18
-							SourceFieldId 48673745
-							TargetFieldId -2024647575
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(15)::PropertyConnection
 							Source Instance109
 							Target Instance55
-							SourceFieldId 225375086
-							TargetFieldId 824639024
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 824639024 (IsFirstPerson)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface *nullGuid*
@@ -112,23 +112,23 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance46
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance46
 						Target Instance54
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
 							Id 795679780
 						TargetType EventConnectionTargetType_Client
@@ -136,7 +136,7 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance54
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
 							Id 24126508
 						TargetType EventConnectionTargetType_Client
@@ -144,7 +144,7 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance54
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
 							Id 860832831
 						TargetType EventConnectionTargetType_Client
@@ -152,23 +152,23 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance51
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance46
 						Target Instance51
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance46
 						Target Instance44
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
 							Id -630042577
 						TargetType EventConnectionTargetType_Client
@@ -176,7 +176,7 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance44
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
 							Id 1571288972
 						TargetType EventConnectionTargetType_Client
@@ -184,39 +184,39 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance102
 						Target Instance102
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(10)::EventConnection
 						Source Instance46
 						Target Instance100
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(11)::EventConnection
 						Source Instance46
 						Target Instance100
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Server
 					member(12)::EventConnection
 						Source Instance46
 						Target Instance100
 						SourceEvent::EventSpec
-							Id -465201387
+							Id -465201387 (OnKeyPressed)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Server
 					member(13)::EventConnection
 						Source Instance102
 						Target Instance54
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id 1128144103
 						TargetType EventConnectionTargetType_Client
@@ -224,585 +224,585 @@ VehicleBlueprint 323FA874-0E30-3258-D240-53D54546D836 #primary instance
 						Source Instance46
 						Target Instance102
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Client
 					member(15)::EventConnection
 						Source Instance105
 						Target Instance105
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Server
 					member(16)::EventConnection
 						Source Instance100
 						Target Instance105
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(17)::EventConnection
 						Source Instance46
 						Target Instance105
 						SourceEvent::EventSpec
-							Id -465201387
+							Id -465201387 (OnKeyPressed)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(18)::EventConnection
 						Source Instance104
 						Target Instance104
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(19)::EventConnection
 						Source Instance46
 						Target Instance105
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Server
 					member(20)::EventConnection
 						Source Instance46
 						Target Instance105
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Server
 					member(21)::EventConnection
 						Source Instance96
 						Target Instance104
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Client
 					member(22)::EventConnection
 						Source Instance96
 						Target Instance104
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(23)::EventConnection
 						Source Instance104
 						Target Instance125
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1688613187
+							Id -1688613187 (Trigger)
 						TargetType EventConnectionTargetType_Client
 					member(24)::EventConnection
 						Source Instance102
 						Target Instance104
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(25)::EventConnection
 						Source Instance105
 						Target Instance108
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(26)::EventConnection
 						Source Instance108
 						Target Instance102
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(27)::EventConnection
 						Source Instance123
 						Target Instance90
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(28)::EventConnection
 						Source Instance121
 						Target Instance90
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(29)::EventConnection
 						Source Instance94
 						Target Instance139
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(30)::EventConnection
 						Source Instance94
 						Target Instance139
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089420676
+							Id 2089420676 (Save)
 						TargetType EventConnectionTargetType_Client
 					member(31)::EventConnection
 						Source Instance94
 						Target Instance118
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Client
 					member(32)::EventConnection
 						Source Instance118
 						Target Instance139
 						SourceEvent::EventSpec
-							Id -1978208716
+							Id -1978208716 (Platform_Win32)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(33)::EventConnection
 						Source Instance118
 						Target Instance140
 						SourceEvent::EventSpec
-							Id -1963501257
+							Id -1963501257 (Platform_Xenon)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(34)::EventConnection
 						Source Instance118
 						Target Instance140
 						SourceEvent::EventSpec
-							Id 976288917
+							Id 976288917 (Platform_Ps3)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(35)::EventConnection
 						Source Instance118
 						Target Instance140
 						SourceEvent::EventSpec
-							Id -1997317476
+							Id -1997317476 (Platform_Gen4a)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(36)::EventConnection
 						Source Instance118
 						Target Instance140
 						SourceEvent::EventSpec
-							Id -1997317473
+							Id -1997317473 (Platform_Gen4b)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(37)::EventConnection
 						Source Instance94
 						Target Instance140
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(38)::EventConnection
 						Source Instance94
 						Target Instance140
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089420676
+							Id 2089420676 (Save)
 						TargetType EventConnectionTargetType_Client
 					member(39)::EventConnection
 						Source Instance46
 						Target Instance123
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(40)::EventConnection
 						Source Instance46
 						Target Instance121
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(41)::EventConnection
 						Source Instance99
 						Target Instance103
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(42)::EventConnection
 						Source Instance103
 						Target Instance119
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(43)::EventConnection
 						Source Instance97
 						Target Instance103
 						SourceEvent::EventSpec
-							Id 2088727237
+							Id 2088727237 (A>=B)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(44)::EventConnection
 						Source Instance98
 						Target Instance97
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(45)::EventConnection
 						Source Instance119
 						Target Instance142
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 2089430886
+							Id 2089430886 (Show)
 						TargetType EventConnectionTargetType_Client
 					member(46)::EventConnection
 						Source Instance46
 						Target Instance99
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(47)::EventConnection
 						Source Instance46
 						Target Instance98
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(48)::EventConnection
 						Source Instance46
 						Target Instance126
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(49)::EventConnection
 						Source Instance126
 						Target Instance126
 						SourceEvent::EventSpec
-							Id 1975570652
+							Id 1975570652 (OnTrigger)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(50)::EventConnection
 						Source Instance46
 						Target Instance126
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(51)::EventConnection
 						Source Instance46
 						Target Instance142
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(52)::EventConnection
 						Source Instance77
 						Target Instance106
 						SourceEvent::EventSpec
-							Id -1308977461
+							Id -1308977461 (OnProjectileSpawned)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(53)::EventConnection
 						Source Instance106
 						Target Instance129
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(54)::EventConnection
 						Source Instance106
 						Target Instance55
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 1968287961
+							Id 1968287961 (ShotFired)
 						TargetType EventConnectionTargetType_Client
 					member(55)::EventConnection
 						Source Instance102
 						Target Instance55
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1608153915
+							Id -1608153915 (Buffer)
 						TargetType EventConnectionTargetType_Client
 					member(56)::EventConnection
 						Source Instance120
 						Target Instance43
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(57)::EventConnection
 						Source Instance46
 						Target Instance120
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(58)::EventConnection
 						Source Instance46
 						Target Instance124
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(59)::EventConnection
 						Source Instance124
 						Target Instance43
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(60)::EventConnection
 						Source Instance106
 						Target Instance24
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(61)::EventConnection
 						Source Instance130
 						Target Instance59
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(62)::EventConnection
 						Source Instance130
 						Target Instance65
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(63)::EventConnection
 						Source Instance130
 						Target Instance58
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(64)::EventConnection
 						Source Instance130
 						Target Instance63
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(65)::EventConnection
 						Source Instance130
 						Target Instance64
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(66)::EventConnection
 						Source Instance130
 						Target Instance56
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(67)::EventConnection
 						Source Instance130
 						Target Instance57
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(68)::EventConnection
 						Source Instance130
 						Target Instance60
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(69)::EventConnection
 						Source Instance130
 						Target Instance59
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(70)::EventConnection
 						Source Instance130
 						Target Instance65
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(71)::EventConnection
 						Source Instance130
 						Target Instance58
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(72)::EventConnection
 						Source Instance130
 						Target Instance63
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(73)::EventConnection
 						Source Instance130
 						Target Instance64
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(74)::EventConnection
 						Source Instance130
 						Target Instance56
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(75)::EventConnection
 						Source Instance130
 						Target Instance57
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(76)::EventConnection
 						Source Instance130
 						Target Instance60
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(77)::EventConnection
 						Source Instance46
 						Target Instance130
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(78)::EventConnection
 						Source Instance46
 						Target Instance130
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(79)::EventConnection
 						Source Instance130
 						Target Instance62
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(80)::EventConnection
 						Source Instance130
 						Target Instance61
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(81)::EventConnection
 						Source Instance130
 						Target Instance62
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(82)::EventConnection
 						Source Instance130
 						Target Instance61
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(83)::EventConnection
 						Source Instance122
 						Target Instance109
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_Client
 					member(84)::EventConnection
 						Source Instance46
 						Target Instance107
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Client
 					member(85)::EventConnection
 						Source Instance107
 						Target Instance109
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 229946160
+							Id 229946160 (Reset)
 						TargetType EventConnectionTargetType_Client
 					member(86)::EventConnection
 						Source Instance107
 						Target Instance122
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 		Object C7CAA89A-CD63-A3C0-2212-26CB6C179000
 VehicleEntityData C7CAA89A-CD63-A3C0-2212-26CB6C179000
@@ -4443,7 +4443,7 @@ UnlockComponentData Instance69
 					z 0.0
 			Excluded False
 	UnlockAsset *nullGuid*
-	UnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	UnlockAssetGuid *nullGuid*
 	UnlockIdentifier 0
 	UnlockDataKey 0
 	InvertUnlockTest True
@@ -4802,7 +4802,7 @@ WeaponComponentData Instance77
 TransformPartPropertyTrackData Instance78
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_TranslationZ
@@ -4877,7 +4877,7 @@ TransformPartPropertyTrackData Instance82
 TransformPartPropertyTrackData Instance83
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_TranslationX
@@ -4892,7 +4892,7 @@ TransformPartPropertyTrackData Instance83
 TransformPartPropertyTrackData Instance84
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_TranslationY
@@ -4922,7 +4922,7 @@ TransformPartPropertyTrackData Instance85
 TransformPartPropertyTrackData Instance86
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_RotationY
@@ -4937,7 +4937,7 @@ TransformPartPropertyTrackData Instance86
 TransformPartPropertyTrackData Instance87
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_RotationX
@@ -4952,7 +4952,7 @@ TransformPartPropertyTrackData Instance87
 TransformPartPropertyTrackData Instance88
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 9633832951050904267 #xp4/gameplay/vehicles/podlauncher/animtrackdata/732b01aa-ba05-4e2c-a08e-23413c2519eb_rotation
 	TransformPart TransformPart_RotationZ

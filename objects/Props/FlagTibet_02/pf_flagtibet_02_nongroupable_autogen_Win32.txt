@@ -11,8 +11,8 @@ SpatialPrefabBlueprint 8BFD709E-718C-81B5-2F54-BA3A1F06CBD0 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -22,9 +22,9 @@ SpatialPrefabBlueprint 8BFD709E-718C-81B5-2F54-BA3A1F06CBD0 #primary instance
 						Source Instance2
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance4
@@ -32,13 +32,13 @@ SpatialPrefabBlueprint 8BFD709E-718C-81B5-2F54-BA3A1F06CBD0 #primary instance
 						SourceEvent::EventSpec
 							Id 1000
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance4
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
 							Id 1001
 						TargetType EventConnectionTargetType_Server
@@ -170,7 +170,7 @@ InterfaceDescriptorData Instance4
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(1)::DynamicEvent
 			Id 1000
 	OutputEvents::array

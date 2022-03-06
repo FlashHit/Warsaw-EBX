@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 19C98BEB-7E9C-427A-819B-8708EE7565FA #primary instance
 						member(0)::PropertyConnection
 							Source Instance6
 							Target Instance1
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target Instance5
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance6
@@ -28,41 +28,41 @@ SpatialPrefabBlueprint 19C98BEB-7E9C-427A-819B-8708EE7565FA #primary instance
 						Source Instance1
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1635202463
+							Id -1635202463 (OnEnabled)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance1
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance0
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 2089152613
+							Id 2089152613 (Hide)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance1
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -257,7 +257,7 @@ InterfaceDescriptorData Instance6
 			member(0)::DataField
 				Value Boolean True
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents *nullArray*
 	OutputEvents *nullArray*

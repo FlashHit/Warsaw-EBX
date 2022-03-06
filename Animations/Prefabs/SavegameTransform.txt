@@ -11,38 +11,38 @@ LogicPrefabBlueprint FA991C64-2236-21C6-BB24-D8ABDE298ECD #primary instance
 						member(0)::PropertyConnection
 							Source CD2B5D72-5B8E-4AA0-838E-448690D44148
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 193450864
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source D177196A-C624-4E4C-8882-0C8D3AFAEAAD
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 299217285
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 299217285 (Selection)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 193453899
-							TargetFieldId 193453899
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193453899 (Out)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance2
 							Target Instance0
-							SourceFieldId 5862146
-							TargetFieldId 193450867
+							SourceFieldId 5862146 (In)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 193450867
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance0
 							Target CD2B5D72-5B8E-4AA0-838E-448690D44148
-							SourceFieldId 193453899
-							TargetFieldId 5862146
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -54,15 +54,15 @@ LogicPrefabBlueprint FA991C64-2236-21C6-BB24-D8ABDE298ECD #primary instance
 						SourceEvent::EventSpec
 							Id 144050908
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance2
 						Target D177196A-C624-4E4C-8882-0C8D3AFAEAAD
 						SourceEvent::EventSpec
-							Id 1303794898
+							Id 1303794898 (Restart)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) CD2B5D72-5B8E-4AA0-838E-448690D44148
@@ -296,18 +296,18 @@ InterfaceDescriptorData Instance2
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 5862146
+				Id 5862146 (In)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 193453899
+				Id 193453899 (Out)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
 			Id 144050908
 		member(1)::DynamicEvent
-			Id 1303794898
+			Id 1303794898 (Restart)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

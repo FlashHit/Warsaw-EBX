@@ -11,50 +11,50 @@ SoldierWeaponBlueprint 5F706D9B-B0C9-48D6-8F84-BC29A1A7140A #primary instance
 						member(0)::PropertyConnection
 							Source Instance25
 							Target Instance10
-							SourceFieldId 1631021521
-							TargetFieldId -2024647575
+							SourceFieldId 1631021521 (OwnerCharacterTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance25
 							Target Instance26
-							SourceFieldId -540731151
-							TargetFieldId 2088812747
+							SourceFieldId -540731151 (OwnerIsFirstPerson)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance30
-							SourceFieldId -475170236
-							TargetFieldId 225375086
+							SourceFieldId -475170236 (DistanceToCamera)
+							TargetFieldId 225375086 (Value)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance25
 							Target Instance0
-							SourceFieldId 1631021521
-							TargetFieldId -1522984530
+							SourceFieldId 1631021521 (OwnerCharacterTransform)
+							TargetFieldId -1522984530 (TransformIn)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance35
 							Target Instance28
-							SourceFieldId -1001694132
-							TargetFieldId 2088812747
+							SourceFieldId -1001694132 (Result)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance36
 							Target Instance27
-							SourceFieldId -1001694132
-							TargetFieldId 2088812747
+							SourceFieldId -1001694132 (Result)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance0
 							Target Instance29
-							SourceFieldId -475170236
-							TargetFieldId 225375086
+							SourceFieldId -475170236 (DistanceToCamera)
+							TargetFieldId 225375086 (Value)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance24
 							Target Instance25
-							SourceFieldId -1530232091
+							SourceFieldId -1530232091 (AntAnimatableComponent)
 							TargetFieldId -873912027
 					Interface *nullGuid*
 					Flags 1
@@ -63,17 +63,17 @@ SoldierWeaponBlueprint 5F706D9B-B0C9-48D6-8F84-BC29A1A7140A #primary instance
 						Source Instance25
 						Target Instance24
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance25
 						Target Instance24
 						SourceEvent::EventSpec
-							Id -1561778626
+							Id -1561778626 (OwnerCharacter1pAnimatableValid)
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance32
@@ -103,65 +103,65 @@ SoldierWeaponBlueprint 5F706D9B-B0C9-48D6-8F84-BC29A1A7140A #primary instance
 						Source Instance9
 						Target Instance25
 						SourceEvent::EventSpec
-							Id -1521943185
+							Id -1521943185 (OnPlayerDeactivate)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance9
 						Target Instance25
 						SourceEvent::EventSpec
-							Id -1623629778
+							Id -1623629778 (OnPlayerActivate)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance9
 						Target Instance26
 						SourceEvent::EventSpec
-							Id 618351154
+							Id 618351154 (OnReloadBegin)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance26
 						Target Instance32
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(9)::EventConnection
 						Source Instance9
 						Target Instance32
 						SourceEvent::EventSpec
-							Id -1521943185
+							Id -1521943185 (OnPlayerDeactivate)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(10)::EventConnection
 						Source Instance26
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 223744783
+							Id 223744783 (Query)
 						TargetType EventConnectionTargetType_Client
 					member(11)::EventConnection
 						Source Instance26
 						Target Instance30
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(12)::EventConnection
 						Source Instance30
 						Target Instance32
 						SourceEvent::EventSpec
-							Id 1653725917
+							Id 1653725917 (InRange)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(13)::EventConnection
 						Source Instance24
@@ -177,7 +177,7 @@ SoldierWeaponBlueprint 5F706D9B-B0C9-48D6-8F84-BC29A1A7140A #primary instance
 						SourceEvent::EventSpec
 							Id 1485356523
 						TargetEvent::EventSpec
-							Id 2088812592
+							Id 2088812592 (Bolt)
 						TargetType EventConnectionTargetType_Client
 					member(15)::EventConnection
 						Source Instance24
@@ -199,113 +199,113 @@ SoldierWeaponBlueprint 5F706D9B-B0C9-48D6-8F84-BC29A1A7140A #primary instance
 						Source Instance27
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(18)::EventConnection
 						Source Instance27
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(19)::EventConnection
 						Source Instance28
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(20)::EventConnection
 						Source Instance28
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(21)::EventConnection
 						Source Instance9
 						Target Instance35
 						SourceEvent::EventSpec
-							Id -1623629778
+							Id -1623629778 (OnPlayerActivate)
 						TargetEvent::EventSpec
-							Id 223744783
+							Id 223744783 (Query)
 						TargetType EventConnectionTargetType_Client
 					member(22)::EventConnection
 						Source Instance9
 						Target Instance36
 						SourceEvent::EventSpec
-							Id -1623629778
+							Id -1623629778 (OnPlayerActivate)
 						TargetEvent::EventSpec
-							Id 223744783
+							Id 223744783 (Query)
 						TargetType EventConnectionTargetType_Client
 					member(23)::EventConnection
 						Source Instance9
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 618351154
+							Id 618351154 (OnReloadBegin)
 						TargetEvent::EventSpec
-							Id 618351154
+							Id 618351154 (OnReloadBegin)
 						TargetType EventConnectionTargetType_Client
 					member(24)::EventConnection
 						Source Instance9
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 618351154
+							Id 618351154 (OnReloadBegin)
 						TargetEvent::EventSpec
-							Id 618351154
+							Id 618351154 (OnReloadBegin)
 						TargetType EventConnectionTargetType_Client
 					member(25)::EventConnection
 						Source Instance9
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1164294552
+							Id -1164294552 (OnBoltActionBegin)
 						TargetEvent::EventSpec
-							Id -1752994226
+							Id -1752994226 (BoltAction)
 						TargetType EventConnectionTargetType_Client
 					member(26)::EventConnection
 						Source Instance29
 						Target Instance33
 						SourceEvent::EventSpec
-							Id 1653725917
+							Id 1653725917 (InRange)
 						TargetEvent::EventSpec
-							Id 231941894
+							Id 231941894 (Prime)
 						TargetType EventConnectionTargetType_Client
 					member(27)::EventConnection
 						Source Instance4
 						Target Instance34
 						SourceEvent::EventSpec
-							Id 1301598100
+							Id 1301598100 (Request)
 						TargetEvent::EventSpec
-							Id 1301598100
+							Id 1301598100 (Request)
 						TargetType EventConnectionTargetType_Client
 					member(28)::EventConnection
 						Source Instance4
 						Target Instance34
 						SourceEvent::EventSpec
-							Id 1335266828
+							Id 1335266828 (Release)
 						TargetEvent::EventSpec
-							Id 1335266828
+							Id 1335266828 (Release)
 						TargetType EventConnectionTargetType_Client
 					member(29)::EventConnection
 						Source Instance25
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1561778626
+							Id -1561778626 (OwnerCharacter1pAnimatableValid)
 						TargetEvent::EventSpec
-							Id -1561778626
+							Id -1561778626 (OwnerCharacter1pAnimatableValid)
 						TargetType EventConnectionTargetType_Client
 					member(30)::EventConnection
 						Source Instance25
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetType EventConnectionTargetType_Client
 		Object Instance9
 CameraDistanceEntityData Instance0
@@ -608,9 +608,9 @@ FiringFunctionData Instance1
 		ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
 		ReloadType rtMagazineWithPossibleShorterReload
 		FireLogicType fltAutomaticFire
-		FireLogicTypeArray::array
-			member(0) 0 *unknownEnum*
-			member(1) 3 *unknownEnum*
+		FireLogicTypeArray::array #unknown enum
+			member(0) 0
+			member(1) 3
 		HoldOffReloadUntilFireRelease False
 		HoldOffReloadUntilZoomRelease False
 		ForceReloadActionOnFireTrigger False
@@ -901,9 +901,9 @@ FiringFunctionData Instance2
 		ReloadLogic rlWeaponSwitchCancelsUnfinishedReload
 		ReloadType rtMagazineWithPossibleShorterReload
 		FireLogicType fltAutomaticFire
-		FireLogicTypeArray::array
-			member(0) 0 *unknownEnum*
-			member(1) 3 *unknownEnum*
+		FireLogicTypeArray::array #unknown enum
+			member(0) 0
+			member(1) 3
 		HoldOffReloadUntilFireRelease False
 		HoldOffReloadUntilZoomRelease False
 		ForceReloadActionOnFireTrigger False
@@ -1057,7 +1057,7 @@ ShaderParameterComponentData Instance6
 SocketData Instance7
 	$::DataContainer
 	UnlockAssetGuid A1AD1762-C856-F5D7-66B5-5E485460D3DF
-	BelongsToUnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	BelongsToUnlockAssetGuid *nullGuid*
 	BoneName Wep_Root
 	BoneId -1
 	BoneRigidTransform::LinearTransform
@@ -1106,8 +1106,8 @@ SocketData Instance7
 	HideByLightToggle False
 SocketData Instance8
 	$::DataContainer
-	UnlockAssetGuid 00000000-0000-0000-0000-000000000000
-	BelongsToUnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	UnlockAssetGuid *nullGuid*
+	BelongsToUnlockAssetGuid *nullGuid*
 	BoneName Wep_Root
 	BoneId -1
 	BoneRigidTransform::LinearTransform

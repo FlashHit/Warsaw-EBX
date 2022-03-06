@@ -10,20 +10,20 @@ ObjectBlueprint 638822CE-3EF1-1B11-5DF2-47FDB1906F28 #primary instance
 					member(0)::PropertyConnection
 						Source Instance0
 						Target Instance2
-						SourceFieldId -1240630183
-						TargetFieldId -1171175106
+						SourceFieldId -1240630183 (Health)
+						TargetFieldId -1171175106 (FloatValue)
 						ShouldNetworkValue False
 					member(1)::PropertyConnection
 						Source Instance0
 						Target Instance9
-						SourceFieldId -1240630183
-						TargetFieldId -1240630183
+						SourceFieldId -1240630183 (Health)
+						TargetFieldId -1240630183 (Health)
 						ShouldNetworkValue False
 					member(2)::PropertyConnection
 						Source Instance0
 						Target Instance9
-						SourceFieldId 1153188365
-						TargetFieldId 1153188365
+						SourceFieldId 1153188365 (MaxHealth)
+						TargetFieldId 1153188365 (MaxHealth)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance9
@@ -33,17 +33,17 @@ ObjectBlueprint 638822CE-3EF1-1B11-5DF2-47FDB1906F28 #primary instance
 					Source Instance9
 					Target Instance0
 					SourceEvent::EventSpec
-						Id -3142077
+						Id -3142077 (MoveToNextHealthState)
 					TargetEvent::EventSpec
-						Id -3142077
+						Id -3142077 (MoveToNextHealthState)
 					TargetType EventConnectionTargetType_NetworkedClientAndServer
 				member(1)::EventConnection
 					Source Instance9
 					Target Instance0
 					SourceEvent::EventSpec
-						Id -1980967410
+						Id -1980967410 (MoveToLastHealthState)
 					TargetEvent::EventSpec
-						Id -1980967410
+						Id -1980967410 (MoveToLastHealthState)
 					TargetType EventConnectionTargetType_NetworkedClientAndServer
 	Object Instance4
 PartComponentData Instance0
@@ -370,18 +370,18 @@ InterfaceDescriptorData Instance9
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1153188365
+				Id 1153188365 (MaxHealth)
 				AccessType FieldAccessType_Source
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1240630183
+				Id -1240630183 (Health)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -3142077
+			Id -3142077 (MoveToNextHealthState)
 		member(1)::DynamicEvent
-			Id -1980967410
+			Id -1980967410 (MoveToLastHealthState)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

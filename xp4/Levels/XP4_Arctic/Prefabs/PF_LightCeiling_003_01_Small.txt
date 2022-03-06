@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 19A5A731-895D-4AE2-A99E-05CBD342A4E3 #primary instance
 						member(0)::PropertyConnection
 							Source 012C92DC-AED1-4EBB-806D-797D39FDF39A
 							Target Instance1
-							SourceFieldId -458572566
-							TargetFieldId -458572566
+							SourceFieldId -458572566 (Intensity)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target 012C92DC-AED1-4EBB-806D-797D39FDF39A
-							SourceFieldId 1564494525
-							TargetFieldId -670630719
+							SourceFieldId 1564494525 (CurrentVariation)
+							TargetFieldId -670630719 (ObjectVariation)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -28,7 +28,7 @@ SpatialPrefabBlueprint 19A5A731-895D-4AE2-A99E-05CBD342A4E3 #primary instance
 						Source Instance2
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
 							Id 1489724582
 						TargetType EventConnectionTargetType_Client
@@ -36,57 +36,57 @@ SpatialPrefabBlueprint 19A5A731-895D-4AE2-A99E-05CBD342A4E3 #primary instance
 						Source Instance2
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id 1489724583
+							Id 1489724583 (SetVariation1)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 193453226
+							Id 193453226 (Off)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 5862212
+							Id 5862212 (On)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source 012C92DC-AED1-4EBB-806D-797D39FDF39A
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source 012C92DC-AED1-4EBB-806D-797D39FDF39A
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) 012C92DC-AED1-4EBB-806D-797D39FDF39A
@@ -267,9 +267,9 @@ InterfaceDescriptorData Instance2
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 5862212
+			Id 5862212 (On)
 		member(1)::DynamicEvent
-			Id 193453226
+			Id 193453226 (Off)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

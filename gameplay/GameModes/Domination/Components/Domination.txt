@@ -12,7 +12,7 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 							Source Instance7
 							Target Instance4
 							SourceFieldId -480234885
-							TargetFieldId 208768368
+							TargetFieldId 208768368 (Delay)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 5480F146-CDAA-444D-A94A-BB3416AEE216
@@ -36,19 +36,19 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 							Source Instance7
 							Target Instance1
 							SourceFieldId 1243813359
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance1
 							Target 5480F146-CDAA-444D-A94A-BB3416AEE216
-							SourceFieldId 1925266716
+							SourceFieldId 1925266716 (DynamicTransform)
 							TargetFieldId 504866703
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance7
 							Target Instance0
 							SourceFieldId -1430250317
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance7
@@ -60,23 +60,23 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 							Source Instance7
 							Target 5480F146-CDAA-444D-A94A-BB3416AEE216
 							SourceFieldId -141474860
-							TargetFieldId 2113367375
+							TargetFieldId 2113367375 (TicketLossPerMin)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source 14F6603D-3749-4A21-851B-E4993F299A87
 							Target Instance7
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId -1404628591
 						member(1)::LinkConnection
 							Source 3042512C-5876-4E30-ADCA-04ED741275C8
 							Target Instance7
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId -890967278
 						member(2)::LinkConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId -942070695
+							SourceFieldId -942070695 (Shapes)
 							TargetFieldId -118462470
 						member(3)::LinkConnection
 							Source 5480F146-CDAA-444D-A94A-BB3416AEE216
@@ -120,7 +120,7 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 						Source Instance4
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id -600263131
 						TargetType EventConnectionTargetType_Server
@@ -128,15 +128,15 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 						Source Instance4
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1306977726
+							Id -1306977726 (AllowTeamToChangeZone)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance0
 						Target 5480F146-CDAA-444D-A94A-BB3416AEE216
 						SourceEvent::EventSpec
-							Id -2068939912
+							Id -2068939912 (OnTakeControl)
 						TargetEvent::EventSpec
 							Id 293085142
 						TargetType EventConnectionTargetType_Client
@@ -144,49 +144,49 @@ SpatialPrefabBlueprint 65A37654-6468-4D34-BC55-513B8EF58339 #primary instance
 						Source 5480F146-CDAA-444D-A94A-BB3416AEE216
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1541508057
+							Id -1541508057 (StartRound)
 						TargetEvent::EventSpec
-							Id 958670827
+							Id 958670827 (SetTransform)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(4)::EventConnection
 						Source 5480F146-CDAA-444D-A94A-BB3416AEE216
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1541508057
+							Id -1541508057 (StartRound)
 						TargetEvent::EventSpec
-							Id 193450864
+							Id 193450864 (In2)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source 5480F146-CDAA-444D-A94A-BB3416AEE216
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1408017523
+							Id -1408017523 (OnPlayerSpawned)
 						TargetEvent::EventSpec
-							Id 193450867
+							Id 193450867 (In1)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 231942004
+							Id 231942004 (Print)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source 5480F146-CDAA-444D-A94A-BB3416AEE216
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1541508057
+							Id -1541508057 (StartRound)
 						TargetEvent::EventSpec
-							Id -1541508057
+							Id -1541508057 (StartRound)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2
@@ -647,7 +647,7 @@ InterfaceDescriptorData Instance7
 		member(0)::DynamicEvent
 			Id -600263131
 		member(1)::DynamicEvent
-			Id -1541508057
+			Id -1541508057 (StartRound)
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink

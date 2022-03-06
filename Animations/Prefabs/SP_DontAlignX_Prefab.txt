@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 14C4D310-6038-D55C-833E-69E054D551DF #primary instance
 						member(0)::PropertyConnection
 							Source Instance8
 							Target Instance7
-							SourceFieldId 191418609
-							TargetFieldId -2024647575
+							SourceFieldId 191418609 (ClientControllableTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target Instance6
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance10
@@ -41,81 +41,81 @@ SpatialPrefabBlueprint 14C4D310-6038-D55C-833E-69E054D551DF #primary instance
 						member(5)::PropertyConnection
 							Source Instance6
 							Target Instance12
-							SourceFieldId 227190399
+							SourceFieldId 227190399 (Trans)
 							TargetFieldId -1882417649
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance12
 							Target Instance5
 							SourceFieldId 976788535
-							TargetFieldId 227190399
+							TargetFieldId 227190399 (Trans)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 2089021886
-							TargetFieldId 2089021886
+							SourceFieldId 2089021886 (Left)
+							TargetFieldId 2089021886 (Left)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 5862272
-							TargetFieldId 5862272
+							SourceFieldId 5862272 (Up)
+							TargetFieldId 5862272 (Up)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 1986470206
-							TargetFieldId 1986470206
+							SourceFieldId 1986470206 (Forward)
+							TargetFieldId 1986470206 (Forward)
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source Instance6
 							Target Instance10
-							SourceFieldId 227190399
+							SourceFieldId 227190399 (Trans)
 							TargetFieldId -1993058836
 							ShouldNetworkValue False
 						member(11)::PropertyConnection
 							Source Instance7
 							Target Instance10
-							SourceFieldId 227190399
+							SourceFieldId 227190399 (Trans)
 							TargetFieldId -1882417649
 							ShouldNetworkValue False
 						member(12)::PropertyConnection
 							Source Instance6
 							Target Instance9
-							SourceFieldId 2089021886
+							SourceFieldId 2089021886 (Left)
 							TargetFieldId -1882417649
 							ShouldNetworkValue False
 						member(13)::PropertyConnection
 							Source Instance6
 							Target Instance11
-							SourceFieldId 2089021886
+							SourceFieldId 2089021886 (Left)
 							TargetFieldId -1882417649
 							ShouldNetworkValue False
 						member(14)::PropertyConnection
 							Source Instance4
 							Target Instance8
-							SourceFieldId 1281128743
-							TargetFieldId 1925266716
+							SourceFieldId 1281128743 (TransformOut)
+							TargetFieldId 1925266716 (DynamicTransform)
 							ShouldNetworkValue False
 						member(15)::PropertyConnection
 							Source Instance5
 							Target Instance4
-							SourceFieldId -2024647575
-							TargetFieldId -1522984530
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId -1522984530 (TransformIn)
 							ShouldNetworkValue False
 						member(16)::PropertyConnection
 							Source Instance4
 							Target Instance3
-							SourceFieldId 1281128743
-							TargetFieldId -688185022
+							SourceFieldId 1281128743 (TransformOut)
+							TargetFieldId -688185022 (TransformValue)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance8
-							SourceFieldId 838548383
-							TargetFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
+							TargetFieldId 838548383 (Geometry)
 					Interface Instance8
 					Flags 3
 				EventConnections::array
@@ -123,9 +123,9 @@ SpatialPrefabBlueprint 14C4D310-6038-D55C-833E-69E054D551DF #primary instance
 						Source Instance0
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -80368276
+							Id -80368276 (OnEnter)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(1)::EventConnection
 						Source Instance8
@@ -133,7 +133,7 @@ SpatialPrefabBlueprint 14C4D310-6038-D55C-833E-69E054D551DF #primary instance
 						SourceEvent::EventSpec
 							Id -752753879
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -432,12 +432,12 @@ InterfaceDescriptorData Instance8
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 191418609
+				Id 191418609 (ClientControllableTransform)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1925266716
+				Id 1925266716 (DynamicTransform)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -446,7 +446,7 @@ InterfaceDescriptorData Instance8
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id 838548383
+			Id 838548383 (Geometry)
 VectorMathOpEntityData Instance9
 	$::EntityData
 		$::GameObjectData

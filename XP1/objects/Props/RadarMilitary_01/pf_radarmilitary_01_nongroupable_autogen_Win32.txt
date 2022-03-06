@@ -11,26 +11,26 @@ SpatialPrefabBlueprint A2E642BB-E3D9-DB7A-42D4-068387143E0D #primary instance
 						member(0)::PropertyConnection
 							Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 							Target Instance2
-							SourceFieldId 48673745
-							TargetFieldId -409930682
+							SourceFieldId 48673745 (Rotation)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance13
 							Target Instance2
-							SourceFieldId 225375086
-							TargetFieldId 443997333
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
 							Target Instance5
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance6
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source *nullGuid*
@@ -44,97 +44,97 @@ SpatialPrefabBlueprint A2E642BB-E3D9-DB7A-42D4-068387143E0D #primary instance
 						Source Instance2
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance5
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1847112270
+							Id -1847112270 (OnPaused)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance2
 						Target 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance14
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(9)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Server
 					member(10)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -713836199
+							Id -713836199 (DamageArea)
 						TargetType EventConnectionTargetType_Server
 					member(11)::EventConnection
 						Source 4785B3A9-0EDA-44EB-82D9-721EA7CD7DE6
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2
@@ -374,7 +374,7 @@ SphereData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_RotationY
@@ -389,7 +389,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_TranslationY
@@ -404,7 +404,7 @@ TransformPartPropertyTrackData Instance8
 TransformPartPropertyTrackData Instance9
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_RotationZ
@@ -419,7 +419,7 @@ TransformPartPropertyTrackData Instance9
 TransformPartPropertyTrackData Instance10
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_RotationX
@@ -434,7 +434,7 @@ TransformPartPropertyTrackData Instance10
 TransformPartPropertyTrackData Instance11
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_TranslationZ
@@ -449,7 +449,7 @@ TransformPartPropertyTrackData Instance11
 TransformPartPropertyTrackData Instance12
 	$::PropertyTrackData
 		$::DataContainer
-		Id 48673745
+		Id 48673745 (Rotation)
 		Times *nullArray*
 	Resource 17329284420587404043 #xp1/objects/props/radarmilitary_01/animtrackdata/4785b3a9-0eda-44eb-82d9-721ea7cd7de6_rotation
 	TransformPart TransformPart_TranslationX
@@ -476,7 +476,7 @@ InterfaceDescriptorData Instance14
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

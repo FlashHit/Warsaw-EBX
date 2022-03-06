@@ -12,38 +12,38 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							member(0)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/C1127A85-7556-4F20-8B5E-A6618E80D8A7
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/6FD4C9B7-9495-401A-9232-078EAF2AC6A9
-								SourceFieldId 193453899
-								TargetFieldId -1144113085
+								SourceFieldId 193453899 (Out)
+								TargetFieldId -1144113085 (FloatInput)
 								ShouldNetworkValue False
 							member(1)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/72A0EBD1-C2DA-48E1-9BA0-FDE1282CB651
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/C1127A85-7556-4F20-8B5E-A6618E80D8A7
-								SourceFieldId 225375086
-								TargetFieldId 5862146
+								SourceFieldId 225375086 (Value)
+								TargetFieldId 5862146 (In)
 								ShouldNetworkValue False
 							member(2)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/6FD4C9B7-9495-401A-9232-078EAF2AC6A9
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Geo/61E9CD6C-471E-4C3F-8DEF-B030B365881E
-								SourceFieldId 661642922
-								TargetFieldId -996560163
+								SourceFieldId 661642922 (FloatOutput)
+								TargetFieldId -996560163 (Radius)
 								ShouldNetworkValue False
 							member(3)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/28280A98-F4AF-46B9-B7F5-0FDF91C6EB18
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/586F9CBF-9431-459B-9A00-EEC808C4ED35
 								SourceFieldId -687144612
-								TargetFieldId 193450867
+								TargetFieldId 193450867 (In1)
 								ShouldNetworkValue False
 							member(4)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/7DB6BEB2-A046-4824-AFF0-1525C41B8937
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/586F9CBF-9431-459B-9A00-EEC808C4ED35
 								SourceFieldId -687144612
-								TargetFieldId 193450864
+								TargetFieldId 193450864 (In2)
 								ShouldNetworkValue False
 							member(5)::PropertyConnection
 								Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/586F9CBF-9431-459B-9A00-EEC808C4ED35
 								Target Levels/SP/SP_Naval/NavalOceanCalm_Geo/0E411315-0341-48B3-90D2-9AB2F64B9D8E
-								SourceFieldId 193453899
-								TargetFieldId -2024647575
+								SourceFieldId 193453899 (Out)
+								TargetFieldId -2024647575 (Transform)
 								ShouldNetworkValue False
 						LinkConnections::array
 							member(0)::LinkConnection
@@ -65,7 +65,7 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id -1529565538
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_Server
 						member(1)::EventConnection
 							Source Instance2
@@ -73,7 +73,7 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id 1360891206
 							TargetEvent::EventSpec
-								Id 2089401213
+								Id 2089401213 (Stop)
 							TargetType EventConnectionTargetType_Server
 						member(2)::EventConnection
 							Source Instance2
@@ -81,7 +81,7 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id 322758102
 							TargetEvent::EventSpec
-								Id -395651742
+								Id -395651742 (Decrement)
 							TargetType EventConnectionTargetType_Client
 						member(3)::EventConnection
 							Source Instance2
@@ -89,21 +89,21 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id 322758102
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Client
 						member(4)::EventConnection
 							Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/24E335D3-3479-4D60-AD78-52BDC372C95B
 							Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/B8B7DF13-369A-4BB8-8E69-E0649E52C9E3
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id -1573253508
+								Id -1573253508 (Client)
 							TargetType EventConnectionTargetType_Client
 						member(5)::EventConnection
 							Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/B8B7DF13-369A-4BB8-8E69-E0649E52C9E3
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
 								Id -584865408
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -113,7 +113,7 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id 1425210599
 							TargetEvent::EventSpec
-								Id 230748069
+								Id 230748069 (Start)
 							TargetType EventConnectionTargetType_Server
 						member(7)::EventConnection
 							Source Instance2
@@ -121,23 +121,23 @@ SubWorldData D577E988-DB29-48F8-A3D3-247D06277D7C #primary instance
 							SourceEvent::EventSpec
 								Id -438130017
 							TargetEvent::EventSpec
-								Id 2089401213
+								Id 2089401213 (Stop)
 							TargetType EventConnectionTargetType_Server
 						member(8)::EventConnection
 							Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/28280A98-F4AF-46B9-B7F5-0FDF91C6EB18
 							Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/0D5CA1BA-3AAA-4618-B9F7-E1C8F5E2CB6F
 							SourceEvent::EventSpec
-								Id -1176973715
+								Id -1176973715 (OnStopped)
 							TargetEvent::EventSpec
-								Id 231942004
+								Id 231942004 (Print)
 							TargetType EventConnectionTargetType_Server
 						member(9)::EventConnection
 							Source Levels/SP/SP_Naval/NavalOceanCalm_Animation/7DB6BEB2-A046-4824-AFF0-1525C41B8937
 							Target Levels/SP/SP_Naval/NavalOceanCalm_Animation/2E18A2BA-1209-410E-8591-201D3EE1BE5B
 							SourceEvent::EventSpec
-								Id -1193365339
+								Id -1193365339 (OnStarted)
 							TargetEvent::EventSpec
-								Id 231942004
+								Id 231942004 (Print)
 							TargetType EventConnectionTargetType_Server
 			Objects::array
 				member(0) Instance1

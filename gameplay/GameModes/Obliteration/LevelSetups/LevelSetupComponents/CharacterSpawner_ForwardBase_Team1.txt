@@ -12,13 +12,13 @@ SpatialPrefabBlueprint BF3E4740-4D79-474D-8726-BBDF3DA398E8 #primary instance
 							Source Instance4
 							Target F78A5369-B90B-40A9-9B9F-103E1D94EC07
 							SourceFieldId -2124067606
-							TargetFieldId 1490142753
+							TargetFieldId 1490142753 (LocationNameSid)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance4
 							Target F78A5369-B90B-40A9-9B9F-103E1D94EC07
 							SourceFieldId -1434417520
-							TargetFieldId 2025703195
+							TargetFieldId 2025703195 (LocationTextSid)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
@@ -29,19 +29,19 @@ SpatialPrefabBlueprint BF3E4740-4D79-474D-8726-BBDF3DA398E8 #primary instance
 						member(3)::PropertyConnection
 							Source Instance4
 							Target F78A5369-B90B-40A9-9B9F-103E1D94EC07
-							SourceFieldId 2662400
-							TargetFieldId 2662400
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source F78A5369-B90B-40A9-9B9F-103E1D94EC07
 							Target Instance4
-							SourceFieldId -2001390482
-							TargetFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
+							TargetFieldId -2001390482 (AlternativeSpawnPoints)
 						member(1)::LinkConnection
 							Source Instance4
 							Target F78A5369-B90B-40A9-9B9F-103E1D94EC07
-							SourceFieldId -1961960407
+							SourceFieldId -1961960407 (Spawner)
 							TargetFieldId 0
 					Interface Instance4
 					Flags 15
@@ -50,25 +50,25 @@ SpatialPrefabBlueprint BF3E4740-4D79-474D-8726-BBDF3DA398E8 #primary instance
 						Source Instance1
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1434059356
+							Id -1434059356 (OnDone)
 						TargetEvent::EventSpec
-							Id -1778993948
+							Id -1778993948 (FadeIn)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -1778993948
+							Id -1778993948 (FadeIn)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1434059356
+							Id -1434059356 (OnDone)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance4
@@ -76,7 +76,7 @@ SpatialPrefabBlueprint BF3E4740-4D79-474D-8726-BBDF3DA398E8 #primary instance
 						SourceEvent::EventSpec
 							Id 2088662691
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance4
@@ -84,7 +84,7 @@ SpatialPrefabBlueprint BF3E4740-4D79-474D-8726-BBDF3DA398E8 #primary instance
 						SourceEvent::EventSpec
 							Id 2088662691
 						TargetEvent::EventSpec
-							Id 1422740397
+							Id 1422740397 (FadeOut)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) F78A5369-B90B-40A9-9B9F-103E1D94EC07
@@ -285,7 +285,7 @@ InterfaceDescriptorData Instance4
 			member(5)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -293,7 +293,7 @@ InterfaceDescriptorData Instance4
 	OutputEvents *nullArray*
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1961960407
+			Id -1961960407 (Spawner)
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id -2001390482
+			Id -2001390482 (AlternativeSpawnPoints)

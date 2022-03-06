@@ -11,38 +11,38 @@ LogicPrefabBlueprint C24A220D-8EA2-5603-B5C6-0AAE6917A4C2 #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target Instance4
-							SourceFieldId 193453899
-							TargetFieldId 193450866
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance0
 							Target Instance4
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance2
 							Target Instance3
-							SourceFieldId -1079944492
-							TargetFieldId 193450866
+							SourceFieldId -1079944492 (Target)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId -2142780935
-							TargetFieldId 193450867
+							SourceFieldId -2142780935 (IntegratedValue)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId -2142780935
-							TargetFieldId 1144276871
+							SourceFieldId -2142780935 (IntegratedValue)
+							TargetFieldId 1144276871 (CurrentValue)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance4
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 214522259
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 214522259 (Input)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance2
@@ -52,17 +52,17 @@ LogicPrefabBlueprint C24A220D-8EA2-5603-B5C6-0AAE6917A4C2 #primary instance
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance0
@@ -100,18 +100,18 @@ InterfaceDescriptorData Instance2
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1079944492
+				Id -1079944492 (Target)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1144276871
+				Id 1144276871 (CurrentValue)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id 2089401213
+			Id 2089401213 (Stop)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -123,8 +123,8 @@ MathOpEntityData Instance3
 					$::DataContainer
 				Flags 423752513
 	Realm Realm_Client
-	Operators::array
-		member(0) 1 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 1
 MathOpEntityData Instance4
 	$::EntityData
 		$::GameObjectData
@@ -133,5 +133,5 @@ MathOpEntityData Instance4
 					$::DataContainer
 				Flags 148901321
 	Realm Realm_Client
-	Operators::array
-		member(0) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2

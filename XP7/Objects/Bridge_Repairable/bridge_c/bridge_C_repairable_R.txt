@@ -11,8 +11,8 @@ VehicleBlueprint E522E800-5C91-A1DD-2F69-87A6BD6DA98D #primary instance
 						member(0)::PropertyConnection
 							Source Instance0
 							Target Instance12
-							SourceFieldId -1240630183
-							TargetFieldId -1240630183
+							SourceFieldId -1240630183 (Health)
+							TargetFieldId -1240630183 (Health)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance12
@@ -22,33 +22,33 @@ VehicleBlueprint E522E800-5C91-A1DD-2F69-87A6BD6DA98D #primary instance
 						Source Instance12
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetEvent::EventSpec
-							Id -1980967410
+							Id -1980967410 (MoveToLastHealthState)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance12
 						SourceEvent::EventSpec
-							Id -2120949217
+							Id -2120949217 (OnHealthState0)
 						TargetEvent::EventSpec
-							Id -2120949217
+							Id -2120949217 (OnHealthState0)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance0
 						Target Instance12
 						SourceEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetEvent::EventSpec
-							Id -2120949218
+							Id -2120949218 (OnHealthState1)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance0
 						Target Instance12
 						SourceEvent::EventSpec
-							Id -2120949219
+							Id -2120949219 (OnHealthState2)
 						TargetEvent::EventSpec
-							Id -2120949219
+							Id -2120949219 (OnHealthState2)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Object 9F755046-168E-CE6A-795B-04A590FBA5D7
 VehicleEntityData 9F755046-168E-CE6A-795B-04A590FBA5D7
@@ -744,17 +744,17 @@ InterfaceDescriptorData Instance12
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1240630183
+				Id -1240630183 (Health)
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -1980967410
+			Id -1980967410 (MoveToLastHealthState)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -2120949217
+			Id -2120949217 (OnHealthState0)
 		member(1)::DynamicEvent
-			Id -2120949218
+			Id -2120949218 (OnHealthState1)
 		member(2)::DynamicEvent
-			Id -2120949219
+			Id -2120949219 (OnHealthState2)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

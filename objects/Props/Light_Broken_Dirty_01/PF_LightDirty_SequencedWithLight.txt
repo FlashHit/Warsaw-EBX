@@ -11,26 +11,26 @@ SpatialPrefabBlueprint 76E90074-627A-CE5C-D873-5BB7D3ED86BD #primary instance
 						member(0)::PropertyConnection
 							Source Instance12
 							Target Instance11
-							SourceFieldId 81877812
-							TargetFieldId 193450866
+							SourceFieldId 81877812 (LightIntensity)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance12
 							Target Instance11
 							SourceFieldId 1091249819
-							TargetFieldId 193450867
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance11
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance12
 							Target Instance0
-							SourceFieldId 2089393401
-							TargetFieldId -2024647575
+							SourceFieldId 2089393401 (Sway)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance10
@@ -42,7 +42,7 @@ SpatialPrefabBlueprint 76E90074-627A-CE5C-D873-5BB7D3ED86BD #primary instance
 						SourceEvent::EventSpec
 							Id -1215608319
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance0
@@ -82,7 +82,7 @@ ReferenceObjectData Instance0
 TransformPartPropertyTrackData Instance1
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_RotationZ
@@ -97,7 +97,7 @@ TransformPartPropertyTrackData Instance1
 TransformPartPropertyTrackData Instance2
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_TranslationX
@@ -112,7 +112,7 @@ TransformPartPropertyTrackData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_RotationX
@@ -127,7 +127,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_RotationY
@@ -142,7 +142,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_TranslationZ
@@ -157,7 +157,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089393401
+		Id 2089393401 (Sway)
 		Times *nullArray*
 	Resource 2990916057356279795 #objects/props/light_broken_dirty_01/animtrackdata/68bd217d-d87c-431c-a588-916645ca3951_sway
 	TransformPart TransformPart_TranslationY
@@ -217,7 +217,7 @@ FloatPropertyTrackData Instance9
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 81877812
+			Id 81877812 (LightIntensity)
 			Times::array
 				member(0) 0
 		InterpolationType InterpolationType_Linear
@@ -241,8 +241,8 @@ MathOpEntityData Instance11
 					$::DataContainer
 				Flags 411822171
 	Realm Realm_ClientAndServer
-	Operators::array
-		member(0) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2
 SequenceEntityData Instance12
 	$::EntityData
 		$::GameObjectData

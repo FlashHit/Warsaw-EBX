@@ -11,79 +11,79 @@ SpatialPrefabBlueprint 90B268AD-2103-49B5-8337-0438C5A43014 #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target Instance7
-							SourceFieldId 1925266716
-							TargetFieldId 193450864
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance21
 							Target Instance5
 							SourceFieldId 1281143127
-							TargetFieldId 193450864
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance7
-							SourceFieldId 193453899
-							TargetFieldId 193450867
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance4
 							Target Instance6
-							SourceFieldId -2024647575
-							TargetFieldId 193450867
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance22
 							Target Instance6
 							SourceFieldId 1281143127
-							TargetFieldId 193450864
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 193453899
-							TargetFieldId 193450867
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance7
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -2024647575
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance20
 							Target Instance1
-							SourceFieldId 225375086
-							TargetFieldId 2662400
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance7
 							Target 5E631AA3-7969-4CD6-8BDF-4DBBA48B3FBF
-							SourceFieldId 193453899
-							TargetFieldId -409930682
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source Instance7
 							Target 17988776-1D3D-45F2-A3A2-76E49E259593
-							SourceFieldId 193453899
-							TargetFieldId 2085022312
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2085022312 (ControllableTransform)
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source Instance5
 							Target 17988776-1D3D-45F2-A3A2-76E49E259593
-							SourceFieldId 193453899
-							TargetFieldId -409930682
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance1
 							Target 17988776-1D3D-45F2-A3A2-76E49E259593
-							SourceFieldId 925765131
+							SourceFieldId 925765131 (ExcludedSpawner)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source 17988776-1D3D-45F2-A3A2-76E49E259593
 							Target Instance0
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId 0
 					Interface *nullGuid*
 					Flags 1
@@ -92,31 +92,31 @@ SpatialPrefabBlueprint 90B268AD-2103-49B5-8337-0438C5A43014 #primary instance
 						Source Instance21
 						Target Instance22
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance21
 						Target Instance22
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance21
 						Target 17988776-1D3D-45F2-A3A2-76E49E259593
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -597186424
+							Id -597186424 (ReturnControl)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance21
 						Target 5E631AA3-7969-4CD6-8BDF-4DBBA48B3FBF
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
 							Id -1208295543
 						TargetType EventConnectionTargetType_Client
@@ -124,7 +124,7 @@ SpatialPrefabBlueprint 90B268AD-2103-49B5-8337-0438C5A43014 #primary instance
 						Source Instance21
 						Target 5E631AA3-7969-4CD6-8BDF-4DBBA48B3FBF
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
 							Id -572406478
 						TargetType EventConnectionTargetType_Client
@@ -132,7 +132,7 @@ SpatialPrefabBlueprint 90B268AD-2103-49B5-8337-0438C5A43014 #primary instance
 						Source Instance21
 						Target 5E631AA3-7969-4CD6-8BDF-4DBBA48B3FBF
 						SourceEvent::EventSpec
-							Id 650265526
+							Id 650265526 (OnFinished)
 						TargetEvent::EventSpec
 							Id -572406478
 						TargetType EventConnectionTargetType_Client
@@ -140,17 +140,17 @@ SpatialPrefabBlueprint 90B268AD-2103-49B5-8337-0438C5A43014 #primary instance
 						Source Instance1
 						Target Instance21
 						SourceEvent::EventSpec
-							Id -1304372294
+							Id -1304372294 (OnCollision)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(7)::EventConnection
 						Source Instance1
 						Target Instance20
 						SourceEvent::EventSpec
-							Id -1304372294
+							Id -1304372294 (OnCollision)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2

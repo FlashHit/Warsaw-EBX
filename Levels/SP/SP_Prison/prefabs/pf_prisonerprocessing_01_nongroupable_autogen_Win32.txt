@@ -11,8 +11,8 @@ SpatialPrefabBlueprint 955A656A-F3F9-439C-9F4C-1225BF235863 #primary instance
 						member(0)::PropertyConnection
 							Source Instance35
 							Target 360D35AA-42C4-42ED-AF05-B165228D1116
-							SourceFieldId 2088749075
-							TargetFieldId 5862146
+							SourceFieldId 2088749075 (Door)
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance34
@@ -22,17 +22,17 @@ SpatialPrefabBlueprint 955A656A-F3F9-439C-9F4C-1225BF235863 #primary instance
 						Source Instance34
 						Target Instance35
 						SourceEvent::EventSpec
-							Id -2137689625
+							Id -2137689625 (OpenDoor)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance34
 						Target Instance35
 						SourceEvent::EventSpec
-							Id 632505285
+							Id 632505285 (CloseDoor)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) 257CA808-6EAB-4202-AB7D-F327C91485CB
@@ -1074,7 +1074,7 @@ ReferenceObjectData Instance26
 TransformPartPropertyTrackData Instance27
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_RotationX
@@ -1089,7 +1089,7 @@ TransformPartPropertyTrackData Instance27
 TransformPartPropertyTrackData Instance28
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_TranslationY
@@ -1104,7 +1104,7 @@ TransformPartPropertyTrackData Instance28
 TransformPartPropertyTrackData Instance29
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_RotationY
@@ -1119,7 +1119,7 @@ TransformPartPropertyTrackData Instance29
 TransformPartPropertyTrackData Instance30
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_RotationZ
@@ -1134,7 +1134,7 @@ TransformPartPropertyTrackData Instance30
 TransformPartPropertyTrackData Instance31
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_TranslationZ
@@ -1149,7 +1149,7 @@ TransformPartPropertyTrackData Instance31
 TransformPartPropertyTrackData Instance32
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2088749075
+		Id 2088749075 (Door)
 		Times *nullArray*
 	Resource 5841545422389342365 #levels/sp/sp_prison/prefabs/animtrackdata/388ff165-b515-4ab1-8b96-b33e09a01fe5_door
 	TransformPart TransformPart_TranslationX
@@ -1176,9 +1176,9 @@ InterfaceDescriptorData Instance34
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -2137689625
+			Id -2137689625 (OpenDoor)
 		member(1)::DynamicEvent
-			Id 632505285
+			Id 632505285 (CloseDoor)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

@@ -11,19 +11,19 @@ SpatialPrefabBlueprint E175ADB6-0CE5-49DD-B504-D7BBAA14A092 #primary instance
 						member(0)::PropertyConnection
 							Source Instance5
 							Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
-							SourceFieldId -2024647575
-							TargetFieldId 2085022312
+							SourceFieldId -2024647575 (Transform)
+							TargetFieldId 2085022312 (ControllableTransform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
-							SourceFieldId 403876000
+							SourceFieldId 403876000 (VehicleToCheck)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source E117847B-4722-45D4-9DF9-0A7CFA6379D6
 							Target Instance0
-							SourceFieldId -2001390482
+							SourceFieldId -2001390482 (AlternativeSpawnPoints)
 							TargetFieldId 0
 					Interface Instance5
 					Flags 3
@@ -32,63 +32,63 @@ SpatialPrefabBlueprint E175ADB6-0CE5-49DD-B504-D7BBAA14A092 #primary instance
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance4
 						Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance4
 						Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 777187609
+							Id 777187609 (TakeControl)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance3
 						Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 1999497757
+							Id 1999497757 (FireShot)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source Instance5
 						Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
 						SourceEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance5
 						Target E117847B-4722-45D4-9DF9-0A7CFA6379D6
 						SourceEvent::EventSpec
-							Id 1999519237
+							Id 1999519237 (FireStop)
 						TargetEvent::EventSpec
-							Id -597186424
+							Id -597186424 (ReturnControl)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance3
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
 							Id 1428441180
 						TargetType EventConnectionTargetType_Server
@@ -98,7 +98,7 @@ SpatialPrefabBlueprint E175ADB6-0CE5-49DD-B504-D7BBAA14A092 #primary instance
 						SourceEvent::EventSpec
 							Id -1060157340
 						TargetEvent::EventSpec
-							Id -834116283
+							Id -834116283 (Unspawn)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance2
@@ -348,13 +348,13 @@ InterfaceDescriptorData Instance5
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2024647575
+				Id -2024647575 (Transform)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 1999497757
+			Id 1999497757 (FireShot)
 		member(1)::DynamicEvent
-			Id 1999519237
+			Id 1999519237 (FireStop)
 		member(2)::DynamicEvent
 			Id -1060157340
 	OutputEvents::array

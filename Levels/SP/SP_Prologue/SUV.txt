@@ -13,48 +13,48 @@ SubWorldData 30C5889A-D14C-4ACE-8084-9ED6EF65646E #primary instance
 								Source Instance2
 								Target Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 								SourceFieldId 1347764635
-								TargetFieldId -1250349431
+								TargetFieldId -1250349431 (InitialAnimationControlMode)
 								ShouldNetworkValue False
 							member(1)::PropertyConnection
 								Source Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 								Target Instance2
-								SourceFieldId 191418609
+								SourceFieldId 191418609 (ClientControllableTransform)
 								TargetFieldId -1092496590
 								ShouldNetworkValue False
 							member(2)::PropertyConnection
 								Source Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 								Target Instance2
-								SourceFieldId 2085022312
+								SourceFieldId 2085022312 (ControllableTransform)
 								TargetFieldId -591702938
 								ShouldNetworkValue False
 							member(3)::PropertyConnection
 								Source Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 								Target Instance2
-								SourceFieldId -1835991333
+								SourceFieldId -1835991333 (CurrentVelocity)
 								TargetFieldId 206511401
 								ShouldNetworkValue False
 							member(4)::PropertyConnection
 								Source Instance2
 								Target Levels/SP/SP_Prologue/SUV_Logic/239B664E-E919-45B4-B7E2-78E7F71FD66D
 								SourceFieldId 2094754837
-								TargetFieldId -409930682
+								TargetFieldId -409930682 (BlueprintTransform)
 								ShouldNetworkValue False
 							member(5)::PropertyConnection
 								Source Levels/SP/SP_Prologue/SUV_Control/A0A2646B-66AD-499B-A569-0176B3CED148
 								Target Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
-								SourceFieldId 225375086
-								TargetFieldId 922982664
+								SourceFieldId 225375086 (Value)
+								TargetFieldId 922982664 (Immortal)
 								ShouldNetworkValue False
 						LinkConnections::array
 							member(0)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
-								SourceFieldId -1316984818
-								TargetFieldId -1316984818
+								SourceFieldId -1316984818 (PathFollower)
+								TargetFieldId -1316984818 (PathFollower)
 							member(1)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
-								SourceFieldId 231940265
+								SourceFieldId 231940265 (Proxy)
 								TargetFieldId 219909467
 							member(2)::LinkConnection
 								Source Instance2
@@ -64,12 +64,12 @@ SubWorldData 30C5889A-D14C-4ACE-8084-9ED6EF65646E #primary instance
 							member(3)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
-								SourceFieldId -1086273423
-								TargetFieldId -1086273423
+								SourceFieldId -1086273423 (Animatable)
+								TargetFieldId -1086273423 (Animatable)
 							member(4)::LinkConnection
 								Source Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 								Target Levels/SP/SP_Prologue/SUV_Logic/D5D8FFC2-CA39-8F0B-DBCC-1CDFA5AC0252
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 						Interface Instance2
 						Flags 15
@@ -78,7 +78,7 @@ SubWorldData 30C5889A-D14C-4ACE-8084-9ED6EF65646E #primary instance
 							Source Levels/SP/SP_Prologue/SUV_Logic/F512D9D9-62FB-4E9F-BA66-0D8D547128A5
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1577401599
+								Id 1577401599 (OnPlayerEnter)
 							TargetEvent::EventSpec
 								Id -235940685
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -126,9 +126,9 @@ SubWorldData 30C5889A-D14C-4ACE-8084-9ED6EF65646E #primary instance
 							Source Instance2
 							Target Levels/SP/SP_Prologue/SUV_Logic/239B664E-E919-45B4-B7E2-78E7F71FD66D
 							SourceEvent::EventSpec
-								Id -1875444151
+								Id -1875444151 (LightsOn)
 							TargetEvent::EventSpec
-								Id -1875444151
+								Id -1875444151 (LightsOn)
 							TargetType EventConnectionTargetType_Client
 						member(7)::EventConnection
 							Source Instance2
@@ -136,7 +136,7 @@ SubWorldData 30C5889A-D14C-4ACE-8084-9ED6EF65646E #primary instance
 							SourceEvent::EventSpec
 								Id -682087904
 							TargetEvent::EventSpec
-								Id 668205626
+								Id 668205626 (SetFalse)
 							TargetType EventConnectionTargetType_Server
 			Objects::array
 				member(0) Instance1
@@ -253,17 +253,17 @@ InterfaceDescriptorData Instance2
 		member(5)::DynamicEvent
 			Id -682087904
 		member(6)::DynamicEvent
-			Id -1875444151
+			Id -1875444151 (LightsOn)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id -235940685
 	InputLinks::array
 		member(0)::DynamicLink
-			Id -1316984818
+			Id -1316984818 (PathFollower)
 		member(1)::DynamicLink
-			Id 231940265
+			Id 231940265 (Proxy)
 		member(2)::DynamicLink
 			Id 193466645
 		member(3)::DynamicLink
-			Id -1086273423
+			Id -1086273423 (Animatable)
 	OutputLinks *nullArray*

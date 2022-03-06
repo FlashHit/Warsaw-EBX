@@ -11,32 +11,32 @@ SpatialPrefabBlueprint 50A610D0-D59E-6FA9-2390-F8EB7B8BA52A #primary instance
 						member(0)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId 1579081631
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance6
 							Target Instance4
-							SourceFieldId 258157264
+							SourceFieldId 258157264 (Proximity)
 							TargetFieldId -2120426542
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance6
 							Target Instance3
-							SourceFieldId 258157264
-							TargetFieldId -1136955571
+							SourceFieldId 258157264 (Proximity)
+							TargetFieldId -1136955571 (Volume)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance1
 							Target Instance6
-							SourceFieldId 225375086
-							TargetFieldId 1947336347
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 1947336347 (ProximityMultiplier)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId 838548383
+							SourceFieldId 838548383 (Geometry)
 							TargetFieldId 0
 					Interface Instance2
 					Flags 2
@@ -45,17 +45,17 @@ SpatialPrefabBlueprint 50A610D0-D59E-6FA9-2390-F8EB7B8BA52A #primary instance
 						Source Instance0
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -110,7 +110,7 @@ InterfaceDescriptorData Instance2
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

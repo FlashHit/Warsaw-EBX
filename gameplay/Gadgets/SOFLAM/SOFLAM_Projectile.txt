@@ -11,50 +11,50 @@ VehicleBlueprint 2A644984-ADB6-AD04-0534-C11BB4BEB91D #primary instance
 						member(0)::PropertyConnection
 							Source Instance10
 							Target Instance20
-							SourceFieldId -709588
-							TargetFieldId -1886708048
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1886708048 (CameraActive)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance10
 							Target Instance21
-							SourceFieldId -709588
+							SourceFieldId -709588 (ActiveForLocalPlayer)
 							TargetFieldId 1480049498
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance10
 							Target Instance20
-							SourceFieldId -709588
+							SourceFieldId -709588 (ActiveForLocalPlayer)
 							TargetFieldId -1110218184
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance47
 							Target Instance58
-							SourceFieldId 225375086
-							TargetFieldId 176040160
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 176040160 (BoolValue)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance18
 							Target Instance27
-							SourceFieldId -1756643285
-							TargetFieldId -2024647575
+							SourceFieldId -1756643285 (WorldTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance10
 							Target Instance57
-							SourceFieldId -709588
-							TargetFieldId 176040160
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId 176040160 (BoolValue)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance57
 							Target Instance27
-							SourceFieldId 936870923
+							SourceFieldId 936870923 (CastToFloat)
 							TargetFieldId -578293939
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source 3F6D23B3-9520-F810-1F95-1CE64C22B30C
 							Target Instance0
-							SourceFieldId 2089309528
-							TargetFieldId 2089309528
+							SourceFieldId 2089309528 (Team)
+							TargetFieldId 2089309528 (Team)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface *nullGuid*
@@ -64,71 +64,71 @@ VehicleBlueprint 2A644984-ADB6-AD04-0534-C11BB4BEB91D #primary instance
 						Source 3F6D23B3-9520-F810-1F95-1CE64C22B30C
 						Target Instance20
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id 423947445
+							Id 423947445 (Disabled)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(1)::EventConnection
 						Source 3F6D23B3-9520-F810-1F95-1CE64C22B30C
 						Target Instance20
 						SourceEvent::EventSpec
-							Id 1666281711
+							Id 1666281711 (OnDamage)
 						TargetEvent::EventSpec
-							Id -1705074962
+							Id -1705074962 (Damage)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance56
 						Target Instance47
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance55
 						Target Instance47
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance24
 						Target Instance56
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance24
 						Target Instance55
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source 3F6D23B3-9520-F810-1F95-1CE64C22B30C
 						Target Instance27
 						SourceEvent::EventSpec
-							Id -1635202463
+							Id -1635202463 (OnEnabled)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source 3F6D23B3-9520-F810-1F95-1CE64C22B30C
 						Target Instance27
 						SourceEvent::EventSpec
-							Id -62145612
+							Id -62145612 (OnDisabled)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance24
 						Target Instance22
 						SourceEvent::EventSpec
-							Id 1577401599
+							Id 1577401599 (OnPlayerEnter)
 						TargetEvent::EventSpec
 							Id -630042577
 						TargetType EventConnectionTargetType_Client
@@ -136,7 +136,7 @@ VehicleBlueprint 2A644984-ADB6-AD04-0534-C11BB4BEB91D #primary instance
 						Source Instance24
 						Target Instance22
 						SourceEvent::EventSpec
-							Id 47785047
+							Id 47785047 (OnPlayerExit)
 						TargetEvent::EventSpec
 							Id 1571288972
 						TargetType EventConnectionTargetType_Client

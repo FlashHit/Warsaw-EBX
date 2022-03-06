@@ -11,68 +11,68 @@ LogicPrefabBlueprint 2092605C-6053-19FF-13B6-786DA0AF0DBB #primary instance
 						member(0)::PropertyConnection
 							Source Instance9
 							Target Instance8
-							SourceFieldId -2140343023
+							SourceFieldId -2140343023 (CurrentHealthNormalized)
 							TargetFieldId 1591366968
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance9
 							Target Instance7
-							SourceFieldId -2140343023
+							SourceFieldId -2140343023 (CurrentHealthNormalized)
 							TargetFieldId 1591366968
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
 							Target Instance2
-							SourceFieldId 1718507291
-							TargetFieldId -1171175106
+							SourceFieldId 1718507291 (FloatOut)
+							TargetFieldId -1171175106 (FloatValue)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId 1718507291
-							TargetFieldId -1171175106
+							SourceFieldId 1718507291 (FloatOut)
+							TargetFieldId -1171175106 (FloatValue)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance4
 							Target Instance6
-							SourceFieldId 1718507291
-							TargetFieldId 193450866
+							SourceFieldId 1718507291 (FloatOut)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance3
 							Target Instance6
-							SourceFieldId 1718507291
-							TargetFieldId 193450867
+							SourceFieldId 1718507291 (FloatOut)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance6
 							Target Instance9
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId -1208867565
 							ShouldNetworkValue False
 						member(7)::PropertyConnection
 							Source Instance8
 							Target Instance4
-							SourceFieldId 731416433
-							TargetFieldId 2134484562
+							SourceFieldId 731416433 (OutputValue)
+							TargetFieldId 2134484562 (FloatIn)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance7
 							Target Instance3
-							SourceFieldId 731416433
-							TargetFieldId 2134484562
+							SourceFieldId 731416433 (OutputValue)
+							TargetFieldId 2134484562 (FloatIn)
 							ShouldNetworkValue False
 						member(9)::PropertyConnection
 							Source Instance6
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -1171175106
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -1171175106 (FloatValue)
 							ShouldNetworkValue False
 						member(10)::PropertyConnection
 							Source Instance9
 							Target Instance5
 							SourceFieldId 85913949
-							TargetFieldId 2088812747
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance9
@@ -82,25 +82,25 @@ LogicPrefabBlueprint 2092605C-6053-19FF-13B6-786DA0AF0DBB #primary instance
 						Source Instance9
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance10
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance10
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance9
@@ -108,31 +108,31 @@ LogicPrefabBlueprint 2092605C-6053-19FF-13B6-786DA0AF0DBB #primary instance
 						SourceEvent::EventSpec
 							Id 737048916
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 2089008817
+							Id 2089008817 (Open)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance5
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 212633683
+							Id 212633683 (Close)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance10
@@ -445,7 +445,7 @@ InterfaceDescriptorData Instance9
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -2140343023
+				Id -2140343023 (CurrentHealthNormalized)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value *nullString*
@@ -459,7 +459,7 @@ InterfaceDescriptorData Instance9
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -1036968738
+			Id -1036968738 (OnSpawned)
 		member(1)::DynamicEvent
 			Id 737048916
 		member(2)::DynamicEvent

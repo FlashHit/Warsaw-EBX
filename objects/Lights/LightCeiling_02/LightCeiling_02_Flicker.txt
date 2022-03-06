@@ -10,26 +10,26 @@ ObjectBlueprint A4E61E25-31F6-4F55-8989-92FFD6E3E88B #primary instance
 					member(0)::PropertyConnection
 						Source Instance15
 						Target Instance4
-						SourceFieldId 2145977593
+						SourceFieldId 2145977593 (Flicker)
 						TargetFieldId -524533638
 						ShouldNetworkValue False
 					member(1)::PropertyConnection
 						Source Instance15
 						Target Instance10
-						SourceFieldId 2145977593
-						TargetFieldId 2089241857
+						SourceFieldId 2145977593 (Flicker)
+						TargetFieldId 2089241857 (Vec4)
 						ShouldNetworkValue False
 					member(2)::PropertyConnection
 						Source Instance10
 						Target Instance13
-						SourceFieldId 177661
-						TargetFieldId -458572566
+						SourceFieldId 177661 (X)
+						TargetFieldId -458572566 (Intensity)
 						ShouldNetworkValue False
 				LinkConnections::array
 					member(0)::LinkConnection
 						Source Instance7
 						Target Instance4
-						SourceFieldId -1028279722
+						SourceFieldId -1028279722 (ShaderParameters)
 						TargetFieldId 0
 				Interface Instance13
 				Flags 3
@@ -38,55 +38,55 @@ ObjectBlueprint A4E61E25-31F6-4F55-8989-92FFD6E3E88B #primary instance
 					Source Instance0
 					Target Instance15
 					SourceEvent::EventSpec
-						Id -1452333337
+						Id -1452333337 (OnDestroyed)
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(1)::EventConnection
 					Source Instance13
 					Target Instance7
 					SourceEvent::EventSpec
-						Id -274579609
+						Id -274579609 (Destroy)
 					TargetEvent::EventSpec
-						Id -274579609
+						Id -274579609 (Destroy)
 					TargetType EventConnectionTargetType_Server
 				member(2)::EventConnection
 					Source Instance13
 					Target Instance7
 					SourceEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetType EventConnectionTargetType_Server
 				member(3)::EventConnection
 					Source Instance15
 					Target Instance7
 					SourceEvent::EventSpec
-						Id 650265526
+						Id 650265526 (OnFinished)
 					TargetEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetType EventConnectionTargetType_Server
 				member(4)::EventConnection
 					Source Instance13
 					Target Instance14
 					SourceEvent::EventSpec
-						Id 2145977593
+						Id 2145977593 (Flicker)
 					TargetEvent::EventSpec
-						Id 5862146
+						Id 5862146 (In)
 					TargetType EventConnectionTargetType_Server
 				member(5)::EventConnection
 					Source Instance14
 					Target Instance15
 					SourceEvent::EventSpec
-						Id 193453899
+						Id 193453899 (Out)
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_NetworkedClientAndServer
 				member(6)::EventConnection
 					Source Instance13
 					Target Instance13
 					SourceEvent::EventSpec
-						Id 229946160
+						Id 229946160 (Reset)
 					TargetEvent::EventSpec
 						Id -1121452805
 					TargetType EventConnectionTargetType_NetworkedClient
@@ -94,7 +94,7 @@ ObjectBlueprint A4E61E25-31F6-4F55-8989-92FFD6E3E88B #primary instance
 					Source Instance15
 					Target Instance13
 					SourceEvent::EventSpec
-						Id 650265526
+						Id 650265526 (OnFinished)
 					TargetEvent::EventSpec
 						Id -1121452805
 					TargetType EventConnectionTargetType_Client
@@ -104,7 +104,7 @@ ObjectBlueprint A4E61E25-31F6-4F55-8989-92FFD6E3E88B #primary instance
 					SourceEvent::EventSpec
 						Id 1990876218
 					TargetEvent::EventSpec
-						Id 230748069
+						Id 230748069 (Start)
 					TargetType EventConnectionTargetType_Client
 	Object Instance7
 PartComponentData Instance0
@@ -548,7 +548,7 @@ InterfaceDescriptorData Instance13
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -458572566
+				Id -458572566 (Intensity)
 				AccessType FieldAccessType_Source
 			member(1)::DataField
 				Value *nullString*
@@ -557,11 +557,11 @@ InterfaceDescriptorData Instance13
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 229946160
+			Id 229946160 (Reset)
 		member(1)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(2)::DynamicEvent
-			Id 2145977593
+			Id 2145977593 (Flicker)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id -1121452805
@@ -626,7 +626,7 @@ Vec4PropertyTrackData Instance16
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 2145977593
+			Id 2145977593 (Flicker)
 			Times::array
 				member(0) 0
 				member(1) 180

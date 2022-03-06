@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 8F75454D-E13C-4916-BFBB-AE859963D79D #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target 6FDB44AE-92CB-477A-9A5A-BDB8F39D27C5
-							SourceFieldId 2662400
-							TargetFieldId -1355906264
+							SourceFieldId 2662400 (Enabled)
+							TargetFieldId -1355906264 (AllowPickup)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance0
 							Target 6FDB44AE-92CB-477A-9A5A-BDB8F39D27C5
-							SourceFieldId 225375086
-							TargetFieldId 2662400
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance1
@@ -28,9 +28,9 @@ SpatialPrefabBlueprint 8F75454D-E13C-4916-BFBB-AE859963D79D #primary instance
 						Source 6FDB44AE-92CB-477A-9A5A-BDB8F39D27C5
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1836726032
+							Id -1836726032 (OnPickup)
 						TargetEvent::EventSpec
-							Id -1836726032
+							Id -1836726032 (OnPickup)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance1
@@ -38,7 +38,7 @@ SpatialPrefabBlueprint 8F75454D-E13C-4916-BFBB-AE859963D79D #primary instance
 						SourceEvent::EventSpec
 							Id -326382662
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) 6FDB44AE-92CB-477A-9A5A-BDB8F39D27C5
@@ -136,13 +136,13 @@ InterfaceDescriptorData Instance1
 			member(0)::DataField
 				Value Boolean True
 				ValueRef *nullGuid*
-				Id 2662400
+				Id 2662400 (Enabled)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
 			Id -326382662
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1836726032
+			Id -1836726032 (OnPickup)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

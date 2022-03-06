@@ -11,20 +11,20 @@ SpatialPrefabBlueprint 6A5A8521-1D17-B2EB-825F-A378EF7744F9 #primary instance
 						member(0)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId -1527071975
-							TargetFieldId -2132289043
+							SourceFieldId -1527071975 (CurrentTime)
+							TargetFieldId -2132289043 (ExternalTime)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance1
 							Target Instance2
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId -1945852203
 					Interface Instance2
 					Flags 3
@@ -33,25 +33,25 @@ SpatialPrefabBlueprint 6A5A8521-1D17-B2EB-825F-A378EF7744F9 #primary instance
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -851475454
+							Id -851475454 (StartFirstFrame)
 						TargetEvent::EventSpec
-							Id -851475454
+							Id -851475454 (StartFirstFrame)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance0
@@ -193,9 +193,9 @@ InterfaceDescriptorData Instance2
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id -851475454
+			Id -851475454 (StartFirstFrame)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks::array

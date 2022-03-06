@@ -12,25 +12,25 @@ SpatialPrefabBlueprint BBD6C658-E1DF-43EF-CCF0-3AD4EFC385D2 #primary instance
 							Source Instance4
 							Target F5B767C7-3AF2-464D-8EEE-6E9285A0DBC7
 							SourceFieldId 597527954
-							TargetFieldId 2662400
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -40,7 +40,7 @@ SpatialPrefabBlueprint BBD6C658-E1DF-43EF-CCF0-3AD4EFC385D2 #primary instance
 						Source F5B767C7-3AF2-464D-8EEE-6E9285A0DBC7
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
 							Id 446714363
 						TargetType EventConnectionTargetType_Server
@@ -48,25 +48,25 @@ SpatialPrefabBlueprint BBD6C658-E1DF-43EF-CCF0-3AD4EFC385D2 #primary instance
 						Source Instance4
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 2134798598
+							Id 2134798598 (Success)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance4
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 2088662791
+							Id 2088662791 (Fail)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source F5B767C7-3AF2-464D-8EEE-6E9285A0DBC7
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) F5B767C7-3AF2-464D-8EEE-6E9285A0DBC7
@@ -254,9 +254,9 @@ InterfaceDescriptorData Instance4
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2134798598
+			Id 2134798598 (Success)
 		member(1)::DynamicEvent
-			Id 2088662791
+			Id 2088662791 (Fail)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id 446714363

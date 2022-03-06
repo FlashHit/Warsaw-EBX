@@ -12,50 +12,50 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							member(0)::PropertyConnection
 								Source Levels/SP/SP_Dam/Vehicles/7713F80B-6FBB-4860-A94A-F94BADD66FB3
 								Target Instance2
-								SourceFieldId 2085022312
+								SourceFieldId 2085022312 (ControllableTransform)
 								TargetFieldId 1816583500
 								ShouldNetworkValue False
 							member(1)::PropertyConnection
 								Source Levels/SP/SP_Dam/Vehicles/F905C8E8-BFDF-4569-99FE-8B5741F93CCF
 								Target Instance2
-								SourceFieldId 2085022312
+								SourceFieldId 2085022312 (ControllableTransform)
 								TargetFieldId -892339830
 								ShouldNetworkValue False
 						LinkConnections::array
 							member(0)::LinkConnection
 								Source Levels/SP/SP_Dam/GlobalVehicles_Tank/F5F714D7-DDF0-43B1-B1FB-CD2506ED19B0
 								Target Levels/SP/SP_Dam/Vehicles/E2042291-3965-4DC7-8282-CCBA8A59F66E
-								SourceFieldId -275573010
+								SourceFieldId -275573010 (Vehicles)
 								TargetFieldId 0
 							member(1)::LinkConnection
 								Source Levels/SP/SP_Dam/GlobalVehicles_Tank/F5F714D7-DDF0-43B1-B1FB-CD2506ED19B0
 								Target Instance2
-								SourceFieldId -202711221
+								SourceFieldId -202711221 (PlayerToCheck)
 								TargetFieldId 1033781477
 							member(2)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Dam/Vehicles/7713F80B-6FBB-4860-A94A-F94BADD66FB3
 								SourceFieldId 658918180
-								TargetFieldId -1316984818
+								TargetFieldId -1316984818 (PathFollower)
 							member(3)::LinkConnection
 								Source Instance2
 								Target Levels/SP/SP_Dam/Vehicles/F905C8E8-BFDF-4569-99FE-8B5741F93CCF
 								SourceFieldId -1569902553
-								TargetFieldId -1316984818
+								TargetFieldId -1316984818 (PathFollower)
 							member(4)::LinkConnection
 								Source Levels/SP/SP_Dam/Vehicles/E2042291-3965-4DC7-8282-CCBA8A59F66E
 								Target Levels/SP/SP_Dam/Vehicles/700DF99B-1043-C156-E547-83887AC03F68
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 							member(5)::LinkConnection
 								Source Levels/SP/SP_Dam/Vehicles/7713F80B-6FBB-4860-A94A-F94BADD66FB3
 								Target Levels/SP/SP_Dam/Vehicles/0CCDB1F4-D798-A555-88BA-40A5A315FC8B
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 							member(6)::LinkConnection
 								Source Levels/SP/SP_Dam/Vehicles/F905C8E8-BFDF-4569-99FE-8B5741F93CCF
 								Target Levels/SP/SP_Dam/Vehicles/18D85820-A258-C20C-6DEE-8FD763E2E082
-								SourceFieldId -2001390482
+								SourceFieldId -2001390482 (AlternativeSpawnPoints)
 								TargetFieldId 0
 						Interface Instance2
 						Flags 15
@@ -64,7 +64,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							Source Levels/SP/SP_Dam/Vehicles/E2042291-3965-4DC7-8282-CCBA8A59F66E
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1577401599
+								Id 1577401599 (OnPlayerEnter)
 							TargetEvent::EventSpec
 								Id 672789327
 							TargetType EventConnectionTargetType_Server
@@ -72,7 +72,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							Source Levels/SP/SP_Dam/Vehicles/7713F80B-6FBB-4860-A94A-F94BADD66FB3
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1452333337
+								Id -1452333337 (OnDestroyed)
 							TargetEvent::EventSpec
 								Id 809485197
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -80,7 +80,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							Source Levels/SP/SP_Dam/Vehicles/7713F80B-6FBB-4860-A94A-F94BADD66FB3
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
 								Id 209475559
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -90,7 +90,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							SourceEvent::EventSpec
 								Id 111329845
 							TargetEvent::EventSpec
-								Id 230891742
+								Id 230891742 (Spawn)
 							TargetType EventConnectionTargetType_Server
 						member(4)::EventConnection
 							Source Instance2
@@ -98,13 +98,13 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							SourceEvent::EventSpec
 								Id 520648075
 							TargetEvent::EventSpec
-								Id -834116283
+								Id -834116283 (Unspawn)
 							TargetType EventConnectionTargetType_Server
 						member(5)::EventConnection
 							Source Levels/SP/SP_Dam/Vehicles/F905C8E8-BFDF-4569-99FE-8B5741F93CCF
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1452333337
+								Id -1452333337 (OnDestroyed)
 							TargetEvent::EventSpec
 								Id -2016121655
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -112,7 +112,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							Source Levels/SP/SP_Dam/Vehicles/F905C8E8-BFDF-4569-99FE-8B5741F93CCF
 							Target Instance2
 							SourceEvent::EventSpec
-								Id -1036968738
+								Id -1036968738 (OnSpawned)
 							TargetEvent::EventSpec
 								Id -1293286621
 							TargetType EventConnectionTargetType_ClientAndServer
@@ -122,7 +122,7 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							SourceEvent::EventSpec
 								Id -1576135695
 							TargetEvent::EventSpec
-								Id 230891742
+								Id 230891742 (Spawn)
 							TargetType EventConnectionTargetType_Server
 						member(8)::EventConnection
 							Source Instance2
@@ -130,13 +130,13 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							SourceEvent::EventSpec
 								Id 1764623695
 							TargetEvent::EventSpec
-								Id -834116283
+								Id -834116283 (Unspawn)
 							TargetType EventConnectionTargetType_Server
 						member(9)::EventConnection
 							Source Levels/SP/SP_Dam/Vehicles/E2042291-3965-4DC7-8282-CCBA8A59F66E
 							Target Instance2
 							SourceEvent::EventSpec
-								Id 1585750060
+								Id 1585750060 (OnPlayerLeave)
 							TargetEvent::EventSpec
 								Id 1394143964
 							TargetType EventConnectionTargetType_Server
@@ -144,113 +144,113 @@ SubWorldData 117D1268-5516-4CB0-8B60-DBF1D0A993DA #primary instance
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/61D0000A-9433-4B22-ABA8-AC4DCD660C56
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(11)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/218DAF0D-B4CF-4B9E-8B1F-303C1F0BDB10
 							SourceEvent::EventSpec
-								Id -1978208716
+								Id -1978208716 (Platform_Win32)
 							TargetEvent::EventSpec
-								Id 2089430886
+								Id 2089430886 (Show)
 							TargetType EventConnectionTargetType_NetworkedClient
 						member(12)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							SourceEvent::EventSpec
-								Id -1963501257
+								Id -1963501257 (Platform_Xenon)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(13)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							SourceEvent::EventSpec
-								Id 976288917
+								Id 976288917 (Platform_Ps3)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(14)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							SourceEvent::EventSpec
-								Id -1997317476
+								Id -1997317476 (Platform_Gen4a)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(15)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							SourceEvent::EventSpec
-								Id -1997317473
+								Id -1997317473 (Platform_Gen4b)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(16)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/F1AF6C34-A9D1-45C8-AE0D-B6786425A66E
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
-								Id 2089430886
+								Id 2089430886 (Show)
 							TargetType EventConnectionTargetType_NetworkedClient
 						member(17)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/9227944A-DEE3-4DDF-9C7C-217342429157
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/7F84A0E4-82FD-4F30-8B46-337AC475FB9E
 							SourceEvent::EventSpec
-								Id -1978208716
+								Id -1978208716 (Platform_Win32)
 							TargetEvent::EventSpec
-								Id -1952177180
+								Id -1952177180 (Enable)
 							TargetType EventConnectionTargetType_Server
 						member(18)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/898D3EA1-6271-4687-8D5B-CB4653637937
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/C7401FB9-99EB-492D-A8F4-39BB05E7D85A
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
-								Id -1952177180
+								Id -1952177180 (Enable)
 							TargetType EventConnectionTargetType_Server
 						member(19)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/7F84A0E4-82FD-4F30-8B46-337AC475FB9E
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/7F84A0E4-82FD-4F30-8B46-337AC475FB9E
 							SourceEvent::EventSpec
-								Id 1975570652
+								Id 1975570652 (OnTrigger)
 							TargetEvent::EventSpec
-								Id -117303631
+								Id -117303631 (Disable)
 							TargetType EventConnectionTargetType_Server
 						member(20)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/C7401FB9-99EB-492D-A8F4-39BB05E7D85A
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/C7401FB9-99EB-492D-A8F4-39BB05E7D85A
 							SourceEvent::EventSpec
-								Id 1975570652
+								Id 1975570652 (OnTrigger)
 							TargetEvent::EventSpec
-								Id -117303631
+								Id -117303631 (Disable)
 							TargetType EventConnectionTargetType_Server
 						member(21)::EventConnection
 							Source Levels/SP/SP_Dam/Vehicles/E2042291-3965-4DC7-8282-CCBA8A59F66E
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/61D0000A-9433-4B22-ABA8-AC4DCD660C56
 							SourceEvent::EventSpec
-								Id 1577401599
+								Id 1577401599 (OnPlayerEnter)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_Server
 						member(22)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/C7401FB9-99EB-492D-A8F4-39BB05E7D85A
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/F1AF6C34-A9D1-45C8-AE0D-B6786425A66E
 							SourceEvent::EventSpec
-								Id 1975570652
+								Id 1975570652 (OnTrigger)
 							TargetEvent::EventSpec
-								Id 2089152613
+								Id 2089152613 (Hide)
 							TargetType EventConnectionTargetType_NetworkedClient
 						member(23)::EventConnection
 							Source Levels/SP/SP_Dam/GlobalVehicles_Tank/7F84A0E4-82FD-4F30-8B46-337AC475FB9E
 							Target Levels/SP/SP_Dam/GlobalVehicles_Tank/218DAF0D-B4CF-4B9E-8B1F-303C1F0BDB10
 							SourceEvent::EventSpec
-								Id 1975570652
+								Id 1975570652 (OnTrigger)
 							TargetEvent::EventSpec
-								Id 2089152613
+								Id 2089152613 (Hide)
 							TargetType EventConnectionTargetType_NetworkedClient
 			Objects::array
 				member(0) Instance1

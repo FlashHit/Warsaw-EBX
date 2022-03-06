@@ -11,26 +11,26 @@ SpatialPrefabBlueprint 90A145CE-F1DB-B320-2421-67A692066C8A #primary instance
 						member(0)::PropertyConnection
 							Source AF581EB6-5251-41AC-8EF5-0D72B0F64910
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 443997333
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 4FA4BD5B-5C21-4A3B-A20D-987A6AC382B0
 							Target Instance1
-							SourceFieldId 2089008817
-							TargetFieldId -2024647575
+							SourceFieldId 2089008817 (Open)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance9
 							Target Instance1
 							SourceFieldId -141474860
-							TargetFieldId 443997333
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
@@ -45,25 +45,25 @@ SpatialPrefabBlueprint 90A145CE-F1DB-B320-2421-67A692066C8A #primary instance
 						Source Instance9
 						Target 1B426C42-364F-4C6D-8BDF-7536DC793D83
 						SourceEvent::EventSpec
-							Id -2137689625
+							Id -2137689625 (OpenDoor)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 1B426C42-364F-4C6D-8BDF-7536DC793D83
 						Target 4FA4BD5B-5C21-4A3B-A20D-987A6AC382B0
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source 1B426C42-364F-4C6D-8BDF-7536DC793D83
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -204,7 +204,7 @@ SoundEntityData Instance2
 TransformPartPropertyTrackData Instance3
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_RotationZ
@@ -219,7 +219,7 @@ TransformPartPropertyTrackData Instance3
 TransformPartPropertyTrackData Instance4
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_RotationY
@@ -234,7 +234,7 @@ TransformPartPropertyTrackData Instance4
 TransformPartPropertyTrackData Instance5
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_RotationX
@@ -249,7 +249,7 @@ TransformPartPropertyTrackData Instance5
 TransformPartPropertyTrackData Instance6
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_TranslationY
@@ -264,7 +264,7 @@ TransformPartPropertyTrackData Instance6
 TransformPartPropertyTrackData Instance7
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_TranslationX
@@ -279,7 +279,7 @@ TransformPartPropertyTrackData Instance7
 TransformPartPropertyTrackData Instance8
 	$::PropertyTrackData
 		$::DataContainer
-		Id 2089008817
+		Id 2089008817 (Open)
 		Times *nullArray*
 	Resource 8062954854608146445 #xp2/objects/props/wasp_titanmode/animtrackdata/4fa4bd5b-5c21-4a3b-a20d-987a6ac382b0_open
 	TransformPart TransformPart_TranslationZ
@@ -302,7 +302,7 @@ InterfaceDescriptorData Instance9
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -2137689625
+			Id -2137689625 (OpenDoor)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

@@ -11,44 +11,44 @@ SpatialPrefabBlueprint BD647156-0A89-483B-8243-67931A0A7D39 #primary instance
 						member(0)::PropertyConnection
 							Source Instance2
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target Instance6
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source B8C7BD4A-BB7E-4F4A-833D-48CFC21D7FEB
 							Target Instance6
-							SourceFieldId -458572566
-							TargetFieldId 193450866
+							SourceFieldId -458572566 (Intensity)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance6
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance5
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance6
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 193453899
-							TargetFieldId 193450866
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -58,33 +58,33 @@ SpatialPrefabBlueprint BD647156-0A89-483B-8243-67931A0A7D39 #primary instance
 						Source Instance4
 						Target B8C7BD4A-BB7E-4F4A-833D-48CFC21D7FEB
 						SourceEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source B8C7BD4A-BB7E-4F4A-833D-48CFC21D7FEB
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source B8C7BD4A-BB7E-4F4A-833D-48CFC21D7FEB
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance4
 						Target B8C7BD4A-BB7E-4F4A-833D-48CFC21D7FEB
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance1
@@ -264,9 +264,9 @@ InterfaceDescriptorData Instance4
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2145977593
+			Id 2145977593 (Flicker)
 		member(1)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -278,8 +278,8 @@ MathOpEntityData Instance5
 					$::DataContainer
 				Flags 167558193
 	Realm Realm_Client
-	Operators::array
-		member(0) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2
 MathOpEntityData Instance6
 	$::EntityData
 		$::GameObjectData
@@ -288,5 +288,5 @@ MathOpEntityData Instance6
 					$::DataContainer
 				Flags 405087868
 	Realm Realm_Client
-	Operators::array
-		member(0) 5 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 5

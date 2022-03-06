@@ -12,8 +12,8 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							member(0)::PropertyConnection
 								Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/2014512B-7F38-4E15-9F5E-30D107665F58
 								Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Lighting/AAB41D42-6571-443E-B8AB-D3B111D78BCC
-								SourceFieldId 2145977593
-								TargetFieldId -458572566
+								SourceFieldId 2145977593 (Flicker)
+								TargetFieldId -458572566 (Intensity)
 								ShouldNetworkValue False
 							member(1)::PropertyConnection
 								Source Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/8FB26885-BBE7-406A-A579-D66C099F3988
@@ -91,12 +91,12 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							member(0)::LinkConnection
 								Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/5E74BB1C-2446-44B5-907F-8057DF2E1C39
 								Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/FACF8426-4F2D-478B-9E49-25758D2D7DE5
-								SourceFieldId 838548383
+								SourceFieldId 838548383 (Geometry)
 								TargetFieldId 0
 							member(1)::LinkConnection
 								Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/6606765F-B04C-44A2-80CD-B957BF53E2F7
 								Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/B337ABBF-C658-4335-B059-4EB161F3A742
-								SourceFieldId 838548383
+								SourceFieldId 838548383 (Geometry)
 								TargetFieldId 0
 							member(2)::LinkConnection
 								Source *nullGuid*
@@ -112,15 +112,15 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							SourceEvent::EventSpec
 								Id -1897226798
 							TargetEvent::EventSpec
-								Id -639132411
+								Id -639132411 (StopFire)
 							TargetType EventConnectionTargetType_Server
 						member(1)::EventConnection
 							Source Instance10
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/8FB26885-BBE7-406A-A579-D66C099F3988
 							SourceEvent::EventSpec
-								Id -710462247
+								Id -710462247 (FireMissile)
 							TargetEvent::EventSpec
-								Id -710462247
+								Id -710462247 (FireMissile)
 							TargetType EventConnectionTargetType_NetworkedClientAndServer
 						member(2)::EventConnection
 							Source Instance10
@@ -168,7 +168,7 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							SourceEvent::EventSpec
 								Id -1911795323
 							TargetEvent::EventSpec
-								Id -763641474
+								Id -763641474 (StreamIn)
 							TargetType EventConnectionTargetType_Server
 						member(8)::EventConnection
 							Source Instance10
@@ -176,13 +176,13 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							SourceEvent::EventSpec
 								Id 1335270700
 							TargetEvent::EventSpec
-								Id 569636471
+								Id 569636471 (StreamOut)
 							TargetType EventConnectionTargetType_Server
 						member(9)::EventConnection
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/E3D4B4A6-A10F-491B-9090-C22AAA321259
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/810432BF-3C3A-4710-877C-2A31C218D4F8
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
 								Id 708693332
 							TargetType EventConnectionTargetType_NetworkedClient
@@ -190,7 +190,7 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/E3D4B4A6-A10F-491B-9090-C22AAA321259
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/A58B7D84-669C-4965-97F3-2610CAA51B28
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
 								Id 708693332
 							TargetType EventConnectionTargetType_NetworkedClient
@@ -198,15 +198,15 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/5E74BB1C-2446-44B5-907F-8057DF2E1C39
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/E3D4B4A6-A10F-491B-9090-C22AAA321259
 							SourceEvent::EventSpec
-								Id -80368276
+								Id -80368276 (OnEnter)
 							TargetEvent::EventSpec
-								Id 1723395486
+								Id 1723395486 (Impulse)
 							TargetType EventConnectionTargetType_Server
 						member(12)::EventConnection
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/6606765F-B04C-44A2-80CD-B957BF53E2F7
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/486780C4-C572-4F23-84DD-39086B999ADF
 							SourceEvent::EventSpec
-								Id -80368276
+								Id -80368276 (OnEnter)
 							TargetEvent::EventSpec
 								Id 708693332
 							TargetType EventConnectionTargetType_NetworkedClient
@@ -214,7 +214,7 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/6606765F-B04C-44A2-80CD-B957BF53E2F7
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/2C935058-FECC-46F5-A085-807ED985EE31
 							SourceEvent::EventSpec
-								Id -80368276
+								Id -80368276 (OnEnter)
 							TargetEvent::EventSpec
 								Id 708693332
 							TargetType EventConnectionTargetType_NetworkedClient
@@ -222,7 +222,7 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/E3D4B4A6-A10F-491B-9090-C22AAA321259
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/A58B7D84-669C-4965-97F3-2610CAA51B28
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
 								Id -1141210866
 							TargetType EventConnectionTargetType_NetworkedClient
@@ -230,15 +230,15 @@ SubWorldData 80C8B74B-60A0-42C8-A536-B15335180BA4 #primary instance
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/E3D4B4A6-A10F-491B-9090-C22AAA321259
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/1A0F4F4C-4754-4DB4-9ED3-20B4808A425F
 							SourceEvent::EventSpec
-								Id -137490305
+								Id -137490305 (OnImpulse)
 							TargetEvent::EventSpec
-								Id 5862146
+								Id 5862146 (In)
 							TargetType EventConnectionTargetType_NetworkedClient
 						member(16)::EventConnection
 							Source Levels/SP/SP_Suez/ValkyrieFlightDeckArt_Logic/1A0F4F4C-4754-4DB4-9ED3-20B4808A425F
 							Target Levels/SP/SP_Suez/ValkyrieFlightDeck_Art/810432BF-3C3A-4710-877C-2A31C218D4F8
 							SourceEvent::EventSpec
-								Id 193453899
+								Id 193453899 (Out)
 							TargetEvent::EventSpec
 								Id -1337544894
 							TargetType EventConnectionTargetType_Client
@@ -1778,8 +1778,8 @@ StaticModelGroupEntityData Instance2
 				member(0) 2746862634
 			InstanceCastSunShadow *nullArray*
 			InstanceCastReflection *nullArray*
-			InstanceRadiosityTypeOverride::array
-				member(0) 1 *unknownEnum*
+			InstanceRadiosityTypeOverride::array #unknown enum
+				member(0) 1
 			InstanceEnabled *nullArray*
 			InstanceTerrainShaderNodesEnable *nullArray*
 			MemberType Objects/Props/WASP_Singleplayer/WASP_Hull_Seperated/80BEED51-DB57-0BE5-1857-7A0C712361AE
@@ -1986,8 +1986,8 @@ StaticModelGroupEntityData Instance2
 			InstanceCastSunShadow *nullArray*
 			InstanceCastReflection::array
 				member(0) False
-			InstanceRadiosityTypeOverride::array
-				member(0) 1 *unknownEnum*
+			InstanceRadiosityTypeOverride::array #unknown enum
+				member(0) 1
 			InstanceEnabled *nullArray*
 			InstanceTerrainShaderNodesEnable *nullArray*
 			MemberType Objects/Props/WASP_Singleplayer/WASP_SP_Panel_02/3B060152-F76D-80C1-A44D-25EF31F8D8D9
@@ -11353,7 +11353,7 @@ InterfaceDescriptorData Instance10
 		member(0)::DynamicEvent
 			Id -1897226798
 		member(1)::DynamicEvent
-			Id -710462247
+			Id -710462247 (FireMissile)
 		member(2)::DynamicEvent
 			Id -1601383904
 		member(3)::DynamicEvent

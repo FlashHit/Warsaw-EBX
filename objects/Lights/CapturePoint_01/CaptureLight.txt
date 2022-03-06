@@ -10,8 +10,8 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					member(0)::PropertyConnection
 						Source Instance12
 						Target Instance3
-						SourceFieldId -1043512249
-						TargetFieldId -996560163
+						SourceFieldId -1043512249 (CaptureLightRadius)
+						TargetFieldId -996560163 (Radius)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance12
@@ -23,7 +23,7 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1875413499
 					TargetEvent::EventSpec
-						Id 2089152613
+						Id 2089152613 (Hide)
 					TargetType EventConnectionTargetType_Client
 				member(1)::EventConnection
 					Source Instance12
@@ -31,7 +31,7 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1875413499
 					TargetEvent::EventSpec
-						Id 2089430886
+						Id 2089430886 (Show)
 					TargetType EventConnectionTargetType_Client
 				member(2)::EventConnection
 					Source Instance12
@@ -39,7 +39,7 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1759102997
 					TargetEvent::EventSpec
-						Id 2089430886
+						Id 2089430886 (Show)
 					TargetType EventConnectionTargetType_Client
 				member(3)::EventConnection
 					Source Instance12
@@ -47,7 +47,7 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1759102997
 					TargetEvent::EventSpec
-						Id 2089152613
+						Id 2089152613 (Hide)
 					TargetType EventConnectionTargetType_Client
 				member(4)::EventConnection
 					Source Instance12
@@ -55,7 +55,7 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1759102997
 					TargetEvent::EventSpec
-						Id -117303631
+						Id -117303631 (Disable)
 					TargetType EventConnectionTargetType_Client
 				member(5)::EventConnection
 					Source Instance12
@@ -63,23 +63,23 @@ ObjectBlueprint E22EC985-05F6-5A76-2526-379E3CFA434B #primary instance
 					SourceEvent::EventSpec
 						Id -1875413499
 					TargetEvent::EventSpec
-						Id -1952177180
+						Id -1952177180 (Enable)
 					TargetType EventConnectionTargetType_Client
 				member(6)::EventConnection
 					Source Instance12
 					Target Instance5
 					SourceEvent::EventSpec
-						Id -721416017
+						Id -721416017 (DisableLight)
 					TargetEvent::EventSpec
-						Id -117303631
+						Id -117303631 (Disable)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(7)::EventConnection
 					Source Instance12
 					Target Instance5
 					SourceEvent::EventSpec
-						Id 643343130
+						Id 643343130 (EnableLight)
 					TargetEvent::EventSpec
-						Id -1952177180
+						Id -1952177180 (Enable)
 					TargetType EventConnectionTargetType_ClientAndServer
 	Object Instance5
 PartComponentData Instance0
@@ -468,7 +468,7 @@ InterfaceDescriptorData Instance12
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1043512249
+				Id -1043512249 (CaptureLightRadius)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
@@ -476,9 +476,9 @@ InterfaceDescriptorData Instance12
 		member(1)::DynamicEvent
 			Id -1759102997
 		member(2)::DynamicEvent
-			Id -721416017
+			Id -721416017 (DisableLight)
 		member(3)::DynamicEvent
-			Id 643343130
+			Id 643343130 (EnableLight)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

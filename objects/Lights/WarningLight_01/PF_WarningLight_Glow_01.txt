@@ -17,26 +17,26 @@ SpatialPrefabBlueprint 42FCFB65-98A1-3F2D-D63C-3DFE2473E735 #primary instance
 						member(1)::PropertyConnection
 							Source Instance7
 							Target Instance1
-							SourceFieldId 81877812
-							TargetFieldId -458572566
+							SourceFieldId 81877812 (LightIntensity)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance6
 							Target Instance2
-							SourceFieldId -274579609
-							TargetFieldId 2662400
+							SourceFieldId -274579609 (Destroy)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance6
 							Target Instance4
-							SourceFieldId -274579609
-							TargetFieldId 2088812747
+							SourceFieldId -274579609 (Destroy)
+							TargetFieldId 2088812747 (Bool)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance2
 							Target Instance3
-							SourceFieldId -1028279722
+							SourceFieldId -1028279722 (ShaderParameters)
 							TargetFieldId 0
 					Interface Instance6
 					Flags 3
@@ -45,25 +45,25 @@ SpatialPrefabBlueprint 42FCFB65-98A1-3F2D-D63C-3DFE2473E735 #primary instance
 						Source Instance6
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1560585401
+							Id -1560585401 (StartBlink)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(1)::EventConnection
 						Source Instance6
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 388066207
+							Id 388066207 (StopBlink)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source Instance7
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance7
@@ -71,7 +71,7 @@ SpatialPrefabBlueprint 42FCFB65-98A1-3F2D-D63C-3DFE2473E735 #primary instance
 						SourceEvent::EventSpec
 							Id -1590715354
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance7
@@ -79,55 +79,55 @@ SpatialPrefabBlueprint 42FCFB65-98A1-3F2D-D63C-3DFE2473E735 #primary instance
 						SourceEvent::EventSpec
 							Id -953998968
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance7
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(6)::EventConnection
 						Source Instance7
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1176973715
+							Id -1176973715 (OnStopped)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(7)::EventConnection
 						Source Instance7
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance4
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(9)::EventConnection
 						Source Instance4
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(10)::EventConnection
 						Source Instance4
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) Instance2
@@ -445,7 +445,7 @@ FloatPropertyTrackData Instance5
 	$::SimplePropertyTrackData
 		$::PropertyTrackData
 			$::DataContainer
-			Id 81877812
+			Id 81877812 (LightIntensity)
 			Times::array
 				member(0) 0
 				member(1) 500
@@ -462,13 +462,13 @@ InterfaceDescriptorData Instance6
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -274579609
+				Id -274579609 (Destroy)
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 388066207
+			Id 388066207 (StopBlink)
 		member(1)::DynamicEvent
-			Id -1560585401
+			Id -1560585401 (StartBlink)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

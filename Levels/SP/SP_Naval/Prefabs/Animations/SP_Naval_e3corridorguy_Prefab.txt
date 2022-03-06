@@ -11,46 +11,46 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						member(0)::PropertyConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance0
 							Target Instance1
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId 1631614922
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance4
 							Target Instance3
-							SourceFieldId 587711351
+							SourceFieldId 587711351 (PlayAnimation)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance6
 							Target Instance7
-							SourceFieldId -1481696500
+							SourceFieldId -1481696500 (RouteWaypoints)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance1
 							Target Instance11
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId 1714059551
 						member(3)::LinkConnection
 							Source Instance3
 							Target Instance11
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId 1714059551
 						member(4)::LinkConnection
 							Source Instance2
 							Target Instance11
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId 1714059551
 					Interface Instance11
 					Flags 3
@@ -59,9 +59,9 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						Source Instance8
 						Target Instance6
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -770075886
+							Id -770075886 (IssueOrder)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance11
@@ -69,7 +69,7 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						SourceEvent::EventSpec
 							Id -606195980
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance11
@@ -77,7 +77,7 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						SourceEvent::EventSpec
 							Id -606195980
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source Instance11
@@ -85,15 +85,15 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						SourceEvent::EventSpec
 							Id 1260425739
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source Instance9
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -137490305
+							Id -137490305 (OnImpulse)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Client
 					member(5)::EventConnection
 						Source Instance11
@@ -101,13 +101,13 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						SourceEvent::EventSpec
 							Id -1412940362
 						TargetEvent::EventSpec
-							Id 1723395486
+							Id 1723395486 (Impulse)
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
 					member(6)::EventConnection
 						Source Instance8
 						Target Instance11
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id -946160493
 						TargetType EventConnectionTargetType_ClientAndServer
@@ -115,17 +115,17 @@ SpatialPrefabBlueprint 1CAC2644-8DB1-0F63-38FB-977DF244FFF3 #primary instance
 						Source Instance3
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -271570469
+							Id -271570469 (OnStartBlendOutProxyController)
 						TargetEvent::EventSpec
-							Id -1573253508
+							Id -1573253508 (Client)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance10
 						Target Instance11
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id -271570469
+							Id -271570469 (OnStartBlendOutProxyController)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance0
@@ -604,7 +604,7 @@ InterfaceDescriptorData Instance11
 		member(1)::DynamicEvent
 			Id -946160493
 		member(2)::DynamicEvent
-			Id -271570469
+			Id -271570469 (OnStartBlendOutProxyController)
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink

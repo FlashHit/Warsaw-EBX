@@ -10,8 +10,8 @@ ObjectBlueprint CF50BE62-4A04-4DBD-A66F-FC272416DE89 #primary instance
 					member(0)::PropertyConnection
 						Source Instance0
 						Target Instance7
-						SourceFieldId -1756643285
-						TargetFieldId -2024647575
+						SourceFieldId -1756643285 (WorldTransform)
+						TargetFieldId -2024647575 (Transform)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance13
@@ -21,25 +21,25 @@ ObjectBlueprint CF50BE62-4A04-4DBD-A66F-FC272416DE89 #primary instance
 					Source Instance1
 					Target Instance13
 					SourceEvent::EventSpec
-						Id -2120949218
+						Id -2120949218 (OnHealthState1)
 					TargetEvent::EventSpec
-						Id -2120949218
+						Id -2120949218 (OnHealthState1)
 					TargetType EventConnectionTargetType_ClientAndServer
 				member(1)::EventConnection
 					Source Instance1
 					Target Instance7
 					SourceEvent::EventSpec
-						Id -2120949218
+						Id -2120949218 (OnHealthState1)
 					TargetEvent::EventSpec
-						Id 2089401213
+						Id 2089401213 (Stop)
 					TargetType EventConnectionTargetType_Client
 				member(2)::EventConnection
 					Source Instance1
 					Target Instance7
 					SourceEvent::EventSpec
-						Id -1452333337
+						Id -1452333337 (OnDestroyed)
 					TargetEvent::EventSpec
-						Id 2089401213
+						Id 2089401213 (Stop)
 					TargetType EventConnectionTargetType_Client
 	Object Instance8
 LocatorComponentData Instance0
@@ -475,6 +475,6 @@ InterfaceDescriptorData Instance13
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -2120949218
+			Id -2120949218 (OnHealthState1)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

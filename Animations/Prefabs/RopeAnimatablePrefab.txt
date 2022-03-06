@@ -11,8 +11,8 @@ LogicPrefabBlueprint 0260EF04-CFDF-4FB8-B837-92B3091EA8D7 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId -1031074154
-							TargetFieldId -1031074154
+							SourceFieldId -1031074154 (AITrajectory)
+							TargetFieldId -1031074154 (AITrajectory)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance1
@@ -23,14 +23,14 @@ LogicPrefabBlueprint 0260EF04-CFDF-4FB8-B837-92B3091EA8D7 #primary instance
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId -1250349431
-							TargetFieldId -1250349431
+							SourceFieldId -1250349431 (InitialAnimationControlMode)
+							TargetFieldId -1250349431 (InitialAnimationControlMode)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId 650467646
-							TargetFieldId 650467646
+							SourceFieldId 650467646 (Trajectory)
+							TargetFieldId 650467646 (Trajectory)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance1
@@ -48,22 +48,22 @@ LogicPrefabBlueprint 0260EF04-CFDF-4FB8-B837-92B3091EA8D7 #primary instance
 						member(0)::LinkConnection
 							Source Instance3
 							Target Instance2
-							SourceFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance2
 							Target Instance0
-							SourceFieldId -798069529
+							SourceFieldId -798069529 (WarpAnimation)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId -1079944492
-							TargetFieldId -1079944492
+							SourceFieldId -1079944492 (Target)
+							TargetFieldId -1079944492 (Target)
 						member(3)::LinkConnection
 							Source Instance3
 							Target Instance1
-							SourceFieldId -1086273423
+							SourceFieldId -1086273423 (Animatable)
 							TargetFieldId 0
 					Interface Instance3
 					Flags 14
@@ -72,41 +72,41 @@ LogicPrefabBlueprint 0260EF04-CFDF-4FB8-B837-92B3091EA8D7 #primary instance
 						Source Instance1
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetEvent::EventSpec
-							Id 1799877463
+							Id 1799877463 (RegisterAnimatableComponent)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance1
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetEvent::EventSpec
-							Id 1799877463
+							Id 1799877463 (RegisterAnimatableComponent)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance3
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetEvent::EventSpec
-							Id 1928776733
+							Id 1928776733 (Deactivate)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source Instance1
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance1
@@ -130,10 +130,10 @@ WarpAnimationEntityData Instance0
 			AssetGuid 11D29ABA-D0BD-409A-B8E3-F46D03FCE159
 			ProjectId 0
 		DisableCulling::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		TranslationYWarpTolerance::AntRef
-			AssetGuid 00000000-0000-0000-0000-000000000000
+			AssetGuid *nullGuid*
 			ProjectId 0
 		AttachToAnimatableInstanceId::AntRef
 			AssetGuid 86489D67-E193-4CFC-B964-C82705795523
@@ -178,14 +178,14 @@ AntAnimatableEntityData Instance1
 				AssetGuid 397C80F6-91DD-45CD-96EE-92DA4A2007F9
 				ProjectId 0
 			SceneOpMatrix::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			ProceduralAwareness *nullGuid*
 			RightHandEffectorDisableOverride::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			LeftHandEffectorDisableOverride::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			MasterSkeletonAsset Animations/Skeletons/RopeMasterSkeleton/7DE7348F-AF06-4598-9C94-1AE4F2BC0178
 		RootController::AntRef
@@ -193,24 +193,24 @@ AntAnimatableEntityData Instance1
 			ProjectId 0
 		LodBinding::LodBinding
 			DisableControllerUpdate::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			DisablePoseUpdate::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			DistanceFromCamera::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			AnimatableInstanceId::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 			ResetController::AntRef
-				AssetGuid 00000000-0000-0000-0000-000000000000
+				AssetGuid *nullGuid*
 				ProjectId 0
 		JointOutputFieldHashes::array
 			member(0) -1220748498
-			member(1) -1031074154
-			member(2) 650467646
+			member(1) -1031074154 (AITrajectory)
+			member(2) 650467646 (Trajectory)
 			member(3) -1651267727
 			member(4) 1067398832
 			member(5) -1094056395
@@ -232,8 +232,8 @@ AntAnimatableEntityData Instance1
 			member(21) -1094056495
 			member(22) -1094056494
 			member(23) -1094056493
-			member(24) -640860933
-			member(25) -1004775980
+			member(24) -640860933 (Connect)
+			member(25) -1004775980 (ConnectEnd)
 		JointEnabledFieldHashes::array
 			member(0) 699625270
 			member(1) 1370386446
@@ -298,7 +298,7 @@ InterfaceDescriptorData Instance3
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id -1031074154
+				Id -1031074154 (AITrajectory)
 				AccessType FieldAccessType_Source
 			member(1)::DataField
 				Value *nullString*
@@ -308,12 +308,12 @@ InterfaceDescriptorData Instance3
 			member(2)::DataField
 				Value AnimationControlModeEnum AnimationControlModeEnum_PlaceObjectAtTrajectory
 				ValueRef *nullGuid*
-				Id -1250349431
+				Id -1250349431 (InitialAnimationControlMode)
 				AccessType FieldAccessType_Target
 			member(3)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 650467646
+				Id 650467646 (Trajectory)
 				AccessType FieldAccessType_Source
 			member(4)::DataField
 				Value *nullString*
@@ -327,17 +327,17 @@ InterfaceDescriptorData Instance3
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -559281700
+			Id -559281700 (Activate)
 		member(1)::DynamicEvent
-			Id 1928776733
+			Id 1928776733 (Deactivate)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -427752080
+			Id -427752080 (OnAnimatableCreated)
 	InputLinks::array
 		member(0)::DynamicLink
-			Id 231940265
+			Id 231940265 (Proxy)
 		member(1)::DynamicLink
-			Id -1086273423
+			Id -1086273423 (Animatable)
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id -1079944492
+			Id -1079944492 (Target)

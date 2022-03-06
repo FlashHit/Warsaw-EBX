@@ -12,19 +12,19 @@ SpatialPrefabBlueprint 5B1DA621-AF88-3AAA-9192-DD675B6EAB7B #primary instance
 							Source Instance10
 							Target 7F69C292-70FB-4E39-8760-4E616419F7C0
 							SourceFieldId 232719593
-							TargetFieldId 5862146
+							TargetFieldId 5862146 (In)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 7F69C292-70FB-4E39-8760-4E616419F7C0
 							Target F3BDDA1B-18DD-4C07-8543-CD45C6DB5820
-							SourceFieldId 193453899
-							TargetFieldId -409930682
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -409930682 (BlueprintTransform)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance7
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId -327092851
+							SourceFieldId 225375086 (Value)
+							TargetFieldId -327092851 (ActivateTarget)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance9
@@ -34,73 +34,73 @@ SpatialPrefabBlueprint 5B1DA621-AF88-3AAA-9192-DD675B6EAB7B #primary instance
 						Source Instance9
 						Target Instance10
 						SourceEvent::EventSpec
-							Id 2084504595
+							Id 2084504595 (StartAnimation)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance9
 						Target F3BDDA1B-18DD-4C07-8543-CD45C6DB5820
 						SourceEvent::EventSpec
-							Id 2084504595
+							Id 2084504595 (StartAnimation)
 						TargetEvent::EventSpec
-							Id 2084504595
+							Id 2084504595 (StartAnimation)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance10
 						Target Instance8
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance8
 						Target Instance10
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 232316407
+							Id 232316407 (Pause)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(4)::EventConnection
 						Source Instance10
 						Target Instance10
 						SourceEvent::EventSpec
-							Id 613578040
+							Id 613578040 (EventTrack_01)
 						TargetEvent::EventSpec
-							Id -1772326426
+							Id -1772326426 (PlayFirstFrame)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(5)::EventConnection
 						Source Instance10
 						Target Instance10
 						SourceEvent::EventSpec
-							Id 613578040
+							Id 613578040 (EventTrack_01)
 						TargetEvent::EventSpec
-							Id 232316407
+							Id 232316407 (Pause)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(6)::EventConnection
 						Source Instance8
 						Target F3BDDA1B-18DD-4C07-8543-CD45C6DB5820
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 232316407
+							Id 232316407 (Pause)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(7)::EventConnection
 						Source Instance10
 						Target Instance7
 						SourceEvent::EventSpec
-							Id -1193365339
+							Id -1193365339 (OnStarted)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Client
 					member(8)::EventConnection
 						Source Instance8
 						Target Instance7
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) F3BDDA1B-18DD-4C07-8543-CD45C6DB5820
@@ -313,7 +313,7 @@ InterfaceDescriptorData Instance9
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2084504595
+			Id 2084504595 (StartAnimation)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -327,7 +327,7 @@ SequenceEntityData Instance10
 	Events::array
 		member(0)::SequenceEventData
 			Event::EventSpec
-				Id 613578040
+				Id 613578040 (EventTrack_01)
 			Time 13000
 	SequenceStartTime 0
 	SequenceLength 13000

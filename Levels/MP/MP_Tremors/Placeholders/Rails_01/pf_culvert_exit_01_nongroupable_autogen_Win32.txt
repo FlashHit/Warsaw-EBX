@@ -11,14 +11,14 @@ SpatialPrefabBlueprint 0B7C69B3-6859-8018-0CAA-3E7A6E1AFB1F #primary instance
 						member(0)::PropertyConnection
 							Source Instance2
 							Target Instance1
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source 49DCB206-052A-42CD-9313-4C8465D32817
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -28,23 +28,23 @@ SpatialPrefabBlueprint 0B7C69B3-6859-8018-0CAA-3E7A6E1AFB1F #primary instance
 						Source Instance4
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance5
 						Target Instance3
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance4
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
 							Id 1000
 						TargetType EventConnectionTargetType_Server
@@ -54,7 +54,7 @@ SpatialPrefabBlueprint 0B7C69B3-6859-8018-0CAA-3E7A6E1AFB1F #primary instance
 						SourceEvent::EventSpec
 							Id 1001
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance4
@@ -62,15 +62,15 @@ SpatialPrefabBlueprint 0B7C69B3-6859-8018-0CAA-3E7A6E1AFB1F #primary instance
 						SourceEvent::EventSpec
 							Id 1002
 						TargetEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(5)::EventConnection
 						Source Instance3
 						Target Instance0
 						SourceEvent::EventSpec
-							Id 193453899
+							Id 193453899 (Out)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 		Objects::array
 			member(0) Instance1
@@ -217,14 +217,14 @@ InterfaceDescriptorData Instance4
 		Fields *nullArray*
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(1)::DynamicEvent
 			Id 1001
 		member(2)::DynamicEvent
 			Id 1002
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -1452333337
+			Id -1452333337 (OnDestroyed)
 		member(1)::DynamicEvent
 			Id 1000
 	InputLinks *nullArray*

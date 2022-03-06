@@ -11,44 +11,44 @@ SpatialPrefabBlueprint 444CFD88-785A-4E11-9D44-F5AB8AAB3C13 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance3
-							SourceFieldId 1925266716
-							TargetFieldId -2024647575
+							SourceFieldId 1925266716 (DynamicTransform)
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source B0A660D9-E968-4D97-96AE-9349C41C6620
 							Target C52CE1B9-8811-4881-943F-9DB3D43EE4CD
-							SourceFieldId 193453899
-							TargetFieldId 2662400
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 2662400 (Enabled)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance5
 							Target Instance4
 							SourceFieldId 177619
-							TargetFieldId 193450864
+							TargetFieldId 193450864 (In2)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source B0A660D9-E968-4D97-96AE-9349C41C6620
 							Target Instance4
-							SourceFieldId 193453899
-							TargetFieldId 193450867
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance4
 							Target Instance2
-							SourceFieldId 193453899
-							TargetFieldId 901540267
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 901540267 (Visible)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance5
 							Target Instance2
 							SourceFieldId -141474860
-							TargetFieldId 443997333
+							TargetFieldId 443997333 (AnimatePhysics)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source C52CE1B9-8811-4881-943F-9DB3D43EE4CD
 							Target Instance2
-							SourceFieldId -820986194
+							SourceFieldId -820986194 (ExcludeFromOcclusionTest)
 							TargetFieldId 0
 					Interface Instance5
 					Flags 3
@@ -57,49 +57,49 @@ SpatialPrefabBlueprint 444CFD88-785A-4E11-9D44-F5AB8AAB3C13 #primary instance
 						Source C52CE1B9-8811-4881-943F-9DB3D43EE4CD
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_NetworkedClient
 					member(1)::EventConnection
 						Source C52CE1B9-8811-4881-943F-9DB3D43EE4CD
 						Target B0A660D9-E968-4D97-96AE-9349C41C6620
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source C52CE1B9-8811-4881-943F-9DB3D43EE4CD
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -640415607
+							Id -640415607 (Consume)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance5
 						Target B0A660D9-E968-4D97-96AE-9349C41C6620
 						SourceEvent::EventSpec
-							Id -274579609
+							Id -274579609 (Destroy)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance5
 						Target B0A660D9-E968-4D97-96AE-9349C41C6620
 						SourceEvent::EventSpec
-							Id 1630515206
+							Id 1630515206 (Destroyed)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source C52CE1B9-8811-4881-943F-9DB3D43EE4CD
 						Target Instance5
 						SourceEvent::EventSpec
-							Id -1447021378
+							Id -1447021378 (OnInteraction)
 						TargetEvent::EventSpec
-							Id -432898870
+							Id -432898870 (Damaged)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) C52CE1B9-8811-4881-943F-9DB3D43EE4CD
@@ -318,11 +318,11 @@ InterfaceDescriptorData Instance5
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id -274579609
+			Id -274579609 (Destroy)
 		member(1)::DynamicEvent
-			Id 1630515206
+			Id 1630515206 (Destroyed)
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id -432898870
+			Id -432898870 (Damaged)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*

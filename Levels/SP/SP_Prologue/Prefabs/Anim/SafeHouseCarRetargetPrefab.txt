@@ -11,19 +11,19 @@ LogicPrefabBlueprint 673C669A-56C2-6E63-4283-36352EDDD8B3 #primary instance
 						member(0)::PropertyConnection
 							Source Instance2
 							Target Instance1
-							SourceFieldId 1631614922
-							TargetFieldId 1631614922
+							SourceFieldId 1631614922 (EntitySpace0)
+							TargetFieldId 1631614922 (EntitySpace0)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target Instance0
-							SourceFieldId -1250349431
-							TargetFieldId -1250349431
+							SourceFieldId -1250349431 (InitialAnimationControlMode)
+							TargetFieldId -1250349431 (InitialAnimationControlMode)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance0
 							Target Instance3
-							SourceFieldId -1031074154
+							SourceFieldId -1031074154 (AITrajectory)
 							TargetFieldId 2089387715
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
@@ -54,7 +54,7 @@ LogicPrefabBlueprint 673C669A-56C2-6E63-4283-36352EDDD8B3 #primary instance
 							Source Instance0
 							Target Instance3
 							SourceFieldId -152102116
-							TargetFieldId 2088812853
+							TargetFieldId 2088812853 (Body)
 							ShouldNetworkValue False
 						member(8)::PropertyConnection
 							Source Instance0
@@ -66,13 +66,13 @@ LogicPrefabBlueprint 673C669A-56C2-6E63-4283-36352EDDD8B3 #primary instance
 						member(0)::LinkConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 231940265
-							TargetFieldId 231940265
+							SourceFieldId 231940265 (Proxy)
+							TargetFieldId 231940265 (Proxy)
 						member(1)::LinkConnection
 							Source Instance0
 							Target Instance2
-							SourceFieldId -1079944492
-							TargetFieldId -1079944492
+							SourceFieldId -1079944492 (Target)
+							TargetFieldId -1079944492 (Target)
 						member(2)::LinkConnection
 							Source Instance3
 							Target Instance2
@@ -96,8 +96,8 @@ LogicPrefabBlueprint 673C669A-56C2-6E63-4283-36352EDDD8B3 #primary instance
 						member(6)::LinkConnection
 							Source Instance3
 							Target Instance2
-							SourceFieldId 2088812853
-							TargetFieldId 2088812853
+							SourceFieldId 2088812853 (Body)
+							TargetFieldId 2088812853 (Body)
 					Interface Instance2
 					Flags 3
 				EventConnections::array
@@ -105,33 +105,33 @@ LogicPrefabBlueprint 673C669A-56C2-6E63-4283-36352EDDD8B3 #primary instance
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(1)::EventConnection
 						Source Instance2
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -851475454
+							Id -851475454 (StartFirstFrame)
 						TargetEvent::EventSpec
-							Id -851475454
+							Id -851475454 (StartFirstFrame)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance0
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetEvent::EventSpec
-							Id -851475454
+							Id -851475454 (StartFirstFrame)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance0
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -427752080
+							Id -427752080 (OnAnimatableCreated)
 						TargetEvent::EventSpec
-							Id -559281700
+							Id -559281700 (Activate)
 						TargetType EventConnectionTargetType_ClientAndServer
 		Objects::array
 			member(0) Instance1
@@ -280,12 +280,12 @@ InterfaceDescriptorData Instance2
 			member(0)::DataField
 				Value *nullString*
 				ValueRef *nullGuid*
-				Id 1631614922
+				Id 1631614922 (EntitySpace0)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value AnimationControlModeEnum AnimationControlModeEnum_DisconnectTrajectoryAndObject
 				ValueRef *nullGuid*
-				Id -1250349431
+				Id -1250349431 (InitialAnimationControlMode)
 				AccessType FieldAccessType_Target
 			member(2)::DataField
 				Value *nullString*
@@ -294,14 +294,14 @@ InterfaceDescriptorData Instance2
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 230748069
+			Id 230748069 (Start)
 		member(1)::DynamicEvent
-			Id -851475454
+			Id -851475454 (StartFirstFrame)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks::array
 		member(0)::DynamicLink
-			Id -1079944492
+			Id -1079944492 (Target)
 		member(1)::DynamicLink
 			Id -1793875222
 		member(2)::DynamicLink
@@ -311,7 +311,7 @@ InterfaceDescriptorData Instance2
 		member(4)::DynamicLink
 			Id -1652790800
 		member(5)::DynamicLink
-			Id 2088812853
+			Id 2088812853 (Body)
 RetargetTransformEntityData Instance3
 	$::EntityData
 		$::GameObjectData

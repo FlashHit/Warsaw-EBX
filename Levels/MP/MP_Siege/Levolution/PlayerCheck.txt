@@ -11,19 +11,19 @@ LogicPrefabBlueprint 3770F31A-2B94-4835-AAA5-3F1FD8E9EF34 #primary instance
 						member(0)::PropertyConnection
 							Source Instance1
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId 177636
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target Instance0
-							SourceFieldId 225375086
-							TargetFieldId 177639
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177639 (B)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source BC02B4F3-35C4-4A04-ABEE-6EE65D2DDCB0
 							Target Instance3
-							SourceFieldId 193453899
+							SourceFieldId 193453899 (Out)
 							TargetFieldId -556382800
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
@@ -34,55 +34,55 @@ LogicPrefabBlueprint 3770F31A-2B94-4835-AAA5-3F1FD8E9EF34 #primary instance
 						Source Instance0
 						Target BC02B4F3-35C4-4A04-ABEE-6EE65D2DDCB0
 						SourceEvent::EventSpec
-							Id 193445179
+							Id 193445179 (A=B)
 						TargetEvent::EventSpec
-							Id 668205626
+							Id 668205626 (SetFalse)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(2)::EventConnection
 						Source Instance3
 						Target Instance2
 						SourceEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_ClientAndServer
 					member(3)::EventConnection
 						Source Instance0
 						Target BC02B4F3-35C4-4A04-ABEE-6EE65D2DDCB0
 						SourceEvent::EventSpec
-							Id 193445146
+							Id 193445146 (A<B)
 						TargetEvent::EventSpec
-							Id -1541066415
+							Id -1541066415 (SetTrue)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source BC02B4F3-35C4-4A04-ABEE-6EE65D2DDCB0
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -1433512622
+							Id -1433512622 (OnTrue)
 						TargetEvent::EventSpec
-							Id 230748069
+							Id 230748069 (Start)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source BC02B4F3-35C4-4A04-ABEE-6EE65D2DDCB0
 						Target Instance4
 						SourceEvent::EventSpec
-							Id -81881639
+							Id -81881639 (OnFalse)
 						TargetEvent::EventSpec
-							Id 2089401213
+							Id 2089401213 (Stop)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source Instance4
 						Target Instance3
 						SourceEvent::EventSpec
-							Id -639132411
+							Id -639132411 (StopFire)
 						TargetEvent::EventSpec
 							Id -183994300
 						TargetType EventConnectionTargetType_Server
@@ -143,9 +143,9 @@ InterfaceDescriptorData Instance3
 				AccessType FieldAccessType_Source
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 1736970756
+			Id 1736970756 (Increment)
 		member(1)::DynamicEvent
-			Id -395651742
+			Id -395651742 (Decrement)
 	OutputEvents::array
 		member(0)::DynamicEvent
 			Id -183994300
@@ -161,7 +161,7 @@ SequenceEntityData Instance4
 	Events::array
 		member(0)::SequenceEventData
 			Event::EventSpec
-				Id -639132411
+				Id -639132411 (StopFire)
 			Time 5000
 	SequenceStartTime 0
 	SequenceLength 5000

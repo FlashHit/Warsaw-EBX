@@ -10,32 +10,32 @@ ObjectBlueprint FD362987-84FC-47CA-93DA-040D080DB17E #primary instance
 					member(0)::PropertyConnection
 						Source Instance15
 						Target Instance11
-						SourceFieldId -458572566
-						TargetFieldId 193450866
+						SourceFieldId -458572566 (Intensity)
+						TargetFieldId 193450866 (In0)
 						ShouldNetworkValue False
 					member(1)::PropertyConnection
 						Source Instance14
 						Target Instance11
-						SourceFieldId 225375086
-						TargetFieldId 858290427
+						SourceFieldId 225375086 (Value)
+						TargetFieldId 858290427 (InputSelect)
 						ShouldNetworkValue False
 					member(2)::PropertyConnection
 						Source Instance11
 						Target 4B56504E-BA85-4518-8453-B44C508FB24F
-						SourceFieldId 193453899
-						TargetFieldId 5862146
+						SourceFieldId 193453899 (Out)
+						TargetFieldId 5862146 (In)
 						ShouldNetworkValue False
 					member(3)::PropertyConnection
 						Source 4B56504E-BA85-4518-8453-B44C508FB24F
 						Target Instance6
-						SourceFieldId 193453899
-						TargetFieldId -458572566
+						SourceFieldId 193453899 (Out)
+						TargetFieldId -458572566 (Intensity)
 						ShouldNetworkValue False
 					member(4)::PropertyConnection
 						Source Instance15
 						Target Instance11
 						SourceFieldId -141474860
-						TargetFieldId 193450867
+						TargetFieldId 193450867 (In1)
 						ShouldNetworkValue False
 				LinkConnections *nullArray*
 				Interface Instance15
@@ -45,7 +45,7 @@ ObjectBlueprint FD362987-84FC-47CA-93DA-040D080DB17E #primary instance
 					Source Instance7
 					Target Instance15
 					SourceEvent::EventSpec
-						Id -847278421
+						Id -847278421 (OnDamaged)
 					TargetEvent::EventSpec
 						Id -174287371
 					TargetType EventConnectionTargetType_Server
@@ -53,25 +53,25 @@ ObjectBlueprint FD362987-84FC-47CA-93DA-040D080DB17E #primary instance
 					Source Instance10
 					Target Instance10
 					SourceEvent::EventSpec
-						Id 193453899
+						Id 193453899 (Out)
 					TargetEvent::EventSpec
-						Id 212633683
+						Id 212633683 (Close)
 					TargetType EventConnectionTargetType_Server
 				member(2)::EventConnection
 					Source Instance10
 					Target Instance14
 					SourceEvent::EventSpec
-						Id 193453899
+						Id 193453899 (Out)
 					TargetEvent::EventSpec
-						Id 1736970756
+						Id 1736970756 (Increment)
 					TargetType EventConnectionTargetType_NetworkedClientAndServer
 				member(3)::EventConnection
 					Source Instance7
 					Target Instance10
 					SourceEvent::EventSpec
-						Id -847278421
+						Id -847278421 (OnDamaged)
 					TargetEvent::EventSpec
-						Id 5862146
+						Id 5862146 (In)
 					TargetType EventConnectionTargetType_Server
 	Object Instance7
 SyncedFloatEntityData 4B56504E-BA85-4518-8453-B44C508FB24F
@@ -604,7 +604,7 @@ InterfaceDescriptorData Instance15
 			member(0)::DataField
 				Value Float32 15
 				ValueRef *nullGuid*
-				Id -458572566
+				Id -458572566 (Intensity)
 				AccessType FieldAccessType_Target
 			member(1)::DataField
 				Value Float32 2

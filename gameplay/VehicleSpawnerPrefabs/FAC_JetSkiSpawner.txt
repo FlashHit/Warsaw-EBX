@@ -12,43 +12,43 @@ SpatialPrefabBlueprint 7B770388-BF14-8854-0A3D-1D45B23CFE73 #primary instance
 							Source Instance12
 							Target 38518AE5-0964-49EA-B760-AE2F58141CBB
 							SourceFieldId -1522842233
-							TargetFieldId 2090824542
+							TargetFieldId 2090824542 (MaxCountSimultaneously)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance12
 							Target Instance9
 							SourceFieldId -1522842233
-							TargetFieldId 177639
+							TargetFieldId 177639 (B)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance11
 							Target Instance9
-							SourceFieldId 225375086
-							TargetFieldId 177636
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance12
 							Target Instance8
 							SourceFieldId -1522842233
-							TargetFieldId 177639
+							TargetFieldId 177639 (B)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance11
 							Target Instance8
-							SourceFieldId 225375086
-							TargetFieldId 177636
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 177636 (A)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance12
 							Target 38518AE5-0964-49EA-B760-AE2F58141CBB
 							SourceFieldId -1339945032
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target 38518AE5-0964-49EA-B760-AE2F58141CBB
-							SourceFieldId -275573010
+							SourceFieldId -275573010 (Vehicles)
 							TargetFieldId 0
 					Interface Instance12
 					Flags 3
@@ -57,71 +57,71 @@ SpatialPrefabBlueprint 7B770388-BF14-8854-0A3D-1D45B23CFE73 #primary instance
 						Source 38518AE5-0964-49EA-B760-AE2F58141CBB
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id -155654884
+							Id -155654884 (FireMemory)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance10
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -2015345591
+							Id -2015345591 (OnMemoryEvent)
 						TargetEvent::EventSpec
-							Id -782826483
+							Id -782826483 (MoveCharacter)
 						TargetType EventConnectionTargetType_Server
 					member(2)::EventConnection
 						Source Instance13
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id -1490266435
+							Id -1490266435 (ClearMemory)
 						TargetType EventConnectionTargetType_Server
 					member(3)::EventConnection
 						Source Instance13
 						Target Instance10
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 714915618
+							Id 714915618 (LoadMemory)
 						TargetType EventConnectionTargetType_Server
 					member(4)::EventConnection
 						Source Instance13
 						Target Instance9
 						SourceEvent::EventSpec
-							Id -1864525248
+							Id -1864525248 (OnTriggerOnlyForPlayer)
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 					member(5)::EventConnection
 						Source 38518AE5-0964-49EA-B760-AE2F58141CBB
 						Target Instance11
 						SourceEvent::EventSpec
-							Id -1036968738
+							Id -1036968738 (OnSpawned)
 						TargetEvent::EventSpec
-							Id 1736970756
+							Id 1736970756 (Increment)
 						TargetType EventConnectionTargetType_Server
 					member(6)::EventConnection
 						Source 38518AE5-0964-49EA-B760-AE2F58141CBB
 						Target Instance11
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -395651742
+							Id -395651742 (Decrement)
 						TargetType EventConnectionTargetType_Server
 					member(7)::EventConnection
 						Source Instance9
 						Target 38518AE5-0964-49EA-B760-AE2F58141CBB
 						SourceEvent::EventSpec
-							Id 193445146
+							Id 193445146 (A<B)
 						TargetEvent::EventSpec
-							Id 230891742
+							Id 230891742 (Spawn)
 						TargetType EventConnectionTargetType_Server
 					member(8)::EventConnection
 						Source Instance8
 						Target Instance12
 						SourceEvent::EventSpec
-							Id 2088727237
+							Id 2088727237 (A>=B)
 						TargetEvent::EventSpec
 							Id -1529440836
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -129,7 +129,7 @@ SpatialPrefabBlueprint 7B770388-BF14-8854-0A3D-1D45B23CFE73 #primary instance
 						Source Instance8
 						Target Instance12
 						SourceEvent::EventSpec
-							Id 193445146
+							Id 193445146 (A<B)
 						TargetEvent::EventSpec
 							Id -1311300225
 						TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -139,7 +139,7 @@ SpatialPrefabBlueprint 7B770388-BF14-8854-0A3D-1D45B23CFE73 #primary instance
 						SourceEvent::EventSpec
 							Id 553526405
 						TargetEvent::EventSpec
-							Id 5862146
+							Id 5862146 (In)
 						TargetType EventConnectionTargetType_Server
 		Objects::array
 			member(0) Instance4

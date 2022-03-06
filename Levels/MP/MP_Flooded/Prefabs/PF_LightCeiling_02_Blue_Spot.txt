@@ -11,44 +11,44 @@ SpatialPrefabBlueprint 3AAD5642-A066-CEF0-A4FE-39A8AA71DD2A #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target Instance5
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance2
 							Target Instance6
-							SourceFieldId 225375086
-							TargetFieldId 193450867
+							SourceFieldId 225375086 (Value)
+							TargetFieldId 193450867 (In1)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance4
 							Target Instance1
 							SourceFieldId 1056443351
-							TargetFieldId -2024647575
+							TargetFieldId -2024647575 (Transform)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source 6536C48F-4E20-434E-84FF-00CB77C02939
 							Target Instance6
-							SourceFieldId -458572566
-							TargetFieldId 193450866
+							SourceFieldId -458572566 (Intensity)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance6
 							Target Instance5
-							SourceFieldId 193453899
-							TargetFieldId 193450866
+							SourceFieldId 193453899 (Out)
+							TargetFieldId 193450866 (In0)
 							ShouldNetworkValue False
 						member(5)::PropertyConnection
 							Source Instance5
 							Target Instance1
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 						member(6)::PropertyConnection
 							Source Instance6
 							Target Instance0
-							SourceFieldId 193453899
-							TargetFieldId -458572566
+							SourceFieldId 193453899 (Out)
+							TargetFieldId -458572566 (Intensity)
 							ShouldNetworkValue False
 					LinkConnections *nullArray*
 					Interface Instance4
@@ -58,25 +58,25 @@ SpatialPrefabBlueprint 3AAD5642-A066-CEF0-A4FE-39A8AA71DD2A #primary instance
 						Source Instance4
 						Target 6536C48F-4E20-434E-84FF-00CB77C02939
 						SourceEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetEvent::EventSpec
-							Id 2145977593
+							Id 2145977593 (Flicker)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source 6536C48F-4E20-434E-84FF-00CB77C02939
 						Target Instance0
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(2)::EventConnection
 						Source 6536C48F-4E20-434E-84FF-00CB77C02939
 						Target Instance1
 						SourceEvent::EventSpec
-							Id -1452333337
+							Id -1452333337 (OnDestroyed)
 						TargetEvent::EventSpec
-							Id -117303631
+							Id -117303631 (Disable)
 						TargetType EventConnectionTargetType_Client
 					member(3)::EventConnection
 						Source 6536C48F-4E20-434E-84FF-00CB77C02939
@@ -84,7 +84,7 @@ SpatialPrefabBlueprint 3AAD5642-A066-CEF0-A4FE-39A8AA71DD2A #primary instance
 						SourceEvent::EventSpec
 							Id -1121452805
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 					member(4)::EventConnection
 						Source 6536C48F-4E20-434E-84FF-00CB77C02939
@@ -92,7 +92,7 @@ SpatialPrefabBlueprint 3AAD5642-A066-CEF0-A4FE-39A8AA71DD2A #primary instance
 						SourceEvent::EventSpec
 							Id -1121452805
 						TargetEvent::EventSpec
-							Id -1952177180
+							Id -1952177180 (Enable)
 						TargetType EventConnectionTargetType_Client
 		Objects::array
 			member(0) Instance1
@@ -277,7 +277,7 @@ InterfaceDescriptorData Instance4
 				AccessType FieldAccessType_Target
 	InputEvents::array
 		member(0)::DynamicEvent
-			Id 2145977593
+			Id 2145977593 (Flicker)
 	OutputEvents *nullArray*
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
@@ -289,8 +289,8 @@ MathOpEntityData Instance5
 					$::DataContainer
 				Flags 156653609
 	Realm Realm_Client
-	Operators::array
-		member(0) 2 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 2
 MathOpEntityData Instance6
 	$::EntityData
 		$::GameObjectData
@@ -299,5 +299,5 @@ MathOpEntityData Instance6
 					$::DataContainer
 				Flags 422562655
 	Realm Realm_Client
-	Operators::array
-		member(0) 5 *unknownEnum*
+	Operators::array #unknown enum
+		member(0) 5

@@ -11,48 +11,48 @@ VehicleBlueprint 21CA84FA-1E0A-4C98-9E98-BA1BEF2F0040 #primary instance
 						member(0)::PropertyConnection
 							Source Instance3
 							Target Instance14
-							SourceFieldId -709588
-							TargetFieldId -1429643463
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1429643463 (UseFirstPersonSounds)
 							ShouldNetworkValue False
 						member(1)::PropertyConnection
 							Source Instance3
 							Target Instance17
-							SourceFieldId -709588
-							TargetFieldId -1886708048
+							SourceFieldId -709588 (ActiveForLocalPlayer)
+							TargetFieldId -1886708048 (CameraActive)
 							ShouldNetworkValue False
 						member(2)::PropertyConnection
 							Source Instance3
 							Target Instance17
-							SourceFieldId -907946637
-							TargetFieldId -288794722
+							SourceFieldId -907946637 (AlternateViewEnabledOut)
+							TargetFieldId -288794722 (ZoomActive)
 							ShouldNetworkValue False
 						member(3)::PropertyConnection
 							Source Instance3
 							Target Instance18
-							SourceFieldId -907946637
-							TargetFieldId 2089658322
+							SourceFieldId -907946637 (AlternateViewEnabledOut)
+							TargetFieldId 2089658322 (Zoom)
 							ShouldNetworkValue False
 						member(4)::PropertyConnection
 							Source Instance3
 							Target Instance18
-							SourceFieldId -709588
+							SourceFieldId -709588 (ActiveForLocalPlayer)
 							TargetFieldId -1033317261
 							ShouldNetworkValue False
 					LinkConnections::array
 						member(0)::LinkConnection
 							Source Instance0
 							Target Instance37
-							SourceFieldId -2055729720
+							SourceFieldId -2055729720 (WeaponComponent)
 							TargetFieldId 0
 						member(1)::LinkConnection
 							Source Instance0
 							Target Instance12
-							SourceFieldId 593706629
+							SourceFieldId 593706629 (YawingComponent)
 							TargetFieldId 0
 						member(2)::LinkConnection
 							Source Instance0
 							Target Instance13
-							SourceFieldId 23826156
+							SourceFieldId 23826156 (PitchingComponent)
 							TargetFieldId 0
 					Interface Instance51
 					Flags 3
@@ -61,17 +61,17 @@ VehicleBlueprint 21CA84FA-1E0A-4C98-9E98-BA1BEF2F0040 #primary instance
 						Source Instance0
 						Target Instance51
 						SourceEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetEvent::EventSpec
-							Id 870768041
+							Id 870768041 (OnTargetAcquired)
 						TargetType EventConnectionTargetType_Server
 					member(1)::EventConnection
 						Source Instance0
 						Target Instance51
 						SourceEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetEvent::EventSpec
-							Id -2314607
+							Id -2314607 (OnTargetLost)
 						TargetType EventConnectionTargetType_Server
 		Object FF2AEC98-7A9E-411E-803B-2F60E563230B
 VehicleEntityData FF2AEC98-7A9E-411E-803B-2F60E563230B
@@ -1947,7 +1947,7 @@ UnlockComponentData Instance29
 					z 0.0
 			Excluded False
 	UnlockAsset *nullGuid*
-	UnlockAssetGuid 00000000-0000-0000-0000-000000000000
+	UnlockAssetGuid *nullGuid*
 	UnlockIdentifier 0
 	UnlockDataKey 0
 	InvertUnlockTest True
@@ -2300,7 +2300,7 @@ WeaponComponentData Instance37
 	OverheatDropPerSecondMultiplier 1.0
 	LockTimeMultiplier 1.0
 	LockingAcceptanceAngleMultiplier 1.0
-	WeaponItemHash 1910102198
+	WeaponItemHash 1910102198 (C-Ram Cannon) #asset
 	SequentialFiring True
 WeaponComponentData Instance38
 	$::BoneComponentData
@@ -2546,9 +2546,9 @@ InterfaceDescriptorData Instance51
 	InputEvents *nullArray*
 	OutputEvents::array
 		member(0)::DynamicEvent
-			Id 870768041
+			Id 870768041 (OnTargetAcquired)
 		member(1)::DynamicEvent
-			Id -2314607
+			Id -2314607 (OnTargetLost)
 	InputLinks *nullArray*
 	OutputLinks *nullArray*
 UIPartPropertyList Instance52
